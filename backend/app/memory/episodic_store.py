@@ -2,7 +2,7 @@ import chromadb
 from chromadb.config import Settings as ChromaSettings
 from typing import List, Dict, Any
 from app.models.schemas import MemoryRecord
-from app.services.llm_client import llm_client
+from app.services.embeddings import get_single_embedding
 from app.config import settings
 import uuid
 
@@ -13,7 +13,7 @@ class EpisodicStore:
 
     def add_memory(self, record: MemoryRecord):
         if not record.embedding:
-            record.embedding = llm_client.get_embedding(record.raw_text)
+            record.embedding = get_single_embedding(record.raw_text)
         
         self.collection.add(
             documents=[record.raw_text],
@@ -30,7 +30,7 @@ class EpisodicStore:
         )
 
     def search_memories(self, query: str, limit: int = 5, filters: Dict = None) -> List[MemoryRecord]:
-        embedding = llm_client.get_embedding(query)
+        embedding = get_single_embedding(query)
         results = self.collection.query(
             query_embeddings=[embedding],
             n_results=limit,

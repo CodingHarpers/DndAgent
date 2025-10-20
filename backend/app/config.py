@@ -7,12 +7,13 @@ class Settings(BaseSettings):
     DEBUG: bool = True
     
     # LLM
-    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
-    LLM_MODEL_NAME: str = "gemini-1.5-flash"
-    EMBEDDING_MODEL_NAME: str = "models/embedding-001"
+    GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    LLM_MODEL_NAME: str = "gemini-2.0-flash"
+    EMBEDDING_MODEL_NAME: str = "text-embedding-3-small"
 
     # Databases
-    NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+    NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://neo4j:7687")
     NEO4J_USER: str = os.getenv("NEO4J_USER", "neo4j")
     NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "password")
 

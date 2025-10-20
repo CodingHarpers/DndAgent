@@ -15,4 +15,5 @@ docker-compose up --build -d
 echo "Services started!"
 echo "Backend API: http://localhost:8000/docs"
 echo "Neo4j Browser: http://localhost:7474"
+echo "Frontend Game Interface: http://localhost:3000"
 echo "Use 'docker-compose logs -f' to follow logs."

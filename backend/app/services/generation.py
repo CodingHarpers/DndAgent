@@ -3,17 +3,17 @@ import google.generativeai as genai
 from app.config import settings
 import json
 
-class LLMClient:
+class GenerationClient:
     def __init__(self):
-        genai.configure(api_key=settings.GOOGLE_API_KEY)
+        genai.configure(api_key=settings.GEMINI_API_KEY)
         self.model = genai.GenerativeModel(settings.LLM_MODEL_NAME)
 
     def generate_text(self, system_prompt: str, user_prompt: str, temperature: float = 0.7) -> str:
         try:
             # Gemini Pattern: "System Prompt" as first User message
             messages = [
-                {"role": "user", "parts": [system_prompt]},
-                {"role": "user", "parts": [user_prompt]}
+                {"role": "user", "parts": [{"text": system_prompt}]},
+                {"role": "user", "parts": [{"text": user_prompt}]}
             ]
             
             response = self.model.generate_content(
@@ -39,8 +39,8 @@ class LLMClient:
         )
         
         messages = [
-            {"role": "user", "parts": [system_instruction]},
-            {"role": "user", "parts": [user_prompt]}
+            {"role": "user", "parts": [{"text": system_instruction}]},
+            {"role": "user", "parts": [{"text": user_prompt}]}
         ]
 
         try:
@@ -51,7 +51,14 @@ class LLMClient:
                     temperature=0.2 # Lower temperature for structural stability
                 )
             )
-            return response_model.model_validate_json(response.text)
+            
+            text = response.text
+            if "```json" in text:
+                text = text.split("```json")[1].split("```")[0]
+            elif "```" in text:
+                text = text.split("```")[1].split("```")[0]
+                
+            return response_model.model_validate_json(text.strip())
         except Exception as e:
             print(f"LLM Native Structured Error: {e}")
             print("Falling back to standard generation...")
@@ -60,7 +67,7 @@ class LLMClient:
             # Sometimes models or old keys struggle with JSON mode
             try:
                 fallback_messages = [
-                    {"role": "user", "parts": [f"{system_instruction}\n\nUser Input: {user_prompt}"]}
+                    {"role": "user", "parts": [{"text": f"{system_instruction}\n\nUser Input: {user_prompt}"}]}
                 ]
                 response = self.model.generate_content(fallback_messages)
                 text = response.text
@@ -73,18 +80,5 @@ class LLMClient:
                 print(f"LLM Fallback Error: {e2}")
                 return None
 
-    def get_embedding(self, text: str) -> List[float]:
-        try:
-            result = genai.embed_content(
-                model=settings.EMBEDDING_MODEL_NAME,
-                content=text,
-                task_type="retrieval_document", # or retrieval_query depending on usage
-                title="Embedding"
-            )
-            return result['embedding']
-        except Exception as e:
-            print(f"Embedding Error: {e}")
-            # Gemini embeddings are often 768 dims, strictly mock if failed
-            return [0.0] * 768 
-
-llm_client = LLMClient()
+# Singleton instance
+generation_client = GenerationClient()

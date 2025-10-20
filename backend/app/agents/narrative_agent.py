@@ -1,5 +1,5 @@
 from app.models.schemas import Scene, RuleAdjudicationResult
-from app.services.llm_client import llm_client
+from app.services.generation import generation_client
 from typing import Dict, Any
 
 class NarrativeAgent:
@@ -11,7 +11,7 @@ class NarrativeAgent:
         # Call LLM
         print(f"[NarrativeAgent] Generating scene for input: {player_input}...")
         try:
-            scene = llm_client.generate_structured(
+            scene = generation_client.generate_structured(
                 system_prompt, 
                 user_prompt, 
                 Scene
