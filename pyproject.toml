@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "arcana"
+version = "0.1.0"
+description = "A.R.C.A.N.A. - Agentic Rules-based & Creative Autonomous Narrative Architecture"
+authors = ["Coding Harpers"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langgraph = "^0.0.10"
+autogen = "^0.2.0"
+neo4j = "^5.10.0"
+weaviate-client = "^3.24.1"
+redis = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
