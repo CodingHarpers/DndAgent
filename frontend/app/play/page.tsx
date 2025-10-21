@@ -1,33 +1,63 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import StatsPanel from '@/components/StatsPanel';
+import InventoryPanel from '@/components/InventoryPanel';
 
 type Scene = {
+    scene_id?: string; // Add this
     title: string;
     narrative_text: string;
-    available_actions: string[];
-    metadata: { session_id?: string };
+    available_actions?: string[]; // Make optional
+    metadata?: { session_id?: string };
 };
 
 export default function PlayPage() {
     const [scene, setScene] = useState<Scene | null>(null);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
-    const [sessionId, setSessionId] = useState<string | null>(null);
+    const [sessionId, setSessionId] = useState<string>("");
+
+    // RPG State
+    const [stats, setStats] = useState<any>(null);
+    const [inventory, setInventory] = useState<any[]>([]);
 
     const startSession = async () => {
         setLoading(true);
         try {
             const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/play/start_session`, {
-                method: 'POST'
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ player_name: "Traveler" })
             });
             const data = await res.json();
-            setScene(data.scene);
-            setSessionId(data.scene.metadata?.session_id || null);
+            setScene(data);
+            const sid = data.metadata?.session_id || data.scene_id || data.session_id; // Check all possible locations
+            if (sid) {
+                console.log("Session started with ID:", sid);
+                setSessionId(sid);
+                // Fetch initial RPG state
+                await fetchRPGState(sid);
+            } else {
+                console.error("No session ID found in start_session response", data);
+            }
         } catch (e) {
             console.error(e);
         }
         setLoading(false);
+    };
+
+    const fetchRPGState = async (sid: string) => {
+        try {
+            const [statsRes, invRes] = await Promise.all([
+                fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/play/stats/${sid}`),
+                fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/play/inventory/${sid}`)
+            ]);
+            if (statsRes.ok) setStats(await statsRes.json());
+            if (invRes.ok) setInventory(await invRes.json());
+        } catch (e) {
+            console.error("Failed to fetch RPG state", e);
+        }
     };
 
     const sendAction = async (actionText: string) => {
@@ -41,6 +71,14 @@ export default function PlayPage() {
             });
             const data = await res.json();
             setScene(data.scene);
+
+            // Update Stats if returned
+            if (data.player_stats) {
+                setStats(data.player_stats);
+            }
+            // Always refresh inventory on turn end
+            fetchRPGState(sessionId);
+
             setInput('');
         } catch (e) {
             console.error(e);
@@ -63,64 +101,81 @@ export default function PlayPage() {
                 )}
             </header>
 
-            <main className="flex-grow p-6 max-w-3xl mx-auto w-full flex flex-col">
-                {!scene ? (
-                    <div className="flex flex-col items-center justify-center flex-grow opacity-50">
-                        <p>Start a new session to begin.</p>
-                    </div>
-                ) : (
-                    <>
-                        <div className="flex-grow space-y-6 overflow-y-auto mb-6">
-                            <div className="prose prose-invert max-w-none">
-                                <h2 className="text-2xl text-purple-300 border-b border-gray-700 pb-2 mb-4">
-                                    {scene.title}
-                                </h2>
-                                <p className="text-lg leading-relaxed whitespace-pre-wrap">
-                                    {scene.narrative_text}
-                                </p>
+            <div className="flex flex-1 overflow-hidden">
+                {/* Left: Chat/Scene (60%) */}
+                <main className="flex-1 p-6 flex flex-col border-r border-gray-800 overflow-y-auto">
+                    {!scene ? (
+                        <div className="flex flex-col items-center justify-center flex-grow opacity-50">
+                            <p>Start a new session to begin.</p>
+                        </div>
+                    ) : (
+                        <>
+                            <div className="flex-grow space-y-6 mb-6">
+                                <div className="prose prose-invert max-w-none">
+                                    <h2 className="text-2xl text-purple-300 border-b border-gray-700 pb-2 mb-4">
+                                        {scene.title}
+                                    </h2>
+                                    <p className="text-lg leading-relaxed whitespace-pre-wrap">
+                                        {scene.narrative_text}
+                                    </p>
+                                </div>
+
+                                {scene.available_actions && scene.available_actions.length > 0 && (
+                                    <div className="flex flex-wrap gap-2 mt-4">
+                                        {scene.available_actions.map((action, i) => (
+                                            <button
+                                                key={i}
+                                                onClick={() => sendAction(action)}
+                                                disabled={loading}
+                                                className="text-sm bg-gray-800 hover:bg-gray-700 border border-gray-600 px-3 py-1 rounded-full transition-colors"
+                                            >
+                                                {action}
+                                            </button>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
 
-                            {scene.available_actions.length > 0 && (
-                                <div className="flex flex-wrap gap-2 mt-4">
-                                    {scene.available_actions.map((action, i) => (
-                                        <button
-                                            key={i}
-                                            onClick={() => sendAction(action)}
-                                            disabled={loading}
-                                            className="text-sm bg-gray-800 hover:bg-gray-700 border border-gray-600 px-3 py-1 rounded-full transition-colors"
-                                        >
-                                            {action}
-                                        </button>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-
-                        <div className="mt-auto">
-                            <form
-                                onSubmit={(e) => { e.preventDefault(); sendAction(input); }}
-                                className="flex gap-2"
-                            >
-                                <input
-                                    type="text"
-                                    value={input}
-                                    onChange={(e) => setInput(e.target.value)}
-                                    placeholder="What do you want to do?"
-                                    className="flex-grow bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                                    disabled={loading}
-                                />
-                                <button
-                                    type="submit"
-                                    disabled={loading || !input.trim()}
-                                    className="bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white px-6 py-3 rounded-lg font-semibold"
+                            <div className="mt-auto">
+                                <form
+                                    onSubmit={(e) => { e.preventDefault(); sendAction(input); }}
+                                    className="flex gap-2"
                                 >
-                                    Send
-                                </button>
-                            </form>
-                        </div>
-                    </>
-                )}
-            </main>
+                                    <input
+                                        type="text"
+                                        value={input}
+                                        onChange={(e) => setInput(e.target.value)}
+                                        placeholder="What do you want to do?"
+                                        className="flex-grow bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                        disabled={loading}
+                                    />
+                                    <button
+                                        type="submit"
+                                        disabled={loading || !input.trim()}
+                                        className="bg-purple-600 hover:bg-purple-500 disabled:opacity-50 text-white px-6 py-3 rounded-lg font-semibold"
+                                    >
+                                        Send
+                                    </button>
+                                </form>
+                            </div>
+                        </>
+                    )}
+                </main>
+
+                {/* Right: RPG Stats (40%) */}
+                <aside className="w-[400px] flex-shrink-0 bg-gray-950 p-4 overflow-y-auto flex flex-col gap-6 border-l border-gray-800">
+                    {scene && (
+                        <>
+                            <StatsPanel stats={stats} />
+                            <InventoryPanel
+                                items={inventory}
+                                sessionId={sessionId}
+                                onActionComplete={() => fetchRPGState(sessionId)}
+                            />
+                        </>
+                    )}
+                </aside>
+            </div>
         </div>
     );
 }

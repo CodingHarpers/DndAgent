@@ -80,5 +80,42 @@ class GenerationClient:
                 print(f"LLM Fallback Error: {e2}")
                 return None
 
+    
+    def generate_with_tools(self, system_prompt: str, user_prompt: str, tools: List[Dict]) -> Any:
+        """
+        Generates content using tool calling capabilities.
+        Returns the raw GenerateContentResponse to allow inspection of function calls.
+        """
+        try:
+            # Gemini Tool Configuration
+            # tools arg expects a list of Tool objects or dicts (if using OpenAI compat layer)
+            # The google.generativeai SDK supports passing a list of FunctionDeclarations
+            # But simpler: pass the list of dicts if using the new auto-conversion or define properly.
+            
+            # For this SDK version, we can pass tools directly to `tools` arg in logic.
+            
+            # Message Structure
+            messages = [
+                {"role": "user", "parts": [{"text": f"{system_prompt}\n\n{user_prompt}"}]}
+            ]
+            
+            # Note: The SDK handles tool conversion if we pass them correctly. 
+            # We preserve the raw response so the caller can check `part.function_call`.
+            
+            response = self.model.generate_content(
+                messages,
+                tools=tools, # Pass tools here
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.1 # Low temp for tool precision
+                )
+            )
+            return response
+            
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            print(f"LLM Tool Gen Error: {repr(e)}")
+            return None
+
 # Singleton instance
 generation_client = GenerationClient()

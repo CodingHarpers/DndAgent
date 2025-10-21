@@ -28,10 +28,14 @@ services:
       - neo4j_data:/data
   frontend:
     build: ./frontend
+    command: npm run dev # Use dev mode for HMR
     ports:
       - "3000:3000"
     depends_on:
       - backend
+    volumes:
+      - ./frontend:/app # Mount source code for live updates
+      - /app/node_modules # Avoid overwriting node_modules
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8000
 

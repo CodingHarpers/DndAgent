@@ -79,6 +79,33 @@ class PlayerInput(BaseModel):
     session_id: str
     text: str
 
+class WorldExtractionResult(BaseModel):
+    entities: List[EntityNode] = Field(default_factory=list)
+    relationships: List[RelationshipEdge] = Field(default_factory=list)
+
+# --- RPG Mechanics Models ---
+
+class PlayerStats(BaseModel):
+    hp_current: int
+    hp_max: int
+    gold: int
+    power: int
+    speed: int
+
+class InventoryItem(BaseModel):
+    id: str
+    name: str
+    type: str # e.g. "Weapon", "Potion"
+    properties: Dict[str, Any] = Field(default_factory=dict)
+
+class BuyRequest(BaseModel):
+    session_id: str # used to identify player
+    item_id: str
+
+# Update TurnResponse to include stats
 class TurnResponse(BaseModel):
     scene: Scene
     rule_outcome: Optional[RuleAdjudicationResult] = None
+    player_stats: Optional[PlayerStats] = None
+
+

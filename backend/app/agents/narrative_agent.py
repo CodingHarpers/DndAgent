@@ -33,3 +33,33 @@ class NarrativeAgent:
             )
         
         return scene
+
+    def generate_outcome_narration(self, action_result: Dict) -> Scene:
+        """
+        Generates a scene describing the outcome of a backend action (e.g. buy/sell).
+        The action_result is the TRUTH. The LLM simply narrates it.
+        """
+        # Unwrap result
+        success = action_result.get("success", False)
+        message = action_result.get("message", "Unknown outcome.")
+        
+        system_prompt = "You are a D&D Dungeon Master. Narrate the outcome of the player's action based STRICTLY on the provided result."
+        user_prompt = f"Action Result: {action_result}\n\nNarrate this event briefly and describe the current scene."
+        
+        try:
+             scene = generation_client.generate_structured(
+                system_prompt, 
+                user_prompt, 
+                Scene
+            )
+        except Exception as e:
+            print(f"[NarrativeAgent] Narration failed: {e}")
+            scene = Scene(
+                title=f"Action {'Success' if success else 'Failed'}",
+                narrative_text=f"{message}",
+                characters_present=[],
+                location="Current Location",
+                available_actions=["Continue"]
+            )
+            
+        return scene
