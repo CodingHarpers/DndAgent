@@ -21,8 +21,14 @@ class SemanticTKG:
             f"MERGE (n:{label} {{id: $id}}) "
             "SET n += $props"
         )
+        query = (
+            f"MERGE (n:{label} {{id: $id}}) "
+            "SET n += $props"
+        )
         with self.driver.session() as session:
-            session.run(query, id=entity.id, props=entity.properties)
+            # Pydantic models need explicit conversion to dict for Neo4j driver
+            props = entity.properties.model_dump(exclude_unset=True)
+            session.run(query, id=entity.id, props=props)
 
     def add_relationship(self, rel: RelationshipEdge):
         # Sanitize type by wrapping in backticks
@@ -33,7 +39,9 @@ class SemanticTKG:
             "SET r += $props"
         )
         with self.driver.session() as session:
-            session.run(query, source_id=rel.source_id, target_id=rel.target_id, props=rel.properties)
+            # Pydantic models need explicit conversion to dict for Neo4j driver
+            props = rel.properties.model_dump(exclude_unset=True)
+            session.run(query, source_id=rel.source_id, target_id=rel.target_id, props=props)
 
     def query_subgraph(self, cypher_query: str, params: Dict = None) -> List[Dict]:
         with self.driver.session() as session:
@@ -130,16 +138,37 @@ class SemanticTKG:
         
         with self.driver.session() as session:
             # 1. Get current gold and item value
-            check_query = """
-            MATCH (p:Character {id: $pid}), (i:Item {id: $iid})
-            RETURN p.gold as gold, i.value as value, i.name as name
+            # 1. Get current gold and item value
+            # Standardize invalid inputs
+            search_term = item_id.strip()
+            
+            # Tokenize for flexible matching (e.g. "healing potion" -> matches "Potion of Healing")
+            # We filter out short words to avoid noise if needed, but for now simple split is fine.
+            tokens = [t.lower() for t in search_term.split() if len(t) > 2]
+            if not tokens: # Fallback if only short words
+                tokens = [search_term.lower()]
+
+            # Cypher query: Find item where ALL tokens are present in the name (case-insensitive)
+            find_query = """
+            MATCH (p:Character {id: $pid})
+            OPTIONAL MATCH (i:Item)
+            WHERE i.id = $iid OR 
+                  (size($tokens) > 0 AND all(token IN $tokens WHERE toLower(i.name) CONTAINS token))
+            WITH p, i
+            ORDER BY size(i.name) ASC 
+            LIMIT 1
+            RETURN p.gold as gold, i.value as value, i.name as name, i.id as found_id
             """
-            res = session.run(check_query, pid=pid, iid=item_id).single()
-            if not res:
-                return {"success": False, "message": "Player or Item not found."}
+            
+            res = session.run(find_query, pid=pid, iid=item_id, tokens=tokens).single()
+            
+            if not res or not res['found_id']:
+                return {"success": False, "message": f"Item '{item_id}' not found."}
             
             gold = res['gold']
+            actual_item_id = res['found_id']
             val_str = str(res['value'])
+            
             # simple parse: remove 'gp' and int()
             try:
                 cost = int(''.join(filter(str.isdigit, val_str)))
@@ -156,7 +185,7 @@ class SemanticTKG:
             MERGE (p)-[:OWNS {acquired_at: datetime()}]->(i)
             RETURN p.gold as new_balance
             """
-            session.run(buy_query, pid=pid, iid=item_id, cost=cost)
+            session.run(buy_query, pid=pid, iid=actual_item_id, cost=cost)
             
             return {"success": True, "message": f"Purchased {res['name']} for {cost}gp", "new_balance": gold - cost}
 
@@ -169,15 +198,27 @@ class SemanticTKG:
         
         with self.driver.session() as session:
             # 1. Verify Ownership and Get Value
+            # 1. Verify Ownership and Get Value
+            search_term = item_id.strip()
+            tokens = [t.lower() for t in search_term.split() if len(t) > 2]
+            if not tokens:
+                tokens = [search_term.lower()]
+
             check_query = """
-            MATCH (p:Character {id: $pid})-[r:OWNS]->(i:Item {id: $iid})
-            RETURN p.gold as gold, i.value as value, i.name as name
+            MATCH (p:Character {id: $pid})-[r:OWNS]->(i:Item)
+            WHERE i.id = $iid OR 
+                  (size($tokens) > 0 AND all(token IN $tokens WHERE toLower(i.name) CONTAINS token))
+            WITH p, i, r
+            LIMIT 1
+            RETURN p.gold as gold, i.value as value, i.name as name, i.id as found_id, elementId(r) as rid
             """
-            res = session.run(check_query, pid=pid, iid=item_id).single()
+            res = session.run(check_query, pid=pid, iid=item_id, tokens=tokens).single()
+            
             if not res:
-                return {"success": False, "message": "You don't own this item."}
+                return {"success": False, "message": f"You don't own '{item_id}'."}
             
             gold = res['gold']
+            actual_item_id = res['found_id']
             val_str = str(res['value'])
             try:
                 base_value = int(''.join(filter(str.isdigit, val_str)))
@@ -193,7 +234,7 @@ class SemanticTKG:
             SET p.gold = p.gold + $sell_value
             RETURN p.gold as new_balance
             """
-            session.run(sell_query, pid=pid, iid=item_id, sell_value=sell_value)
+            session.run(sell_query, pid=pid, iid=actual_item_id, sell_value=sell_value)
             
             return {
                 "success": True, 

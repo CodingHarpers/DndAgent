@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional, Dict, Any, Literal
 from datetime import datetime
 
@@ -23,16 +23,40 @@ class MemoryRecord(BaseModel):
     embedding: Optional[List[float]] = None
     metadata: Dict[str, Any] = Field(default_factory=dict)
 
+
+class EntityProperties(BaseModel):
+    """
+    Common properties for entities to ensure schema compatibility with Gemini API.
+    """
+    model_config = ConfigDict(extra='allow')
+    
+    name: Optional[str] = None
+    description: Optional[str] = None
+    value: Optional[str] = None # For items
+    role: Optional[str] = None # For characters
+    type: Optional[str] = None # For locations/items
+    status: Optional[str] = None
+    # Flexible catch-all for other simple fields if strictly needed, but kept minimal for schema
+    
+class RelationshipProperties(BaseModel):
+    """
+    Properties for relationships.
+    """
+    model_config = ConfigDict(extra='allow')
+
+    context: Optional[str] = None # Why this rel exists?
+    weight: Optional[int] = 1
+
 class EntityNode(BaseModel):
     id: str  # Unique ID in TKG
     label: str  # e.g., "Character", "Location"
-    properties: Dict[str, Any]
+    properties: EntityProperties
 
 class RelationshipEdge(BaseModel):
     source_id: str
     target_id: str
     type: str  # e.g., "LOCATED_IN", "KNOWS"
-    properties: Dict[str, Any] = Field(default_factory=dict)
+    properties: RelationshipProperties = Field(default_factory=RelationshipProperties)
 
 # --- Rule Models ---
 

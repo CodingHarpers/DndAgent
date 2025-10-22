@@ -25,6 +25,7 @@ class WorldBuilderAgent:
         user_prompt = f"Narrative:\n{scene.narrative_text}\n\nLocation: {scene.location}\nCharacters: {scene.characters_present}"
         
         try:
+            print(f"[WorldBuilderAgent] Extracting world updates...")
             updates: WorldExtractionResult = generation_client.generate_structured(
                 system_prompt,
                 user_prompt,
