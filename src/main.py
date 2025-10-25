@@ -12,7 +12,10 @@ class ArcanaSystem:
         # In a real scenario, we would pass actual DB connections here
         self.memory = MemoryRouter(vector_store=None, graph_store=None)
         self.rules_lawyer = RulesLawyer()
-        self.storyteller = DungeonMasterOrchestrator()
+        self.storyteller = DungeonMasterOrchestrator(
+            memory_router=self.memory, 
+            rules_lawyer=self.rules_lawyer
+        )
 
     def game_loop(self, player_input: str, current_state: dict):
         """
