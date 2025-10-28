@@ -59,6 +59,7 @@ class OrchestratorAgent:
             "You are an AI assistant for a D&D game. Your job is to DETECT INTENT and call the appropriate tool.\n"
             "If the player wants to BUY something, you MUST call 'buy_item'.\n"
             "If the player wants to SELL something, you MUST call 'sell_item'.\n"
+            "If the player wants to ATTACK or FIGHT someone, you MUST call 'attack'.\n"
             "Do NOT narrate. Do NOT generate text. ONLY call the tool if applicable.\n"
             "If no tool applies, output 'NO_TOOL'."
         )
@@ -89,6 +90,9 @@ class OrchestratorAgent:
                     elif tool_name == "sell_item":
                         item_id = args.get("item_id")
                         action_result = tkg.sell_item(session_id, item_id)
+                    elif tool_name == "attack":
+                        target_id = args.get("target_id")
+                        action_result = tkg.attack(session_id, target_id)
                         
                     if action_result:
                         # 3a. Narration of Tool Outcome
@@ -121,5 +125,6 @@ class OrchestratorAgent:
         return TurnResponse(
             scene=new_scene,
             rule_outcome=rule_result,
-            player_stats=current_stats
+            player_stats=current_stats,
+            action_log=action_result if tool_response and rule_result is None else None
         )

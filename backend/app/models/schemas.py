@@ -107,5 +107,6 @@ class TurnResponse(BaseModel):
     scene: Scene
     rule_outcome: Optional[RuleAdjudicationResult] = None
     player_stats: Optional[PlayerStats] = None
+    action_log: Optional[Dict[str, Any]] = None
 
 

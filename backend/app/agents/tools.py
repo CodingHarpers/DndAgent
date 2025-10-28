@@ -31,5 +31,21 @@ sell_item_func = FunctionDeclaration(
     }
 )
 
+
+attack_func = FunctionDeclaration(
+    name="attack",
+    description="Attempt to attack a target in combat. Use this when the player explicitly wants to fight or attack someone.",
+    parameters={
+        "type": "OBJECT",
+        "properties": {
+            "target_id": {
+                "type": "STRING",
+                "description": "The ID of the target to attack (e.g., 'goblin_1')."
+            }
+        },
+        "required": ["target_id"]
+    }
+)
+
 # The SDK expects a Tool object wrapping the declarations
-dnd_tools = Tool(function_declarations=[buy_item_func, sell_item_func])
+dnd_tools = Tool(function_declarations=[buy_item_func, sell_item_func, attack_func])

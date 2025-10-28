@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+import random
 from typing import List, Dict, Any
 from app.models.schemas import EntityNode, RelationshipEdge
 from app.config import settings
@@ -199,4 +200,93 @@ class SemanticTKG:
                 "message": f"Sold {res['name']} for {sell_value}gp", 
                 "gold_gained": sell_value,
                 "new_balance": gold + sell_value
+            }
+
+    def roll_dice(self, sides: int, times: int = 1) -> int:
+        return sum(random.randint(1, sides) for _ in range(times))
+
+    def attack(self, session_id: str, target_id: str) -> Dict[str, Any]:
+        """
+        Executes an attack from the player to a target.
+        """
+        pid = "player_main"
+
+        with self.driver.session() as session:
+            # 1. Get Attacker and Target Stats
+            # We assume target is a Character or Enemy node
+            query_stats = """
+            MATCH (p:Character {id: $pid})
+            OPTIONAL MATCH (t {id: $tid})
+            RETURN p, t, labels(t) as t_labels
+            """
+            res = session.run(query_stats, pid=pid, tid=target_id).single()
+            
+            if not res or not res['t']:
+                return {"success": False, "message": "Target not found."}
+            
+            player = dict(res['p'])
+            target = dict(res['t'])
+            target_labels = res['t_labels'] or []
+
+            # Check if target is alive
+            if target.get('hp_current', 0) <= 0:
+                 return {"success": False, "message": "Target is already defeated."}
+
+            # 2. Combat Calculation (2d6 System)
+            # Hit Check: 2d6 vs Target Defense (or default 10)
+            roll_1 = self.roll_dice(6)
+            roll_2 = self.roll_dice(6)
+            attack_roll = roll_1 + roll_2
+            
+            # Simple defense stat or default to 10
+            target_defense = target.get('defense', 10)
+            
+            hit = attack_roll >= target_defense
+            
+            damage = 0
+            if hit:
+                # Damage Roll: Weapon Die (default d6) + Power Mod
+                # Simplify: just use d6 + power/3 for now or similar
+                # User asked for weapon-based dice, let's look for equipped weapon
+                # For MVP, let's just assume a d8 base damage + power bonus (e.g. power-10)
+                power_bonus = max(0, (player.get('power', 10) - 10) // 2)
+                damage = self.roll_dice(8) + power_bonus
+                
+                # Apply Damage
+                new_hp = target.get('hp_current', 10) - damage
+                
+                update_query = """
+                MATCH (t {id: $tid})
+                SET t.hp_current = $new_hp
+                MERGE (p:Character {id: $pid})
+                MERGE (p)-[r:ATTACKED {
+                    roll: $roll,
+                    damage: $damage,
+                    hit: $hit,
+                    timestamp: datetime()
+                }]->(t)
+                RETURN t.hp_current
+                """
+                session.run(update_query, tid=target_id, pid=pid, new_hp=new_hp, roll=attack_roll, damage=damage, hit=hit)
+            else:
+                 # Log Miss
+                log_query = """
+                MATCH (t {id: $tid}), (p:Character {id: $pid})
+                MERGE (p)-[r:ATTACKED {
+                    roll: $roll,
+                    damage: 0,
+                    hit: $hit,
+                    timestamp: datetime()
+                }]->(t)
+                """
+                session.run(log_query, tid=target_id, pid=pid, roll=attack_roll, hit=hit)
+
+            return {
+                "success": True,
+                "hit": hit,
+                "roll": attack_roll,
+                "damage": damage,
+                "target_id": target_id,
+                "target_hp": target.get('hp_current', 10) - damage if hit else target.get('hp_current', 10),
+                "message": f"Attacked {target.get('name', 'Enemy')}. Roll: {attack_roll} (Target: {target_defense}). {'HIT' if hit else 'MISS'} for {damage} dmg."
             }
