@@ -14,12 +14,12 @@ CONCURRENCY_LIMIT = 10 # Concurrency limit
 
 
 
-# 全局状态
+# Global state
 visited_urls = set()
 queue = asyncio.Queue()
 
 def extract_links_recursively(data):
-    """递归提取 JSON 中的所有 API 链接"""
+    """Recursively extract all API links from JSON"""
     links = []
     if isinstance(data, dict):
         for key, value in data.items():

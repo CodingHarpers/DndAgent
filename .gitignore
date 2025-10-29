@@ -1,2 +1,3 @@
-data/rules/dnd_5e_data/
 *.ps1
+.env
+data/rules/
