@@ -1,4 +1,4 @@
-from prompts import SYSTEM_PROMPT_ENTITY_LOGIC, SYSTEM_PROMPT_RULES
+from prompts import SYSTEM_PROMPT_ENTITY_LOGIC, SYSTEM_PROMPT_RULES, SYSTEM_PROMPT_CLASS
 from google import genai
 from google.genai.types import HttpOptions, Part
 import dotenv
@@ -11,7 +11,7 @@ from google.genai import types
 # --- A. For Spells, Features, Conditions, Items ---
 
 class Mechanic(BaseModel):
-    type: str = Field(..., description="Type of mechanic: 'constraint', 'effect', or 'scaling'")
+    type: str = Field(..., description="Type of mechanic: 'constraint', 'effect', 'grant', or 'scaling'")
     trigger: str = Field(..., description="When does this apply? e.g. 'On Cast', 'Save Failed'")
     condition: str = Field(..., description="Logical requirement e.g. 'Target within 60ft'")
     outcome: str = Field(..., description="The mechanical result e.g. 'Deal 8d6 damage'")
@@ -23,10 +23,20 @@ class EntityLogic(BaseModel):
     mechanics: List[Mechanic]
     description_text: str = Field(
         ..., 
-        description="The natural language text containing description, higher level effects, and component requirements. Ignore flavor text."
+        description="The natural language text containing description, effects, and component requirements."
     )
     tags: List[str] = Field(default_factory=list)
+    related_search_terms: List[str] = Field(default_factory=list)
 
+class ClassLogic(BaseModel):
+    class_name: str
+    logic_type: str = Field(default="class_progression")
+    mechanics: List[Mechanic]
+    description_text: str = Field(
+        ..., 
+        description="The natural language text containing description, effects, and component requirements. Include Spellcasting Table here if available."
+    )
+    related_search_terms: List[str] = Field(default_factory=list)
 # --- B. For Rule-Sections (Plain Text Rulebook) ---
 class RuleLogic(BaseModel):
     premise: str = Field(..., description="The situation where this rule activates (IF...)")
@@ -89,18 +99,15 @@ class IngestPipeline:
         if category in ["spells", "features", "conditions"]:
             # === Strategy A: Entity Extraction ===
             target_schema = EntityLogic
-            system_instruction = """
-            You are a D&D Logic Engine. Convert the description into strictly structured logic.
-            Ignore flavor text. Focus on Inputs (Triggers/Conditions) and Outputs (Effects).
-            """
+            system_instruction = SYSTEM_PROMPT_ENTITY_LOGIC
         
         elif category in ["rule-sections"]:
             # === Strategy B: Rule Extraction (Rule Book) ===
             target_schema = RuleBookChunk
-            system_instruction = """
-            You are parsing a D&D Rulebook. Extract distinct game concepts and their mechanics.
-            Define the concept, then isolate the IF (Premise) and THEN (Implication) logic.
-            """
+            system_instruction = SYSTEM_PROMPT_RULES
+        elif category in ["classes"]:
+            target_schema = ClassLogic
+            system_instruction = SYSTEM_PROMPT_CLASS
         else:
             raise ValueError(f"Unknown category: {category}")
 

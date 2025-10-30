@@ -6,7 +6,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Tuple, Dict, Any
 
 # Add project root directory to path
 project_root = Path(__file__).parent.parent.parent
@@ -17,10 +17,10 @@ from src.rulerag.ingest_pipeline import IngestPipeline
 # Configure paths (relative to project root)
 INPUT_BASE = project_root / "data" / "rules" / "dnd_5e_data"
 OUTPUT_BASE = project_root / "data" / "rules" / "kb"
-CATEGORIES = ["spells", "features", "conditions", "rule-sections"]
+CATEGORIES = ["spells", "features", "conditions", "rule-sections", "classes"]
 
 # Concurrency limit
-CONCURRENCY_LIMIT = 20
+CONCURRENCY_LIMIT = 30
 
 
 def extract_text_from_json(data: dict, category: str) -> str:
@@ -45,6 +45,78 @@ def extract_text_from_json(data: dict, category: str) -> str:
         return desc_text
     else:
         return ""
+
+
+def build_class_payload(class_file: Path, base_data: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Build a rich payload for class data by merging:
+    - top-level class JSON (e.g. classes/wizard.json)
+    - optional aggregated levels.json under classes/{class_name}/levels.json
+    - all per-level JSON files under classes/{class_name}/levels/*.json
+    - any additional helper JSONs under the class folder (e.g. spellcasting.json, spells.json, fighter.json)
+    """
+    class_name = base_data.get("name") or class_file.stem
+    class_index = base_data.get("index", class_file.stem)
+
+    class_dir = class_file.parent / class_file.stem  # e.g. classes/wizard.json -> classes/wizard/
+
+    payload: Dict[str, Any] = {
+        "class_name": class_name,
+        "class_index": class_index,
+        "class_data": base_data,
+    }
+
+    if not class_dir.exists():
+        # No extra files; just return base payload
+        return payload
+
+    # 1) Aggregated levels.json (if present)
+    levels_overview_path = class_dir / "levels.json"
+    if levels_overview_path.exists():
+        try:
+            with open(levels_overview_path, "r", encoding="utf-8") as f:
+                payload["levels_overview"] = json.load(f)
+        except Exception as e:
+            print(f"[WARN] Failed to load {levels_overview_path.name} for {class_name}: {e}")
+
+    # 2) All per-level JSON files under levels/
+    levels_dir = class_dir / "levels"
+    if levels_dir.exists() and levels_dir.is_dir():
+        level_entries: List[Dict[str, Any]] = []
+
+        def _level_sort_key(p: Path) -> Any:
+            # Prefer numeric ordering if filename is a number, otherwise lexical
+            stem = p.stem
+            return int(stem) if stem.isdigit() else stem
+
+        for level_file in sorted(levels_dir.glob("*.json"), key=_level_sort_key):
+            try:
+                with open(level_file, "r", encoding="utf-8") as f:
+                    level_entries.append(json.load(f))
+            except Exception as e:
+                print(f"[WARN] Failed to load level file {level_file}: {e}")
+
+        if level_entries:
+            payload["levels"] = level_entries
+
+    # 3) Any other helpful JSONs directly under the class directory
+    #    e.g. wizard/spellcasting.json, wizard/spells.json, fighter/fighter.json, etc.
+    extra_files: Dict[str, Any] = {}
+    for extra_path in class_dir.glob("*.json"):
+        # Skip files we've already explicitly handled
+        if extra_path.name in {"levels.json"}:
+            continue
+
+        try:
+            with open(extra_path, "r", encoding="utf-8") as f:
+                extra_files[extra_path.stem] = json.load(f)
+        except Exception as e:
+            print(f"[WARN] Failed to load extra class file {extra_path}: {e}")
+
+    if extra_files:
+        payload["extra"] = extra_files
+
+    return payload
 
 
 def split_markdown_by_headers(text: str) -> List[Tuple[str, str]]:
@@ -116,8 +188,16 @@ async def process_file_async(
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Extract text
-        text = extract_text_from_json(data, category)
+        # Extract text / build payload
+        if category == "classes":
+            # For classes, build a merged payload that includes
+            # top-level class data + all level JSONs + aggregated levels.json etc.
+            merged = build_class_payload(file_path, data)
+            # Send as JSON string so the class prompt can see the full structure,
+            # including level progression table information.
+            text = json.dumps(merged, ensure_ascii=False)
+        else:
+            text = extract_text_from_json(data, category)
         if not text.strip():
             print(f"[SKIP] {file_path.name}: No text content")
             return "no_content"
