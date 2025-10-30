@@ -66,10 +66,13 @@ class DungeonMasterOrchestrator:
             return "continue"
         return "end"
 
-    def process_turn(self, player_action: str, current_state: dict) -> Dict[str, Any]:
+    def process_turn(self, player_action: str, current_state: dict, history: List[BaseMessage] = None) -> Dict[str, Any]:
         """
         Process a single turn of the game.
         """
+        if history is None:
+            history = []
+            
         # Format current state for the agent
         context_str = str(current_state.get("context", "No context provided"))
         rule_outcome_str = str(current_state.get("rule_outcome", "No rule outcome provided"))
@@ -84,21 +87,26 @@ class DungeonMasterOrchestrator:
         )
 
         # 1. Construct messages
-        # We start with a SystemMessage containing the state context, followed by the Player's action
-        messages = [
-            SystemMessage(content=system_context),
-            HumanMessage(content=player_action)
-        ]
+        # We start with existing history
+        messages = list(history)
+        
+        # Add dynamic system context
+        # We append it. The GeminiAgent will merge it.
+        messages.append(SystemMessage(content=system_context))
+        
+        # Add player action
+        messages.append(HumanMessage(content=player_action))
         
         # 2. Run the graph
         final_state = self.app.invoke({"messages": messages})
         
         # 3. Extract final response
-        last_message = final_state["messages"][-1]
+        final_messages = final_state["messages"]
+        last_message = final_messages[-1]
         narrative_text = last_message.content
 
         return {
             "narrative": narrative_text,
             "world_updates": {}, 
-            "debug_messages": [m.content for m in final_state["messages"]]
+            "messages": final_messages
         }
