@@ -59,7 +59,7 @@ class RuleBookChunk(BaseModel):
     source_chapter: str
     extracted_concepts: List[ExtractedConcept]
 
-class IngestPipeline:
+class RuleGenerationPipeline:
     """
     Pipeline for ingesting raw text rules and converting them into structured JSON
     for the RuleRAG system.

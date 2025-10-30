@@ -12,7 +12,7 @@ from typing import List, Tuple, Dict, Any
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from src.rulerag.ingest_pipeline import IngestPipeline
+from src.rulerag.rule_generation_pipeline import RuleGenerationPipeline
 
 # Configure paths (relative to project root)
 INPUT_BASE = project_root / "data" / "rules" / "dnd_5e_data"
@@ -161,7 +161,7 @@ def split_markdown_by_headers(text: str) -> List[Tuple[str, str]]:
 
 
 async def process_file_async(
-    pipeline: IngestPipeline,
+    pipeline: RuleGenerationPipeline,
     file_path: Path,
     category: str,
     output_dir: Path,
@@ -254,7 +254,7 @@ async def process_file_async(
 
 
 async def process_category(
-    pipeline: IngestPipeline,
+    pipeline: RuleGenerationPipeline,
     category: str,
     semaphore: asyncio.Semaphore,
     force_reprocess: bool = False
@@ -304,7 +304,7 @@ async def process_category(
 
 async def main(force_reprocess: bool = False):
     """Main function"""
-    pipeline = IngestPipeline()
+    pipeline = RuleGenerationPipeline()
     
     # Create semaphore to limit concurrency
     semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
