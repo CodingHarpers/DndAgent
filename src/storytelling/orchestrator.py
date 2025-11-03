@@ -77,7 +77,8 @@ class DungeonMasterOrchestrator:
         context_str = str(current_state.get("context", "No context provided"))
         rule_outcome_str = str(current_state.get("rule_outcome", "No rule outcome provided"))
         location = current_state.get("location", "Unknown Location")
-        
+        module_context = current_state.get("module_context", "")
+
         system_context = (
             f"Current State:\n"
             f"- Location: {location}\n"
@@ -90,8 +91,12 @@ class DungeonMasterOrchestrator:
         # We start with existing history
         messages = list(history)
         
+        # Add Module Context (Story + Maps) if available
+        # We add this as a System Message so the Agent considers it "Core Knowledge"
+        if module_context:
+            messages.append(SystemMessage(content=module_context))
+
         # Add dynamic system context
-        # We append it. The GeminiAgent will merge it.
         messages.append(SystemMessage(content=system_context))
         
         # Add player action

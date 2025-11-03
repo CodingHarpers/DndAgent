@@ -1,0 +1,43 @@
+# HALLOW'S END
+
+A DUNGEONS & DRAGONS 5E ADVENTURE MODULE
+
+## The Hallow Festival
+
+Hallow's Eve has always been a time for the dark creatures of the world to entertain themselves. It is not a coincidence that so many cultists and foul wizards choose to do their rituals at the end of the harvest season; with the arrival of the blood moon on Hallow's End, vile magics are heightened in its presence.
+
+Not all rituals are sinister however, as many pray for a bountiful harvest to come in the following year or pay a penance to survive the harshness of the cold winter to come. There are towns across the land who spend weeks preparing for a feast of crops and livestock that would not survive the winter. These festivals are filled with light, merriment, and good cheer throughout the land. Many fighting armies have been known to draw a truce on Hallow's End to break bread and feast with their enemies. Hallow's End can truly be a wonderful time for all, though our story depicts a terrifying time for a select few...
+
+This adventure module begins on the night of Hallow's End, just outside of the small city of Novegrad. This module uses the names of locales in my Homebrew world of Asterion, however, I will mention roughly equivalent sizes for you to replace names with cities appropriate to your campaign. Novegrad is a city roughly 20,000 people, spanning a diameter of 5 miles. It is a city of worship and trade being a crossroad between two nations.
+
+The city of Novegrad has been preparing for the Hallow Festival for weeks on end. While the field workers cart in crops, the city guards help the merchants line the city with decorations in the colors of orange and purple. Carved pumpkins of deities and comedic figures line shop windows, and tables are pulled from taverns around the great white flame in the center of town. Mothers and Fathers prepare sweets and pastries for the feast, while children run through the streets in masks of their favored folk heroes. The priests of the city gather juniper berries in mass quantities to turn the white flame a deep purple for the night of the festival. A smell of buttered beer and pecan pies overpowers the once acrid aroma of the city.
+
+As outsiders to this city, you are escorted from within the city walls to the outside of the city - bad luck to invite outside energies into the preparation of the harvest festival. You will be permitted to enter once the festival begins, and so showered with food and good company, that the time spent waiting outside the walls will be but a distant memory.
+
+## Outside the Walls
+
+As you sit on a stone bench outside the city gates, leaves fall from nearby trees in shades of red and yellow. They crunch beneath your feet as you sit, walk, and converse with your party members. A chilly wind sends a shiver down your spine as you feel the coming of winter nearing. A small wisp of mist coats the ground like fog on a morning lake.
+
+The sun passes mid-day as you pace the wall anxiously awaiting the gates to open for the start of the festival. The whistling on the wind is drowned only by the grumbling of your belly as you dream of the sweets and pastries that you will devour in the hours to come.
+
+In the distance from where the party sits are a gathering of small houses within a small forest of trees behind the un-gathered wheat in the fields. A DC 15 Perception Check reveals a small fire burning between the houses in the trees several hundred meters off. You inform that party of the oddity of seeing a fire in the distance, as they know that all members of the town were summoned inside the walls before their closing this morning.
+
+If the party goes to investigate, they are met by the following man and description as they walk across the wheat fields towards the houses, otherwise, the same man walks their way in an hour and greets them on the stone benches.
+
+A human male with balding black hair in farmer's garb and soil stained hands approaches the party while wiping the soil from his hands with a rag.
+"Well met travelers." says the man. "You look to be from out of town. Perhaps waiting on the festival to begin?"
+
+If questioned, the man's name is Tayror Grimlight. Tayror will ask the party about their business in town and if they have time to help him.
+
+The man shows his orange and red stained hands beneath the rag the wipes at the soil in between his fingers.
+"Our little hamlet makes the finest pumpkin and beet candy you've ever tasted. We've got the fire roaring getting the sweets to temperature now! I came looking to see if any guards or other farmhands weren't busy so they could lend a hand lifting the cauldron up onto my wagon. It's dangerous stuff molten beet sugar-always better to be safe than sorry! If you aren't busy, maybe you wouldn't mind helping me load the wagon for the festival?"
+
+A DC 20 Insight Check reveals that the man speaks in a manner more befitting a merchant or clergyman than any farmhand that the party has conversed with before.
+
+If the party agrees to help the man, they will walk with him along the wheat fields towards the small houses in the forest. During their walks, the man speaks of the great lights in the festival and the sweets that they plan to bring along for judgement in local candy competitions.
+
+Location 1: The Clearing
+After walking with the man further into the forest and nearing the houses, you come to a small clearing in the trees. An axe rests buried in a tree stump with a small wheelbarrow nearby. The wooden houses look old and covered in moss. The windows are so covered in dust that you can hardly see inside them.
+
+(Story continues with encounters with Hallow Cultists, Gourdlings, Shambling Harvesters, Zombies, and The Harvest Pumpkin as described in the module).
+

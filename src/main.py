@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 from typing import List
 from langchain_core.messages import BaseMessage, SystemMessage, AIMessage, HumanMessage
 
@@ -15,11 +16,39 @@ class ArcanaSystem:
         # Initialize sub-systems
         self.memory = MemoryRouter(vector_store=None, graph_store=None)
         self.rules_lawyer = RulesLawyer()
+        
+        # Load Module Context
+        self.module_context = self._load_module_context()
+        
         self.storyteller = DungeonMasterOrchestrator(
             memory_router=self.memory, 
             rules_lawyer=self.rules_lawyer
         )
         self.chat_history: List[BaseMessage] = []
+
+    def _load_module_context(self) -> str:
+        """
+        Loads the adventure module text and map references.
+        """
+        try:
+            with open("data/story/hallows_end.txt", "r") as f:
+                story_text = f.read()
+        except FileNotFoundError:
+            story_text = "No module loaded."
+
+        # List maps
+        map_files = []
+        map_dir = "data/story/Map Files"
+        if os.path.exists(map_dir):
+            map_files = os.listdir(map_dir)
+        
+        map_info = "\n".join([f"- {m}" for m in map_files])
+        
+        return (
+            f"ADVENTURE MODULE: Hallow's End\n"
+            f"AVAILABLE MAPS (in {map_dir}):\n{map_info}\n\n"
+            f"MODULE CONTENT:\n{story_text}\n"
+        )
 
     def game_loop(self, player_input: str, current_state: dict):
         """
@@ -30,59 +59,41 @@ class ArcanaSystem:
         # 1. Retrieve Context (Memory Module)
         # Fetch relevant past events (episodic) and world facts (semantic)
         context = self.memory.retrieve_context(player_input)
-        print(f"[*] Memory Context Retrieved: {context}")
-
+        
         # 2. Adjudicate Rules (RuleRAG Module)
-        # Determine if the action needs a dice roll or rule check
-        # For simplicity, we assume a dummy rule check here
         rule_check = self.rules_lawyer.adjudicate(
             action_intent=player_input, 
             rule_json={"difficulty_class": 10, "success_outcome": "Action succeeds"}, 
             die_roll=15 # Mock roll
         )
-        print(f"[*] Rule Adjudication: {rule_check}")
 
         # 3. Generate Narrative (Storytelling Module)
-        # The orchestrator uses the context and rule outcome to generate the story
+        # Inject Module Context into the current state or history for this turn
         narrative_response = self.storyteller.process_turn(
             player_action=player_input,
-            current_state={**current_state, "context": context, "rule_outcome": rule_check},
+            current_state={
+                **current_state, 
+                "context": context, 
+                "rule_outcome": rule_check,
+                "module_context": self.module_context # Pass this to orchestrator
+            },
             history=self.chat_history
         )
         
-        # Update history
-        # We need to filter out the duplicate SystemMessages we injected transiently.
-        # But 'process_turn' returns the FULL list used in that execution?
-        # My process_turn implementation returns `final_state["messages"]`.
-        # LangGraph appends new messages.
-        
-        # The input messages were [History] + [SystemContext] + [Human].
-        # The output messages are [History] + [SystemContext] + [Human] + [AIMessage] (+ ToolMessages).
-        
-        # We want to persist [Human] + [AIMessage] (+ ToolMessages) into self.chat_history.
-        # And we want to discard [SystemContext].
-        
-        # Let's see:
+        # Update history logic...
         new_messages = narrative_response["messages"]
-        
-        # We know the start of the list matches our input history.
-        # We can just take the slice from len(self.chat_history) onwards.
-        
         delta_messages = new_messages[len(self.chat_history):]
         
-        # Filter out the SystemMessage we added (it was the first one in the delta)
         filtered_delta = []
         for m in delta_messages:
-            # We assume the only SystemMessage in delta is the one we added at index 0 of delta.
-            # But let's be safe.
-            if isinstance(m, SystemMessage) and "Current State" in str(m.content):
+            # Filter out SystemMessages that are just context injections
+            if isinstance(m, SystemMessage):
                 continue
             filtered_delta.append(m)
             
         self.chat_history.extend(filtered_delta)
         
-        # 4. Merge Logic (Merging narrative "Fluff" with game "Crunch")
-        # Combine the creative output with the strict rule outcome
+        # 4. Merge Logic
         final_output = self._merge_outputs(narrative_response, rule_check, context)
         
         return final_output
@@ -108,14 +119,18 @@ if __name__ == "__main__":
     system = ArcanaSystem()
     
     # Mock initial state
-    current_state = {"location": "Dark Dungeon", "hp": 20}
+    current_state = {"location": "Outside Novegrad", "hp": 20}
     
     print("\n=== Welcome to A.R.C.A.N.A. ===")
     print("Initializing game session...\n")
     
     # Initial Prompt to start the game
-    # We pretend the user said "Start Game" to kick off the intro
-    initial_response = system.game_loop("Start Game. Please introduce the setting and ask me to create a character.", current_state)
+    initial_response = system.game_loop(
+        "Start Game. Use the loaded Adventure Module 'Hallow's End'. "
+        "Introduce the setting based on the module's 'Outside the Walls' section. "
+        "Then ask me to create a character.", 
+        current_state
+    )
     print(f"\nDM: {initial_response['narrative']}\n")
     
     while True:
