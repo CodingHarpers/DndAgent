@@ -6,11 +6,16 @@ authors = ["Coding Harpers"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-langgraph = "^0.0.10"
+langgraph = "^0.2.0"
 autogen = "^0.2.0"
 neo4j = "^5.10.0"
 weaviate-client = "^3.24.1"
 redis = "^5.0.0"
+langchain-core = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain = "^0.3.0"
+google-genai = "^0.3.0"
+python-dotenv = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage, BaseMessage
 from langchain_core.runnables import Runnable, RunnableConfig
 from langchain_core.tools import BaseTool
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.runnables import RunnableLambda
 
 # New Google Gen AI SDK
 from google import genai
@@ -153,12 +155,8 @@ class AgentFactory:
         """
         agent = GeminiAgent(model_name=model_name, tools=tools)
 
+        # We keep the prompt template minimal now as the System Prompt is dynamically injected
         prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are the Dungeon Master (DM) for a D&D 5e game. "
-                       "Your goal is to narrate the story, describe the environment, and respond to player actions. "
-                       "You have access to tools to look up memory/context and check rules. "
-                       "ALWAYS check rules for combat or risky actions. "
-                       "ALWAYS check memory if the player references past events or NPCs you don't recall immediately."),
             MessagesPlaceholder(variable_name="messages"),
         ])
 
@@ -170,6 +168,3 @@ class AgentFactory:
             return agent.invoke({"messages": messages})
 
         return RunnableLambda(agent_chain)
-
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.runnables import RunnableLambda
