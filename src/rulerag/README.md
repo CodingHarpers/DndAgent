@@ -1,3 +1,69 @@
-# WorkFlow
+## Preparation
+Use preprocessed kb files, or
 1. deploy dnd api and run `download_data.py`.
 2. run `process_kb.py` to parse raw api content to rule knowledge base.
+## ingested file example
+```
+Name: Fighter
+Description: The Fighter class focuses on mastery of combat, granting powerful martial abilities and a high number of attacks. Fighters gain a d10 Hit Die, proficiency in all armor, shields, simple and martial weapons, and Strength and Constitution saving throws. They choose two skills from a specific list. Their progression involves gaining Fighting Styles, Action Surges for extra actions, the ability to reroll failed saves with Indomitable, and multiple opportunities for Extra Attack, allowing them to make up to three attacks per action. They also select a Martial Archetype at level 3, which grants additional features at levels 3, 7, 10, 15, and 18, specializing their combat style. Fighters receive numerous Ability Score Improvements throughout their career.
+--- Rules ---
+Logic: IF Class Selected is Fighter (Character Creation) THEN Hit Die is d10 AND Grant Proficiency: All Armor, Shields, Simple Weapons, Martial Weapons, Saving Throw: STR, Saving Throw: CON AND Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
+Keywords: starting stats, fighter hp, fighter proficiencies, armor proficiency, weapon proficiency, saving throws
+Logic: IF Class Level == 1 (Reach Level 1) THEN Set Proficiency Bonus to 2
+Keywords: proficiency modifier, prof bonus, level 1 stats
+Logic: IF Class Level == 1 (Reach Level 1) THEN Gain Feature: Fighting Style AND Gain Feature: Second Wind
+Keywords: level 1 fighter, starting features, fighting style choice
+Logic: IF Class Level == 2 (Reach Level 2) THEN Set Max Action Surges to 1
+Keywords: action surge uses, fighter action
+Logic: IF Class Level == 2 (Reach Level 2) THEN Gain Feature: Action Surge (1 use)
+Keywords: level 2 fighter, action surge uses, extra action
+Logic: IF Class Level == 3 (Reach Level 3) THEN Gain Feature: Martial Archetype
+Keywords: level 3 fighter, subclass, fighter archetype
+Logic: IF Class Level == 4 (Reach Level 4) THEN Gain Feature: Ability Score Improvement
+Keywords: level 4 fighter, asi, ability scores
+Logic: IF Class Level == 5 (Reach Level 5) THEN Set Proficiency Bonus to 3 AND Set Number of Extra Attacks to 1
+Keywords: proficiency modifier, prof bonus, extra attack count
+Logic: IF Class Level == 5 (Reach Level 5) THEN Gain Feature: Extra Attack
+Keywords: level 5 fighter, multiple attacks
+Logic: IF Class Level == 6 (Reach Level 6) THEN Gain Feature: Ability Score Improvement
+Keywords: level 6 fighter, asi, ability scores
+Logic: IF Class Level == 7 (Reach Level 7) THEN Gain Feature: Martial Archetype feature
+Keywords: level 7 fighter, subclass feature
+Logic: IF Class Level == 8 (Reach Level 8) THEN Gain Feature: Ability Score Improvement
+Keywords: level 8 fighter, asi, ability scores
+Logic: IF Class Level == 9 (Reach Level 9) THEN Set Proficiency Bonus to 4 AND Set Max Indomitable Uses to 1
+Keywords: proficiency modifier, prof bonus, indomitable uses
+Logic: IF Class Level == 9 (Reach Level 9) THEN Gain Feature: Indomitable (1 use)
+Keywords: level 9 fighter, reroll save
+Logic: IF Class Level == 10 (Reach Level 10) THEN Gain Feature: Martial Archetype feature
+Keywords: level 10 fighter, subclass feature
+Logic: IF Class Level == 11 (Reach Level 11) THEN Set Number of Extra Attacks to 2
+Keywords: extra attack count, more attacks
+Logic: IF Class Level == 11 (Reach Level 11) THEN Gain Feature: Extra Attack (2)
+Keywords: level 11 fighter, multiple attacks
+Logic: IF Class Level == 12 (Reach Level 12) THEN Gain Feature: Ability Score Improvement
+Keywords: level 12 fighter, asi, ability scores
+Logic: IF Class Level == 13 (Reach Level 13) THEN Set Proficiency Bonus to 5 AND Set Max Indomitable Uses to 2
+Keywords: proficiency modifier, prof bonus, indomitable uses
+Logic: IF Class Level == 13 (Reach Level 13) THEN Gain Feature: Indomitable (2 uses)
+Keywords: level 13 fighter, reroll save
+Logic: IF Class Level == 14 (Reach Level 14) THEN Gain Feature: Ability Score Improvement
+Keywords: level 14 fighter, asi, ability scores
+Logic: IF Class Level == 15 (Reach Level 15) THEN Gain Feature: Martial Archetype feature
+Keywords: level 15 fighter, subclass feature
+Logic: IF Class Level == 16 (Reach Level 16) THEN Gain Feature: Ability Score Improvement
+Keywords: level 16 fighter, asi, ability scores
+Logic: IF Class Level == 17 (Reach Level 17) THEN Set Proficiency Bonus to 6 AND Set Max Action Surges to 2 AND Set Max Indomitable Uses to 3
+Keywords: proficiency modifier, prof bonus, action surge uses, indomitable uses
+Logic: IF Class Level == 17 (Reach Level 17) THEN Gain Feature: Action Surge (2 uses) AND Gain Feature: Indomitable (3 uses)
+Keywords: level 17 fighter, extra action, reroll save
+Logic: IF Class Level == 18 (Reach Level 18) THEN Gain Feature: Martial Archetype feature
+Keywords: level 18 fighter, subclass feature
+Logic: IF Class Level == 19 (Reach Level 19) THEN Gain Feature: Ability Score Improvement
+Keywords: level 19 fighter, asi, ability scores
+Logic: IF Class Level == 20 (Reach Level 20) THEN Set Number of Extra Attacks to 3
+Keywords: extra attack count, more attacks
+Logic: IF Class Level == 20 (Reach Level 20) THEN Gain Feature: Extra Attack (3)
+Keywords: level 20 fighter, capstone
+Tags: fighter class, fighter dnd, fighter levels, combatant, martial class
+```

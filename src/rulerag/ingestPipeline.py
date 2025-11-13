@@ -95,6 +95,7 @@ class UnifiedDndLoader:
                 # 2. Process each item in the list
                 for item in items_to_process:
                     if not isinstance(item, dict):
+                        print(f"[SKIP] {file_path.name}: Not a dictionary, skipping")
                         continue # Skip non-dictionary items
 
                     # Strategy routing
@@ -110,13 +111,13 @@ class UnifiedDndLoader:
                         
                     else:
                         # Neither rule nor entity, possibly metadata file, skip without error
-                        pass
+                        print(f"[SKIP] {file_path.name}: Neither rule nor entity, skipping")
 
             except Exception as e:
                 print(f"[Error] Failed to load {file_path}: {e}")
                 
         print(f"Successfully loaded {len(documents)} logic documents.")
-        print(documents[0])
+        # print(documents[0])
         return documents
 
 # Usage example
