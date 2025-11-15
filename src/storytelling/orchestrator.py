@@ -1,3 +1,4 @@
+import json
 from typing import TypedDict, Annotated, List, Dict, Any
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
@@ -18,7 +19,8 @@ class DungeonMasterOrchestrator:
         self.tool_factory = StorytellingTools(memory_router, rules_lawyer)
         self.tools = [
             self.tool_factory.retrieve_memory_tool(),
-            self.tool_factory.adjudicate_rule_tool()
+            self.tool_factory.adjudicate_rule_tool(),
+            self.tool_factory.dice_roll_tool() # Added dice tool
         ]
         
         # 2. Setup Agent
@@ -75,16 +77,38 @@ class DungeonMasterOrchestrator:
             
         # Format current state for the agent
         context_str = str(current_state.get("context", "No context provided"))
-        rule_outcome_str = str(current_state.get("rule_outcome", "No rule outcome provided"))
         location = current_state.get("location", "Unknown Location")
         module_context = current_state.get("module_context", "")
+        phase = current_state.get("phase", "in_game")
+        
+        # Dynamic Prompt based on Phase
+        if phase == "character_creation":
+            system_instruction = (
+                "GAME PHASE: CHARACTER CREATION\n"
+                "You are the Dungeon Master. Your current goal is to help the player create their character.\n"
+                "REQUIREMENTS:\n"
+                "1. Ask the player to choose their CLASS (Fighter or Wizard). ONLY ask for Class.\n"
+                "2. Do NOT ask for Race or Background at this time. Assume default Human if needed for narrative.\n"
+                "3. Once the player has chosen a Class (Fighter/Wizard), you MUST include the tag [CHARACTER_COMPLETE] in your response.\n"
+                "4. After [CHARACTER_COMPLETE], immediately transition to describing the setting (from the Module Context) and asking what they want to do.\n"
+            )
+        else:
+            system_instruction = (
+                "GAME PHASE: IN_GAME ADVENTURE\n"
+                "You are the Dungeon Master. Narrate the story based on the Module Context and player actions.\n"
+                "RULES:\n"
+                "1. If the player attempts an action with a chance of failure (attacking, climbing, persuading), you MUST use the `roll_die` tool.\n"
+                "2. After getting the die result, if you need to know if it succeeds according to strict rules, use `check_rule`.\n"
+                "3. If you provided numbered options (1., 2..), interpret simple number inputs as selecting those options.\n"
+                "4. Be robust to typos (e.g. 'file' -> 'fire').\n"
+            )
 
         system_context = (
+            f"{system_instruction}\n"
             f"Current State:\n"
             f"- Location: {location}\n"
             f"- Pre-retrieved Context: {context_str}\n"
-            f"- Pre-adjudicated Rule Outcome: {rule_outcome_str}\n"
-            f"You may use tools to fetch MORE details if needed, otherwise narrate the outcome."
+            f"You may use tools to fetch MORE details or ROLL DICE if needed."
         )
 
         # 1. Construct messages
@@ -92,7 +116,6 @@ class DungeonMasterOrchestrator:
         messages = list(history)
         
         # Add Module Context (Story + Maps) if available
-        # We add this as a System Message so the Agent considers it "Core Knowledge"
         if module_context:
             messages.append(SystemMessage(content=module_context))
 

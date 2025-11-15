@@ -23,8 +23,8 @@ class StorytellingTools:
 
     def adjudicate_rule_tool(self):
         @tool
-        def check_rule(action_desc: str, die_roll: int = 10) -> Dict[str, Any]:
-            """Check the rules for a specific action description. Returns outcome."""
+        def check_rule(action_desc: str, die_roll: int) -> Dict[str, Any]:
+            """Check the rules for a specific action description using a provided die roll result. Returns outcome."""
             # In a real app, we'd probably parse the action to find the right rule
             # For now, we mock the rule_json
             return self.rules.adjudicate(
@@ -34,3 +34,10 @@ class StorytellingTools:
             )
         return check_rule
 
+    def dice_roll_tool(self):
+        @tool
+        def roll_die(sides: int = 20) -> Dict[str, Any]:
+            """Roll a die (default d20) to determine the success of an action or event."""
+            result = self.rules.roll_die(sides)
+            return {"result": result, "sides": sides}
+        return roll_die
