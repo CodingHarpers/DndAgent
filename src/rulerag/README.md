@@ -2,7 +2,7 @@
 Use preprocessed kb files, or
 1. deploy dnd api and run `download_data.py`.
 2. run `process_kb.py` to parse raw api content to rule knowledge base.
-## ingested file example
+## ingested file example (optimzed for searching)
 ```
 Name: Fighter
 Description: The Fighter class focuses on mastery of combat, granting powerful martial abilities and a high number of attacks. Fighters gain a d10 Hit Die, proficiency in all armor, shields, simple and martial weapons, and Strength and Constitution saving throws. They choose two skills from a specific list. Their progression involves gaining Fighting Styles, Action Surges for extra actions, the ability to reroll failed saves with Indomitable, and multiple opportunities for Extra Attack, allowing them to make up to three attacks per action. They also select a Martial Archetype at level 3, which grants additional features at levels 3, 7, 10, 15, and 18, specializing their combat style. Fighters receive numerous Ability Score Improvements throughout their career.

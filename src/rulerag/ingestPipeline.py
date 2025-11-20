@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict
 from langchain_core.documents import Document
 
 class UnifiedDndLoader:
@@ -62,7 +62,7 @@ class UnifiedDndLoader:
                 f"Rule Concept: {c_name} ({chapter} - {chunk_header})\n"
                 f"Type: {is_exc}\n"
                 f"Definition: {c_def}\n"
-                f"Raw Text: {r_desc}\n"
+                f"Description: {r_desc}\n"
                 f"Logic: IF {premise} THEN {implication}"
             )
             
