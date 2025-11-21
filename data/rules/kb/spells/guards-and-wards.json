@@ -1,0 +1,203 @@
+{
+  "entity_name": "Guards and Wards",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Spell is cast",
+      "outcome": "Creates a ward protecting up to 2,500 sq ft of floor space (20 ft tall), shaped as desired, possibly across multiple stories. Caster must walk into each contiguous area during casting.",
+      "related_search_terms": [
+        "warded area size",
+        "fortification area",
+        "spell coverage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster specifies individuals",
+      "outcome": "Specified individuals are unaffected by chosen effects of Guards and Wards.",
+      "related_search_terms": [
+        "friendly immunity",
+        "allies safe",
+        "exempt from spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster specifies a password",
+      "outcome": "Creature speaking the password aloud becomes immune to chosen effects of Guards and Wards.",
+      "related_search_terms": [
+        "password protection",
+        "secret phrase",
+        "bypass ward"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters warded corridor",
+      "condition": "Corridor is within the warded area",
+      "outcome": "Corridor becomes heavily obscured by fog.",
+      "related_search_terms": [
+        "heavy fog",
+        "obscured vision",
+        "corridor effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature (not caster) reaches intersection or branching passage in warded corridor",
+      "condition": "Creature is not the caster AND passage is within the warded area",
+      "outcome": "There is a 50% chance the creature believes it is going in the opposite direction from the one it chooses.",
+      "related_search_terms": [
+        "directional confusion",
+        "lost in maze",
+        "disorientation trap"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "All doors within the warded area",
+      "condition": "Door is within the warded area",
+      "outcome": "Door is magically locked, as if sealed by an arcane lock spell.",
+      "related_search_terms": [
+        "locked doors",
+        "arcane lock effect",
+        "door security"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster designates up to ten doors",
+      "condition": "Door is within the warded area AND chosen by caster",
+      "outcome": "Chosen door appears as a plain section of wall (equivalent to Minor Illusion's illusory object function).",
+      "related_search_terms": [
+        "hidden door",
+        "secret passage illusion",
+        "disguised entrance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "All stairs within the warded area",
+      "condition": "Stairs are within the warded area",
+      "outcome": "Stairs are filled with webs from top to bottom (as per web spell). These webs regrow in 10 minutes if burned or torn away while Guards and Wards lasts.",
+      "related_search_terms": [
+        "web trap",
+        "difficult terrain",
+        "restraining webs",
+        "regenerating obstacle"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses 'Dancing Lights' option",
+      "condition": "Four corridors are within the warded area",
+      "outcome": "Dancing Lights are placed in four corridors, following a simple designated program.",
+      "related_search_terms": [
+        "light control",
+        "movement illusion",
+        "distraction lights"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses 'Magic Mouth' option",
+      "condition": "Caster designates two locations within the warded area",
+      "outcome": "Magic Mouth is placed in two designated locations.",
+      "related_search_terms": [
+        "alarm spell",
+        "spoken message",
+        "warded communication"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses 'Stinking Cloud' option",
+      "condition": "Caster designates two locations within the warded area",
+      "outcome": "Stinking Cloud vapors appear in two designated locations. Vapors return within 10 minutes if dispersed by wind.",
+      "related_search_terms": [
+        "poison gas",
+        "area of effect debuff",
+        "persistent cloud",
+        "regenerating gas"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses 'Gust of Wind' option",
+      "condition": "Caster designates one corridor or room within the warded area",
+      "outcome": "A constant Gust of Wind effect is placed in one designated corridor or room.",
+      "related_search_terms": [
+        "pushing wind",
+        "difficult movement",
+        "ranged attack disruption"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses 'Suggestion' option",
+      "condition": "Caster designates one 5-foot square area within the warded area",
+      "outcome": "Any creature entering or passing through the designated area receives a mental suggestion.",
+      "related_search_terms": [
+        "mind control trap",
+        "compulsion effect",
+        "mental command"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magic detection check on warded area",
+      "condition": "Warded area exists",
+      "outcome": "The entire warded area radiates magic.",
+      "related_search_terms": [
+        "detect magic",
+        "magical presence",
+        "aura of magic"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Dispel Magic cast on an effect of Guards and Wards",
+      "condition": "Dispel Magic is successful on a specific effect",
+      "outcome": "Only that specific effect is removed; the entire spell is not dispelled.",
+      "related_search_terms": [
+        "dispel single effect",
+        "partial dispelling",
+        "breaking wards"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster casts Guards and Wards daily for one year",
+      "condition": "Spell cast daily in the same structure for one year",
+      "outcome": "The structure becomes permanently guarded and warded.",
+      "related_search_terms": [
+        "permanent spell",
+        "long-term ward",
+        "indefinite effect"
+      ]
+    }
+  ],
+  "description_text": "You create a ward that protects up to 2,500 square feet of floor space (an area 50 feet square, or one hundred 5-foot squares or twenty-five 10-foot squares). The warded area can be up to 20 feet tall, and shaped as you desire. You can ward several stories of a stronghold by dividing the area among them, as long as you can walk into each contiguous area while you are casting the spell.When you cast this spell, you can specify individuals that are unaffected by any or all of the effects that you choose. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.Guards and wards creates the following effects within the warded area.***Corridors.*** Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.***Doors.*** All doors in the warded area are magically locked, as if sealed by an arcane lock spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.***Stairs.*** Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.***Other Spell Effect.*** You can place your choice of one of the following magical effects within the warded area of the stronghold.- Place dancing lights in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.- Place magic mouth in two locations.- Place stinking cloud in two locations. The vapors appear in the places you designate; they return within 10 minutes if dispersed by wind while guards and wards lasts.- Place a constant gust of wind in one corridor or room.- Place a suggestion in one location. You select an area of up to 5 feet square, and any creature that enters or passes through the area receives the suggestion mentally.The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect.You can create a permanently guarded and warded structure by casting this spell there every day for one year.",
+  "tags": [
+    "Abjuration",
+    "Ritual",
+    "Area Control",
+    "Fortification",
+    "Defense",
+    "Trap",
+    "Long-term"
+  ],
+  "related_search_terms": [
+    "fortify stronghold",
+    "base defense spell",
+    "area denial",
+    "warding spell",
+    "security spell",
+    "castle protection",
+    "perimeter defense"
+  ]
+}

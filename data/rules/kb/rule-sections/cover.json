@@ -1,0 +1,243 @@
+[
+  {
+    "source_chapter": "Combat - Cover",
+    "extracted_concepts": [
+      {
+        "concept_name": "Half Cover",
+        "definition": "A defensive state where an obstacle blocks at least 50% of a target's body.",
+        "rule_logic": {
+          "premise": "Target is obstructed by object covering >= 50% of body",
+          "implication": "Grant +2 Bonus to AC AND +2 Bonus to Dexterity Saving Throws",
+          "exceptions": [],
+          "description_text": "A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.",
+          "is_exception": false,
+          "related_search_terms": [
+            "defense bonus",
+            "hiding behind wall",
+            "ac calculation",
+            "obstruction",
+            "partially covered",
+            "creature as cover"
+          ]
+        },
+        "related_keywords": [
+          "AC",
+          "Dexterity Saving Throw",
+          "Obstacle",
+          "Bonus"
+        ]
+      },
+      {
+        "concept_name": "Three-Quarters Cover",
+        "definition": "A defensive state where an obstacle blocks at least 75% of a target's body.",
+        "rule_logic": {
+          "premise": "Target is obstructed by object covering >= 75% of body",
+          "implication": "Grant +5 Bonus to AC AND +5 Bonus to Dexterity Saving Throws",
+          "exceptions": [],
+          "description_text": "A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
+          "is_exception": false,
+          "related_search_terms": [
+            "defense bonus",
+            "hiding behind thick wall",
+            "ac calculation",
+            "obstruction",
+            "mostly covered",
+            "arrow slit"
+          ]
+        },
+        "related_keywords": [
+          "AC",
+          "Dexterity Saving Throw",
+          "Obstacle",
+          "Bonus"
+        ]
+      },
+      {
+        "concept_name": "Full Cover",
+        "definition": "A defensive state where a target is completely concealed by an obstacle.",
+        "rule_logic": {
+          "premise": "Target is completely concealed by an obstacle",
+          "implication": "Target cannot be targeted directly by an attack or spell",
+          "exceptions": [],
+          "description_text": "A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cannot target",
+            "completely hidden",
+            "area of effect spell",
+            "unreachable target",
+            "total cover"
+          ]
+        },
+        "related_keywords": [
+          "Target",
+          "Attack",
+          "Spell",
+          "Obstacle",
+          "Area of Effect"
+        ]
+      },
+      {
+        "concept_name": "Determining Cover",
+        "definition": "The procedure for establishing if a target benefits from cover.",
+        "rule_logic": {
+          "premise": "A creature or object is between the attacker and the target",
+          "implication": "Draw a line from any corner of the attacker's space to any corner of the target's space. If one or two of those lines are blocked, the target has half cover. If three or four of those lines are blocked, the target has three-quarters cover.",
+          "exceptions": [],
+          "description_text": "To determine whether a target has cover against an attack or a spell, choose one corner of the attacker's space and one corner of the target's space. If a straight line between those two corners passes through or touches an object or another creature (including another enemy's creature) that would block the attack, the target has cover. Work out the amount of cover by using the same point of origin for both the attacker and the target. If you're making a melee attack, the points of origin must be within 5 feet of each other. If you're making a ranged attack, they can be any distance apart. If one or two of those lines are blocked, the target has half cover. If three or four of those lines are blocked, the target has three-quarters cover. A target with total cover (or full cover) is completely concealed by an obstacle and cannot be targeted directly by an attack or a spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how cover works",
+            "line of sight",
+            "line of effect",
+            "melee cover",
+            "ranged cover",
+            "calculating cover"
+          ]
+        },
+        "related_keywords": [
+          "Attacker",
+          "Target",
+          "Obstacle",
+          "Line of Sight",
+          "Melee Attack",
+          "Ranged Attack",
+          "Space"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "cover"
+  },
+  {
+    "source_chapter": "Combat - Cover",
+    "extracted_concepts": [
+      {
+        "concept_name": "Cover",
+        "definition": "A defensive state where obstacles provide protection against attacks and effects.",
+        "rule_logic": {
+          "premise": "An attack or other effect originates on the opposite side of an obstacle",
+          "implication": "The target can benefit from cover",
+          "exceptions": [],
+          "description_text": "A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how cover works",
+            "cover rules",
+            "when does cover apply",
+            "blocking line of sight"
+          ]
+        },
+        "related_keywords": [
+          "cover",
+          "defense",
+          "obstacle",
+          "protection"
+        ]
+      },
+      {
+        "concept_name": "Multiple Cover Sources",
+        "definition": "Rule for determining cover degree when a target is behind more than one cover-providing obstacle.",
+        "rule_logic": {
+          "premise": "A target is behind multiple sources of cover",
+          "implication": "Only the most protective degree of cover applies; degrees are not added together",
+          "exceptions": [],
+          "description_text": "If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together.",
+          "is_exception": true,
+          "related_search_terms": [
+            "stacking cover",
+            "cover overlap",
+            "multiple cover bonuses",
+            "which cover applies"
+          ]
+        },
+        "related_keywords": [
+          "cover",
+          "stacking",
+          "multiple",
+          "rules"
+        ]
+      },
+      {
+        "concept_name": "Half Cover",
+        "definition": "A defensive state where an obstacle blocks at least half of a target's body.",
+        "rule_logic": {
+          "premise": "Target is obstructed by an obstacle blocking at least half of its body (e.g., low wall, furniture, narrow tree, creature)",
+          "implication": "Grant +2 Bonus to AC AND +2 Bonus to Dexterity saving throws",
+          "exceptions": [],
+          "description_text": "A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.",
+          "is_exception": false,
+          "related_search_terms": [
+            "defense bonus",
+            "hiding behind wall",
+            "ac calculation",
+            "obstruction",
+            "creature cover"
+          ]
+        },
+        "related_keywords": [
+          "cover",
+          "half",
+          "AC",
+          "Dexterity",
+          "saving throw",
+          "bonus"
+        ]
+      },
+      {
+        "concept_name": "Three-Quarters Cover",
+        "definition": "A defensive state where an obstacle blocks about three-quarters of a target's body.",
+        "rule_logic": {
+          "premise": "Target is obstructed by an obstacle blocking about three-quarters of its body (e.g., portcullis, arrow slit, thick tree trunk)",
+          "implication": "Grant +5 Bonus to AC AND +5 Bonus to Dexterity saving throws",
+          "exceptions": [],
+          "description_text": "A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
+          "is_exception": false,
+          "related_search_terms": [
+            "three-quarter cover bonus",
+            "high cover",
+            "best cover",
+            "arrow slit cover"
+          ]
+        },
+        "related_keywords": [
+          "cover",
+          "three-quarters",
+          "AC",
+          "Dexterity",
+          "saving throw",
+          "bonus"
+        ]
+      },
+      {
+        "concept_name": "Total Cover",
+        "definition": "A defensive state where a target is completely concealed by an obstacle.",
+        "rule_logic": {
+          "premise": "Target is completely concealed by an obstacle",
+          "implication": "Target cannot be directly targeted by an attack OR a spell",
+          "exceptions": [
+            "Some spells can still reach such a target by including it in an area of effect."
+          ],
+          "description_text": "A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.",
+          "is_exception": false,
+          "related_search_terms": [
+            "total cover targeting",
+            "can't target hidden enemy",
+            "area of effect total cover",
+            "fully concealed"
+          ]
+        },
+        "related_keywords": [
+          "cover",
+          "total",
+          "targeting",
+          "concealed",
+          "attack",
+          "spell"
+        ]
+      }
+    ],
+    "_chunk_header": "Cover",
+    "_source_file": "cover"
+  }
+]

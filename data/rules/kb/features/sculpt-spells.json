@@ -1,0 +1,64 @@
+{
+  "entity_name": "Sculpt Spells",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On casting an evocation spell that affects other creatures",
+      "condition": "Creature is chosen by Sculpt Spells AND the spell requires a saving throw",
+      "outcome": "Chosen creature automatically succeeds on its saving throw against the spell",
+      "related_search_terms": [
+        "friendly fire protection",
+        "ally save",
+        "evocation save",
+        "auto pass save",
+        "avoid spell effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On casting an evocation spell that affects other creatures",
+      "condition": "Creature is chosen by Sculpt Spells AND the spell deals half damage on a successful saving throw",
+      "outcome": "Chosen creature takes no damage from the spell",
+      "related_search_terms": [
+        "friendly damage immunity",
+        "ally no damage",
+        "evocation protection",
+        "full damage immunity",
+        "avoid half damage"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "When using Sculpt Spells",
+      "condition": "N/A",
+      "outcome": "Can choose a number of creatures equal to 1 + the spell's level",
+      "related_search_terms": [
+        "number of targets",
+        "affected creatures limit",
+        "spell level scaling",
+        "choose allies",
+        "target count"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.",
+  "tags": [
+    "evocation",
+    "spellcasting",
+    "protection",
+    "saving_throw",
+    "damage_negation",
+    "area_of_effect_control",
+    "wizard_feature"
+  ],
+  "related_search_terms": [
+    "evocation wizard",
+    "friendly fire",
+    "avoid damage",
+    "area effect spells",
+    "AOE",
+    "selective spells",
+    "allies safety"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "entity_name": "Continual Flame",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster touches an object",
+      "outcome": "Touched object emits light equivalent to a torch",
+      "related_search_terms": [
+        "light source",
+        "illumination",
+        "magical light",
+        "permanent light"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Continual Flame is Active",
+      "condition": "N/A",
+      "outcome": "Effect produces no heat",
+      "related_search_terms": [
+        "cold flame",
+        "no fire damage",
+        "safe light"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Continual Flame is Active",
+      "condition": "N/A",
+      "outcome": "Effect consumes no oxygen",
+      "related_search_terms": [
+        "underwater light",
+        "suffocation",
+        "enclosed space"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Attempt to obscure Continual Flame",
+      "condition": "Physical object used to cover",
+      "outcome": "Effect can be covered or hidden",
+      "related_search_terms": [
+        "conceal light",
+        "hide flame",
+        "obscure illumination"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to extinguish Continual Flame",
+      "condition": "Application of smothering or quenching methods (e.g., water, lack of air)",
+      "outcome": "Effect cannot be smothered or quenched",
+      "related_search_terms": [
+        "unquenchable flame",
+        "extinguish light",
+        "put out"
+      ]
+    }
+  ],
+  "description_text": "A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A continual flame can be covered or hidden but not smothered or quenched.",
+  "tags": [
+    "Evocation",
+    "Light",
+    "Utility"
+  ],
+  "related_search_terms": [
+    "torchlight",
+    "permanent light",
+    "no heat",
+    "no oxygen",
+    "light spell",
+    "object enchantment"
+  ]
+}

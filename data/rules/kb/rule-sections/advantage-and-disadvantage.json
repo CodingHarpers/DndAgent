@@ -1,0 +1,258 @@
+[
+  {
+    "source_chapter": "Advantage and Disadvantage",
+    "extracted_concepts": [
+      {
+        "concept_name": "Advantage",
+        "definition": "A condition applied to a d20 roll (attack roll, ability check, or saving throw) that allows the player to roll two d20s and take the higher result.",
+        "rule_logic": {
+          "premise": "A character has advantage on a d20 roll",
+          "implication": "Roll two d20s and use the higher result",
+          "exceptions": [],
+          "description_text": "When you have advantage on a roll, you roll two d20s instead of one, and you use the higher result.",
+          "is_exception": false,
+          "related_search_terms": [
+            "roll with advantage",
+            "what does advantage do",
+            "how to roll advantage",
+            "advantage bonus"
+          ]
+        },
+        "related_keywords": [
+          "d20 roll",
+          "attack roll",
+          "ability check",
+          "saving throw",
+          "roll mechanic"
+        ]
+      },
+      {
+        "concept_name": "Disadvantage",
+        "definition": "A condition applied to a d20 roll (attack roll, ability check, or saving throw) that compels the player to roll two d20s and take the lower result.",
+        "rule_logic": {
+          "premise": "A character has disadvantage on a d20 roll",
+          "implication": "Roll two d20s and use the lower result",
+          "exceptions": [],
+          "description_text": "When you have disadvantage on a roll, you roll two d20s instead of one, and you use the lower result.",
+          "is_exception": false,
+          "related_search_terms": [
+            "roll with disadvantage",
+            "what does disadvantage do",
+            "how to roll disadvantage",
+            "disadvantage penalty"
+          ]
+        },
+        "related_keywords": [
+          "d20 roll",
+          "attack roll",
+          "ability check",
+          "saving throw",
+          "roll mechanic"
+        ]
+      },
+      {
+        "concept_name": "Multiple Advantage/Disadvantage Sources",
+        "definition": "The rule for how multiple sources of advantage or disadvantage interact on a single roll.",
+        "rule_logic": {
+          "premise": "Multiple circumstances grant advantage on a roll OR multiple circumstances impose disadvantage on a roll",
+          "implication": "You still only roll two d20s (one additional d20) for the roll",
+          "exceptions": [],
+          "description_text": "If multiple circumstances affect a roll and each one grants advantage or imposes disadvantage on it, you don't roll more than one additional d20. For example, if two favorable circumstances grant you advantage, you still roll only one additional d20. If two unfavorable circumstances impose disadvantage, you still roll only one additional d20.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stacking advantage",
+            "multiple disadvantage",
+            "more than one advantage",
+            "limit on d20 rolls"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "stacking rules",
+          "multiple effects"
+        ]
+      },
+      {
+        "concept_name": "Advantage and Disadvantage Cancellation",
+        "definition": "The rule governing how advantage and disadvantage interact when both are present on the same roll.",
+        "rule_logic": {
+          "premise": "A roll has both advantage and disadvantage (regardless of the number of sources for each)",
+          "implication": "They cancel each other out, and the roll is made normally (roll one d20)",
+          "exceptions": [],
+          "description_text": "If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20 normally. This is true even if multiple circumstances impose disadvantage and only one grants advantage, or vice versa. In such a situation, you have neither advantage nor disadvantage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "advantage disadvantage cancel",
+            "do advantage and disadvantage stack",
+            "what if I have both advantage and disadvantage",
+            "net advantage",
+            "how to cancel advantage"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "conflict resolution",
+          "net effect",
+          "roll mechanic"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "advantage-and-disadvantage"
+  },
+  {
+    "source_chapter": "Advantage and Disadvantage",
+    "extracted_concepts": [
+      {
+        "concept_name": "Advantage",
+        "definition": "A beneficial condition applied to an ability check, saving throw, or attack roll.",
+        "rule_logic": {
+          "premise": "Player has Advantage on an ability check, saving throw, or attack roll",
+          "implication": "Roll two d20s and use the higher result.",
+          "exceptions": [],
+          "description_text": "Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll. Use the higher of the two rolls if you have advantage...",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to roll with advantage",
+            "advantage rules",
+            "d20 advantage",
+            "what is advantage"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "saving throw",
+          "attack roll",
+          "d20",
+          "roll"
+        ]
+      },
+      {
+        "concept_name": "Disadvantage",
+        "definition": "A detrimental condition applied to an ability check, saving throw, or attack roll.",
+        "rule_logic": {
+          "premise": "Player has Disadvantage on an ability check, saving throw, or attack roll",
+          "implication": "Roll two d20s and use the lower result.",
+          "exceptions": [],
+          "description_text": "Sometimes a special ability or spell tells you that you have advantage or disadvantage on an ability check, a saving throw, or an attack roll. When that happens, you roll a second d20 when you make the roll... and use the lower roll if you have disadvantage. For example, if you have disadvantage and roll a 17 and a 5, you use the 5.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to roll with disadvantage",
+            "disadvantage rules",
+            "d20 disadvantage",
+            "what is disadvantage"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "saving throw",
+          "attack roll",
+          "d20",
+          "roll"
+        ]
+      },
+      {
+        "concept_name": "Multiple Advantage/Disadvantage Stacking",
+        "definition": "Rule for resolving a roll when multiple effects would grant advantage or impose disadvantage.",
+        "rule_logic": {
+          "premise": "Multiple game effects grant advantage on a single roll OR multiple game effects impose disadvantage on a single roll",
+          "implication": "Only one additional d20 is rolled (total of two d20s). The effect (advantage or disadvantage) is applied only once.",
+          "exceptions": [],
+          "description_text": "If multiple situations affect a roll and each one grants advantage or imposes disadvantage on it, you don't roll more than one additional d20. If two favorable situations grant advantage, for example, you still roll only one additional d20.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stacking advantage",
+            "multiple sources of advantage",
+            "multiple sources of disadvantage",
+            "how many d20s to roll"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "stacking",
+          "roll",
+          "d20"
+        ]
+      },
+      {
+        "concept_name": "Advantage/Disadvantage Cancellation",
+        "definition": "Rule for resolving a roll when it is subject to both advantage and disadvantage.",
+        "rule_logic": {
+          "premise": "A roll is subject to both Advantage AND Disadvantage, regardless of the number of sources for each.",
+          "implication": "The roll is made without either Advantage or Disadvantage (roll one d20 normally).",
+          "exceptions": [],
+          "description_text": "If circumstances cause a roll to have both advantage and disadvantage, you are considered to have neither of them, and you roll one d20. This is true even if multiple circumstances impose disadvantage and only one grants advantage or vice versa. In such a situation, you have neither advantage nor disadvantage.",
+          "is_exception": true,
+          "related_search_terms": [
+            "advantage disadvantage cancel",
+            "how to resolve both advantage and disadvantage",
+            "neither advantage nor disadvantage",
+            "do advantage and disadvantage cancel out"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "cancellation",
+          "roll",
+          "d20"
+        ]
+      },
+      {
+        "concept_name": "Rerolling with Advantage or Disadvantage",
+        "definition": "How abilities that allow rerolls interact with a roll made with advantage or disadvantage.",
+        "rule_logic": {
+          "premise": "Player has Advantage OR Disadvantage on a roll AND an ability allows rerolling a d20 (e.g., halfling's Lucky trait)",
+          "implication": "The player can reroll only one of the two d20s rolled, and chooses which one.",
+          "exceptions": [],
+          "description_text": "When you have advantage or disadvantage and something in the game, such as the halfling's Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. For example, if a halfling has advantage or disadvantage on an ability check and rolls a 1 and a 13, the halfling could use the Lucky trait to reroll the 1.",
+          "is_exception": false,
+          "related_search_terms": [
+            "reroll advantage",
+            "reroll disadvantage",
+            "lucky trait reroll",
+            "halfling lucky"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "reroll",
+          "lucky",
+          "halfling",
+          "d20"
+        ]
+      },
+      {
+        "concept_name": "Sources of Advantage/Disadvantage",
+        "definition": "Common origins for receiving advantage or disadvantage on a roll.",
+        "rule_logic": {
+          "premise": "N/A",
+          "implication": "Advantage or Disadvantage typically comes from special abilities, actions, spells, Inspiration, or the DM's discretion based on circumstances.",
+          "exceptions": [],
+          "description_text": "You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage. The GM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to get advantage",
+            "sources of disadvantage",
+            "dm discretion advantage",
+            "inspiration advantage"
+          ]
+        },
+        "related_keywords": [
+          "advantage",
+          "disadvantage",
+          "abilities",
+          "spells",
+          "inspiration",
+          "DM"
+        ]
+      }
+    ],
+    "_chunk_header": "Advantage and Disadvantage",
+    "_source_file": "advantage-and-disadvantage"
+  }
+]

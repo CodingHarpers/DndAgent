@@ -1,0 +1,1524 @@
+[
+  {
+    "source_chapter": "Using Each Ability",
+    "extracted_concepts": [
+      {
+        "concept_name": "Strength (STR)",
+        "definition": "Measures physical power, athletic training, and the extent to which you can exert raw physical force.",
+        "rule_logic": {
+          "premise": "Performing tasks requiring physical might or using heavy weapons",
+          "implication": "Strength modifier is added to attack rolls, damage rolls (melee weapons), Strength checks (e.g., Athletics), and Strength saving throws",
+          "exceptions": [],
+          "description_text": "Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force. A Strength check can model any attempt to lift, push, pull, or break something, to wrestle, or to otherwise apply brute force.",
+          "is_exception": false,
+          "related_search_terms": [
+            "strength checks",
+            "athletic feats",
+            "carrying capacity",
+            "lifting weight",
+            "melee damage",
+            "shoving",
+            "grappling"
+          ]
+        },
+        "related_keywords": [
+          "physical power",
+          "athletics",
+          "carrying capacity",
+          "melee attacks",
+          "grappling",
+          "shoving",
+          "saving throws"
+        ]
+      },
+      {
+        "concept_name": "Dexterity (DEX)",
+        "definition": "Measures agility, reflexes, and balance.",
+        "rule_logic": {
+          "premise": "Performing tasks requiring nimbleness, using ranged or finesse weapons, avoiding effects, or determining turn order",
+          "implication": "Dexterity modifier is added to attack rolls (ranged/finesse weapons), AC (if not wearing heavy armor), Initiative, Dexterity checks (e.g., Acrobatics, Stealth), and Dexterity saving throws",
+          "exceptions": [],
+          "description_text": "Dexterity measures agility, reflexes, and balance. A Dexterity check can model any attempt to move nimbly, avoid a fall, or sneak up on someone. Many ranged weapons and finesse melee weapons use Dexterity for attack and damage rolls.",
+          "is_exception": false,
+          "related_search_terms": [
+            "dexterity checks",
+            "initiative bonus",
+            "armor class",
+            "stealth check",
+            "acrobatics check",
+            "ranged attack bonus",
+            "finesse weapon damage"
+          ]
+        },
+        "related_keywords": [
+          "agility",
+          "reflexes",
+          "balance",
+          "stealth",
+          "acrobatics",
+          "ranged attacks",
+          "armor class",
+          "initiative",
+          "saving throws"
+        ]
+      },
+      {
+        "concept_name": "Constitution (CON)",
+        "definition": "Measures health, stamina, and vital force.",
+        "rule_logic": {
+          "premise": "Determining maximum hit points, maintaining concentration, or resisting poisons/diseases",
+          "implication": "Constitution modifier influences hit points, is added to Constitution saving throws, and is often used for checks to maintain concentration or resist harmful effects",
+          "exceptions": [],
+          "description_text": "Constitution measures health, stamina, and vital force. Constitution checks are uncommon, and no skills apply to Constitution. However, Constitution is vital for all adventurers, as it contributes to their hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "hit points",
+            "hp calculation",
+            "concentration save",
+            "poison resistance",
+            "disease resistance",
+            "constitution saves"
+          ]
+        },
+        "related_keywords": [
+          "health",
+          "stamina",
+          "hit points",
+          "vitality",
+          "endurance",
+          "concentration",
+          "saving throws"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (INT)",
+        "definition": "Measures mental acuity, accuracy of recall, and the ability to reason.",
+        "rule_logic": {
+          "premise": "Performing tasks requiring logic, memory, or arcane knowledge",
+          "implication": "Intelligence modifier is added to Intelligence checks (e.g., Arcana, History, Investigation) and Intelligence saving throws. It is also the spellcasting ability for certain classes.",
+          "exceptions": [],
+          "description_text": "Intelligence measures mental acuity, accuracy of recall, and the ability to reason. An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning.",
+          "is_exception": false,
+          "related_search_terms": [
+            "intelligence checks",
+            "arcana check",
+            "history check",
+            "investigation check",
+            "religion check",
+            "spellcasting ability",
+            "wizard spells"
+          ]
+        },
+        "related_keywords": [
+          "logic",
+          "reasoning",
+          "memory",
+          "knowledge",
+          "arcana",
+          "history",
+          "investigation",
+          "religion",
+          "spellcasting",
+          "saving throws"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (WIS)",
+        "definition": "Measures how attuned you are to the world around you and represents perceptiveness and intuition.",
+        "rule_logic": {
+          "premise": "Performing tasks requiring perception, insight, or resisting mental manipulation/magical effects",
+          "implication": "Wisdom modifier is added to Wisdom checks (e.g., Perception, Insight, Medicine, Survival) and Wisdom saving throws. It is also the spellcasting ability for certain classes.",
+          "exceptions": [],
+          "description_text": "Wisdom reflects how attuned you are to the world around you and represents perceptiveness and intuition. A Wisdom check might reflect an effort to read body language, understand someone's feelings, notice things, or care for an injured person.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wisdom checks",
+            "perception check",
+            "insight check",
+            "medicine check",
+            "survival check",
+            "animal handling check",
+            "sense motive",
+            "spellcasting ability",
+            "cleric spells",
+            "druid spells"
+          ]
+        },
+        "related_keywords": [
+          "perception",
+          "intuition",
+          "insight",
+          "survival",
+          "medicine",
+          "animal handling",
+          "discernment",
+          "spellcasting",
+          "saving throws"
+        ]
+      },
+      {
+        "concept_name": "Charisma (CHA)",
+        "definition": "Measures your ability to interact effectively with others. It includes such factors as confidence, eloquence, and a commanding presence.",
+        "rule_logic": {
+          "premise": "Performing tasks involving social interaction, persuasion, deception, or inspiring others",
+          "implication": "Charisma modifier is added to Charisma checks (e.g., Deception, Intimidation, Performance, Persuasion) and Charisma saving throws. It is also the spellcasting ability for certain classes.",
+          "exceptions": [],
+          "description_text": "Charisma measures your ability to interact effectively with others. It includes such factors as confidence, eloquence, and a commanding presence. A Charisma check might arise when you try to influence or entertain an eager audience, or when you attempt to bluff a guard or soothe a raging barbarian.",
+          "is_exception": false,
+          "related_search_terms": [
+            "charisma checks",
+            "deception check",
+            "intimidation check",
+            "performance check",
+            "persuasion check",
+            "social skills",
+            "spellcasting ability",
+            "sorcerer spells",
+            "bard spells",
+            "warlock spells",
+            "paladin spells"
+          ]
+        },
+        "related_keywords": [
+          "social interaction",
+          "persuasion",
+          "deception",
+          "intimidation",
+          "performance",
+          "confidence",
+          "eloquence",
+          "spellcasting",
+          "saving throws"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Using Each Ability - Introduction",
+    "extracted_concepts": [],
+    "_chunk_header": "Using Each Ability",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Strength - Ability Scores",
+    "extracted_concepts": [
+      {
+        "concept_name": "Strength (Ability Score)",
+        "definition": "A measure of bodily power, athletic training, and the extent of raw physical force a creature can exert.",
+        "rule_logic": {
+          "premise": "N/A",
+          "implication": "Determines capabilities in lifting, pushing, attacking with melee weapons, and certain skills like Athletics.",
+          "exceptions": [],
+          "description_text": "Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is strength",
+            "strength definition",
+            "ability score meaning"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Ability Score",
+          "Physical"
+        ]
+      },
+      {
+        "concept_name": "Strength Check",
+        "definition": "An attempt to apply brute physical force to a situation, or to perform tasks requiring raw power.",
+        "rule_logic": {
+          "premise": "Attempt to lift, push, pull, break something, force body through space, or apply brute force.",
+          "implication": "Requires a Strength ability check.",
+          "exceptions": [],
+          "description_text": "A Strength check can model any attempt to lift, push, pull, or break something, to force your body through a space, or to otherwise apply brute force to a situation.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to use strength check",
+            "strength challenges",
+            "brute force task",
+            "pushing things",
+            "breaking things"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Ability Check",
+          "Athletics",
+          "GM Ruling"
+        ]
+      },
+      {
+        "concept_name": "Strength (Athletics) Check",
+        "definition": "A specific type of Strength check that covers difficult situations involving climbing, jumping, or swimming.",
+        "rule_logic": {
+          "premise": "Attempting difficult climbing, jumping an unusually long distance or stunt, or struggling to swim in treacherous conditions.",
+          "implication": "Requires a Strength (Athletics) skill check.",
+          "exceptions": [],
+          "description_text": "Your Strength (Athletics) check covers difficult situations you encounter while climbing, jumping, or swimming. Examples include the following activities: You attempt to climb a sheer or slippery cliff, avoid hazards while scaling a wall, or cling to a surface while something is trying to knock you off. You try to jump an unusually long distance or pull off a stunt midjump. You struggle to swim or stay afloat in treacherous currents, storm-tossed waves, or areas of thick seaweed. Or another creature tries to push or pull you underwater or otherwise interfere with your swimming.",
+          "is_exception": false,
+          "related_search_terms": [
+            "athletics skill use",
+            "climbing check",
+            "swimming check",
+            "jumping check",
+            "athletics examples"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Athletics",
+          "Skill Check",
+          "Movement"
+        ]
+      },
+      {
+        "concept_name": "Strength Modifier to Melee Attack and Damage",
+        "definition": "The application of a creature's Strength modifier to attack and damage rolls when using a melee weapon.",
+        "rule_logic": {
+          "premise": "Attacking with a melee weapon (e.g., mace, battleaxe, javelin) or making a melee attack.",
+          "implication": "Add Strength modifier to attack roll AND add Strength modifier to damage roll.",
+          "exceptions": [],
+          "description_text": "You add your Strength modifier to your attack roll and your damage roll when attacking with a melee weapon such as a mace, a battleaxe, or a javelin. You use melee weapons to make melee attacks in hand-to-hand combat, and some of them can be thrown to make a ranged attack.",
+          "is_exception": false,
+          "related_search_terms": [
+            "strength to hit",
+            "strength to damage",
+            "melee weapon attack bonus",
+            "weapon damage modifier",
+            "javelin attack"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Combat",
+          "Attack Roll",
+          "Damage Roll",
+          "Melee Weapon"
+        ]
+      },
+      {
+        "concept_name": "Carrying Capacity",
+        "definition": "The maximum weight (in pounds) a creature can carry without penalty, determined by its Strength score.",
+        "rule_logic": {
+          "premise": "Calculating a creature's maximum carryable weight.",
+          "implication": "Carrying Capacity = Strength Score multiplied by 15.",
+          "exceptions": [
+            "Size and Strength rule applies if not Medium"
+          ],
+          "description_text": "Your carrying capacity is your Strength score multiplied by 15. This is the weight (in pounds) that you can carry, which is high enough that most characters don't usually have to worry about it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much can i carry",
+            "max weight limit",
+            "inventory weight",
+            "strength weight calculation"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Weight",
+          "Inventory",
+          "Encumbrance"
+        ]
+      },
+      {
+        "concept_name": "Push, Drag, or Lift Capacity",
+        "definition": "The maximum weight (in pounds) a creature can push, drag, or lift.",
+        "rule_logic": {
+          "premise": "Attempting to push, drag, or lift a weight.",
+          "implication": "Maximum weight (pounds) = twice Carrying Capacity (or 30 times Strength score). IF pushing or dragging weight exceeds Carrying Capacity, THEN speed drops to 5 feet.",
+          "exceptions": [
+            "Size and Strength rule applies if not Medium"
+          ],
+          "description_text": "You can push, drag, or lift a weight in pounds up to twice your carrying capacity (or 30 times your Strength score). While pushing or dragging weight in excess of your carrying capacity, your speed drops to 5 feet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much can i push",
+            "drag weight limit",
+            "lifting capacity",
+            "heavy object movement",
+            "speed penalty heavy load"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Weight",
+          "Movement",
+          "Speed Penalty",
+          "Encumbrance"
+        ]
+      },
+      {
+        "concept_name": "Size and Strength (Carrying/Lifting)",
+        "definition": "A rule that adjusts a creature's carrying, pushing, dragging, and lifting capacities based on its size category.",
+        "rule_logic": {
+          "premise": "Calculating carrying, pushing, dragging, or lifting capacity for a creature that is not Medium size.",
+          "implication": "IF creature is Tiny, THEN halve these weights. ELSE IF creature is for each size category above Medium, THEN double these weights.",
+          "exceptions": [],
+          "description_text": "Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above Medium, double the creature's carrying capacity and the amount it can push, drag, or lift. For a Tiny creature, halve these weights.",
+          "is_exception": false,
+          "related_search_terms": [
+            "tiny creature carry weight",
+            "large creature carrying capacity",
+            "size impact on strength",
+            "elephant carry limit",
+            "halfling carry weight"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Size",
+          "Carrying Capacity",
+          "Weight",
+          "Monster Rules"
+        ]
+      },
+      {
+        "concept_name": "Encumbered (Variant)",
+        "definition": "A variant rule condition where a character carries excessive weight, resulting in a speed penalty.",
+        "rule_logic": {
+          "premise": "Using the Variant: Encumbrance rules AND carrying weight in excess of 5 times Strength score.",
+          "implication": "Speed drops by 10 feet. (Ignore Strength column of Armor table for this variant).",
+          "exceptions": [],
+          "description_text": "If you carry weight in excess of 5 times your Strength score, you are encumbered, which means your speed drops by 10 feet.",
+          "is_exception": true,
+          "related_search_terms": [
+            "encumbrance rules",
+            "slowed by weight",
+            "variant rules carry",
+            "speed reduction weight"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Variant Rule",
+          "Encumbrance",
+          "Speed Penalty",
+          "Movement"
+        ]
+      },
+      {
+        "concept_name": "Heavily Encumbered (Variant)",
+        "definition": "A variant rule condition where a character carries a significantly excessive amount of weight, resulting in severe penalties.",
+        "rule_logic": {
+          "premise": "Using the Variant: Encumbrance rules AND carrying weight in excess of 10 times Strength score (up to maximum carrying capacity).",
+          "implication": "Speed drops by 20 feet AND suffer Disadvantage on Strength, Dexterity, and Constitution ability checks, attack rolls, and saving throws.",
+          "exceptions": [],
+          "description_text": "If you carry weight in excess of 10 times your Strength score, up to your maximum carrying capacity, you are instead heavily encumbered, which means your speed drops by 20 feet and you have disadvantage on ability checks, attack rolls, and saving throws that use Strength, Dexterity, or Constitution.",
+          "is_exception": true,
+          "related_search_terms": [
+            "heavily encumbered rules",
+            "disadvantage from weight",
+            "severely burdened",
+            "speed 20 feet",
+            "strength dex con disadvantage"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Variant Rule",
+          "Encumbrance",
+          "Speed Penalty",
+          "Disadvantage",
+          "Ability Checks",
+          "Attack Rolls",
+          "Saving Throws"
+        ]
+      }
+    ],
+    "_chunk_header": "Strength",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Dexterity",
+    "extracted_concepts": [
+      {
+        "concept_name": "Dexterity (Ability Score)",
+        "definition": "Dexterity measures agility, reflexes, and balance.",
+        "rule_logic": {
+          "premise": "General definition of Dexterity",
+          "implication": "Ability score representing agility, reflexes, and balance",
+          "exceptions": [],
+          "description_text": "Dexterity measures agility, reflexes, and balance.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is dexterity",
+            "dexterity meaning",
+            "agility stat"
+          ]
+        },
+        "related_keywords": [
+          "agility",
+          "reflexes",
+          "balance",
+          "ability score"
+        ]
+      },
+      {
+        "concept_name": "Dexterity Checks (General)",
+        "definition": "An attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing.",
+        "rule_logic": {
+          "premise": "Attempt to move nimbly, quickly, quietly, or maintain balance on tricky footing",
+          "implication": "Make a Dexterity check",
+          "exceptions": [],
+          "description_text": "A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to use dexterity check",
+            "dexterity skill check examples",
+            "dex check types"
+          ]
+        },
+        "related_keywords": [
+          "skill check",
+          "movement",
+          "balance",
+          "nimble",
+          "quick",
+          "quiet"
+        ]
+      },
+      {
+        "concept_name": "Dexterity (Acrobatics) Check",
+        "definition": "A Dexterity skill check used to stay on your feet in tricky situations or to perform acrobatic stunts.",
+        "rule_logic": {
+          "premise": "Attempt to stay on your feet in a tricky situation (e.g., ice, tightrope, rocking ship) OR perform acrobatic stunts (e.g., dives, rolls, somersaults, flips)",
+          "implication": "Make a Dexterity (Acrobatics) check",
+          "exceptions": [],
+          "description_text": "Your Dexterity (Acrobatics) check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship's deck. The GM might also call for a Dexterity (Acrobatics) check to see if you can perform acrobatic stunts, including dives, rolls, somersaults, and flips.",
+          "is_exception": false,
+          "related_search_terms": [
+            "acrobatics check examples",
+            "balancing check",
+            "stunt check",
+            "ice walking",
+            "tightrope"
+          ]
+        },
+        "related_keywords": [
+          "acrobatics",
+          "balance",
+          "stunts",
+          "movement",
+          "dexterity skill"
+        ]
+      },
+      {
+        "concept_name": "Dexterity (Sleight of Hand) Check",
+        "definition": "A Dexterity skill check used for acts of legerdemain or manual trickery.",
+        "rule_logic": {
+          "premise": "Attempt an act of legerdemain or manual trickery (e.g., planting something, concealing an object, lifting a coin purse, slipping an object)",
+          "implication": "Make a Dexterity (Sleight of Hand) check",
+          "exceptions": [],
+          "description_text": "Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Dexterity (Sleight of Hand) check. The GM might also call for a Dexterity (Sleight of Hand) check to determine whether you can lift a coin purse off another person or slip something out of another person's pocket.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sleight of hand examples",
+            "pickpocket check",
+            "concealing object",
+            "manual trickery"
+          ]
+        },
+        "related_keywords": [
+          "sleight of hand",
+          "trickery",
+          "stealing",
+          "concealment",
+          "dexterity skill"
+        ]
+      },
+      {
+        "concept_name": "Dexterity (Stealth) Check",
+        "definition": "A Dexterity skill check used to conceal oneself, slink past others, or sneak up without being noticed.",
+        "rule_logic": {
+          "premise": "Attempt to conceal self from enemies, slink past guards, slip away without being noticed, OR sneak up on someone without being seen or heard",
+          "implication": "Make a Dexterity (Stealth) check",
+          "exceptions": [],
+          "description_text": "Make a Dexterity (Stealth) check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stealth check rules",
+            "hiding check",
+            "sneaking check",
+            "avoiding detection"
+          ]
+        },
+        "related_keywords": [
+          "stealth",
+          "hiding",
+          "sneaking",
+          "concealment",
+          "dexterity skill"
+        ]
+      },
+      {
+        "concept_name": "Dexterity Modifier in Attack Rolls and Damage",
+        "definition": "The application of the Dexterity modifier to attack and damage rolls for ranged weapons or finesse melee weapons.",
+        "rule_logic": {
+          "premise": "Attacking with a ranged weapon OR attacking with a melee weapon that has the finesse property",
+          "implication": "Add Dexterity modifier to the attack roll AND to the damage roll",
+          "exceptions": [],
+          "description_text": "You add your Dexterity modifier to your attack roll and your damage roll when attacking with a ranged weapon, such as a sling or a longbow. You can also add your Dexterity modifier to your attack roll and your damage roll when attacking with a melee weapon that has the finesse property, such as a dagger or a rapier.",
+          "is_exception": false,
+          "related_search_terms": [
+            "dex to hit",
+            "dex to damage",
+            "ranged weapon damage",
+            "finesse weapon attack",
+            "bow damage"
+          ]
+        },
+        "related_keywords": [
+          "attack roll",
+          "damage roll",
+          "ranged weapon",
+          "finesse weapon",
+          "modifier"
+        ]
+      },
+      {
+        "concept_name": "Dexterity Modifier and Armor Class (AC)",
+        "definition": "The influence of a character's Dexterity modifier on their Armor Class, varying based on the type of armor worn.",
+        "rule_logic": {
+          "premise": "Character wears armor",
+          "implication": "Add some or all of the Dexterity modifier to Armor Class (AC), depending on the armor type",
+          "exceptions": [],
+          "description_text": "Depending on the armor you wear, you might add some or all of your Dexterity modifier to your Armor Class.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ac calculation dexterity",
+            "dex to ac",
+            "light armor ac",
+            "medium armor ac",
+            "heavy armor ac"
+          ]
+        },
+        "related_keywords": [
+          "armor class",
+          "AC",
+          "defense",
+          "armor type",
+          "modifier"
+        ]
+      },
+      {
+        "concept_name": "Initiative (Dexterity Check)",
+        "definition": "A Dexterity check made at the beginning of combat to determine the order in which creatures take their turns.",
+        "rule_logic": {
+          "premise": "Beginning of every combat",
+          "implication": "Roll initiative by making a Dexterity check; the result determines the order of creatures' turns in combat",
+          "exceptions": [],
+          "description_text": "At the beginning of every combat, you roll initiative by making a Dexterity check. Initiative determines the order of creatures' turns in combat.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to roll initiative",
+            "combat turn order",
+            "initiative modifier",
+            "dex for initiative"
+          ]
+        },
+        "related_keywords": [
+          "initiative",
+          "combat",
+          "turn order",
+          "dexterity check"
+        ]
+      },
+      {
+        "concept_name": "Hiding (General Rules)",
+        "definition": "The process of attempting to conceal oneself using a Dexterity (Stealth) check, contested by Wisdom (Perception) checks of searching creatures.",
+        "rule_logic": {
+          "premise": "GM determines circumstances are appropriate for hiding AND character attempts to hide",
+          "implication": "Make a Dexterity (Stealth) check. This check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence, until you are discovered or stop hiding.",
+          "exceptions": [
+            "Cannot hide from a creature that can see you clearly",
+            "Give away position if you make noise (e.g., shouting, knocking over vase)"
+          ],
+          "description_text": "The GM decides when circumstances are appropriate for hiding. When you try to hide, make a Dexterity (Stealth) check. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence. You can't hide from a creature that can see you clearly, and you give away your position if you make noise, such as shouting a warning or knocking over a vase.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to hide in dnd",
+            "stealth vs perception",
+            "hiding rules",
+            "can i hide if seen",
+            "noise while hiding"
+          ]
+        },
+        "related_keywords": [
+          "hiding",
+          "stealth",
+          "perception",
+          "concealment",
+          "line of sight",
+          "noise"
+        ]
+      },
+      {
+        "concept_name": "Hiding (Invisible Creatures)",
+        "definition": "Rules governing how invisible creatures can attempt to hide.",
+        "rule_logic": {
+          "premise": "Creature is invisible AND attempts to hide",
+          "implication": "Invisible creature can always try to hide; signs of its passage might still be noticed; must stay quiet",
+          "exceptions": [],
+          "description_text": "An invisible creature can always try to hide. Signs of its passage might still be noticed, and it does have to stay quiet.",
+          "is_exception": true,
+          "related_search_terms": [
+            "can invisible creatures hide",
+            "invisibility stealth",
+            "invisible hiding rules",
+            "noise invisibility"
+          ]
+        },
+        "related_keywords": [
+          "invisible",
+          "invisibility",
+          "hiding",
+          "stealth",
+          "noise"
+        ]
+      },
+      {
+        "concept_name": "Hiding (Combat Advantage)",
+        "definition": "Circumstances where a creature that was hidden and approaches a distracted target in combat can gain advantage on an attack.",
+        "rule_logic": {
+          "premise": "In combat AND GM allows hidden creature to stay hidden while approaching a distracted creature",
+          "implication": "Hidden creature gains advantage on an attack roll before being seen",
+          "exceptions": [],
+          "description_text": "In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature, it usually sees you. However, under certain circumstances, the GM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack roll before you are seen.",
+          "is_exception": true,
+          "related_search_terms": [
+            "hiding for advantage",
+            "surprise attack",
+            "combat stealth advantage",
+            "distracted enemy"
+          ]
+        },
+        "related_keywords": [
+          "hiding",
+          "combat",
+          "advantage",
+          "attack roll",
+          "distracted",
+          "surprise"
+        ]
+      },
+      {
+        "concept_name": "Passive Perception vs. Hiding",
+        "definition": "How creatures detect hidden individuals without actively searching, by comparing the hider's Dexterity (Stealth) check against the creature's passive Wisdom (Perception) score.",
+        "rule_logic": {
+          "premise": "Creature is hidden AND another creature is not actively searching for it",
+          "implication": "GM compares hidden creature's Dexterity (Stealth) check with the other creature's passive Wisdom (Perception) score (10 + Wisdom modifier + bonuses/penalties, +5 for advantage, -5 for disadvantage) to determine if it is noticed",
+          "exceptions": [],
+          "description_text": "When you hide, there's a chance someone will notice you even if they aren't searching. To determine whether such a creature notices you, the GM compares your Dexterity (Stealth) check with that creature's passive Wisdom (Perception) score, which equals 10 + the creature's Wisdom modifier, as well as any other bonuses or penalties. If the creature has advantage, add 5. For disadvantage, subtract 5. For example, if a 1st-level character (with a proficiency bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in Perception, he or she has a passive Wisdom (Perception) of 14.",
+          "is_exception": false,
+          "related_search_terms": [
+            "passive perception rules",
+            "how passive perception works",
+            "stealth vs passive perception",
+            "detecting hidden without searching"
+          ]
+        },
+        "related_keywords": [
+          "passive perception",
+          "stealth",
+          "perception",
+          "detection",
+          "hiding"
+        ]
+      },
+      {
+        "concept_name": "Line of Sight and Hiding (Obscurement)",
+        "definition": "The impact of visibility conditions (obscurement) on the ability to find hidden creatures or objects.",
+        "rule_logic": {
+          "premise": "Determining whether a hidden creature or object can be found",
+          "implication": "How well you can see in an area (e.g., lightly or heavily obscured) is a main factor",
+          "exceptions": [],
+          "description_text": "One of the main factors in determining whether you can find a hidden creature or object is how well you can see in an area, which might be lightly or heavily obscured, as explained in chapter 8, 'Adventuring.'",
+          "is_exception": false,
+          "related_search_terms": [
+            "hiding in darkness",
+            "obscured area stealth",
+            "visibility for hiding",
+            "line of sight hiding",
+            "heavily obscured hiding"
+          ]
+        },
+        "related_keywords": [
+          "line of sight",
+          "obscurement",
+          "visibility",
+          "hiding",
+          "detection",
+          "lightly obscured",
+          "heavily obscured"
+        ]
+      }
+    ],
+    "_chunk_header": "Dexterity",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Ability Scores - Constitution",
+    "extracted_concepts": [
+      {
+        "concept_name": "Constitution (Ability Score)",
+        "definition": "An ability score that measures a creature's health, stamina, and vital force.",
+        "rule_logic": {
+          "premise": "Considering a creature's Constitution ability score",
+          "implication": "The score represents its health, stamina, and vital force",
+          "exceptions": [],
+          "description_text": "Constitution measures health, stamina, and vital force.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what constitution means",
+            "con score purpose",
+            "vitality stat"
+          ]
+        },
+        "related_keywords": [
+          "ability score",
+          "health",
+          "stamina",
+          "vital force"
+        ]
+      },
+      {
+        "concept_name": "Constitution Check",
+        "definition": "An ability check called for by the GM to determine a character's capacity to endure physical hardship or push beyond normal limits, without applying any skills.",
+        "rule_logic": {
+          "premise": "GM calls for a check to model enduring physical hardship (e.g., holding breath, marching without rest, going without sleep, surviving without food/water, quaffing ale)",
+          "implication": "The character makes a Constitution check; no skills apply to this check",
+          "exceptions": [],
+          "description_text": "Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving a specific effort on the part of a character or monster. A Constitution check can model your attempt to push beyond normal limits, however. The GM might call for a Constitution check when you try to accomplish tasks like the following: - Hold your breath - March or labor for hours without rest - Go without sleep - Survive without food or water - Quaff an entire stein of ale in one go",
+          "is_exception": false,
+          "related_search_terms": [
+            "when do I make con check",
+            "constitution save vs check",
+            "endurance check",
+            "hold breath dnd",
+            "con check examples"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "endurance",
+          "physical hardship",
+          "GM discretion"
+        ]
+      },
+      {
+        "concept_name": "Hit Points (Constitution Modifier Contribution)",
+        "definition": "The rule detailing how a creature's Constitution modifier is added to its Hit Die rolls to determine its hit points.",
+        "rule_logic": {
+          "premise": "Calculating hit points or rolling a Hit Die for hit points",
+          "implication": "Add Constitution modifier to the result of each Hit Die roll",
+          "exceptions": [],
+          "description_text": "Your Constitution modifier contributes to your hit points. Typically, you add your Constitution modifier to each Hit Die you roll for your hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how con affects hp",
+            "hp calculation",
+            "hit die roll con mod",
+            "constitution bonus to hp"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "HP",
+          "Constitution modifier",
+          "Hit Die",
+          "health"
+        ]
+      },
+      {
+        "concept_name": "Hit Point Maximum Adjustment (Constitution Modifier Change)",
+        "definition": "A rule stating that if a creature's Constitution modifier changes, its hit point maximum is retroactively adjusted as if the new modifier had been applied from 1st level.",
+        "rule_logic": {
+          "premise": "A creature's Constitution modifier changes (e.g., due to level up, magical effect, condition)",
+          "implication": "Adjust the creature's total hit point maximum as though the new Constitution modifier had been applied to all previous Hit Die rolls from 1st level (effectively, the change in modifier times the current level)",
+          "exceptions": [],
+          "description_text": "If your Constitution modifier changes, your hit point maximum changes as well, as though you had the new modifier from 1st level. For example, if you raise your Constitution score when you reach 4th level and your Constitution modifier increases from +1 to +2, you adjust your hit point maximum as though the modifier had always been +2. So you add 3 hit points for your first three levels, and then roll your hit points for 4th level using your new modifier. Or if you're 7th level and some effect lowers your Constitution score so as to reduce your Constitution modifier by 1, your hit point maximum is reduced by 7.",
+          "is_exception": false,
+          "related_search_terms": [
+            "con modifier change hp",
+            "how to recalculate hp",
+            "constitution increase hp",
+            "constitution decrease hp",
+            "hp retroactively adjusted",
+            "hp re-calculation"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "HP maximum",
+          "Constitution modifier",
+          "level",
+          "ability score change"
+        ]
+      }
+    ],
+    "_chunk_header": "Constitution",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Ability Scores - Intelligence",
+    "extracted_concepts": [
+      {
+        "concept_name": "Intelligence (Ability Score)",
+        "definition": "An ability score measuring a creature's mental acuity, accuracy of recall, and ability to reason.",
+        "rule_logic": {
+          "premise": "Character possesses the Intelligence ability score",
+          "implication": "Represents mental acuity, recall accuracy, and reasoning ability",
+          "exceptions": [],
+          "description_text": "Intelligence measures mental acuity, accuracy of recall, and the ability to reason.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is intelligence",
+            "intelligence definition",
+            "mental stats",
+            "reasoning ability"
+          ]
+        },
+        "related_keywords": [
+          "Ability Score",
+          "Mental Acuity",
+          "Reasoning"
+        ]
+      },
+      {
+        "concept_name": "Intelligence Check",
+        "definition": "A check made to determine success when drawing on logic, education, memory, or deductive reasoning.",
+        "rule_logic": {
+          "premise": "Player attempts a task requiring logic, education, memory, or deductive reasoning",
+          "implication": "GM calls for an Intelligence check",
+          "exceptions": [],
+          "description_text": "An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to use intelligence check",
+            "intelligence skill check",
+            "logic check",
+            "memory check"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "Logic",
+          "Memory",
+          "Reasoning",
+          "Deduction"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (Arcana) Check",
+        "definition": "An Intelligence check focused on recalling lore about magic.",
+        "rule_logic": {
+          "premise": "Player attempts to recall lore about spells, magic items, eldritch symbols, magical traditions, planes of existence, or their inhabitants",
+          "implication": "GM calls for an Intelligence (Arcana) check",
+          "exceptions": [],
+          "description_text": "Your Intelligence (Arcana) check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "arcana skill",
+            "magic lore check",
+            "spell knowledge",
+            "planes of existence"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "Arcana",
+          "Magic",
+          "Lore",
+          "Spells"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (History) Check",
+        "definition": "An Intelligence check focused on recalling lore about historical events and civilizations.",
+        "rule_logic": {
+          "premise": "Player attempts to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, or lost civilizations",
+          "implication": "GM calls for an Intelligence (History) check",
+          "exceptions": [],
+          "description_text": "Your Intelligence (History) check measures your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.",
+          "is_exception": false,
+          "related_search_terms": [
+            "history skill",
+            "historical knowledge",
+            "ancient kingdoms",
+            "war lore"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "History",
+          "Lore",
+          "Events",
+          "Civilizations"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (Investigation) Check",
+        "definition": "An Intelligence check focused on searching for clues, making deductions, or finding hidden information.",
+        "rule_logic": {
+          "premise": "Player attempts to look for clues, make deductions based on clues, deduce location of hidden object, discern weapon type from wound, determine weak points in structures, or pore through scrolls for hidden knowledge",
+          "implication": "GM calls for an Intelligence (Investigation) check",
+          "exceptions": [],
+          "description_text": "When you look around for clues and make deductions based on those clues, you make an Intelligence (Investigation) check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Intelligence (Investigation) check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "investigation skill",
+            "find hidden object",
+            "deduction check",
+            "clue finding",
+            "research scrolls"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "Investigation",
+          "Clues",
+          "Deduction",
+          "Hidden Object"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (Nature) Check",
+        "definition": "An Intelligence check focused on recalling lore about the natural world.",
+        "rule_logic": {
+          "premise": "Player attempts to recall lore about terrain, plants and animals, weather, or natural cycles",
+          "implication": "GM calls for an Intelligence (Nature) check",
+          "exceptions": [],
+          "description_text": "Your Intelligence (Nature) check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles.",
+          "is_exception": false,
+          "related_search_terms": [
+            "nature skill",
+            "animal lore",
+            "plant identification",
+            "weather patterns",
+            "terrain knowledge"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "Nature",
+          "Lore",
+          "Plants",
+          "Animals",
+          "Terrain",
+          "Weather"
+        ]
+      },
+      {
+        "concept_name": "Intelligence (Religion) Check",
+        "definition": "An Intelligence check focused on recalling lore about deities and religious practices.",
+        "rule_logic": {
+          "premise": "Player attempts to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, or practices of secret cults",
+          "implication": "GM calls for an Intelligence (Religion) check",
+          "exceptions": [],
+          "description_text": "Your Intelligence (Religion) check measures your ability to recall lore about deities, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults.",
+          "is_exception": false,
+          "related_search_terms": [
+            "religion skill",
+            "deity lore",
+            "cult knowledge",
+            "holy symbols",
+            "religious rituals"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "Religion",
+          "Lore",
+          "Deities",
+          "Cults",
+          "Rites"
+        ]
+      },
+      {
+        "concept_name": "Other Intelligence Check Scenarios",
+        "definition": "Various tasks that might require an Intelligence check as determined by the GM.",
+        "rule_logic": {
+          "premise": "Player attempts to communicate non-verbally, estimate item value, create a disguise, forge a document, recall craft/trade lore, or win a game of skill",
+          "implication": "GM might call for an Intelligence check",
+          "exceptions": [],
+          "description_text": "The GM might call for an Intelligence check when you try to accomplish tasks like the following: Communicate with a creature without using words; Estimate the value of a precious item; Pull together a disguise to pass as a city guard; Forge a document; Recall lore about a craft or trade; Win a game of skill",
+          "is_exception": false,
+          "related_search_terms": [
+            "general intelligence tasks",
+            "non-verbal communication",
+            "item appraisal",
+            "forgery check",
+            "craft lore",
+            "game of skill"
+          ]
+        },
+        "related_keywords": [
+          "Intelligence",
+          "Skill Check",
+          "GM Discretion",
+          "Tasks"
+        ]
+      },
+      {
+        "concept_name": "Wizard Spellcasting Ability",
+        "definition": "The ability score Wizards use for their spellcasting, influencing spell save DCs.",
+        "rule_logic": {
+          "premise": "Character is a Wizard",
+          "implication": "Intelligence is their spellcasting ability, affecting spell save DCs",
+          "exceptions": [],
+          "description_text": "Wizards use Intelligence as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wizard spellcasting stat",
+            "intelligence for spells",
+            "spell save DC wizard",
+            "what stat do wizards use"
+          ]
+        },
+        "related_keywords": [
+          "Wizard",
+          "Spellcasting Ability",
+          "Intelligence",
+          "Spell Save DC",
+          "Magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Intelligence",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Abilities - Wisdom",
+    "extracted_concepts": [
+      {
+        "concept_name": "Wisdom",
+        "definition": "An ability score reflecting perceptiveness, intuition, and attunement to the world.",
+        "rule_logic": {
+          "premise": "Character possesses the Wisdom attribute",
+          "implication": "Contributes to Wisdom skill checks and spellcasting for certain classes",
+          "exceptions": [],
+          "description_text": "Wisdom reflects how attuned you are to the world around you and represents perceptiveness and intuition.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is wisdom dnd",
+            "wisdom score",
+            "wisdom meaning",
+            "wisdom attribute"
+          ]
+        },
+        "related_keywords": [
+          "attribute",
+          "ability score",
+          "perceptiveness",
+          "intuition"
+        ]
+      },
+      {
+        "concept_name": "Wisdom Check",
+        "definition": "An ability check made using the Wisdom attribute to read body language, understand feelings, notice environmental details, or care for an injured person.",
+        "rule_logic": {
+          "premise": "GM calls for an action related to perceptiveness, intuition, empathy, or observation",
+          "implication": "Player makes a d20 roll + Wisdom modifier (and proficiency if applicable for a skill) to determine success",
+          "exceptions": [],
+          "description_text": "A Wisdom check might reflect an effort to read body language, understand someone's feelings, notice things about the environment, or care for an injured person.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to make wisdom check",
+            "what is wisdom check",
+            "when to use wisdom check"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "skill check",
+          "reading body language",
+          "understanding feelings",
+          "noticing things",
+          "caring for injured"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (Animal Handling) Check",
+        "definition": "A skill check used to calm animals, control mounts, intuit animal intentions, or perform risky maneuvers with a mount.",
+        "rule_logic": {
+          "premise": "GM asks to calm a domesticated animal, keep a mount from spooking, intuit animal intentions, or control a mount during a risky maneuver",
+          "implication": "Player makes a Wisdom (Animal Handling) check",
+          "exceptions": [],
+          "description_text": "When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, the GM might call for a Wisdom (Animal Handling) check. You also make a Wisdom (Animal Handling) check to control your mount when you attempt a risky maneuver.",
+          "is_exception": false,
+          "related_search_terms": [
+            "calm animal",
+            "control mount",
+            "animal intentions",
+            "risky maneuver mount"
+          ]
+        },
+        "related_keywords": [
+          "skill",
+          "animal",
+          "mount",
+          "domesticated animal",
+          "calm",
+          "intuition"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (Insight) Check",
+        "definition": "A skill check used to determine the true intentions of a creature, such as detecting lies or predicting actions, by gleaning clues from body language and mannerisms.",
+        "rule_logic": {
+          "premise": "GM asks to determine a creature's true intentions, detect a lie, or predict someone's next move",
+          "implication": "Player makes a Wisdom (Insight) check",
+          "exceptions": [],
+          "description_text": "Your Wisdom (Insight) check decides whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms.",
+          "is_exception": false,
+          "related_search_terms": [
+            "detect lie",
+            "predict actions",
+            "read intentions",
+            "body language clues"
+          ]
+        },
+        "related_keywords": [
+          "skill",
+          "social interaction",
+          "deception",
+          "intentions",
+          "lie detection",
+          "body language"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (Medicine) Check",
+        "definition": "A skill check used to stabilize a dying companion or diagnose an illness.",
+        "rule_logic": {
+          "premise": "GM asks to stabilize a dying companion or diagnose an illness",
+          "implication": "Player makes a Wisdom (Medicine) check",
+          "exceptions": [],
+          "description_text": "A Wisdom (Medicine) check lets you try to stabilize a dying companion or diagnose an illness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stabilize dying",
+            "diagnose illness",
+            "first aid dnd"
+          ]
+        },
+        "related_keywords": [
+          "skill",
+          "healing",
+          "medical",
+          "stabilize",
+          "diagnose",
+          "illness"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (Perception) Check",
+        "definition": "A skill check measuring general awareness and keenness of senses, used to spot, hear, or detect the presence of something, including obscured or hidden things.",
+        "rule_logic": {
+          "premise": "GM asks to spot, hear, or otherwise detect the presence of something, or things that are obscured/easy to miss",
+          "implication": "Player makes a Wisdom (Perception) check",
+          "exceptions": [],
+          "description_text": "Your Wisdom (Perception) check lets you spot, hear, or otherwise detect the presence of something. It measures your general awareness of your surroundings and the keenness of your senses. For example, you might try to hear a conversation through a closed door, eavesdrop under an open window, or hear monsters moving stealthily in the forest. Or you might try to spot things that are obscured or easy to miss, whether they are orcs lying in ambush on a road, thugs hiding in the shadows of an alley, or candlelight under a closed secret door.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot hidden things",
+            "hear enemies",
+            "detect presence",
+            "search for traps",
+            "awareness check"
+          ]
+        },
+        "related_keywords": [
+          "skill",
+          "senses",
+          "awareness",
+          "detection",
+          "observation",
+          "hearing",
+          "sight"
+        ]
+      },
+      {
+        "concept_name": "Wisdom (Survival) Check",
+        "definition": "A skill check used to follow tracks, hunt game, guide groups, identify signs of creatures, predict weather, or avoid natural hazards.",
+        "rule_logic": {
+          "premise": "GM asks to follow tracks, hunt wild game, guide a group, identify creature signs, predict weather, or avoid natural hazards",
+          "implication": "Player makes a Wisdom (Survival) check",
+          "exceptions": [],
+          "description_text": "The GM might ask you to make a Wisdom (Survival) check to follow tracks, hunt wild game, guide your group through frozen wastelands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.",
+          "is_exception": false,
+          "related_search_terms": [
+            "track animals",
+            "hunt for food",
+            "guide party",
+            "predict weather",
+            "avoid hazards"
+          ]
+        },
+        "related_keywords": [
+          "skill",
+          "wilderness",
+          "tracking",
+          "hunting",
+          "navigation",
+          "weather",
+          "hazards"
+        ]
+      },
+      {
+        "concept_name": "General Wisdom Checks",
+        "definition": "Broader applications of Wisdom checks for tasks requiring intuition, gut feelings, or discerning creature states.",
+        "rule_logic": {
+          "premise": "GM calls for a check to get a gut feeling about a course of action OR discern if a creature is undead",
+          "implication": "Player makes a Wisdom check",
+          "exceptions": [],
+          "description_text": "The GM might call for a Wisdom check when you try to accomplish tasks like the following: Get a gut feeling about what course of action to follow; Discern whether a seemingly dead or living creature is undead",
+          "is_exception": false,
+          "related_search_terms": [
+            "gut feeling check",
+            "discern undead",
+            "intuitive decision"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "intuition",
+          "discernment",
+          "undead"
+        ]
+      },
+      {
+        "concept_name": "Wisdom as Spellcasting Ability",
+        "definition": "Wisdom serves as the primary ability score for spellcasting for Clerics, Druids, and Rangers.",
+        "rule_logic": {
+          "premise": "Character is a Cleric, Druid, or Ranger casting a spell",
+          "implication": "Wisdom ability score determines the spell's saving throw DCs and attack rolls",
+          "exceptions": [],
+          "description_text": "Clerics, druids, and rangers use Wisdom as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wisdom spellcasting classes",
+            "cleric spell stat",
+            "druid spell stat",
+            "ranger spell stat",
+            "spell save dc wisdom"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting ability",
+          "spell save DC",
+          "cleric",
+          "druid",
+          "ranger",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Wisdom",
+    "_source_file": "using-each-ability"
+  },
+  {
+    "source_chapter": "Charisma",
+    "extracted_concepts": [
+      {
+        "concept_name": "Charisma (Ability Score)",
+        "definition": "An ability score that measures a character's ability to interact effectively with others, encompassing confidence, eloquence, and a charming or commanding personality.",
+        "rule_logic": {
+          "premise": "N/A",
+          "implication": "Influences social interactions, specific skills (Deception, Intimidation, Performance, Persuasion), and spellcasting for certain classes.",
+          "exceptions": [],
+          "description_text": "Charisma measures your ability to interact effectively with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is charisma",
+            "charisma meaning",
+            "social ability score",
+            "character personality stat"
+          ]
+        },
+        "related_keywords": [
+          "ability score",
+          "social interaction",
+          "confidence",
+          "eloquence",
+          "personality"
+        ]
+      },
+      {
+        "concept_name": "Charisma Check",
+        "definition": "A d20 roll modified by a character's Charisma bonus (and proficiency if applicable) to resolve attempts at influencing, entertaining, making an impression, lying, or navigating social situations.",
+        "rule_logic": {
+          "premise": "A character attempts to influence or entertain others, make an impression, tell a convincing lie, or navigate a tricky social situation.",
+          "implication": "The GM calls for a Charisma check, potentially tied to a specific Charisma skill (Deception, Intimidation, Performance, Persuasion) or a general Charisma check.",
+          "exceptions": [],
+          "description_text": "A Charisma check might arise when you try to influence or entertain others, when you try to make an impression or tell a convincing lie, or when you are navigating a tricky social situation. The Deception, Intimidation, Performance, and Persuasion skills reflect aptitude in certain kinds of Charisma checks. Other Charisma Checks might include: Find the best person to talk to for news, rumors, and gossip; Blend into a crowd to get the sense of key topics of conversation.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to use charisma check",
+            "social skill roll",
+            "how to make an impression",
+            "telling a lie",
+            "gathering information social"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "social skill",
+          "influence",
+          "entertain",
+          "lie",
+          "impression"
+        ]
+      },
+      {
+        "concept_name": "Deception (Charisma Skill)",
+        "definition": "A Charisma skill check used to convincingly hide the truth, verbally or through actions, ranging from misleading ambiguity to outright lies.",
+        "rule_logic": {
+          "premise": "A character attempts to convincingly hide the truth (verbally or through actions), mislead others, con a merchant, earn money through deceptive gambling, pass oneself off in a disguise, dull suspicions with false assurances, or maintain a straight face while telling a blatant lie.",
+          "implication": "The GM calls for a Charisma (Deception) check.",
+          "exceptions": [],
+          "description_text": "Your Charisma (Deception) check determines whether you can convincingly hide the truth, either verbally or through your actions. This deception can encompass everything from misleading others through ambiguity to telling outright lies. Typical situations include trying to fast- talk a guard, con a merchant, earn money through gambling, pass yourself off in a disguise, dull someone's suspicions with false assurances, or maintain a straight face while telling a blatant lie.",
+          "is_exception": false,
+          "related_search_terms": [
+            "lying skill",
+            "bluffing check",
+            "conning people",
+            "disguise effectiveness",
+            "fast-talking",
+            "misleading"
+          ]
+        },
+        "related_keywords": [
+          "skill check",
+          "charisma skill",
+          "lie",
+          "mislead",
+          "con",
+          "disguise",
+          "gambling"
+        ]
+      },
+      {
+        "concept_name": "Intimidation (Charisma Skill)",
+        "definition": "A Charisma skill check used to influence someone through overt threats, hostile actions, or physical violence.",
+        "rule_logic": {
+          "premise": "A character attempts to influence someone through overt threats, hostile actions, or physical violence (e.g., pry information from a prisoner, convince thugs to back down, compel a vizier with implied force).",
+          "implication": "The GM calls for a Charisma (Intimidation) check.",
+          "exceptions": [],
+          "description_text": "When you attempt to influence someone through overt threats, hostile actions, and physical violence, the GM might ask you to make a Charisma (Intimidation) check. Examples include trying to pry information out of a prisoner, convincing street thugs to back down from a confrontation, or using the edge of a broken bottle to convince a sneering vizier to reconsider a decision.",
+          "is_exception": false,
+          "related_search_terms": [
+            "threatening check",
+            "scare tactics",
+            "forcing compliance",
+            "coercion skill",
+            "interrogate"
+          ]
+        },
+        "related_keywords": [
+          "skill check",
+          "charisma skill",
+          "threats",
+          "violence",
+          "influence",
+          "coercion"
+        ]
+      },
+      {
+        "concept_name": "Performance (Charisma Skill)",
+        "definition": "A Charisma skill check that determines how well a character can entertain an audience through music, dance, acting, storytelling, or other forms of showmanship.",
+        "rule_logic": {
+          "premise": "A character attempts to delight an audience with music, dance, acting, storytelling, or some other form of entertainment.",
+          "implication": "The GM calls for a Charisma (Performance) check.",
+          "exceptions": [],
+          "description_text": "Your Charisma (Performance) check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment.",
+          "is_exception": false,
+          "related_search_terms": [
+            "playing music check",
+            "dancing skill",
+            "acting check",
+            "storytelling skill",
+            "entertaining crowd"
+          ]
+        },
+        "related_keywords": [
+          "skill check",
+          "charisma skill",
+          "entertainment",
+          "music",
+          "dance",
+          "acting",
+          "storytelling"
+        ]
+      },
+      {
+        "concept_name": "Persuasion (Charisma Skill)",
+        "definition": "A Charisma skill check used to influence an individual or group using tact, social graces, or good nature, typically acting in good faith.",
+        "rule_logic": {
+          "premise": "A character attempts to influence someone or a group using tact, social graces, or good nature (e.g., fostering friendships, making cordial requests, exhibiting proper etiquette, convincing, negotiating peace, inspiring a crowd).",
+          "implication": "The GM calls for a Charisma (Persuasion) check.",
+          "exceptions": [],
+          "description_text": "When you attempt to influence someone or a group of people with tact, social graces, or good nature, the GM might ask you to make a Charisma (Persuasion) check. Typically, you use persuasion when acting in good faith, to foster friendships, make cordial requests, or exhibit proper etiquette. Examples of persuading others include convincing a chamberlain to let your party see the king, negotiating peace between warring tribes, or inspiring a crowd of townsfolk.",
+          "is_exception": false,
+          "related_search_terms": [
+            "convincing check",
+            "negotiation skill",
+            "inspiring people",
+            "diplomacy check",
+            "social graces",
+            "making friends"
+          ]
+        },
+        "related_keywords": [
+          "skill check",
+          "charisma skill",
+          "influence",
+          "tact",
+          "social graces",
+          "good nature",
+          "negotiation",
+          "inspiration"
+        ]
+      },
+      {
+        "concept_name": "Charisma as Spellcasting Ability",
+        "definition": "For specific spellcasting classes (Bards, Paladins, Sorcerers, Warlocks), Charisma serves as their primary spellcasting ability score.",
+        "rule_logic": {
+          "premise": "A character is a Bard, Paladin, Sorcerer, or Warlock.",
+          "implication": "Charisma is used as the character's spellcasting ability, influencing aspects such as spell attack rolls, spell save DCs, and potentially other spell-related features for their class.",
+          "exceptions": [],
+          "description_text": "Bards, paladins, sorcerers, and warlocks use Charisma as their spellcasting ability, which helps determine the saving throw DCs of spells they cast.",
+          "is_exception": false,
+          "related_search_terms": [
+            "charisma spellcaster classes",
+            "bard casting stat",
+            "paladin casting stat",
+            "sorcerer casting stat",
+            "warlock casting stat",
+            "spell save DC calculation"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting ability",
+          "bard",
+          "paladin",
+          "sorcerer",
+          "warlock",
+          "spell save DC",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Charisma",
+    "_source_file": "using-each-ability"
+  }
+]

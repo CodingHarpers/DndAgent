@@ -1,0 +1,153 @@
+{
+  "entity_name": "Enhance Ability",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Making a Constitution check",
+      "condition": "Target is under Bear's Endurance effect",
+      "outcome": "Target has Advantage on the Constitution check",
+      "related_search_terms": [
+        "constitution saving throw",
+        "con save",
+        "endurance",
+        "survival",
+        "health"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell cast (Bear's Endurance chosen)",
+      "condition": "Target is chosen for Bear's Endurance effect",
+      "outcome": "Target gains 2d6 temporary hit points",
+      "related_search_terms": [
+        "temp hp",
+        "hit point buffer",
+        "damage absorption"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell ends",
+      "condition": "Target has temporary hit points from Bear's Endurance",
+      "outcome": "All temporary hit points gained from this spell are lost",
+      "related_search_terms": [
+        "temporary hp expiration",
+        "spell duration",
+        "hp removal"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Making a Strength check",
+      "condition": "Target is under Bull's Strength effect",
+      "outcome": "Target has Advantage on the Strength check",
+      "related_search_terms": [
+        "strength saving throw",
+        "str save",
+        "athletics",
+        "lifting",
+        "pushing",
+        "pulling"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell cast (Bull's Strength chosen)",
+      "condition": "Target is chosen for Bull's Strength effect",
+      "outcome": "Target's carrying capacity doubles",
+      "related_search_terms": [
+        "encumbrance",
+        "inventory capacity",
+        "heavy load"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Making a Dexterity check",
+      "condition": "Target is under Cat's Grace effect",
+      "outcome": "Target has Advantage on the Dexterity check",
+      "related_search_terms": [
+        "dexterity saving throw",
+        "dex save",
+        "acrobatics",
+        "stealth",
+        "sleight of hand",
+        "escape"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Taking falling damage",
+      "condition": "Target is under Cat's Grace effect AND falls 20 feet or less AND is NOT incapacitated",
+      "outcome": "Target takes no damage from falling",
+      "related_search_terms": [
+        "fall protection",
+        "safe landing",
+        "graceful fall",
+        "no fall damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Making a Charisma check",
+      "condition": "Target is under Eagle's Splendor effect",
+      "outcome": "Target has Advantage on the Charisma check",
+      "related_search_terms": [
+        "charisma saving throw",
+        "cha save",
+        "persuasion",
+        "deception",
+        "intimidation",
+        "performance",
+        "social interaction"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Making an Intelligence check",
+      "condition": "Target is under Fox's Cunning effect",
+      "outcome": "Target has Advantage on the Intelligence check",
+      "related_search_terms": [
+        "intelligence saving throw",
+        "int save",
+        "investigation",
+        "arcana",
+        "history",
+        "nature",
+        "religion",
+        "logic"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Making a Wisdom check",
+      "condition": "Target is under Owl's Wisdom effect",
+      "outcome": "Target has Advantage on the Wisdom check",
+      "related_search_terms": [
+        "wisdom saving throw",
+        "wis save",
+        "perception",
+        "insight",
+        "survival",
+        "animal handling",
+        "medicine",
+        "awareness"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends. Bear's Endurance. The target has advantage on constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends. Bull's Strength. The target has advantage on strength checks, and his or her carrying capacity doubles. Cat's Grace. The target has advantage on dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated. Eagle's Splendor. The target has advantage on Charisma checks. Fox's Cunning. The target has advantage on intelligence checks. Owl's Wisdom. The target has advantage on wisdom checks.",
+  "tags": [
+    "Buff",
+    "Utility",
+    "Enhancement",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "Ability Boost",
+    "Stat Buff",
+    "Conditional Advantage",
+    "Stat Enhancement",
+    "Attribute Buff"
+  ]
+}

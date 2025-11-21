@@ -1,0 +1,122 @@
+{
+  "entity_name": "Project Image",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Cast",
+      "condition": "Caster chooses a location within range that has been seen before",
+      "outcome": "An illusory copy of the caster appears at the chosen location, lasting for the duration",
+      "related_search_terms": [
+        "summon illusion",
+        "remote presence",
+        "duplicate",
+        "decoy",
+        "illusory self"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Physical interaction with image",
+      "condition": "Interaction is with the Project Image illusion",
+      "outcome": "Physical objects pass through the illusion (it is intangible)",
+      "related_search_terms": [
+        "ghostly",
+        "non-solid",
+        "ethereal",
+        "pass through"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Image takes any damage",
+      "condition": "Damage is dealt to the Project Image illusion",
+      "outcome": "The illusion disappears, and the spell ends",
+      "related_search_terms": [
+        "destroy illusion",
+        "dispel effect",
+        "fragile illusion",
+        "illusion destroyed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses Action",
+      "condition": "Caster controls the Project Image",
+      "outcome": "The image moves up to twice the caster's speed, can gesture, speak, and mimic caster's mannerisms",
+      "related_search_terms": [
+        "control illusion",
+        "puppet illusion",
+        "mimicry",
+        "distraction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses Bonus Action on their turn",
+      "condition": "Caster chooses to switch senses to/from the image",
+      "outcome": "Caster sees and hears through the image's senses; Caster is Blinded and Deafened to their own surroundings",
+      "related_search_terms": [
+        "scrying",
+        "remote viewing",
+        "sensory link",
+        "body swap senses",
+        "remote senses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature physically interacts with the image",
+      "condition": "Interaction is with the Project Image illusion",
+      "outcome": "The creature perceives the image to be an illusion due to its intangibility",
+      "related_search_terms": [
+        "touch illusion",
+        "feel through",
+        "prove illusion",
+        "detect illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature uses an Action to examine the image",
+      "condition": "Creature succeeds on an Intelligence (Investigation) check against the caster's spell save DC",
+      "outcome": "The creature determines the image is an illusion",
+      "related_search_terms": [
+        "detect magic",
+        "perceive illusion",
+        "disbelief",
+        "reveal illusion",
+        "spot illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature discerns the Project Image illusion",
+      "condition": "Creature knows the image is an illusion",
+      "outcome": "The creature can see through the image, and any noise it makes sounds hollow to that creature",
+      "related_search_terms": [
+        "illusion broken",
+        "illusion revealed",
+        "ignore illusion",
+        "see through"
+      ]
+    }
+  ],
+  "description_text": "You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends.You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.",
+  "tags": [
+    "illusion",
+    "telepresence",
+    "scrying",
+    "perception",
+    "concentration",
+    "long_rest"
+  ],
+  "related_search_terms": [
+    "project self",
+    "illusory duplicate",
+    "remote viewing",
+    "scout spell",
+    "impersonation",
+    "doppelganger"
+  ]
+}

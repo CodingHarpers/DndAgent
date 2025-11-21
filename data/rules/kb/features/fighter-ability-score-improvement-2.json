@@ -1,0 +1,46 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "player_progression_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player reaches specific character levels",
+      "condition": "Character level is 4 OR 6 OR 8 OR 12 OR 14 OR 16 OR 19",
+      "outcome": "Player may choose ONE of the following options: 1) Increase one ability score by 2, OR 2) Increase two different ability scores by 1 each.",
+      "related_search_terms": [
+        "ASI levels",
+        "level milestones",
+        "stat points",
+        "character development",
+        "level up bonus"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Applying an Ability Score Increase via this feature",
+      "condition": "The chosen ability score's value would exceed 20 after the increase",
+      "outcome": "The ability score cannot be increased beyond 20 by this feature",
+      "related_search_terms": [
+        "max stat",
+        "ability score limit",
+        "hard cap",
+        "20 stat limit",
+        "ASI cap"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "character progression",
+    "ability scores",
+    "leveling up",
+    "core rule"
+  ],
+  "related_search_terms": [
+    "ASI",
+    "stat increase",
+    "level up bonus",
+    "character advancement",
+    "ability score cap"
+  ]
+}

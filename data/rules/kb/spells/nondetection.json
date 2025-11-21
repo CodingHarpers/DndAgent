@@ -1,0 +1,56 @@
+{
+  "entity_name": "Nondetection",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Nondetection is cast",
+      "condition": "Target is touched AND (Target is a willing creature OR Target is a place OR Target is an object no larger than 10 feet in any dimension)",
+      "outcome": "Target is hidden from divination magic for the duration",
+      "related_search_terms": [
+        "divination protection",
+        "scrying ward",
+        "anti-divination",
+        "conceal from magic"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Divination magic attempts to target a creature, place, or object",
+      "condition": "The creature, place, or object is under the effect of Nondetection",
+      "outcome": "The creature, place, or object cannot be targeted by divination magic",
+      "related_search_terms": [
+        "spell targeting immunity",
+        "divination immunity",
+        "warding magic",
+        "anti-target spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Magical scrying sensor attempts to perceive a creature, place, or object",
+      "condition": "The creature, place, or object is under the effect of Nondetection",
+      "outcome": "The creature, place, or object cannot be perceived through magical scrying sensors",
+      "related_search_terms": [
+        "scrying protection",
+        "sensor blocking",
+        "anti-surveillance magic",
+        "undetectable by scrying"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.",
+  "tags": [
+    "spell",
+    "abjuration",
+    "2nd-level",
+    "protection"
+  ],
+  "related_search_terms": [
+    "anti-scrying",
+    "hide from magic",
+    "divination ward",
+    "secret keeping",
+    "unseeable",
+    "anti-location"
+  ]
+}

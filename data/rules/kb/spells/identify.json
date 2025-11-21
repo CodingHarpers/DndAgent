@@ -1,0 +1,67 @@
+{
+  "entity_name": "Identify",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting Identify targeting an object",
+      "condition": "Object is a magic item OR is magic-imbued",
+      "outcome": "Learn object's properties, how to use them, attunement requirement, and current charge count (if any)",
+      "related_search_terms": [
+        "magic item identification",
+        "attunement check",
+        "charges",
+        "identify magic item",
+        "learn item properties"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Identify targeting an object",
+      "condition": "Object has spells affecting it",
+      "outcome": "Learn which spells are affecting the object",
+      "related_search_terms": [
+        "detect spells on item",
+        "item enchantments",
+        "magic item curses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Identify targeting an object",
+      "condition": "Object was created by a spell",
+      "outcome": "Learn which spell created the object",
+      "related_search_terms": [
+        "item origin",
+        "creation spell",
+        "crafting magic item"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Identify targeting a creature",
+      "condition": "Creature has spells affecting it",
+      "outcome": "Learn which spells are currently affecting the creature",
+      "related_search_terms": [
+        "detect spells on creature",
+        "creature buffs",
+        "creature debuffs",
+        "magic effects on creature"
+      ]
+    }
+  ],
+  "description_text": "You choose one object that you must touch throughout the casting of the spell. If it is a magic item or some other magic-imbued object, you learn its properties and how to use them, whether it requires attunement to use, and how many charges it has, if any. You learn whether any spells are affecting the item and what they are. If the item was created by a spell, you learn which spell created it. If you instead touch a creature throughout the casting, you learn what spells, if any, are currently affecting it.",
+  "tags": [
+    "divination",
+    "1st-level",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "magic item",
+    "spell detection",
+    "item lore",
+    "creature magic",
+    "identify spell",
+    "detect magic",
+    "ritual spell"
+  ]
+}

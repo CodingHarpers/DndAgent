@@ -1,0 +1,198 @@
+[
+  {
+    "source_chapter": "Playing the Game - Time",
+    "extracted_concepts": [
+      {
+        "concept_name": "Combat Round",
+        "definition": "The fundamental unit of time during combat, representing a quick, dynamic period where every participant takes a turn.",
+        "rule_logic": {
+          "premise": "During combat",
+          "implication": "All participants take one turn; the round lasts approximately 6 seconds in the game world",
+          "exceptions": [],
+          "description_text": "The game organizes the chaos of combat into a cycle of rounds. In a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of combat, when everyone rolls initiative. Every round represents about 6 seconds in the game world.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is a combat round",
+            "turn duration",
+            "seconds in a round",
+            "initiative order",
+            "combat sequence"
+          ]
+        },
+        "related_keywords": [
+          "combat",
+          "duration",
+          "turn",
+          "initiative",
+          "six seconds"
+        ]
+      },
+      {
+        "concept_name": "Minute (Time Unit)",
+        "definition": "A standard unit of time, equivalent to 60 seconds.",
+        "rule_logic": {
+          "premise": "When measuring time, especially in relation to combat rounds",
+          "implication": "One minute is equivalent to 10 combat rounds",
+          "exceptions": [],
+          "description_text": "A minute is composed of 60 seconds. Given that a combat round is 6 seconds, a minute is equal to 10 combat rounds.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many rounds in a minute",
+            "spell duration minute",
+            "time conversion"
+          ]
+        },
+        "related_keywords": [
+          "duration",
+          "time measurement",
+          "sixty seconds"
+        ]
+      },
+      {
+        "concept_name": "Hour (Time Unit)",
+        "definition": "A standard unit of time, equivalent to 60 minutes.",
+        "rule_logic": {
+          "premise": "When measuring time for longer durations",
+          "implication": "One hour is equivalent to 60 minutes or 600 combat rounds",
+          "exceptions": [],
+          "description_text": "An hour is made up of 60 minutes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "long rest duration",
+            "travel time",
+            "spell duration hour"
+          ]
+        },
+        "related_keywords": [
+          "duration",
+          "time measurement",
+          "sixty minutes"
+        ]
+      },
+      {
+        "concept_name": "Day (Time Unit)",
+        "definition": "A standard unit of time, equivalent to 24 hours.",
+        "rule_logic": {
+          "premise": "When measuring time for daily cycles or events",
+          "implication": "One day is equivalent to 24 hours",
+          "exceptions": [],
+          "description_text": "A day consists of 24 hours.",
+          "is_exception": false,
+          "related_search_terms": [
+            "daily abilities",
+            "rest cycle",
+            "24 hours"
+          ]
+        },
+        "related_keywords": [
+          "duration",
+          "time measurement",
+          "twenty-four hours"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "time"
+  },
+  {
+    "source_chapter": "Time",
+    "extracted_concepts": [
+      {
+        "concept_name": "Dungeon Exploration Time Scale",
+        "definition": "The typical unit of time measurement for adventuring activities within a dungeon environment.",
+        "rule_logic": {
+          "premise": "GM determines time for a task AND context is a dungeon environment",
+          "implication": "Time is tracked on a scale of minutes",
+          "exceptions": [],
+          "description_text": "In a dungeon environment, the adventurers' movement happens on a scale of minutes. It takes them about a minute to creep down a long hallway, another minute to check for traps on the door at the end of the hall, and a good ten minutes to search the chamber beyond for anything interesting or valuable.",
+          "is_exception": false,
+          "related_search_terms": [
+            "dungeon time tracking",
+            "how long to search a room",
+            "dungeon movement speed",
+            "checking for traps time"
+          ]
+        },
+        "related_keywords": [
+          "time",
+          "dungeon",
+          "minutes",
+          "exploration"
+        ]
+      },
+      {
+        "concept_name": "City and Wilderness Travel Time Scale",
+        "definition": "The typical unit of time measurement for travel and activities in city or wilderness environments.",
+        "rule_logic": {
+          "premise": "GM determines time for a task AND context is a city or wilderness environment",
+          "implication": "Time is tracked on a scale of hours",
+          "exceptions": [],
+          "description_text": "In a city or wilderness, a scale of hours is often more appropriate. Adventurers eager to reach the lonely tower at the heart of the forest hurry across those fifteen miles in just under four hours' time.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wilderness travel time",
+            "city travel speed",
+            "how long to cross wilderness",
+            "hours travel"
+          ]
+        },
+        "related_keywords": [
+          "time",
+          "city",
+          "wilderness",
+          "hours",
+          "travel"
+        ]
+      },
+      {
+        "concept_name": "Long Journey Time Scale",
+        "definition": "The typical unit of time measurement for extended travel over long distances.",
+        "rule_logic": {
+          "premise": "GM determines time for a task AND context is a long journey",
+          "implication": "Time is tracked on a scale of days",
+          "exceptions": [],
+          "description_text": "For long journeys, a scale of days works best. Following the road from Baldur's Gate to Waterdeep, the adventurers spend four uneventful days before a goblin ambush interrupts their journey.",
+          "is_exception": false,
+          "related_search_terms": [
+            "long travel time",
+            "journey duration",
+            "cross-country travel",
+            "days travel"
+          ]
+        },
+        "related_keywords": [
+          "time",
+          "journey",
+          "days",
+          "travel"
+        ]
+      },
+      {
+        "concept_name": "Combat Round",
+        "definition": "A specific unit of time used for fast-paced situations, particularly combat.",
+        "rule_logic": {
+          "premise": "GM determines time for a task AND context is combat or other fast-paced situations",
+          "implication": "Time is tracked in rounds, where each round is a 6-second span",
+          "exceptions": [],
+          "description_text": "In combat and other fast-paced situations, the game relies on rounds, a 6-second span of time.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is a round",
+            "combat duration",
+            "turn order time",
+            "6 seconds per round"
+          ]
+        },
+        "related_keywords": [
+          "time",
+          "combat",
+          "round",
+          "duration",
+          "fast-paced"
+        ]
+      }
+    ],
+    "_chunk_header": "Time",
+    "_source_file": "time"
+  }
+]

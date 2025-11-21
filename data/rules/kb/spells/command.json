@@ -1,0 +1,155 @@
+{
+  "entity_name": "Command",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range",
+      "outcome": "Target must make a Wisdom Saving Throw",
+      "related_search_terms": [
+        "spell save",
+        "wisdom save",
+        "target creature",
+        "enchantment spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is undead OR Target does not understand your language OR Your command is directly harmful to target",
+      "outcome": "Spell has no effect",
+      "related_search_terms": [
+        "immune",
+        "negated",
+        "invalid target",
+        "harmful command",
+        "language barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom Saving Throw",
+      "condition": "Spell's initial conditions (not undead, understands language, not harmful) were met",
+      "outcome": "Target follows the command on its next turn",
+      "related_search_terms": [
+        "compelled",
+        "forced action",
+        "obeys command",
+        "mind control",
+        "enchanted"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target's turn while under command",
+      "condition": "Target cannot follow the issued command",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "failed command",
+        "impossible task",
+        "spell disruption",
+        "command broken"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Player issues a command",
+      "condition": "Command is not 'Approach', 'Drop', 'Flee', 'Grovel', or 'Halt'",
+      "outcome": "Dungeon Master determines how the target behaves",
+      "related_search_terms": [
+        "GM ruling",
+        "custom command",
+        "player creativity",
+        "unlisted command"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Approach' command",
+      "condition": "Target can move",
+      "outcome": "Target moves toward caster by the shortest and most direct route; ends its turn if it moves within 5 feet of caster",
+      "related_search_terms": [
+        "move towards",
+        "close distance",
+        "melee range",
+        "approach caster"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Drop' command",
+      "condition": "Target is holding one or more items",
+      "outcome": "Target drops whatever it is holding and then ends its turn",
+      "related_search_terms": [
+        "disarm",
+        "drop item",
+        "release weapon",
+        "item control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Flee' command",
+      "condition": "Target can move",
+      "outcome": "Target spends its turn moving away from caster by the fastest available means",
+      "related_search_terms": [
+        "run away",
+        "disengage",
+        "retreat",
+        "forced movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Grovel' command",
+      "condition": "Target can fall prone",
+      "outcome": "Target falls prone and then ends its turn",
+      "related_search_terms": [
+        "prone condition",
+        "knock down",
+        "submissive",
+        "forced prone"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Halt' command",
+      "condition": "Target is not a flying creature that must move to stay aloft",
+      "outcome": "Target doesn't move and takes no actions",
+      "related_search_terms": [
+        "stop movement",
+        "action denial",
+        "freeze",
+        "paralyze (soft)"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target follows 'Halt' command",
+      "condition": "Target is a flying creature AND must move to stay aloft",
+      "outcome": "Target flies the minimum distance needed to remain in the air, then takes no actions",
+      "related_search_terms": [
+        "flying creature",
+        "aerial halt",
+        "minimum movement",
+        "hover"
+      ]
+    }
+  ],
+  "description_text": "You speak a one-word command to a creature you can see within range. The target must succeed on a wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can't follow your command, the spell ends.***Approach.*** The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.***Drop.*** The target drops whatever it is holding and then ends its turn.***Flee.*** The target spends its turn moving away from you by the fastest available means.***Grovel.*** The target falls prone and then ends its turn.***Halt.*** The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "level 1",
+    "control",
+    "saving throw"
+  ],
+  "related_search_terms": [
+    "one word spell",
+    "mind control",
+    "obedience",
+    "compulsion",
+    "single command",
+    "utility spell"
+  ]
+}

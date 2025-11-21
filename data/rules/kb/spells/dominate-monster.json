@@ -1,0 +1,120 @@
+{
+  "entity_name": "Dominate Monster",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target is a creature visible within range",
+      "outcome": "Target must succeed on a Wisdom saving throw or be Charmed by the caster for the duration",
+      "related_search_terms": [
+        "charm spell",
+        "mind control",
+        "failed save",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes initial Wisdom saving throw against Dominate Monster",
+      "condition": "Caster or creatures friendly to the caster are fighting the target",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "hostile target",
+        "combat advantage",
+        "resisting charm",
+        "fighting spellcaster"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target is Charmed by Dominate Monster",
+      "condition": "Caster and target are on the same plane of existence",
+      "outcome": "Caster has a telepathic link with the target",
+      "related_search_terms": [
+        "mental connection",
+        "communication",
+        "mind link"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster has a telepathic link with a Charmed target (Dominate Monster)",
+      "condition": "Caster is conscious AND no action is required",
+      "outcome": "Caster can issue commands to the creature, which it attempts to obey",
+      "related_search_terms": [
+        "controlling creature",
+        "giving orders",
+        "mind control commands",
+        "no action command"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charmed creature (Dominate Monster) completes an order or receives no further direction",
+      "condition": "No further direction is received from the caster",
+      "outcome": "Creature defends and preserves itself to the best of its ability",
+      "related_search_terms": [
+        "idle behavior",
+        "self-preservation",
+        "no command default"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action",
+      "condition": "Target is Charmed by Dominate Monster",
+      "outcome": "Caster takes total and precise control of the target until the end of caster's next turn; target takes only actions chosen by caster and does nothing unallowed",
+      "related_search_terms": [
+        "full control",
+        "direct control",
+        "puppet master",
+        "total command"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster makes Charmed target (under total control) use its reaction",
+      "condition": "Caster is exercising total and precise control over the target",
+      "outcome": "Caster must use their own reaction",
+      "related_search_terms": [
+        "controlling reactions",
+        "shared reaction",
+        "commanding opportunity attack"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Target is Charmed by Dominate Monster",
+      "outcome": "Target makes a new Wisdom saving throw against the spell",
+      "related_search_terms": [
+        "damage breaks charm",
+        "repeated save",
+        "re-roll save"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target makes a Wisdom saving throw against Dominate Monster",
+      "condition": "The saving throw succeeds",
+      "outcome": "The spell ends",
+      "related_search_terms": [
+        "charm broken",
+        "spell termination",
+        "successful save",
+        "ending condition"
+      ]
+    }
+  ],
+  "description_text": "You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+  "tags": [
+    "Charm"
+  ],
+  "related_search_terms": [
+    "mind control",
+    "beguile",
+    "domination",
+    "creature control"
+  ]
+}

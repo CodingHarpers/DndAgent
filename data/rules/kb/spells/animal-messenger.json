@@ -1,0 +1,111 @@
+{
+  "entity_name": "Animal Messenger",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Caster chooses a Tiny beast visible within range",
+      "outcome": "Selected beast becomes the messenger",
+      "related_search_terms": [
+        "target selection",
+        "beast type",
+        "range requirement"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Caster specifies a location they have visited and a recipient matching a general description",
+      "outcome": "Delivery parameters are established",
+      "related_search_terms": [
+        "destination requirement",
+        "recipient description",
+        "known locations"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Caster speaks a message of up to 25 words",
+      "outcome": "The message is recorded by the beast",
+      "related_search_terms": [
+        "message length limit",
+        "verbal message"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Messenger Travel",
+      "condition": "The chosen beast is a flying creature",
+      "outcome": "The beast travels approximately 50 miles per 24 hours towards the specified location",
+      "related_search_terms": [
+        "flying speed",
+        "travel rate",
+        "messenger speed",
+        "duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Messenger Travel",
+      "condition": "The chosen beast is not a flying creature",
+      "outcome": "The beast travels approximately 25 miles per 24 hours towards the specified location",
+      "related_search_terms": [
+        "ground speed",
+        "travel rate",
+        "messenger speed",
+        "duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Messenger Arrival at Destination",
+      "condition": "The messenger arrives at the specified location before the spell ends AND finds a creature matching the described recipient",
+      "outcome": "The messenger delivers the spoken message to the matching creature, replicating the caster's voice",
+      "related_search_terms": [
+        "message delivery",
+        "successful communication",
+        "recipient found"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Message Delivery Attempt",
+      "condition": "A creature encountered does NOT match the specified recipient's description",
+      "outcome": "The messenger does NOT deliver the message to that creature",
+      "related_search_terms": [
+        "recipient verification",
+        "delivery condition",
+        "wrong recipient"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Ends",
+      "condition": "The messenger has NOT reached its destination",
+      "outcome": "The message is lost and the beast returns to the casting location",
+      "related_search_terms": [
+        "message failure",
+        "spell duration ends",
+        "lost communication",
+        "beast return"
+      ]
+    }
+  ],
+  "description_text": "By means of this spell, you use an animal to deliver a message. Choose a Tiny beast you can see within range, such as a squirrel, a blue jay, or a bat. You specify a location, which you must have visited, and a recipient who matches a general description, such as \"a man or woman dressed in the uniform of the town guard\" or \"a red-haired dwarf wearing a pointed hat.\" You also speak a message of up to twenty-five words. The target beast travels for the duration of the spell toward the specified location, covering about 50 miles per 24 hours for a flying messenger, or 25 miles for other animals. When the messenger arrives, it delivers your message to the creature that you described, replicating the sound of your voice. The messenger speaks only to a creature matching the description you gave. If the messenger doesn't reach its destination before the spell ends, the message is lost, and the beast makes its way back to where you cast this spell.",
+  "tags": [
+    "utility",
+    "communication",
+    "divination",
+    "beast",
+    "long-distance"
+  ],
+  "related_search_terms": [
+    "sending message",
+    "animal courier",
+    "long distance communication",
+    "beast messenger",
+    "communication spell"
+  ]
+}

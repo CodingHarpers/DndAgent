@@ -1,0 +1,60 @@
+{
+  "entity_name": "True Seeing",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Caster casts True Seeing on a willing creature",
+      "condition": "Target is a willing creature",
+      "outcome": "Target creature gains truesight with a range of 120 feet for the spell's duration",
+      "related_search_terms": [
+        "truesight",
+        "superior vision",
+        "divine sight",
+        "see true form",
+        "detect illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature with True Seeing observes an area",
+      "condition": "Area within 120 feet contains a secret door hidden by magic",
+      "outcome": "Creature automatically notices the secret door",
+      "related_search_terms": [
+        "detect secret doors",
+        "find hidden passages",
+        "reveal hidden entrances",
+        "magical concealment",
+        "perception bypass"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster casts True Seeing on a willing creature",
+      "condition": "Target is a willing creature",
+      "outcome": "Target creature gains the ability to see into the Ethereal Plane out to 120 feet for the spell's duration",
+      "related_search_terms": [
+        "ethereal sight",
+        "see ghosts",
+        "see spirits",
+        "ethereal vision",
+        "interdimensional sight"
+      ]
+    }
+  ],
+  "description_text": "This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.",
+  "tags": [
+    "divination",
+    "sight",
+    "detection",
+    "utility"
+  ],
+  "related_search_terms": [
+    "truesight spell",
+    "see invisible",
+    "detect magic",
+    "reveal illusions",
+    "perceive reality",
+    "sight enhancement"
+  ]
+}

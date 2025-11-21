@@ -1,0 +1,61 @@
+{
+  "entity_name": "Detect Poison and Disease",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "For the spell's duration",
+      "condition": "A poison, poisonous creature, or disease is within 30 feet of the caster",
+      "outcome": "Caster senses the presence and location of the target",
+      "related_search_terms": [
+        "aura",
+        "detection range",
+        "finding",
+        "illness sensing",
+        "venom presence",
+        "diseased creature location"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When sensing a poison, poisonous creature, or disease",
+      "condition": "Caster is sensing the target's presence and location",
+      "outcome": "Caster identifies the specific kind of poison, poisonous creature, or disease",
+      "related_search_terms": [
+        "diagnosis",
+        "identify type",
+        "specifics",
+        "nature of illness",
+        "creature identification"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Detection attempt through a barrier",
+      "condition": "Barrier consists of 1 foot of stone OR 1 inch of common metal OR a thin sheet of lead OR 3 feet of wood OR 3 feet of dirt",
+      "outcome": "Spell is blocked (cannot sense beyond the barrier)",
+      "related_search_terms": [
+        "line of effect",
+        "obstruction",
+        "blockage",
+        "range limitation",
+        "material hindrance"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+  "tags": [
+    "detection",
+    "divination",
+    "utility"
+  ],
+  "related_search_terms": [
+    "diagnose",
+    "scrying",
+    "poison detection",
+    "disease detection",
+    "malady",
+    "illness",
+    "venom"
+  ]
+}

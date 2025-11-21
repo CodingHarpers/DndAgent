@@ -1,0 +1,1346 @@
+[
+  {
+    "source_chapter": "Combat - Damage and Healing",
+    "extracted_concepts": [
+      {
+        "concept_name": "Hit Points",
+        "definition": "A numerical value representing a creature's physical and mental resilience and vitality.",
+        "rule_logic": {
+          "premise": "A creature has a current and maximum number of hit points",
+          "implication": "Current hit points decrease when damage is taken; reaching 0 hit points leads to unconsciousness and potential death.",
+          "exceptions": [],
+          "description_text": "Hit points are a measure of a creature's health and resilience. When a creature takes damage, its hit points decrease. When a creature's hit points drop to 0, it falls unconscious and is in danger of dying.",
+          "is_exception": false,
+          "related_search_terms": [
+            "health",
+            "HP",
+            "how much damage can I take"
+          ]
+        },
+        "related_keywords": [
+          "health",
+          "HP",
+          "damage",
+          "healing"
+        ]
+      },
+      {
+        "concept_name": "Taking Damage",
+        "definition": "The process by which a creature's hit points are reduced due to harm.",
+        "rule_logic": {
+          "premise": "A creature suffers damage",
+          "implication": "Reduce the creature's current hit points by the damage amount. If hit points reach 0, follow rules for 0 Hit Points.",
+          "exceptions": [],
+          "description_text": "Whenever a creature takes damage, subtract that damage from its current hit points. When a creature's hit points drop to 0, it falls unconscious and is in danger of dying, unless the damage kills it outright.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how damage works",
+            "losing health",
+            "damage calculation"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "hit points",
+          "health",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "0 Hit Points Condition",
+        "definition": "The state a creature enters when its hit points are reduced to zero.",
+        "rule_logic": {
+          "premise": "A creature's current hit points are reduced to 0 (and not killed outright)",
+          "implication": "The creature falls unconscious, drops whatever it's holding, and begins making death saving throws at the start of its turns.",
+          "exceptions": [],
+          "description_text": "When your hit points drop to 0, you fall unconscious. This unconsciousness ends if you regain any hit points. Unless the damage kills you outright, you are not dead. You're dying. At the start of your turn, you must make a special saving throw, called a death saving throw.",
+          "is_exception": false,
+          "related_search_terms": [
+            "knocked out",
+            "dying state",
+            "what happens at 0 hp",
+            "unconscious at 0"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "unconscious",
+          "dying",
+          "death saving throws",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "Instant Death",
+        "definition": "A specific condition causing a creature to die immediately upon taking damage, bypassing death saving throws.",
+        "rule_logic": {
+          "premise": "Damage reduces a creature's hit points to 0, AND the excess damage (damage beyond what was needed to reach 0) is equal to or greater than its hit point maximum",
+          "implication": "The creature dies instantly.",
+          "exceptions": [],
+          "description_text": "When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.",
+          "is_exception": true,
+          "related_search_terms": [
+            "one-shot kill",
+            "overkill damage",
+            "instant death condition",
+            "how to die outright"
+          ]
+        },
+        "related_keywords": [
+          "death",
+          "damage",
+          "hit points",
+          "dying",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "Death Saving Throw",
+        "definition": "A special saving throw made by a dying creature to determine its fate: stabilization or death.",
+        "rule_logic": {
+          "premise": "A creature is at 0 hit points and not stable, at the start of its turn",
+          "implication": "The creature makes a d20 roll without modifiers. A result of 10 or higher is a success, 9 or lower is a failure. Accumulate 3 successes to stabilize, or 3 failures to die. A natural 20 restores 1 HP. A natural 1 counts as 2 failures.",
+          "exceptions": [],
+          "description_text": "Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you cling to life or embrace death. Unlike other saving throws, this one isn't tied to any of your ability scores. You are in the hands of fate now, so roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. Instead, you keep track of both. On your third success, you become stable. On your third failure, you die. The successes and failures don't need to be consecutive; keep track of both until you collect three of a kind. If you roll a 1 on the d20, it counts as two failures. If you roll a 20 on the d20, you regain 1 hit point.",
+          "is_exception": false,
+          "related_search_terms": [
+            "dying rolls",
+            "d20 death save",
+            "stabilize check",
+            "fail death save",
+            "success death save",
+            "death save rules"
+          ]
+        },
+        "related_keywords": [
+          "death",
+          "saving throw",
+          "hit points",
+          "dying",
+          "combat",
+          "stabilize"
+        ]
+      },
+      {
+        "concept_name": "Stabilizing a Creature",
+        "definition": "The act of ending the dying state of a creature at 0 hit points, preventing further death saving throws.",
+        "rule_logic": {
+          "premise": "A creature at 0 hit points needs to be stabilized, AND an action is used (e.g., successfully making a DC 10 Wisdom (Medicine) check)",
+          "implication": "The creature becomes stable. It is still at 0 hit points and unconscious, but no longer makes death saving throws. It regains 1 hit point after 1d4 hours.",
+          "exceptions": [],
+          "description_text": "The best way to save a creature at 0 hit points is to heal it. If it regains any hit points, it is no longer in danger of death. A stable creature doesn't make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn't healed regains 1 hit point after 1d4 hours.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stop dying",
+            "medicine check stabilize",
+            "healing 0 hp",
+            "revive character",
+            "stable condition"
+          ]
+        },
+        "related_keywords": [
+          "healing",
+          "medicine",
+          "hit points",
+          "dying",
+          "stabilize",
+          "unconscious"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Damage and Healing",
+    "extracted_concepts": [],
+    "_chunk_header": "Damage and Healing",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Combat - Hit Points",
+    "extracted_concepts": [
+      {
+        "concept_name": "Hit Points (HP)",
+        "definition": "A measure representing a creature's physical and mental durability, will to live, and luck, indicating how difficult it is to kill.",
+        "rule_logic": {
+          "premise": "A creature exists",
+          "implication": "Creature possesses Hit Points, a numerical value between its hit point maximum and 0",
+          "exceptions": [],
+          "description_text": "Hit points represent a combination of physical and mental durability, the will to live, and luck. A creature's current hit points can be any number from the creature's hit point maximum down to 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are hit points",
+            "hp definition",
+            "how to calculate hp",
+            "creature durability"
+          ]
+        },
+        "related_keywords": [
+          "durability",
+          "health",
+          "survival",
+          "damage"
+        ]
+      },
+      {
+        "concept_name": "Damage Application to Hit Points",
+        "definition": "The process of reducing a creature's hit points when it takes damage.",
+        "rule_logic": {
+          "premise": "Creature takes damage",
+          "implication": "Damage value is subtracted from the creature's current hit points",
+          "exceptions": [],
+          "description_text": "Whenever a creature takes damage, that damage is subtracted from its hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how damage works",
+            "reducing hp",
+            "damage rules",
+            "hp reduction"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "hit points",
+          "subtraction",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "Effect of Hit Point Loss (above 0 HP)",
+        "definition": "The impact of a creature losing hit points while still having more than 0 hit points remaining.",
+        "rule_logic": {
+          "premise": "Creature loses hit points AND current hit points remain above 0",
+          "implication": "No effect on the creature's capabilities",
+          "exceptions": [],
+          "description_text": "The loss of hit points has no effect on a creature's capabilities until the creature drops to 0 hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "does low hp affect performance",
+            "disadvantages of low hp",
+            "combat ability at low health",
+            "hp loss effects"
+          ]
+        },
+        "related_keywords": [
+          "capabilities",
+          "status",
+          "combat",
+          "performance",
+          "hp threshold"
+        ]
+      },
+      {
+        "concept_name": "Hit Point Fluctuation",
+        "definition": "The dynamic nature of a creature's current hit points, changing based on events like damage and healing.",
+        "rule_logic": {
+          "premise": "Creature takes damage OR creature receives healing",
+          "implication": "Creature's current hit points change accordingly",
+          "exceptions": [],
+          "description_text": "This number [current hit points] changes frequently as a creature takes damage or receives healing.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how hp changes",
+            "healing effects",
+            "damage effects",
+            "hp recovery"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "healing",
+          "current hp",
+          "fluctuation"
+        ]
+      }
+    ],
+    "_chunk_header": "Hit Points",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Damage Rolls",
+    "extracted_concepts": [
+      {
+        "concept_name": "Damage Roll Calculation",
+        "definition": "The process of determining the amount of damage dealt by an attack or harmful effect.",
+        "rule_logic": {
+          "premise": "An attack, spell, or harmful monster ability deals damage",
+          "implication": "Roll the specified damage dice, add any modifiers, and apply the total damage to the target",
+          "exceptions": [],
+          "description_text": "Each weapon, spell, and harmful monster ability specifies the damage it deals. You roll the damage die or dice, add any modifiers, and apply the damage to your target. Magic weapons, special abilities, and other factors can grant a bonus to damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate damage",
+            "damage formula",
+            "damage calculation",
+            "applying damage"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "roll",
+          "modifier",
+          "attack",
+          "spell"
+        ]
+      },
+      {
+        "concept_name": "Weapon Damage Modifier",
+        "definition": "The ability modifier added to a weapon's damage roll.",
+        "rule_logic": {
+          "premise": "Attacking with a weapon",
+          "implication": "Add the ability modifier (the same one used for the attack roll) to the damage roll",
+          "exceptions": [],
+          "description_text": "When attacking with a weapon, you add your ability modifier-the same modifier used for the attack roll-to the damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "weapon damage bonus",
+            "strength to damage",
+            "dexterity to damage",
+            "melee damage modifier",
+            "ranged damage modifier"
+          ]
+        },
+        "related_keywords": [
+          "weapon",
+          "damage",
+          "ability modifier",
+          "attack roll"
+        ]
+      },
+      {
+        "concept_name": "Spell Damage Calculation",
+        "definition": "The specific dice and modifiers determined by a spell for its damage.",
+        "rule_logic": {
+          "premise": "Casting a spell that deals damage",
+          "implication": "The spell's description specifies which dice to roll for damage and whether to add any modifiers",
+          "exceptions": [],
+          "description_text": "A spell tells you which dice to roll for damage and whether to add any modifiers.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell damage bonus",
+            "magic damage modifier",
+            "how spells deal damage"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "damage",
+          "dice",
+          "modifier"
+        ]
+      },
+      {
+        "concept_name": "Minimum Damage Dealt",
+        "definition": "The lowest possible damage value that can be dealt after all modifiers and penalties.",
+        "rule_logic": {
+          "premise": "Damage is being dealt, potentially with penalties",
+          "implication": "Damage dealt can be 0, but never a negative number",
+          "exceptions": [],
+          "description_text": "With a penalty, it is possible to deal 0 damage, but never negative damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can damage be negative",
+            "0 damage",
+            "minimum damage roll",
+            "damage floor"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "penalty",
+          "minimum"
+        ]
+      },
+      {
+        "concept_name": "Damage Roll for Multiple Targets",
+        "definition": "The method for rolling damage when an effect simultaneously harms multiple creatures.",
+        "rule_logic": {
+          "premise": "A spell or other effect deals damage to more than one target at the same time",
+          "implication": "Roll the damage dice once, and that single result applies to all affected targets",
+          "exceptions": [],
+          "description_text": "If a spell or other effect deals damage to more than one target at the same time, roll the damage once for all of them. For example, when a wizard casts fireball or a cleric casts flame strike, the spell's damage is rolled once for all creatures caught in the blast.",
+          "is_exception": false,
+          "related_search_terms": [
+            "aoe damage roll",
+            "fireball damage",
+            "multiple targets damage",
+            "splash damage roll"
+          ]
+        },
+        "related_keywords": [
+          "damage",
+          "area of effect",
+          "spell",
+          "multiple targets"
+        ]
+      },
+      {
+        "concept_name": "Critical Hit Damage Calculation",
+        "definition": "The special damage calculation performed when an attack scores a critical hit against a target.",
+        "rule_logic": {
+          "premise": "An attack scores a critical hit",
+          "implication": "Roll all of the attack's damage dice twice (including additional damage dice like Sneak Attack), add them together, and then add any relevant modifiers as normal",
+          "exceptions": [],
+          "description_text": "When you score a critical hit, you get to roll extra dice for the attack's damage against the target. Roll all of the attack's damage dice twice and add them together. Then add any relevant modifiers as normal. To speed up play, you can roll all the damage dice at once. For example, if you score a critical hit with a dagger, roll 2d4 for the damage, rather than 1d4, and then add your relevant ability modifier. If the attack involves other damage dice, such as from the rogue's Sneak Attack feature, you roll those dice twice as well.",
+          "is_exception": false,
+          "related_search_terms": [
+            "crit damage",
+            "double damage dice",
+            "sneak attack crit",
+            "critical hit damage rule",
+            "what happens on a crit"
+          ]
+        },
+        "related_keywords": [
+          "critical hit",
+          "damage",
+          "attack",
+          "dice",
+          "modifier",
+          "extra dice"
+        ]
+      },
+      {
+        "concept_name": "Damage Types (General Rule)",
+        "definition": "Categories used to classify different forms of damage, which other rules (like resistance) may interact with.",
+        "rule_logic": {
+          "premise": "Damage is dealt",
+          "implication": "The damage has a specific type (e.g., Acid, Bludgeoning, Fire, etc.). Damage types have no rules of their own, but other rules rely on them.",
+          "exceptions": [],
+          "description_text": "Different attacks, damaging spells, and other harmful effects deal different types of damage. Damage types have no rules of their own, but other rules, such as damage resistance, rely on the types.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are damage types",
+            "types of damage dnd",
+            "resistance and damage types",
+            "vulnerability and damage types"
+          ]
+        },
+        "related_keywords": [
+          "damage type",
+          "resistance",
+          "vulnerability"
+        ]
+      },
+      {
+        "concept_name": "Acid Damage Type",
+        "definition": "Damage from corrosive substances.",
+        "rule_logic": {
+          "premise": "Damage is dealt by corrosive effects",
+          "implication": "It is classified as acid damage",
+          "exceptions": [],
+          "description_text": "The corrosive spray of a black dragon's breath and the dissolving enzymes secreted by a black pudding deal acid damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "acid damage examples",
+            "what is acid damage"
+          ]
+        },
+        "related_keywords": [
+          "acid",
+          "damage type",
+          "corrosive"
+        ]
+      },
+      {
+        "concept_name": "Bludgeoning Damage Type",
+        "definition": "Damage from blunt force attacks.",
+        "rule_logic": {
+          "premise": "Damage is dealt by blunt force",
+          "implication": "It is classified as bludgeoning damage",
+          "exceptions": [],
+          "description_text": "Blunt force attacks-hammers, falling, constriction, and the like-deal bludgeoning damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "bludgeoning damage examples",
+            "what is bludgeoning damage"
+          ]
+        },
+        "related_keywords": [
+          "bludgeoning",
+          "damage type",
+          "blunt force"
+        ]
+      },
+      {
+        "concept_name": "Cold Damage Type",
+        "definition": "Damage from frigid temperatures or icy effects.",
+        "rule_logic": {
+          "premise": "Damage is dealt by frigid or icy effects",
+          "implication": "It is classified as cold damage",
+          "exceptions": [],
+          "description_text": "The infernal chill radiating from an ice devil's spear and the frigid blast of a white dragon's breath deal cold damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cold damage examples",
+            "what is cold damage"
+          ]
+        },
+        "related_keywords": [
+          "cold",
+          "damage type",
+          "ice",
+          "frost"
+        ]
+      },
+      {
+        "concept_name": "Fire Damage Type",
+        "definition": "Damage from flames or intense heat.",
+        "rule_logic": {
+          "premise": "Damage is dealt by flames or intense heat",
+          "implication": "It is classified as fire damage",
+          "exceptions": [],
+          "description_text": "Red dragons breathe fire, and many spells conjure flames to deal fire damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fire damage examples",
+            "what is fire damage"
+          ]
+        },
+        "related_keywords": [
+          "fire",
+          "damage type",
+          "flames",
+          "heat"
+        ]
+      },
+      {
+        "concept_name": "Force Damage Type",
+        "definition": "Damage from pure magical energy.",
+        "rule_logic": {
+          "premise": "Damage is dealt by pure magical energy",
+          "implication": "It is classified as force damage",
+          "exceptions": [],
+          "description_text": "Force is pure magical energy focused into a damaging form. Most effects that deal force damage are spells, including magic missile and spiritual weapon.",
+          "is_exception": false,
+          "related_search_terms": [
+            "force damage examples",
+            "what is force damage"
+          ]
+        },
+        "related_keywords": [
+          "force",
+          "damage type",
+          "magic",
+          "spell energy"
+        ]
+      },
+      {
+        "concept_name": "Lightning Damage Type",
+        "definition": "Damage from electrical discharge.",
+        "rule_logic": {
+          "premise": "Damage is dealt by electrical discharge",
+          "implication": "It is classified as lightning damage",
+          "exceptions": [],
+          "description_text": "A lightning bolt spell and a blue dragon's breath deal lightning damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "lightning damage examples",
+            "what is lightning damage"
+          ]
+        },
+        "related_keywords": [
+          "lightning",
+          "damage type",
+          "electricity"
+        ]
+      },
+      {
+        "concept_name": "Necrotic Damage Type",
+        "definition": "Damage that withers matter and the soul, often associated with undeath.",
+        "rule_logic": {
+          "premise": "Damage is dealt by effects that wither matter or the soul",
+          "implication": "It is classified as necrotic damage",
+          "exceptions": [],
+          "description_text": "Necrotic damage, dealt by certain undead and a spell such as chill touch, withers matter and even the soul.",
+          "is_exception": false,
+          "related_search_terms": [
+            "necrotic damage examples",
+            "what is necrotic damage"
+          ]
+        },
+        "related_keywords": [
+          "necrotic",
+          "damage type",
+          "undeath",
+          "withering"
+        ]
+      },
+      {
+        "concept_name": "Piercing Damage Type",
+        "definition": "Damage from puncturing or impaling attacks.",
+        "rule_logic": {
+          "premise": "Damage is dealt by puncturing or impaling attacks",
+          "implication": "It is classified as piercing damage",
+          "exceptions": [],
+          "description_text": "Puncturing and impaling attacks, including spears and monsters' bites, deal piercing damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "piercing damage examples",
+            "what is piercing damage"
+          ]
+        },
+        "related_keywords": [
+          "piercing",
+          "damage type",
+          "puncture",
+          "impale"
+        ]
+      },
+      {
+        "concept_name": "Poison Damage Type",
+        "definition": "Damage from venomous or toxic substances.",
+        "rule_logic": {
+          "premise": "Damage is dealt by venomous or toxic substances",
+          "implication": "It is classified as poison damage",
+          "exceptions": [],
+          "description_text": "Venomous stings and the toxic gas of a green dragon's breath deal poison damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "poison damage examples",
+            "what is poison damage"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "damage type",
+          "venom",
+          "toxic"
+        ]
+      },
+      {
+        "concept_name": "Psychic Damage Type",
+        "definition": "Damage from mental attacks or psionic energy.",
+        "rule_logic": {
+          "premise": "Damage is dealt by mental attacks or psionic energy",
+          "implication": "It is classified as psychic damage",
+          "exceptions": [],
+          "description_text": "Mental abilities such as a mind flayer's psionic blast deal psychic damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "psychic damage examples",
+            "what is psychic damage"
+          ]
+        },
+        "related_keywords": [
+          "psychic",
+          "damage type",
+          "mental",
+          "psionic"
+        ]
+      },
+      {
+        "concept_name": "Radiant Damage Type",
+        "definition": "Damage that sears flesh and overloads the spirit, often divine or holy in nature.",
+        "rule_logic": {
+          "premise": "Damage is dealt by searing or spirit-overloading effects",
+          "implication": "It is classified as radiant damage",
+          "exceptions": [],
+          "description_text": "Radiant damage, dealt by a cleric's flame strike spell or an angel's smiting weapon, sears the flesh like fire and overloads the spirit with power.",
+          "is_exception": false,
+          "related_search_terms": [
+            "radiant damage examples",
+            "what is radiant damage"
+          ]
+        },
+        "related_keywords": [
+          "radiant",
+          "damage type",
+          "divine",
+          "holy",
+          "searing"
+        ]
+      },
+      {
+        "concept_name": "Slashing Damage Type",
+        "definition": "Damage from cutting attacks.",
+        "rule_logic": {
+          "premise": "Damage is dealt by cutting attacks",
+          "implication": "It is classified as slashing damage",
+          "exceptions": [],
+          "description_text": "Swords, axes, and monsters' claws deal slashing damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "slashing damage examples",
+            "what is slashing damage"
+          ]
+        },
+        "related_keywords": [
+          "slashing",
+          "damage type",
+          "cutting",
+          "blade"
+        ]
+      },
+      {
+        "concept_name": "Thunder Damage Type",
+        "definition": "Damage from concussive bursts of sound.",
+        "rule_logic": {
+          "premise": "Damage is dealt by concussive sound",
+          "implication": "It is classified as thunder damage",
+          "exceptions": [],
+          "description_text": "A concussive burst of sound, such as the effect of the thunderwave spell, deals thunder damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "thunder damage examples",
+            "what is thunder damage"
+          ]
+        },
+        "related_keywords": [
+          "thunder",
+          "damage type",
+          "sound",
+          "concussive"
+        ]
+      }
+    ],
+    "_chunk_header": "Damage Rolls",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Damage Resistance and Vulnerability",
+    "extracted_concepts": [
+      {
+        "concept_name": "Damage Resistance",
+        "definition": "A condition where a creature or object takes half damage from a specific damage type.",
+        "rule_logic": {
+          "premise": "A creature or an object has resistance to a specific damage type AND takes damage of that type",
+          "implication": "Damage of that type is halved against the target. This halving occurs after all other modifiers to damage are applied. Multiple instances of resistance to the same damage type count as only one instance.",
+          "exceptions": [],
+          "description_text": "If a creature or an object has resistance to a damage type, damage of that type is halved against it. Resistance and then vulnerability are applied after all other modifiers to damage. Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance.",
+          "is_exception": false,
+          "related_search_terms": [
+            "resistance damage calculation",
+            "how to calculate resistance",
+            "multiple resistance dnd",
+            "does resistance stack",
+            "resistance to fire damage",
+            "damage reduction"
+          ]
+        },
+        "related_keywords": [
+          "resistance",
+          "damage",
+          "halved",
+          "modifiers",
+          "damage type"
+        ]
+      },
+      {
+        "concept_name": "Damage Vulnerability",
+        "definition": "A condition where a creature or object takes double damage from a specific damage type.",
+        "rule_logic": {
+          "premise": "A creature or an object has vulnerability to a specific damage type AND takes damage of that type",
+          "implication": "Damage of that type is doubled against the target. This doubling occurs after all other modifiers to damage are applied. Multiple instances of vulnerability to the same damage type count as only one instance.",
+          "exceptions": [],
+          "description_text": "If a creature or an object has vulnerability to a damage type, damage of that type is doubled against it. Resistance and then vulnerability are applied after all other modifiers to damage. Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance.",
+          "is_exception": false,
+          "related_search_terms": [
+            "vulnerability damage calculation",
+            "how to calculate vulnerability",
+            "multiple vulnerability dnd",
+            "does vulnerability stack",
+            "vulnerability to bludgeoning damage",
+            "damage amplification"
+          ]
+        },
+        "related_keywords": [
+          "vulnerability",
+          "damage",
+          "doubled",
+          "modifiers",
+          "damage type"
+        ]
+      }
+    ],
+    "_chunk_header": "Damage Resistance and Vulnerability",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Healing",
+    "extracted_concepts": [
+      {
+        "concept_name": "Healing Application",
+        "definition": "The general procedure for how hit points are restored to a creature, adding regained hit points to its current total.",
+        "rule_logic": {
+          "premise": "A creature receives healing of any kind",
+          "implication": "Hit points regained are added to its current hit points",
+          "exceptions": [],
+          "description_text": "When a creature receives healing of any kind, hit points regained are added to its current hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "restore hp",
+            "regain hit points",
+            "how healing works",
+            "adding hp",
+            "restoring health",
+            "hp restoration"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "hp",
+          "rest",
+          "magic",
+          "cure wounds",
+          "potion of healing"
+        ]
+      },
+      {
+        "concept_name": "Hit Point Maximum Limit for Healing",
+        "definition": "A constraint preventing a creature's current hit points from exceeding its maximum hit points through healing.",
+        "rule_logic": {
+          "premise": "Healing would cause a creature's current hit points to exceed its hit point maximum",
+          "implication": "Any hit points regained in excess of the creature's hit point maximum are lost",
+          "exceptions": [],
+          "description_text": "A creature's hit points can't exceed its hit point maximum, so any hit points regained in excess of this number are lost. For example, a druid grants a ranger 8 hit points of healing. If the ranger has 14 current hit points and has a hit point maximum of 20, the ranger regains 6 hit points from the druid, not 8.",
+          "is_exception": false,
+          "related_search_terms": [
+            "overhealing",
+            "max hp cap",
+            "healing cap",
+            "hp limit",
+            "excess healing",
+            "heal over max",
+            "hit point limit"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "hp",
+          "hit point maximum",
+          "healing"
+        ]
+      },
+      {
+        "concept_name": "Healing a Dead Creature Restriction",
+        "definition": "A specific rule stating that dead creatures cannot regain hit points until they are brought back to life by powerful magic.",
+        "rule_logic": {
+          "premise": "A creature has died",
+          "implication": "The creature cannot regain hit points",
+          "exceptions": [
+            "Unless magic such as the *revivify* spell has restored it to life"
+          ],
+          "description_text": "A creature that has died can't regain hit points until magic such as the *revivify* spell has restored it to life.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can't heal dead",
+            "healing dead characters",
+            "reviving rule",
+            "death and healing",
+            "dead hp",
+            "healing unconscious"
+          ]
+        },
+        "related_keywords": [
+          "dead",
+          "death",
+          "hit points",
+          "healing",
+          "revivify",
+          "spell",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Healing",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Combat - Dropping to 0 Hit Points",
+    "extracted_concepts": [
+      {
+        "concept_name": "Dropping to 0 Hit Points",
+        "definition": "The immediate consequence when a creature's current hit points are reduced to zero.",
+        "rule_logic": {
+          "premise": "Creature's current hit points are reduced to 0",
+          "implication": "Creature either dies outright OR falls unconscious",
+          "exceptions": [],
+          "description_text": "When you drop to 0 hit points, you either die outright or fall unconscious, as explained in the following sections.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens at 0 hp",
+            "reaching 0 hit points",
+            "death states"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "hp",
+          "death",
+          "unconscious"
+        ]
+      },
+      {
+        "concept_name": "Instant Death (Massive Damage)",
+        "definition": "A condition where a creature dies immediately if damage reduces it to 0 hit points and the remaining damage exceeds its hit point maximum.",
+        "rule_logic": {
+          "premise": "Damage reduces target to 0 hit points AND remaining damage equals or exceeds target's hit point maximum",
+          "implication": "Target dies instantly",
+          "exceptions": [],
+          "description_text": "When damage reduces you to 0 hit points and there is damage remaining, you die if the remaining damage equals or exceeds your hit point maximum.",
+          "is_exception": false,
+          "related_search_terms": [
+            "massive damage death",
+            "how much damage to instakill",
+            "instant kill rules",
+            "death from overkill"
+          ]
+        },
+        "related_keywords": [
+          "death",
+          "hp",
+          "damage",
+          "hit point maximum",
+          "massive damage",
+          "instant kill"
+        ]
+      },
+      {
+        "concept_name": "Falling Unconscious (at 0 HP)",
+        "definition": "The state a creature enters if damage reduces it to 0 hit points without resulting in instant death.",
+        "rule_logic": {
+          "premise": "Damage reduces target to 0 hit points AND target does not die instantly",
+          "implication": "Target falls unconscious",
+          "exceptions": [],
+          "description_text": "If damage reduces you to 0 hit points and fails to kill you, you fall unconscious (see appendix PH-A). This unconsciousness ends if you regain any hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "unconscious at 0 hp",
+            "waking up from unconscious",
+            "0 hp condition",
+            "how to end unconscious condition"
+          ]
+        },
+        "related_keywords": [
+          "unconscious",
+          "hp",
+          "condition",
+          "regain hit points"
+        ]
+      },
+      {
+        "concept_name": "Death Saving Throw",
+        "definition": "A special saving throw made at the start of a creature's turn when it has 0 hit points, used to determine if it stabilizes or dies.",
+        "rule_logic": {
+          "premise": "Creature starts its turn with 0 hit points",
+          "implication": "Creature must make a death saving throw (Roll a d20. 10+ is success, <10 is failure. 3 successes = stable. 3 failures = death. Success/failure count resets on regaining HP or becoming stable.)",
+          "exceptions": [
+            "Rolling a 1 on death saving throw",
+            "Rolling a 20 on death saving throw",
+            "Taking damage at 0 hit points"
+          ],
+          "description_text": "Whenever you start your turn with 0 hit points, you must make a special saving throw, called a death saving throw, to determine whether you creep closer to death or hang onto life. Roll a d20. If the roll is 10 or higher, you succeed. Otherwise, you fail. A success or failure has no effect by itself. On your third success, you become stable (see below). On your third failure, you die. The successes and failures don't need to be consecutive; keep track of both until you collect three of a kind. The number of both is reset to zero when you regain any hit points or become stable.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how death saves work",
+            "death save rules",
+            "what is a death saving throw",
+            "successes and failures death save"
+          ]
+        },
+        "related_keywords": [
+          "death save",
+          "saving throw",
+          "0 hp",
+          "stable",
+          "die",
+          "d20"
+        ]
+      },
+      {
+        "concept_name": "Death Saving Throw: Rolling 1",
+        "definition": "The specific consequence of rolling a natural 1 on a death saving throw.",
+        "rule_logic": {
+          "premise": "Creature makes a death saving throw AND rolls a 1 on the d20",
+          "implication": "Counts as two failures",
+          "exceptions": [],
+          "description_text": "When you make a death saving throw and roll a 1 on the d20, it counts as two failures.",
+          "is_exception": false,
+          "related_search_terms": [
+            "natural 1 death save",
+            "death save critical failure",
+            "double failure death save"
+          ]
+        },
+        "related_keywords": [
+          "death save",
+          "critical failure",
+          "rolling 1"
+        ]
+      },
+      {
+        "concept_name": "Death Saving Throw: Rolling 20",
+        "definition": "The specific consequence of rolling a natural 20 on a death saving throw.",
+        "rule_logic": {
+          "premise": "Creature makes a death saving throw AND rolls a 20 on the d20",
+          "implication": "Creature regains 1 hit point",
+          "exceptions": [],
+          "description_text": "If you roll a 20 on the d20, you regain 1 hit point.",
+          "is_exception": false,
+          "related_search_terms": [
+            "natural 20 death save",
+            "death save critical success",
+            "healing on death save"
+          ]
+        },
+        "related_keywords": [
+          "death save",
+          "critical success",
+          "rolling 20",
+          "regain hp"
+        ]
+      },
+      {
+        "concept_name": "Damage at 0 Hit Points",
+        "definition": "The effect of taking damage while a creature is at 0 hit points.",
+        "rule_logic": {
+          "premise": "Creature with 0 hit points takes any damage",
+          "implication": "Creature suffers one death saving throw failure",
+          "exceptions": [
+            "Critical hit at 0 HP",
+            "Massive damage at 0 HP"
+          ],
+          "description_text": "If you take any damage while you have 0 hit points, you suffer a death saving throw failure.",
+          "is_exception": false,
+          "related_search_terms": [
+            "hit at 0 hp",
+            "damage while downed",
+            "death save failure from damage"
+          ]
+        },
+        "related_keywords": [
+          "0 hp",
+          "damage",
+          "death save failure"
+        ]
+      },
+      {
+        "concept_name": "Damage at 0 Hit Points: Critical Hit",
+        "definition": "The specific effect of taking damage from a critical hit while a creature is at 0 hit points.",
+        "rule_logic": {
+          "premise": "Creature with 0 hit points takes damage from a critical hit",
+          "implication": "Creature suffers two death saving throw failures",
+          "exceptions": [],
+          "description_text": "If the damage is from a critical hit, you suffer two failures instead.",
+          "is_exception": false,
+          "related_search_terms": [
+            "critical hit at 0 hp",
+            "critical damage downed",
+            "two failures death save"
+          ]
+        },
+        "related_keywords": [
+          "0 hp",
+          "critical hit",
+          "death save failures",
+          "damage"
+        ]
+      },
+      {
+        "concept_name": "Damage at 0 Hit Points: Instant Death from Massive Damage",
+        "definition": "The specific effect of taking massive damage while a creature is at 0 hit points, leading to instant death.",
+        "rule_logic": {
+          "premise": "Creature with 0 hit points takes damage AND the damage equals or exceeds its hit point maximum",
+          "implication": "Creature suffers instant death",
+          "exceptions": [],
+          "description_text": "If the damage equals or exceeds your hit point maximum, you suffer instant death.",
+          "is_exception": false,
+          "related_search_terms": [
+            "instant death at 0 hp",
+            "massive damage death at 0 hp",
+            "overkill while downed"
+          ]
+        },
+        "related_keywords": [
+          "0 hp",
+          "massive damage",
+          "instant death",
+          "hit point maximum",
+          "damage"
+        ]
+      },
+      {
+        "concept_name": "Stabilizing a Creature (Action)",
+        "definition": "The act of administering first aid to an unconscious creature at 0 hit points to prevent further death saving throws.",
+        "rule_logic": {
+          "premise": "An unconscious creature has 0 hit points",
+          "implication": "A character can use their action to attempt to stabilize it by making a successful DC 10 Wisdom (Medicine) check. On success, the creature becomes stable.",
+          "exceptions": [],
+          "description_text": "You can use your action to administer first aid to an unconscious creature and attempt to stabilize it, which requires a successful DC 10 Wisdom (Medicine) check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to stabilize",
+            "medicine check stabilize",
+            "first aid 5e",
+            "action to stabilize"
+          ]
+        },
+        "related_keywords": [
+          "stabilize",
+          "medicine check",
+          "action",
+          "first aid",
+          "0 hp",
+          "unconscious"
+        ]
+      },
+      {
+        "concept_name": "Stable Condition",
+        "definition": "A condition for a creature at 0 hit points where it no longer makes death saving throws but remains unconscious.",
+        "rule_logic": {
+          "premise": "A creature is stable",
+          "implication": "Creature does not make death saving throws; creature remains unconscious. If it takes any damage, it stops being stable and must start making death saving throws again. If not healed, it regains 1 hit point after 1d4 hours.",
+          "exceptions": [
+            "Taking damage while stable"
+          ],
+          "description_text": "A **stable** creature doesn't make death saving throws, even though it has 0 hit points, but it does remain unconscious. The creature stops being stable, and must start making death saving throws again, if it takes any damage. A stable creature that isn't healed regains 1 hit point after 1d4 hours.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is stable condition",
+            "stable 0 hp",
+            "how long does stable last",
+            "damage to stable creature",
+            "waking up from stable"
+          ]
+        },
+        "related_keywords": [
+          "stable",
+          "0 hp",
+          "unconscious",
+          "death saving throws",
+          "damage",
+          "healing",
+          "regain hp"
+        ]
+      },
+      {
+        "concept_name": "Monsters and Death (General)",
+        "definition": "The general rule for how monsters are handled upon reaching 0 hit points.",
+        "rule_logic": {
+          "premise": "A monster is reduced to 0 hit points (unless GM decides otherwise)",
+          "implication": "Monster dies instantly",
+          "exceptions": [
+            "Mighty villains and special NPCs"
+          ],
+          "description_text": "Most GMs have a monster die the instant it drops to 0 hit points, rather than having it fall unconscious and make death saving throws.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do monsters make death saves",
+            "monster death rules",
+            "monster 0 hp"
+          ]
+        },
+        "related_keywords": [
+          "monsters",
+          "gm discretion",
+          "instant death",
+          "0 hp"
+        ]
+      },
+      {
+        "concept_name": "Monsters and Death (Exception: Villains/NPCs)",
+        "definition": "An exception to the general monster death rule, allowing important monsters or NPCs to follow player character death rules.",
+        "rule_logic": {
+          "premise": "Monster is a mighty villain or special nonplayer character (DM's discretion)",
+          "implication": "Monster might fall unconscious and follow the same rules as player characters (e.g., make death saving throws)",
+          "exceptions": [],
+          "description_text": "Mighty villains and special nonplayer characters are common exceptions; the GM might have them fall unconscious and follow the same rules as player characters.",
+          "is_exception": true,
+          "related_search_terms": [
+            "villain death rules",
+            "npc death saves",
+            "important monster death",
+            "do bosses make death saves"
+          ]
+        },
+        "related_keywords": [
+          "monsters",
+          "villains",
+          "npcs",
+          "player characters",
+          "death rules",
+          "exception",
+          "gm discretion"
+        ]
+      }
+    ],
+    "_chunk_header": "Dropping to 0 Hit Points",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Combat - Knocking a Creature Out",
+    "extracted_concepts": [
+      {
+        "concept_name": "Knocking a Creature Out",
+        "definition": "A specific choice an attacker can make to render a foe unconscious and stable, rather than dealing a killing blow, when reducing them to 0 hit points with a melee attack.",
+        "rule_logic": {
+          "premise": "IF an attacker reduces a creature to 0 hit points with a melee attack AND the attacker chooses to incapacitate",
+          "implication": "THEN the creature falls unconscious AND is stable",
+          "exceptions": [],
+          "description_text": "When an attacker reduces a creature to 0 hit points with a melee attack, the attacker can knock the creature out. The attacker can make this choice the instant the damage is dealt. The creature falls unconscious and is stable.",
+          "is_exception": false,
+          "related_search_terms": [
+            "non-lethal damage",
+            "subdue opponent",
+            "take prisoner",
+            "melee knockout",
+            "unconscious stable",
+            "incapacitate enemy"
+          ]
+        },
+        "related_keywords": [
+          "incapacitate",
+          "0 hit points",
+          "melee attack",
+          "unconscious",
+          "stable",
+          "choice"
+        ]
+      }
+    ],
+    "_chunk_header": "Knocking a Creature Out",
+    "_source_file": "damage-and-healing"
+  },
+  {
+    "source_chapter": "Combat - Temporary Hit Points",
+    "extracted_concepts": [
+      {
+        "concept_name": "Temporary Hit Points",
+        "definition": "A buffer against damage, a pool of hit points that protect a creature from injury, distinct from actual hit points.",
+        "rule_logic": {
+          "premise": "Creature has temporary hit points AND takes damage",
+          "implication": "Temporary hit points are lost first. Any leftover damage carries over to normal hit points.",
+          "exceptions": [],
+          "description_text": "When you have temporary hit points and take damage, the temporary hit points are lost first, and any leftover damage carries over to your normal hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do temporary hit points work",
+            "thp damage",
+            "taking damage with temporary hit points"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "damage",
+          "buffer",
+          "hp"
+        ]
+      },
+      {
+        "concept_name": "Temporary Hit Points Maximum",
+        "definition": "A rule governing how temporary hit points interact with a creature's hit point maximum.",
+        "rule_logic": {
+          "premise": "Creature gains temporary hit points",
+          "implication": "Temporary hit points can exceed the creature's hit point maximum. A character can be at full hit points and still receive temporary hit points.",
+          "exceptions": [],
+          "description_text": "Because temporary hit points are separate from your actual hit points, they can exceed your hit point maximum. A character can, therefore, be at full hit points and receive temporary hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can temporary hp go over max hp",
+            "full health temporary hp",
+            "overhealing"
+          ]
+        },
+        "related_keywords": [
+          "hit points",
+          "maximum",
+          "hp"
+        ]
+      },
+      {
+        "concept_name": "Temporary Hit Points and Healing",
+        "definition": "A rule clarifying the interaction between healing and temporary hit points.",
+        "rule_logic": {
+          "premise": "Creature attempts to restore temporary hit points via healing",
+          "implication": "Healing cannot restore temporary hit points.",
+          "exceptions": [],
+          "description_text": "Healing can't restore temporary hit points, and they can't be added together.",
+          "is_exception": false,
+          "related_search_terms": [
+            "healing temporary hp",
+            "restore thp"
+          ]
+        },
+        "related_keywords": [
+          "healing",
+          "restore",
+          "hit points"
+        ]
+      },
+      {
+        "concept_name": "Temporary Hit Points Stacking",
+        "definition": "A rule determining how multiple sources of temporary hit points are handled.",
+        "rule_logic": {
+          "premise": "Creature has existing temporary hit points AND receives more temporary hit points from a new source",
+          "implication": "Temporary hit points cannot be added together. The creature decides whether to keep the ones they currently have or gain the new ones.",
+          "exceptions": [],
+          "description_text": "If you have temporary hit points and receive more of them, you decide whether to keep the ones you have or to gain the new ones. For example, if a spell grants you 12 temporary hit points when you already have 10, you can have 12 or 10, not 22.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do temporary hp stack",
+            "multiple temporary hit points",
+            "highest temporary hit points"
+          ]
+        },
+        "related_keywords": [
+          "stacking",
+          "adding",
+          "multiple",
+          "hit points"
+        ]
+      },
+      {
+        "concept_name": "Temporary Hit Points at 0 HP",
+        "definition": "A rule specifying the effect of receiving temporary hit points while at 0 hit points.",
+        "rule_logic": {
+          "premise": "Creature is at 0 hit points AND receives temporary hit points",
+          "implication": "Receiving temporary hit points does not restore the creature to consciousness or stabilize them.",
+          "exceptions": [
+            "Temporary hit points can still absorb damage directed at the creature while they are at 0 hit points."
+          ],
+          "description_text": "If you have 0 hit points, receiving temporary hit points doesn't restore you to consciousness or stabilize you. They can still absorb damage directed at you while you're in that state, but only true healing can save you.",
+          "is_exception": false,
+          "related_search_terms": [
+            "temporary hp unconscious",
+            "thp at 0 hp",
+            "stabilize with temporary hp"
+          ]
+        },
+        "related_keywords": [
+          "0 hit points",
+          "unconscious",
+          "stabilize",
+          "death saves"
+        ]
+      },
+      {
+        "concept_name": "Temporary Hit Points Duration",
+        "definition": "The default duration for temporary hit points.",
+        "rule_logic": {
+          "premise": "Temporary hit points are granted by a feature that does NOT specify a duration",
+          "implication": "Temporary hit points last until they are depleted OR the creature finishes a long rest.",
+          "exceptions": [
+            "If a feature that grants temporary hit points specifies a duration, that duration applies instead."
+          ],
+          "description_text": "Unless a feature that grants you temporary hit points has a duration, they last until they're depleted or you finish a long rest.",
+          "is_exception": true,
+          "related_search_terms": [
+            "how long do temporary hit points last",
+            "temporary hp expiration",
+            "end of rest temporary hp"
+          ]
+        },
+        "related_keywords": [
+          "duration",
+          "long rest",
+          "depleted",
+          "time"
+        ]
+      }
+    ],
+    "_chunk_header": "Temporary Hit Points",
+    "_source_file": "damage-and-healing"
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "entity_name": "Raise Dead",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target dead no longer than 10 days AND soul is willing AND soul is at liberty to rejoin body AND target is not Undead AND target is not missing integral body parts",
+      "outcome": "Target returns to life with 1 hit point",
+      "related_search_terms": [
+        "resurrection",
+        "revive",
+        "bring back to life",
+        "death",
+        "healing",
+        "restoration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target returns to life",
+      "condition": "Poisons affected target at time of death",
+      "outcome": "All poisons affecting target are neutralized",
+      "related_search_terms": [
+        "poison removal",
+        "cure poison",
+        "detoxify"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target returns to life",
+      "condition": "Nonmagical diseases affected target at time of death",
+      "outcome": "All nonmagical diseases affecting target are cured",
+      "related_search_terms": [
+        "disease removal",
+        "cure disease",
+        "healing disease"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Magical diseases, curses, or similar effects affected target at time of death",
+      "outcome": "Magical diseases, curses, or similar effects are NOT removed and take effect when creature returns to life",
+      "related_search_terms": [
+        "curse removal",
+        "magical ailment",
+        "lingering effects"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Target is an Undead creature",
+      "outcome": "Spell automatically fails",
+      "related_search_terms": [
+        "cannot revive undead",
+        "death",
+        "necromancy limit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Target is missing body parts or organs integral for its survival (e.g., head)",
+      "outcome": "Spell automatically fails",
+      "related_search_terms": [
+        "missing limbs",
+        "dismembered",
+        "integral organs",
+        "body integrity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target returns to life",
+      "condition": "Target was returned to life by this spell",
+      "outcome": "Target takes a -4 penalty to all attack rolls, saving throws, and ability checks",
+      "related_search_terms": [
+        "revival sickness",
+        "resurrection fatigue",
+        "penalty",
+        "weakness"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target finishes a long rest",
+      "condition": "Target currently has a penalty from Raise Dead",
+      "outcome": "The penalty from Raise Dead is reduced by 1",
+      "related_search_terms": [
+        "recovery",
+        "penalty reduction",
+        "long rest effect",
+        "healing over time"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Penalty from Raise Dead reaches 0",
+      "condition": "Penalty from Raise Dead equals 0",
+      "outcome": "The penalty from Raise Dead disappears",
+      "related_search_terms": [
+        "full recovery",
+        "penalty removed",
+        "complete healing"
+      ]
+    }
+  ],
+  "description_text": "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point. This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life. This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the spell automatically fails. Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.",
+  "tags": [
+    "necromancy",
+    "healing",
+    "revival",
+    "death",
+    "condition",
+    "restoration"
+  ],
+  "related_search_terms": [
+    "resurrection spell",
+    "bring back to life",
+    "revive dead",
+    "death recovery",
+    "reanimation",
+    "cleric spell",
+    "paladin spell"
+  ]
+}

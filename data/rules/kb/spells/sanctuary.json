@@ -1,0 +1,61 @@
+{
+  "entity_name": "Sanctuary",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "A creature targets the warded creature with an attack or a harmful spell",
+      "condition": "Targeting creature fails a Wisdom Saving Throw",
+      "outcome": "Targeting creature must choose a new target OR lose the attack or spell",
+      "related_search_terms": [
+        "prevent attack",
+        "redirect spell",
+        "forced target change",
+        "wisdom save",
+        "defensive spell",
+        "attack prevention"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Warded creature is subjected to an area effect",
+      "condition": "Area effect, such as the explosion of a fireball, occurs",
+      "outcome": "Sanctuary does NOT protect the warded creature from the area effect",
+      "related_search_terms": [
+        "fireball",
+        "AoE",
+        "splash damage",
+        "evasion",
+        "damage reduction",
+        "area of effect immunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Warded creature makes an attack OR casts a spell",
+      "condition": "The attack or spell affects an enemy creature",
+      "outcome": "Sanctuary spell ends",
+      "related_search_terms": [
+        "breaking spell",
+        "offensive action",
+        "self-defense limit",
+        "attack ends sanctuary",
+        "casting spell ends sanctuary",
+        "spell disruption"
+      ]
+    }
+  ],
+  "description_text": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball. If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.",
+  "tags": [
+    "Abjuration",
+    "Protection",
+    "Defensive"
+  ],
+  "related_search_terms": [
+    "warding spell",
+    "defensive magic",
+    "target protection",
+    "cleric spell",
+    "prevent damage"
+  ]
+}

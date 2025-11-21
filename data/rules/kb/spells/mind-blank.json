@@ -1,0 +1,85 @@
+{
+  "entity_name": "Mind Blank",
+  "logic_type": "ability_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Target would take damage",
+      "condition": "Target is under the effect of Mind Blank AND Damage type is Psychic",
+      "outcome": "Target takes 0 damage of this type",
+      "related_search_terms": [
+        "psychic resistance",
+        "mental harm",
+        "damage negation",
+        "mind shield"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "An effect attempts to sense target's emotions or read target's thoughts",
+      "condition": "Target is under the effect of Mind Blank",
+      "outcome": "The effect fails to sense target's emotions or read target's thoughts",
+      "related_search_terms": [
+        "detect thoughts",
+        "sense emotions",
+        "mental probe",
+        "mind reading",
+        "scrying",
+        "divination fail"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "A divination spell attempts to affect target or gain information about target",
+      "condition": "Target is under the effect of Mind Blank",
+      "outcome": "The divination spell fails to affect target or gain information about target",
+      "related_search_terms": [
+        "scrying",
+        "clairvoyance",
+        "locate creature",
+        "divination counter",
+        "anti-scry"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target would gain the Charmed condition",
+      "condition": "Target is under the effect of Mind Blank",
+      "outcome": "Target does not gain the Charmed condition",
+      "related_search_terms": [
+        "charm person",
+        "compulsion",
+        "mind control",
+        "charming immunity",
+        "anti-charm"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "A Wish spell or other spell or effect of similar power attempts to affect target's mind or gain information about target",
+      "condition": "Target is under the effect of Mind Blank",
+      "outcome": "The Wish spell or similar powerful effect fails in that attempt",
+      "related_search_terms": [
+        "anti-wish",
+        "epic level protection",
+        "high-level mind shield",
+        "unblockable spells",
+        "ultimate mental defense"
+      ]
+    }
+  ],
+  "description_text": "Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target.",
+  "tags": [
+    "Abjuration",
+    "Protection",
+    "Immunity"
+  ],
+  "related_search_terms": [
+    "mental protection",
+    "mind shield",
+    "anti-divination",
+    "psychic defense",
+    "thought shield",
+    "spell immunity"
+  ]
+}

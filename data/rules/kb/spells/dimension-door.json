@@ -1,0 +1,68 @@
+{
+  "entity_name": "Dimension Door",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target spot is within range AND target spot is seen, visualized, or described (distance and direction)",
+      "outcome": "Caster teleports from current location to the target spot",
+      "related_search_terms": [
+        "teleportation",
+        "instant travel",
+        "relocation",
+        "movement spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast (teleporting)",
+      "condition": "Objects' total weight does not exceed Caster's carrying capacity",
+      "outcome": "Caster brings along objects during teleportation",
+      "related_search_terms": [
+        "carrying capacity",
+        "items",
+        "gear",
+        "equipment transport"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast (teleporting)",
+      "condition": "One creature is willing AND creature is of Caster's size or smaller AND creature's gear does not exceed its carrying capacity AND creature is within 5 feet of Caster",
+      "outcome": "Caster brings one willing creature along during teleportation",
+      "related_search_terms": [
+        "ally transport",
+        "companion travel",
+        "group teleport",
+        "rescue"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arrival at destination",
+      "condition": "Target spot is already occupied by an object or creature",
+      "outcome": "Caster (and any traveling creature) takes 4d6 force damage AND teleportation fails (remains at original location)",
+      "related_search_terms": [
+        "teleport failure",
+        "collision damage",
+        "blocked destination",
+        "occupied space",
+        "force damage"
+      ]
+    }
+  ],
+  "description_text": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\" You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell. If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.",
+  "tags": [
+    "4th-level",
+    "conjuration",
+    "teleportation",
+    "spell"
+  ],
+  "related_search_terms": [
+    "quick movement",
+    "escape spell",
+    "repositioning",
+    "travel magic"
+  ]
+}

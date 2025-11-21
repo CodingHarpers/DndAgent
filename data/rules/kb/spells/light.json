@@ -1,0 +1,104 @@
+{
+  "entity_name": "Light",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is an object AND Target is no larger than 10 feet in any dimension",
+      "outcome": "Spell can be cast on target",
+      "related_search_terms": [
+        "spell range",
+        "valid target",
+        "object spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Targeted object is held or worn by a hostile creature",
+      "outcome": "Creature holding or wearing the object must succeed on a Dexterity Saving Throw OR the spell is avoided",
+      "related_search_terms": [
+        "dex save",
+        "hostile target",
+        "avoid spell",
+        "target creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is active and object is not covered",
+      "condition": "Object targeted by Light spell is not completely covered by an opaque material",
+      "outcome": "Object sheds bright light in a 20-foot radius",
+      "related_search_terms": [
+        "illumination",
+        "visibility",
+        "light source",
+        "vision"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is active and object is not covered",
+      "condition": "Object targeted by Light spell is not completely covered by an opaque material",
+      "outcome": "Object sheds dim light for an additional 20 feet beyond the bright light radius",
+      "related_search_terms": [
+        "low light",
+        "obscured",
+        "light source",
+        "vision"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Object is illuminated by Light spell",
+      "condition": "Object is completely covered by an opaque material",
+      "outcome": "Light is blocked",
+      "related_search_terms": [
+        "darkness",
+        "hiding light",
+        "conceal light",
+        "obscure"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster casts Light spell",
+      "condition": "Another instance of Light spell cast by this caster is active",
+      "outcome": "Previous Light spell ends",
+      "related_search_terms": [
+        "concentration spell",
+        "multiple spells",
+        "spell limit",
+        "cantrip effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster takes an action",
+      "condition": "Caster chooses to dismiss the spell",
+      "outcome": "Light spell ends",
+      "related_search_terms": [
+        "end spell",
+        "cancel spell",
+        "free action",
+        "dismiss"
+      ]
+    }
+  ],
+  "description_text": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action. If you target an object held or worn by a hostile creature, that creature must succeed on a dexterity saving throw to avoid the spell.",
+  "tags": [
+    "cantrip",
+    "illumination",
+    "utility",
+    "evocation"
+  ],
+  "related_search_terms": [
+    "light cantrip",
+    "darkness counter",
+    "torch",
+    "lantern",
+    "see in dark",
+    "ambient light"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "entity_name": "Meld Into Stone",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster touches a stone object or surface large enough to fully contain their body",
+      "outcome": "Caster and all carried equipment merge with the stone for the spell's duration",
+      "related_search_terms": [
+        "hide in stone",
+        "enter stone",
+        "merge with environment",
+        "stone cover"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While merged with stone",
+      "condition": "Attempt to detect caster by nonmagical senses",
+      "outcome": "Caster's presence is not visible or otherwise detectable",
+      "related_search_terms": [
+        "undetectable",
+        "invisible",
+        "hidden",
+        "stealth",
+        "nonmagical detection"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While merged with stone",
+      "condition": "Attempt to see outside the stone",
+      "outcome": "Caster cannot see what occurs outside the stone",
+      "related_search_terms": [
+        "blinded",
+        "restricted vision",
+        "no sight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While merged with stone",
+      "condition": "Making a Wisdom (Perception) check to hear sounds outside the stone",
+      "outcome": "The Wisdom (Perception) check is made with disadvantage",
+      "related_search_terms": [
+        "hearing penalty",
+        "perception disadvantage",
+        "muffled sounds"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "While merged with stone",
+      "condition": "Casting a spell",
+      "outcome": "Caster can only cast spells on themselves",
+      "related_search_terms": [
+        "self-buff",
+        "self-targeting spells",
+        "limited spellcasting"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While merged with stone",
+      "condition": "Attempt to move",
+      "outcome": "Caster cannot move, except to leave the stone",
+      "related_search_terms": [
+        "immobile",
+        "rooted",
+        "stuck"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While merged with stone",
+      "condition": "Caster uses their movement to leave the stone at the entry point",
+      "outcome": "Caster exits the stone and the spell ends",
+      "related_search_terms": [
+        "end spell",
+        "exit condition",
+        "dispel"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While merged with stone",
+      "condition": "The stone is partially destroyed OR its shape changes so the caster no longer fits within it",
+      "outcome": "Caster is expelled from the stone and takes 6d6 bludgeoning damage",
+      "related_search_terms": [
+        "forced exit",
+        "stone damage",
+        "expulsion damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While merged with stone",
+      "condition": "The stone is completely destroyed OR transmuted into a different substance",
+      "outcome": "Caster is expelled from the stone and takes 50 bludgeoning damage",
+      "related_search_terms": [
+        "stone shattered",
+        "transmuted",
+        "massive damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster is expelled from the stone",
+      "condition": "N/A",
+      "outcome": "Caster falls prone in an unoccupied space closest to where they first entered",
+      "related_search_terms": [
+        "prone condition",
+        "forced movement",
+        "expulsion effect"
+      ]
+    }
+  ],
+  "description_text": "You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses. While merged with the stone, you can't see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise can't move. Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer fit within it) expels you and deals 6d6 bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.",
+  "tags": [
+    "utility",
+    "exploration",
+    "stealth",
+    "escape",
+    "earth magic",
+    "transmutation",
+    "concealment",
+    "immobility"
+  ],
+  "related_search_terms": [
+    "hide in stone",
+    "become one with stone",
+    "stone melding",
+    "earth elemental form",
+    "invisibility spell"
+  ]
+}

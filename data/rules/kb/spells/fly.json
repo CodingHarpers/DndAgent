@@ -1,0 +1,46 @@
+{
+  "entity_name": "Fly",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Target is a willing creature",
+      "outcome": "Target gains a flying speed of 60 feet for the spell's duration",
+      "related_search_terms": [
+        "movement speed",
+        "air travel",
+        "levitation",
+        "hovering"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "Target is aloft AND Target cannot stop the fall",
+      "outcome": "Target falls",
+      "related_search_terms": [
+        "spell expiration",
+        "gravity",
+        "crash",
+        "plummet",
+        "fall damage"
+      ]
+    }
+  ],
+  "description_text": "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.",
+  "tags": [
+    "movement",
+    "utility",
+    "concentration",
+    "level_3_spell",
+    "transmutation"
+  ],
+  "related_search_terms": [
+    "flight",
+    "hover",
+    "aerial movement",
+    "escape",
+    "mobility"
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "entity_name": "Prismatic Spray",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature within 60-foot cone",
+      "outcome": "Creature makes Dexterity saving throw AND d8 is rolled to determine which ray affects it",
+      "related_search_terms": [
+        "AoE spell",
+        "cone spell",
+        "save spell",
+        "random effect",
+        "multiple effects"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Red Ray (d8 result is 1)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target takes 10d6 Fire damage",
+      "related_search_terms": [
+        "fire damage",
+        "elemental damage",
+        "damage spell",
+        "fail save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Red Ray (d8 result is 1)",
+      "condition": "Target succeeded initial Dexterity saving throw",
+      "outcome": "Target takes 5d6 Fire damage",
+      "related_search_terms": [
+        "fire damage",
+        "elemental damage",
+        "damage spell",
+        "half damage",
+        "success save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Orange Ray (d8 result is 2)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target takes 10d6 Acid damage",
+      "related_search_terms": [
+        "acid damage",
+        "elemental damage",
+        "damage spell",
+        "fail save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Orange Ray (d8 result is 2)",
+      "condition": "Target succeeded initial Dexterity saving throw",
+      "outcome": "Target takes 5d6 Acid damage",
+      "related_search_terms": [
+        "acid damage",
+        "elemental damage",
+        "damage spell",
+        "half damage",
+        "success save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Yellow Ray (d8 result is 3)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target takes 10d6 Lightning damage",
+      "related_search_terms": [
+        "lightning damage",
+        "elemental damage",
+        "damage spell",
+        "fail save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Yellow Ray (d8 result is 3)",
+      "condition": "Target succeeded initial Dexterity saving throw",
+      "outcome": "Target takes 5d6 Lightning damage",
+      "related_search_terms": [
+        "lightning damage",
+        "elemental damage",
+        "damage spell",
+        "half damage",
+        "success save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Green Ray (d8 result is 4)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target takes 10d6 Poison damage",
+      "related_search_terms": [
+        "poison damage",
+        "elemental damage",
+        "damage spell",
+        "fail save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Green Ray (d8 result is 4)",
+      "condition": "Target succeeded initial Dexterity saving throw",
+      "outcome": "Target takes 5d6 Poison damage",
+      "related_search_terms": [
+        "poison damage",
+        "elemental damage",
+        "damage spell",
+        "half damage",
+        "success save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Blue Ray (d8 result is 5)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target takes 10d6 Cold damage",
+      "related_search_terms": [
+        "cold damage",
+        "elemental damage",
+        "damage spell",
+        "fail save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Blue Ray (d8 result is 5)",
+      "condition": "Target succeeded initial Dexterity saving throw",
+      "outcome": "Target takes 5d6 Cold damage",
+      "related_search_terms": [
+        "cold damage",
+        "elemental damage",
+        "damage spell",
+        "half damage",
+        "success save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Indigo Ray (d8 result is 6)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target is Restrained",
+      "related_search_terms": [
+        "restrained condition",
+        "control spell",
+        "immobilize"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of target's turn, while restrained by Indigo Ray",
+      "condition": "Target is Restrained by Indigo Ray",
+      "outcome": "Target makes a Constitution saving throw",
+      "related_search_terms": [
+        "petrification check",
+        "ongoing effect",
+        "save or suck"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw by target restrained by Indigo Ray",
+      "condition": "Save successful AND target has less than 3 total successes against Indigo Ray",
+      "outcome": "Increment success counter",
+      "related_search_terms": [
+        "resist petrify",
+        "condition removal progress"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw by target restrained by Indigo Ray",
+      "condition": "Save successful AND target has 3 total successes against Indigo Ray",
+      "outcome": "Restrained condition ends",
+      "related_search_terms": [
+        "resist petrify",
+        "condition removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw by target restrained by Indigo Ray",
+      "condition": "Save failed AND target has less than 3 total failures against Indigo Ray",
+      "outcome": "Increment failure counter",
+      "related_search_terms": [
+        "petrify progress",
+        "condition progression"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw by target restrained by Indigo Ray",
+      "condition": "Save failed AND target has 3 total failures against Indigo Ray",
+      "outcome": "Target is permanently Petrified",
+      "related_search_terms": [
+        "petrified condition",
+        "turn to stone",
+        "permanent effect",
+        "instant death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Violet Ray (d8 result is 7)",
+      "condition": "Target failed initial Dexterity saving throw",
+      "outcome": "Target is Blinded",
+      "related_search_terms": [
+        "blinded condition",
+        "sensory deprivation",
+        "control spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of caster's next turn, while target is blinded by Violet Ray",
+      "condition": "Target is Blinded by Violet Ray",
+      "outcome": "Target makes a Wisdom saving throw",
+      "related_search_terms": [
+        "banishment check",
+        "ongoing effect",
+        "plane shift trigger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom saving throw by target blinded by Violet Ray",
+      "condition": "Save successful",
+      "outcome": "Blinded condition ends",
+      "related_search_terms": [
+        "resist banishment",
+        "condition removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom saving throw by target blinded by Violet Ray",
+      "condition": "Save failed",
+      "outcome": "Target is transported to another plane of existence (GM's choice) AND Blinded condition ends",
+      "related_search_terms": [
+        "banish",
+        "plane shift",
+        "removed from combat",
+        "extraplanar"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target affected by Prismatic Spray Special Ray (d8 result is 8)",
+      "condition": "Any",
+      "outcome": "Roll d8 twice more (rerolling any 8) for this target; apply effects of the rolled rays, using the original Dexterity saving throw result",
+      "related_search_terms": [
+        "multiple effects",
+        "random effects",
+        "double hit",
+        "reroll dice",
+        "compound effect",
+        "wild magic"
+      ]
+    }
+  ],
+  "description_text": "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.***1. Red.*** The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.***2. Orange.*** The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.***3. Yellow.*** The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.***4. Green.*** The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.***5. Blue.*** The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.***6. Indigo.*** On a failed save, the target is restrained. It must then make a constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.***7. Violet.*** On a failed save, the target is blinded. It must then make a wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the GM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)***8. Special.*** The target is struck by two rays. Roll twice more, rerolling any 8.",
+  "tags": [
+    "spell",
+    "evocation",
+    "area of effect",
+    "damage",
+    "condition",
+    "random",
+    "high level spell"
+  ],
+  "related_search_terms": [
+    "prismatic",
+    "rainbow spell",
+    "cone attack",
+    "multiple elemental damage",
+    "status effect spell"
+  ]
+}

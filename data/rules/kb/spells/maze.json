@@ -1,0 +1,104 @@
+{
+  "entity_name": "Maze",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range",
+      "outcome": "Target is banished into a labyrinthine demiplane",
+      "related_search_terms": [
+        "banish",
+        "teleportation",
+        "demiplane",
+        "remove from combat",
+        "single target control"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While banished by Maze",
+      "condition": "None",
+      "outcome": "Target remains in the demiplane for the spell's duration OR until it escapes",
+      "related_search_terms": [
+        "duration",
+        "trapped",
+        "containment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target attempts to escape",
+      "condition": "Target uses its action to attempt to escape",
+      "outcome": "Target makes a DC 20 Intelligence check",
+      "related_search_terms": [
+        "escape check",
+        "intelligence save",
+        "break out",
+        "action cost"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's Intelligence check to escape",
+      "condition": "Intelligence check succeeds",
+      "outcome": "Target escapes the maze and the spell ends",
+      "related_search_terms": [
+        "successful escape",
+        "spell ends",
+        "return to combat"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target's Intelligence check to escape",
+      "condition": "Target is a Minotaur OR Target is a Goristro demon",
+      "outcome": "Target automatically succeeds on the Intelligence check",
+      "related_search_terms": [
+        "minotaur",
+        "goristro",
+        "demon",
+        "automatic success",
+        "spell immunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends (due to duration or escape)",
+      "condition": "The space the target left is unoccupied",
+      "outcome": "Target reappears in the space it left",
+      "related_search_terms": [
+        "reappear",
+        "return",
+        "teleport back"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends (due to duration or escape)",
+      "condition": "The space the target left is occupied",
+      "outcome": "Target reappears in the nearest unoccupied space",
+      "related_search_terms": [
+        "occupied space",
+        "forced movement",
+        "re-entry"
+      ]
+    }
+  ],
+  "description_text": "You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze. The target can use its action to attempt to escape. When it does so, it makes a DC 20 Intelligence check. If it succeeds, it escapes, and the spell ends (a minotaur or goristro demon automatically succeeds). When the spell ends, the target reappears in the space it left or, if that space is occupied, in the nearest unoccupied space.",
+  "tags": [
+    "6th-level",
+    "conjuration",
+    "banishment",
+    "control",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "maze spell",
+    "banishment spell",
+    "intelligence check",
+    "demiplane",
+    "single target CC",
+    "monster control"
+  ]
+}

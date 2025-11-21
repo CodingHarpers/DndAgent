@@ -1,0 +1,167 @@
+{
+  "entity_name": "Mirror Image",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "N/A",
+      "outcome": "Create 3 illusory duplicates of yourself in your space",
+      "related_search_terms": [
+        "illusion creation",
+        "summon duplicate",
+        "spell effect"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Action",
+      "condition": "Spell is active",
+      "outcome": "Dismiss all illusory duplicates",
+      "related_search_terms": [
+        "spell dismissal",
+        "cancel spell",
+        "end effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature targets you with an attack",
+      "condition": "Spell is active AND creature can be affected by this spell",
+      "outcome": "Roll a d20 to determine if the attack targets a duplicate instead",
+      "related_search_terms": [
+        "attack redirection",
+        "miss chance",
+        "evasion",
+        "defensive roll"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Attack Redirection Roll",
+      "condition": "You currently have 3 duplicates",
+      "outcome": "Roll 6 or higher to redirect the attack to a duplicate",
+      "related_search_terms": [
+        "d20 roll",
+        "protection chance",
+        "high duplicate count"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Attack Redirection Roll",
+      "condition": "You currently have 2 duplicates",
+      "outcome": "Roll 8 or higher to redirect the attack to a duplicate",
+      "related_search_terms": [
+        "d20 roll",
+        "protection chance",
+        "medium duplicate count"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Attack Redirection Roll",
+      "condition": "You currently have 1 duplicate",
+      "outcome": "Roll 11 or higher to redirect the attack to a duplicate",
+      "related_search_terms": [
+        "d20 roll",
+        "protection chance",
+        "low duplicate count"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack targets a duplicate",
+      "condition": "N/A",
+      "outcome": "Duplicate's AC is 10 + your Dexterity modifier",
+      "related_search_terms": [
+        "duplicate defense",
+        "illusion AC",
+        "armor class"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack hits a duplicate",
+      "condition": "N/A",
+      "outcome": "The duplicate is destroyed",
+      "related_search_terms": [
+        "duplicate destruction",
+        "illusion dissolved",
+        "hit points"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Duplicate subjected to damage or effects",
+      "condition": "Source is NOT an attack that hits it",
+      "outcome": "The duplicate ignores all other damage and effects",
+      "related_search_terms": [
+        "duplicate immunity",
+        "illusion durability",
+        "damage resistance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Continuous (spell duration)",
+      "condition": "All three duplicates are destroyed",
+      "outcome": "The spell ends",
+      "related_search_terms": [
+        "spell termination",
+        "duration end",
+        "illusion gone"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature targets you with an attack",
+      "condition": "Attacking creature cannot see you",
+      "outcome": "Creature is unaffected by this spell (no redirection roll)",
+      "related_search_terms": [
+        "blinded attacker",
+        "unseen target",
+        "ignoring illusions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature targets you with an attack",
+      "condition": "Attacking creature relies on senses other than sight (e.g., blindsight, tremorsense)",
+      "outcome": "Creature is unaffected by this spell (no redirection roll)",
+      "related_search_terms": [
+        "blindsight",
+        "tremorsense",
+        "alternate senses",
+        "ignoring illusions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature targets you with an attack",
+      "condition": "Attacking creature can perceive illusions as false (e.g., truesight)",
+      "outcome": "Creature is unaffected by this spell (no redirection roll)",
+      "related_search_terms": [
+        "truesight",
+        "illusion perception",
+        "dispel illusion",
+        "ignoring illusions"
+      ]
+    }
+  ],
+  "description_text": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates. Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates. If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher. A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed. A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.",
+  "tags": [
+    "illusion",
+    "defense",
+    "buff",
+    "concentration_free"
+  ],
+  "related_search_terms": [
+    "defensive spell",
+    "avoiding attacks",
+    "illusionary defense",
+    "personal buff",
+    "mirror images",
+    "self-preservation"
+  ]
+}

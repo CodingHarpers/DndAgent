@@ -1,0 +1,765 @@
+[
+  {
+    "source_chapter": "Movement and Position",
+    "extracted_concepts": [
+      {
+        "concept_name": "Difficult Terrain",
+        "definition": "Any ground that impedes movement, making it harder to traverse.",
+        "rule_logic": {
+          "premise": "A creature moves through an area of difficult terrain",
+          "implication": "Every 1 foot of movement costs 2 feet",
+          "exceptions": [],
+          "description_text": "Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in an area create difficult terrain, the cost is not cumulative.",
+          "is_exception": false,
+          "related_search_terms": [
+            "slowed movement",
+            "rough ground",
+            "movement cost",
+            "terrain penalty"
+          ]
+        },
+        "related_keywords": [
+          "terrain",
+          "movement",
+          "speed",
+          "cost"
+        ]
+      },
+      {
+        "concept_name": "Moving Through Other Creatures' Spaces",
+        "definition": "Maneuvering through a space occupied by another creature.",
+        "rule_logic": {
+          "premise": "A creature moves through the space of a non-hostile creature",
+          "implication": "The space counts as difficult terrain for the moving creature",
+          "exceptions": [],
+          "description_text": "You can move through a nonhostile creature's space. In contrast, you can move through a hostile creature's space only if the creature is at least two Sizes larger or smaller than you. Remember that another creature's space is difficult terrain for you.",
+          "is_exception": false,
+          "related_search_terms": [
+            "movement through allies",
+            "movement through enemies",
+            "shared space",
+            "occupying space"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "space",
+          "creature",
+          "difficult terrain"
+        ]
+      },
+      {
+        "concept_name": "Cannot End Move in Hostile Creature's Space",
+        "definition": "A restriction on ending movement within a hostile creature's occupied area.",
+        "rule_logic": {
+          "premise": "A creature attempts to end its movement in a hostile creature's space",
+          "implication": "The creature cannot willingly end its move there",
+          "exceptions": [],
+          "description_text": "Whether a creature is an ally or an enemy, you can't willingly end your move in its space.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ending turn on enemy",
+            "occupying enemy space",
+            "movement rules"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "space",
+          "hostile",
+          "end turn"
+        ]
+      },
+      {
+        "concept_name": "Climbing, Swimming, Crawling Movement",
+        "definition": "Specialized movement types that alter movement cost.",
+        "rule_logic": {
+          "premise": "A creature is climbing, swimming, or crawling",
+          "implication": "Every 1 foot of movement costs 2 feet",
+          "exceptions": [
+            "A creature with a climbing speed ignores this extra cost for climbing",
+            "A creature with a swimming speed ignores this extra cost for swimming"
+          ],
+          "description_text": "Every foot of movement while climbing, swimming, or crawling costs 1 extra foot (2 feet per foot moved) unless a creature has a climbing or swimming speed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "climb speed",
+            "swim speed",
+            "crawl speed",
+            "movement cost",
+            "vertical movement"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "climbing",
+          "swimming",
+          "crawling",
+          "speed"
+        ]
+      },
+      {
+        "concept_name": "Standing Up from Prone",
+        "definition": "The action of changing from the prone condition to standing.",
+        "rule_logic": {
+          "premise": "A prone creature wishes to stand up",
+          "implication": "Cost is half of the creature's movement speed",
+          "exceptions": [
+            "Cannot stand up if speed is 0"
+          ],
+          "description_text": "You can drop prone without using any of your speed. Standing up takes an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have enough movement left or if your speed is 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "getting up from ground",
+            "prone condition",
+            "movement cost prone",
+            "stand up action"
+          ]
+        },
+        "related_keywords": [
+          "prone",
+          "movement",
+          "speed",
+          "action"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Movement and Position",
+    "extracted_concepts": [
+      {
+        "concept_name": "Movement on Turn",
+        "definition": "The act of moving a character or monster during its turn in combat, utilizing their available speed.",
+        "rule_logic": {
+          "premise": "It is your turn",
+          "implication": "You can move a distance up to your speed, using as much or as little as desired.",
+          "exceptions": [],
+          "description_text": "On your turn, you can move a distance up to your speed. You can use as much or as little of your speed as you like on your turn, following the rules here.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how far can I move",
+            "what is my speed",
+            "using speed in combat",
+            "movement distance"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "speed",
+          "turn",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "Combining Movement Types",
+        "definition": "The ability to integrate various modes of movement (such as walking, jumping, climbing, and swimming) within a single turn's movement allowance.",
+        "rule_logic": {
+          "premise": "Character is moving during their turn AND Character uses different modes of movement (e.g., jumping, climbing, swimming, walking)",
+          "implication": "These modes can be combined, or one mode can constitute the entire move. The distance of each part of the move is deducted from total speed until speed is used or movement is done.",
+          "exceptions": [],
+          "description_text": "Your movement can include jumping, climbing, and swimming. These different modes of movement can be combined with walking, or they can constitute your entire move. However you're moving, you deduct the distance of each part of your move from your speed until it is used up or until you are done moving.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I jump and walk",
+            "swimming speed",
+            "climbing rules",
+            "combining movement",
+            "using multiple movement types",
+            "movement modes"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "speed",
+          "jumping",
+          "climbing",
+          "swimming",
+          "combining actions",
+          "modes of movement"
+        ]
+      }
+    ],
+    "_chunk_header": "Movement and Position",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Combat - Movement",
+    "extracted_concepts": [
+      {
+        "concept_name": "Breaking Up Your Move",
+        "definition": "The ability to divide a character's total movement allowance on their turn, performing some movement before an action and some after.",
+        "rule_logic": {
+          "premise": "On your turn",
+          "implication": "You can divide your total movement speed allowance across the duration of your turn, moving some distance, taking your action, and then moving the remaining distance.",
+          "exceptions": [],
+          "description_text": "You can break up your movement on your turn, using some of your speed before and after your action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I move then attack then move",
+            "split movement",
+            "movement before action",
+            "movement after action"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "turn",
+          "action",
+          "speed",
+          "divide"
+        ]
+      },
+      {
+        "concept_name": "Moving Between Attacks",
+        "definition": "The specific allowance to intersperse movement between individual attacks when an action permits multiple weapon attacks.",
+        "rule_logic": {
+          "premise": "You take an action that includes more than one weapon attack",
+          "implication": "You can move between each individual attack made as part of that action, dividing your total movement speed accordingly.",
+          "exceptions": [],
+          "description_text": "If you take an action that includes more than one weapon attack, you can break up your movement even further by moving between those attacks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "extra attack movement",
+            "move between attacks",
+            "can I move after first attack",
+            "fighter movement"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "attacks",
+          "action",
+          "extra attack",
+          "split movement"
+        ]
+      },
+      {
+        "concept_name": "Switching Between Speeds",
+        "definition": "Rules for combining different movement speeds (e.g., walking, flying) during a single turn's movement.",
+        "rule_logic": {
+          "premise": "You have more than one speed (e.g., walking speed and a flying speed)",
+          "implication": "You can switch between these speeds during your move. When switching, subtract the distance already moved from the new speed to determine remaining movement for that speed type. If remaining movement is 0 or less, the new speed cannot be used further in the current move.",
+          "exceptions": [],
+          "description_text": "If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed. The result determines how much farther you can move. If the result is 0 or less, you can't use the new speed during the current move.",
+          "is_exception": false,
+          "related_search_terms": [
+            "multiple speeds movement",
+            "fly speed walk speed",
+            "combine movement speeds",
+            "how to use different speeds",
+            "change movement type"
+          ]
+        },
+        "related_keywords": [
+          "speed",
+          "movement",
+          "flying speed",
+          "walking speed",
+          "switch",
+          "calculate movement"
+        ]
+      }
+    ],
+    "_chunk_header": "Breaking Up Your Move",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Combat - Movement and Position",
+    "extracted_concepts": [
+      {
+        "concept_name": "Difficult Terrain",
+        "definition": "Any environment or obstacle that impedes movement, such as boulder-strewn caverns, briar-choked forests, treacherous staircases, low furniture, rubble, undergrowth, steep stairs, snow, or shallow bogs. The space occupied by another creature also counts as difficult terrain.",
+        "rule_logic": {
+          "premise": "A creature moves 1 foot through a space considered difficult terrain",
+          "implication": "That 1 foot of movement costs an additional 1 foot of movement (totaling 2 feet of movement cost). This effect does not stack if multiple difficult terrain sources are present in the same space.",
+          "exceptions": [],
+          "description_text": "Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in a space count as difficult terrain.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how does difficult terrain affect movement",
+            "moving through difficult terrain",
+            "difficult terrain movement cost",
+            "does difficult terrain stack",
+            "what counts as difficult terrain",
+            "creature space difficult terrain"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Terrain",
+          "Speed",
+          "Obstacle",
+          "Environment"
+        ]
+      }
+    ],
+    "_chunk_header": "Difficult Terrain",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Combat - Being Prone",
+    "extracted_concepts": [
+      {
+        "concept_name": "Drop Prone",
+        "definition": "A voluntary action taken by a combatant to enter the prone condition.",
+        "rule_logic": {
+          "premise": "Player decides to drop prone",
+          "implication": "Does not use any movement speed",
+          "exceptions": [],
+          "description_text": "You can drop prone without using any of your speed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fall prone",
+            "lie down",
+            "go prone",
+            "prone action"
+          ]
+        },
+        "related_keywords": [
+          "Prone",
+          "Condition",
+          "Movement"
+        ]
+      },
+      {
+        "concept_name": "Standing Up (from Prone)",
+        "definition": "The action of changing from the prone condition to standing.",
+        "rule_logic": {
+          "premise": "A creature in the prone condition attempts to stand up",
+          "implication": "Costs an amount of movement equal to half its speed. Cannot stand up if insufficient movement or speed is 0.",
+          "exceptions": [],
+          "description_text": "Standing up takes more effort; doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have enough movement left or if your speed is 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "get up from prone",
+            "prone movement cost",
+            "movement to stand",
+            "speed 0 prone"
+          ]
+        },
+        "related_keywords": [
+          "Prone",
+          "Condition",
+          "Movement",
+          "Speed"
+        ]
+      },
+      {
+        "concept_name": "Crawling (while Prone)",
+        "definition": "The method of moving across a surface while in the prone condition without magical assistance.",
+        "rule_logic": {
+          "premise": "A prone creature attempts to move without using magic (e.g., teleportation)",
+          "implication": "Movement must be by crawling. Every foot of crawling costs 1 extra foot of movement (total 2 feet per 1 foot moved). If crawling in difficult terrain, 1 foot moved costs 3 feet of movement.",
+          "exceptions": [],
+          "description_text": "To move while prone, you must crawl or use magic such as teleportation. Every foot of movement while crawling costs 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.",
+          "is_exception": false,
+          "related_search_terms": [
+            "prone movement",
+            "moving while prone",
+            "difficult terrain prone",
+            "crawl movement cost",
+            "prone speed"
+          ]
+        },
+        "related_keywords": [
+          "Prone",
+          "Condition",
+          "Movement",
+          "Difficult Terrain",
+          "Speed"
+        ]
+      }
+    ],
+    "_chunk_header": "Being Prone",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Combat - Movement and Position",
+    "extracted_concepts": [
+      {
+        "concept_name": "Moving Through Nonhostile Creature's Space",
+        "definition": "The act of traversing a space occupied by a creature that is not hostile to the moving character.",
+        "rule_logic": {
+          "premise": "Character attempts to move through a nonhostile creature's space",
+          "implication": "Movement is allowed. The nonhostile creature's space is considered difficult terrain for the moving character.",
+          "exceptions": [],
+          "description_text": "You can move through a nonhostile creature's space. ... Remember that another creature's space is difficult terrain for you.",
+          "is_exception": false,
+          "related_search_terms": [
+            "move past ally",
+            "difficult terrain ally",
+            "can I move through friend"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "space",
+          "nonhostile",
+          "difficult terrain"
+        ]
+      },
+      {
+        "concept_name": "Moving Through Hostile Creature's Space",
+        "definition": "The act of traversing a space occupied by a creature that is hostile to the moving character.",
+        "rule_logic": {
+          "premise": "Character attempts to move through a hostile creature's space AND the hostile creature is at least two sizes larger or smaller than the character",
+          "implication": "Movement is allowed. The hostile creature's space is considered difficult terrain for the moving character.",
+          "exceptions": [
+            "If the hostile creature is not at least two sizes larger or smaller than the character, movement through its space is not allowed."
+          ],
+          "description_text": "In contrast, you can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you. ... Remember that another creature's space is difficult terrain for you.",
+          "is_exception": false,
+          "related_search_terms": [
+            "move past enemy",
+            "difficult terrain enemy",
+            "move through monster",
+            "size difference movement"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "space",
+          "hostile",
+          "difficult terrain",
+          "size"
+        ]
+      },
+      {
+        "concept_name": "Ending Move in Another Creature's Space",
+        "definition": "The act of completing a movement action or turn in a space already occupied by another creature.",
+        "rule_logic": {
+          "premise": "Character attempts to willingly end their move in another creature's space (whether friend or enemy)",
+          "implication": "The character cannot do so.",
+          "exceptions": [],
+          "description_text": "Whether a creature is a friend or an enemy, you can't willingly end your move in its space.",
+          "is_exception": false,
+          "related_search_terms": [
+            "occupy same square",
+            "stand on ally",
+            "end turn on enemy",
+            "sharing space"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "space",
+          "end turn",
+          "occupy"
+        ]
+      },
+      {
+        "concept_name": "Opportunity Attack Provocation (Moving out of reach)",
+        "definition": "A condition that triggers a hostile creature to make an opportunity attack.",
+        "rule_logic": {
+          "premise": "Character leaves a hostile creature's reach during their move",
+          "implication": "The character provokes an opportunity attack from that hostile creature.",
+          "exceptions": [
+            "Opportunity attacks are further explained later in the chapter, suggesting other conditions or ways to prevent them."
+          ],
+          "description_text": "If you leave a hostile creature's reach during your move, you provoke an opportunity attack, as explained later in the chapter.",
+          "is_exception": false,
+          "related_search_terms": [
+            "free attack",
+            "moving away from enemy",
+            "disengage",
+            "provoking attack"
+          ]
+        },
+        "related_keywords": [
+          "combat",
+          "movement",
+          "hostile",
+          "reach",
+          "opportunity attack",
+          "provoke"
+        ]
+      }
+    ],
+    "_chunk_header": "Moving Around Other Creatures",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Movement - Flying",
+    "extracted_concepts": [
+      {
+        "concept_name": "Falling While Flying",
+        "definition": "The condition under which a flying creature loses altitude and falls.",
+        "rule_logic": {
+          "premise": "Flying creature is knocked prone OR Flying creature's speed is reduced to 0 OR Flying creature is deprived of the ability to move",
+          "implication": "Creature falls",
+          "exceptions": [
+            "Creature has the ability to hover",
+            "Creature is being held aloft by magic (e.g., *fly* spell)"
+          ],
+          "description_text": "If a flying creature is knocked prone, has its speed reduced to 0, or is otherwise deprived of the ability to move, the creature falls, unless it has the ability to hover or it is being held aloft by magic, such as by the *fly* spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "flying creature falls",
+            "prone while flying",
+            "speed zero flying",
+            "hovering prevents fall",
+            "fly spell fall"
+          ]
+        },
+        "related_keywords": [
+          "flying",
+          "prone",
+          "speed",
+          "movement",
+          "fall",
+          "hover",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Flying Movement",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Creature Size",
+    "extracted_concepts": [
+      {
+        "concept_name": "Creature Space",
+        "definition": "The area in feet that a creature effectively controls in combat, distinct from its physical dimensions.",
+        "rule_logic": {
+          "premise": "A creature exists in combat",
+          "implication": "It occupies a designated 'space' (e.g., 5x5 ft for Medium) that it controls, and other creatures generally cannot enter this space unless allowed or by specific rules.",
+          "exceptions": [],
+          "description_text": "A creature's space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can't get through unless the hobgoblin lets them.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much space do I take up",
+            "blocking passage",
+            "movement through occupied space",
+            "creature dimensions"
+          ]
+        },
+        "related_keywords": [
+          "space",
+          "size",
+          "combat control",
+          "movement"
+        ]
+      },
+      {
+        "concept_name": "Tiny Creature Space",
+        "definition": "A creature of Tiny size occupies a 2.5 by 2.5 feet area in combat.",
+        "rule_logic": {
+          "premise": "Creature has Tiny size",
+          "implication": "Controls a space of '2.5 by 2.5 ft.'",
+          "exceptions": [],
+          "description_text": "Tiny creatures control a space of 2.5 by 2.5 ft.",
+          "is_exception": false,
+          "related_search_terms": [
+            "tiny size square",
+            "how much space does a tiny creature take"
+          ]
+        },
+        "related_keywords": [
+          "tiny",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Small Creature Space",
+        "definition": "A creature of Small size occupies a 5 by 5 feet area in combat.",
+        "rule_logic": {
+          "premise": "Creature has Small size",
+          "implication": "Controls a space of '5 by 5 ft.'",
+          "exceptions": [],
+          "description_text": "Small creatures control a space of 5 by 5 ft.",
+          "is_exception": false,
+          "related_search_terms": [
+            "small size square",
+            "how much space does a small creature take"
+          ]
+        },
+        "related_keywords": [
+          "small",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Medium Creature Space",
+        "definition": "A creature of Medium size occupies a 5 by 5 feet area in combat.",
+        "rule_logic": {
+          "premise": "Creature has Medium size",
+          "implication": "Controls a space of '5 by 5 ft.'",
+          "exceptions": [],
+          "description_text": "Medium creatures control a space of 5 by 5 ft.",
+          "is_exception": false,
+          "related_search_terms": [
+            "medium size square",
+            "how much space does a medium creature take"
+          ]
+        },
+        "related_keywords": [
+          "medium",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Large Creature Space",
+        "definition": "A creature of Large size occupies a 10 by 10 feet area in combat.",
+        "rule_logic": {
+          "premise": "Creature has Large size",
+          "implication": "Controls a space of '10 by 10 ft.'",
+          "exceptions": [],
+          "description_text": "Large creatures control a space of 10 by 10 ft.",
+          "is_exception": false,
+          "related_search_terms": [
+            "large size square",
+            "how much space does a large creature take"
+          ]
+        },
+        "related_keywords": [
+          "large",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Huge Creature Space",
+        "definition": "A creature of Huge size occupies a 15 by 15 feet area in combat.",
+        "rule_logic": {
+          "premise": "Creature has Huge size",
+          "implication": "Controls a space of '15 by 15 ft.'",
+          "exceptions": [],
+          "description_text": "Huge creatures control a space of 15 by 15 ft.",
+          "is_exception": false,
+          "related_search_terms": [
+            "huge size square",
+            "how much space does a huge creature take"
+          ]
+        },
+        "related_keywords": [
+          "huge",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Gargantuan Creature Space",
+        "definition": "A creature of Gargantuan size occupies a 20 by 20 feet area or larger in combat.",
+        "rule_logic": {
+          "premise": "Creature has Gargantuan size",
+          "implication": "Controls a space of '20 by 20 ft. or larger'",
+          "exceptions": [],
+          "description_text": "Gargantuan creatures control a space of 20 by 20 ft. or larger.",
+          "is_exception": false,
+          "related_search_terms": [
+            "gargantuan size square",
+            "how much space does a gargantuan creature take"
+          ]
+        },
+        "related_keywords": [
+          "gargantuan",
+          "size category",
+          "space",
+          "combat grid"
+        ]
+      },
+      {
+        "concept_name": "Surrounding Limitation",
+        "definition": "A rule limiting the number of creatures that can effectively surround another creature in combat based on their respective sizes.",
+        "rule_logic": {
+          "premise": "Multiple creatures attempt to surround another creature in combat",
+          "implication": "The number of surrounding creatures is limited by their sizes (e.g., eight Medium creatures can surround a Medium/Small one, fewer larger creatures, more Medium creatures can surround a Gargantuan one).",
+          "exceptions": [],
+          "description_text": "A creature's space also reflects the area it needs to fight effectively. For that reason, there's a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one. Because larger creatures take up more space, fewer of them can surround a creature. If five Large creatures crowd around a Medium or smaller one, there's little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many creatures can attack one target",
+            "flanking rules",
+            "limiting melee combatants",
+            "gang up on monster"
+          ]
+        },
+        "related_keywords": [
+          "surround",
+          "combat",
+          "melee",
+          "positioning",
+          "size"
+        ]
+      },
+      {
+        "concept_name": "Squeezing into a Smaller Space",
+        "definition": "A maneuver allowing a creature to move through a space normally designated for a creature one size category smaller than itself.",
+        "rule_logic": {
+          "premise": "A creature attempts to move through a space sized for a creature one size category smaller than itself (e.g., Large creature through 5 ft. wide passage)",
+          "implication": "The creature must spend 1 extra foot of movement for every foot moved within that space, has disadvantage on attack rolls and Dexterity saving throws, and attack rolls against it have advantage.",
+          "exceptions": [],
+          "description_text": "A creature can squeeze through a space that is large enough for a creature one size smaller than it. Thus, a Large creature can squeeze through a passage that's only 5 feet wide. While squeezing through a space, a creature must spend 1 extra foot for every foot it moves there, and it has disadvantage on attack rolls and Dexterity saving throws. Attack rolls against the creature have advantage while it's in the smaller space.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I fit through here",
+            "squeezing movement penalty",
+            "disadvantage squeezing",
+            "advantage vs squeezing target",
+            "small corridor"
+          ]
+        },
+        "related_keywords": [
+          "squeezing",
+          "movement",
+          "difficult terrain",
+          "advantage",
+          "disadvantage",
+          "size",
+          "passage"
+        ]
+      }
+    ],
+    "_chunk_header": "Creature Size",
+    "_source_file": "movement-and-position"
+  },
+  {
+    "source_chapter": "Interacting with Objects Around You",
+    "extracted_concepts": [
+      {
+        "concept_name": "Minor Object Interaction",
+        "definition": "Simple physical interactions with objects in the environment that can be performed without consuming a full action or significant movement resources, often during movement or as part of another action.",
+        "rule_logic": {
+          "premise": "Player wishes to perform a simple, quick interaction with an object (e.g., drawing a weapon, opening a door, picking up a small item, handing an item, throwing a lever).",
+          "implication": "The player can perform this interaction during their movement or as part of another action, without consuming their primary action for the turn.",
+          "exceptions": [],
+          "description_text": "Here are a few examples of the sorts of thing you can do in tandem with your movement and action: draw or sheathe a sword, open or close a door, withdraw a potion from your backpack, pick up a dropped axe, take a bauble from a table, remove a ring from your finger, stuff some food into your mouth, plant a banner in the ground, fish a few coins from your belt pouch, drink all the ale in a flagon, throw a lever or a switch, pull a torch from a sconce, take a book from a shelf you can reach, extinguish a small flame, don a mask, pull the hood of your cloak up and over your head, put your ear to a door, kick a small stone, turn a key in a lock, tap the floor with a 10-foot pole, hand an item to another character.",
+          "is_exception": false,
+          "related_search_terms": [
+            "free action",
+            "object interaction",
+            "minor action",
+            "what can i do for free",
+            "can i draw my sword and attack",
+            "what are my free things to do",
+            "environment interaction",
+            "interacting with surroundings"
+          ]
+        },
+        "related_keywords": [
+          "action economy",
+          "movement",
+          "object",
+          "interaction",
+          "minor action",
+          "free interaction",
+          "environment"
+        ]
+      }
+    ],
+    "_chunk_header": "Interacting with Objects Around You",
+    "_source_file": "movement-and-position"
+  }
+]

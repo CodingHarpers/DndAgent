@@ -1,0 +1,68 @@
+{
+  "entity_name": "Faerie Fire",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Object within 20ft cube within range",
+      "outcome": "Object is outlined in light (blue, green, or violet) and sheds dim light in a 10-foot radius for the duration",
+      "related_search_terms": [
+        "object illumination",
+        "light source",
+        "area effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Creature within 20ft cube within range AND fails Dexterity Saving Throw",
+      "outcome": "Creature is outlined in light (blue, green, or violet) and sheds dim light in a 10-foot radius for the duration",
+      "related_search_terms": [
+        "dex save",
+        "creature illumination",
+        "visible in darkness",
+        "crowd control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Roll",
+      "condition": "Target is an affected creature or object AND Attacker can see the target",
+      "outcome": "Attack roll against target has Advantage",
+      "related_search_terms": [
+        "advantage on attack",
+        "easy to hit",
+        "exposed target",
+        "combat bonus"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target is Invisible",
+      "condition": "Target is affected by Faerie Fire AND Target is Invisible",
+      "outcome": "Target does NOT gain benefits of Invisibility (e.g., heavily obscured status, incoming attacks have disadvantage)",
+      "related_search_terms": [
+        "counter invisibility",
+        "reveal invisible",
+        "invisibility negation",
+        "detect hidden"
+      ]
+    }
+  ],
+  "description_text": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+  "tags": [
+    "1st-level",
+    "evocation",
+    "concentration",
+    "detection",
+    "combat utility"
+  ],
+  "related_search_terms": [
+    "fairy fire",
+    "reveal",
+    "advantage",
+    "dexterity save",
+    "invisibility counter"
+  ]
+}

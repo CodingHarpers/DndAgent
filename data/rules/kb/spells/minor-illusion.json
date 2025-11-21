@@ -1,0 +1,117 @@
+{
+  "entity_name": "Minor Illusion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell active",
+      "condition": "Duration expires OR Caster dismisses as an action OR Caster casts Minor Illusion again",
+      "outcome": "Illusion ends",
+      "related_search_terms": [
+        "spell duration",
+        "dismiss spell",
+        "concentration"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell cast",
+      "condition": "Caster chooses to create a sound",
+      "outcome": "Caster creates a sound within range; volume ranges from whisper to scream; can be any chosen sound (e.g., voice, roar, drums)",
+      "related_search_terms": [
+        "sound illusion",
+        "audio effect",
+        "distraction",
+        "decoy"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Sound illusion active",
+      "condition": "Caster does not make discrete sounds",
+      "outcome": "Sound continues unabated throughout duration",
+      "related_search_terms": [
+        "continuous sound",
+        "constant audio"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Sound illusion active",
+      "condition": "Caster chooses to make discrete sounds",
+      "outcome": "Caster can make discrete sounds at different times before the spell ends",
+      "related_search_terms": [
+        "intermittent sound",
+        "timed audio"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell cast",
+      "condition": "Caster chooses to create an image of an object",
+      "outcome": "Caster creates an image of an object within range; object is no larger than a 5-foot cube",
+      "related_search_terms": [
+        "visual illusion",
+        "object illusion",
+        "fake object"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Image illusion active",
+      "condition": "Image is an illusion",
+      "outcome": "Image cannot create sound, light, smell, or any other sensory effect",
+      "related_search_terms": [
+        "illusion limitations",
+        "sensory restrictions"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature physically interacts with image",
+      "condition": "Image is an illusion",
+      "outcome": "Physical interaction reveals it to be an illusion (things pass through it)",
+      "related_search_terms": [
+        "touch illusion",
+        "reveal illusion",
+        "dispel by touch"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature uses an action to examine the illusion",
+      "condition": "Creature succeeds on an Intelligence (Investigation) check against caster's spell save DC",
+      "outcome": "Creature determines that it is an illusion",
+      "related_search_terms": [
+        "perceive illusion",
+        "spot illusion",
+        "disbelieve illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature discerns the illusion",
+      "condition": "Creature successfully determined illusion is fake",
+      "outcome": "Illusion becomes faint to that creature",
+      "related_search_terms": [
+        "illusion becomes transparent",
+        "see through illusion"
+      ]
+    }
+  ],
+  "description_text": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again. If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends. If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it. If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
+  "tags": [
+    "cantrip",
+    "illusion",
+    "utility",
+    "trickery",
+    "minor"
+  ],
+  "related_search_terms": [
+    "illusion spell",
+    "cantrip illusion",
+    "trick",
+    "deception",
+    "minor illusion"
+  ]
+}

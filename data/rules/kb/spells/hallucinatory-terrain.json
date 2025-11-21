@@ -1,0 +1,84 @@
+{
+  "entity_name": "Hallucinatory Terrain",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Natural terrain within a 150-foot cube in range",
+      "outcome": "Terrain appears, sounds, and smells like a different natural terrain type (e.g., field to swamp, pond to meadow)",
+      "related_search_terms": [
+        "area of effect",
+        "environmental illusion",
+        "terrain alteration",
+        "camouflage",
+        "deception",
+        "illusion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell affects an area",
+      "condition": "Target within the area is a manufactured structure, equipment, or creature",
+      "outcome": "Target's appearance is NOT changed by the illusion",
+      "related_search_terms": [
+        "limitation",
+        "scope",
+        "specific target exclusion",
+        "non-natural objects"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature physically interacts with the illusion",
+      "condition": "Creature touches the affected terrain",
+      "outcome": "Tactile characteristics of the terrain are unchanged, making it likely for the creature to perceive the illusion",
+      "related_search_terms": [
+        "physical interaction",
+        "touch",
+        "illusion detection",
+        "disbelief mechanism"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature carefully examines the illusion",
+      "condition": "Tactile difference is NOT obvious by touch",
+      "outcome": "Creature can attempt an Intelligence (Investigation) check against the spell save DC to disbelieve the illusion",
+      "related_search_terms": [
+        "spotting illusion",
+        "revealing magic",
+        "perception check",
+        "mental check",
+        "investigation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature successfully disbelieves the illusion",
+      "condition": "Creature discerns the illusion for what it is",
+      "outcome": "Creature sees the illusion as a vague image superimposed on the actual terrain",
+      "related_search_terms": [
+        "illusion revealed",
+        "seeing through magic",
+        "partial vision",
+        "disbelieved illusion"
+      ]
+    }
+  ],
+  "description_text": "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance. The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.",
+  "tags": [
+    "spell",
+    "illusion",
+    "terrain",
+    "environment",
+    "utility"
+  ],
+  "related_search_terms": [
+    "illusion magic",
+    "environmental control",
+    "deception spell",
+    "terrain manipulation",
+    "area illusion"
+  ]
+}

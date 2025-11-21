@@ -1,0 +1,149 @@
+{
+  "entity_name": "Conjure Fey",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Cast",
+      "condition": "Choose an unoccupied space you can see within range AND select a fey creature of CR 6 or lower OR a fey spirit taking the form of a beast of CR 6 or lower",
+      "outcome": "A fey creature appears in the chosen space",
+      "related_search_terms": [
+        "summoning",
+        "fey companion",
+        "monster creation",
+        "pet",
+        "minion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Fey creature status OR Spell duration ends",
+      "condition": "Fey creature drops to '0' hit points OR Spell duration ends (if concentration is maintained)",
+      "outcome": "Fey creature disappears",
+      "related_search_terms": [
+        "desummon",
+        "creature death",
+        "spell duration",
+        "end spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fey creature appears",
+      "condition": "Spell concentration is maintained",
+      "outcome": "Fey creature is friendly to caster and companions for the duration of the spell",
+      "related_search_terms": [
+        "ally",
+        "friendly NPC",
+        "companion allegiance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fey creature appears",
+      "condition": "N/A",
+      "outcome": "Roll initiative for the fey creature; it takes its own turns",
+      "related_search_terms": [
+        "turn order",
+        "combat sequence",
+        "minion turns"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster issues a verbal command",
+      "condition": "Command does NOT violate the fey creature's alignment",
+      "outcome": "Fey creature obeys the command (no action required by caster)",
+      "related_search_terms": [
+        "controlling summon",
+        "minion commands",
+        "pet control",
+        "commanding creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster issues no commands",
+      "condition": "N/A",
+      "outcome": "Fey creature defends itself from hostile creatures but otherwise takes no actions",
+      "related_search_terms": [
+        "idle summon",
+        "passive behavior",
+        "default action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's concentration is broken",
+      "condition": "N/A",
+      "outcome": "Caster loses control of the fey creature",
+      "related_search_terms": [
+        "concentration spell",
+        "lost control",
+        "summon malfunction",
+        "concentration broken"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's concentration is broken",
+      "condition": "N/A",
+      "outcome": "Fey creature becomes hostile toward caster and companions, and might attack",
+      "related_search_terms": [
+        "hostile summon",
+        "turned ally",
+        "friendly fire",
+        "aggro"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster's concentration is broken",
+      "condition": "N/A",
+      "outcome": "Uncontrolled fey creature cannot be dismissed by the caster",
+      "related_search_terms": [
+        "permanent summon",
+        "uncontrollable creature",
+        "no dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's concentration is broken",
+      "condition": "N/A",
+      "outcome": "Uncontrolled fey creature disappears '1' hour after it was summoned",
+      "related_search_terms": [
+        "summon duration",
+        "runaway summon",
+        "delayed disappearance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Need creature statistics",
+      "condition": "N/A",
+      "outcome": "The GM provides the fey creature's statistics",
+      "related_search_terms": [
+        "monster stats",
+        "creature block",
+        "game master rules"
+      ]
+    }
+  ],
+  "description_text": "You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends. The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions. If your concentration is broken, the fey creature doesn't disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it. The GM has the fey creature's statistics.",
+  "tags": [
+    "Conjuration",
+    "Summoning",
+    "Fey",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "summon monster",
+    "fey companion",
+    "conjure",
+    "creature summoning",
+    "pet",
+    "minion",
+    "control creature"
+  ]
+}

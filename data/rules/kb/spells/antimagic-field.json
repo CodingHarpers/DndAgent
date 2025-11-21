@@ -1,0 +1,209 @@
+{
+  "entity_name": "Antimagic Field",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Creature within Antimagic Field",
+      "condition": "Creature attempts to cast a spell",
+      "outcome": "Spell casting attempt fails",
+      "related_search_terms": [
+        "spell immunity",
+        "cannot cast",
+        "magic nullified"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magical effect or spell enters/is within Antimagic Field",
+      "condition": "Effect is NOT from an artifact or deity",
+      "outcome": "Magical effect or spell is suppressed and cannot protrude",
+      "related_search_terms": [
+        "magic disabled",
+        "effect negated",
+        "spell blocked",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting a spell within Antimagic Field",
+      "condition": "Spellcasting attempt is suppressed",
+      "outcome": "Spell slot is consumed",
+      "related_search_terms": [
+        "wasted spell",
+        "failed cast",
+        "slot loss"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magical effect or spell is suppressed",
+      "condition": "Suppression is active",
+      "outcome": "Effect does not function, but suppressed time counts towards its duration",
+      "related_search_terms": [
+        "duration continues",
+        "inactive magic",
+        "timer runs"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell or magical effect targeting a creature or object",
+      "condition": "Target is within the Antimagic Field",
+      "outcome": "Spell or effect has no effect on the target",
+      "related_search_terms": [
+        "targeted spell fail",
+        "magic missile blocked",
+        "charm person negated"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Area of a spell or magical effect overlaps with Antimagic Field",
+      "condition": "Part of the area is within the Antimagic Field",
+      "outcome": "The part of the area within the field is suppressed",
+      "related_search_terms": [
+        "fireball gap",
+        "wall of fire suppressed",
+        "partial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature or object with an active spell/magical effect enters/is within Antimagic Field",
+      "condition": "Creature or object remains in the field",
+      "outcome": "Active spell or effect on creature/object is suppressed",
+      "related_search_terms": [
+        "buff removed",
+        "enchantment suppressed",
+        "active magic off"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magic item enters/is within Antimagic Field",
+      "condition": "Magic item is within the field",
+      "outcome": "Properties and powers of the magic item are suppressed (item functions as nonmagical)",
+      "related_search_terms": [
+        "+1 longsword mundane",
+        "magic weapon off",
+        "mundane item"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magic weapon used against a target in the Antimagic Field OR wielded by an attacker in the Antimagic Field",
+      "condition": "Magic weapon is involved in an attack while affected by the field",
+      "outcome": "Magic weapon's properties and powers are suppressed",
+      "related_search_terms": [
+        "weapon debuff",
+        "magical attack negated",
+        "nonmagical strike"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magic weapon or ammunition fully leaves the Antimagic Field",
+      "condition": "Item is no longer within the field",
+      "outcome": "The magic of the item ceases to be suppressed as soon as it exits",
+      "related_search_terms": [
+        "magic returns",
+        "arrow regains power",
+        "spear magic"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempted magical travel (teleportation, planar travel)",
+      "condition": "Antimagic Field is the destination OR departure point",
+      "outcome": "Magical travel fails",
+      "related_search_terms": [
+        "no teleport",
+        "planar shift blocked",
+        "dimension door fails"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Portal to another location/world/plane OR opening to an extradimensional space enters/is within Antimagic Field",
+      "condition": "Portal/opening is within the field",
+      "outcome": "Portal/opening temporarily closes",
+      "related_search_terms": [
+        "rope trick closed",
+        "gate shut",
+        "extradimensional seal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature or object summoned or created by magic enters/is within Antimagic Field",
+      "condition": "Creature/object remains in the field",
+      "outcome": "Creature or object temporarily winks out of existence",
+      "related_search_terms": [
+        "summoned vanish",
+        "elemental disappears",
+        "magic construct gone"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature or object previously winked out of existence by Antimagic Field",
+      "condition": "The space the creature/object occupied is no longer within the field",
+      "outcome": "Creature or object instantly reappears",
+      "related_search_terms": [
+        "reappears",
+        "summon returns",
+        "object rematerializes"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to affect Antimagic Field with spells or magical effects",
+      "condition": "Spell or effect (e.g., Dispel Magic) targets the sphere",
+      "outcome": "The Antimagic Field is unaffected by such spells or effects",
+      "related_search_terms": [
+        "immune to dispel",
+        "antimagic immunity",
+        "undispellable"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Multiple Antimagic Field spells overlap",
+      "condition": "Different Antimagic Field spheres intersect",
+      "outcome": "The spheres do not nullify each other",
+      "related_search_terms": [
+        "multiple fields",
+        "overlapping antimagic",
+        "no nullification"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Antimagic Field is active",
+      "condition": "Caster moves",
+      "outcome": "The 10-foot-radius sphere moves with the caster, centered on them",
+      "related_search_terms": [
+        "mobile field",
+        "caster centered",
+        "area moves"
+      ]
+    }
+  ],
+  "description_text": "A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.\nSpells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.\n***Targeted Effects.*** Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.\n***Areas of Magic.*** The area of another spell or magical effect, such as fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.\n***Spells.*** Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.\n***Magic Items.*** The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.\nA magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.\n***Magical Travel.*** Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.\n***Creatures and Objects.*** A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.\n***Dispel Magic.*** Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don't nullify each other.",
+  "tags": [
+    "abjuration",
+    "area_of_effect",
+    "suppression",
+    "antimagic"
+  ],
+  "related_search_terms": [
+    "dispel magic",
+    "magic immunity",
+    "spell nullification",
+    "area denial",
+    "magic negation",
+    "spell blocker"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "entity_name": "Confusion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On spell cast",
+      "condition": "Creature within 10-foot-radius sphere within range fails a Wisdom saving throw",
+      "outcome": "Creature is affected by Confusion",
+      "related_search_terms": [
+        "initial save",
+        "aoe save",
+        "failed save",
+        "mind effect initial"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While affected by Confusion",
+      "condition": "Creature is affected by Confusion",
+      "outcome": "Creature cannot take reactions",
+      "related_search_terms": [
+        "reaction denial",
+        "no opportunity attacks",
+        "disabled reaction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of affected creature's turn",
+      "condition": "Creature is affected by Confusion",
+      "outcome": "Creature rolls a d10 to determine behavior for the turn",
+      "related_search_terms": [
+        "random behavior",
+        "turn start effect",
+        "d10 roll"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of affected creature's turn after d10 roll",
+      "condition": "Creature is affected by Confusion AND d10 roll result is 1",
+      "outcome": "Creature uses all its movement to move in a random direction (d8 to determine direction) AND Creature does not take an action this turn",
+      "related_search_terms": [
+        "random movement",
+        "lost action",
+        "uncontrolled movement",
+        "direction roll"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of affected creature's turn after d10 roll",
+      "condition": "Creature is affected by Confusion AND d10 roll result is 2-6",
+      "outcome": "Creature does not move or take actions this turn",
+      "related_search_terms": [
+        "inaction",
+        "skip turn",
+        "stunned-like",
+        "immobilized"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of affected creature's turn after d10 roll",
+      "condition": "Creature is affected by Confusion AND d10 roll result is 7-8 AND there is a creature within its reach",
+      "outcome": "Creature uses its action to make a melee attack against a randomly determined creature within its reach",
+      "related_search_terms": [
+        "friendly fire",
+        "random attack",
+        "attack ally",
+        "melee attack"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of affected creature's turn after d10 roll",
+      "condition": "Creature is affected by Confusion AND d10 roll result is 7-8 AND there is NO creature within its reach",
+      "outcome": "Creature does nothing this turn",
+      "related_search_terms": [
+        "inaction",
+        "no target",
+        "missed action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of affected creature's turn after d10 roll",
+      "condition": "Creature is affected by Confusion AND d10 roll result is 9-10",
+      "outcome": "Creature can act and move normally",
+      "related_search_terms": [
+        "temporary lucidity",
+        "normal turn",
+        "brief control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of affected creature's turn",
+      "condition": "Creature is affected by Confusion AND Creature succeeds on a Wisdom saving throw",
+      "outcome": "The Confusion effect ends for that creature",
+      "related_search_terms": [
+        "repeating save",
+        "condition ends",
+        "break control",
+        "wisdom save end"
+      ]
+    }
+  ],
+  "description_text": "This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.\nAn affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.\n| d10 | Behavior |\n|---|---|\n| 1 | The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn. |\n| 2-6 | The creature doesn't move or take actions this turn. |\n| 7-8 | The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn. |\n| 9-10 | The creature can act and move normally. |\nAt the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "control",
+    "aoe",
+    "wisdom_save"
+  ],
+  "related_search_terms": [
+    "mind control",
+    "disorient",
+    "area denial",
+    "chaos",
+    "madness",
+    "mental effect"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "entity_name": "Etherealness",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Caster is NOT on the Ethereal Plane AND Caster is on a plane that borders the Ethereal Plane",
+      "outcome": "Caster enters the Border Ethereal for the duration OR until they use an action to dismiss the spell",
+      "related_search_terms": [
+        "plane shift",
+        "dimensional travel",
+        "ghost form",
+        "become ethereal"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Movement in Border Ethereal",
+      "condition": "Caster moves up or down",
+      "outcome": "Every foot of movement costs an extra foot",
+      "related_search_terms": [
+        "vertical movement cost",
+        "flying",
+        "ethereal movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Perception from Border Ethereal",
+      "condition": "Caster attempts to perceive the plane of origin",
+      "outcome": "Caster can see and hear the plane of origin, but everything appears gray and vision is limited to 60 feet",
+      "related_search_terms": [
+        "ethereal vision",
+        "limited sight",
+        "perception range",
+        "gray world"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Interaction while in Border Ethereal",
+      "condition": "Creatures or objects are NOT on the Ethereal Plane",
+      "outcome": "Caster can only affect and be affected by other creatures on the Ethereal Plane",
+      "related_search_terms": [
+        "intangible",
+        "ghostly",
+        "immune to attacks",
+        "cannot touch",
+        "unaffected"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Perception by non-Ethereal creatures",
+      "condition": "Creatures are NOT on the Ethereal Plane",
+      "outcome": "Creatures cannot perceive the Caster",
+      "related_search_terms": [
+        "invisible to mortals",
+        "unseen",
+        "undetectable"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Perception/Interaction by non-Ethereal creatures",
+      "condition": "Creatures possess a special ability or magic that grants ability to perceive/interact with Ethereal creatures",
+      "outcome": "Creatures CAN perceive and interact with the Caster",
+      "related_search_terms": [
+        "truesight",
+        "ghost sense",
+        "special perception"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Movement while in Border Ethereal",
+      "condition": "Caster attempts to move through objects or effects on the plane of origin",
+      "outcome": "Caster ignores all objects and effects, allowing movement through them",
+      "related_search_terms": [
+        "phasing",
+        "walk through walls",
+        "ignore terrain",
+        "intangibility"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "N/A",
+      "outcome": "Caster immediately returns to the plane of origin in their current spot",
+      "related_search_terms": [
+        "revert form",
+        "return to material plane",
+        "spell conclusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Return to plane of origin",
+      "condition": "Caster occupies the same spot as a solid object or creature",
+      "outcome": "Caster is immediately shunted to the nearest unoccupied space AND takes force damage equal to twice the number of feet moved",
+      "related_search_terms": [
+        "shunted",
+        "teleport collision",
+        "forced movement damage",
+        "environmental damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to cast Etherealness",
+      "condition": "Caster is on the Ethereal Plane OR Caster is on a plane that does NOT border the Ethereal Plane (e.g., Outer Planes)",
+      "outcome": "Spell has no effect",
+      "related_search_terms": [
+        "casting restriction",
+        "plane incompatibility",
+        "spell failure"
+      ]
+    }
+  ],
+  "description_text": "You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away. While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so. You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from. When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved. This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.",
+  "tags": [
+    "transmutation",
+    "movement",
+    "utility",
+    "plane shifting"
+  ],
+  "related_search_terms": [
+    "ethereal plane",
+    "phasing",
+    "ghost form",
+    "intangibility",
+    "border ethereal"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "entity_name": "Overchannel",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting a wizard spell",
+      "condition": "Spell is 1st through 5th level AND Spell deals damage AND Wizard chooses to use Overchannel",
+      "outcome": "Spell deals maximum possible damage",
+      "related_search_terms": [
+        "maximize damage",
+        "guaranteed damage",
+        "empowered spell",
+        "evocation wizard damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Using Overchannel feature",
+      "condition": "It is the first use of Overchannel since the last long rest",
+      "outcome": "Suffer no adverse effect",
+      "related_search_terms": [
+        "free use",
+        "no penalty",
+        "first time activation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using Overchannel feature",
+      "condition": "It is NOT the first use of Overchannel since the last long rest AND Spell has a level",
+      "outcome": "Take 2d12 necrotic damage per spell level immediately after casting",
+      "related_search_terms": [
+        "self-damage",
+        "recoil damage",
+        "burnout",
+        "cost per use"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Subsequent uses of Overchannel feature before a long rest",
+      "condition": "Overchannel has been used multiple times since the last long rest AND Spell has a level",
+      "outcome": "Necrotic damage per spell level increases by 1d12 for each use beyond the first",
+      "related_search_terms": [
+        "cumulative damage",
+        "escalating cost",
+        "increasing penalty",
+        "risk assessment"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Taking necrotic damage from Overchannel",
+      "condition": "Necrotic damage is from Overchannel feature",
+      "outcome": "Damage ignores resistance and immunity",
+      "related_search_terms": [
+        "true damage",
+        "unblockable damage",
+        "pierce resistance"
+      ]
+    }
+  ],
+  "description_text": "Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 1st through 5th level that deals damage, you can deal maximum damage with that spell. The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by 1d12. This damage ignores resistance and immunity.",
+  "tags": [
+    "wizard",
+    "evocation school",
+    "class feature",
+    "damage",
+    "self-harm",
+    "resource management",
+    "level 14"
+  ],
+  "related_search_terms": [
+    "evocation wizard ability",
+    "powerful spellcasting",
+    "spell enhancement",
+    "high damage output",
+    "risk reward",
+    "spell maximization"
+  ]
+}

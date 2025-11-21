@@ -1,0 +1,67 @@
+{
+  "entity_name": "Knock",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is an object (door, box, chest, manacles, padlock, or other) with a mundane means preventing access (e.g., held shut by a mundane lock, stuck, or barred)",
+      "outcome": "Target becomes unlocked, unstuck, or unbarred. If the object has multiple mundane locks, only one is unlocked.",
+      "related_search_terms": [
+        "open lock",
+        "remove bar",
+        "unstick door",
+        "bypass mundane lock",
+        "disable trap",
+        "pick lock alternative",
+        "mundane barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is held shut by the 'arcane lock' spell",
+      "outcome": "The 'arcane lock' spell on the target is suppressed for 10 minutes. During this time, the target can be opened and shut normally.",
+      "related_search_terms": [
+        "counter arcane lock",
+        "dispel magic alternative",
+        "magic lock bypass",
+        "temporal suppression",
+        "anti-magic lock"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When spell is cast",
+      "condition": "Spell is successfully cast",
+      "outcome": "A loud knock, audible from as far away as 300 feet, emanates from the target object.",
+      "related_search_terms": [
+        "noise warning",
+        "attract attention",
+        "stealth penalty",
+        "loud spell",
+        "alert nearby creatures"
+      ]
+    }
+  ],
+  "description_text": "Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access. A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked. If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally. When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.",
+  "tags": [
+    "Abjuration",
+    "2nd-level",
+    "Utility",
+    "Sound"
+  ],
+  "related_search_terms": [
+    "opening",
+    "locks",
+    "doors",
+    "access",
+    "stealth",
+    "noise",
+    "disable",
+    "chest",
+    "manacles",
+    "padlock",
+    "barrier"
+  ]
+}

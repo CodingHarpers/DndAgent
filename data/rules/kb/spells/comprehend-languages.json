@@ -1,0 +1,68 @@
+{
+  "entity_name": "Comprehend Languages",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Hearing spoken language",
+      "condition": "Spell is active",
+      "outcome": "You understand the literal meaning of any spoken language you hear",
+      "related_search_terms": [
+        "translation",
+        "language barrier",
+        "decipher speech",
+        "communication"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Seeing written language",
+      "condition": "Spell is active AND You are touching the surface on which the words are written",
+      "outcome": "You understand the literal meaning of any written language you see",
+      "related_search_terms": [
+        "reading",
+        "translation",
+        "decipher text",
+        "ancient script",
+        "foreign writing"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Reading written language via this spell",
+      "condition": "Spell is active AND Written language is being read",
+      "outcome": "Reading takes approximately 1 minute per page of text",
+      "related_search_terms": [
+        "reading speed",
+        "time constraint",
+        "pace of reading"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Encountering text or glyphs",
+      "condition": "Spell is active AND Text contains a secret message OR It is a glyph that is not part of a written language (e.g., an arcane sigil)",
+      "outcome": "Spell does NOT decode the secret message or glyph",
+      "related_search_terms": [
+        "hidden meaning",
+        "codes",
+        "ciphers",
+        "runes",
+        "magical writing",
+        "symbols"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.",
+  "tags": [
+    "divination",
+    "utility"
+  ],
+  "related_search_terms": [
+    "language spell",
+    "translation spell",
+    "communication",
+    "understanding",
+    "deciphering"
+  ]
+}

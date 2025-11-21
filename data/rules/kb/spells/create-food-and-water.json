@@ -1,0 +1,88 @@
+{
+  "entity_name": "Create Food and Water",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "N/A",
+      "outcome": "Conjure 45 pounds of food on the ground or in containers within range",
+      "related_search_terms": [
+        "food generation",
+        "survival rations",
+        "emergency food",
+        "summon food"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "N/A",
+      "outcome": "Conjure 30 gallons of water on the ground or in containers within range",
+      "related_search_terms": [
+        "water generation",
+        "hydration",
+        "drinking water",
+        "summon water"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Consumption of created food",
+      "condition": "Humanoid consumes sufficient portion of created food",
+      "outcome": "Sustains one humanoid for 24 hours (up to fifteen humanoids can be sustained by total food)",
+      "related_search_terms": [
+        "feed humanoids",
+        "daily rations",
+        "nourishment people"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Consumption of created food",
+      "condition": "Steed consumes sufficient portion of created food",
+      "outcome": "Sustains one steed for 24 hours (up to five steeds can be sustained by total food)",
+      "related_search_terms": [
+        "feed mounts",
+        "animal sustenance",
+        "horse food"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "24 hours after food creation",
+      "condition": "Created food remains uneaten",
+      "outcome": "Created food spoils and becomes inedible",
+      "related_search_terms": [
+        "food expiration",
+        "perishable food",
+        "time limit food"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Water created",
+      "condition": "N/A",
+      "outcome": "Created water is clean and does not spoil",
+      "related_search_terms": [
+        "eternal water",
+        "non-perishable water",
+        "clean water source"
+      ]
+    }
+  ],
+  "description_text": "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.",
+  "tags": [
+    "utility",
+    "conjuration",
+    "survival"
+  ],
+  "related_search_terms": [
+    "survival spell",
+    "food magic",
+    "water magic",
+    "provisioning",
+    "resource generation",
+    "emergency supplies"
+  ]
+}

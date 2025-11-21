@@ -1,0 +1,95 @@
+{
+  "entity_name": "Mass Heal",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range",
+      "outcome": "Restore up to 700 hit points, divided as you choose among chosen creatures",
+      "related_search_terms": [
+        "hp restoration",
+        "group heal",
+        "flexible healing",
+        "mass healing",
+        "party sustain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is healed by this spell",
+      "condition": "Creature is suffering from a disease",
+      "outcome": "Cured of all diseases",
+      "related_search_terms": [
+        "disease cure",
+        "ailment removal",
+        "cleanse disease"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is healed by this spell",
+      "condition": "Creature is blinded",
+      "outcome": "Cured of blinded condition",
+      "related_search_terms": [
+        "blindness cure",
+        "eyesight restoration",
+        "remove blind"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is healed by this spell",
+      "condition": "Creature is deafened",
+      "outcome": "Cured of deafened condition",
+      "related_search_terms": [
+        "deafness cure",
+        "hearing restoration",
+        "remove deaf"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting an Undead creature",
+      "condition": "Target is Undead",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "heal undead",
+        "negative energy affinity",
+        "unaffected by healing"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting a Construct creature",
+      "condition": "Target is Construct",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "heal construct",
+        "machine healing",
+        "unaffected by healing"
+      ]
+    }
+  ],
+  "description_text": "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.",
+  "tags": [
+    "healing",
+    "AoE",
+    "cure condition",
+    "divine",
+    "cleric",
+    "bard",
+    "paladin",
+    "spell"
+  ],
+  "related_search_terms": [
+    "group heal",
+    "party healing",
+    "restoration",
+    "condition removal",
+    "mass healing spell",
+    "hp recovery",
+    "cleric spell",
+    "bard spell"
+  ]
+}

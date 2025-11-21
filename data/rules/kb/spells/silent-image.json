@@ -1,0 +1,97 @@
+{
+  "entity_name": "Silent Image",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target spot within range",
+      "outcome": "Create a purely visual image of an object, creature, or phenomenon no larger than a 15-foot cube, lasting for the duration",
+      "related_search_terms": [
+        "illusion creation",
+        "visual illusion",
+        "silent illusion",
+        "stationary image",
+        "image size",
+        "illusion duration"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Image exists",
+      "condition": "Image is Silent Image",
+      "outcome": "Image is purely visual; it is not accompanied by sound, smell, or other sensory effects",
+      "related_search_terms": [
+        "no sound",
+        "no smell",
+        "visual only",
+        "sensory limitation",
+        "illusion properties"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Player uses an action on their turn",
+      "condition": "Silent Image is active",
+      "outcome": "Move image to any spot within range and alter its appearance so its movements appear natural",
+      "related_search_terms": [
+        "moving illusion",
+        "dynamic image",
+        "action to move",
+        "changing appearance",
+        "controlling illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Physical interaction with image",
+      "condition": "Image is Silent Image",
+      "outcome": "Image is revealed to be an illusion because things can pass through it",
+      "related_search_terms": [
+        "illusion revealed",
+        "physical contact",
+        "pass through",
+        "disbelief trigger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature uses an action to examine the image",
+      "condition": "Creature makes a successful Intelligence (Investigation) check against caster's spell save DC",
+      "outcome": "Creature determines that the image is an illusion",
+      "related_search_terms": [
+        "detect illusion",
+        "investigate illusion",
+        "discernment check",
+        "spotting fake",
+        "illusion check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature discerns the illusion",
+      "condition": "Creature successfully identified Silent Image as an illusion",
+      "outcome": "Creature can see through the image",
+      "related_search_terms": [
+        "seeing through illusion",
+        "ignoring illusion",
+        "disbelief effect",
+        "illusion revealed to specific creature"
+      ]
+    }
+  ],
+  "description_text": "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects. You can use your action to cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking. Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.",
+  "tags": [
+    "illusion",
+    "creation",
+    "visual",
+    "utility"
+  ],
+  "related_search_terms": [
+    "silent image spell",
+    "illusion magic",
+    "visual deception",
+    "minor illusion",
+    "disguise"
+  ]
+}

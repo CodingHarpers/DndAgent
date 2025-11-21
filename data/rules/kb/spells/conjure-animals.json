@@ -1,0 +1,111 @@
+{
+  "entity_name": "Conjure Animals",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On spell cast",
+      "condition": "Caster chooses one option from list",
+      "outcome": "Summon 1 beast CR 2 or lower OR 2 beasts CR 1 or lower OR 4 beasts CR 1/2 or lower OR 8 beasts CR 1/4 or lower",
+      "related_search_terms": [
+        "summoning options",
+        "beast choices",
+        "CR limits",
+        "animal companion",
+        "create creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is summoned",
+      "condition": "Creature is summoned by Conjure Animals",
+      "outcome": "Creature is Fey type in addition to original type",
+      "related_search_terms": [
+        "fey spirit",
+        "creature type change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature status",
+      "condition": "Creature is summoned by Conjure Animals",
+      "outcome": "Creature disappears when it drops to 0 hit points OR when the spell ends",
+      "related_search_terms": [
+        "summon duration",
+        "creature health",
+        "spell end condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature interaction",
+      "condition": "Creature is summoned by Conjure Animals",
+      "outcome": "Creatures are friendly to caster and companions",
+      "related_search_terms": [
+        "allies",
+        "friendly NPCs",
+        "party members"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Combat initiative",
+      "condition": "Creatures are summoned by Conjure Animals AND combat begins",
+      "outcome": "Roll initiative for summoned creatures as a group; they have their own turns",
+      "related_search_terms": [
+        "turn order",
+        "group initiative",
+        "NPC turns"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn",
+      "condition": "Creatures are summoned by Conjure Animals",
+      "outcome": "Caster can issue verbal commands (no action required)",
+      "related_search_terms": [
+        "controlling summons",
+        "free action commands",
+        "animal control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Summoned creature's turn",
+      "condition": "Creatures are summoned by Conjure Animals AND no commands are issued by caster",
+      "outcome": "Creatures defend themselves from hostile creatures BUT otherwise take no actions",
+      "related_search_terms": [
+        "default action",
+        "passive behavior",
+        "self-defense"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Information about summoned creature's statistics is needed",
+      "condition": "Creatures are summoned by Conjure Animals",
+      "outcome": "GM provides creature's statistics",
+      "related_search_terms": [
+        "monster stats",
+        "stat block",
+        "GM discretion"
+      ]
+    }
+  ],
+  "description_text": "You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears: - One beast of challenge rating 2 or lower - Two beasts of challenge rating 1 or lower - Four beasts of challenge rating 1/2 or lower - Eight beasts of challenge rating 1/4 or lower - Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.",
+  "tags": [
+    "conjuration",
+    "summoning",
+    "beasts",
+    "fey",
+    "spell"
+  ],
+  "related_search_terms": [
+    "animal companion",
+    "summon monster",
+    "pet",
+    "minions",
+    "combat pets",
+    "utility summons"
+  ]
+}

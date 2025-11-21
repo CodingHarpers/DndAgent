@@ -1,0 +1,58 @@
+{
+  "entity_name": "Phantasmal Killer",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Target is a creature visible to caster within range AND Target fails a Wisdom Saving Throw",
+      "outcome": "Target becomes Frightened for the duration of the spell",
+      "related_search_terms": [
+        "initial effect",
+        "failed save",
+        "fear condition",
+        "control spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of Target's Turn",
+      "condition": "Target is Frightened by Phantasmal Killer AND Target fails a Wisdom Saving Throw",
+      "outcome": "Target takes 4d10 Psychic Damage",
+      "related_search_terms": [
+        "ongoing damage",
+        "damage over time",
+        "recurring damage",
+        "psychic attack"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of Target's Turn",
+      "condition": "Target is Frightened by Phantasmal Killer AND Target succeeds on a Wisdom Saving Throw",
+      "outcome": "Phantasmal Killer spell ends",
+      "related_search_terms": [
+        "ending spell",
+        "breaking spell",
+        "successful save",
+        "spell termination"
+      ]
+    }
+  ],
+  "description_text": "You tap into the nightmares of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the start of each of the target's turns before the spell ends, the target must succeed on a wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.",
+  "tags": [
+    "spell",
+    "illusion",
+    "fear",
+    "damage",
+    "control"
+  ],
+  "related_search_terms": [
+    "fear spell",
+    "psychic damage",
+    "wisdom save",
+    "nightmare",
+    "illusion spell",
+    "phantasm"
+  ]
+}

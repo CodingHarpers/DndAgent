@@ -1,0 +1,66 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "character_progression_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character reaches a specific level",
+      "condition": "Level is 4, 6, 8, 12, 14, 16, or 19",
+      "outcome": "Character gains an Ability Score Improvement choice",
+      "related_search_terms": [
+        "level up reward",
+        "character progression",
+        "stat boost opportunity",
+        "ASI opportunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Applying an Ability Score Improvement choice",
+      "condition": "Player chooses to increase one ability score",
+      "outcome": "The chosen ability score increases by 2",
+      "related_search_terms": [
+        "single stat increase",
+        "focused stat boost",
+        "ability score +2"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Applying an Ability Score Improvement choice",
+      "condition": "Player chooses to increase two different ability scores",
+      "outcome": "The two chosen ability scores each increase by 1",
+      "related_search_terms": [
+        "two stat increases",
+        "minor stat boost",
+        "ability scores +1 each"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to increase an ability score using this feature",
+      "condition": "The ability score would exceed 20",
+      "outcome": "The ability score cannot be increased above 20",
+      "related_search_terms": [
+        "stat cap",
+        "max ability score",
+        "ASI limit",
+        "ability score maximum"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "character_progression",
+    "leveling",
+    "ability_scores",
+    "customization"
+  ],
+  "related_search_terms": [
+    "stat increase",
+    "level up bonus",
+    "ability modifier",
+    "character build",
+    "feats"
+  ]
+}

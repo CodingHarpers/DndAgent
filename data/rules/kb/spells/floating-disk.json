@@ -1,0 +1,91 @@
+{
+  "entity_name": "Floating Disk",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target unoccupied space within range is seen by caster",
+      "outcome": "A 3-foot diameter, 1-inch thick, circular horizontal plane of force appears 3 feet above ground in the target space",
+      "related_search_terms": [
+        "create object",
+        "summon platform",
+        "force field",
+        "conjure disk"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Weight placed on disk",
+      "condition": "Total weight on disk exceeds 500 pounds",
+      "outcome": "Spell ends, and all items on the disk fall to the ground",
+      "related_search_terms": [
+        "weight limit",
+        "capacity exceeded",
+        "overload",
+        "spell ends early"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster's position relative to disk",
+      "condition": "Caster is within 20 feet of the disk",
+      "outcome": "The disk remains immobile",
+      "related_search_terms": [
+        "stationary",
+        "fixed position",
+        "close proximity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's position relative to disk",
+      "condition": "Caster moves more than 20 feet away from the disk",
+      "outcome": "The disk follows the caster to remain within 20 feet",
+      "related_search_terms": [
+        "automatic movement",
+        "follower object",
+        "tracking",
+        "disk movement"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Disk attempts to move (follow)",
+      "condition": "Path requires crossing an elevation change of 10 feet or more",
+      "outcome": "The disk cannot cross the elevation change",
+      "related_search_terms": [
+        "terrain limitation",
+        "vertical movement restriction",
+        "obstacle",
+        "cannot traverse"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's position relative to disk",
+      "condition": "Caster moves more than 100 feet away from the disk",
+      "outcome": "The spell ends",
+      "related_search_terms": [
+        "distance limit",
+        "out of range",
+        "spell termination",
+        "dispel"
+      ]
+    }
+  ],
+  "description_text": "This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground. The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. If can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom. If you move more than 100 feet away from the disk (typically because it can't move around an obstacle to follow you), the spell ends.",
+  "tags": [
+    "utility",
+    "conjuration",
+    "transport",
+    "object creation"
+  ],
+  "related_search_terms": [
+    "Leomund's Secret Chest",
+    "unseen servant",
+    "carrying",
+    "luggage",
+    "portable platform"
+  ]
+}

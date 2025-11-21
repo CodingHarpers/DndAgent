@@ -1,0 +1,111 @@
+{
+  "entity_name": "Flaming Sphere",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Unoccupied space within range",
+      "outcome": "A 5-foot-diameter sphere of fire appears and lasts for the duration",
+      "related_search_terms": [
+        "summon",
+        "conjure",
+        "create fire sphere",
+        "initial placement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature ends its turn",
+      "condition": "Creature is within 5 feet of the Flaming Sphere",
+      "outcome": "Creature must make a Dexterity saving throw. On a failed save, it takes 2d6 fire damage. On a successful save, it takes half as much damage.",
+      "related_search_terms": [
+        "area damage",
+        "dot",
+        "damage over time",
+        "standing in fire",
+        "burn",
+        "hazard damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "User's turn",
+      "condition": "User expends a bonus action",
+      "outcome": "User can move the Flaming Sphere up to 30 feet",
+      "related_search_terms": [
+        "sphere movement",
+        "control sphere",
+        "reposition",
+        "bonus action move"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Moving the Flaming Sphere",
+      "condition": "Flaming Sphere is rammed into a creature",
+      "outcome": "Creature must make a Dexterity saving throw. On a failed save, it takes 2d6 fire damage. On a successful save, it takes half as much damage. The sphere stops moving this turn.",
+      "related_search_terms": [
+        "collision damage",
+        "impact damage",
+        "direct hit",
+        "push damage",
+        "forced movement damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Moving the Flaming Sphere",
+      "condition": "Path includes barriers up to 5 feet tall OR pits up to 10 feet wide",
+      "outcome": "The sphere can be directed over barriers and jump across pits",
+      "related_search_terms": [
+        "terrain ignore",
+        "obstacle bypass",
+        "vertical movement",
+        "gap crossing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Flaming Sphere is present",
+      "condition": "Flammable object (not worn or carried) is within the sphere's influence (implied contact)",
+      "outcome": "Flammable object ignites",
+      "related_search_terms": [
+        "set fire",
+        "burn environment",
+        "environmental hazard",
+        "arson"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Flaming Sphere is active",
+      "condition": "Flaming Sphere exists",
+      "outcome": "Sheds bright light in a 20-foot radius and dim light for an additional 20 feet",
+      "related_search_terms": [
+        "illumination",
+        "light source",
+        "vision aid",
+        "darkness counter"
+      ]
+    }
+  ],
+  "description_text": "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one. As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn. When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.",
+  "tags": [
+    "spell",
+    "evocation",
+    "fire",
+    "damage",
+    "area_of_effect",
+    "control",
+    "light_source"
+  ],
+  "related_search_terms": [
+    "fire spell",
+    "area damage",
+    "zone control",
+    "burning sphere",
+    "rolling fire",
+    "movement spell"
+  ]
+}

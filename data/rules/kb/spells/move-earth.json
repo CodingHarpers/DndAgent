@@ -1,0 +1,138 @@
+{
+  "entity_name": "Move Earth",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On casting",
+      "condition": "Target area of terrain no larger than 40 feet on a side AND terrain is dirt, sand, or clay",
+      "outcome": "You can reshape the terrain in any manner you choose for the duration",
+      "related_search_terms": [
+        "digging",
+        "raising ground",
+        "making trenches",
+        "forming pillars",
+        "terraforming"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When reshaping terrain",
+      "condition": "Changes involve raising/lowering elevation, creating/filling trenches, erecting/flattening walls, or forming pillars",
+      "outcome": "Extent of any such changes cannot exceed half the area's largest dimension",
+      "related_search_terms": [
+        "maximum height",
+        "maximum depth",
+        "size limit of changes",
+        "dimensions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "After specifying terrain changes",
+      "condition": "N/A",
+      "outcome": "Changes take 10 minutes to complete",
+      "related_search_terms": [
+        "casting time",
+        "transformation speed",
+        "duration of change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "At the end of every 10 minutes of concentration",
+      "condition": "You are concentrating on this spell",
+      "outcome": "You can choose a new area of terrain to affect",
+      "related_search_terms": [
+        "sustained casting",
+        "continuous effect",
+        "large scale terraforming",
+        "multiple areas"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creatures in the affected area during transformation",
+      "condition": "N/A",
+      "outcome": "Creatures cannot usually be trapped or injured by the ground's movement",
+      "related_search_terms": [
+        "safe transformation",
+        "no damage to creatures",
+        "avoiding injury"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to manipulate terrain",
+      "condition": "Terrain is natural stone or stone construction",
+      "outcome": "This spell cannot manipulate it",
+      "related_search_terms": [
+        "rock manipulation",
+        "stone walls",
+        "building destruction",
+        "unaffected materials"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Terrain is reshaped where rocks or structures are present",
+      "condition": "N/A",
+      "outcome": "Rocks and structures shift to accommodate the new terrain",
+      "related_search_terms": [
+        "structural integrity",
+        "shifting objects",
+        "accommodating structures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Terrain shaping occurs where structures are present",
+      "condition": "The way you shape the terrain would make a structure unstable",
+      "outcome": "The structure might collapse",
+      "related_search_terms": [
+        "building collapse",
+        "demolition",
+        "destroying structures"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to affect plant growth directly",
+      "condition": "N/A",
+      "outcome": "This spell does not directly affect plant growth",
+      "related_search_terms": [
+        "affecting plants",
+        "vegetation",
+        "flora manipulation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Earth containing plants is moved",
+      "condition": "N/A",
+      "outcome": "Any plants in the earth are carried along with it",
+      "related_search_terms": [
+        "moving trees",
+        "relocating plants",
+        "forest alteration"
+      ]
+    }
+  ],
+  "description_text": "Choose an area of terrain no larger than 40 feet on a side within range. You can reshape dirt, sand, or clay in the area in any manner you choose for the duration. You can raise or lower the area's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. So, if you affect a 40-foot square, you can create a pillar up to 20 feet high, raise or lower the square's elevation by up to 20 feet, dig a trench up to 20 feet deep, and so on. It takes 10 minutes for these changes to complete. At the end of every 10 minutes you spend concentrating on the spell, you can choose a new area of terrain to affect. Because the terrain's transformation occurs slowly, creatures in the area can't usually be trapped or injured by the ground's movement. This spell can't manipulate natural stone or stone construction. Rocks and structures shift to accommodate the new terrain. If the way you shape the terrain would make a structure unstable, it might collapse. Similarly, this spell doesn't directly affect plant growth. The moved earth carries any plants along with it.",
+  "tags": [
+    "Transmutation",
+    "Terrain Alteration",
+    "Utility",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "terraform",
+    "earth shaping",
+    "landscape alteration",
+    "siege utility",
+    "defensive construction",
+    "digging",
+    "fortification",
+    "earth magic"
+  ]
+}

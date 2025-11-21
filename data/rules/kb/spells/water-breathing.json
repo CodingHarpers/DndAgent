@@ -1,0 +1,43 @@
+{
+  "entity_name": "Water Breathing",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Creature is affected by Water Breathing",
+      "condition": "Creature is within range, caster can see creature, creature is willing, up to 10 creatures",
+      "outcome": "Creature gains the ability to breathe underwater",
+      "related_search_terms": [
+        "underwater exploration",
+        "drowning prevention",
+        "aquatic survival",
+        "suffocation immunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is affected by Water Breathing",
+      "condition": "Creature is affected by Water Breathing",
+      "outcome": "Creature retains its normal breathing pattern (can breathe air)",
+      "related_search_terms": [
+        "amphibious",
+        "air breathing",
+        "no penalty on land"
+      ]
+    }
+  ],
+  "description_text": "This spell gives a maximum of ten willing creatures within range and you can see, the ability to breathe underwater until the end of its term. Affected creatures also retain their normal breathing pattern.",
+  "tags": [
+    "utility",
+    "exploration",
+    "abjuration"
+  ],
+  "related_search_terms": [
+    "underwater adventure",
+    "aquatic spell",
+    "drowning protection",
+    "suffocation solution",
+    "explore water",
+    "survival spell"
+  ]
+}

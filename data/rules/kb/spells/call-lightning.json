@@ -1,0 +1,101 @@
+{
+  "entity_name": "Call Lightning",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Point 100 feet directly above caster is visible AND can accommodate a 10-foot tall, 60-foot radius cylinder",
+      "outcome": "Spell fails to be cast",
+      "related_search_terms": [
+        "spell failure",
+        "indoor casting",
+        "line of sight",
+        "cloud placement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses a visible point within range",
+      "outcome": "A bolt of lightning flashes down to the chosen point",
+      "related_search_terms": [
+        "initial strike",
+        "first attack",
+        "spell initiation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Lightning Bolt Strikes",
+      "condition": "Creature is within 5 feet of the target point",
+      "outcome": "Creature must make a Dexterity saving throw",
+      "related_search_terms": [
+        "area of effect save",
+        "dex save",
+        "proximity damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw Failed",
+      "condition": "Creature is within 5 feet of the target point",
+      "outcome": "Creature takes 3d10 lightning damage",
+      "related_search_terms": [
+        "full damage",
+        "failed save",
+        "lightning damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw Succeeded",
+      "condition": "Creature is within 5 feet of the target point",
+      "outcome": "Creature takes half 3d10 lightning damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Caster's Turn (while spell is active)",
+      "condition": "Caster uses their action",
+      "outcome": "Caster can call down lightning again to the same or a different visible point",
+      "related_search_terms": [
+        "repeated casting",
+        "sustained damage",
+        "action economy",
+        "ongoing effect"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage Calculation for Lightning Bolt",
+      "condition": "Caster is outdoors AND in stormy conditions when the spell is cast",
+      "outcome": "Lightning damage increases by 1d10",
+      "related_search_terms": [
+        "environmental bonus",
+        "storm power",
+        "weather effect",
+        "damage boost"
+      ]
+    }
+  ],
+  "description_text": "A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud). When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one. If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.",
+  "tags": [
+    "evocation",
+    "lightning",
+    "damage",
+    "area of effect",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "storm spell",
+    "aoe damage",
+    "dex save spell",
+    "repeated damage",
+    "weather magic"
+  ]
+}

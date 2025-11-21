@@ -1,0 +1,66 @@
+{
+  "entity_name": "Indomitable",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Player fails a saving throw",
+      "condition": "Player chooses to use Indomitable AND Indomitable uses available > 0",
+      "outcome": "Player rerolls the saving throw and must use the new roll",
+      "related_search_terms": [
+        "reroll save",
+        "saving throw reroll",
+        "second chance save",
+        "fail to success"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Indomitable is used to reroll a saving throw",
+      "condition": "None",
+      "outcome": "One use of Indomitable is expended. All expended uses are recovered after a long rest.",
+      "related_search_terms": [
+        "uses per rest",
+        "resource tracking",
+        "long rest recovery",
+        "limited use ability"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Player reaches 13th level",
+      "condition": "Player is a Fighter",
+      "outcome": "Maximum uses of Indomitable increases to 2 per long rest",
+      "related_search_terms": [
+        "level up benefit",
+        "ability upgrade",
+        "tier 3 ability"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Player reaches 17th level",
+      "condition": "Player is a Fighter",
+      "outcome": "Maximum uses of Indomitable increases to 3 per long rest",
+      "related_search_terms": [
+        "level up benefit",
+        "ability upgrade",
+        "tier 4 ability"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.",
+  "tags": [
+    "Fighter Feature",
+    "Class Feature",
+    "Resource Management",
+    "Saving Throw"
+  ],
+  "related_search_terms": [
+    "Fighter",
+    "Warrior",
+    "Tank",
+    "Survival",
+    "Persistence"
+  ]
+}

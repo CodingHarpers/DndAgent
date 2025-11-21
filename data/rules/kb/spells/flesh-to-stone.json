@@ -1,0 +1,94 @@
+{
+  "entity_name": "Flesh to Stone",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On spell cast",
+      "condition": "Target is a visible creature made of flesh within range",
+      "outcome": "Target must make a Constitution saving throw. On a failed save, it is restrained. On a successful save, it is unaffected.",
+      "related_search_terms": [
+        "initial save",
+        "first save",
+        "restrain",
+        "constitution save",
+        "flesh creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of creature's turn",
+      "condition": "Creature is currently restrained by Flesh to Stone",
+      "outcome": "Creature must make another Constitution saving throw. Successes and failures are tracked.",
+      "related_search_terms": [
+        "repeated saves",
+        "ongoing effect",
+        "turn to stone progress",
+        "cumulative saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After 3 failed Constitution saving throws",
+      "condition": "Creature has accumulated 3 failed Constitution saving throws against Flesh to Stone (not necessarily consecutive)",
+      "outcome": "Creature is subjected to the petrified condition for the spell's duration.",
+      "related_search_terms": [
+        "turned to stone",
+        "petrified condition",
+        "stone transformation",
+        "failed saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After 3 successful Constitution saving throws",
+      "condition": "Creature has accumulated 3 successful Constitution saving throws against Flesh to Stone (not necessarily consecutive)",
+      "outcome": "The spell ends for that creature.",
+      "related_search_terms": [
+        "break free",
+        "resist spell",
+        "spell ends early",
+        "successful saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature suffers physical damage while petrified by this spell",
+      "condition": "Creature is currently petrified by Flesh to Stone AND takes physical damage",
+      "outcome": "If the creature later reverts to its original state, it suffers similar deformities corresponding to the physical damage taken while petrified.",
+      "related_search_terms": [
+        "damage stone form",
+        "broken statue",
+        "revert with scars",
+        "deformity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster maintains concentration for the entire possible duration",
+      "condition": "Caster maintains concentration on Flesh to Stone for the maximum possible duration",
+      "outcome": "The creature is permanently turned to stone until the effect is removed by other magic.",
+      "related_search_terms": [
+        "permanent petrification",
+        "enduring stone form",
+        "concentration spell end",
+        "indefinite petrification"
+      ]
+    }
+  ],
+  "description_text": "You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected. A creature restrained by this spell must make another constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind. If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state. If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.",
+  "tags": [
+    "Transmutation",
+    "Concentration",
+    "Condition",
+    "Save or Suck"
+  ],
+  "related_search_terms": [
+    "petrify spell",
+    "stone transformation",
+    "restrain",
+    "constitution saving throw",
+    "permanent effect",
+    "deformity"
+  ]
+}

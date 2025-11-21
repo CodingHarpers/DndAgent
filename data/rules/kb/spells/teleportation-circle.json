@@ -1,0 +1,76 @@
+{
+  "entity_name": "Teleportation Circle",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On spell cast",
+      "condition": "Caster knows sigil sequence for a permanent teleportation circle AND chosen destination is on the same plane as the caster",
+      "outcome": "A 10-foot diameter portal opens at caster's location, linked to the chosen destination, and remains open until the end of the caster's next turn",
+      "related_search_terms": [
+        "create portal",
+        "instant travel",
+        "magic gate",
+        "planar transport",
+        "circle magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters the portal",
+      "condition": "Portal is open",
+      "outcome": "Creature is instantly teleported to within 5 feet of the destination circle (or nearest unoccupied space)",
+      "related_search_terms": [
+        "teleport target",
+        "portal entry",
+        "travel through",
+        "relocation",
+        "fast travel"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster gains the ability to cast Teleportation Circle",
+      "condition": "N/A",
+      "outcome": "Caster learns sigil sequences for two destinations on the Material Plane (GM's choice)",
+      "related_search_terms": [
+        "starting knowledge",
+        "default sigils",
+        "GM fiat",
+        "initial destinations"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster studies a new sigil sequence",
+      "condition": "Caster studies the sequence for 1 minute",
+      "outcome": "Caster commits the new sigil sequence to memory",
+      "related_search_terms": [
+        "discover new sigils",
+        "memorize",
+        "expand network",
+        "learn destination"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster casts Teleportation Circle",
+      "condition": "Spell is cast in the same location every day for 365 consecutive days",
+      "outcome": "A permanent teleportation circle is created at that location",
+      "related_search_terms": [
+        "long ritual",
+        "establish portal hub",
+        "permanent magic",
+        "yearly casting",
+        "create permanent circle"
+      ]
+    }
+  ],
+  "description_text": "As you cast the spell, you draw a 10-foot-diameter circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is occupied.Many major temples, guilds, and other important places have permanent teleportation circles inscribed somewhere within their confines. Each such circle includes a unique sigil sequence--a string of magical runes arranged in a particular pattern. When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations on the Material Plane, determined by the GM. You can learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.You can create a permanent teleportation circle by casting this spell in the same location every day for one year. You need not use the circle to teleport when you cast the spell in this way.",
+  "tags": [
+    "spell",
+    "teleportation",
+    "planar travel",
+    "creation"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "entity_name": "Suggestion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range AND Target can hear you AND Target can understand you",
+      "outcome": "Spell can affect the target",
+      "related_search_terms": [
+        "targeting",
+        "line of sight",
+        "language barrier",
+        "communication"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is immune to the charmed condition",
+      "outcome": "Target is immune to this spell",
+      "related_search_terms": [
+        "charm immunity",
+        "condition immunity",
+        "spell resistance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Suggestion is made",
+      "condition": "The suggested course of action is 'obviously harmful' to the target (e.g., stab itself, throw itself onto a spear, immolate itself)",
+      "outcome": "Spell ends immediately",
+      "related_search_terms": [
+        "self-harm",
+        "unreasonable command",
+        "spell failure"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is eligible and suggestion is reasonable",
+      "outcome": "Target must make a Wisdom Saving Throw",
+      "related_search_terms": [
+        "wis save",
+        "spell resistance",
+        "mental defense"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw Failed",
+      "condition": "N/A",
+      "outcome": "Target pursues the suggested course of action to the best of its ability for the spell's duration",
+      "related_search_terms": [
+        "mind control",
+        "compulsion",
+        "following orders"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Suggested activity is completed",
+      "condition": "The suggested activity can be completed in a shorter time than the full spell duration",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "early spell end",
+        "task completed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster specifies a condition that will trigger a special activity during the duration",
+      "outcome": "Target performs the activity if the condition is met before the spell expires, otherwise the activity is not performed",
+      "related_search_terms": [
+        "delayed command",
+        "triggered action",
+        "if-then action"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target takes damage",
+      "condition": "Damage is dealt by the caster or any of the caster's companions",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "breaking charm",
+        "ending concentration",
+        "hostile action"
+      ]
+    }
+  ],
+  "description_text": "You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell. The target must make a wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do. You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed. If you or any of your companions damage the target, the spell ends.",
+  "tags": [
+    "Enchantment",
+    "Control",
+    "Mind Effect",
+    "Social"
+  ],
+  "related_search_terms": [
+    "charm",
+    "mental influence",
+    "social encounter",
+    "persuasion",
+    "manipulation",
+    "mind control",
+    "command"
+  ]
+}

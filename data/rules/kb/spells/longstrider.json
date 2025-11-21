@@ -1,0 +1,32 @@
+{
+  "entity_name": "Longstrider",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster touches a creature",
+      "outcome": "Target creature's speed increases by 10 feet until the spell ends",
+      "related_search_terms": [
+        "movement speed boost",
+        "mobility buff",
+        "run faster",
+        "speed enchantment"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature. The target's speed increases by 10 feet until the spell ends.",
+  "tags": [
+    "transmutation",
+    "1st-level",
+    "touch",
+    "bonus-action",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "speed increase",
+    "movement spell",
+    "buff spell",
+    "mobility"
+  ]
+}

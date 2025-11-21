@@ -1,0 +1,84 @@
+{
+  "entity_name": "Fog Cloud",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster casts Fog Cloud targeting a point within range",
+      "outcome": "A 20-foot-radius sphere of fog is created, centered on the chosen point",
+      "related_search_terms": [
+        "AoE creation",
+        "spell area",
+        "fog sphere",
+        "cloud",
+        "area effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Area of Effect Spreading",
+      "condition": "The Fog Cloud area encounters corners",
+      "outcome": "The sphere's area of effect spreads around corners, not being blocked by them",
+      "related_search_terms": [
+        "AoE geometry",
+        "line of sight blocking",
+        "obscurement spread"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Any creature or object within or viewing the area",
+      "condition": "Creature or object is located within the Fog Cloud's area, or viewing into/out of it",
+      "outcome": "The area is heavily obscured",
+      "related_search_terms": [
+        "obscurement",
+        "visibility",
+        "vision rules",
+        "heavily obscured",
+        "blinded condition",
+        "attack disadvantage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Duration",
+      "condition": "The spell has been cast and no dispersal condition is met",
+      "outcome": "The Fog Cloud persists for its specified duration",
+      "related_search_terms": [
+        "spell persistence",
+        "timed effect",
+        "duration spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Environmental condition change",
+      "condition": "A wind of moderate speed (at least 10 miles per hour) or greater is present in the Fog Cloud's area",
+      "outcome": "The Fog Cloud is immediately dispersed and ends",
+      "related_search_terms": [
+        "wind dispersal",
+        "environmental effect",
+        "weather effect",
+        "end condition"
+      ]
+    }
+  ],
+  "description_text": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+  "tags": [
+    "spell",
+    "evocation",
+    "level_1",
+    "obscurement",
+    "area_of_effect",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "fog spell",
+    "obscure vision",
+    "aoe vision denial",
+    "cover creation",
+    "stealth spell",
+    "environmental control"
+  ]
+}

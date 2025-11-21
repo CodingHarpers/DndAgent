@@ -1,0 +1,272 @@
+{
+  "entity_name": "Glyph of Warding",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "When casting Glyph of Warding",
+      "condition": "Caster chooses a location",
+      "outcome": "Glyph can be inscribed on a surface (max 10 ft diameter) OR within a closable object",
+      "related_search_terms": [
+        "spell placement",
+        "glyph location",
+        "trap setup"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Glyph is inscribed within an object",
+      "condition": "Object is moved more than 10 feet from casting location",
+      "outcome": "The glyph is broken, and the spell ends without being triggered",
+      "related_search_terms": [
+        "mobile trap",
+        "moving glyph",
+        "breaking spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Glyph is inscribed",
+      "condition": "Glyph exists",
+      "outcome": "The glyph is nearly invisible",
+      "related_search_terms": [
+        "hidden trap",
+        "invisible glyph",
+        "stealthy trap"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attempting to find the glyph",
+      "condition": "Performing an Intelligence (Investigation) check",
+      "outcome": "Requires a successful Intelligence (Investigation) check against caster's spell save DC to be found",
+      "related_search_terms": [
+        "finding traps",
+        "detecting glyphs",
+        "investigation check"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When casting Glyph of Warding",
+      "condition": "Caster is defining glyph properties",
+      "outcome": "Caster decides what triggers the glyph",
+      "related_search_terms": [
+        "custom trigger",
+        "trap conditions",
+        "spell activation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Glyph inscribed on a surface",
+      "condition": "A typical surface trigger occurs",
+      "outcome": "Trigger can include touching/standing on the glyph, removing an object covering it, approaching within a certain distance, or manipulating the inscribed object",
+      "related_search_terms": [
+        "floor trap",
+        "wall trap",
+        "proximity trigger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Glyph inscribed within an object",
+      "condition": "A typical object trigger occurs",
+      "outcome": "Trigger can include opening the object, approaching within a certain distance of it, or seeing/reading the glyph",
+      "related_search_terms": [
+        "chest trap",
+        "book trap",
+        "item trigger"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When defining glyph trigger",
+      "condition": "Caster wants specific activation conditions",
+      "outcome": "Trigger can be refined by circumstances, physical characteristics (height/weight), creature kind, or alignment",
+      "related_search_terms": [
+        "specific target",
+        "selective trap",
+        "custom activation"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When defining glyph trigger",
+      "condition": "Caster wants certain creatures NOT to trigger the glyph",
+      "outcome": "Caster can set conditions for creatures that don't trigger the glyph (e.g., those who say a certain password)",
+      "related_search_terms": [
+        "friendly fire",
+        "password trap",
+        "ally exclusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Glyph is triggered",
+      "condition": "Glyph successfully activates",
+      "outcome": "This spell ends",
+      "related_search_terms": [
+        "one-time use",
+        "single trigger"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When inscribing the glyph",
+      "condition": "Casting the spell",
+      "outcome": "Caster must choose between 'explosive runes' or a 'spell glyph'",
+      "related_search_terms": [
+        "glyph options",
+        "trap type"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Explosive Runes glyph is triggered",
+      "condition": "Glyph activates",
+      "outcome": "The glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph, spreading around corners",
+      "related_search_terms": [
+        "explosion",
+        "area of effect damage",
+        "radius spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Explosive Runes glyph is triggered",
+      "condition": "Creature is in the area of effect",
+      "outcome": "Creature must make a Dexterity saving throw",
+      "related_search_terms": [
+        "dex save",
+        "evasion",
+        "dodge"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Explosive Runes glyph is triggered",
+      "condition": "Creature in area fails Dexterity saving throw",
+      "outcome": "Creature takes 5d8 damage (acid, cold, fire, lightning, or thunder, caster's choice when created)",
+      "related_search_terms": [
+        "elemental damage",
+        "trap damage",
+        "burst damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Explosive Runes glyph is triggered",
+      "condition": "Creature in area succeeds on Dexterity saving throw",
+      "outcome": "Creature takes half as much damage",
+      "related_search_terms": [
+        "half damage",
+        "resisted damage",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When choosing 'Spell Glyph' option",
+      "condition": "Casting Glyph of Warding",
+      "outcome": "Caster can store a prepared spell of 3rd level or lower by casting it as part of creating the glyph",
+      "related_search_terms": [
+        "spell storage",
+        "delayed spell",
+        "trap spell",
+        "prepared spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Storing a spell in a Spell Glyph",
+      "condition": "Spell chosen for storage",
+      "outcome": "Stored spell must target a single creature or an area",
+      "related_search_terms": [
+        "valid spell targets",
+        "trap spell restrictions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting spell to store it in a Spell Glyph",
+      "condition": "Spell is being stored",
+      "outcome": "Stored spell has no immediate effect",
+      "related_search_terms": [
+        "delayed activation",
+        "latent spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Glyph is triggered",
+      "condition": "Glyph activates",
+      "outcome": "The stored spell is cast",
+      "related_search_terms": [
+        "spell trap activation",
+        "casting stored spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Stored spell with a single target is cast",
+      "condition": "Spell Glyph is triggered by a creature",
+      "outcome": "Stored spell targets the creature that triggered the glyph",
+      "related_search_terms": [
+        "single target spell trap",
+        "triggered spell target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Stored spell affecting an area is cast",
+      "condition": "Spell Glyph is triggered by a creature",
+      "outcome": "Area of effect is centered on the creature that triggered the glyph",
+      "related_search_terms": [
+        "aoe spell trap",
+        "centered on trigger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Stored spell summons hostile creatures or creates harmful objects/traps",
+      "condition": "Spell Glyph is triggered by an intruder",
+      "outcome": "Summoned creatures/objects appear as close as possible to the intruder and attack it",
+      "related_search_terms": [
+        "summoned trap",
+        "hostile summons",
+        "trap monsters"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Stored spell requires concentration",
+      "condition": "Stored spell is cast from glyph",
+      "outcome": "Stored spell lasts until the end of its full duration (no concentration required by caster)",
+      "related_search_terms": [
+        "no concentration spell",
+        "long-lasting trap",
+        "persistent spell effect"
+      ]
+    }
+  ],
+  "description_text": "When you cast this spell, you inscribe a glyph that harms other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. If you choose a surface, the glyph can cover an area of the surface no larger than 10 feet in diameter. If you choose an object, that object must remain in its place; if the object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered. The glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found. You decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends. You can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password. When you inscribe the glyph, choose *explosive runes* or a *spell glyph*. ***Explosive Runes.*** When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one. ***Spell Glyph.*** You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.",
+  "tags": [
+    "spell",
+    "trap",
+    "ward",
+    "area of effect",
+    "damage",
+    "utility",
+    "abjuration"
+  ],
+  "related_search_terms": [
+    "trap spell",
+    "warding spell",
+    "area denial",
+    "security",
+    "delayed spell",
+    "magical trap",
+    "explosive trap"
+  ]
+}

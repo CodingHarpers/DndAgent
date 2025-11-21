@@ -1,0 +1,94 @@
+{
+  "entity_name": "Tree Stride",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to enter a tree",
+      "condition": "The tree is living, of the same kind as other potential destination trees, and at least the same size as the creature",
+      "outcome": "Creature enters the tree, expending 5 feet of its movement. Creature instantly knows the location of all other trees of the same kind within 500 feet.",
+      "related_search_terms": [
+        "tree entry",
+        "plant ingress",
+        "movement cost",
+        "tree knowledge",
+        "find trees"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As part of the move used to enter a tree via Tree Stride",
+      "condition": "N/A",
+      "outcome": "Creature can choose to either: (A) Pass to a destination tree (another tree of the same kind within 500 feet), or (B) Step out of the tree it entered.",
+      "related_search_terms": [
+        "teleport choice",
+        "movement option",
+        "exit tree",
+        "travel decision"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature completes its Tree Stride movement (either to a new tree or exiting the original)",
+      "condition": "Creature has at least 5 feet of movement remaining",
+      "outcome": "Creature appears in a spot of its choice within 5 feet of the chosen exit tree (either destination or original), expending 5 feet of movement.",
+      "related_search_terms": [
+        "teleport completion",
+        "exit cost",
+        "controlled exit point",
+        "tree exit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to complete its Tree Stride movement (either to a new tree or exiting the original)",
+      "condition": "Creature has no movement left",
+      "outcome": "Creature appears within 5 feet of the tree it originally entered.",
+      "related_search_terms": [
+        "teleport failure",
+        "no movement exit",
+        "forced return",
+        "stuck in tree"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to use the transportation ability of Tree Stride",
+      "condition": "The transportation ability has already been used this round",
+      "outcome": "Cannot use the transportation ability again this round",
+      "related_search_terms": [
+        "once per turn",
+        "cooldown",
+        "usage limit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "End of creature's turn",
+      "condition": "Creature is currently inside a tree via Tree Stride",
+      "outcome": "Creature must end its turn outside a tree (implies automatic exit if still inside)",
+      "related_search_terms": [
+        "forced exit",
+        "cannot hide indefinitely",
+        "safety measure"
+      ]
+    }
+  ],
+  "description_text": "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.You can use this transportation ability once per round for the duration. You must end each turn outside a tree.",
+  "tags": [
+    "teleportation",
+    "movement",
+    "druid",
+    "nature",
+    "terrain_movement",
+    "mobility"
+  ],
+  "related_search_terms": [
+    "tree travel",
+    "forest traversal",
+    "plant teleportation",
+    "natural movement",
+    "wild shape mobility",
+    "tree hopping"
+  ]
+}

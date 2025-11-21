@@ -1,0 +1,1894 @@
+[
+  {
+    "source_chapter": "Fantasy-Historical Pantheons",
+    "extracted_concepts": [],
+    "_chunk_header": "Introduction",
+    "_source_file": "fantasy-historical-pantheons"
+  },
+  {
+    "source_chapter": "Fantasy-Historical Pantheons",
+    "extracted_concepts": [
+      {
+        "concept_name": "Celtic Pantheon (D&D)",
+        "definition": "A collection of deities representing a fantasy interpretation of ancient Celtic religions, providing options for divine characters in Dungeons & Dragons. These gods are often revered by druids and clerics who align with nature.",
+        "rule_logic": {
+          "premise": "A D&D campaign incorporates fantasy-historical pantheons.",
+          "implication": "The Celtic Pantheon, including its specific deities, alignments, domains, and symbols, is available for player character choices and world-building.",
+          "exceptions": [],
+          "description_text": "The Celtic, Egyptian, Greek, and Norse pantheons are fantasy interpretations of historical religions from our world's ancient times. They include deities that are most appropriate for use in a game, divorced from their historical context in the real world and united into pantheons that serve the needs of the game. The Celtic gods are as often served by druids as by clerics, for they are closely aligned with the forces of nature that druids revere.",
+          "is_exception": false,
+          "related_search_terms": [
+            "Celtic gods D&D",
+            "fantasy Celtic religion",
+            "druid patrons",
+            "cleric domains Celtic",
+            "historical pantheons D&D"
+          ]
+        },
+        "related_keywords": [
+          "Pantheon",
+          "Celtic",
+          "Deity",
+          "Religion",
+          "Divine",
+          "Cleric",
+          "Druid",
+          "Fantasy-Historical"
+        ]
+      },
+      {
+        "concept_name": "The Daghdha",
+        "definition": "The Celtic god of weather and crops, aligned Chaotic Good (CG), with suggested domains of Nature and Trickery. Symbolized by a bubbling cauldron or shield.",
+        "rule_logic": {
+          "premise": "A D&D character chooses The Daghdha as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is The Daghdha, who is Chaotic Good, associated with Nature and Trickery domains, and represented by a bubbling cauldron or shield.",
+          "exceptions": [],
+          "description_text": "The Daghdha, god of weather and crops | CG | Nature, Trickery | Bubbling cauldron or shield",
+          "is_exception": false,
+          "related_search_terms": [
+            "The Daghdha domains",
+            "Celtic god of weather",
+            "CG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Weather",
+          "Crops",
+          "Nature Domain",
+          "Trickery Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Arawn",
+        "definition": "The Celtic god of life and death, aligned Neutral Evil (NE), with suggested domains of Life and Death. Symbolized by a black star on a gray background.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Arawn as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Arawn, who is Neutral Evil, associated with Life and Death domains, and represented by a black star on a gray background.",
+          "exceptions": [],
+          "description_text": "Arawn, god of life and death | NE | Life, Death | Black star on gray background",
+          "is_exception": false,
+          "related_search_terms": [
+            "Arawn domains",
+            "Celtic god of life and death",
+            "NE deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Life",
+          "Death",
+          "Life Domain",
+          "Death Domain",
+          "Neutral Evil"
+        ]
+      },
+      {
+        "concept_name": "Belenus",
+        "definition": "The Celtic god of sun, light, and warmth, aligned Neutral Good (NG), with a suggested domain of Light. Symbolized by a solar disk and standing stones.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Belenus as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Belenus, who is Neutral Good, associated with the Light domain, and represented by a solar disk and standing stones.",
+          "exceptions": [],
+          "description_text": "Belenus, god of sun, light, and warmth | NG | Light | Solar disk and standing stones",
+          "is_exception": false,
+          "related_search_terms": [
+            "Belenus domains",
+            "Celtic god of sun",
+            "NG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Sun",
+          "Light",
+          "Warmth",
+          "Light Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Brigantia",
+        "definition": "The Celtic goddess of rivers and livestock, aligned Neutral Good (NG), with a suggested domain of Life. Symbolized by a footbridge.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Brigantia as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Brigantia, who is Neutral Good, associated with the Life domain, and represented by a footbridge.",
+          "exceptions": [],
+          "description_text": "Brigantia, goddess of rivers and livestock | NG | Life | Footbridge",
+          "is_exception": false,
+          "related_search_terms": [
+            "Brigantia domains",
+            "Celtic goddess of rivers",
+            "NG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "Goddess",
+          "Rivers",
+          "Livestock",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Diancecht",
+        "definition": "The Celtic god of medicine and healing, aligned Lawful Good (LG), with a suggested domain of Life. Symbolized by crossed oak and mistletoe branches.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Diancecht as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Diancecht, who is Lawful Good, associated with the Life domain, and represented by crossed oak and mistletoe branches.",
+          "exceptions": [],
+          "description_text": "Diancecht, god of medicine and healing | LG | Life | Crossed oak and mistletoe branches",
+          "is_exception": false,
+          "related_search_terms": [
+            "Diancecht domains",
+            "Celtic god of medicine",
+            "LG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Medicine",
+          "Healing",
+          "Life Domain",
+          "Lawful Good"
+        ]
+      },
+      {
+        "concept_name": "Dunatis",
+        "definition": "The Celtic god of mountains and peaks, aligned Neutral (N), with a suggested domain of Nature. Symbolized by a red sun-capped mountain peak.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Dunatis as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Dunatis, who is Neutral, associated with the Nature domain, and represented by a red sun-capped mountain peak.",
+          "exceptions": [],
+          "description_text": "Dunatis, god of mountains and peaks | N | Nature | Red sun-capped mountain peak",
+          "is_exception": false,
+          "related_search_terms": [
+            "Dunatis domains",
+            "Celtic god of mountains",
+            "N deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Mountains",
+          "Peaks",
+          "Nature Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Goibhniu",
+        "definition": "The Celtic god of smiths and healing, aligned Neutral Good (NG), with suggested domains of Knowledge and Life. Symbolized by a giant mallet over a sword.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Goibhniu as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Goibhniu, who is Neutral Good, associated with Knowledge and Life domains, and represented by a giant mallet over a sword.",
+          "exceptions": [],
+          "description_text": "Goibhniu, god of smiths and healing | NG | Knowledge, Life | Giant mallet over sword",
+          "is_exception": false,
+          "related_search_terms": [
+            "Goibhniu domains",
+            "Celtic god of smiths",
+            "NG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Smiths",
+          "Healing",
+          "Knowledge Domain",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Lugh",
+        "definition": "The Celtic god of arts, travel, and commerce, aligned Chaotic Neutral (CN), with suggested domains of Knowledge and Life. Symbolized by a pair of long hands.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Lugh as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Lugh, who is Chaotic Neutral, associated with Knowledge and Life domains, and represented by a pair of long hands.",
+          "exceptions": [],
+          "description_text": "Lugh, god of arts, travel, and commerce | CN | Knowledge, Life | Pair of long hands",
+          "is_exception": false,
+          "related_search_terms": [
+            "Lugh domains",
+            "Celtic god of arts",
+            "CN deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Arts",
+          "Travel",
+          "Commerce",
+          "Knowledge Domain",
+          "Life Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Manannan mac Lir",
+        "definition": "The Celtic god of oceans and sea creatures, aligned Lawful Neutral (LN), with suggested domains of Nature and Tempest. Symbolized by a wave of white water on green.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Manannan mac Lir as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Manannan mac Lir, who is Lawful Neutral, associated with Nature and Tempest domains, and represented by a wave of white water on green.",
+          "exceptions": [],
+          "description_text": "Manannan mac Lir, god of oceans and sea creatures | LN | Nature, Tempest | Wave of white water on green",
+          "is_exception": false,
+          "related_search_terms": [
+            "Manannan mac Lir domains",
+            "Celtic god of oceans",
+            "LN deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Oceans",
+          "Sea Creatures",
+          "Nature Domain",
+          "Tempest Domain",
+          "Lawful Neutral"
+        ]
+      },
+      {
+        "concept_name": "Math Mathonwy",
+        "definition": "The Celtic god of magic, aligned Neutral Evil (NE), with a suggested domain of Knowledge. Symbolized by a staff.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Math Mathonwy as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Math Mathonwy, who is Neutral Evil, associated with the Knowledge domain, and represented by a staff.",
+          "exceptions": [],
+          "description_text": "Math Mathonwy, god of magic | NE | Knowledge | Staff",
+          "is_exception": false,
+          "related_search_terms": [
+            "Math Mathonwy domains",
+            "Celtic god of magic",
+            "NE deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Magic",
+          "Knowledge Domain",
+          "Neutral Evil"
+        ]
+      },
+      {
+        "concept_name": "Morrigan",
+        "definition": "The Celtic goddess of battle, aligned Chaotic Evil (CE), with a suggested domain of War. Symbolized by two crossed spears.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Morrigan as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Morrigan, who is Chaotic Evil, associated with the War domain, and represented by two crossed spears.",
+          "exceptions": [],
+          "description_text": "Morrigan, goddess of battle | CE | War | Two crossed spears",
+          "is_exception": false,
+          "related_search_terms": [
+            "Morrigan domains",
+            "Celtic goddess of battle",
+            "CE deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "Goddess",
+          "Battle",
+          "War Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Nuada",
+        "definition": "The Celtic god of war and warriors, aligned Neutral (N), with a suggested domain of War. Symbolized by a silver hand on a black background.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Nuada as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Nuada, who is Neutral, associated with the War domain, and represented by a silver hand on a black background.",
+          "exceptions": [],
+          "description_text": "Nuada, god of war and warriors | N | War | Silver hand on black background",
+          "is_exception": false,
+          "related_search_terms": [
+            "Nuada domains",
+            "Celtic god of war",
+            "N deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "War",
+          "Warriors",
+          "War Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Oghma",
+        "definition": "The Celtic god of speech and writing, aligned Neutral Good (NG), with a suggested domain of Knowledge. Symbolized by an unfurled scroll.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Oghma as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Oghma, who is Neutral Good, associated with the Knowledge domain, and represented by an unfurled scroll.",
+          "exceptions": [],
+          "description_text": "Oghma, god of speech and writing | NG | Knowledge | Unfurled scroll",
+          "is_exception": false,
+          "related_search_terms": [
+            "Oghma domains",
+            "Celtic god of speech",
+            "NG deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Speech",
+          "Writing",
+          "Knowledge Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Silvanus",
+        "definition": "The Celtic god of nature and forests, aligned Neutral (N), with a suggested domain of Nature. Symbolized by a summer oak tree.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Silvanus as their patron deity from the Celtic Pantheon.",
+          "implication": "The character's chosen deity is Silvanus, who is Neutral, associated with the Nature domain, and represented by a summer oak tree.",
+          "exceptions": [],
+          "description_text": "Silvanus, god of nature and forests | N | Nature | Summer oak tree",
+          "is_exception": false,
+          "related_search_terms": [
+            "Silvanus domains",
+            "Celtic god of nature",
+            "N deity D&D",
+            "divine patron Celtic"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Celtic Pantheon",
+          "God",
+          "Nature",
+          "Forests",
+          "Nature Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Greek Pantheon (D&D)",
+        "definition": "A collection of deities representing a fantasy interpretation of ancient Greek religions, embodying natural phenomena and human qualities, available for divine characters in Dungeons & Dragons.",
+        "rule_logic": {
+          "premise": "A D&D campaign incorporates fantasy-historical pantheons.",
+          "implication": "The Greek Pantheon, including its specific deities, alignments, domains, and symbols, is available for player character choices and world-building.",
+          "exceptions": [],
+          "description_text": "The gods of Olympus make themselves known with the gentle lap of waves against the shores and the crash of the thunder among the cloud-enshrouded peaks. The thick boar-infested woods and the sere, olive-covered hillsides hold evidence of their passing. Every aspect of nature echoes with their presence, and they've made a place for themselves inside the human heart, too.",
+          "is_exception": false,
+          "related_search_terms": [
+            "Greek gods D&D",
+            "Olympian gods",
+            "fantasy Greek religion",
+            "cleric domains Greek",
+            "historical pantheons D&D"
+          ]
+        },
+        "related_keywords": [
+          "Pantheon",
+          "Greek",
+          "Deity",
+          "Religion",
+          "Divine",
+          "Cleric",
+          "Fantasy-Historical",
+          "Olympus"
+        ]
+      },
+      {
+        "concept_name": "Zeus",
+        "definition": "The Greek god of the sky and ruler of the gods, aligned Neutral (N), with a suggested domain of Tempest. Symbolized by a fist full of lightning bolts.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Zeus as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Zeus, who is Neutral, associated with the Tempest domain, and represented by a fist full of lightning bolts.",
+          "exceptions": [],
+          "description_text": "Zeus, god of the sky, ruler of the gods | N | Tempest | Fist full of lightning bolts",
+          "is_exception": false,
+          "related_search_terms": [
+            "Zeus domains",
+            "Greek god of sky",
+            "N deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Sky",
+          "Tempest Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Aphrodite",
+        "definition": "The Greek goddess of love and beauty, aligned Chaotic Good (CG), with a suggested domain of Light. Symbolized by a sea shell.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Aphrodite as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Aphrodite, who is Chaotic Good, associated with the Light domain, and represented by a sea shell.",
+          "exceptions": [],
+          "description_text": "Aphrodite, goddess of love and beauty | CG | Light | Sea shell",
+          "is_exception": false,
+          "related_search_terms": [
+            "Aphrodite domains",
+            "Greek goddess of love",
+            "CG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Love",
+          "Beauty",
+          "Light Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Apollo",
+        "definition": "The Greek god of light, music, and healing, aligned Chaotic Good (CG), with suggested domains of Knowledge, Life, and Light. Symbolized by a lyre.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Apollo as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Apollo, who is Chaotic Good, associated with Knowledge, Life, and Light domains, and represented by a lyre.",
+          "exceptions": [],
+          "description_text": "Apollo, god of light, music, and healing | CG | Knowledge, Life, Light | Lyre",
+          "is_exception": false,
+          "related_search_terms": [
+            "Apollo domains",
+            "Greek god of light",
+            "CG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Light",
+          "Music",
+          "Healing",
+          "Knowledge Domain",
+          "Life Domain",
+          "Light Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Ares",
+        "definition": "The Greek god of war and strife, aligned Chaotic Evil (CE), with a suggested domain of War. Symbolized by a spear.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Ares as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Ares, who is Chaotic Evil, associated with the War domain, and represented by a spear.",
+          "exceptions": [],
+          "description_text": "Ares, god of war and strife | CE | War | Spear",
+          "is_exception": false,
+          "related_search_terms": [
+            "Ares domains",
+            "Greek god of war",
+            "CE deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "War",
+          "Strife",
+          "War Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Artemis",
+        "definition": "The Greek goddess of hunting and childbirth, aligned Neutral Good (NG), with suggested domains of Life and Nature. Symbolized by a bow and arrow on a lunar disk.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Artemis as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Artemis, who is Neutral Good, associated with Life and Nature domains, and represented by a bow and arrow on a lunar disk.",
+          "exceptions": [],
+          "description_text": "Artemis, goddess of hunting and childbirth | NG | Life, Nature | Bow and arrow on lunar disk",
+          "is_exception": false,
+          "related_search_terms": [
+            "Artemis domains",
+            "Greek goddess of hunting",
+            "NG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Hunting",
+          "Childbirth",
+          "Life Domain",
+          "Nature Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Athena",
+        "definition": "The Greek goddess of wisdom and civilization, aligned Lawful Good (LG), with suggested domains of Knowledge and War. Symbolized by an owl.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Athena as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Athena, who is Lawful Good, associated with Knowledge and War domains, and represented by an owl.",
+          "exceptions": [],
+          "description_text": "Athena, goddess of wisdom and civilization | LG | Knowledge, War | Owl",
+          "is_exception": false,
+          "related_search_terms": [
+            "Athena domains",
+            "Greek goddess of wisdom",
+            "LG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Wisdom",
+          "Civilization",
+          "Knowledge Domain",
+          "War Domain",
+          "Lawful Good"
+        ]
+      },
+      {
+        "concept_name": "Demeter",
+        "definition": "The Greek goddess of agriculture, aligned Neutral Good (NG), with a suggested domain of Life. Symbolized by a mare's head.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Demeter as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Demeter, who is Neutral Good, associated with the Life domain, and represented by a mare's head.",
+          "exceptions": [],
+          "description_text": "Demeter, goddess of agriculture | NG | Life | Mare's head",
+          "is_exception": false,
+          "related_search_terms": [
+            "Demeter domains",
+            "Greek goddess of agriculture",
+            "NG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Agriculture",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Dionysus",
+        "definition": "The Greek god of mirth and wine, aligned Chaotic Neutral (CN), with a suggested domain of Life. Symbolized by a thyrsus (staff tipped with a pine cone).",
+        "rule_logic": {
+          "premise": "A D&D character chooses Dionysus as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Dionysus, who is Chaotic Neutral, associated with the Life domain, and represented by a thyrsus.",
+          "exceptions": [],
+          "description_text": "Dionysus, god of mirth and wine | CN | Life | Thyrsus (staff tipped with pine cone)",
+          "is_exception": false,
+          "related_search_terms": [
+            "Dionysus domains",
+            "Greek god of wine",
+            "CN deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Mirth",
+          "Wine",
+          "Life Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Hades",
+        "definition": "The Greek god of the underworld, aligned Lawful Evil (LE), with a suggested domain of Death. Symbolized by a black ram.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hades as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hades, who is Lawful Evil, associated with the Death domain, and represented by a black ram.",
+          "exceptions": [],
+          "description_text": "Hades, god of the underworld | LE | Death | Black ram",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hades domains",
+            "Greek god of underworld",
+            "LE deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Underworld",
+          "Death Domain",
+          "Lawful Evil"
+        ]
+      },
+      {
+        "concept_name": "Hecate",
+        "definition": "The Greek goddess of magic and the moon, aligned Chaotic Evil (CE), with suggested domains of Knowledge and Trickery. Symbolized by a setting moon.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hecate as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hecate, who is Chaotic Evil, associated with Knowledge and Trickery domains, and represented by a setting moon.",
+          "exceptions": [],
+          "description_text": "Hecate, goddess of magic and the moon | CE | Knowledge, Trickery | Setting moon",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hecate domains",
+            "Greek goddess of magic",
+            "CE deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Magic",
+          "Moon",
+          "Knowledge Domain",
+          "Trickery Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Hephaestus",
+        "definition": "The Greek god of smithing and craft, aligned Neutral Good (NG), with a suggested domain of Knowledge. Symbolized by a hammer and anvil.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hephaestus as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hephaestus, who is Neutral Good, associated with the Knowledge domain, and represented by a hammer and anvil.",
+          "exceptions": [],
+          "description_text": "Hephaestus, god of smithing and craft | NG | Knowledge | Hammer and anvil",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hephaestus domains",
+            "Greek god of smithing",
+            "NG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Smithing",
+          "Craft",
+          "Knowledge Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Hera",
+        "definition": "The Greek goddess of marriage and intrigue, aligned Chaotic Neutral (CN), with a suggested domain of Trickery. Symbolized by a fan of peacock feathers.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hera as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hera, who is Chaotic Neutral, associated with the Trickery domain, and represented by a fan of peacock feathers.",
+          "exceptions": [],
+          "description_text": "Hera, goddess of marriage and intrigue | CN | Trickery | Fan of peacock feathers",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hera domains",
+            "Greek goddess of marriage",
+            "CN deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Marriage",
+          "Intrigue",
+          "Trickery Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Hercules",
+        "definition": "The Greek god of strength and adventure, aligned Chaotic Good (CG), with suggested domains of Tempest and War. Symbolized by a lion's head.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hercules as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hercules, who is Chaotic Good, associated with Tempest and War domains, and represented by a lion's head.",
+          "exceptions": [],
+          "description_text": "Hercules, god of strength and adventure | CG | Tempest, War | Lion's head",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hercules domains",
+            "Greek god of strength",
+            "CG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Strength",
+          "Adventure",
+          "Tempest Domain",
+          "War Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Hermes",
+        "definition": "The Greek god of travel and commerce, aligned Chaotic Good (CG), with a suggested domain of Trickery. Symbolized by a caduceus (winged staff and serpents).",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hermes as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hermes, who is Chaotic Good, associated with the Trickery domain, and represented by a caduceus.",
+          "exceptions": [],
+          "description_text": "Hermes, god of travel and commerce | CG | Trickery | Caduceus (winged staff and serpents)",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hermes domains",
+            "Greek god of travel",
+            "CG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Travel",
+          "Commerce",
+          "Trickery Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Hestia",
+        "definition": "The Greek goddess of home and family, aligned Neutral Good (NG), with a suggested domain of Life. Symbolized by a hearth.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hestia as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Hestia, who is Neutral Good, associated with the Life domain, and represented by a hearth.",
+          "exceptions": [],
+          "description_text": "Hestia, goddess of home and family | NG | Life | Hearth",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hestia domains",
+            "Greek goddess of home",
+            "NG deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Home",
+          "Family",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Nike",
+        "definition": "The Greek goddess of victory, aligned Lawful Neutral (LN), with a suggested domain of War. Symbolized by a winged woman.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Nike as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Nike, who is Lawful Neutral, associated with the War domain, and represented by a winged woman.",
+          "exceptions": [],
+          "description_text": "Nike, goddess of victory | LN | War | Winged woman",
+          "is_exception": false,
+          "related_search_terms": [
+            "Nike domains",
+            "Greek goddess of victory",
+            "LN deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Victory",
+          "War Domain",
+          "Lawful Neutral"
+        ]
+      },
+      {
+        "concept_name": "Pan",
+        "definition": "The Greek god of nature, aligned Chaotic Neutral (CN), with a suggested domain of Nature. Symbolized by a syrinx (pan pipes).",
+        "rule_logic": {
+          "premise": "A D&D character chooses Pan as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Pan, who is Chaotic Neutral, associated with the Nature domain, and represented by a syrinx.",
+          "exceptions": [],
+          "description_text": "Pan, god of nature | CN | Nature | Syrinx (pan pipes)",
+          "is_exception": false,
+          "related_search_terms": [
+            "Pan domains",
+            "Greek god of nature",
+            "CN deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Nature",
+          "Nature Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Poseidon",
+        "definition": "The Greek god of the sea and earthquakes, aligned Chaotic Neutral (CN), with a suggested domain of Tempest. Symbolized by a trident.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Poseidon as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Poseidon, who is Chaotic Neutral, associated with the Tempest domain, and represented by a trident.",
+          "exceptions": [],
+          "description_text": "Poseidon, god of the sea and earthquakes | CN | Tempest | Trident",
+          "is_exception": false,
+          "related_search_terms": [
+            "Poseidon domains",
+            "Greek god of sea",
+            "CN deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "God",
+          "Sea",
+          "Earthquakes",
+          "Tempest Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Tyche",
+        "definition": "The Greek goddess of good fortune, aligned Neutral (N), with a suggested domain of Trickery. Symbolized by a red pentagram.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Tyche as their patron deity from the Greek Pantheon.",
+          "implication": "The character's chosen deity is Tyche, who is Neutral, associated with the Trickery domain, and represented by a red pentagram.",
+          "exceptions": [],
+          "description_text": "Tyche, goddess of good fortune | N | Trickery | Red pentagram",
+          "is_exception": false,
+          "related_search_terms": [
+            "Tyche domains",
+            "Greek goddess of fortune",
+            "N deity D&D",
+            "divine patron Greek"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Greek Pantheon",
+          "Goddess",
+          "Fortune",
+          "Trickery Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Egyptian Pantheon (D&D)",
+        "definition": "A collection of deities representing a fantasy interpretation of ancient Egyptian religions, focused on maintaining Ma'at (truth, justice, law, order) and governing the cosmos. Notable for having multiple gods associated with death.",
+        "rule_logic": {
+          "premise": "A D&D campaign incorporates fantasy-historical pantheons.",
+          "implication": "The Egyptian Pantheon, including its specific deities, alignments, domains, and symbols, is available for player character choices and world-building. Special note on the varying alignments for death gods.",
+          "exceptions": [],
+          "description_text": "These gods are a young dynasty of an ancient divine family, heirs to the rulership of the cosmos and the maintenance of the divine principle of Ma'at-the fundamental order of truth, justice, law, and order that puts gods, mortal pharaohs, and ordinary men and women in their logical and rightful place in the universe. The Egyptian pantheon is unusual in having three gods responsible for death, each with different alignments. Anubis is the lawful neutral god of the afterlife, who judges the souls of the dead. Set is a chaotic evil god of murder, perhaps best known for killing his brother Osiris. And Nephthys is a chaotic good goddess of mourning.",
+          "is_exception": false,
+          "related_search_terms": [
+            "Egyptian gods D&D",
+            "Ma'at D&D",
+            "gods of death D&D",
+            "Anubis Set Nephthys",
+            "cleric domains Egyptian",
+            "historical pantheons D&D"
+          ]
+        },
+        "related_keywords": [
+          "Pantheon",
+          "Egyptian",
+          "Deity",
+          "Religion",
+          "Divine",
+          "Cleric",
+          "Fantasy-Historical",
+          "Ma'at",
+          "Death Gods"
+        ]
+      },
+      {
+        "concept_name": "Re-Horakhty",
+        "definition": "The Egyptian god of the sun and ruler of the gods, aligned Lawful Good (LG), with suggested domains of Life and Light. Symbolized by a solar disk encircled by a serpent.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Re-Horakhty as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Re-Horakhty, who is Lawful Good, associated with Life and Light domains, and represented by a solar disk encircled by a serpent.",
+          "exceptions": [],
+          "description_text": "Re-Horakhty, god of the sun, ruler of the gods | LG | Life, Light | Solar disk encircled by serpent",
+          "is_exception": false,
+          "related_search_terms": [
+            "Re-Horakhty domains",
+            "Egyptian god of sun",
+            "LG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Sun",
+          "Life Domain",
+          "Light Domain",
+          "Lawful Good"
+        ]
+      },
+      {
+        "concept_name": "Anubis",
+        "definition": "The Egyptian god of judgment and death, aligned Lawful Neutral (LN), with a suggested domain of Death. Symbolized by a black jackal.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Anubis as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Anubis, who is Lawful Neutral, associated with the Death domain, and represented by a black jackal.",
+          "exceptions": [],
+          "description_text": "Anubis, god of judgment and death | LN | Death | Black jackal",
+          "is_exception": false,
+          "related_search_terms": [
+            "Anubis domains",
+            "Egyptian god of judgment",
+            "LN deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Judgment",
+          "Death",
+          "Death Domain",
+          "Lawful Neutral"
+        ]
+      },
+      {
+        "concept_name": "Apep",
+        "definition": "The Egyptian god of evil, fire, and serpents, aligned Neutral Evil (NE), with a suggested domain of Trickery. Symbolized by a flaming snake.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Apep as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Apep, who is Neutral Evil, associated with the Trickery domain, and represented by a flaming snake.",
+          "exceptions": [],
+          "description_text": "Apep, god of evil, fire, and serpents | NE | Trickery | Flaming snake",
+          "is_exception": false,
+          "related_search_terms": [
+            "Apep domains",
+            "Egyptian god of evil",
+            "NE deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Evil",
+          "Fire",
+          "Serpents",
+          "Trickery Domain",
+          "Neutral Evil"
+        ]
+      },
+      {
+        "concept_name": "Bast",
+        "definition": "The Egyptian goddess of cats and vengeance, aligned Chaotic Good (CG), with a suggested domain of War. Symbolized by a cat.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Bast as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Bast, who is Chaotic Good, associated with the War domain, and represented by a cat.",
+          "exceptions": [],
+          "description_text": "Bast, goddess of cats and vengeance | CG | War | Cat",
+          "is_exception": false,
+          "related_search_terms": [
+            "Bast domains",
+            "Egyptian goddess of cats",
+            "CG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "Goddess",
+          "Cats",
+          "Vengeance",
+          "War Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Bes",
+        "definition": "The Egyptian god of luck and music, aligned Chaotic Neutral (CN), with a suggested domain of Trickery. Symbolized by an image of the misshapen deity.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Bes as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Bes, who is Chaotic Neutral, associated with the Trickery domain, and represented by an image of the misshapen deity.",
+          "exceptions": [],
+          "description_text": "Bes, god of luck and music | CN | Trickery | Image of the misshapen deity",
+          "is_exception": false,
+          "related_search_terms": [
+            "Bes domains",
+            "Egyptian god of luck",
+            "CN deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Luck",
+          "Music",
+          "Trickery Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Hathor",
+        "definition": "The Egyptian goddess of love, music, and motherhood, aligned Neutral Good (NG), with suggested domains of Life and Light. Symbolized by a horned cow's head with a lunar disk.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hathor as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Hathor, who is Neutral Good, associated with Life and Light domains, and represented by a horned cow's head with a lunar disk.",
+          "exceptions": [],
+          "description_text": "Hathor, goddess of love, music, and motherhood | NG | Life, Light | Horned cow's head with lunar disk",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hathor domains",
+            "Egyptian goddess of love",
+            "NG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "Goddess",
+          "Love",
+          "Music",
+          "Motherhood",
+          "Life Domain",
+          "Light Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Imhotep",
+        "definition": "The Egyptian god of crafts and medicine, aligned Neutral Good (NG), with a suggested domain of Knowledge. Symbolized by a step pyramid.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Imhotep as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Imhotep, who is Neutral Good, associated with the Knowledge domain, and represented by a step pyramid.",
+          "exceptions": [],
+          "description_text": "Imhotep, god of crafts and medicine | NG | Knowledge | Step pyramid",
+          "is_exception": false,
+          "related_search_terms": [
+            "Imhotep domains",
+            "Egyptian god of crafts",
+            "NG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Crafts",
+          "Medicine",
+          "Knowledge Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Isis",
+        "definition": "The Egyptian goddess of fertility and magic, aligned Neutral Good (NG), with suggested domains of Knowledge and Life. Symbolized by an ankh and star.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Isis as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Isis, who is Neutral Good, associated with Knowledge and Life domains, and represented by an ankh and star.",
+          "exceptions": [],
+          "description_text": "Isis, goddess of fertility and magic | NG | Knowledge, Life | Ankh and star",
+          "is_exception": false,
+          "related_search_terms": [
+            "Isis domains",
+            "Egyptian goddess of fertility",
+            "NG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "Goddess",
+          "Fertility",
+          "Magic",
+          "Knowledge Domain",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Nephthys",
+        "definition": "The Egyptian goddess of death and grief, aligned Chaotic Good (CG), with a suggested domain of Death. Symbolized by horns around a lunar disk.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Nephthys as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Nephthys, who is Chaotic Good, associated with the Death domain, and represented by horns around a lunar disk.",
+          "exceptions": [],
+          "description_text": "Nephthys, goddess of death and grief | CG | Death | Horns around a lunar disk",
+          "is_exception": false,
+          "related_search_terms": [
+            "Nephthys domains",
+            "Egyptian goddess of death",
+            "CG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "Goddess",
+          "Death",
+          "Grief",
+          "Death Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Osiris",
+        "definition": "The Egyptian god of nature and the underworld, aligned Lawful Good (LG), with suggested domains of Life and Nature. Symbolized by a crook and flail.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Osiris as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Osiris, who is Lawful Good, associated with Life and Nature domains, and represented by a crook and flail.",
+          "exceptions": [],
+          "description_text": "Osiris, god of nature and the underworld | LG | Life, Nature | Crook and flail",
+          "is_exception": false,
+          "related_search_terms": [
+            "Osiris domains",
+            "Egyptian god of nature",
+            "LG deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Nature",
+          "Underworld",
+          "Life Domain",
+          "Nature Domain",
+          "Lawful Good"
+        ]
+      },
+      {
+        "concept_name": "Ptah",
+        "definition": "The Egyptian god of crafts, knowledge, and secrets, aligned Lawful Neutral (LN), with a suggested domain of Knowledge. Symbolized by a bull.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Ptah as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Ptah, who is Lawful Neutral, associated with the Knowledge domain, and represented by a bull.",
+          "exceptions": [],
+          "description_text": "Ptah, god of crafts, knowledge, and secrets | LN | Knowledge | Bull",
+          "is_exception": false,
+          "related_search_terms": [
+            "Ptah domains",
+            "Egyptian god of crafts",
+            "LN deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Crafts",
+          "Knowledge",
+          "Secrets",
+          "Knowledge Domain",
+          "Lawful Neutral"
+        ]
+      },
+      {
+        "concept_name": "Set",
+        "definition": "The Egyptian god of darkness and desert storms, aligned Chaotic Evil (CE), with suggested domains of Death, Tempest, and Trickery. Symbolized by a coiled cobra.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Set as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Set, who is Chaotic Evil, associated with Death, Tempest, and Trickery domains, and represented by a coiled cobra.",
+          "exceptions": [],
+          "description_text": "Set, god of darkness and desert storms | CE | Death, Tempest, Trickery | Coiled cobra",
+          "is_exception": false,
+          "related_search_terms": [
+            "Set domains",
+            "Egyptian god of darkness",
+            "CE deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Darkness",
+          "Desert Storms",
+          "Death Domain",
+          "Tempest Domain",
+          "Trickery Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Sobek",
+        "definition": "The Egyptian god of water and crocodiles, aligned Lawful Evil (LE), with suggested domains of Nature and Tempest. Symbolized by a crocodile head with horns and plumes.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Sobek as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Sobek, who is Lawful Evil, associated with Nature and Tempest domains, and represented by a crocodile head with horns and plumes.",
+          "exceptions": [],
+          "description_text": "Sobek, god of water and crocodiles | LE | Nature, Tempest | Crocodile head with horns and plumes",
+          "is_exception": false,
+          "related_search_terms": [
+            "Sobek domains",
+            "Egyptian god of water",
+            "LE deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Water",
+          "Crocodiles",
+          "Nature Domain",
+          "Tempest Domain",
+          "Lawful Evil"
+        ]
+      },
+      {
+        "concept_name": "Thoth",
+        "definition": "The Egyptian god of knowledge and wisdom, aligned Neutral (N), with a suggested domain of Knowledge. Symbolized by an ibis.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Thoth as their patron deity from the Egyptian Pantheon.",
+          "implication": "The character's chosen deity is Thoth, who is Neutral, associated with the Knowledge domain, and represented by an ibis.",
+          "exceptions": [],
+          "description_text": "Thoth, god of knowledge and wisdom | N | Knowledge | Ibis",
+          "is_exception": false,
+          "related_search_terms": [
+            "Thoth domains",
+            "Egyptian god of knowledge",
+            "N deity D&D",
+            "divine patron Egyptian"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Egyptian Pantheon",
+          "God",
+          "Knowledge",
+          "Wisdom",
+          "Knowledge Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Norse Pantheon (D&D)",
+        "definition": "A collection of deities representing a fantasy interpretation of ancient Norse religions, originating from a brutal clime and embodying strong leadership and decisive action, suitable for divine characters in Dungeons & Dragons. It includes two main families: the Aesir and the Vanir.",
+        "rule_logic": {
+          "premise": "A D&D campaign incorporates fantasy-historical pantheons.",
+          "implication": "The Norse Pantheon, including its specific deities, alignments, domains, and symbols, is available for player character choices and world-building. It is composed of the Aesir and Vanir families, who are allied against giants.",
+          "exceptions": [],
+          "description_text": "Where the land plummets from the snowy hills into the icy fjords below, where the longboats draw up on to the beach, where the glaciers flow forward and retreat with every fall and spring-this is the land of the Vikings, the home of the Norse pantheon. It's a brutal clime, and one that calls for brutal living. The warriors of the land have had to adapt to the harsh conditions in order to survive, but they haven't been too twisted by the needs of their environment. Given the necessity of raiding for food and wealth, it's surprising the mortals turned out as well as they did. Their powers reflect the need these warriors had for strong leadership and decisive action. Thus, they see their deities in every bend of a river, hear them in the crash of the thunder and the booming of the glaciers, and smell them in the smoke of a burning longhouse. The Norse pantheon includes two main families, the Aesir (deities of war and destiny) and the Vanir (gods of fertility and prosperity). Once enemies, these two families are now closely allied against their common enemies, the giants (including the gods Surtur and Thrym).",
+          "is_exception": false,
+          "related_search_terms": [
+            "Norse gods D&D",
+            "Aesir Vanir",
+            "Vikings D&D",
+            "cleric domains Norse",
+            "historical pantheons D&D",
+            "gods against giants"
+          ]
+        },
+        "related_keywords": [
+          "Pantheon",
+          "Norse",
+          "Deity",
+          "Religion",
+          "Divine",
+          "Cleric",
+          "Fantasy-Historical",
+          "Aesir",
+          "Vanir",
+          "Giants"
+        ]
+      },
+      {
+        "concept_name": "Odin",
+        "definition": "The Norse god of knowledge and war, aligned Neutral Good (NG), with suggested domains of Knowledge and War. Symbolized by a watching blue eye.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Odin as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Odin, who is Neutral Good, associated with Knowledge and War domains, and represented by a watching blue eye.",
+          "exceptions": [],
+          "description_text": "Odin, god of knowledge and war | NG | Knowledge, War | Watching blue eye",
+          "is_exception": false,
+          "related_search_terms": [
+            "Odin domains",
+            "Norse god of knowledge",
+            "NG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Knowledge",
+          "War",
+          "Knowledge Domain",
+          "War Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Aegir",
+        "definition": "The Norse god of the sea and storms, aligned Neutral Evil (NE), with a suggested domain of Tempest. Symbolized by rough ocean waves.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Aegir as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Aegir, who is Neutral Evil, associated with the Tempest domain, and represented by rough ocean waves.",
+          "exceptions": [],
+          "description_text": "Aegir, god of the sea and storms | NE | Tempest | Rough ocean waves",
+          "is_exception": false,
+          "related_search_terms": [
+            "Aegir domains",
+            "Norse god of sea",
+            "NE deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Sea",
+          "Storms",
+          "Tempest Domain",
+          "Neutral Evil"
+        ]
+      },
+      {
+        "concept_name": "Balder",
+        "definition": "The Norse god of beauty and poetry, aligned Neutral Good (NG), with suggested domains of Life and Light. Symbolized by a gem-encrusted silver chalice.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Balder as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Balder, who is Neutral Good, associated with Life and Light domains, and represented by a gem-encrusted silver chalice.",
+          "exceptions": [],
+          "description_text": "Balder, god of beauty and poetry | NG | Life, Light | Gem-encrusted silver chalice",
+          "is_exception": false,
+          "related_search_terms": [
+            "Balder domains",
+            "Norse god of beauty",
+            "NG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Beauty",
+          "Poetry",
+          "Life Domain",
+          "Light Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Forseti",
+        "definition": "The Norse god of justice and law, aligned Neutral (N), with a suggested domain of Light. Symbolized by the head of a bearded man.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Forseti as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Forseti, who is Neutral, associated with the Light domain, and represented by the head of a bearded man.",
+          "exceptions": [],
+          "description_text": "Forseti, god of justice and law | N | Light | Head of a bearded man",
+          "is_exception": false,
+          "related_search_terms": [
+            "Forseti domains",
+            "Norse god of justice",
+            "N deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Justice",
+          "Law",
+          "Light Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Frey",
+        "definition": "The Norse god of fertility and the sun, aligned Neutral Good (NG), with suggested domains of Life and Light. Symbolized by an ice-blue greatsword.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Frey as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Frey, who is Neutral Good, associated with Life and Light domains, and represented by an ice-blue greatsword.",
+          "exceptions": [],
+          "description_text": "Frey, god of fertility and the sun | NG | Life, Light | Ice-blue greatsword",
+          "is_exception": false,
+          "related_search_terms": [
+            "Frey domains",
+            "Norse god of fertility",
+            "NG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Fertility",
+          "Sun",
+          "Life Domain",
+          "Light Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Freya",
+        "definition": "The Norse goddess of fertility and love, aligned Neutral Good (NG), with a suggested domain of Life. Symbolized by a falcon.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Freya as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Freya, who is Neutral Good, associated with the Life domain, and represented by a falcon.",
+          "exceptions": [],
+          "description_text": "Freya, goddess of fertility and love | NG | Life | Falcon",
+          "is_exception": false,
+          "related_search_terms": [
+            "Freya domains",
+            "Norse goddess of fertility",
+            "NG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "Goddess",
+          "Fertility",
+          "Love",
+          "Life Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Frigga",
+        "definition": "The Norse goddess of birth and fertility, aligned Neutral (N), with suggested domains of Life and Light. Symbolized by a cat.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Frigga as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Frigga, who is Neutral, associated with Life and Light domains, and represented by a cat.",
+          "exceptions": [],
+          "description_text": "Frigga, goddess of birth and fertility | N | Life, Light | Cat",
+          "is_exception": false,
+          "related_search_terms": [
+            "Frigga domains",
+            "Norse goddess of birth",
+            "N deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "Goddess",
+          "Birth",
+          "Fertility",
+          "Life Domain",
+          "Light Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Heimdall",
+        "definition": "The Norse god of watchfulness and loyalty, aligned Lawful Good (LG), with suggested domains of Light and War. Symbolized by a curling musical horn.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Heimdall as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Heimdall, who is Lawful Good, associated with Light and War domains, and represented by a curling musical horn.",
+          "exceptions": [],
+          "description_text": "Heimdall, god of watchfulness and loyalty | LG | Light, War | Curling musical horn",
+          "is_exception": false,
+          "related_search_terms": [
+            "Heimdall domains",
+            "Norse god of watchfulness",
+            "LG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Watchfulness",
+          "Loyalty",
+          "Light Domain",
+          "War Domain",
+          "Lawful Good"
+        ]
+      },
+      {
+        "concept_name": "Hel",
+        "definition": "The Norse goddess of the underworld, aligned Neutral Evil (NE), with a suggested domain of Death. Symbolized by a woman's face, rotting on one side.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hel as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Hel, who is Neutral Evil, associated with the Death domain, and represented by a woman's face, rotting on one side.",
+          "exceptions": [],
+          "description_text": "Hel, goddess of the underworld | NE | Death | Woman's face, rotting on one side",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hel domains",
+            "Norse goddess of underworld",
+            "NE deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "Goddess",
+          "Underworld",
+          "Death Domain",
+          "Neutral Evil"
+        ]
+      },
+      {
+        "concept_name": "Hermod",
+        "definition": "The Norse god of luck, aligned Chaotic Neutral (CN), with a suggested domain of Trickery. Symbolized by a winged scroll.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Hermod as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Hermod, who is Chaotic Neutral, associated with the Trickery domain, and represented by a winged scroll.",
+          "exceptions": [],
+          "description_text": "Hermod, god of luck | CN | Trickery | Winged scroll",
+          "is_exception": false,
+          "related_search_terms": [
+            "Hermod domains",
+            "Norse god of luck",
+            "CN deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Luck",
+          "Trickery Domain",
+          "Chaotic Neutral"
+        ]
+      },
+      {
+        "concept_name": "Loki",
+        "definition": "The Norse god of thieves and trickery, aligned Chaotic Evil (CE), with a suggested domain of Trickery. Symbolized by a flame.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Loki as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Loki, who is Chaotic Evil, associated with the Trickery domain, and represented by a flame.",
+          "exceptions": [],
+          "description_text": "Loki, god of thieves and trickery | CE | Trickery | Flame",
+          "is_exception": false,
+          "related_search_terms": [
+            "Loki domains",
+            "Norse god of trickery",
+            "CE deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Thieves",
+          "Trickery",
+          "Trickery Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Njord",
+        "definition": "The Norse god of sea and wind, aligned Neutral Good (NG), with suggested domains of Nature and Tempest. Symbolized by a gold coin.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Njord as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Njord, who is Neutral Good, associated with Nature and Tempest domains, and represented by a gold coin.",
+          "exceptions": [],
+          "description_text": "Njord, god of sea and wind | NG | Nature, Tempest | Gold coin",
+          "is_exception": false,
+          "related_search_terms": [
+            "Njord domains",
+            "Norse god of sea and wind",
+            "NG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Sea",
+          "Wind",
+          "Nature Domain",
+          "Tempest Domain",
+          "Neutral Good"
+        ]
+      },
+      {
+        "concept_name": "Odur",
+        "definition": "The Norse god of light and the sun, aligned Chaotic Good (CG), with a suggested domain of Light. Symbolized by a solar disk.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Odur as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Odur, who is Chaotic Good, associated with the Light domain, and represented by a solar disk.",
+          "exceptions": [],
+          "description_text": "Odur, god of light and the sun | CG | Light | Solar disk",
+          "is_exception": false,
+          "related_search_terms": [
+            "Odur domains",
+            "Norse god of light",
+            "CG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Light",
+          "Sun",
+          "Light Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Sif",
+        "definition": "The Norse goddess of war, aligned Chaotic Good (CG), with a suggested domain of War. Symbolized by an upraised sword.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Sif as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Sif, who is Chaotic Good, associated with the War domain, and represented by an upraised sword.",
+          "exceptions": [],
+          "description_text": "Sif, goddess of war | CG | War | Upraised sword",
+          "is_exception": false,
+          "related_search_terms": [
+            "Sif domains",
+            "Norse goddess of war",
+            "CG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "Goddess",
+          "War",
+          "War Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Skadi",
+        "definition": "The Norse god of earth and mountains, aligned Neutral (N), with a suggested domain of Nature. Symbolized by a mountain peak.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Skadi as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Skadi, who is Neutral, associated with the Nature domain, and represented by a mountain peak.",
+          "exceptions": [],
+          "description_text": "Skadi, god of earth and mountains | N | Nature | Mountain peak",
+          "is_exception": false,
+          "related_search_terms": [
+            "Skadi domains",
+            "Norse god of earth",
+            "N deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Earth",
+          "Mountains",
+          "Nature Domain",
+          "Neutral"
+        ]
+      },
+      {
+        "concept_name": "Surtur",
+        "definition": "The Norse god of fire giants and war, aligned Lawful Evil (LE), with a suggested domain of War. Symbolized by a flaming sword.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Surtur as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Surtur, who is Lawful Evil, associated with the War domain, and represented by a flaming sword.",
+          "exceptions": [],
+          "description_text": "Surtur, god of fire giants and war | LE | War | Flaming sword",
+          "is_exception": false,
+          "related_search_terms": [
+            "Surtur domains",
+            "Norse god of fire giants",
+            "LE deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Fire Giants",
+          "War",
+          "War Domain",
+          "Lawful Evil"
+        ]
+      },
+      {
+        "concept_name": "Thor",
+        "definition": "The Norse god of storms and thunder, aligned Chaotic Good (CG), with suggested domains of Tempest and War. Symbolized by a hammer.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Thor as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Thor, who is Chaotic Good, associated with Tempest and War domains, and represented by a hammer.",
+          "exceptions": [],
+          "description_text": "Thor, god of storms and thunder | CG | Tempest, War | Hammer",
+          "is_exception": false,
+          "related_search_terms": [
+            "Thor domains",
+            "Norse god of storms",
+            "CG deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Storms",
+          "Thunder",
+          "Tempest Domain",
+          "War Domain",
+          "Chaotic Good"
+        ]
+      },
+      {
+        "concept_name": "Thrym",
+        "definition": "The Norse god of frost giants and cold, aligned Chaotic Evil (CE), with a suggested domain of War. Symbolized by a white double-bladed axe.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Thrym as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Thrym, who is Chaotic Evil, associated with the War domain, and represented by a white double-bladed axe.",
+          "exceptions": [],
+          "description_text": "Thrym, god of frost giants and cold | CE | War | White double-bladed axe",
+          "is_exception": false,
+          "related_search_terms": [
+            "Thrym domains",
+            "Norse god of frost giants",
+            "CE deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Frost Giants",
+          "Cold",
+          "War Domain",
+          "Chaotic Evil"
+        ]
+      },
+      {
+        "concept_name": "Tyr",
+        "definition": "The Norse god of courage and strategy, aligned Lawful Neutral (LN), with suggested domains of Knowledge and War. Symbolized by a sword.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Tyr as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Tyr, who is Lawful Neutral, associated with Knowledge and War domains, and represented by a sword.",
+          "exceptions": [],
+          "description_text": "Tyr, god of courage and strategy | LN | Knowledge, War | Sword",
+          "is_exception": false,
+          "related_search_terms": [
+            "Tyr domains",
+            "Norse god of courage",
+            "LN deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Courage",
+          "Strategy",
+          "Knowledge Domain",
+          "War Domain",
+          "Lawful Neutral"
+        ]
+      },
+      {
+        "concept_name": "Uller",
+        "definition": "The Norse god of hunting and winter, aligned Chaotic Neutral (CN), with a suggested domain of Nature. Symbolized by a longbow.",
+        "rule_logic": {
+          "premise": "A D&D character chooses Uller as their patron deity from the Norse Pantheon.",
+          "implication": "The character's chosen deity is Uller, who is Chaotic Neutral, associated with the Nature domain, and represented by a longbow.",
+          "exceptions": [],
+          "description_text": "Uller, god of hunting and winter | CN | Nature | Longbow",
+          "is_exception": false,
+          "related_search_terms": [
+            "Uller domains",
+            "Norse god of hunting",
+            "CN deity D&D",
+            "divine patron Norse"
+          ]
+        },
+        "related_keywords": [
+          "Deity",
+          "Norse Pantheon",
+          "God",
+          "Hunting",
+          "Winter",
+          "Nature Domain",
+          "Chaotic Neutral"
+        ]
+      }
+    ],
+    "_chunk_header": "Fantasy-Historical Pantheons",
+    "_source_file": "fantasy-historical-pantheons"
+  }
+]

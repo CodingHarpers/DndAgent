@@ -1,0 +1,45 @@
+{
+  "entity_name": "Martial Archetype",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player reaches Fighter Level 3",
+      "condition": "N/A",
+      "outcome": "Player chooses one Martial Archetype option",
+      "related_search_terms": [
+        "fighter subclass",
+        "archetype selection",
+        "character customization",
+        "class choice"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Player reaches Fighter Level 3, 7, 10, 15, or 18",
+      "condition": "Player has chosen a Martial Archetype",
+      "outcome": "Player gains features from their chosen Martial Archetype",
+      "related_search_terms": [
+        "subclass progression",
+        "fighter feature unlock",
+        "archetype benefits",
+        "level up features"
+      ]
+    }
+  ],
+  "description_text": "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.",
+  "tags": [
+    "Fighter",
+    "Class Feature",
+    "Subclass",
+    "Progression"
+  ],
+  "related_search_terms": [
+    "Fighter Subclass",
+    "Archetype",
+    "Class Progression",
+    "Fighter Levels",
+    "Subclass Feature",
+    "Martial Training"
+  ]
+}

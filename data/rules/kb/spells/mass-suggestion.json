@@ -1,0 +1,116 @@
+{
+  "entity_name": "Mass Suggestion",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Casting",
+      "condition": "Target is a creature AND Target is within range AND Caster can see Target AND Target can hear Caster AND Target can understand Caster",
+      "outcome": "Target is eligible for spell effect",
+      "related_search_terms": [
+        "targeting",
+        "eligible targets",
+        "number of targets",
+        "line of sight",
+        "language barrier"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Casting",
+      "condition": "Target is immune to the Charmed condition",
+      "outcome": "Target is immune to Mass Suggestion",
+      "related_search_terms": [
+        "charm immunity",
+        "condition immunity",
+        "spell resistance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster formulates suggestion",
+      "condition": "Suggested course of action is obviously harmful to the target (e.g., self-mutilation, suicide)",
+      "outcome": "Spell effect is negated for that target",
+      "related_search_terms": [
+        "suggestion limits",
+        "reasonableness",
+        "harmful acts",
+        "DM discretion",
+        "impossible commands"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After successful targeting and immunity check",
+      "condition": "Target fails a Wisdom saving throw",
+      "outcome": "Target pursues the suggested course of action to the best of its ability",
+      "related_search_terms": [
+        "save or suck",
+        "Wisdom save",
+        "mind control resistance",
+        "compelled action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After spell takes effect",
+      "condition": "Suggested activity is completed by the target",
+      "outcome": "Spell ends for that target",
+      "related_search_terms": [
+        "spell duration",
+        "activity completion",
+        "early termination"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After spell takes effect",
+      "condition": "Suggested activity is not yet completed AND spell duration has not expired",
+      "outcome": "Target continues pursuing the course of action",
+      "related_search_terms": [
+        "long duration control",
+        "persistent effect",
+        "ongoing action"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Casting",
+      "condition": "Caster specifies a condition for a special activity to occur during the duration",
+      "outcome": "Target performs the specified activity if the condition is met before the spell ends; otherwise, the activity is not performed",
+      "related_search_terms": [
+        "contingency",
+        "delayed action",
+        "if-then action",
+        "conditional behavior"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Affected creature takes damage",
+      "condition": "Damage is dealt by the caster or any of their companions",
+      "outcome": "Spell ends for the damaged creature",
+      "related_search_terms": [
+        "breaking charm",
+        "damage breaks spell",
+        "friendly fire",
+        "concentrating on spell"
+      ]
+    }
+  ],
+  "description_text": "You suggest a course of activity (limited to a sentence or two) and magically influence up to twelve creatures of your choice that you can see within range and that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act automatically negates the effect of the spell.Each target must make a wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a group of soldiers give all their money to the first beggar they meet. If the condition isn't met before the spell ends, the activity isn't performed.If you or any of your companions damage a creature affected by this spell, the spell ends for that creature.",
+  "tags": [
+    "Enchantment",
+    "Control",
+    "Mind-affecting",
+    "Group Control",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "mind control",
+    "charming",
+    "group control",
+    "suggestion spell",
+    "social encounter spell",
+    "mass enchantment"
+  ]
+}

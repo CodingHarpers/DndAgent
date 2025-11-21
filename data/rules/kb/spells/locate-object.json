@@ -1,0 +1,75 @@
+{
+  "entity_name": "Locate Object",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Object is described or named AND Object is within 1000 feet AND No lead blocks direct path",
+      "outcome": "Sense the direction to the object's location",
+      "related_search_terms": [
+        "find item",
+        "track object",
+        "detect item",
+        "object finding"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Object is in motion AND Object is described or named AND Object is within 1000 feet AND No lead blocks direct path",
+      "outcome": "Know the direction of the object's movement",
+      "related_search_terms": [
+        "tracking moving object",
+        "object movement detection",
+        "follow item"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Specific object has been seen up close (within 30 feet) at least once",
+      "outcome": "Can locate a specific, known object",
+      "related_search_terms": [
+        "specific item search",
+        "unique object",
+        "personal item"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "None",
+      "outcome": "Can locate the nearest object of a particular kind (e.g., apparel, jewelry, furniture, tool, or weapon)",
+      "related_search_terms": [
+        "nearest item",
+        "general object type",
+        "common item search"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Any thickness of lead blocks a direct path between caster and object",
+      "outcome": "Spell cannot locate the object",
+      "related_search_terms": [
+        "anti-scrying",
+        "lead block",
+        "magic resistance",
+        "detection obstruction"
+      ]
+    }
+  ],
+  "description_text": "Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement. The spell can locate a specific object known to you, as long as you have seen it up close--within 30 feet--at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon. This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.",
+  "tags": [
+    "divination",
+    "utility",
+    "tracking"
+  ],
+  "related_search_terms": [
+    "find object spell",
+    "item location",
+    "scouting magic",
+    "detection spell"
+  ]
+}

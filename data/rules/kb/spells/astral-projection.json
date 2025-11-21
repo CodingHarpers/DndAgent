@@ -1,0 +1,173 @@
+{
+  "entity_name": "Astral Projection",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Casting Astral Projection",
+      "condition": "Caster is already on the Astral Plane",
+      "outcome": "Spell fails and casting is wasted",
+      "related_search_terms": [
+        "casting failure",
+        "spell failure",
+        "plane restriction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After casting Astral Projection",
+      "condition": "Creature's material body is left behind",
+      "outcome": "Body is unconscious, in suspended animation, doesn't need food or air, doesn't age",
+      "related_search_terms": [
+        "material body state",
+        "body stasis",
+        "suspended animation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is in astral form",
+      "condition": "Due to Astral Projection",
+      "outcome": "Astral body replicates mortal form's game statistics and possessions",
+      "related_search_terms": [
+        "astral stats",
+        "replicated stats",
+        "ethereal body"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While in astral form",
+      "condition": "Silver cord remains intact",
+      "outcome": "Creature can find its way back to its material body",
+      "related_search_terms": [
+        "silver cord function",
+        "tether",
+        "path home"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Silver cord is cut",
+      "condition": "An effect specifically states it can cut the cord",
+      "outcome": "Soul and body are separated, creature dies instantly",
+      "related_search_terms": [
+        "cord severed",
+        "instant death",
+        "soul separation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to cut a silver cord",
+      "condition": "No effect specifically states it can cut the cord",
+      "outcome": "The cord cannot be cut",
+      "related_search_terms": [
+        "cord immunity",
+        "protection",
+        "specific effect requirement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While in astral form",
+      "condition": "Creature is on the Astral Plane",
+      "outcome": "Can freely travel through the Astral Plane and pass through portals to other planes",
+      "related_search_terms": [
+        "astral travel",
+        "planar travel",
+        "dimension hopping"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Astral form enters a new plane or returns to original plane",
+      "condition": "N/A",
+      "outcome": "Material body and possessions are transported along the silver cord, allowing re-entry into the body",
+      "related_search_terms": [
+        "plane shift",
+        "return to body",
+        "re-entry",
+        "body transportation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Damage or other effects apply to astral form",
+      "condition": "N/A",
+      "outcome": "No effect on physical body, and effects do not persist upon return to physical body",
+      "related_search_terms": [
+        "astral damage",
+        "physical immunity",
+        "non-persistence"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action",
+      "condition": "To dismiss Astral Projection",
+      "outcome": "Spell ends for caster and companions; affected creatures return to physical bodies and awaken",
+      "related_search_terms": [
+        "spell dismissal",
+        "early termination",
+        "voluntary return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A dispel magic spell is cast",
+      "condition": "Successful dispel magic against an astral or physical body",
+      "outcome": "Astral Projection ends for that creature",
+      "related_search_terms": [
+        "dispel magic",
+        "spell counter",
+        "early termination"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature's astral form drops to 0 hit points",
+      "condition": "N/A",
+      "outcome": "Astral Projection ends for that creature",
+      "related_search_terms": [
+        "astral hp loss",
+        "0 hit points astral",
+        "spell end on death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature's original body drops to 0 hit points",
+      "condition": "N/A",
+      "outcome": "Astral Projection ends for that creature",
+      "related_search_terms": [
+        "physical hp loss",
+        "0 hit points body",
+        "spell end on death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Astral Projection ends",
+      "condition": "Silver cord is intact",
+      "outcome": "Astral form is pulled back to its body, ending its suspended animation",
+      "related_search_terms": [
+        "return to body",
+        "cord intact",
+        "awakening"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster of Astral Projection returns to their body prematurely",
+      "condition": "N/A",
+      "outcome": "Companions remain in their astral forms and must find their own way back to their bodies",
+      "related_search_terms": [
+        "caster premature exit",
+        "companions stranded",
+        "forced return"
+      ]
+    }
+  ],
+  "description_text": "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn't need food or air and doesn't age. Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut--something that can happen only when an effect specifically states that it does--your soul and body are separated, killing you instantly. Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it. The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens. The spell might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation. If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
+}

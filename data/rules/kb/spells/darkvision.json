@@ -1,0 +1,45 @@
+{
+  "entity_name": "Darkvision (Spell)",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Spell Cast",
+      "condition": "Caster touches a willing creature",
+      "outcome": "The touched creature gains the Darkvision trait out to 60 feet for the spell's duration",
+      "related_search_terms": [
+        "give vision",
+        "magical sight",
+        "touch spell",
+        "vision enhancement",
+        "see in dark"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature with Darkvision (60ft) attempts to perceive in darkness or dim light",
+      "condition": "Creature has the Darkvision trait out to 60 feet",
+      "outcome": "Creature treats darkness within 60 feet as dim light and dim light within 60 feet as bright light",
+      "related_search_terms": [
+        "see in darkness",
+        "ignore darkness",
+        "low light vision",
+        "night vision",
+        "obscured vision"
+      ]
+    }
+  ],
+  "description_text": "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.",
+  "tags": [
+    "spell",
+    "utility",
+    "buff",
+    "divination"
+  ],
+  "related_search_terms": [
+    "darkvision spell",
+    "seeing in dark",
+    "vision magic",
+    "night vision spell"
+  ]
+}

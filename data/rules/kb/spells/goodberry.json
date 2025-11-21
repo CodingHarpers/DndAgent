@@ -1,0 +1,71 @@
+{
+  "entity_name": "Goodberry",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell is cast successfully",
+      "outcome": "Up to 10 magic-infused berries appear in caster's hand",
+      "related_search_terms": [
+        "create food",
+        "conjure berries",
+        "spell effect",
+        "materialization"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature eats a berry",
+      "condition": "A creature uses its action to eat one berry",
+      "outcome": "Creature restores 1 hit point",
+      "related_search_terms": [
+        "healing",
+        "minor heal",
+        "hp restoration",
+        "eat berry"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature eats a berry",
+      "condition": "A creature eats one berry",
+      "outcome": "Berry provides enough nourishment to sustain the creature for 1 day",
+      "related_search_terms": [
+        "food source",
+        "survival",
+        "hunger",
+        "rations",
+        "sustenance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "24 hours pass since casting",
+      "condition": "Berries have not been consumed",
+      "outcome": "Berries lose their magical potency",
+      "related_search_terms": [
+        "spell duration",
+        "expiration",
+        "perishable",
+        "timed effect"
+      ]
+    }
+  ],
+  "description_text": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for a day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
+  "tags": [
+    "1st-level",
+    "transmutation",
+    "healing",
+    "utility",
+    "druid",
+    "ranger"
+  ],
+  "related_search_terms": [
+    "good berry",
+    "healing berry",
+    "food spell",
+    "sustenance spell",
+    "survival spell"
+  ]
+}

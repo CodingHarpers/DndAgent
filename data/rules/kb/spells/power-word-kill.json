@@ -1,0 +1,47 @@
+{
+  "entity_name": "Power Word Kill",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting Power Word Kill",
+      "condition": "Target creature is visible, within range, and has 100 or fewer hit points",
+      "outcome": "Target creature instantly dies",
+      "related_search_terms": [
+        "instant death",
+        "execute",
+        "kill threshold",
+        "HP dependent death",
+        "power word",
+        "one shot kill"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting Power Word Kill",
+      "condition": "Target creature is visible, within range, and has more than 100 hit points",
+      "outcome": "Spell has no effect",
+      "related_search_terms": [
+        "spell fails",
+        "immune to power word kill",
+        "not enough damage",
+        "over HP threshold",
+        "power word resist"
+      ]
+    }
+  ],
+  "description_text": "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you choose has 100 hit points or fewer, it dies. Otherwise, the spell has no effect.",
+  "tags": [
+    "spell",
+    "instant death",
+    "enchantment",
+    "one target",
+    "no saving throw"
+  ],
+  "related_search_terms": [
+    "instant kill spell",
+    "death magic",
+    "power word spells",
+    "high level spell"
+  ]
+}

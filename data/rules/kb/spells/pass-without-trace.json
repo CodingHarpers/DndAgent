@@ -1,0 +1,63 @@
+{
+  "entity_name": "Pass Without Trace",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Dexterity (Stealth) check",
+      "condition": "Creature is chosen by caster within 30 feet of them and affected by Pass Without Trace",
+      "outcome": "Creature gains a '+10' bonus to Dexterity (Stealth) checks",
+      "related_search_terms": [
+        "stealth bonus",
+        "hiding bonus",
+        "silent movement",
+        "surprise",
+        "sneak",
+        "camouflage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to track a creature",
+      "condition": "Creature is chosen by caster within 30 feet of them and affected by Pass Without Trace AND tracking method is NOT magical",
+      "outcome": "Creature cannot be tracked",
+      "related_search_terms": [
+        "untrackable",
+        "pursuit evasion",
+        "hide tracks",
+        "trail",
+        "scouting"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature moves",
+      "condition": "Creature is chosen by caster within 30 feet of them and affected by Pass Without Trace",
+      "outcome": "Creature leaves behind no tracks or other traces of its passage",
+      "related_search_terms": [
+        "trackless",
+        "no footprints",
+        "conceal passage",
+        "silent movement"
+      ]
+    }
+  ],
+  "description_text": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.",
+  "tags": [
+    "spell",
+    "abjuration",
+    "2nd-level",
+    "ranger",
+    "druid",
+    "stealth",
+    "detection"
+  ],
+  "related_search_terms": [
+    "stealth spell",
+    "hiding",
+    "invisibility",
+    "tracking",
+    "sneak attack setup",
+    "ambush"
+  ]
+}

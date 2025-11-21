@@ -1,0 +1,65 @@
+{
+  "entity_name": "Regenerate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster touches target creature",
+      "outcome": "Target regains 4d8 + 15 hit points",
+      "related_search_terms": [
+        "immediate heal",
+        "burst healing",
+        "initial healing",
+        "direct healing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of Target's Turn",
+      "condition": "Spell 'Regenerate' is active on target",
+      "outcome": "Target regains 1 hit point",
+      "related_search_terms": [
+        "healing over time",
+        "hp regeneration",
+        "passive healing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After 2 minutes (10 rounds) from spell cast",
+      "condition": "Target has severed body members AND spell 'Regenerate' is active on target",
+      "outcome": "Target's severed body members are restored",
+      "related_search_terms": [
+        "regrow limb",
+        "re-attach body part",
+        "permanent healing",
+        "restore missing limb"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster holds severed part to stump",
+      "condition": "Target has severed body member AND spell 'Regenerate' is active on target AND Caster has the severed part",
+      "outcome": "Severed limb instantaneously knits to stump",
+      "related_search_terms": [
+        "instant limb reattachment",
+        "repair body part",
+        "reattach limb immediately"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute). The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.",
+  "tags": [
+    "healing",
+    "restoration",
+    "conjuration"
+  ],
+  "related_search_terms": [
+    "healing spell",
+    "hp recovery",
+    "limb reattachment",
+    "regeneration",
+    "long-term healing"
+  ]
+}

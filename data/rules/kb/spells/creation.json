@@ -1,0 +1,132 @@
+{
+  "entity_name": "Creation",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Target location within range",
+      "outcome": "Create a nonliving object of vegetable matter (soft goods, rope, wood) or mineral (stone, crystal, metal)",
+      "related_search_terms": [
+        "conjure object",
+        "materialize",
+        "fabricate",
+        "summon item",
+        "item creation",
+        "utility spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creating an object with Creation spell",
+      "condition": "Object size",
+      "outcome": "Object must be no larger than a 5-foot cube",
+      "related_search_terms": [
+        "size limit",
+        "max size",
+        "cube limit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creating an object with Creation spell",
+      "condition": "Caster's familiarity with object",
+      "outcome": "Object's form and material must have been seen by caster before",
+      "related_search_terms": [
+        "known object",
+        "familiar item",
+        "memory requirement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object created with Creation spell",
+      "condition": "Object material is vegetable matter",
+      "outcome": "Object lasts for 1 day",
+      "related_search_terms": [
+        "wood duration",
+        "rope duration",
+        "fabric duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object created with Creation spell",
+      "condition": "Object material is stone or crystal",
+      "outcome": "Object lasts for 12 hours",
+      "related_search_terms": [
+        "rock duration",
+        "gem duration",
+        "mineral duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object created with Creation spell",
+      "condition": "Object material is precious metals",
+      "outcome": "Object lasts for 1 hour",
+      "related_search_terms": [
+        "gold duration",
+        "silver duration",
+        "valuable metal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object created with Creation spell",
+      "condition": "Object material is gems",
+      "outcome": "Object lasts for 10 minutes",
+      "related_search_terms": [
+        "jewel duration",
+        "ruby duration",
+        "emerald duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object created with Creation spell",
+      "condition": "Object material is adamantine or mithral",
+      "outcome": "Object lasts for 1 minute",
+      "related_search_terms": [
+        "special metal duration",
+        "rare metal duration"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Determining duration of object created by Creation spell",
+      "condition": "Object is composed of multiple materials",
+      "outcome": "Duration is determined by the material with the shortest listed duration",
+      "related_search_terms": [
+        "mixed materials",
+        "composite object",
+        "shortest lifespan"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting another spell",
+      "condition": "A material component for that spell is an object created by the Creation spell",
+      "outcome": "The spell being cast fails",
+      "related_search_terms": [
+        "material components",
+        "spell component restrictions",
+        "fake materials",
+        "illusion materials"
+      ]
+    }
+  ],
+  "description_text": "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.| Material | Duration ||---|---|| Vegetable matter | 1 day || Stone or crystal | 12 hours || Precious metals | 1 hour || Gems | 10 minutes || Adamantine or mithral | 1 minute |Using any material created by this spell as another spell's material component causes that spell to fail.",
+  "tags": [
+    "Transmutation",
+    "Utility",
+    "Item Creation",
+    "Material Component"
+  ],
+  "related_search_terms": [
+    "create object",
+    "summon item",
+    "fabrication spell",
+    "utility magic"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "entity_name": "Delayed Blast Fireball",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster targets a point within range",
+      "outcome": "A glowing bead lingers at the chosen point for the duration (up to 1 minute, concentration)",
+      "related_search_terms": [
+        "spell duration",
+        "concentration spell",
+        "delayed effect",
+        "fireball placement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "Caster chooses to end spell OR concentration is broken",
+      "outcome": "Bead explodes, initiating damage effect",
+      "related_search_terms": [
+        "spell termination",
+        "concentration check",
+        "fireball trigger",
+        "voluntary detonation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bead is touched",
+      "condition": "Creature touches bead AND fails Dexterity saving throw",
+      "outcome": "Spell ends immediately, bead explodes, initiating damage effect",
+      "related_search_terms": [
+        "touch effect",
+        "dex save",
+        "premature explosion",
+        "accidental trigger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bead is touched",
+      "condition": "Creature touches bead AND succeeds Dexterity saving throw",
+      "outcome": "Creature can throw bead up to 40 feet. When thrown bead strikes a creature or solid object, spell ends and bead explodes, initiating damage effect",
+      "related_search_terms": [
+        "move effect",
+        "reposition spell",
+        "friendly fire",
+        "grenade",
+        "throwing effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Bead explodes",
+      "condition": "N/A",
+      "outcome": "Effect covers a 20-foot-radius sphere centered on explosion point, spreads around corners",
+      "related_search_terms": [
+        "AoE",
+        "explosion radius",
+        "line of sight",
+        "cover",
+        "area damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bead explodes",
+      "condition": "Creature is within 20-foot-radius sphere",
+      "outcome": "Creature must make a Dexterity saving throw",
+      "related_search_terms": [
+        "dex save",
+        "damage prevention",
+        "evasion",
+        "area save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity saving throw failed",
+      "condition": "Creature affected by explosion",
+      "outcome": "Creature takes fire damage equal to total accumulated damage",
+      "related_search_terms": [
+        "full damage",
+        "fire damage",
+        "direct hit",
+        "failed save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity saving throw successful",
+      "condition": "Creature affected by explosion",
+      "outcome": "Creature takes half fire damage equal to total accumulated damage",
+      "related_search_terms": [
+        "half damage",
+        "reduced damage",
+        "mitigated damage",
+        "successful save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell's damage calculation",
+      "condition": "N/A",
+      "outcome": "Base accumulated damage starts at 12d6",
+      "related_search_terms": [
+        "initial damage",
+        "starting damage",
+        "minimum damage"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "End of your turn",
+      "condition": "Bead has not yet detonated",
+      "outcome": "Accumulated damage increases by 1d6",
+      "related_search_terms": [
+        "damage growth",
+        "delayed damage",
+        "increasing damage",
+        "damage escalation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bead explodes",
+      "condition": "Object is in area of effect",
+      "outcome": "Object takes fire damage",
+      "related_search_terms": [
+        "environmental damage",
+        "object destruction",
+        "property damage",
+        "damage to terrain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bead explodes",
+      "condition": "Flammable object in area of effect AND object is NOT worn or carried",
+      "outcome": "Object ignites",
+      "related_search_terms": [
+        "set on fire",
+        "flammable materials",
+        "environmental hazard",
+        "ignition",
+        "burning"
+      ]
+    }
+  ],
+  "description_text": "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.The spell's base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.If the glowing bead is touched before the interval has expired, the creature touching it must make a dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.",
+  "tags": [
+    "spell",
+    "fire",
+    "evocation",
+    "area of effect",
+    "concentration",
+    "damage"
+  ],
+  "related_search_terms": [
+    "delayed explosion",
+    "time bomb spell",
+    "high damage spell",
+    "fireball variant",
+    "control spell"
+  ]
+}

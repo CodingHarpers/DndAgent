@@ -1,0 +1,35 @@
+{
+  "entity_name": "Flexible Casting: Converting Spell Slot",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Bonus Action",
+      "condition": "Player chooses to expend a Spell Slot on their turn",
+      "outcome": "Player gains a number of Sorcery Points equal to the expended Spell Slot's Level",
+      "related_search_terms": [
+        "convert spell slot",
+        "sorcery point generation",
+        "spell slot to sorcery points",
+        "resource conversion",
+        "sorcerer ability",
+        "mana conversion",
+        "spell point conversion"
+      ]
+    }
+  ],
+  "description_text": "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.",
+  "tags": [
+    "Sorcerer Feature",
+    "Bonus Action",
+    "Resource Management",
+    "Spell Slot",
+    "Sorcery Points"
+  ],
+  "related_search_terms": [
+    "sorcerer flexible casting",
+    "convert slots",
+    "sorcery point economy",
+    "flexible casting"
+  ]
+}

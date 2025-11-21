@@ -1,0 +1,88 @@
+{
+  "entity_name": "Dispel Evil and Good",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Attacker is a Celestial, Elemental, Fey, Fiend, or Undead AND targets YOU",
+      "outcome": "Attacker makes the attack roll with Disadvantage",
+      "related_search_terms": [
+        "spell protection",
+        "defense buff",
+        "anti-evil",
+        "anti-good",
+        "fiend bane",
+        "undead bane",
+        "celestial bane",
+        "elemental bane",
+        "fey bane",
+        "disadvantage on attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an Action",
+      "condition": "You touch a creature that is Charmed, Frightened, or Possessed by a Celestial, Elemental, Fey, Fiend, or Undead",
+      "outcome": "The touched creature is no longer Charmed, Frightened, or Possessed by such creatures",
+      "related_search_terms": [
+        "break enchantment",
+        "remove charm",
+        "remove fear",
+        "remove possession",
+        "ally cleansing",
+        "anti-mind control",
+        "cure condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an Action, on successful melee spell attack",
+      "condition": "Target is a Celestial, Elemental, Fey, Fiend, or Undead AND target fails a Charisma Saving Throw AND target is not on its home plane",
+      "outcome": "Target is sent back to its home plane",
+      "related_search_terms": [
+        "dismissal",
+        "banish",
+        "send home",
+        "extraplanar travel",
+        "exile",
+        "dimensional displacement",
+        "charisma save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an Action, on successful melee spell attack",
+      "condition": "Target is Undead AND not on its home plane AND target fails a Charisma Saving Throw",
+      "outcome": "Target is sent to the Shadowfell",
+      "related_search_terms": [
+        "undead banishment",
+        "shadowfell",
+        "necromantic exile",
+        "charisma save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an Action, on successful melee spell attack",
+      "condition": "Target is Fey AND not on its home plane AND target fails a Charisma Saving Throw",
+      "outcome": "Target is sent to the Feywild",
+      "related_search_terms": [
+        "fey banishment",
+        "feywild",
+        "fae exile",
+        "charisma save"
+      ]
+    }
+  ],
+  "description_text": "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions. ***Break Enchantment.*** As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures. ***Dismissal.*** As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.",
+  "tags": [
+    "Abjuration",
+    "Protection",
+    "Condition Removal",
+    "Banishment",
+    "Control",
+    "Spell",
+    "Duration"
+  ]
+}

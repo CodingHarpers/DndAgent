@@ -1,3 +1,5 @@
 *.ps1
 .env
-data/rules/
+data/rules/chromaDB/
+data/rules/_backup/
+data/rules/dnd_5e_data/

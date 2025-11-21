@@ -1,0 +1,45 @@
+{
+  "entity_name": "See Invisibility",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "During Spell Duration",
+      "condition": "Caster targets Invisible creature or object",
+      "outcome": "Caster perceives target as visible",
+      "related_search_terms": [
+        "counter invisibility",
+        "detect invisible",
+        "reveal hidden",
+        "unseen creatures",
+        "bypassing invisibility"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "During Spell Duration",
+      "condition": "Caster targets Ethereal creature or object",
+      "outcome": "Caster perceives target as ghostly translucent",
+      "related_search_terms": [
+        "detect ethereal",
+        "see through planes",
+        "ethereal vision",
+        "plane shift",
+        "ghosts"
+      ]
+    }
+  ],
+  "description_text": "For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent.",
+  "tags": [
+    "Divination",
+    "Utility",
+    "1st-level"
+  ],
+  "related_search_terms": [
+    "invisibility counter",
+    "ethereal sight",
+    "anti-stealth spell",
+    "vision spell",
+    "true seeing"
+  ]
+}

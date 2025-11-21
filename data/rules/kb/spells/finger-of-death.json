@@ -1,0 +1,49 @@
+{
+  "entity_name": "Finger of Death",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell targets creature",
+      "condition": "Target is a creature you can see within range (60 feet)",
+      "outcome": "Target must make a Constitution saving throw. On a failed save, it takes 7d8 + 30 necrotic damage. On a successful save, it takes half as much damage.",
+      "related_search_terms": [
+        "necrotic damage",
+        "single target damage",
+        "con save",
+        "constitution saving throw",
+        "direct damage spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target killed by this spell",
+      "condition": "Target is a humanoid AND is reduced to 0 hit points by this spell's damage",
+      "outcome": "At the start of your next turn, the humanoid rises as a zombie. This zombie is permanently under your command and follows your verbal orders to the best of its ability.",
+      "related_search_terms": [
+        "raise dead",
+        "necromancy",
+        "undead creation",
+        "minion control",
+        "permanent minion",
+        "zombie servant",
+        "killed by spell effect"
+      ]
+    }
+  ],
+  "description_text": "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one. A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.",
+  "tags": [
+    "Necromancy",
+    "Damage",
+    "Summoning",
+    "Control",
+    "Single Target"
+  ],
+  "related_search_terms": [
+    "death spell",
+    "high level spell",
+    "necromancer spell",
+    "save or take damage",
+    "minion summoning"
+  ]
+}

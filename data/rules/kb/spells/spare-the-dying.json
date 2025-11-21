@@ -1,0 +1,47 @@
+{
+  "entity_name": "Spare the Dying",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a living creature AND Target has 0 hit points AND Target is touched by caster",
+      "outcome": "Target becomes stable",
+      "related_search_terms": [
+        "stabilize",
+        "stop bleeding out",
+        "save from death",
+        "prevent death saves",
+        "unconscious ally"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is an Undead creature OR Target is a Construct creature",
+      "outcome": "Spell has no effect on Target",
+      "related_search_terms": [
+        "undead immunity",
+        "construct immunity",
+        "non-living target",
+        "spell failure"
+      ]
+    }
+  ],
+  "description_text": "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.",
+  "tags": [
+    "cantrip",
+    "healing",
+    "utility",
+    "necromancy"
+  ],
+  "related_search_terms": [
+    "stabilize",
+    "death saves",
+    "dying",
+    "0 HP",
+    "zero hit points",
+    "touch spell",
+    "heal"
+  ]
+}

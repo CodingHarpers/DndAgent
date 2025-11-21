@@ -1,0 +1,55 @@
+{
+  "entity_name": "Ray of Frost",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Ranged Spell Attack Hit",
+      "condition": "Target is a creature within range",
+      "outcome": "Target takes 1d8 cold damage",
+      "related_search_terms": [
+        "spell attack",
+        "cold damage",
+        "single target damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Ranged Spell Attack Hit",
+      "condition": "Target is a creature within range",
+      "outcome": "Target's speed is reduced by 10 feet until the start of your next turn",
+      "related_search_terms": [
+        "movement reduction",
+        "slow",
+        "kiting",
+        "mobility control"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "When caster reaches specific levels",
+      "condition": "Caster is 5th level OR 11th level OR 17th level",
+      "outcome": "Spell's damage increases by 1d8 (totaling 2d8 at 5th, 3d8 at 11th, 4d8 at 17th)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level progression",
+        "damage increase",
+        "character level"
+      ]
+    }
+  ],
+  "description_text": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "tags": [
+    "damage",
+    "control",
+    "cold",
+    "cantrip",
+    "evocation"
+  ],
+  "related_search_terms": [
+    "cold spell",
+    "ranged attack spell",
+    "damage and slow",
+    "freezing ray"
+  ]
+}

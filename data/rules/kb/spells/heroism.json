@@ -1,0 +1,53 @@
+{
+  "entity_name": "Heroism",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "While spell is active on target",
+      "condition": "Target is affected by Heroism",
+      "outcome": "Target is immune to the Frightened condition",
+      "related_search_terms": [
+        "fear immunity",
+        "bravery",
+        "courage",
+        "mental protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of Target's Turn",
+      "condition": "Target is affected by Heroism",
+      "outcome": "Target gains temporary hit points equal to Caster's Spellcasting Ability Modifier",
+      "related_search_terms": [
+        "temporary hp",
+        "damage mitigation",
+        "recurring hit points",
+        "hp buff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Heroism spell ends on target",
+      "condition": "Target has temporary hit points granted by Heroism",
+      "outcome": "Target loses any remaining temporary hit points granted by Heroism",
+      "related_search_terms": [
+        "temp hp expiration",
+        "spell ends",
+        "hp removal"
+      ]
+    }
+  ],
+  "description_text": "A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.",
+  "tags": [
+    "Buff",
+    "Protection",
+    "Healing"
+  ],
+  "related_search_terms": [
+    "bravery spell",
+    "fear protection",
+    "temporary hit points spell",
+    "courage"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "entity_name": "Lesser Restoration",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Lesser Restoration)",
+      "condition": "Caster touches a creature AND Target is afflicted by one disease",
+      "outcome": "One disease afflicting the target is ended",
+      "related_search_terms": [
+        "cure disease",
+        "disease removal",
+        "sickness",
+        "contagion",
+        "infection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Lesser Restoration)",
+      "condition": "Caster touches a creature AND Target is afflicted by one of the following conditions: blinded OR deafened OR paralyzed OR poisoned",
+      "outcome": "One specified condition (blinded, deafened, paralyzed, or poisoned) afflicting the target is ended",
+      "related_search_terms": [
+        "remove blindness",
+        "cure deafness",
+        "unparalyze",
+        "detoxify",
+        "cure poison",
+        "status effect removal"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.",
+  "tags": [
+    "healing",
+    "abjuration",
+    "restoration",
+    "spell"
+  ],
+  "related_search_terms": [
+    "cure disease",
+    "remove condition",
+    "healing spell",
+    "status removal",
+    "cleric spell",
+    "druid spell",
+    "paladin spell",
+    "ranger spell"
+  ]
+}

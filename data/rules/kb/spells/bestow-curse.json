@@ -1,0 +1,99 @@
+{
+  "entity_name": "Bestow Curse",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is touched by caster",
+      "outcome": "Target makes a Wisdom Saving Throw. On a failed save, target becomes Cursed for the spell's duration.",
+      "related_search_terms": [
+        "curse application",
+        "initial save",
+        "wisdom save",
+        "touch spell",
+        "spell duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While target is Cursed (Option 1)",
+      "condition": "Target is making an ability check or saving throw using the chosen ability score",
+      "outcome": "Target has Disadvantage on the ability check or saving throw",
+      "related_search_terms": [
+        "stat debuff",
+        "skill check penalty",
+        "save penalty",
+        "STR disadvantage",
+        "DEX disadvantage",
+        "CON disadvantage",
+        "INT disadvantage",
+        "WIS disadvantage",
+        "CHA disadvantage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While target is Cursed (Option 2)",
+      "condition": "Target is making an attack roll against the caster",
+      "outcome": "Target has Disadvantage on the attack roll",
+      "related_search_terms": [
+        "attack debuff",
+        "defensive curse",
+        "attacker disadvantage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of Target's Turn (While Cursed - Option 3)",
+      "condition": "Target fails a Wisdom Saving Throw",
+      "outcome": "Target wastes its action for that turn",
+      "related_search_terms": [
+        "action denial",
+        "stun effect",
+        "skip turn",
+        "action loss",
+        "wisdom save per turn"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's Attack or Spell hits Cursed Target (Option 4)",
+      "condition": "Target is subject to Bestow Curse, Option 4 (Extra Damage)",
+      "outcome": "Caster deals an additional 1d8 Necrotic damage to target",
+      "related_search_terms": [
+        "damage buff",
+        "necrotic damage",
+        "on-hit effect",
+        "spell damage increase"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Remove Curse spell is cast on target",
+      "condition": "Target is Cursed by Bestow Curse",
+      "outcome": "The Bestow Curse effect ends",
+      "related_search_terms": [
+        "curse dispel",
+        "anti-curse",
+        "ending conditions"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature, and that creature must succeed on a wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options: - Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score. - While cursed, the target has disadvantage on attack rolls against you. - While cursed, the target must make a wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing. - While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target. A remove curse spell ends this effect. At the GM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The GM has final say on such a curse's effect.",
+  "tags": [
+    "curse",
+    "debuff",
+    "single target",
+    "touch",
+    "duration",
+    "combat",
+    "utility"
+  ],
+  "related_search_terms": [
+    "curse spell",
+    "debuff spell",
+    "control spell",
+    "target debuff"
+  ]
+}

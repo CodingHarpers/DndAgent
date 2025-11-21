@@ -1,0 +1,112 @@
+{
+  "entity_name": "Rope Trick",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Touch a length of rope up to 60 feet long",
+      "outcome": "Rope rises, and an invisible entrance opens to an extradimensional space at its upper end",
+      "related_search_terms": [
+        "create space",
+        "pocket dimension",
+        "summon rope",
+        "portal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attempt to enter space",
+      "condition": "Creature climbs to the top of the rope",
+      "outcome": "Creature can enter the extradimensional space",
+      "related_search_terms": [
+        "enter dimension",
+        "access portal",
+        "climb rope"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creatures occupying the space",
+      "condition": "Creature is Medium size or smaller",
+      "outcome": "The space can hold a maximum of eight such creatures",
+      "related_search_terms": [
+        "capacity limit",
+        "occupancy",
+        "creature count"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Inside the extradimensional space",
+      "condition": "Rope is pulled into the space",
+      "outcome": "The rope disappears from view outside the space",
+      "related_search_terms": [
+        "hide rope",
+        "conceal entrance",
+        "secret hideout"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attack or spell targeting the space",
+      "condition": "Attack or spell attempts to cross the entrance into the extradimensional space",
+      "outcome": "Attacks and spells cannot cross into the extradimensional space",
+      "related_search_terms": [
+        "immune to attacks",
+        "spell immunity",
+        "safe zone",
+        "protection"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attack or spell cast from the space",
+      "condition": "Attack or spell attempts to cross the entrance out of the extradimensional space",
+      "outcome": "Attacks and spells cannot cross out of the extradimensional space",
+      "related_search_terms": [
+        "confined attacks",
+        "cannot attack out",
+        "restrained spells"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature inside the space attempting to see outside",
+      "condition": "N/A",
+      "outcome": "Creatures inside can see out as if through a 3-foot-by-5-foot window centered on the rope",
+      "related_search_terms": [
+        "observation point",
+        "scouting",
+        "vantage point"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "N/A",
+      "outcome": "Anything inside the extradimensional space drops out",
+      "related_search_terms": [
+        "spell duration end",
+        "contents released",
+        "dispel effect"
+      ]
+    }
+  ],
+  "description_text": "You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends. The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space. Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope. Anything inside the extradimensional space drops out when the spell ends.",
+  "tags": [
+    "utility",
+    "travel",
+    "conjuration",
+    "safe zone",
+    "hiding"
+  ],
+  "related_search_terms": [
+    "pocket dimension",
+    "escape",
+    "hide",
+    "rest",
+    "rope portal",
+    "extra dimensional"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "entity_name": "Aid",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Caster chooses up to three creatures within range",
+      "outcome": "Chosen creatures become targets of the spell",
+      "related_search_terms": [
+        "target selection",
+        "multiple targets",
+        "area of effect",
+        "friendly spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature is a target of Aid spell",
+      "outcome": "Target's hit point maximum increases by 5 for the spell's duration AND Target's current hit points increase by 5 for the spell's duration",
+      "related_search_terms": [
+        "hp increase",
+        "health boost",
+        "temporary hp",
+        "healing",
+        "buff",
+        "endurance",
+        "survival"
+      ]
+    }
+  ],
+  "description_text": "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.",
+  "tags": [
+    "Buff",
+    "Healing",
+    "HP Increase",
+    "Support"
+  ],
+  "related_search_terms": [
+    "Aid spell",
+    "HP buff",
+    "hit point increase spell",
+    "ally buff",
+    "support spell"
+  ]
+}

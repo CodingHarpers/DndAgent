@@ -1,0 +1,101 @@
+{
+  "entity_name": "Sleep",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "scaling",
+      "trigger": "On Cast",
+      "condition": "None",
+      "outcome": "Determine total hit points the spell can affect by rolling 5d8",
+      "related_search_terms": [
+        "spell potency",
+        "HP budget",
+        "capacity roll"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature is within 20 feet of a chosen point within range AND Creature is NOT Unconscious",
+      "outcome": "Creature is considered for being affected, processed in ascending order of current hit points",
+      "related_search_terms": [
+        "area of effect",
+        "AoE",
+        "target selection",
+        "lowest HP first",
+        "priority targeting"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is considered for effect",
+      "condition": "Creature's current hit points are equal to or less than the spell's remaining HP total",
+      "outcome": "Creature falls Unconscious AND its hit points are subtracted from the spell's remaining HP total",
+      "related_search_terms": [
+        "magical slumber",
+        "knock out",
+        "unconscious condition",
+        "incapacitate"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature is considered for effect",
+      "condition": "Target is an Undead creature OR Target is immune to being Charmed",
+      "outcome": "Target is NOT affected by this spell",
+      "related_search_terms": [
+        "immunity",
+        "charm immunity",
+        "undead resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Unconscious creature takes damage",
+      "condition": "Creature is Unconscious from this spell",
+      "outcome": "Creature is no longer Unconscious",
+      "related_search_terms": [
+        "waking up",
+        "breaking sleep",
+        "damage ends effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Another creature uses an action",
+      "condition": "Action is used to shake or slap a creature Unconscious from this spell awake",
+      "outcome": "Creature is no longer Unconscious",
+      "related_search_terms": [
+        "waking an ally",
+        "manual wake up",
+        "aid action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell duration ends",
+      "condition": "Creature is Unconscious from this spell",
+      "outcome": "Creature is no longer Unconscious",
+      "related_search_terms": [
+        "spell end",
+        "natural waking",
+        "duration expires"
+      ]
+    }
+  ],
+  "description_text": "This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures). Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren't affected by this spell.",
+  "tags": [
+    "Spell",
+    "Enchantment",
+    "Level 1",
+    "Crowd Control"
+  ],
+  "related_search_terms": [
+    "sleep spell",
+    "magical slumber",
+    "unconscious",
+    "enchantment spell",
+    "incapacitate",
+    "area control"
+  ]
+}

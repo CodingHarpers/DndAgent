@@ -1,0 +1,160 @@
+{
+  "entity_name": "Detect Thoughts",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell cast OR Use Action on turn",
+      "condition": "Target is a creature you can see within 30 feet AND Target Intelligence > 3 AND Target speaks a language",
+      "outcome": "Learn target's surface thoughts",
+      "related_search_terms": [
+        "read mind",
+        "initial thoughts",
+        "mind reading",
+        "mental scan"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target selection",
+      "condition": "Target Intelligence <= 3 OR Target does not speak any language",
+      "outcome": "Target is unaffected by thought reading",
+      "related_search_terms": [
+        "immune to mind reading",
+        "unintelligent creatures",
+        "animal thoughts"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Use Action while focused on a creature",
+      "condition": "Caster chooses to probe deeper into same creature's mind",
+      "outcome": "Target makes a Wisdom saving throw",
+      "related_search_terms": [
+        "deep thoughts",
+        "mental probe",
+        "force insight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom saving throw (deeper probe)",
+      "condition": "Wisdom saving throw failed",
+      "outcome": "Gain insight into target's reasoning, emotional state, and a prominent thought",
+      "related_search_terms": [
+        "gain knowledge",
+        "understand motives",
+        "deepest fears",
+        "loved ones",
+        "worries"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target succeeds Wisdom saving throw (deeper probe)",
+      "condition": "Wisdom saving throw succeeded",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "spell ends",
+        "mental resistance",
+        "thwarted mind probe"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Deeper probe attempt",
+      "condition": "Attempting to probe deeper into target's mind",
+      "outcome": "Target knows you are probing their mind",
+      "related_search_terms": [
+        "aware of mind link",
+        "target knows",
+        "mental intrusion detected"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's Action on its turn",
+      "condition": "Target knows you are probing their mind AND Caster has not shifted attention to another creature",
+      "outcome": "Target can make an Intelligence check contested by your Intelligence check; if target succeeds, spell ends",
+      "related_search_terms": [
+        "break spell",
+        "mental contest",
+        "mind shield",
+        "intelligence battle"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Use Action while focused on a creature",
+      "condition": "Caster chooses to shift attention",
+      "outcome": "Shift focus to another creature's thoughts",
+      "related_search_terms": [
+        "change target",
+        "switch focus",
+        "new mind to read"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell cast OR Use Action during duration",
+      "condition": "Caster searches for thoughts within 30 feet AND Target Intelligence > 3 AND Target speaks a language AND No blocking material",
+      "outcome": "Detect presence of thinking creatures you can't see",
+      "related_search_terms": [
+        "locate hidden enemies",
+        "sense thoughts",
+        "detect hidden",
+        "aura scan"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Detecting hidden creatures",
+      "condition": "Obstruction is 2 feet of rock OR 2 inches of non-lead metal OR thin sheet of lead",
+      "outcome": "Detection is blocked",
+      "related_search_terms": [
+        "lead lining",
+        "thick walls",
+        "metal barrier",
+        "soundproof room"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Detecting hidden creatures",
+      "condition": "Target Intelligence <= 3 OR Target does not speak any language",
+      "outcome": "Cannot detect creature's presence",
+      "related_search_terms": [
+        "undetectable thoughts",
+        "mindless creatures",
+        "animals hidden"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Presence of hidden creature detected",
+      "condition": "Creature remains within 30 feet",
+      "outcome": "Can read its thoughts (surface/deeper) even if not seen",
+      "related_search_terms": [
+        "read unseen minds",
+        "thought-reading through walls",
+        "sustained mind link"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you can read the thoughts of certain creatures. When you cast the spell and as your action on each turn until the spell ends, you can focus your mind on any one creature that you can see within 30 feet of you. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected. You initially learn the surface thoughts of the creature - what is most on its mind in that moment. As an action, you can either shift your attention to another creature's thoughts or attempt to probe deeper into the same creature's mind. If you probe deeper, the target must make a Wisdom saving throw. If it fails, you gain insight into its reasoning (if any), its emotional state, and something that looms large in its mind (such as something it worries over, loves, or hates). If it succeeds, the spell ends. Either way, the target knows that you are probing into its mind, and unless you shift your attention to another creature's thoughts, the creature can use its action on its turn to make an Intelligence check contested by your Intelligence check; if it succeeds, the spell ends. Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation. You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language. Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.",
+  "tags": [
+    "Spell",
+    "Divination",
+    "Mind Control",
+    "Interrogation",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "mind reading spell",
+    "thought detection",
+    "mental espionage",
+    "psychic power",
+    "telepathy",
+    "interrogation spell"
+  ]
+}

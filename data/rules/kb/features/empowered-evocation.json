@@ -1,0 +1,33 @@
+{
+  "entity_name": "Empowered Evocation",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "When resolving damage from a wizard evocation spell cast by you",
+      "condition": "You are 10th level or higher AND you choose one damage roll of that spell",
+      "outcome": "Add your Intelligence modifier to that chosen damage roll",
+      "related_search_terms": [
+        "damage boost",
+        "spell damage increase",
+        "evocation damage bonus",
+        "intelligence modifier to damage",
+        "wizard damage scaling"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast.",
+  "tags": [
+    "Class Feature",
+    "Wizard",
+    "Evocation",
+    "Damage"
+  ],
+  "related_search_terms": [
+    "wizard feature",
+    "evocation school",
+    "damage modifier",
+    "spellcasting",
+    "offensive spells"
+  ]
+}

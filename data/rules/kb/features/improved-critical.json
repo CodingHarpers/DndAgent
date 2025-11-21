@@ -1,0 +1,35 @@
+{
+  "entity_name": "Improved Critical",
+  "logic_type": "character_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "When making a weapon attack roll",
+      "condition": "The attack roll result is a natural 19 or 20",
+      "outcome": "The attack scores a critical hit",
+      "related_search_terms": [
+        "critical range",
+        "crit chance",
+        "expanded crit",
+        "weapon crit",
+        "damage output",
+        "champion fighter"
+      ]
+    }
+  ],
+  "description_text": "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.",
+  "tags": [
+    "Fighter Feature",
+    "Champion Archetype",
+    "Critical Hit",
+    "Attack Modifier"
+  ],
+  "related_search_terms": [
+    "critical range",
+    "crit fishing",
+    "champion fighter",
+    "attack modifier",
+    "weapon attacks",
+    "increased crit"
+  ]
+}

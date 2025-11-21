@@ -1,0 +1,89 @@
+{
+  "entity_name": "Contact Other Plane",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Casting 'Contact Other Plane'",
+      "outcome": "Caster must make a DC 15 Intelligence saving throw",
+      "related_search_terms": [
+        "spellcasting risk",
+        "mental strain",
+        "intelligence save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Intelligence Saving Throw Failed",
+      "condition": "Caster fails the DC 15 Intelligence saving throw",
+      "outcome": "Caster takes 6d6 psychic damage and is insane until they finish a long rest",
+      "related_search_terms": [
+        "failed save penalty",
+        "psychic damage",
+        "insanity condition",
+        "mental breakdown"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While Caster is Insane (from this spell)",
+      "condition": "Caster is insane (from 'Contact Other Plane')",
+      "outcome": "Caster cannot take actions, cannot understand other creatures, cannot read, and speaks only in gibberish",
+      "related_search_terms": [
+        "insanity effects",
+        "incapacitated",
+        "disabled condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration Cast on Caster",
+      "condition": "Caster is insane (from 'Contact Other Plane')",
+      "outcome": "The insane condition ends for the Caster",
+      "related_search_terms": [
+        "condition removal",
+        "healing insanity",
+        "mental restoration"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Intelligence Saving Throw Succeeded",
+      "condition": "Caster succeeds the DC 15 Intelligence saving throw",
+      "outcome": "Caster can ask the contacted entity up to five questions before the spell ends",
+      "related_search_terms": [
+        "successful save reward",
+        "information gathering",
+        "divination questions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When Entity Answers a Question",
+      "condition": "A question is asked to the contacted entity",
+      "outcome": "GM answers with one word ('yes', 'no', 'maybe', 'never', 'irrelevant', 'unclear') or a short phrase if a one-word answer would be misleading",
+      "related_search_terms": [
+        "GM role",
+        "divination limits",
+        "entity responses",
+        "information quality"
+      ]
+    }
+  ],
+  "description_text": "You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a DC 15 intelligence saving throw. On a failure, you take 6d6 psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A greater restoration spell cast on you ends this effect.On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The GM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the GM might instead offer a short phrase as an answer.",
+  "tags": [
+    "Spell",
+    "Divination",
+    "5th-level"
+  ],
+  "related_search_terms": [
+    "divination spell",
+    "information seeking",
+    "extraplanar contact",
+    "psychic backlash",
+    "insanity",
+    "asking questions",
+    "knowledge"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "entity_name": "Divine Favor",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Weapon Attack Action",
+      "condition": "Spell (Divine Favor) is active AND Attack hits",
+      "outcome": "Deal an additional 1d4 Radiant Damage",
+      "related_search_terms": [
+        "extra damage",
+        "bonus damage",
+        "radiant damage",
+        "weapon buff",
+        "damage boost",
+        "on-hit effect"
+      ]
+    }
+  ],
+  "description_text": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
+  "tags": [
+    "spell",
+    "buff",
+    "damage",
+    "radiant"
+  ],
+  "related_search_terms": [
+    "weapon buff spell",
+    "damage spell",
+    "radiant weapon",
+    "attack enhancement"
+  ]
+}

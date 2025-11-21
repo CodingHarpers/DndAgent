@@ -1,0 +1,73 @@
+{
+  "entity_name": "Eldritch Blast",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Ranged Spell Attack",
+      "condition": "Attack roll hits target's AC",
+      "outcome": "Target takes 1d10 force damage",
+      "related_search_terms": [
+        "attack",
+        "damage",
+        "force damage",
+        "cantrip damage",
+        "single beam effect"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Casting Eldritch Blast",
+      "condition": "Caster's level",
+      "outcome": "Number of beams is 1 (level 1-4), 2 (level 5-10), 3 (level 11-16), 4 (level 17+)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "multiple attacks",
+        "higher level",
+        "caster level",
+        "number of beams"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When generating multiple Eldritch Blast beams",
+      "condition": "Caster level is 5th or higher (generates 2+ beams)",
+      "outcome": "Player may direct each beam at the same target or different targets",
+      "related_search_terms": [
+        "area control",
+        "single target",
+        "multi-target",
+        "splitting damage",
+        "target choice"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When resolving multiple Eldritch Blast beams",
+      "condition": "Caster level is 5th or higher (generates 2+ beams)",
+      "outcome": "Each beam requires a separate ranged spell attack roll",
+      "related_search_terms": [
+        "individual attacks",
+        "attack roll per beam",
+        "hit chance",
+        "resolution of multiple attacks"
+      ]
+    }
+  ],
+  "description_text": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+  "tags": [
+    "attack",
+    "damage",
+    "cantrip",
+    "warlock",
+    "force"
+  ],
+  "related_search_terms": [
+    "warlock cantrip",
+    "force damage",
+    "ranged attack spell",
+    "primary attack",
+    "scaling cantrip",
+    "energy beam"
+  ]
+}

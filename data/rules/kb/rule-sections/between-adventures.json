@@ -1,0 +1,473 @@
+[
+  {
+    "source_chapter": "Between Adventures",
+    "extracted_concepts": [
+      {
+        "concept_name": "Earning a Living",
+        "definition": "A downtime activity where a character works to earn coin to cover expenses or accumulate wealth.",
+        "rule_logic": {
+          "premise": "Character dedicates 8 hours per day to a profession over a period of at least one workweek (7 days)",
+          "implication": "Character earns gold, potentially determined by a skill check against a DM-set DC. A successful check typically covers modest expenses (2 gp/day) and possibly more.",
+          "exceptions": [],
+          "description_text": "A character can spend 8 hours a day, for at least a week, practicing a trade or labor. At the end of each workweek (7 days), the character can make a skill check (e.g., Strength (Athletics) for a laborer, Charisma (Performance) for an entertainer) with a DC determined by the DM. On a success, they earn enough to cover their modest expenses (2 gp per day) and possibly more, depending on the check result.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime money",
+            "earning gold",
+            "profession income",
+            "work between adventures",
+            "skill check for income"
+          ]
+        },
+        "related_keywords": [
+          "Downtime",
+          "Gold",
+          "Profession",
+          "Income",
+          "Skill Check"
+        ]
+      },
+      {
+        "concept_name": "Crafting Nonmagical Items",
+        "definition": "A downtime activity allowing characters to create nonmagical items using appropriate artisan's tools.",
+        "rule_logic": {
+          "premise": "Character is proficient with the appropriate artisan's tools AND has raw materials costing half the item's total market price",
+          "implication": "The item is completed after a number of days equal to (item's cost in gp / 5). Progress is 5 gp worth of work per day. Minimum crafting time is 1 day.",
+          "exceptions": [],
+          "description_text": "A character who is proficient with a certain kind of artisan's tools (carpenter's tools, for example) can use them to craft objects. You must spend a number of days equal to the item's cost in gp divided by 5 (minimum of 1 day). Also, you must spend half the item's cost in raw materials. At the end of each day, you make progress equal to 5 gp towards the item's total cost.",
+          "is_exception": false,
+          "related_search_terms": [
+            "making items",
+            "artisan tools craft",
+            "non-magic item creation",
+            "crafting cost nonmagic",
+            "crafting time nonmagic",
+            "materials for crafting"
+          ]
+        },
+        "related_keywords": [
+          "Downtime",
+          "Crafting",
+          "Artisan Tools",
+          "Nonmagical Items",
+          "Cost",
+          "Time"
+        ]
+      },
+      {
+        "concept_name": "Recuperating Downtime Activity",
+        "definition": "A downtime activity focused on recovering from diseases or injuries.",
+        "rule_logic": {
+          "premise": "Character spends downtime resting and recuperating for at least one week",
+          "implication": "Character gains advantage on saving throws made to recover from disease or poison AND can spend 1 hit die to regain hit points at the end of each day (not just at the end of a short rest).",
+          "exceptions": [],
+          "description_text": "You can use downtime between adventures to recover from a debilitating injury or disease. After one week of downtime spent recuperating, you gain advantage on saving throws made to recover from disease or poison. You also regain an additional 1d6 hit points for each Hit Die you spend at the end of a long rest.",
+          "is_exception": false,
+          "related_search_terms": [
+            "healing downtime",
+            "recovering health",
+            "disease recovery",
+            "poison recovery",
+            "advantage on saves healing",
+            "extra hit points long rest"
+          ]
+        },
+        "related_keywords": [
+          "Downtime",
+          "Recuperation",
+          "Healing",
+          "Disease",
+          "Poison",
+          "Saving Throw",
+          "Hit Die"
+        ]
+      },
+      {
+        "concept_name": "Training Downtime Activity",
+        "definition": "A downtime activity to gain proficiency in a new language or with a new tool.",
+        "rule_logic": {
+          "premise": "Character has an instructor willing to teach AND pays 1 gp per day for training AND dedicates 8 hours per day for 250 days",
+          "implication": "Character gains proficiency in one new language OR one new tool.",
+          "exceptions": [],
+          "description_text": "You can spend time between adventures learning a new language or gaining proficiency with a new tool. Your DM might allow other training options. First, you must find an instructor willing to teach you. The DM determines how long it takes, and whether one or more skill checks are required. The training lasts for 250 days and costs 1 gp per day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "learning language",
+            "tool proficiency training",
+            "downtime training cost",
+            "how to learn new skill",
+            "training time dnd"
+          ]
+        },
+        "related_keywords": [
+          "Downtime",
+          "Training",
+          "Proficiency",
+          "Language",
+          "Tool",
+          "Cost",
+          "Time"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "between-adventures"
+  },
+  {
+    "source_chapter": "Between Adventures",
+    "extracted_concepts": [
+      {
+        "concept_name": "Between Adventures Phase",
+        "definition": "A period of time within the game where adventurers are not actively engaged in combat or immediate danger, used for rest, recuperation, preparation, and non-adventure specific tasks.",
+        "rule_logic": {
+          "premise": "Adventurers are not actively engaged in trips to dungeons or battles against ancient evils",
+          "implication": "Characters may rest, recuperate, prepare for next adventure, craft items, perform research, or spend gold. The GM determines the amount of time passed and the level of descriptive detail for activities during this phase.",
+          "exceptions": [],
+          "description_text": "Between trips to dungeons and battles against ancient evils, adventurers need time to rest, recuperate, and prepare for their next adventure. Many adventurers also use this time to perform other tasks, such as crafting arms and armor, performing research, or spending their hard-earned gold. In some cases, the passage of time is something that occurs with little fanfare or description. When starting a new adventure, the GM might simply declare that a certain amount of time has passed and allow you to describe in general terms what your character has been doing. At other times, the GM might want to keep track of just how much time is passing as events beyond your perception stay in motion.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime activities",
+            "what to do between adventures",
+            "resting period",
+            "GM time management",
+            "campaign pacing",
+            "character development between sessions"
+          ]
+        },
+        "related_keywords": [
+          "downtime",
+          "rest",
+          "recuperation",
+          "preparation",
+          "crafting",
+          "research",
+          "spending gold",
+          "GM discretion",
+          "time passage"
+        ]
+      }
+    ],
+    "_chunk_header": "Between Adventures",
+    "_source_file": "between-adventures"
+  },
+  {
+    "source_chapter": "Lifestyle Expenses",
+    "extracted_concepts": [
+      {
+        "concept_name": "Lifestyle Expenses",
+        "definition": "The costs incurred by a character to maintain a chosen quality of life during periods between adventures.",
+        "rule_logic": {
+          "premise": "Character chooses a quality of life AND pays its associated cost between adventures",
+          "implication": "Character maintains that quality of life AND Character's lifestyle may affect how NPCs react to them",
+          "exceptions": [],
+          "description_text": "Between adventures, you choose a particular quality of life and pay the cost of maintaining that lifestyle. Living a particular lifestyle doesn't have a huge effect on your character, but your lifestyle can affect the way other individuals and groups react to you. For example, when you lead an aristocratic lifestyle, it might be easier for you to influence the nobles of the city than if you live in poverty.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime expenses",
+            "cost of living",
+            "character lifestyle",
+            "social interaction modifier",
+            "npc reactions to lifestyle"
+          ]
+        },
+        "related_keywords": [
+          "lifestyle",
+          "expenses",
+          "downtime",
+          "social",
+          "NPC interaction"
+        ]
+      }
+    ],
+    "_chunk_header": "Lifestyle Expenses",
+    "_source_file": "between-adventures"
+  },
+  {
+    "source_chapter": "Downtime Activities",
+    "extracted_concepts": [
+      {
+        "concept_name": "Downtime Activity (General)",
+        "definition": "Activities undertaken by characters between adventures, requiring dedicated time to gain benefits.",
+        "rule_logic": {
+          "premise": "A character engages in a downtime activity",
+          "implication": "The activity requires a certain number of days to complete, with each day requiring at least 8 hours of dedicated time. Days do not need to be consecutive.",
+          "exceptions": [],
+          "description_text": "Periods of downtime can vary in duration, but each downtime activity requires a certain number of days to complete before you gain any benefit, and at least 8 hours of each day must be spent on the downtime activity for the day to count. The days do not need to be consecutive.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how downtime works",
+            "downtime duration",
+            "consecutive days downtime",
+            "minimum time for downtime",
+            "downtime requirements"
+          ]
+        },
+        "related_keywords": [
+          "downtime",
+          "activity",
+          "duration",
+          "days",
+          "hours",
+          "non-consecutive"
+        ]
+      },
+      {
+        "concept_name": "Crafting (Downtime)",
+        "definition": "The process of creating nonmagical objects during downtime periods.",
+        "rule_logic": {
+          "premise": "A character attempts to craft a nonmagical object during downtime",
+          "implication": "The character must be proficient with relevant tools (e.g., artisan's tools) and may require access to special materials or locations (e.g., a forge). For each day spent crafting, progress is made for items with a total market value of up to 5 gp. Raw materials costing half the total market value must be expended.",
+          "exceptions": [],
+          "description_text": "You can craft nonmagical objects, including adventuring equipment and works of art. You must be proficient with tools related to the object you are trying to create (typically artisan's tools). You might also need access to special materials or locations necessary to create it. For every day of downtime you spend crafting, you can craft one or more items with a total market value not exceeding 5 gp, and you must expend raw materials worth half the total market value.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to craft dnd",
+            "crafting rules 5e",
+            "cost of crafting",
+            "time to craft item",
+            "crafting requirements"
+          ]
+        },
+        "related_keywords": [
+          "crafting",
+          "tools",
+          "market value",
+          "materials",
+          "gp",
+          "artisan's tools"
+        ]
+      },
+      {
+        "concept_name": "Crafting Large Items (Downtime)",
+        "definition": "Making progress on crafting items with a market value exceeding 5 gp.",
+        "rule_logic": {
+          "premise": "A character is crafting an item with a market value greater than 5 gp",
+          "implication": "Progress is made daily in 5-gp increments towards the item's total market value.",
+          "exceptions": [],
+          "description_text": "If something you want to craft has a market value greater than 5 gp, you make progress every day in 5-gp increments until you reach the market value of the item. For example, a suit of plate armor (market value 1,500 gp) takes 300 days to craft by yourself.",
+          "is_exception": false,
+          "related_search_terms": [
+            "long crafting projects",
+            "crafting expensive items",
+            "crafting plate armor",
+            "crafting time"
+          ]
+        },
+        "related_keywords": [
+          "crafting",
+          "market value",
+          "progress",
+          "days"
+        ]
+      },
+      {
+        "concept_name": "Collaborative Crafting (Downtime)",
+        "definition": "Multiple characters working together to craft a single item.",
+        "rule_logic": {
+          "premise": "Multiple characters combine efforts to craft a single item, all have requisite tool proficiency, and are working in the same place",
+          "implication": "Each character contributes 5 gp worth of effort for every day spent helping to craft the item, accelerating the crafting process.",
+          "exceptions": [],
+          "description_text": "Multiple characters can combine their efforts toward the crafting of a single item, provided that the characters all have proficiency with the requisite tools and are working together in the same place. Each character contributes 5 gp worth of effort for every day spent helping to craft the item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "group crafting",
+            "team crafting",
+            "multiple crafters dnd",
+            "shared crafting"
+          ]
+        },
+        "related_keywords": [
+          "crafting",
+          "collaboration",
+          "tools",
+          "gp",
+          "effort"
+        ]
+      },
+      {
+        "concept_name": "Crafting Lifestyle (Downtime)",
+        "definition": "Adjustments to lifestyle expenses while engaged in downtime crafting.",
+        "rule_logic": {
+          "premise": "A character is engaged in crafting during downtime",
+          "implication": "The character can maintain a modest lifestyle without paying 1 gp per day, or a comfortable lifestyle at half the normal cost.",
+          "exceptions": [],
+          "description_text": "While crafting, you can maintain a modest lifestyle without having to pay 1 gp per day, or a comfortable lifestyle at half the normal cost.",
+          "is_exception": false,
+          "related_search_terms": [
+            "crafting expenses",
+            "downtime lifestyle",
+            "modest lifestyle crafting",
+            "comfortable lifestyle crafting"
+          ]
+        },
+        "related_keywords": [
+          "crafting",
+          "lifestyle",
+          "expenses",
+          "gp"
+        ]
+      },
+      {
+        "concept_name": "Practicing a Profession (Downtime)",
+        "definition": "Working between adventures to earn money and maintain a lifestyle.",
+        "rule_logic": {
+          "premise": "A character uses downtime to practice a profession",
+          "implication": "The character can maintain a modest lifestyle without paying 1 gp per day. This benefit lasts as long as the profession is continuously practiced.",
+          "exceptions": [],
+          "description_text": "You can work between adventures, allowing you to maintain a modest lifestyle without having to pay 1 gp per day. This benefit lasts as long you continue to practice your profession.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime earning money",
+            "profession income dnd",
+            "lifestyle costs downtime",
+            "working downtime"
+          ]
+        },
+        "related_keywords": [
+          "profession",
+          "lifestyle",
+          "gp",
+          "income",
+          "downtime"
+        ]
+      },
+      {
+        "concept_name": "Organizational Profession (Downtime)",
+        "definition": "Practicing a profession through an organization for enhanced lifestyle benefits.",
+        "rule_logic": {
+          "premise": "A character is a member of an organization (e.g., temple, thieves' guild) that provides gainful employment, and practices their profession through it during downtime",
+          "implication": "The character earns enough to support a comfortable lifestyle.",
+          "exceptions": [],
+          "description_text": "If you are a member of an organization that can provide gainful employment, such as a temple or a thieves' guild, you earn enough to support a comfortable lifestyle instead.",
+          "is_exception": false,
+          "related_search_terms": [
+            "guild income dnd",
+            "temple employment",
+            "comfortable lifestyle organization",
+            "faction benefits downtime"
+          ]
+        },
+        "related_keywords": [
+          "profession",
+          "organization",
+          "lifestyle",
+          "guild",
+          "income"
+        ]
+      },
+      {
+        "concept_name": "Performance Profession (Downtime)",
+        "definition": "Using the Performance skill during downtime to achieve a wealthy lifestyle.",
+        "rule_logic": {
+          "premise": "A character has proficiency in the Performance skill and uses it during downtime",
+          "implication": "The character earns enough to support a wealthy lifestyle.",
+          "exceptions": [],
+          "description_text": "If you have proficiency in the Performance skill and put your performance skill to use during your downtime, you earn enough to support a wealthy lifestyle instead.",
+          "is_exception": false,
+          "related_search_terms": [
+            "performance skill downtime",
+            "bard income",
+            "wealthy lifestyle performance",
+            "entertainer profession"
+          ]
+        },
+        "related_keywords": [
+          "profession",
+          "performance skill",
+          "lifestyle",
+          "wealthy",
+          "downtime"
+        ]
+      },
+      {
+        "concept_name": "Recuperating (Downtime)",
+        "definition": "Using downtime to recover from debilitating injuries, diseases, or poisons.",
+        "rule_logic": {
+          "premise": "A character spends three days of downtime recuperating",
+          "implication": "The character can make a DC 15 Constitution saving throw. On a successful save, they can choose to either end one effect preventing hit point regeneration OR gain advantage on saving throws against one current disease or poison for 24 hours.",
+          "exceptions": [],
+          "description_text": "You can use downtime between adventures to recover from a debilitating injury, disease, or poison. After three days of downtime spent recuperating, you can make a DC 15 Constitution saving throw. On a successful save, you can choose one of the following results: End one effect on you that prevents you from regaining hit points. For the next 24 hours, gain advantage on saving throws against one disease or poison currently affecting you.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime healing",
+            "recover from disease dnd",
+            "remove poison downtime",
+            "recuperation rules",
+            "constitution save downtime",
+            "advantage disease save"
+          ]
+        },
+        "related_keywords": [
+          "recuperating",
+          "healing",
+          "disease",
+          "poison",
+          "constitution saving throw",
+          "hit points",
+          "advantage",
+          "downtime"
+        ]
+      },
+      {
+        "concept_name": "Researching (Downtime)",
+        "definition": "Spending downtime to gain insight and information into mysteries or specific knowledge.",
+        "rule_logic": {
+          "premise": "A character wants to perform research during downtime",
+          "implication": "The GM determines if the information is available, the number of days required, any restrictions (e.g., specific tome or location), and may require ability checks (e.g., Intelligence (Investigation) or Charisma (Persuasion)). If conditions are met and information is available, the character learns it. Each day of research costs 1 gp in addition to normal lifestyle expenses.",
+          "exceptions": [],
+          "description_text": "The time between adventures is a great chance to perform research, gaining insight into mysteries that have unfurled over the course of the campaign. When you begin your research, the GM determines whether the information is available, how many days of downtime it will take to find it, and whether there are any restrictions on your research (such as needing to seek out a specific individual, tome, or location). The GM might also require you to make one or more ability checks, such as an Intelligence (Investigation) check to find clues pointing toward the information you seek, or a Charisma (Persuasion) check to secure someone's aid. Once those conditions are met, you learn the information if it is available. For each day of research, you must spend 1 gp to cover your expenses. This cost is in addition to your normal lifestyle expenses.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime research dnd",
+            "finding information dnd",
+            "research cost",
+            "investigation check downtime",
+            "persuasion check research",
+            "GM discretion research"
+          ]
+        },
+        "related_keywords": [
+          "research",
+          "information",
+          "GM",
+          "ability checks",
+          "gp",
+          "expenses",
+          "investigation",
+          "persuasion",
+          "downtime"
+        ]
+      },
+      {
+        "concept_name": "Training (Downtime)",
+        "definition": "Spending downtime to learn a new language or gain proficiency with a set of tools.",
+        "rule_logic": {
+          "premise": "A character wishes to learn a new language or tool proficiency during downtime",
+          "implication": "The character must first find a willing instructor. The GM determines the duration and if ability checks are required. The training lasts for 250 days and costs 1 gp per day. After spending the required time and money, the character learns the new language or gains the tool proficiency.",
+          "exceptions": [],
+          "description_text": "You can spend time between adventures learning a new language or training with a set of tools. Your GM might allow additional training options. First, you must find an instructor willing to teach you. The GM determines how long it takes, and whether one or more ability checks are required. The training lasts for 250 days and costs 1 gp per day. After you spend the requisite amount of time and money, you learn the new language or gain proficiency with the new tool.",
+          "is_exception": false,
+          "related_search_terms": [
+            "downtime learning language",
+            "training tool proficiency",
+            "cost of training dnd",
+            "time to learn language 5e",
+            "instructor for training",
+            "learning new skills downtime"
+          ]
+        },
+        "related_keywords": [
+          "training",
+          "language",
+          "tool proficiency",
+          "instructor",
+          "days",
+          "gp",
+          "downtime"
+        ]
+      }
+    ],
+    "_chunk_header": "Downtime Activities",
+    "_source_file": "between-adventures"
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "entity_name": "Irresistible Dance",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On spell cast",
+      "condition": "Caster chooses one creature AND Creature is visible to caster AND Creature is within range",
+      "outcome": "Target begins a comic dance in place for the duration",
+      "related_search_terms": [
+        "target selection",
+        "spell range",
+        "casting requirements"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Initial spell effect",
+      "condition": "Target is immune to the Charmed condition",
+      "outcome": "Target is immune to this spell",
+      "related_search_terms": [
+        "charmed immunity",
+        "spell immunity",
+        "condition immunity"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While affected by Irresistible Dance",
+      "condition": "Target has movement available",
+      "outcome": "Target must use all its movement to dance without leaving its space",
+      "related_search_terms": [
+        "movement impairment",
+        "forced movement",
+        "immobilized",
+        "dancing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While affected by Irresistible Dance AND Target makes a Dexterity saving throw",
+      "condition": "Target is affected by Irresistible Dance",
+      "outcome": "Target has disadvantage on the Dexterity saving throw",
+      "related_search_terms": [
+        "dex save penalty",
+        "defensive disadvantage",
+        "vulnerable to AoE"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While affected by Irresistible Dance AND Target makes an Attack Roll",
+      "condition": "Target is affected by Irresistible Dance",
+      "outcome": "Target has disadvantage on the Attack Roll",
+      "related_search_terms": [
+        "offensive disadvantage",
+        "attack penalty",
+        "unable to fight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While affected by Irresistible Dance AND Other creature makes an Attack Roll against Target",
+      "condition": "Target is affected by Irresistible Dance",
+      "outcome": "Attacker has advantage on the Attack Roll against Target",
+      "related_search_terms": [
+        "advantage for allies",
+        "vulnerable target",
+        "easy to hit"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "While affected by Irresistible Dance",
+      "condition": "Target has an action available",
+      "outcome": "Target can use an action to make a Wisdom saving throw to regain control of itself",
+      "related_search_terms": [
+        "break free",
+        "end condition early",
+        "wisdom save",
+        "action cost"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes a Wisdom saving throw as an action to end Irresistible Dance",
+      "condition": "Wisdom saving throw is successful",
+      "outcome": "Irresistible Dance effect on Target ends",
+      "related_search_terms": [
+        "spell ended",
+        "successful save",
+        "condition removed"
+      ]
+    }
+  ],
+  "description_text": "Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.A dancing creature must use all its movement to dance without leaving its space and has disadvantage on dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a wisdom saving throw to regain control of itself. On a successful save, the spell ends.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "control",
+    "charm",
+    "movement_restriction",
+    "disadvantage",
+    "advantage",
+    "concentration_not_listed"
+  ],
+  "related_search_terms": [
+    "Otto's Irresistible Dance",
+    "dancing spell",
+    "forced movement",
+    "cc spell",
+    "wisdom save spell",
+    "debuff spell",
+    "control spell"
+  ]
+}

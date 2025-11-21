@@ -1,0 +1,36 @@
+{
+  "entity_name": "Fighting Style: Archery",
+  "logic_type": "fighting_style_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making an Attack Roll",
+      "condition": "Attack is made with a ranged weapon",
+      "outcome": "Gain a +2 bonus to the attack roll",
+      "related_search_terms": [
+        "ranged attack bonus",
+        "bow bonus",
+        "crossbow bonus",
+        "hit bonus",
+        "accuracy",
+        "ranged weapon attack"
+      ]
+    }
+  ],
+  "description_text": "You gain a +2 bonus to attack rolls you make with ranged weapons.",
+  "tags": [
+    "fighting style",
+    "martial",
+    "ranged combat",
+    "bonus",
+    "attack roll"
+  ],
+  "related_search_terms": [
+    "archery fighting style",
+    "ranged attack bonus",
+    "bows",
+    "crossbows",
+    "hit chance",
+    "accuracy"
+  ]
+}

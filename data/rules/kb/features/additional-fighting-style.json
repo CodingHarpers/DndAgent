@@ -1,0 +1,33 @@
+{
+  "entity_name": "Additional Fighting Style",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player gains a class level",
+      "condition": "Player's class level is 10",
+      "outcome": "Player can choose one additional Fighting Style from the Fighting Style class feature",
+      "related_search_terms": [
+        "fighting style",
+        "extra fighting style",
+        "level 10 feature",
+        "class feature",
+        "martial proficiency",
+        "combat style"
+      ]
+    }
+  ],
+  "description_text": "At 10th level, you can choose a second option from the Fighting Style class feature.",
+  "tags": [
+    "class_feature",
+    "fighting_style",
+    "level_based"
+  ],
+  "related_search_terms": [
+    "additional fighting style",
+    "extra fighting style",
+    "level 10 feature",
+    "combat options",
+    "martial character improvement"
+  ]
+}

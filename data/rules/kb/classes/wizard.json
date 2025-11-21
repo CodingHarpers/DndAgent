@@ -1,0 +1,330 @@
+{
+  "class_name": "Wizard",
+  "logic_type": "class_progression",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Character Creation",
+      "condition": "Class Selected is Wizard",
+      "outcome": "Hit Die is d6 AND Grant Proficiency: Daggers, Darts, Slings, Quarterstaffs, Light Crossbows, Saving Throw (Intelligence), Saving Throw (Wisdom) AND Choose 2 skills from Arcana, History, Insight, Investigation, Medicine, Religion AND Start with Spellbook",
+      "related_search_terms": [
+        "starting stats",
+        "wizard hp",
+        "wizard proficiencies",
+        "wizard skills",
+        "wizard starting equipment"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 1",
+      "condition": "Class Level == 1",
+      "outcome": "Gain Feature: Spellcasting: Wizard AND Gain Feature: Arcane Recovery",
+      "related_search_terms": [
+        "level 1 wizard",
+        "starting features",
+        "wizard spells"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 1",
+      "condition": "Class Level == 1",
+      "outcome": "Set Max Cantrips Known to 3 AND Set Max Spell Slots Level 1 to 2 AND Set Max Arcane Recovery Spell Level to 1",
+      "related_search_terms": [
+        "wizard spell slots level 1",
+        "wizard cantrips level 1"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 2",
+      "condition": "Class Level == 2",
+      "outcome": "Gain Feature: Arcane Tradition",
+      "related_search_terms": [
+        "level 2 wizard",
+        "wizard subclass"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 2",
+      "condition": "Class Level == 2",
+      "outcome": "Set Max Spell Slots Level 1 to 3 AND Set Max Arcane Recovery Spell Level to 1",
+      "related_search_terms": [
+        "wizard spell slots level 2"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 3",
+      "condition": "Class Level == 3",
+      "outcome": "Set Max Spell Slots Level 1 to 4 AND Set Max Spell Slots Level 2 to 2 AND Set Max Arcane Recovery Spell Level to 2",
+      "related_search_terms": [
+        "wizard spell slots level 3"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 4",
+      "condition": "Class Level == 4",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 4 wizard",
+        "wizard asi"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 4",
+      "condition": "Class Level == 4",
+      "outcome": "Set Max Cantrips Known to 4 AND Set Max Spell Slots Level 2 to 3 AND Set Max Arcane Recovery Spell Level to 2",
+      "related_search_terms": [
+        "wizard spell slots level 4",
+        "wizard cantrips level 4"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 5",
+      "condition": "Class Level == 5",
+      "outcome": "Set Max Spell Slots Level 3 to 2 AND Set Max Arcane Recovery Spell Level to 3",
+      "related_search_terms": [
+        "wizard spell slots level 5"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 6",
+      "condition": "Class Level == 6",
+      "outcome": "Gain Feature: Arcane Tradition feature",
+      "related_search_terms": [
+        "level 6 wizard",
+        "wizard subclass feature"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 6",
+      "condition": "Class Level == 6",
+      "outcome": "Set Max Spell Slots Level 3 to 3 AND Set Max Arcane Recovery Spell Level to 3",
+      "related_search_terms": [
+        "wizard spell slots level 6"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 7",
+      "condition": "Class Level == 7",
+      "outcome": "Set Max Spell Slots Level 4 to 1 AND Set Max Arcane Recovery Spell Level to 4",
+      "related_search_terms": [
+        "wizard spell slots level 7"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 8",
+      "condition": "Class Level == 8",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 8 wizard",
+        "wizard asi"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 8",
+      "condition": "Class Level == 8",
+      "outcome": "Set Max Spell Slots Level 4 to 2 AND Set Max Arcane Recovery Spell Level to 4",
+      "related_search_terms": [
+        "wizard spell slots level 8"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 9",
+      "condition": "Class Level == 9",
+      "outcome": "Set Max Spell Slots Level 4 to 3 AND Set Max Spell Slots Level 5 to 1 AND Set Max Arcane Recovery Spell Level to 5",
+      "related_search_terms": [
+        "wizard spell slots level 9"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 10",
+      "condition": "Class Level == 10",
+      "outcome": "Gain Feature: Arcane Tradition feature",
+      "related_search_terms": [
+        "level 10 wizard",
+        "wizard subclass feature"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 10",
+      "condition": "Class Level == 10",
+      "outcome": "Set Max Cantrips Known to 5 AND Set Max Spell Slots Level 5 to 2 AND Set Max Arcane Recovery Spell Level to 5",
+      "related_search_terms": [
+        "wizard spell slots level 10",
+        "wizard cantrips level 10"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 11",
+      "condition": "Class Level == 11",
+      "outcome": "Set Max Spell Slots Level 6 to 1 AND Set Max Arcane Recovery Spell Level to 6",
+      "related_search_terms": [
+        "wizard spell slots level 11"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 12",
+      "condition": "Class Level == 12",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 12 wizard",
+        "wizard asi"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 12",
+      "condition": "Class Level == 12",
+      "outcome": "Set Max Spell Slots Level 6 to 1 AND Set Max Arcane Recovery Spell Level to 6",
+      "related_search_terms": [
+        "wizard spell slots level 12"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 13",
+      "condition": "Class Level == 13",
+      "outcome": "Set Max Spell Slots Level 7 to 1 AND Set Max Arcane Recovery Spell Level to 7",
+      "related_search_terms": [
+        "wizard spell slots level 13"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 14",
+      "condition": "Class Level == 14",
+      "outcome": "Gain Feature: Arcane Tradition feature",
+      "related_search_terms": [
+        "level 14 wizard",
+        "wizard subclass feature"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 14",
+      "condition": "Class Level == 14",
+      "outcome": "Set Max Spell Slots Level 7 to 1 AND Set Max Arcane Recovery Spell Level to 7",
+      "related_search_terms": [
+        "wizard spell slots level 14"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 15",
+      "condition": "Class Level == 15",
+      "outcome": "Set Max Spell Slots Level 8 to 1 AND Set Max Arcane Recovery Spell Level to 8",
+      "related_search_terms": [
+        "wizard spell slots level 15"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 16",
+      "condition": "Class Level == 16",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 16 wizard",
+        "wizard asi"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 16",
+      "condition": "Class Level == 16",
+      "outcome": "Set Max Spell Slots Level 8 to 1 AND Set Max Arcane Recovery Spell Level to 8",
+      "related_search_terms": [
+        "wizard spell slots level 16"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 17",
+      "condition": "Class Level == 17",
+      "outcome": "Set Max Spell Slots Level 9 to 1 AND Set Max Arcane Recovery Spell Level to 9",
+      "related_search_terms": [
+        "wizard spell slots level 17"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 18",
+      "condition": "Class Level == 18",
+      "outcome": "Gain Feature: Spell Mastery",
+      "related_search_terms": [
+        "level 18 wizard",
+        "wizard spell mastery"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 18",
+      "condition": "Class Level == 18",
+      "outcome": "Set Max Spell Slots Level 5 to 3 AND Set Max Arcane Recovery Spell Level to 9",
+      "related_search_terms": [
+        "wizard spell slots level 18"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 19",
+      "condition": "Class Level == 19",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 19 wizard",
+        "wizard asi"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 19",
+      "condition": "Class Level == 19",
+      "outcome": "Set Max Spell Slots Level 6 to 2 AND Set Max Arcane Recovery Spell Level to 10",
+      "related_search_terms": [
+        "wizard spell slots level 19"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 20",
+      "condition": "Class Level == 20",
+      "outcome": "Gain Feature: Signature Spell",
+      "related_search_terms": [
+        "level 20 wizard",
+        "wizard signature spell"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 20",
+      "condition": "Class Level == 20",
+      "outcome": "Set Max Spell Slots Level 7 to 2 AND Set Max Arcane Recovery Spell Level to 10",
+      "related_search_terms": [
+        "wizard spell slots level 20"
+      ]
+    }
+  ],
+  "description_text": "The Wizard class uses a d6 for Hit Die. You are proficient with daggers, darts, slings, quarterstaffs, and light crossbows. You are proficient in Intelligence and Wisdom saving throws. You choose two skills from Arcana, History, Insight, Investigation, Medicine, and Religion. At 1st level, you also gain a spellbook.\n\nSpellcasting (Wizard):\nAt 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels.\nAt 1st level, you have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind.\n\nThe Wizard table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\nYou prepare the list of wizard spells that are available for you to cast. To do so, choose a number of wizard spells from your spellbook equal to your Intelligence modifier + your wizard level (minimum of one spell). The spells must be of a level for which you have spell slots.\nIntelligence is your spellcasting ability for your wizard spells. Spell save DC = 8 + your proficiency bonus + your Intelligence modifier. Spell attack modifier = your proficiency bonus + your Intelligence modifier.\nYou can cast a wizard spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don't need to have the spell prepared.\nYou can use an arcane focus as a spellcasting focus for your wizard spells.",
+  "related_search_terms": [
+    "wizard progression",
+    "wizard level up",
+    "wizard abilities",
+    "wizard spells per day"
+  ]
+}

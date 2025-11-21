@@ -1,0 +1,122 @@
+{
+  "entity_name": "Wind Walk",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Caster and up to ten willing creatures seen within range",
+      "outcome": "Creatures assume a gaseous cloud form, appearing as wisps of cloud",
+      "related_search_terms": [
+        "mass transformation",
+        "group flight",
+        "travel spell",
+        "alter form"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature in cloud form",
+      "condition": "Creature is in cloud form",
+      "outcome": "Creature has a flying speed of 300 feet",
+      "related_search_terms": [
+        "fast movement",
+        "flying speed",
+        "aerial travel"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature takes damage",
+      "condition": "Creature is in cloud form AND damage is from nonmagical weapons",
+      "outcome": "Creature has resistance to damage from nonmagical weapons",
+      "related_search_terms": [
+        "damage reduction",
+        "physical resistance",
+        "bludgeoning piercing slashing resistance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature takes an action in cloud form",
+      "condition": "Creature is in cloud form",
+      "outcome": "The only available actions are Dash or Revert to normal form",
+      "related_search_terms": [
+        "limited actions",
+        "movement only",
+        "no attacks",
+        "action restriction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature chooses to revert to normal form",
+      "condition": "Creature is in cloud form",
+      "outcome": "Reverting takes 1 minute",
+      "related_search_terms": [
+        "transformation time",
+        "ending form"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is reverting to normal form",
+      "condition": "Creature is in the 1-minute process of reverting",
+      "outcome": "Creature is incapacitated and can't move",
+      "related_search_terms": [
+        "vulnerable during transformation",
+        "helpless",
+        "stunned",
+        "immobile"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature chooses to re-enter cloud form",
+      "condition": "Spell duration has not ended",
+      "outcome": "Re-entering cloud form requires a 1-minute transformation (with associated incapacitated/immobile state)",
+      "related_search_terms": [
+        "re-transform",
+        "switch forms"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cloud form ends while flying",
+      "condition": "Creature is in cloud form, flying, AND the spell effect ends",
+      "outcome": "Creature descends 60 feet per round for 1 minute, landing safely",
+      "related_search_terms": [
+        "safe landing",
+        "controlled fall",
+        "flight ends",
+        "soft landing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cloud form ends while flying",
+      "condition": "Creature is in cloud form, flying, the spell effect ends, AND creature cannot land after 1 minute of descent",
+      "outcome": "Creature falls the remaining distance",
+      "related_search_terms": [
+        "fall damage",
+        "uncontrolled fall",
+        "landing failure",
+        "terminal velocity"
+      ]
+    }
+  ],
+  "description_text": "You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.",
+  "tags": [
+    "transmutation",
+    "travel",
+    "utility",
+    "mass_effect"
+  ],
+  "related_search_terms": [
+    "gaseous form",
+    "flight spell",
+    "mass travel",
+    "group escape",
+    "cloud form"
+  ]
+}

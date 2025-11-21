@@ -1,0 +1,38 @@
+{
+  "entity_name": "Fighting Style: Defense",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Always",
+      "condition": "Character is wearing armor",
+      "outcome": "Character gains +1 bonus to AC",
+      "related_search_terms": [
+        "armor class bonus",
+        "AC increase",
+        "defense bonus",
+        "armored",
+        "heavy armor",
+        "light armor",
+        "medium armor",
+        "combat defense"
+      ]
+    }
+  ],
+  "description_text": "While you are wearing armor, you gain a +1 bonus to AC.",
+  "tags": [
+    "fighting style",
+    "feature",
+    "defense",
+    "armor",
+    "AC",
+    "bonus"
+  ],
+  "related_search_terms": [
+    "fighting style defense",
+    "AC bonus",
+    "armor AC",
+    "increase AC",
+    "better defense"
+  ]
+}

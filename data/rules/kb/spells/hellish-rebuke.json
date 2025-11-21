@@ -1,0 +1,47 @@
+{
+  "entity_name": "Hellish Rebuke",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature damaged caster",
+      "condition": "Target fails Dexterity Saving Throw",
+      "outcome": "Target takes 2d10 Fire damage",
+      "related_search_terms": [
+        "reaction damage",
+        "retaliation",
+        "dex save",
+        "fire damage",
+        "failed save",
+        "spell damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature damaged caster",
+      "condition": "Target succeeds Dexterity Saving Throw",
+      "outcome": "Target takes half of 2d10 Fire damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "reduced damage",
+        "fire damage"
+      ]
+    }
+  ],
+  "description_text": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.",
+  "tags": [
+    "spell",
+    "reaction",
+    "damage",
+    "fire",
+    "saving_throw"
+  ],
+  "related_search_terms": [
+    "retaliation spell",
+    "revenge spell",
+    "fire spell",
+    "reaction spell",
+    "damage spell"
+  ]
+}

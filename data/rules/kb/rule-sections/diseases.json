@@ -1,0 +1,594 @@
+[
+  {
+    "source_chapter": "Conditions and Special Abilities - Diseases",
+    "extracted_concepts": [
+      {
+        "concept_name": "Disease (General)",
+        "definition": "An affliction that can be contracted by a creature, typically leading to detrimental effects or conditions until cured.",
+        "rule_logic": {
+          "premise": "A creature is exposed to a source of disease (e.g., infected creature, unsanitary conditions, magical effect)",
+          "implication": "The creature typically makes a Constitution saving throw to resist contracting the disease. On a failed save, the creature contracts the disease and suffers its effects.",
+          "exceptions": [],
+          "description_text": "Diseases are a type of affliction that can be contracted through various means. When a creature is exposed to a disease, it typically must make a Constitution saving throw to resist contracting it. If the saving throw fails, the creature contracts the disease and suffers its effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do characters get sick",
+            "disease save",
+            "resisting disease",
+            "disease rules",
+            "constitution save disease"
+          ]
+        },
+        "related_keywords": [
+          "affliction",
+          "condition",
+          "constitution saving throw",
+          "exposure",
+          "save"
+        ]
+      },
+      {
+        "concept_name": "Disease Effects",
+        "definition": "The negative consequences suffered by a creature afflicted with a disease.",
+        "rule_logic": {
+          "premise": "A creature is afflicted with a disease",
+          "implication": "The creature suffers specific detrimental effects as outlined by the particular disease, which can range from stat penalties and conditions to ongoing damage or death.",
+          "exceptions": [],
+          "description_text": "If a creature contracts a disease, it suffers its effects. The specific effects vary depending on the disease, but generally impose disadvantages or ongoing harm.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens when you are diseased",
+            "disease penalties",
+            "sick effects"
+          ]
+        },
+        "related_keywords": [
+          "penalty",
+          "condition",
+          "damage",
+          "debuff",
+          "suffering"
+        ]
+      },
+      {
+        "concept_name": "Curing Disease",
+        "definition": "The process by which a creature recovers from a disease.",
+        "rule_logic": {
+          "premise": "A creature is afflicted with a disease AND receives appropriate treatment (e.g., specific magical healing, prolonged rest, special remedies, successful saving throws)",
+          "implication": "The disease ends, and the creature no longer suffers its effects.",
+          "exceptions": [],
+          "description_text": "Diseases can typically be cured by magical healing (such as the 'Lesser Restoration' spell), prolonged rest, or specific remedies unique to the disease. Some diseases might also allow repeated saving throws to recover naturally.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cure disease",
+            "lesser restoration disease",
+            "resting to cure disease",
+            "removing disease",
+            "healing sickness"
+          ]
+        },
+        "related_keywords": [
+          "cure",
+          "healing",
+          "rest",
+          "spell",
+          "remedy",
+          "restoration"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "diseases"
+  },
+  {
+    "source_chapter": "Diseases",
+    "extracted_concepts": [
+      {
+        "concept_name": "Diseases (General Rules)",
+        "definition": "A type of affliction that can affect creatures, ranging from minor inconveniences curable by magic to significant plot-driving elements within an adventure.",
+        "rule_logic": {
+          "premise": "A creature contracts a disease",
+          "implication": "The disease's effects, transmissibility, and cure are largely determined by the Dungeon Master; a simple outbreak might be curable by 'Lesser Restoration'; specific diseases may affect certain creature types or races only.",
+          "exceptions": [],
+          "description_text": "The rules help describe the effects of the disease and how it can be cured, but the specifics of how a disease works aren't bound by a common set of rules. Diseases can affect any creature, and a given illness might or might not pass from one race or kind of creature to another. A simple outbreak might amount to little more than a small drain on party resources, curable by a casting of lesser restoration. A more complicated outbreak can form the basis of one or more adventures.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how diseases work dnd",
+            "curing diseases 5e",
+            "disease rules 5e",
+            "dm rules for disease",
+            "can undead get diseases",
+            "plot device disease"
+          ]
+        },
+        "related_keywords": [
+          "Disease",
+          "Affliction",
+          "Illness",
+          "Lesser Restoration",
+          "Plot Device",
+          "DM Fiat"
+        ]
+      }
+    ],
+    "_chunk_header": "Diseases",
+    "_source_file": "diseases"
+  },
+  {
+    "source_chapter": "Sample Diseases",
+    "extracted_concepts": [
+      {
+        "concept_name": "Cackle Fever",
+        "definition": "A disease targeting humanoids (gnomes immune) causing fits of mad laughter, exhaustion, and disorientation, potentially leading to psychic damage, incapacitation, and indefinite madness.",
+        "rule_logic": {
+          "premise": "A creature is infected with Cackle Fever",
+          "implication": "Gains one level of exhaustion that cannot be removed until the disease is cured. Symptoms manifest 1d4 hours after infection, including fever and disorientation.",
+          "exceptions": [],
+          "description_text": "The infected creature gains one level of exhaustion that can't be removed until the disease is cured. Symptoms manifest 1d4 hours after infection and include fever and disorientation.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cackle fever symptoms",
+            "disease exhaustion",
+            "fever effect"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "humanoid",
+          "exhaustion",
+          "madness",
+          "psychic damage"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Gnome Immunity)",
+        "definition": "A specific immunity for gnomes against Cackle Fever.",
+        "rule_logic": {
+          "premise": "Target is a gnome",
+          "implication": "Is immune to Cackle Fever.",
+          "exceptions": [],
+          "description_text": "This disease targets humanoids, although gnomes are strangely immune.",
+          "is_exception": true,
+          "related_search_terms": [
+            "gnome disease immunity",
+            "cackle fever gnome"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "immunity",
+          "gnome"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Mad Laughter Trigger)",
+        "definition": "A triggered effect of Cackle Fever where stressful events can cause an infected creature to take psychic damage and become incapacitated by mad laughter.",
+        "rule_logic": {
+          "premise": "Infected creature experiences a stressful event (entering combat, taking damage, experiencing fear, or having a nightmare)",
+          "implication": "Creature must make a DC 13 Constitution saving throw. On a failed save, it takes 5 (1d10) psychic damage and becomes incapacitated with mad laughter for 1 minute.",
+          "exceptions": [],
+          "description_text": "Any event that causes the infected creature great stress-including entering combat, taking damage, experiencing fear, or having a nightmare-forces the creature to make a DC 13 Constitution saving throw. On a failed save, the creature takes 5 (1d10) psychic damage and becomes incapacitated with mad laughter for 1 minute.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cackle fever stress",
+            "mad laughter damage",
+            "incapacitated disease",
+            "psychic damage",
+            "constitution save"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "stress",
+          "incapacitated",
+          "psychic damage",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Mad Laughter Recovery)",
+        "definition": "The process for an incapacitated creature to recover from mad laughter caused by Cackle Fever.",
+        "rule_logic": {
+          "premise": "Creature is incapacitated with mad laughter from Cackle Fever",
+          "implication": "Can repeat the DC 13 Constitution saving throw at the end of each of its turns. On a success, the mad laughter and incapacitated condition end.",
+          "exceptions": [],
+          "description_text": "The creature can repeat the saving throw at the end of each of its turns, ending the mad laughter and the incapacitated condition on a success.",
+          "is_exception": false,
+          "related_search_terms": [
+            "end incapacitated",
+            "cackle fever save",
+            "mad laughter end"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "incapacitated",
+          "saving throw",
+          "recovery"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Disease Spread)",
+        "definition": "The contagious mechanism of Cackle Fever through proximity to an actively laughing infected creature.",
+        "rule_logic": {
+          "premise": "Any humanoid creature starts its turn within 10 feet of an infected creature in the throes of mad laughter",
+          "implication": "Must succeed on a DC 10 Constitution saving throw or also become infected with Cackle Fever.",
+          "exceptions": [
+            "Immunity after successful save"
+          ],
+          "description_text": "Any humanoid creature that starts its turn within 10 feet of an infected creature in the throes of mad laughter must succeed on a DC 10 Constitution saving throw or also become infected with the disease.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cackle fever contagion",
+            "disease spread",
+            "mad laughter infection",
+            "proximity disease"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "contagion",
+          "spread",
+          "humanoid",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Immunity to Spread)",
+        "definition": "Temporary immunity gained against the spread of Cackle Fever from a specific creature after a successful saving throw.",
+        "rule_logic": {
+          "premise": "A creature succeeds on the DC 10 Constitution saving throw against becoming infected by a specific infected creature's mad laughter",
+          "implication": "Is immune to the mad laughter of that particular infected creature for 24 hours.",
+          "exceptions": [],
+          "description_text": "Once a creature succeeds on this save, it is immune to the mad laughter of that particular infected creature for 24 hours.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disease immunity",
+            "temporary immunity",
+            "cackle fever immunity"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "immunity",
+          "temporary",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Recovery Progression)",
+        "definition": "The mechanism by which an infected creature can recover from Cackle Fever by making Constitution saving throws after long rests, reducing the disease's DC.",
+        "rule_logic": {
+          "premise": "An infected creature finishes a long rest",
+          "implication": "Can make a DC 13 Constitution saving throw. On a successful save, the DC for this save and for the mad laughter attack save drops by 1d6.",
+          "exceptions": [
+            "Worsening to madness"
+          ],
+          "description_text": "At the end of each long rest, an infected creature can make a DC 13 Constitution saving throw. On a successful save, the DC for this save and for the save to avoid an attack of mad laughter drops by 1d6.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cackle fever cure",
+            "disease recovery",
+            "long rest disease",
+            "constitution save dc"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "recovery",
+          "long rest",
+          "saving throw",
+          "DC"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Full Recovery)",
+        "definition": "The condition for an infected creature to fully recover from Cackle Fever.",
+        "rule_logic": {
+          "premise": "The saving throw DC for Cackle Fever recovery drops to 0",
+          "implication": "The creature recovers from the disease.",
+          "exceptions": [],
+          "description_text": "When the saving throw DC drops to 0, the creature recovers from the disease.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cure disease",
+            "cackle fever cured",
+            "disease DC zero"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "recovery",
+          "cure",
+          "DC"
+        ]
+      },
+      {
+        "concept_name": "Cackle Fever (Indefinite Madness)",
+        "definition": "A worsening condition of Cackle Fever leading to indefinite madness if recovery saves are repeatedly failed.",
+        "rule_logic": {
+          "premise": "A creature infected with Cackle Fever fails three long rest Constitution saving throws for recovery",
+          "implication": "Gains a randomly determined form of indefinite madness.",
+          "exceptions": [],
+          "description_text": "A creature that fails three of these saving throws gains a randomly determined form of indefinite madness, as described later in this chapter.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cackle fever madness",
+            "disease worsening",
+            "indefinite madness trigger"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "madness",
+          "failure",
+          "saving throw",
+          "condition"
+        ]
+      },
+      {
+        "concept_name": "Sewer Plague (Infection)",
+        "definition": "The means by which a humanoid can become infected with Sewer Plague, a disease from unsanitary environments.",
+        "rule_logic": {
+          "premise": "A humanoid creature is bitten by a creature that carries the disease OR comes into contact with filth or offal contaminated by the disease",
+          "implication": "Must succeed on a DC 11 Constitution saving throw or become infected. Symptoms manifest in 1d4 days.",
+          "exceptions": [],
+          "description_text": "When a humanoid creature is bitten by a creature that carries the disease, or when it comes into contact with filth or offal contaminated by the disease, the creature must succeed on a DC 11 Constitution saving throw or become infected. It takes 1d4 days for sewer plague's symptoms to manifest in an infected creature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sewer plague contract",
+            "disease bite",
+            "filth disease",
+            "constitution save infection"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "infection",
+          "humanoid",
+          "environment",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Sewer Plague (Symptoms & Initial Effects)",
+        "definition": "The symptoms and initial mechanical effects of Sewer Plague once manifest.",
+        "rule_logic": {
+          "premise": "Sewer Plague's symptoms manifest in an infected creature",
+          "implication": "The infected creature suffers one level of exhaustion, regains only half the normal number of hit points from spending Hit Dice, and regains no hit points from finishing a long rest. Symptoms include fatigue and cramps.",
+          "exceptions": [],
+          "description_text": "Symptoms include fatigue and cramps. The infected creature suffers one level of exhaustion, and it regains only half the normal number of hit points from spending Hit Dice and no hit points from finishing a long rest.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sewer plague exhaustion",
+            "healing reduction disease",
+            "hit dice penalty",
+            "long rest healing"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "symptoms",
+          "exhaustion",
+          "healing",
+          "long rest"
+        ]
+      },
+      {
+        "concept_name": "Sewer Plague (Progression & Recovery)",
+        "definition": "The daily progression and recovery mechanism for Sewer Plague, tied to long rests and Constitution saving throws, affecting exhaustion levels.",
+        "rule_logic": {
+          "premise": "An infected creature finishes a long rest",
+          "implication": "Must make a DC 11 Constitution saving throw. On a failed save, the character gains one level of exhaustion. On a successful save, the character's exhaustion level decreases by one level.",
+          "exceptions": [],
+          "description_text": "At the end of each long rest, an infected creature must make a DC 11 Constitution saving throw. On a failed save, the character gains one level of exhaustion. On a successful save, the character's exhaustion level decreases by one level.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sewer plague cure",
+            "disease exhaustion level",
+            "long rest save",
+            "constitution save disease"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "exhaustion",
+          "recovery",
+          "long rest",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Sewer Plague (Full Recovery)",
+        "definition": "The condition for an infected creature to fully recover from Sewer Plague.",
+        "rule_logic": {
+          "premise": "A successful Constitution saving throw reduces the infected creature's level of exhaustion below 1",
+          "implication": "The creature recovers from the disease.",
+          "exceptions": [],
+          "description_text": "If a successful saving throw reduces the infected creature's level of exhaustion below 1, the creature recovers from the disease.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cure sewer plague",
+            "exhaustion zero disease"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "recovery",
+          "cure",
+          "exhaustion"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Infection)",
+        "definition": "The means by which a beast or humanoid can become infected with Sight Rot, a painful eye infection, via tainted water.",
+        "rule_logic": {
+          "premise": "A beast or humanoid drinks water tainted by sight rot",
+          "implication": "Must succeed on a DC 15 Constitution saving throw or become infected. One day after infection, the creature's vision starts to become blurry.",
+          "exceptions": [],
+          "description_text": "A beast or humanoid that drinks water tainted by sight rot must succeed on a DC 15 Constitution saving throw or become infected. One day after infection, the creature's vision starts to become blurry.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sight rot contract",
+            "tainted water disease",
+            "blurry vision cause"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "infection",
+          "beast",
+          "humanoid",
+          "water",
+          "saving throw"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Vision Penalty Progression)",
+        "definition": "The progressive worsening of vision due to Sight Rot, leading to increasing penalties on sight-based rolls and eventual blindness.",
+        "rule_logic": {
+          "premise": "A creature is infected with Sight Rot and its symptoms appear (one day after infection)",
+          "implication": "Takes a -1 penalty to attack rolls and ability checks that rely on sight. At the end of each long rest after the symptoms appear, the penalty worsens by 1.",
+          "exceptions": [],
+          "description_text": "The creature takes a -1 penalty to attack rolls and ability checks that rely on sight. At the end of each long rest after the symptoms appear, the penalty worsens by 1.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sight rot penalty",
+            "vision impairment",
+            "attack roll penalty",
+            "ability check penalty",
+            "long rest disease progression"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "vision",
+          "penalty",
+          "attack roll",
+          "ability check",
+          "long rest"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Blindness)",
+        "definition": "The ultimate effect of Sight Rot, resulting in the blinded condition once the vision penalty reaches its maximum.",
+        "rule_logic": {
+          "premise": "The Sight Rot penalty reaches -5",
+          "implication": "The victim is blinded until its sight is restored by magic.",
+          "exceptions": [
+            "Magical restoration"
+          ],
+          "description_text": "When it reaches -5, the victim is blinded until its sight is restored by magic such as lesser restoration or heal.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sight rot blindness",
+            "blinded condition disease",
+            "vision -5 penalty"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "blindness",
+          "condition",
+          "penalty"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Eyebright Ointment Creation)",
+        "definition": "The procedure for creating Eyebright ointment, a specific herbal remedy for Sight Rot.",
+        "rule_logic": {
+          "premise": "A character has proficiency with an herbalism kit, has an Eyebright flower, and spends an hour",
+          "implication": "Can turn the flower into one dose of ointment.",
+          "exceptions": [],
+          "description_text": "Sight rot can be cured using a rare flower called Eyebright, which grows in some swamps. Given an hour, a character who has proficiency with an herbalism kit can turn the flower into one dose of ointment.",
+          "is_exception": false,
+          "related_search_terms": [
+            "eyebright ointment recipe",
+            "herbalism kit disease cure",
+            "crafting ointment"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "cure",
+          "herbalism kit",
+          "crafting",
+          "Eyebright"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Eyebright Ointment Use)",
+        "definition": "The effect of applying Eyebright ointment to prevent the worsening of Sight Rot.",
+        "rule_logic": {
+          "premise": "One dose of Eyebright ointment is applied to the eyes before a long rest",
+          "implication": "Prevents the Sight Rot penalty from worsening after that rest.",
+          "exceptions": [
+            "Full cure after three doses"
+          ],
+          "description_text": "Applied to the eyes before a long rest, one dose of it prevents the disease from worsening after that rest.",
+          "is_exception": false,
+          "related_search_terms": [
+            "eyebright use",
+            "sight rot stop progression",
+            "disease ointment"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "cure",
+          "ointment",
+          "long rest",
+          "Eyebright"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Eyebright Full Cure)",
+        "definition": "The condition for fully curing Sight Rot using multiple applications of Eyebright ointment.",
+        "rule_logic": {
+          "premise": "Three doses of Eyebright ointment are applied",
+          "implication": "The ointment cures the disease entirely.",
+          "exceptions": [],
+          "description_text": "After three doses, the ointment cures the disease entirely.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cure sight rot",
+            "eyebright full cure",
+            "multiple ointment doses"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "cure",
+          "ointment",
+          "Eyebright"
+        ]
+      },
+      {
+        "concept_name": "Sight Rot (Magical Restoration)",
+        "definition": "The ability of certain magical spells to restore sight and cure Sight Rot.",
+        "rule_logic": {
+          "premise": "Magic such as lesser restoration or heal is used on a victim suffering from Sight Rot blindness",
+          "implication": "The victim's sight is restored, curing the disease.",
+          "exceptions": [],
+          "description_text": "The victim is blinded until its sight is restored by magic such as lesser restoration or heal.",
+          "is_exception": false,
+          "related_search_terms": [
+            "lesser restoration sight rot",
+            "heal spell blindness",
+            "magical disease cure"
+          ]
+        },
+        "related_keywords": [
+          "disease",
+          "cure",
+          "magic",
+          "spell",
+          "blindness",
+          "restoration"
+        ]
+      }
+    ],
+    "_chunk_header": "Sample Diseases",
+    "_source_file": "diseases"
+  }
+]

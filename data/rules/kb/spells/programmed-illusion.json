@@ -1,0 +1,137 @@
+{
+  "entity_name": "Programmed Illusion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster specifies an activation condition and illusion's behavior/sounds",
+      "outcome": "Create an illusion of an object, creature, or visible phenomenon up to a 30-foot cube. Illusion is imperceptible until activated and performs a scripted behavior for up to 5 minutes.",
+      "related_search_terms": [
+        "illusion creation",
+        "scripted magic",
+        "delayed effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Illusion is dormant (not yet activated)",
+      "condition": "Illusion exists but its activation condition has not occurred",
+      "outcome": "Illusion is imperceptible",
+      "related_search_terms": [
+        "hidden illusion",
+        "invisible before trigger",
+        "dormant state"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Defining illusion's size",
+      "condition": "Illusion's dimensions",
+      "outcome": "Illusion must be no larger than a 30-foot cube",
+      "related_search_terms": [
+        "illusion size limit",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Specified activation condition occurs",
+      "condition": "Illusion is dormant",
+      "outcome": "Illusion springs into existence and performs its scripted behavior and sounds",
+      "related_search_terms": [
+        "illusion trigger",
+        "automatic activation",
+        "performance start"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Illusion's performance",
+      "condition": "Illusion is active and performing",
+      "outcome": "Performance duration is a maximum of 5 minutes",
+      "related_search_terms": [
+        "active illusion duration",
+        "performance limit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Illusion finishes performing",
+      "condition": "Illusion has completed its scripted performance",
+      "outcome": "Illusion disappears and remains dormant for 10 minutes",
+      "related_search_terms": [
+        "illusion cooldown",
+        "temporary disappearance",
+        "recharge period"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "After 10-minute dormancy period",
+      "condition": "Illusion has completed its dormancy period",
+      "outcome": "Illusion can be activated again by its trigger condition",
+      "related_search_terms": [
+        "reusable illusion",
+        "repeated activation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Defining activation condition",
+      "condition": "Proposed activation condition for the illusion",
+      "outcome": "Must be based on visual or audible conditions occurring within 30 feet of the illusion's area",
+      "related_search_terms": [
+        "trigger range",
+        "sensor type",
+        "proximity activation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature physically interacts with illusion",
+      "condition": "Illusion is perceptible",
+      "outcome": "Creature discerns it is an illusion (objects pass through it)",
+      "related_search_terms": [
+        "dispel illusion",
+        "interact with illusion",
+        "touch illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature uses an action to examine illusion",
+      "condition": "Successful Intelligence (Investigation) check vs. Caster's Spell Save DC",
+      "outcome": "Creature discerns it is an illusion",
+      "related_search_terms": [
+        "detect illusion",
+        "reveal illusion",
+        "illusion check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature discerns illusion",
+      "condition": "Creature has successfully discerned the illusion",
+      "outcome": "Creature sees through the image, and any noise it makes sounds hollow to that creature",
+      "related_search_terms": [
+        "illusion bypass",
+        "true sight illusion",
+        "disbelief"
+      ]
+    }
+  ],
+  "description_text": "You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes. When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again. The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase. Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.",
+  "tags": [
+    "Illusion",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "trap",
+    "alarm",
+    "decoy",
+    "automatic illusion",
+    "triggerable magic",
+    "delayed illusion"
+  ]
+}

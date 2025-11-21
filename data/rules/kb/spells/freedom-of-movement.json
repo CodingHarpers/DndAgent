@@ -1,0 +1,92 @@
+{
+  "entity_name": "Freedom of Movement",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Movement in difficult terrain",
+      "condition": "Target affected by Freedom of Movement moves",
+      "outcome": "Target's movement is unaffected by difficult terrain",
+      "related_search_terms": [
+        "difficult terrain immunity",
+        "movement bonus",
+        "hindrance ignore"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell or magical effect attempts to reduce target's speed",
+      "condition": "Spell or magical effect attempts to reduce target's speed",
+      "outcome": "Target's speed is not reduced",
+      "related_search_terms": [
+        "speed reduction immunity",
+        "magical slow",
+        "movement control"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell or magical effect attempts to cause paralyzed condition",
+      "condition": "Spell or magical effect attempts to cause paralyzed condition",
+      "outcome": "Target is not paralyzed",
+      "related_search_terms": [
+        "paralysis immunity",
+        "magical paralysis",
+        "condition immunity"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell or magical effect attempts to cause restrained condition",
+      "condition": "Spell or magical effect attempts to cause restrained condition",
+      "outcome": "Target is not restrained",
+      "related_search_terms": [
+        "restrained immunity",
+        "magical restraint",
+        "grapple immunity",
+        "condition immunity"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target is under nonmagical restraint",
+      "condition": "Target spends 5 feet of movement",
+      "outcome": "Target automatically escapes the nonmagical restraint (e.g., manacles, grapple)",
+      "related_search_terms": [
+        "escape grapple",
+        "break free",
+        "manacles escape",
+        "nonmagical binds"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Movement or attack while underwater",
+      "condition": "Target is underwater",
+      "outcome": "No penalties are imposed on the target's movement or attacks",
+      "related_search_terms": [
+        "underwater combat",
+        "aquatic movement",
+        "swimming bonus",
+        "attack underwater"
+      ]
+    }
+  ],
+  "description_text": "You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained. The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.",
+  "tags": [
+    "Abjuration",
+    "4th-level",
+    "Touch",
+    "Single Target",
+    "Movement",
+    "Condition Immunity"
+  ],
+  "related_search_terms": [
+    "mobility spell",
+    "control immunity",
+    "movement buff",
+    "escape spell",
+    "anti-grapple",
+    "water breathing"
+  ]
+}

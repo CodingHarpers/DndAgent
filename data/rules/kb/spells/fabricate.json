@@ -1,0 +1,93 @@
+{
+  "entity_name": "Fabricate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Raw materials are chosen within range",
+      "outcome": "Raw materials are converted into a product of the same material",
+      "related_search_terms": [
+        "crafting",
+        "creation",
+        "material transformation",
+        "shaping materials"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Fabricating an object",
+      "condition": "Raw material is NOT metal, stone, or another mineral substance",
+      "outcome": "Fabricated object size is Large or smaller (contained within a 10-foot cube or eight connected 5-foot cubes)",
+      "related_search_terms": [
+        "object size limit",
+        "volume limit",
+        "non-mineral crafting"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Fabricating an object",
+      "condition": "Raw material IS metal, stone, or another mineral substance",
+      "outcome": "Fabricated object size is Medium or smaller (contained within a single 5-foot cube)",
+      "related_search_terms": [
+        "metal crafting limit",
+        "stone crafting limit",
+        "mineral crafting limit",
+        "hard material volume"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fabricating an object",
+      "condition": "N/A",
+      "outcome": "Fabricated object's quality is commensurate with the quality of the raw materials",
+      "related_search_terms": [
+        "material quality",
+        "item quality",
+        "craft quality",
+        "product quality"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to fabricate",
+      "condition": "Target is a creature OR a magic item",
+      "outcome": "Creature or magic item cannot be created or transmuted",
+      "related_search_terms": [
+        "no creature creation",
+        "no magic item creation",
+        "transmutation limit",
+        "living beings",
+        "enchanted items"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Attempting to fabricate an object requiring a high degree of craftsmanship",
+      "condition": "You have proficiency with the type of artisan's tools used to craft such objects (e.g., jewelry, weapons, glass, armor)",
+      "outcome": "You can fabricate the object",
+      "related_search_terms": [
+        "crafting skill",
+        "tool proficiency",
+        "complex items",
+        "masterwork",
+        "artisan's tools"
+      ]
+    }
+  ],
+  "description_text": "You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool. Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the spell is commensurate with the quality of the raw materials. Creatures or magic items can't be created or transmuted by this spell. You also can't use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan's tools used to craft such objects.",
+  "tags": [
+    "Transmutation",
+    "Creation"
+  ],
+  "related_search_terms": [
+    "crafting spell",
+    "creation spell",
+    "material manipulation",
+    "manufacturing",
+    "build",
+    "construction",
+    "object creation"
+  ]
+}

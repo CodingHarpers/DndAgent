@@ -1,0 +1,136 @@
+{
+  "entity_name": "Modify Memory",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is one creature you can see",
+      "outcome": "Target must make a Wisdom saving throw",
+      "related_search_terms": [
+        "wisdom save",
+        "spell save",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw",
+      "condition": "You are fighting the creature",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "combat advantage",
+        "resist spell",
+        "hostile target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw Failed",
+      "condition": "Target creature failed the save",
+      "outcome": "Target becomes Charmed by you for the duration; Target is Incapacitated; Target is unaware of its surroundings (but can hear you)",
+      "related_search_terms": [
+        "charmed condition",
+        "incapacitated condition",
+        "mind control",
+        "memory alteration state"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "During Charmed Duration",
+      "condition": "Charmed target takes any damage OR Charmed target is targeted by another spell",
+      "outcome": "This spell ends; Target's memories are NOT modified",
+      "related_search_terms": [
+        "spell broken",
+        "charm broken",
+        "memory protection",
+        "interrupted spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "While target is charmed by this spell",
+      "condition": "An event was experienced by the target within the last 24 hours AND that event lasted no more than 10 minutes",
+      "outcome": "You can affect the target's memory of that event (permanently eliminate, recall with clarity, change details, or create new)",
+      "related_search_terms": [
+        "memory manipulation",
+        "false memory",
+        "event alteration",
+        "past event modification"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to modify memories",
+      "condition": "You do NOT speak to the target to describe how its memories are affected OR Target does NOT understand your language",
+      "outcome": "Modified memories will NOT take root",
+      "related_search_terms": [
+        "language requirement",
+        "communication spell",
+        "memory implant requirements"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Memory modification process",
+      "condition": "Spell ends before you have finished describing the modified memories",
+      "outcome": "Creature's memory is NOT altered",
+      "related_search_terms": [
+        "interrupted memory change",
+        "spell duration ends early"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends normally",
+      "condition": "You have finished describing the modified memories",
+      "outcome": "Modified memories take hold permanently",
+      "related_search_terms": [
+        "permanent memory change",
+        "memory alteration success",
+        "memory implant complete"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Modified memory takes hold",
+      "condition": "Modified memory contradicts the creature's natural inclinations, alignment, or beliefs OR Modified memory is illogical/nonsensical",
+      "outcome": "Modified memory does NOT necessarily affect creature behavior; May be dismissed (e.g., as a bad dream)",
+      "related_search_terms": [
+        "memory rejection",
+        "illogical memory",
+        "implausible memory",
+        "behavioral conflict"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is affected by Modify Memory",
+      "condition": "A remove curse OR greater restoration spell is cast on the target",
+      "outcome": "Creature's true memory is restored",
+      "related_search_terms": [
+        "memory healing",
+        "curse removal",
+        "restoration spell",
+        "undo memory alteration"
+      ]
+    }
+  ],
+  "description_text": "You attempt to reshape another creature's memories. One creature that you can see must make a wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified. While this charm lasts, you can affect the target's memory of an event that it experienced within the last 24 hours and that lasted no more than 10 minutes. You can permanently eliminate all memory of the event, allow the target to recall the event with perfect clarity and exacting detail, change its memory of the details of the event, or create a memory of some other event. You must speak to the target to describe how its memories are affected, and it must be able to understand your language for the modified memories to take root. Its mind fills in any gaps in the details of your description. If the spell ends before you have finished describing the modified memories, the creature's memory isn't altered. Otherwise, the modified memories take hold when the spell ends. A modified memory doesn't necessarily affect how a creature behaves, particularly if the memory contradicts the creature's natural inclinations, alignment, or beliefs. An illogical modified memory, such as implanting a memory of how much the creature enjoyed dousing itself in acid, is dismissed, perhaps as a bad dream. The GM might deem a modified memory too nonsensical to affect a creature in a significant manner. A remove curse or greater restoration spell cast on the target restores the creature's true memory.",
+  "tags": [
+    "enchantment",
+    "charm",
+    "memory alteration",
+    "mind control",
+    "incapacitate"
+  ],
+  "related_search_terms": [
+    "memory wipe",
+    "memory implant",
+    "false memory",
+    "charm spell",
+    "mind manipulation",
+    "mental alteration"
+  ]
+}

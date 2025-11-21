@@ -1,0 +1,44 @@
+{
+  "entity_name": "Remove Curse",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is one creature OR Target is one object",
+      "outcome": "All curses affecting target end",
+      "related_search_terms": [
+        "curse removal",
+        "curse end",
+        "cleanse curse",
+        "remove affliction",
+        "breaking curses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a cursed magic item",
+      "outcome": "Target's curse remains, AND its owner's attunement to target ends",
+      "related_search_terms": [
+        "cursed item",
+        "magic item curse",
+        "attunement break",
+        "discard item",
+        "remove item"
+      ]
+    }
+  ],
+  "description_text": "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.",
+  "tags": [
+    "spell",
+    "abjuration"
+  ],
+  "related_search_terms": [
+    "curse",
+    "bless",
+    "dispel magic",
+    "affliction",
+    "condition removal"
+  ]
+}

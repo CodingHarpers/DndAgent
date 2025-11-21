@@ -1,0 +1,264 @@
+[
+  {
+    "source_chapter": "Adventuring - Resting",
+    "extracted_concepts": [
+      {
+        "concept_name": "Short Rest",
+        "definition": "A period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, or tending to wounds.",
+        "rule_logic": {
+          "premise": "Character takes a period of downtime for at least 1 hour AND performs only light activities",
+          "implication": "Character can spend one or more Hit Dice to regain hit points",
+          "exceptions": [],
+          "description_text": "A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, or tending to wounds. A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, each of which is expended when spent. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll. A character can’t benefit from more than one short rest between each long rest.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to heal during rest",
+            "how long is short rest",
+            "what can I do during short rest",
+            "using hit dice",
+            "how many short rests"
+          ]
+        },
+        "related_keywords": [
+          "rest",
+          "downtime",
+          "healing",
+          "hit dice",
+          "recovery"
+        ]
+      },
+      {
+        "concept_name": "Spending Hit Dice (Short Rest)",
+        "definition": "The act of using Hit Dice during a short rest to recover lost hit points.",
+        "rule_logic": {
+          "premise": "Character takes a Short Rest AND chooses to spend Hit Dice",
+          "implication": "Roll the Hit Die, add Constitution modifier to the result, and regain that many hit points. The Hit Die is expended. This can be repeated for multiple Hit Dice.",
+          "exceptions": [],
+          "description_text": "A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, each of which is expended when spent. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to spend hit dice",
+            "hit dice calculation",
+            "healing during short rest",
+            "constitution modifier healing"
+          ]
+        },
+        "related_keywords": [
+          "hit dice",
+          "healing",
+          "short rest",
+          "recovery",
+          "constitution"
+        ]
+      },
+      {
+        "concept_name": "Long Rest",
+        "definition": "A period of extended downtime, at least 8 hours long, during which a character sleeps for at least 6 hours and performs no more than 2 hours of light activity.",
+        "rule_logic": {
+          "premise": "Character spends at least 8 continuous hours without strenuous activity, including at least 6 hours of sleep AND at most 2 hours of light activity",
+          "implication": "Regain all lost hit points AND regain spent Hit Dice up to half of total (minimum one die).",
+          "exceptions": [
+            "Cannot benefit from more than one long rest in a 24-hour period.",
+            "Must have at least 1 hit point at the start of the rest to gain its benefits.",
+            "If the rest is interrupted by strenuous activity (at least 1 hour), the character gains no benefit from that rest."
+          ],
+          "description_text": "A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps for at least 6 hours and performs no more than 2 hours of light activity, such as reading, talking, eating, or standing watch. If the rest is interrupted by a period of strenuous activity-at least 1 hour of walking, fighting, casting spells, or similar adventuring activity-the character gains no benefit from that rest, and must begin a long rest again to gain any. At the end of a long rest, a character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). For example, if a character has eight Hit Dice, he can regain four spent Hit Dice upon finishing a long rest. A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is long rest",
+            "what can I do during long rest",
+            "healing after long rest",
+            "regaining hit dice",
+            "long rest rules",
+            "interrupted long rest"
+          ]
+        },
+        "related_keywords": [
+          "rest",
+          "downtime",
+          "healing",
+          "hit points",
+          "hit dice",
+          "recovery",
+          "sleep"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "resting"
+  },
+  {
+    "source_chapter": "Resting",
+    "extracted_concepts": [
+      {
+        "concept_name": "Resting",
+        "definition": "Periods of time adventurers allocate to sleep, eat, tend wounds, refresh mental and spiritual faculties for spellcasting, and prepare for future adventures.",
+        "rule_logic": {
+          "premise": "Adventurers are engaged in continuous exploration, social interaction, and combat for extended periods",
+          "implication": "They require periods of rest to recover and prepare",
+          "exceptions": [],
+          "description_text": "Heroic though they might be, adventurers can't spend every hour of the day in the thick of exploration, social interaction, and combat. They need rest-time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.",
+          "is_exception": false,
+          "related_search_terms": [
+            "purpose of resting",
+            "why rest in dnd",
+            "benefits of resting",
+            "what is resting"
+          ]
+        },
+        "related_keywords": [
+          "rest",
+          "recovery",
+          "preparation",
+          "adventuring"
+        ]
+      },
+      {
+        "concept_name": "Short Rest",
+        "definition": "A period of rest taken by adventurers during the course of an adventuring day.",
+        "rule_logic": {
+          "premise": "Adventurers are in the midst of an adventuring day",
+          "implication": "They can take a short rest",
+          "exceptions": [],
+          "description_text": "Adventurers can take short rests in the midst of an adventuring day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to short rest",
+            "short rest timing",
+            "rest during day",
+            "mid-adventure rest"
+          ]
+        },
+        "related_keywords": [
+          "short rest",
+          "adventuring day",
+          "break"
+        ]
+      },
+      {
+        "concept_name": "Long Rest",
+        "definition": "A period of rest taken by adventurers to conclude an adventuring day.",
+        "rule_logic": {
+          "premise": "Adventurers are ending the adventuring day",
+          "implication": "They can take a long rest",
+          "exceptions": [],
+          "description_text": "Adventurers can take a long rest to end the day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to long rest",
+            "long rest timing",
+            "rest overnight",
+            "end of day rest"
+          ]
+        },
+        "related_keywords": [
+          "long rest",
+          "end day",
+          "overnight",
+          "full rest"
+        ]
+      }
+    ],
+    "_chunk_header": "Resting",
+    "_source_file": "resting"
+  },
+  {
+    "source_chapter": "Adventuring - Rest",
+    "extracted_concepts": [
+      {
+        "concept_name": "Short Rest",
+        "definition": "A period of downtime for a character to recover, lasting at least 1 hour, with limited strenuous activity.",
+        "rule_logic": {
+          "premise": "Character initiates a short rest",
+          "implication": "Duration must be at least 1 hour AND Character may only perform non-strenuous activities (eating, drinking, reading, tending to wounds)",
+          "exceptions": [],
+          "description_text": "A short rest is a period of downtime, at least 1 hour long, during which a character does nothing more strenuous than eating, drinking, reading, and tending to wounds.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is a short rest",
+            "short rest activities",
+            "what can I do during a short rest",
+            "short rest duration"
+          ]
+        },
+        "related_keywords": [
+          "Rest",
+          "Downtime",
+          "Recovery",
+          "Healing"
+        ]
+      },
+      {
+        "concept_name": "Spending Hit Dice",
+        "definition": "A mechanism to regain hit points at the end of a short rest by expending Hit Dice.",
+        "rule_logic": {
+          "premise": "Character is at the end of a short rest",
+          "implication": "Character can spend one or more Hit Dice up to their maximum (equal to character's level) to regain hit points. For each Hit Die spent: Roll the die + Constitution modifier. Player can decide to spend additional Hit Dice after each roll.",
+          "exceptions": [],
+          "description_text": "A character can spend one or more Hit Dice at the end of a short rest, up to the character's maximum number of Hit Dice, which is equal to the character's level. For each Hit Die spent in this way, the player rolls the die and adds the character's Constitution modifier to it. The character regains hit points equal to the total. The player can decide to spend an additional Hit Die after each roll.",
+          "is_exception": false,
+          "related_search_terms": [
+            "regain HP short rest",
+            "how to use Hit Dice",
+            "healing during short rest",
+            "Hit Dice recovery",
+            "Constitution modifier healing"
+          ]
+        },
+        "related_keywords": [
+          "Hit Dice",
+          "Healing",
+          "Hit Points",
+          "Recovery",
+          "Constitution",
+          "Short Rest"
+        ]
+      }
+    ],
+    "_chunk_header": "Short Rest",
+    "_source_file": "resting"
+  },
+  {
+    "source_chapter": "Long Rest",
+    "extracted_concepts": [
+      {
+        "concept_name": "Long Rest",
+        "definition": "An extended period of at least 8 hours of downtime, primarily sleep, that allows a character to recover hit points and Hit Dice.",
+        "rule_logic": {
+          "premise": "A character undertakes a period of extended downtime lasting at least 8 hours, consisting of sleep or light activity (e.g., reading, talking, eating, standing watch for no more than 2 hours).",
+          "implication": "The character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die).",
+          "exceptions": [
+            "If the rest is interrupted by a period of strenuous activity (at least 1 hour of walking, fighting, casting spells, or similar adventuring activity), the character must begin the rest again to gain any benefit from it.",
+            "A character can't benefit from more than one long rest in a 24-hour period.",
+            "A character must have at least 1 hit point at the start of the rest to gain its benefits."
+          ],
+          "description_text": "A long rest is a period of extended downtime, at least 8 hours long, during which a character sleeps or performs light activity: reading, talking, eating, or standing watch for no more than 2 hours. If the rest is interrupted by a period of strenuous activity-at least 1 hour of walking, fighting, casting spells, or similar adventuring activity-the characters must begin the rest again to gain any benefit from it. At the end of a long rest, a character regains all lost hit points. The character also regains spent Hit Dice, up to a number of dice equal to half of the character's total number of them (minimum of one die). A character can't benefit from more than one long rest in a 24-hour period, and a character must have at least 1 hit point at the start of the rest to gain its benefits.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is a long rest",
+            "what happens after a long rest",
+            "long rest benefits",
+            "can a long rest be interrupted",
+            "how many long rests per day",
+            "do you regain hit points long rest",
+            "do you regain hit dice long rest",
+            "long rest light activity",
+            "long rest strenuous activity",
+            "1 hp for long rest"
+          ]
+        },
+        "related_keywords": [
+          "long rest",
+          "rest",
+          "hit points",
+          "hit dice",
+          "recovery",
+          "downtime",
+          "healing"
+        ]
+      }
+    ],
+    "_chunk_header": "Long Rest",
+    "_source_file": "resting"
+  }
+]

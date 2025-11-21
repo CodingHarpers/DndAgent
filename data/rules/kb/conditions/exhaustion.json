@@ -1,0 +1,122 @@
+{
+  "entity_name": "Exhaustion",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature is subjected to an effect that causes exhaustion",
+      "condition": "N/A",
+      "outcome": "Creature's current Exhaustion Level increases by the amount specified in the effect",
+      "related_search_terms": [
+        "gaining exhaustion",
+        "stacking exhaustion",
+        "more tired"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 1 or higher",
+      "outcome": "Creature has Disadvantage on ability checks",
+      "related_search_terms": [
+        "skill checks",
+        "stat checks",
+        "perception",
+        "stealth",
+        "strength check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 2 or higher",
+      "outcome": "Creature's Speed is halved",
+      "related_search_terms": [
+        "movement reduction",
+        "slowed",
+        "movement penalty"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 3 or higher",
+      "outcome": "Creature has Disadvantage on attack rolls AND saving throws",
+      "related_search_terms": [
+        "combat penalty",
+        "attack penalty",
+        "save penalty",
+        "vulnerable"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 4 or higher",
+      "outcome": "Creature's Hit Point Maximum is halved",
+      "related_search_terms": [
+        "health reduction",
+        "max hp down",
+        "endurance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 5 or higher",
+      "outcome": "Creature's Speed is reduced to 0",
+      "related_search_terms": [
+        "immobile",
+        "paralyzed movement",
+        "cannot move"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature has Exhaustion",
+      "condition": "Creature's Exhaustion Level is 6",
+      "outcome": "Creature Dies",
+      "related_search_terms": [
+        "death",
+        "instant death",
+        "fatal exhaustion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is subjected to an effect that reduces exhaustion",
+      "condition": "N/A",
+      "outcome": "Creature's current Exhaustion Level decreases by the amount specified in the effect. All Exhaustion effects end if the level is reduced below 1.",
+      "related_search_terms": [
+        "removing exhaustion",
+        "curing exhaustion",
+        "healing exhaustion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature finishes a Long Rest",
+      "condition": "Creature has ingested food AND drink during the Long Rest",
+      "outcome": "Creature's Exhaustion Level is reduced by 1",
+      "related_search_terms": [
+        "rest recovery",
+        "sleep",
+        "recovery",
+        "camp",
+        "food",
+        "water"
+      ]
+    }
+  ],
+  "description_text": "Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description. 1 - Disadvantage on ability checks 2 - Speed halved 3 - Disadvantage on attack rolls and saving throws 4 - Hit point maximum halved 5 - Speed reduced to 0 6 - Death If an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description. A creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks. An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1. Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink.",
+  "tags": [
+    "condition",
+    "debuff"
+  ],
+  "related_search_terms": [
+    "fatigue",
+    "tired",
+    "debilitated",
+    "worn out"
+  ]
+}

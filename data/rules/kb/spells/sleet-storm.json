@@ -1,0 +1,87 @@
+{
+  "entity_name": "Sleet Storm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell's area is active",
+      "condition": "Creature or object is within the 20-foot-tall cylinder with a 40-foot radius",
+      "outcome": "Area is heavily obscured",
+      "related_search_terms": [
+        "visibility",
+        "obscurement",
+        "blinded",
+        "perception checks",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell's area is active",
+      "condition": "Exposed flame is within the 20-foot-tall cylinder with a 40-foot radius",
+      "outcome": "Flame is doused",
+      "related_search_terms": [
+        "fire",
+        "extinguish",
+        "light source",
+        "camp fire"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell's area is active",
+      "condition": "Ground is within the 20-foot-tall cylinder with a 40-foot radius",
+      "outcome": "Ground is difficult terrain",
+      "related_search_terms": [
+        "movement reduction",
+        "slowed",
+        "slippery ground",
+        "ice",
+        "terrain effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters the spell's area for the first time on a turn OR starts its turn there",
+      "condition": "Creature fails a Dexterity saving throw",
+      "outcome": "Creature falls prone",
+      "related_search_terms": [
+        "knocked down",
+        "slipping",
+        "dex save",
+        "prone condition",
+        "movement impediment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature in the spell's area is concentrating",
+      "condition": "Creature fails a Constitution saving throw against your spell save DC",
+      "outcome": "Creature loses concentration",
+      "related_search_terms": [
+        "maintain spell",
+        "spellcaster disruption",
+        "con save",
+        "breaking concentration",
+        "concentration check"
+      ]
+    }
+  ],
+  "description_text": "Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused. The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a dexterity saving throw. On a failed save, it falls prone. If a creature is concentrating in the spell's area, the creature must make a successful constitution saving throw against your spell save DC or lose concentration.",
+  "tags": [
+    "Level 3",
+    "Conjuration",
+    "Control",
+    "Area of Effect",
+    "Weather Spell"
+  ],
+  "related_search_terms": [
+    "ice spell",
+    "weather control",
+    "obscurement spell",
+    "difficult terrain spell",
+    "prone condition spell",
+    "concentration disruption",
+    "AoE control"
+  ]
+}

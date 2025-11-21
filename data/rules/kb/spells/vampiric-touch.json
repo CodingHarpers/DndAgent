@@ -1,0 +1,48 @@
+{
+  "entity_name": "Vampiric Touch",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Initial Spell Cast",
+      "condition": "Melee spell attack hits a creature within reach",
+      "outcome": "Target takes 3d6 necrotic damage AND Caster regains hit points equal to half the amount of necrotic damage dealt",
+      "related_search_terms": [
+        "melee spell attack",
+        "necrotic damage",
+        "life steal",
+        "healing from damage",
+        "on hit effect"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Start of Caster's Turn",
+      "condition": "Vampiric Touch spell is active",
+      "outcome": "Caster can use an Action to repeat the melee spell attack and its effects (3d6 necrotic damage and half HP regained)",
+      "related_search_terms": [
+        "sustained spell",
+        "recurring action",
+        "repeated attack",
+        "ongoing damage",
+        "action economy"
+      ]
+    }
+  ],
+  "description_text": "The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.",
+  "tags": [
+    "Necromancy",
+    "Damage",
+    "Healing",
+    "Attack",
+    "Melee"
+  ],
+  "related_search_terms": [
+    "life drain",
+    "touch spell",
+    "siphon life",
+    "heal",
+    "necrotic spell",
+    "melee spell"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "entity_name": "Entangle",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is active",
+      "condition": "Ground is within the 20-foot square area of effect",
+      "outcome": "Ground in the area becomes difficult terrain",
+      "related_search_terms": [
+        "movement penalty",
+        "slow",
+        "hindrance",
+        "terrain effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is in the area when spell is cast",
+      "condition": "Creature fails a Strength saving throw against the spell",
+      "outcome": "Creature becomes Restrained by the plants until the spell ends",
+      "related_search_terms": [
+        "immobilize",
+        "hold in place",
+        "grapple",
+        "plant control",
+        "Strength save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature is Restrained by Entangle",
+      "condition": "Creature uses its action to make a Strength check against the caster's spell save DC AND succeeds",
+      "outcome": "Creature is no longer Restrained by Entangle",
+      "related_search_terms": [
+        "escape condition",
+        "break free",
+        "struggle",
+        "Strength check"
+      ]
+    }
+  ],
+  "description_text": "Grasping weeds and vines sprout from the ground in a 20-foot square starting form a point within range. For the duration, these plants turn the ground in the area into difficult terrain. A creature in the area when you cast the spell must succeed on a strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself. When the spell ends, the conjured plants wilt away.",
+  "tags": [
+    "1st-level",
+    "conjuration",
+    "control",
+    "area_of_effect",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "root",
+    "hold",
+    "snare",
+    "restrain",
+    "difficult terrain",
+    "vines",
+    "plants"
+  ]
+}

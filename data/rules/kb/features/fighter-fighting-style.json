@@ -1,0 +1,33 @@
+{
+  "entity_name": "Fighting Style (General Rule)",
+  "logic_type": "rule_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Player attempts to choose a Fighting Style option",
+      "condition": "The player has already chosen this specific Fighting Style option",
+      "outcome": "The player cannot choose this specific Fighting Style option again",
+      "related_search_terms": [
+        "choose fighting style",
+        "select fighting style",
+        "duplicate fighting style",
+        "retake fighting style",
+        "reselect option"
+      ]
+    }
+  ],
+  "description_text": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
+  "tags": [
+    "character creation",
+    "progression",
+    "feature",
+    "restriction"
+  ],
+  "related_search_terms": [
+    "class feature",
+    "martial combat",
+    "combat specialization",
+    "player choice",
+    "feature limitation"
+  ]
+}

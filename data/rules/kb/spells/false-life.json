@@ -1,0 +1,31 @@
+{
+  "entity_name": "False Life",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Spell is successfully cast",
+      "outcome": "Gain 1d4 + 4 temporary hit points",
+      "related_search_terms": [
+        "temporary hit points",
+        "temp hp",
+        "hp boost",
+        "necromantic healing",
+        "self-buff"
+      ]
+    }
+  ],
+  "description_text": "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.",
+  "tags": [
+    "necromancy",
+    "buff",
+    "temporary hit points"
+  ],
+  "related_search_terms": [
+    "false life spell",
+    "temporary hp spell",
+    "self preservation",
+    "durability spell"
+  ]
+}

@@ -1,0 +1,276 @@
+[
+  {
+    "source_chapter": "Adventuring - Activating an Item",
+    "extracted_concepts": [
+      {
+        "concept_name": "Activating an Item",
+        "definition": "The process of using a specific item, typically a magic item, to trigger its effect.",
+        "rule_logic": {
+          "premise": "An item's description specifies it must be 'activated' or 'used' to produce its effect",
+          "implication": "The activation or use typically consumes one Action",
+          "exceptions": [
+            "Item description specifies a different activation time (e.g., bonus action, reaction, or no action)"
+          ],
+          "description_text": "Many magic items, for example, require an action to use. Even if an item’s description says nothing about the action a creature needs to use an item, assume that using a magic item requires an action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to use magic item",
+            "item activation time",
+            "action to use item",
+            "using items in combat"
+          ]
+        },
+        "related_keywords": [
+          "item",
+          "magic item",
+          "action",
+          "use item",
+          "activation"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "activating-an-item"
+  },
+  {
+    "source_chapter": "Magic Items - Activating an Item",
+    "extracted_concepts": [
+      {
+        "concept_name": "Item Activation (General)",
+        "definition": "The process of performing a specific action or fulfilling a condition to utilize a magic item's properties.",
+        "rule_logic": {
+          "premise": "A user wishes to activate a magic item",
+          "implication": "Consult the item's description for specific activation requirements (e.g., command word, holding)",
+          "exceptions": [],
+          "description_text": "Activating some magic items requires a user to do something special, such as holding the item and uttering a command word. The description of each item category or individual item details how an item is activated.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to use magic item",
+            "magic item use",
+            "activating artifact"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "activation",
+          "command word"
+        ]
+      },
+      {
+        "concept_name": "Item Activation Action Type",
+        "definition": "A specific rule clarifying that an action required to activate an item is distinct from the general 'Use an Item' action.",
+        "rule_logic": {
+          "premise": "An item's description states that its activation requires 'an action'",
+          "implication": "That 'action' is not considered the 'Use an Item' action, and features modifying 'Use an Item' (e.g., Fast Hands) do not apply to it",
+          "exceptions": [],
+          "description_text": "If an item requires an action to activate, that action isn't a function of the Use an Item action, so a feature such as the rogue's Fast Hands can't be used to activate the item.",
+          "is_exception": true,
+          "related_search_terms": [
+            "fast hands magic item",
+            "rogue item activation",
+            "bonus action item activation",
+            "use an object action magic item"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "use an item",
+          "activation",
+          "fast hands",
+          "rogue"
+        ]
+      }
+    ],
+    "_chunk_header": "Activating an Item",
+    "_source_file": "activating-an-item"
+  },
+  {
+    "source_chapter": "Magic Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Command Word",
+        "definition": "A specific word or phrase that must be spoken aloud to activate a magic item.",
+        "rule_logic": {
+          "premise": "A magic item requires a command word for activation AND the item is in an area where sound is prevented (e.g., by a silence spell)",
+          "implication": "The magic item cannot be activated",
+          "exceptions": [],
+          "description_text": "A command word is a word or phrase that must be spoken for an item to work. A magic item that requires a command word can't be activated in an area where sound is prevented, as in the area of the silence spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to activate magic item",
+            "magic item activation",
+            "silence spell command word",
+            "item not working",
+            "speaking command word"
+          ]
+        },
+        "related_keywords": [
+          "Magic Item",
+          "Activation",
+          "Sound",
+          "Silence Spell",
+          "Spoken"
+        ]
+      }
+    ],
+    "_chunk_header": "Command Word",
+    "_source_file": "activating-an-item"
+  },
+  {
+    "source_chapter": "Magic Items - Consumables",
+    "extracted_concepts": [
+      {
+        "concept_name": "Consumables",
+        "definition": "Items that are used up when activated, causing them to lose their magical properties.",
+        "rule_logic": {
+          "premise": "A magic item designated as consumable is activated or used",
+          "implication": "The item is used up AND loses its magic",
+          "exceptions": [],
+          "description_text": "Some items are used up when they are activated. A potion or an elixir must be swallowed, or an oil applied to the body. The writing vanishes from a scroll when it is read. Once used, a consumable item loses its magic.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do potions work",
+            "what happens after using a magic item",
+            "disappearing scroll",
+            "one time use item",
+            "magic item charges"
+          ]
+        },
+        "related_keywords": [
+          "item",
+          "magic item",
+          "potion",
+          "scroll",
+          "oil",
+          "elixir",
+          "activated",
+          "used",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Consumables",
+    "_source_file": "activating-an-item"
+  },
+  {
+    "source_chapter": "Magic Items - Spells",
+    "extracted_concepts": [
+      {
+        "concept_name": "Casting Spells from Magic Items (Default)",
+        "definition": "The general rules governing the casting of spells directly from magic items, establishing default parameters for spell level, cost, components, and casting properties.",
+        "rule_logic": {
+          "premise": "A user casts a spell from a magic item that allows spellcasting",
+          "implication": "The spell is cast at its lowest possible level, does not expend the user's spell slots, requires no components, uses its normal casting time, range, and duration, and the user must concentrate if the spell requires concentration",
+          "exceptions": [
+            "Unless the item's description says otherwise",
+            "Specific items can make exceptions, changing casting time, duration, or other parts of a spell"
+          ],
+          "description_text": "Some magic items allow the user to cast a spell from the item. The spell is cast at the lowest possible spell level, doesn't expend any of the user's spell slots, and requires no components, unless the item's description says otherwise. The spell uses its normal casting time, range, and duration, and the user of the item must concentrate if the spell requires concentration. Many items, such as potions, bypass the casting of a spell and confer the spell's effects, with their usual duration. Certain items make exceptions to these rules, changing the casting time, duration, or other parts of a spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "magic item spell rules",
+            "spell casting from item",
+            "lowest spell level item",
+            "item spell components",
+            "item spell slots",
+            "concentration magic item",
+            "potions spell effects"
+          ]
+        },
+        "related_keywords": [
+          "Magic Item",
+          "Spellcasting",
+          "Spell Level",
+          "Components",
+          "Concentration",
+          "Casting Time",
+          "Range",
+          "Duration",
+          "Potions"
+        ]
+      },
+      {
+        "concept_name": "Spellcasting Ability for Item-Cast Spells",
+        "definition": "Rules determining which spellcasting ability score is used when a magic item requires it for a spell cast from the item, and how proficiency bonus applies.",
+        "rule_logic": {
+          "premise": "A magic item requires the user's spellcasting ability when casting a spell from the item",
+          "implication": "If the user has more than one spellcasting ability, they choose which one to use. If the user does not have a spellcasting ability, their spellcasting ability modifier is +0 for the item, and their proficiency bonus does apply.",
+          "exceptions": [],
+          "description_text": "A magic item, such as certain staffs, may require you to use your own spellcasting ability when you cast a spell from the item. If you have more than one spellcasting ability, you choose which one to use with the item. If you don't have a spellcasting ability--perhaps you're a rogue with the Use Magic Device feature--your spellcasting ability modifier is +0 for the item, and your proficiency bonus does apply.",
+          "is_exception": false,
+          "related_search_terms": [
+            "magic item spell ability",
+            "staff spellcasting ability",
+            "no spellcasting ability item",
+            "rogue magic item spell",
+            "proficiency bonus magic item",
+            "spell attack bonus item",
+            "spell save DC item"
+          ]
+        },
+        "related_keywords": [
+          "Magic Item",
+          "Spellcasting Ability",
+          "Proficiency Bonus",
+          "Spell Attack",
+          "Spell Save DC",
+          "Staffs"
+        ]
+      }
+    ],
+    "_chunk_header": "Spells",
+    "_source_file": "activating-an-item"
+  },
+  {
+    "source_chapter": "Magic Items - Charges",
+    "extracted_concepts": [
+      {
+        "concept_name": "Magic Item Charges",
+        "definition": "A consumable resource associated with certain magic items, required to activate their special properties.",
+        "rule_logic": {
+          "premise": "An Identify spell is cast on a magic item with charges OR a creature attunes to a magic item with charges",
+          "implication": "The number of remaining charges on the item is revealed",
+          "exceptions": [],
+          "description_text": "The number of charges an item has remaining is revealed when an identify spell is cast on it, as well as when a creature attunes to it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to know magic item charges",
+            "identify spell charges",
+            "attunement charges"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "charges",
+          "identify spell",
+          "attunement"
+        ]
+      },
+      {
+        "concept_name": "Magic Item Charge Regain Notification",
+        "definition": "The process by which an attuned creature becomes aware of charges an item has regained.",
+        "rule_logic": {
+          "premise": "A magic item with charges regains charges AND a creature is attuned to that item",
+          "implication": "The attuned creature learns how many charges the item regained",
+          "exceptions": [],
+          "description_text": "Additionally, when an item regains charges, the creature attuned to it learns how many charges it regained.",
+          "is_exception": false,
+          "related_search_terms": [
+            "magic item regaining charges",
+            "how do i know if my item regained charges",
+            "attuned creature charges"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "charges",
+          "regain",
+          "attunement",
+          "notification"
+        ]
+      }
+    ],
+    "_chunk_header": "Charges",
+    "_source_file": "activating-an-item"
+  }
+]

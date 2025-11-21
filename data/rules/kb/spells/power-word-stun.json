@@ -1,0 +1,44 @@
+{
+  "entity_name": "Power Word Stun",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Target is a creature you can see within range AND Target has 150 hit points or fewer",
+      "outcome": "Target is Stunned",
+      "related_search_terms": [
+        "hit point threshold",
+        "no save",
+        "instant stun",
+        "incapacitate",
+        "mind control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of Stunned Target's Turn",
+      "condition": "Target is Stunned by Power Word Stun",
+      "outcome": "Target makes a Constitution saving throw. On a successful save, the Stunned condition ends.",
+      "related_search_terms": [
+        "stun duration",
+        "con save",
+        "saving throw to end effect",
+        "remove stun"
+      ]
+    }
+  ],
+  "description_text": "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect. The stunned target must make a constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends.",
+  "tags": [
+    "6th_level_spell",
+    "Enchantment",
+    "Instantaneous"
+  ],
+  "related_search_terms": [
+    "stun spell",
+    "power word",
+    "high level control",
+    "single target CC",
+    "HP dependent spell"
+  ]
+}

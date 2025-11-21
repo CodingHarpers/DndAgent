@@ -1,0 +1,97 @@
+{
+  "entity_name": "Telekinesis",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast or As an Action each round for duration",
+      "condition": "Spellcaster can see one creature or object within range",
+      "outcome": "Spellcaster can exert their will on the chosen target, applying one of the spell's specific effects. If a new target is chosen, the prior target is no longer affected.",
+      "related_search_terms": [
+        "spell upkeep",
+        "concentration",
+        "re-target",
+        "action cost",
+        "object manipulation",
+        "creature control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action exerted on a creature",
+      "condition": "Target is a creature, Huge or smaller, visible within range",
+      "outcome": "Spellcaster makes a Spellcasting ability check contested by the creature's Strength check. If the spellcaster wins, the creature moves up to 30 feet in any direction (not beyond spell range) and is Restrained until the end of the spellcaster's next turn. A creature lifted upward is suspended in mid-air.",
+      "related_search_terms": [
+        "grapple",
+        "shove",
+        "forced movement",
+        "control",
+        "restrain",
+        "contest check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action exerted to maintain telekinetic grip on creature (subsequent rounds)",
+      "condition": "Target is a creature previously affected and restrained by Telekinesis, Huge or smaller, visible within range",
+      "outcome": "Spellcaster makes a Spellcasting ability check contested by the creature's Strength check. If the spellcaster wins, the telekinetic grip is maintained; the creature remains Restrained until the end of the spellcaster's next turn and can be moved up to 30 feet in any direction (not beyond spell range).",
+      "related_search_terms": [
+        "maintain concentration",
+        "control",
+        "restrain",
+        "contest check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action exerted on an object (unworn or uncarried)",
+      "condition": "Target is an object weighing up to 1,000 pounds, unworn or uncarried by a creature, visible within range",
+      "outcome": "The object automatically moves up to 30 feet in any direction (not beyond spell range).",
+      "related_search_terms": [
+        "object movement",
+        "environmental interaction",
+        "remote action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action exerted on an object (worn or carried)",
+      "condition": "Target is an object weighing up to 1,000 pounds, worn or carried by a creature, visible within range",
+      "outcome": "Spellcaster makes a Spellcasting ability check contested by the creature's Strength check. If the spellcaster succeeds, the object is pulled away from the creature and moves up to 30 feet in any direction (not beyond spell range).",
+      "related_search_terms": [
+        "disarm",
+        "steal",
+        "object interaction",
+        "contest check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action exerted on an object for fine control",
+      "condition": "Target is an object visible within range",
+      "outcome": "Spellcaster can exert fine control: manipulate a simple tool, open a door or container, stow or retrieve an item from an open container, or pour the contents from a vial.",
+      "related_search_terms": [
+        "utility",
+        "puzzle solving",
+        "remote interaction",
+        "dexterity check",
+        "object manipulation"
+      ]
+    }
+  ],
+  "description_text": "You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.***Creature.*** You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's Strength check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is restrained in your telekinetic grip. A creature lifted upward is suspended in mid-air.On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.***Object.*** You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.",
+  "tags": [
+    "6th-level",
+    "Transmutation",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "force manipulation",
+    "psionic ability",
+    "object movement",
+    "creature control",
+    "remote action",
+    "mental power",
+    "spellcasting ability check"
+  ]
+}

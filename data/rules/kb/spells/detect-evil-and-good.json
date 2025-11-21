@@ -1,0 +1,114 @@
+{
+  "entity_name": "Detect Evil and Good",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "During spell duration",
+      "condition": "An aberration, celestial, elemental, fey, fiend, or undead is within 30 feet of caster AND spell's detection is not blocked",
+      "outcome": "Caster knows if such a creature exists and its exact location",
+      "related_search_terms": [
+        "know presence",
+        "find enemy",
+        "detect monster",
+        "monster type",
+        "enemy location",
+        "tracking",
+        "hidden creatures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During spell duration",
+      "condition": "A place or object within 30 feet of caster has been magically consecrated or desecrated AND spell's detection is not blocked",
+      "outcome": "Caster knows if such a place or object exists and its exact location",
+      "related_search_terms": [
+        "holy ground",
+        "unholy ground",
+        "cursed object",
+        "blessed object",
+        "magical influence",
+        "site detection"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell's detection ability attempts to penetrate a barrier",
+      "condition": "Barrier consists of 1 foot or more of stone",
+      "outcome": "Spell's detection is blocked",
+      "related_search_terms": [
+        "line of sight",
+        "wall",
+        "obstacle",
+        "blocking spell",
+        "stone wall",
+        "spell blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell's detection ability attempts to penetrate a barrier",
+      "condition": "Barrier consists of 1 inch or more of common metal",
+      "outcome": "Spell's detection is blocked",
+      "related_search_terms": [
+        "line of sight",
+        "metal sheet",
+        "armor",
+        "blocking spell",
+        "iron door",
+        "spell blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell's detection ability attempts to penetrate a barrier",
+      "condition": "Barrier consists of a thin sheet of lead or more",
+      "outcome": "Spell's detection is blocked",
+      "related_search_terms": [
+        "line of sight",
+        "lead lining",
+        "anti-magic",
+        "blocking spell",
+        "spell blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell's detection ability attempts to penetrate a barrier",
+      "condition": "Barrier consists of 3 feet or more of wood or dirt",
+      "outcome": "Spell's detection is blocked",
+      "related_search_terms": [
+        "line of sight",
+        "wooden wall",
+        "earth",
+        "blocking spell",
+        "buried object",
+        "spell blocking"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+  "tags": [
+    "Divination",
+    "Level 1",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "detect creature",
+    "detect object",
+    "detect place",
+    "evil",
+    "good",
+    "aberration",
+    "celestial",
+    "elemental",
+    "fey",
+    "fiend",
+    "undead",
+    "consecrated",
+    "desecrated",
+    "scrying",
+    "aura",
+    "divine sense"
+  ]
+}

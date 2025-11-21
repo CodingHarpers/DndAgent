@@ -1,0 +1,71 @@
+{
+  "entity_name": "Blindness/Deafness",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spellcaster chooses one creature within range that they can see",
+      "outcome": "Target makes a Constitution saving throw",
+      "related_search_terms": [
+        "spell cast",
+        "initial effect",
+        "saving throw",
+        "creature target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails initial Constitution saving throw",
+      "condition": "None",
+      "outcome": "Target becomes either Blinded or Deafened (caster's choice) for the spell's duration",
+      "related_search_terms": [
+        "condition applied",
+        "blinded",
+        "deafened",
+        "duration",
+        "failed save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of target's turn",
+      "condition": "Target is Blinded or Deafened by this spell",
+      "outcome": "Target can make a Constitution saving throw",
+      "related_search_terms": [
+        "repeated save",
+        "ongoing effect",
+        "condition check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target succeeds on Constitution saving throw (end of turn)",
+      "condition": "Target was Blinded or Deafened by this spell",
+      "outcome": "The spell ends for the target",
+      "related_search_terms": [
+        "condition removed",
+        "spell ends",
+        "success condition",
+        "break free"
+      ]
+    }
+  ],
+  "description_text": "You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a constitution saving throw. On a success, the spell ends.",
+  "tags": [
+    "spell",
+    "condition",
+    "debuff",
+    "constitution_save"
+  ],
+  "related_search_terms": [
+    "blind",
+    "deaf",
+    "control spell",
+    "disable",
+    "save or suck",
+    "condition spell",
+    "sight impairment",
+    "hearing impairment",
+    "ranged spell"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "entity_name": "Conjure Celestial",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Cast",
+      "condition": "Target space is unoccupied AND visible AND within range",
+      "outcome": "One celestial of challenge rating 4 or lower appears in target space",
+      "related_search_terms": [
+        "summon creature",
+        "celestial summon",
+        "planar ally",
+        "conjure ally"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Celestial takes damage",
+      "condition": "Celestial's hit points drop to 0",
+      "outcome": "Celestial disappears",
+      "related_search_terms": [
+        "summoned creature death",
+        "minion destroyed",
+        "creature despawns"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Duration Ends",
+      "condition": "The spell's duration expires",
+      "outcome": "Celestial disappears",
+      "related_search_terms": [
+        "spell duration end",
+        "summoned creature despawn",
+        "creature vanishes"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Celestial is present",
+      "condition": "Spell is active",
+      "outcome": "Celestial is friendly to caster and companions",
+      "related_search_terms": [
+        "allied creature",
+        "friendly NPC",
+        "loyal minion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Combat begins or Celestial enters combat",
+      "condition": "Celestial is present",
+      "outcome": "Roll initiative for the celestial; it has its own turns",
+      "related_search_terms": [
+        "minion turn",
+        "summoned creature action",
+        "combat participant"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster issues a verbal command",
+      "condition": "Command does NOT violate celestial's alignment",
+      "outcome": "Celestial obeys the command",
+      "related_search_terms": [
+        "control minion",
+        "commanding creature",
+        "alignment restriction"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster issues a verbal command to the celestial",
+      "condition": "N/A",
+      "outcome": "No action is required by the caster",
+      "related_search_terms": [
+        "free action command",
+        "bonus action command",
+        "commanding without action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster does not issue a command to the celestial",
+      "condition": "Celestial is present and not commanded",
+      "outcome": "Celestial defends itself from hostile creatures but otherwise takes no actions",
+      "related_search_terms": [
+        "AI creature",
+        "self-preservation",
+        "idle minion",
+        "default behavior"
+      ]
+    }
+  ],
+  "description_text": "You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.The GM has the celestial's statistics.",
+  "tags": [
+    "Summoning",
+    "Celestial",
+    "Conjuration",
+    "Control",
+    "Minion"
+  ],
+  "related_search_terms": [
+    "Summon spell",
+    "Ally",
+    "Companion",
+    "Creature control",
+    "Divine summon"
+  ]
+}

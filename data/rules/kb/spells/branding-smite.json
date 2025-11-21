@@ -1,0 +1,65 @@
+{
+  "entity_name": "Branding Smite",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Next weapon attack hits before spell ends",
+      "condition": "Target is a creature",
+      "outcome": "Attack deals extra 2d6 radiant damage to the target",
+      "related_search_terms": [
+        "bonus damage",
+        "smite damage",
+        "radiant damage",
+        "attack enhancement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Next weapon attack hits before spell ends",
+      "condition": "Target is a creature AND Target is invisible",
+      "outcome": "Target becomes visible",
+      "related_search_terms": [
+        "reveal invisible",
+        "remove invisibility",
+        "unseen foe"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Next weapon attack hits before spell ends",
+      "condition": "Target is a creature",
+      "outcome": "Target sheds dim light in a 5-foot radius until spell ends",
+      "related_search_terms": [
+        "illumination",
+        "light source",
+        "glowing target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Next weapon attack hits before spell ends",
+      "condition": "Target is a creature",
+      "outcome": "Target cannot become invisible until spell ends",
+      "related_search_terms": [
+        "prevent invisibility",
+        "anti-invisibility",
+        "stop hiding"
+      ]
+    }
+  ],
+  "description_text": "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends.",
+  "tags": [
+    "Spell",
+    "Smite",
+    "Damage",
+    "Condition_Removal",
+    "Light"
+  ],
+  "related_search_terms": [
+    "smite spell",
+    "radiant damage spell",
+    "reveal invisible spell",
+    "invisibility counter"
+  ]
+}
