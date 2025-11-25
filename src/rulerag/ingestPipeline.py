@@ -119,7 +119,20 @@ class UnifiedDndLoader:
         print(f"Successfully loaded {len(documents)} logic documents.")
         # print(documents[0])
         return documents
+if __name__ == "__main__":
+    # Usage example
+    loader = UnifiedDndLoader("data/rules/kb")
+    ingested_docs = loader.load()
 
-# Usage example
-loader = UnifiedDndLoader("data/rules/kb")
-all_docs = loader.load()
+    import statistics
+    
+    doc_lengths = [len(d.page_content) for d in ingested_docs]
+    if doc_lengths:
+        print(f"Document Length Statistics (characters):")
+        print(f"  Count: {len(doc_lengths)}")
+        print(f"  Min: {min(doc_lengths)}")
+        print(f"  Max: {max(doc_lengths)}")
+        print(f"  Average: {sum(doc_lengths) / len(doc_lengths):.2f}")
+        print(f"  Median: {statistics.median(doc_lengths)}")
+    else:
+        print("No documents ingested.")
