@@ -1,0 +1,112 @@
+{
+  "entity_name": "Elf",
+  "logic_type": "racial_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Walking speed is 30 feet",
+      "related_search_terms": [
+        "movement",
+        "speed",
+        "elf movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Increase Dexterity ability score by 2",
+      "related_search_terms": [
+        "DEX bonus",
+        "dexterity increase",
+        "racial bonus",
+        "ability score improvement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Creature size is Medium",
+      "related_search_terms": [
+        "medium creature",
+        "elf size",
+        "size category"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Can speak, read, and write Common and Elvish languages",
+      "related_search_terms": [
+        "extra language",
+        "racial language",
+        "speak Elvish",
+        "Elvish language"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Character gains the Darkvision trait",
+      "related_search_terms": [
+        "see in dark",
+        "low light vision",
+        "racial trait darkvision",
+        "darkness sight"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Character gains the Fey Ancestry trait",
+      "related_search_terms": [
+        "charm resistance",
+        "magic sleep immunity",
+        "elf charm",
+        "fey magic"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Character gains the Trance trait",
+      "related_search_terms": [
+        "elf rest",
+        "short rest",
+        "no sleep",
+        "meditation"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Character is an Elf",
+      "outcome": "Character gains the Keen Senses trait",
+      "related_search_terms": [
+        "perception proficiency",
+        "racial perception",
+        "elf senses",
+        "alertness"
+      ]
+    }
+  ],
+  "description_text": "Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium. Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old. Elves love freedom, variety, and self-expression, so they lean strongly toward the gentler aspects of chaos. They value and protect others' freedom as well as their own, and they are more often good than not. You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires.",
+  "tags": [
+    "race",
+    "elf",
+    "player character"
+  ],
+  "related_search_terms": [
+    "elf race",
+    "elf racial traits",
+    "elf abilities",
+    "base elf features"
+  ]
+}

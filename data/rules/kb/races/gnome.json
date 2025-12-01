@@ -1,0 +1,117 @@
+{
+  "entity_name": "Gnome",
+  "logic_type": "race_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "character_creation",
+      "condition": "N/A",
+      "outcome": "Intelligence score increases by 2",
+      "related_search_terms": [
+        "stat bonus",
+        "INT bonus",
+        "racial bonus",
+        "ability score improvement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "racial_feature",
+      "condition": "N/A",
+      "outcome": "Base walking speed is 25 feet",
+      "related_search_terms": [
+        "movement speed",
+        "racial speed",
+        "mobility"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "racial_feature",
+      "condition": "N/A",
+      "outcome": "Size category is Small",
+      "related_search_terms": [
+        "small creature",
+        "size modifier",
+        "small race",
+        "physical size"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "character_creation",
+      "condition": "N/A",
+      "outcome": "Can speak, read, and write Common",
+      "related_search_terms": [
+        "racial language",
+        "communication",
+        "common tongue"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "character_creation",
+      "condition": "N/A",
+      "outcome": "Can speak, read, and write Gnomish",
+      "related_search_terms": [
+        "racial language",
+        "gnomish language",
+        "communication",
+        "ancient language"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "racial_feature",
+      "condition": "N/A",
+      "outcome": "Gains the Darkvision trait",
+      "related_search_terms": [
+        "racial trait",
+        "night vision",
+        "low-light vision",
+        "see in dark"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "racial_feature",
+      "condition": "N/A",
+      "outcome": "Gains the Gnome Cunning trait",
+      "related_search_terms": [
+        "racial trait",
+        "mental save advantage",
+        "spell resistance",
+        "saving throw bonus",
+        "intelligence save",
+        "wisdom save",
+        "charisma save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "character_creation",
+      "condition": "N/A",
+      "outcome": "Can choose Rock Gnome as a subrace",
+      "related_search_terms": [
+        "subrace option",
+        "gnome variant",
+        "rock gnome"
+      ]
+    }
+  ],
+  "description_text": "name: Gnome speed: 25 ability_bonuses: - entry: ability_score: name: INT bonus: 2 alignment: Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious. age: Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years. size: Small size_description: Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small. languages: - entry: name: Common - entry: name: Gnomish language_desc: You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world. traits: - entry: name: Darkvision - entry: name: Gnome Cunning subraces: - entry: name: Rock Gnome",
+  "tags": [
+    "Race",
+    "Gnome",
+    "Player Race",
+    "Small Race"
+  ],
+  "related_search_terms": [
+    "small folk",
+    "forest gnomes",
+    "deep gnomes",
+    "artificer race",
+    "inventive race",
+    "curious race"
+  ]
+}

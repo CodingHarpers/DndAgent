@@ -12,12 +12,12 @@ from typing import List, Tuple, Dict, Any
 project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from src.rulerag.rule_generation_pipeline import RuleGenerationPipeline
+from ruleGenerationPipeline import RuleGenerationPipeline
 
 # Configure paths (relative to project root)
 INPUT_BASE = project_root / "data" / "rules" / "dnd_5e_data"
 OUTPUT_BASE = project_root / "data" / "rules" / "kb"
-CATEGORIES = ["spells", "features", "conditions", "rule-sections", "classes"]
+CATEGORIES = ["spells", "features", "conditions", "rule-sections", "classes", "races"]
 
 # Concurrency limit
 CONCURRENCY_LIMIT = 30
@@ -25,26 +25,49 @@ CONCURRENCY_LIMIT = 30
 
 def extract_text_from_json(data: dict, category: str) -> str:
     """Extract text content from JSON data"""
-    name = data.get("name", "")
-    desc = data.get("desc", "")
-    
-    # Process desc field (could be string or list)
-    if isinstance(desc, list):
-        desc_text = "\n".join(desc)
-    elif isinstance(desc, str):
-        desc_text = desc
-    else:
-        desc_text = ""
-    
-    # Combine name and description
-    if name and desc_text:
-        return f"{name}\n\n{desc_text}"
-    elif name:
-        return name
-    elif desc_text:
-        return desc_text
-    else:
-        return ""
+    IGNORE_KEYS = {"index", "url", "updated_at", "_id", "full_name"}
+
+    def _recursive_parse(obj, indent_level=0):
+        lines = []
+        indent = "  " * indent_level  # 缩进，体现层级结构
+        
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                if key in IGNORE_KEYS:
+                    continue
+                
+                # 特殊处理：如果是 desc/description 且是列表，直接拼成文本，不要显示成 List 结构
+                if key in ["desc", "description"] and isinstance(value, list):
+                    text_block = "\n".join(value)
+                    # 这里的缩进处理是为了让大段文本更好看
+                    formatted_desc = text_block.replace("\n", f"\n{indent}  ")
+                    lines.append(f"{indent}{key}: {formatted_desc}")
+                
+                # 如果值是复杂的字典或列表，递归处理
+                elif isinstance(value, (dict, list)):
+                    # 如果是空列表或空字典，跳过
+                    if not value:
+                        continue
+                    lines.append(f"{indent}{key}:")
+                    lines.append(_recursive_parse(value, indent_level + 1))
+                
+                # 如果是基本类型 (str, int, float, bool)
+                else:
+                    lines.append(f"{indent}{key}: {value}")
+                    
+        elif isinstance(obj, list):
+            for item in obj:
+                # 如果列表里是复杂的对象
+                if isinstance(item, (dict, list)):
+                    lines.append(f"{indent}- entry:") # 用个标记表示列表项
+                    lines.append(_recursive_parse(item, indent_level + 1))
+                else:
+                    # 如果列表里只是简单的字符串（比如 tags）
+                    lines.append(f"{indent}- {item}")
+        
+        return "\n".join(line for line in lines if line)
+
+    return _recursive_parse(data)
 
 
 def build_class_payload(class_file: Path, base_data: Dict[str, Any]) -> Dict[str, Any]:

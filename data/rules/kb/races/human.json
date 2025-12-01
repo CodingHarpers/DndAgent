@@ -1,0 +1,127 @@
+{
+  "entity_name": "Human",
+  "logic_type": "race_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Strength score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human strength"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Dexterity score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human dexterity"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Constitution score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human constitution"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Intelligence score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human intelligence"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Wisdom score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human wisdom"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Increase Charisma score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "human charisma"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Movement",
+      "condition": "Character is a Human",
+      "outcome": "Walking speed is 30 feet",
+      "related_search_terms": [
+        "base speed",
+        "movement rate",
+        "human movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Physical characteristics",
+      "condition": "Character is a Human",
+      "outcome": "Character's size category is Medium",
+      "related_search_terms": [
+        "size category",
+        "human size",
+        "reach"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Character knows Common language",
+      "related_search_terms": [
+        "starting languages",
+        "racial languages",
+        "human languages"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Character selects Human race",
+      "outcome": "Character can choose one additional language to know",
+      "related_search_terms": [
+        "extra language",
+        "optional language",
+        "human linguistics"
+      ]
+    }
+  ],
+  "description_text": "name: Human\nspeed: 30\nability_bonuses:\n  - entry:\n    ability_score:\n      name: STR\n    bonus: 1\n  - entry:\n    ability_score:\n      name: DEX\n    bonus: 1\n  - entry:\n    ability_score:\n      name: CON\n    bonus: 1\n  - entry:\n    ability_score:\n      name: INT\n    bonus: 1\n  - entry:\n    ability_score:\n      name: WIS\n    bonus: 1\n  - entry:\n    ability_score:\n      name: CHA\n    bonus: 1\nage: Humans reach adulthood in their late teens and live less than a century.\nalignment: Humans tend toward no particular alignment. The best and the worst are found among them.\nsize: Medium\nsize_description: Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.\nlanguages:\n  - entry:\n    name: Common\nlanguage_options:\n  choose: 1\n  type: languages\n  from:\n    option_set_type: options_array\n    options:\n      - entry:\n        option_type: reference\n        item:\n          name: Dwarvish\n      - entry:\n        option_type: reference\n        item:\n          name: Elvish\n      - entry:\n        option_type: reference\n        item:\n          name: Giant\n      - entry:\n        option_type: reference\n        item:\n          name: Gnomish\n      - entry:\n        option_type: reference\n        item:\n          name: Goblin\n      - entry:\n        option_type: reference\n        item:\n          name: Halfling\n      - entry:\n        option_type: reference\n        item:\n          name: Orc\n      - entry:\n        option_type: reference\n        item:\n          name: Abyssal\n      - entry:\n        option_type: reference\n        item:\n          name: Celestial\n      - entry:\n        option_type: reference\n        item:\n          name: Draconic\n      - entry:\n        option_type: reference\n        item:\n          name: Deep Speech\n      - entry:\n        option_type: reference\n        item:\n          name: Infernal\n      - entry:\n        option_type: reference\n        item:\n          name: Primordial\n      - entry:\n        option_type: reference\n        item:\n          name: Sylvan\n      - entry:\n        option_type: reference\n        item:\n          name: Undercommon\nlanguage_desc: You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.",
+  "tags": [
+    "race",
+    "player_character"
+  ],
+  "related_search_terms": [
+    "human race",
+    "human traits",
+    "human abilities",
+    "standard human"
+  ]
+}

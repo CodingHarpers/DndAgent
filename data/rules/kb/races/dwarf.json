@@ -1,0 +1,130 @@
+{
+  "entity_name": "Dwarf",
+  "logic_type": "race_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Base walking speed is 25 feet",
+      "related_search_terms": [
+        "movement speed",
+        "racial speed",
+        "dwarf movement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Constitution score increases by 2",
+      "related_search_terms": [
+        "stat bonus",
+        "racial bonus",
+        "ability score increase",
+        "con bonus"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Creature's size category is Medium",
+      "related_search_terms": [
+        "dwarf height",
+        "dwarf weight",
+        "size category",
+        "racial size"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains proficiency in Common language (speak, read, write)",
+      "related_search_terms": [
+        "racial language",
+        "common tongue",
+        "language proficiency"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains proficiency in Dwarvish language (speak, read, write)",
+      "related_search_terms": [
+        "racial language",
+        "dwarven language",
+        "language proficiency"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains the Darkvision racial trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "dwarf trait"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains the Dwarven Resilience racial trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "dwarf trait"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains the Stonecunning racial trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "dwarf trait"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains the Dwarven Combat Training racial trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "dwarf trait"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player chooses Dwarf race",
+      "outcome": "Gains the Tool Proficiency racial trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "dwarf trait"
+      ]
+    }
+  ],
+  "description_text": "Dwarves have a speed of 25 feet. Their Constitution score increases by 2. Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Their size is Medium. They can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak. Dwarves gain the following racial traits: Darkvision, Dwarven Resilience, Stonecunning, Dwarven Combat Training, and Tool Proficiency.",
+  "tags": [
+    "race",
+    "player character",
+    "dwarf"
+  ],
+  "related_search_terms": [
+    "dwarf race",
+    "dwarven character",
+    "racial abilities",
+    "phb race"
+  ]
+}

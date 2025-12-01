@@ -44,7 +44,7 @@ class RuleLogic(BaseModel):
     exceptions: List[str] = Field(default_factory=list)
     description_text: str = Field(
         ..., 
-        description="The summarized text from the rulebook. Critical for semantic retrieval and citation."
+        description="The text from the rulebook. Critical for semantic retrieval and citation."
     )
     is_exception: bool = Field(default=False, description="True if this rule specifically overrides a general rule (Specific Beats General).")
     related_search_terms: List[str] = Field(default_factory=list)
@@ -96,7 +96,7 @@ class RuleGenerationPipeline:
         """
         
         # Strategy routing: decide which logic to use
-        if category in ["spells", "features", "conditions"]:
+        if category in ["spells", "features", "conditions", "races"]:
             # === Strategy A: Entity Extraction ===
             target_schema = EntityLogic
             system_instruction = SYSTEM_PROMPT_ENTITY_LOGIC
@@ -122,7 +122,7 @@ class RuleGenerationPipeline:
             print(f"Extraction failed: {e}")
             return None
 if __name__ == "__main__":
-    ingest_pipeline = IngestPipeline()
+    ingest_pipeline = RuleGenerationPipeline()
     fireball_text = """
     A bright streak flashes from your pointing finger to a point you choose within range...
     Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. 

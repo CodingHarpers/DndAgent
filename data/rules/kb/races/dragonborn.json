@@ -1,0 +1,84 @@
+{
+  "entity_name": "Dragonborn",
+  "logic_type": "racial_trait",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Race is Dragonborn",
+      "outcome": "Strength ability score increases by 2",
+      "related_search_terms": [
+        "ability score increase",
+        "racial bonus",
+        "strength bonus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Race is Dragonborn",
+      "outcome": "Charisma ability score increases by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "racial bonus",
+        "charisma bonus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Movement",
+      "condition": "Race is Dragonborn",
+      "outcome": "Base walking speed is 30 feet",
+      "related_search_terms": [
+        "movement speed",
+        "racial speed",
+        "walk speed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Race is Dragonborn",
+      "outcome": "Character size is Medium",
+      "related_search_terms": [
+        "creature size",
+        "racial size",
+        "medium creature"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Race is Dragonborn",
+      "outcome": "Proficiency in Common language (speak, read, write)",
+      "related_search_terms": [
+        "racial language",
+        "language proficiency",
+        "common tongue"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Race is Dragonborn",
+      "outcome": "Proficiency in Draconic language (speak, read, write)",
+      "related_search_terms": [
+        "racial language",
+        "language proficiency",
+        "dragon language"
+      ]
+    }
+  ],
+  "description_text": "name: Dragonborn\nspeed: 30\nability_bonuses:\n  - entry:\n    ability_score:\n      name: STR\n    bonus: 2\n  - entry:\n    ability_score:\n      name: CHA\n    bonus: 1\nalignment: Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil. Most dragonborn are good, but those who side with evil can be terrible villains.\nage: Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.\nsize: Medium\nsize_description: Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.\nlanguages:\n  - entry:\n    name: Common\n  - entry:\n    name: Draconic\nlanguage_desc: You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.\ntraits:\n  - entry:\n    name: Draconic Ancestry\n  - entry:\n    name: Breath Weapon\n  - entry:\n    name: Damage Resistance",
+  "tags": [
+    "race",
+    "playable race",
+    "character creation"
+  ],
+  "related_search_terms": [
+    "dragon race",
+    "lizardfolk",
+    "player character options",
+    "character stats"
+  ]
+}

@@ -2,7 +2,6 @@ import os
 import json
 from langchain_chroma import Chroma
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -81,7 +80,7 @@ Your goal is to function as a real-time "Rule Knowledge Base," interpreting the 
 * [Status Effect]: e.g., "Mark target as 'Prone' if check fails."
 
 **Logic Trace:**
-(Show the IF/THEN logic chain used. E.g., "IF Target is Blinded -> THEN Advantage on Attack.")
+(Show the IF/THEN logic chain used. E.g., "Logic Trace: IF Creature is trying to Hide -> THEN Contest (Stealth vs Perception). IF Obstacle covers 50% of body -> THEN Target has Half Cover.")
 
 Answer:"""
 
@@ -112,6 +111,15 @@ Answer:"""
         Input: List[Document]
         Output: Dict {"context": str, "rules": str}
         """
+        # Drop duplicates based on page_content
+        unique_docs = []
+        seen_content = set()
+        for d in docs:
+            if d.page_content not in seen_content:
+                unique_docs.append(d)
+                seen_content.add(d.page_content)
+        docs = unique_docs
+
         context_parts = []
         rules_parts = []
         with open("docs.txt", "w") as f:
@@ -192,3 +200,5 @@ if __name__ == "__main__":
     result = lawyer.check_rule("The player is casting a spell and the target is immune to the spell.")
     print("Result:")
     print(result)
+    with open("result.txt", "w") as f:
+        f.write(result)
