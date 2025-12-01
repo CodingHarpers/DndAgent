@@ -147,8 +147,18 @@ At 10th level, you can choose a second option from the Fighting Style class feat
 
 ## Lawyer Response Example
 ```
-Q: What is the Fighter class? 
-A: The Fighter class focuses on mastery of combat, granting powerful martial abilities and a high number of attacks. Fighters gain a d10 Hit Die, proficiency in all armor, shields, simple and martial weapons, and Strength and Constitution saving throws. They choose two skills from a specific list. Their progression involves gaining Fighting Styles, Action Surges for extra actions, the ability to reroll failed saves with Indomitable, and multiple opportunities for Extra Attack, allowing them to make up to three attacks per action. They also select a Martial Archetype at level 3, which grants additional features at levels 3, 7, 10, 15, and 18, specializing their combat style. Fighters receive numerous Ability Score Improvements throughout their career.
+Q: The player is casting a spell and the target is immune to the spell.
+A: **Rule Interpretation:**
+When a creature is immune to a spell, the spell's effects fail to manifest on that specific target. The spell is still considered cast, and any spell slot or components are expended, but the immune target experiences no direct impact from the spell. This immunity can arise from various conditions, such as being a specific creature type for certain spells (e.g., constructs or undead for *Heal*), possessing immunity to a core condition of the spell (e.g., immunity to the charmed condition for *Irresistible Dance* or *Suggestion*), being a shapechanger for *True Polymorph*, or being protected by another effect like *Mind Blank* against divination spells or certain *Wish* effects.
 
-**Reasoning:** This information is directly synthesized from the "Fighter" documents provided in the RETRIEVED DOCUMENTS section, as it offers a comprehensive overview of the class.
+**DM Action Items:**
+*   Inform the player that the target is immune to the spell.
+*   Confirm that the spell slot and any consumed material components are expended, as the spell was successfully cast but failed to affect the immune target.
+*   State that the spell's intended effect on that target does not occur.
+
+**Logic Trace:**
+*   IF "The player is casting a spell"
+*   AND "the target is immune to the spell" (Trigger: On Cast/Initial spell effect, based on specific spell rules such as `[Irresistible Dance] IF Target is immune to the Charmed condition THEN Target is immune to this spell`, `[Suggestion] IF Target is immune to the charmed condition THEN Target is immune to this spell`, `[True Polymorph] IF Target creature is a Shapechanger THEN Spell has no effect on target`, `[Heal] IF Target is a Construct THEN Spell has no effect on target`, or protection from another spell like `[Mind Blank] IF Target is under the effect of Mind Blank (Trigger: A divination spell attempts to affect target) THEN The divination spell fails to affect target`)
+*   THEN "Target is immune to this spell" OR "Spell has no effect on target."
+*   THEREFORE, the spell's effects do not apply to the specified immune target.
 ```

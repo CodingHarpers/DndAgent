@@ -8,6 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from ingestPipeline import UnifiedDndLoader
+from langchain_openai import OpenAIEmbeddings
 import dotenv
 dotenv.load_dotenv()
 
@@ -18,8 +19,7 @@ class RulesLawyer:
         self.kb_path = "data/rules/kb"
         
         # Initialize Embeddings
-        print("Initializing HuggingFace Embeddings (running locally)...")
-        self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         # Initialize VectorStore
         # Check if DB exists and is populated
         if os.path.exists(self.persist_dir) and os.listdir(self.persist_dir):
@@ -52,25 +52,36 @@ class RulesLawyer:
             print("vector store built")
         self.retriever = self.vectorstore.as_retriever(search_kwargs={"k": 10})
         print("retriever initialized")
-        
-        print("testing retrieved documents...")
-        print(self.retriever.invoke("What is the Fighter class?"))
         # Define Prompt 
-        template = """You are the Dungeon Master's Logic Engine.
+        template = """You are the **Dungeon Master's Intelligent Rule Assistant**.
+Your goal is to function as a real-time "Rule Knowledge Base," interpreting the input scenario based strictly on the provided RULES and DOCUMENTS to guide the DM's next steps.
 
-### 1. RETRIEVED DOCUMENTS (Context Reference)
+### 1. RETRIEVED DOCUMENTS (Context & Definitions)
 {context}
 
-### 2. ACTIVE RULES (Logic Guidelines)
+### 2. ACTIVE RULES (Logic & Mechanics)
 {rules}
 
-### 3. USER QUERY
+### 3. DM'S QUERY / SCENARIO
 {question}
 
-### PROCESSING PROTOCOL
-1. **Priority**: Use 'ACTIVE RULES' for step-by-step logic. Use 'RETRIEVED DOCUMENTS' for definitions and edge cases.
-2. **Conflict**: Specific Entity Rules override General Rule Sections.
-3. **Output**: Verdict (Yes/No) followed by reasoning citing the specific rule used.
+### ADJUDICATION PROTOCOL
+1. **Analyze Triggers**: Check if the scenario matches the `Trigger` and `Condition` in the ACTIVE RULES.
+2. **Resolve Conflicts**: If a specific Entity Rule (e.g., a specific spell effect) contradicts a General Rule Section (e.g., general combat rules), the **Entity Rule overrides** (Specific Beats General).
+3. **Formulate Guidance**: Do not just state the rule. Tell the DM **exactly what mechanics to invoke** (e.g., "Ask for a DC 15 Dex Save").
+
+### OUTPUT FORMAT (Strictly follow this structure)
+**Rule Interpretation:**
+(Briefly explain the applicable rule logic based on the situation. Cite the source.)
+
+**DM Action Items:**
+(A clear checklist of what the DM needs to do *right now*.)
+* [Check/Save]: e.g., "Ask player to roll Strength (Athletics) check vs DC X."
+* [Calculation]: e.g., "Apply 8d6 Fire damage (half on success)."
+* [Status Effect]: e.g., "Mark target as 'Prone' if check fails."
+
+**Logic Trace:**
+(Show the IF/THEN logic chain used. E.g., "IF Target is Blinded -> THEN Advantage on Attack.")
 
 Answer:"""
 
@@ -103,12 +114,23 @@ Answer:"""
         """
         context_parts = []
         rules_parts = []
-        
+        with open("docs.txt", "w") as f:
+            for d in docs:
+                f.write(str(d))
+                f.write("\n\n")
+                f.write("--------------------------------")
+                f.write("\n\n")
+ 
         for d in docs:
             try:
                 # Restore original JSON from metadata
                 data = json.loads(d.metadata['original_json'])
                 doc_type = d.metadata['type']
+                with open("docs.txt", "a") as f:
+                    f.write(str(d))
+                    f.write("\n\n")
+                    f.write("--------------------------------")
+                    f.write("\n\n")
                 
                 if doc_type == "entity_or_class":
                     name = data.get('entity_name') or data.get('class_name')
@@ -146,13 +168,17 @@ Answer:"""
             except Exception as e:
                 print(f"Error parsing doc metadata: {e}")
                 continue
-                
+        with open("context_parts.txt", "w") as f:
+            f.write("\n\n".join(context_parts))
+        with open("rules_parts.txt", "w") as f:
+            f.write("\n".join(rules_parts))
+
         return {
             "context": "\n\n".join(context_parts),
             "rules": "\n".join(rules_parts)
         }
 
-    def adjudicate(self, question):
+    def check_rule(self, question):
         """
         Applies strict logic to determine the outcome.
         query: str
@@ -163,6 +189,6 @@ if __name__ == "__main__":
     print("Initializing RulesLawyer...")
     lawyer = RulesLawyer()
     print("Adjudicating...")
-    result = lawyer.adjudicate("What is the Fighter class?")
+    result = lawyer.check_rule("The player is casting a spell and the target is immune to the spell.")
     print("Result:")
     print(result)
