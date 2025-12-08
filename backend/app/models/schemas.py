@@ -1,0 +1,84 @@
+from pydantic import BaseModel, Field
+from typing import List, Optional, Dict, Any, Literal
+from datetime import datetime
+
+# --- Shared / Core Models ---
+
+class AgentMessage(BaseModel):
+    source: str
+    target: str
+    content: str
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+    timestamp: datetime = Field(default_factory=datetime.utcnow)
+
+# --- Memory Models ---
+
+class MemoryRecord(BaseModel):
+    session_id: str
+    timestamp: datetime
+    speaker: str
+    event_type: str  # e.g., "dialogue", "action", "system"
+    summary: str
+    raw_text: str
+    embedding: Optional[List[float]] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+class EntityNode(BaseModel):
+    id: str  # Unique ID in TKG
+    label: str  # e.g., "Character", "Location"
+    properties: Dict[str, Any]
+
+class RelationshipEdge(BaseModel):
+    source_id: str
+    target_id: str
+    type: str  # e.g., "LOCATED_IN", "KNOWS"
+    properties: Dict[str, Any] = Field(default_factory=dict)
+
+# --- Rule Models ---
+
+class RuleEntry(BaseModel):
+    rule_id: str
+    title: str
+    section: str
+    tags: List[str]
+    content: str
+    prerequisites: Optional[str] = None
+    effects: Optional[str] = None
+    exceptions: Optional[str] = None
+    source_ref: str
+
+class RuleAdjudicationRequeust(BaseModel):
+    query: str
+    context: str
+
+class RuleAdjudicationResult(BaseModel):
+    decision: Literal["ALLOWED", "DENIED", "ROLL_CHECK", "INFO"]
+    required_rolls: List[str] = Field(default_factory=list)
+    explanation: str
+    applied_rules: List[str] = Field(default_factory=list)
+
+# --- Narrative / Scene Models ---
+
+class Scene(BaseModel):
+    scene_id: str
+    title: str
+    narrative_text: str
+    location: str
+    characters_present: List[str]
+    world_state_diff: Dict[str, Any] = Field(default_factory=dict)
+    available_actions: List[str]
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+# --- API Request/Response Models ---
+
+class SessionStartRequest(BaseModel):
+    player_name: str
+    campaign_setting: Optional[str] = "Standard Fantasy"
+
+class PlayerInput(BaseModel):
+    session_id: str
+    text: str
+
+class TurnResponse(BaseModel):
+    scene: Scene
+    rule_outcome: Optional[RuleAdjudicationResult] = None
