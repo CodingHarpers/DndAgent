@@ -1,0 +1,112 @@
+{
+  "entity_name": "Phantom Steed",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Unoccupied space within range",
+      "outcome": "A Large quasi-real, horselike creature appears",
+      "related_search_terms": [
+        "summon",
+        "conjure",
+        "mount creation",
+        "creature summoning"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Creation",
+      "condition": "N/A",
+      "outcome": "Caster decides creature's appearance; creature is equipped with saddle, bit, and bridle",
+      "related_search_terms": [
+        "customization",
+        "riding gear",
+        "mount equipment"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Equipment Movement",
+      "condition": "Equipment created by spell is carried more than 10 feet away from the steed",
+      "outcome": "Equipment vanishes",
+      "related_search_terms": [
+        "equipment despawn",
+        "vanishing gear",
+        "tethered items",
+        "spell-created items"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "While steed exists",
+      "condition": "Creature is chosen by caster",
+      "outcome": "Chosen creature can ride the steed",
+      "related_search_terms": [
+        "mount usage",
+        "riding ability",
+        "transportation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While steed exists",
+      "condition": "N/A",
+      "outcome": "Steed uses Riding Horse statistics, except it has a speed of 100 feet and can travel 10 miles/hour (13 miles/hour at fast pace)",
+      "related_search_terms": [
+        "mount stats",
+        "movement speed",
+        "travel rate",
+        "horse stats"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "N/A",
+      "outcome": "Steed gradually fades, giving rider 1 minute to dismount",
+      "related_search_terms": [
+        "spell expiration",
+        "dismount grace period",
+        "mount fades"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Action taken",
+      "condition": "Caster uses an action to dismiss the steed",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "dismiss spell",
+        "early termination"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Damage taken",
+      "condition": "Steed takes any damage",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "damage ends spell",
+        "fragile summon",
+        "dispel by damage"
+      ]
+    }
+  ],
+  "description_text": "A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed. For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage.",
+  "tags": [
+    "mount",
+    "transportation",
+    "summoning",
+    "utility",
+    "spell",
+    "evocation"
+  ],
+  "related_search_terms": [
+    "horse summon",
+    "fast travel",
+    "magical mount",
+    "conjure steed",
+    "phantom mount"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "entity_name": "Two-Weapon Fighting Style",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making a bonus action attack as part of the Two-Weapon Fighting action",
+      "condition": "You have the Two-Weapon Fighting Style feature",
+      "outcome": "You can add your ability modifier to the damage roll of that bonus action attack",
+      "related_search_terms": [
+        "dual wielding damage",
+        "off-hand damage bonus",
+        "extra attack damage",
+        "fighting style damage"
+      ]
+    }
+  ],
+  "description_text": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
+  "tags": [
+    "fighting style",
+    "combat",
+    "damage",
+    "two-weapon fighting"
+  ],
+  "related_search_terms": [
+    "dual wielding",
+    "off-hand attack",
+    "bonus action attack",
+    "damage modifier",
+    "martial",
+    "fighter feature",
+    "ranger feature"
+  ]
+}

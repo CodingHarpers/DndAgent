@@ -1,0 +1,111 @@
+{
+  "entity_name": "Meteor Swarm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Player chooses four points they can see within range",
+      "outcome": "Four 40-foot-radius spheres are centered on the chosen points",
+      "related_search_terms": [
+        "AoE targeting",
+        "multiple areas",
+        "large area",
+        "spell placement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature within a 40-foot-radius sphere",
+      "condition": "Creature fails Dexterity saving throw",
+      "outcome": "Creature takes 20d6 fire damage AND 20d6 bludgeoning damage",
+      "related_search_terms": [
+        "fire damage",
+        "bludgeoning damage",
+        "failed save",
+        "high damage",
+        "area damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature within a 40-foot-radius sphere",
+      "condition": "Creature succeeds Dexterity saving throw",
+      "outcome": "Creature takes half of 20d6 fire damage AND half of 20d6 bludgeoning damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "reduced damage",
+        "area damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Area of effect interaction with geometry",
+      "condition": "A 40-foot-radius sphere encounters a corner",
+      "outcome": "The sphere spreads around corners",
+      "related_search_terms": [
+        "line of sight",
+        "cover",
+        "obscurement",
+        "area geometry",
+        "AoE spread"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature affected by multiple spheres",
+      "condition": "Creature is in the area of more than one fiery burst",
+      "outcome": "Creature is affected by damage only once",
+      "related_search_terms": [
+        "stacking effects",
+        "overlapping AoE",
+        "multiple hits",
+        "damage limit",
+        "single effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object within a 40-foot-radius sphere",
+      "condition": "Object is in the area",
+      "outcome": "Object takes damage",
+      "related_search_terms": [
+        "environmental damage",
+        "structure damage",
+        "destroying objects",
+        "property damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Flammable object within a 40-foot-radius sphere",
+      "condition": "Flammable object is in the area AND is NOT worn or carried",
+      "outcome": "Flammable object ignites",
+      "related_search_terms": [
+        "setting things on fire",
+        "environmental hazard",
+        "burning objects",
+        "combustion"
+      ]
+    }
+  ],
+  "description_text": "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius sphere centered on each point you choose must make a dexterity saving throw. The sphere spreads around corners. A creature takes 20d6 fire damage and 20d6 bludgeoning damage on a failed save, or half as much damage on a successful one. A creature in the area of more than one fiery burst is affected only once.The spell damages objects in the area and ignites flammable objects that aren't being worn or carried.",
+  "tags": [
+    "spell",
+    "evocation",
+    "level_9",
+    "damage",
+    "AoE",
+    "dex_save"
+  ],
+  "related_search_terms": [
+    "level 9 spell",
+    "area damage",
+    "fire damage",
+    "bludgeoning damage",
+    "dex save spell",
+    "ultimate spell",
+    "catastrophic damage"
+  ]
+}

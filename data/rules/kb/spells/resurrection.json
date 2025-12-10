@@ -1,0 +1,107 @@
+{
+  "entity_name": "Resurrection",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a dead creature AND Target has been dead for <= 100 years AND Target did NOT die of old age AND Target is NOT undead AND Target's soul is free AND Target's soul is willing",
+      "outcome": "Target returns to life with all its hit points",
+      "related_search_terms": [
+        "revive",
+        "bring back to life",
+        "death",
+        "ressurect",
+        "raise dead"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Target's Return to Life",
+      "condition": "Target was afflicted by poisons OR normal diseases at time of death",
+      "outcome": "All poisons are neutralized AND All normal diseases are cured",
+      "related_search_terms": [
+        "cure poison",
+        "cure disease",
+        "cleanse",
+        "heal affliction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Target's Return to Life",
+      "condition": "Target was afflicted by magical diseases OR curses OR similar effects at time of death AND These effects were NOT removed prior to casting the spell",
+      "outcome": "These magical diseases OR curses OR similar effects continue to afflict the target",
+      "related_search_terms": [
+        "magical curse",
+        "persistent effect",
+        "affliction",
+        "undealt with condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Target's Return to Life",
+      "condition": "Target had mortal wounds OR missing body parts at time of death",
+      "outcome": "All mortal wounds are closed AND All missing body parts are restored",
+      "related_search_terms": [
+        "regeneration",
+        "body repair",
+        "limbs restored",
+        "physical restoration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Target's Return to Life",
+      "condition": "Target has returned from the dead via this spell",
+      "outcome": "Target takes a -4 penalty to all attack rolls, saving throws, and ability checks",
+      "related_search_terms": [
+        "death penalty",
+        "resurrection sickness",
+        "weakened",
+        "post-death effect"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "After Target Finishes a Long Rest",
+      "condition": "Target is suffering from the post-resurrection penalty imposed by this spell",
+      "outcome": "The post-resurrection penalty is reduced by 1",
+      "related_search_terms": [
+        "penalty recovery",
+        "getting better",
+        "recovering from death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "The dead target has been dead for >= 1 year",
+      "outcome": "Caster cannot cast spells until they finish a long rest AND Caster has disadvantage on all attack rolls, ability checks, and saving throws until they finish a long rest",
+      "related_search_terms": [
+        "caster exhaustion",
+        "spell fatigue",
+        "ressurection cost",
+        "caster penalty",
+        "heavy cost"
+      ]
+    }
+  ],
+  "description_text": "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points. This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, they afflict the target on its return to life. This spell closes all mortal wounds and restores any missing body parts. Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears. Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.",
+  "tags": [
+    "healing",
+    "restoration",
+    "death",
+    "revival",
+    "cure"
+  ],
+  "related_search_terms": [
+    "bring back to life",
+    "revive",
+    "dead character",
+    "death penalty",
+    "death cost",
+    "caster exhaustion"
+  ]
+}

@@ -1,0 +1,1332 @@
+[
+  {
+    "source_chapter": "Dungeon Master's Guide - Traps",
+    "extracted_concepts": [
+      {
+        "concept_name": "Trap",
+        "definition": "A device or magical effect designed to harm, hinder, or capture creatures, often hidden in the environment.",
+        "rule_logic": {
+          "premise": "A creature encounters a hidden mechanism or magical ward.",
+          "implication": "The trap activates, potentially causing damage, status effects, or other harmful outcomes.",
+          "exceptions": [],
+          "description_text": "Traps are typically hidden dangers found in dungeons, wilderness, or structures, designed to protect areas or valuable items. They can be mechanical or magical in nature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is a trap",
+            "how traps work",
+            "types of traps",
+            "trap effects"
+          ]
+        },
+        "related_keywords": [
+          "hazard",
+          "danger",
+          "dungeon",
+          "mechanical",
+          "magical",
+          "device"
+        ]
+      },
+      {
+        "concept_name": "Detecting Traps",
+        "definition": "The process by which a creature discovers the presence and often the nature of a hidden trap.",
+        "rule_logic": {
+          "premise": "Creature actively searches for hazards OR Creature approaches a trap that grants a passive check (DM discretion).",
+          "implication": "Make an Intelligence (Investigation) check against the trap's DC. On success, the trap's presence is known.",
+          "exceptions": [
+            "Perception check for clearly visible but camouflaged traps.",
+            "Specific features (e.g., Rogue's expertise) may grant advantage or bypass checks."
+          ],
+          "description_text": "Characters can search for traps by making an Intelligence (Investigation) check. The DM sets the DC based on the trap's cunning and concealment. Some traps might also be noticed passively if a character's passive Perception is high enough. Once detected, the character usually learns its location and general nature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to find traps",
+            "spotting traps",
+            "investigation check traps",
+            "passive perception traps",
+            "dungeon hazards"
+          ]
+        },
+        "related_keywords": [
+          "detection",
+          "search",
+          "investigation",
+          "perception",
+          "discovery",
+          "hidden"
+        ]
+      },
+      {
+        "concept_name": "Disarming Traps",
+        "definition": "The act of disabling or bypassing a detected trap to prevent its activation.",
+        "rule_logic": {
+          "premise": "A character has detected a trap and has appropriate tools (e.g., Thieves' Tools) and intends to disable it.",
+          "implication": "Make a Dexterity (Thieves' Tools) check against the trap's DC. On success, the trap is disarmed. On failure, the trap may activate or become more dangerous.",
+          "exceptions": [
+            "Magical traps may require an Intelligence (Arcana) check or a specific spell (e.g., Dispel Magic).",
+            "Some traps cannot be disarmed and must be avoided or triggered."
+          ],
+          "description_text": "Once a trap is found, a character can attempt to disarm it. This usually requires proficiency with Thieves' Tools and a Dexterity (Thieves' Tools) check against a DC set by the DM. Failing the check might trigger the trap or have other negative consequences. Magical traps might require different methods, such as an Intelligence (Arcana) check to understand or a Dispel Magic spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to disable traps",
+            "thieves tools traps",
+            "dispel magic traps",
+            "bypassing traps",
+            "trap disarm check"
+          ]
+        },
+        "related_keywords": [
+          "disabling",
+          "bypassing",
+          "thieves' tools",
+          "dexterity",
+          "arcana",
+          "challenge rating"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "traps"
+  },
+  {
+    "source_chapter": "Traps",
+    "extracted_concepts": [
+      {
+        "concept_name": "Trap",
+        "definition": "A hazard encountered in various environments, designed to cause harm or impede progress, which can be either mechanical or magical in nature.",
+        "rule_logic": {
+          "premise": "A dangerous mechanism or magical effect is encountered in an environment",
+          "implication": "The entity is identified as a Trap, potentially causing death, injury, or other negative effects upon activation",
+          "exceptions": [],
+          "description_text": "Traps can be found almost anywhere. One wrong step in an ancient tomb might trigger a series of scything blades, which cleave through armor and bone. The seemingly innocuous vines that hang over a cave entrance might grasp and choke anyone who pushes through them. A net hidden among the trees might drop on travelers who pass underneath. In a fantasy game, unwary adventurers can fall to their deaths, be burned alive, or fall under a fusillade of poisoned darts. A trap can be either mechanical or magical in nature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is a trap",
+            "dnd hazards",
+            "environmental dangers",
+            "how traps work"
+          ]
+        },
+        "related_keywords": [
+          "hazard",
+          "danger",
+          "environmental",
+          "mechanical",
+          "magical"
+        ]
+      },
+      {
+        "concept_name": "Mechanical Trap",
+        "definition": "A type of trap that relies on a physical mechanism to operate.",
+        "rule_logic": {
+          "premise": "A trap functions through a physical mechanism (e.g., spring, lever, pressure plate)",
+          "implication": "The trap is classified as a Mechanical Trap",
+          "exceptions": [],
+          "description_text": "Mechanical traps include pits, arrow traps, falling blocks, water-filled rooms, whirling blades, and anything else that depends on a mechanism to operate.",
+          "is_exception": false,
+          "related_search_terms": [
+            "examples of mechanical traps",
+            "physical traps",
+            "non-magical traps"
+          ]
+        },
+        "related_keywords": [
+          "mechanism",
+          "physical",
+          "pit",
+          "arrow trap",
+          "falling block"
+        ]
+      },
+      {
+        "concept_name": "Magic Trap",
+        "definition": "A type of trap that is magical in nature, either a magical device trap or a spell trap.",
+        "rule_logic": {
+          "premise": "A trap's function is derived from magical effects or spells",
+          "implication": "The trap is classified as a Magic Trap",
+          "exceptions": [],
+          "description_text": "Magic traps are either magical device traps or spell traps.",
+          "is_exception": false,
+          "related_search_terms": [
+            "examples of magic traps",
+            "magical hazards",
+            "spell traps vs device traps"
+          ]
+        },
+        "related_keywords": [
+          "magical",
+          "spell",
+          "device"
+        ]
+      },
+      {
+        "concept_name": "Magical Device Trap",
+        "definition": "A type of magic trap that initiates spell effects when activated.",
+        "rule_logic": {
+          "premise": "A Magic Trap is activated and triggers pre-programmed spell effects",
+          "implication": "The trap is classified as a Magical Device Trap",
+          "exceptions": [],
+          "description_text": "Magical device traps initiate spell effects when activated.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are magical device traps",
+            "spell casting traps",
+            "device traps"
+          ]
+        },
+        "related_keywords": [
+          "magical",
+          "device",
+          "spell effects",
+          "activation"
+        ]
+      },
+      {
+        "concept_name": "Spell Trap",
+        "definition": "A type of magic trap that utilizes specific spells, such as *glyph of warding* or *symbol*, to function as a trap.",
+        "rule_logic": {
+          "premise": "A Magic Trap is formed by a spell (e.g., glyph of warding, symbol) specifically designed to function as a trap",
+          "implication": "The trap is classified as a Spell Trap",
+          "exceptions": [],
+          "description_text": "Spell traps are spells such as *glyph of warding* and *symbol* that function as traps.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are spell traps",
+            "glyph of warding trap",
+            "symbol trap",
+            "spell as trap"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "glyph of warding",
+          "symbol",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Traps",
+    "_source_file": "traps"
+  },
+  {
+    "source_chapter": "Dungeon Master's Guide - Traps in Play",
+    "extracted_concepts": [
+      {
+        "concept_name": "Trap Triggering",
+        "definition": "The conditions or actions that cause a trap to activate.",
+        "rule_logic": {
+          "premise": "A creature goes somewhere or touches something that the trap's creator intended to protect",
+          "implication": "The trap activates",
+          "exceptions": [
+            "Some magic traps (e.g., glyph of warding) may have more complicated conditions, such as a password that prevents activation."
+          ],
+          "description_text": "Most traps are triggered when a creature goes somewhere or touches something that the trap's creator wanted to protect. Common triggers include stepping on a pressure plate or a false section of floor, pulling a trip wire, turning a doorknob, and using the wrong key in a lock. Magic traps are often set to go off when a creature enters an area or touches an object.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do traps activate",
+            "what triggers a trap",
+            "common trap triggers",
+            "magic trap activation conditions"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "activation",
+          "trigger",
+          "pressure plate",
+          "trip wire",
+          "magic trap"
+        ]
+      },
+      {
+        "concept_name": "Trap Detection (Active Search)",
+        "definition": "The method by which a character actively searches for and identifies a trap's presence.",
+        "rule_logic": {
+          "premise": "A character actively looks for a trap",
+          "implication": "The character can attempt a Wisdom (Perception) check against the trap's DC. On a success, the trap is detected.",
+          "exceptions": [],
+          "description_text": "A character actively looking for a trap can attempt a Wisdom (Perception) check against the trap's DC. You shouldn't allow die rolling to override clever play and good planning.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to find traps",
+            "what check to detect traps",
+            "perception check for traps",
+            "actively searching for traps"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "detection",
+          "perception",
+          "wisdom",
+          "skill check"
+        ]
+      },
+      {
+        "concept_name": "Trap Detection (Passive)",
+        "definition": "The method by which a character might notice a trap without actively searching for it.",
+        "rule_logic": {
+          "premise": "The DM compares the trap's detection DC with a character's passive Wisdom (Perception) score",
+          "implication": "If the character's passive Wisdom (Perception) score meets or exceeds the trap's DC, the character notices the trap in passing.",
+          "exceptions": [],
+          "description_text": "You can also compare the DC to detect the trap with each character's passive Wisdom (Perception) score to determine whether anyone in the party notices the trap in passing.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do I notice traps automatically",
+            "passive perception traps",
+            "trap detection without searching"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "detection",
+          "passive perception",
+          "wisdom",
+          "passive score"
+        ]
+      },
+      {
+        "concept_name": "Trap Detection (Obvious)",
+        "definition": "Situations where a trap's presence is unequivocally revealed by a character's actions without requiring an ability check.",
+        "rule_logic": {
+          "premise": "An action would clearly reveal the trap's presence (e.g., lifting a rug that conceals a pressure plate)",
+          "implication": "The character discovers the trap without making an ability check.",
+          "exceptions": [],
+          "description_text": "You should allow a character to discover a trap without making an ability check if an action would clearly reveal the trap's presence. For example, if a character lifts a rug that conceals a pressure plate, the character has found the trigger and no check is required.",
+          "is_exception": true,
+          "related_search_terms": [
+            "do I roll for obvious traps",
+            "when is a trap obvious",
+            "no check for trap discovery"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "detection",
+          "obvious",
+          "no check"
+        ]
+      },
+      {
+        "concept_name": "Trap Disarming (Physical)",
+        "definition": "The process of rendering a detected trap harmless or temporarily inactive through physical manipulation.",
+        "rule_logic": {
+          "premise": "A trap is detected, and a character attempts to disarm it",
+          "implication": "The DM might call for an Intelligence (Investigation) check to deduce the method, followed by a Dexterity check using thieves' tools to perform the sabotage.",
+          "exceptions": [],
+          "description_text": "If the adventurers detect a trap before triggering it, they might be able to disarm it, either permanently or long enough to move past it. You might call for an Intelligence (Investigation) check for a character to deduce what needs to be done, followed by a Dexterity check using thieves' tools to perform the necessary sabotage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to disarm a trap",
+            "disabling traps",
+            "thieves' tools for traps",
+            "investigation for traps",
+            "dexterity check traps"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "disarm",
+          "disable",
+          "investigation",
+          "dexterity",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Magic Trap Detection/Disarming",
+        "definition": "Specific rules for identifying and neutralizing traps that are magical in nature.",
+        "rule_logic": {
+          "premise": "A character attempts to detect or disarm a magic trap",
+          "implication": "Any character can attempt an Intelligence (Arcana) check. The DCs are the same regardless of the check used.",
+          "exceptions": [
+            "Dispel magic has a chance of disabling most magic traps, using a DC specified in the trap's description."
+          ],
+          "description_text": "Any character can attempt an Intelligence (Arcana) check to detect or disarm a magic trap, in addition to any other checks noted in the trap's description. The DCs are the same regardless of the check used. In addition, *dispel magic* has a chance of disabling most magic traps. A magic trap's description provides the DC for the ability check made when you use *dispel magic*.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to detect magic traps",
+            "disarm magic trap",
+            "arcana check magic trap",
+            "dispel magic on traps"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "arcana",
+          "dispel magic",
+          "detection",
+          "disarming"
+        ]
+      },
+      {
+        "concept_name": "Trap Bypassing (Clever Play)",
+        "definition": "Circumventing a trap's effects through creative actions rather than direct disarming.",
+        "rule_logic": {
+          "premise": "Characters discover a trap and use clever methods (e.g., prop a shield, push with an iron rod) to avoid its direct effects",
+          "implication": "The trap still triggers, but its effects are safely negated or redirected, potentially without requiring a check.",
+          "exceptions": [],
+          "description_text": "Rather than simply open the chest, they prop a shield in front of it and push the chest open at a distance with an iron rod. In this case, the trap still triggers, but the hail of needles fires harmlessly into the shield.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to avoid traps",
+            "clever ways to deal with traps",
+            "bypassing traps",
+            "shielding from traps"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "bypass",
+          "avoid",
+          "clever",
+          "strategy"
+        ]
+      },
+      {
+        "concept_name": "Trap Severity Categories",
+        "definition": "A classification system for traps based on their potential to harm characters, influencing their DCs, attack bonuses, and damage.",
+        "rule_logic": {
+          "premise": "A trap is assigned a severity category (Setback, Dangerous, or Deadly)",
+          "implication": "The trap's Save DC, Attack Bonus, and Damage Severity are determined according to the 'Trap Save DCs and Attack Bonuses' and 'Damage Severity by Level' tables.",
+          "exceptions": [],
+          "description_text": "The attack bonus of a trap, the save DC to resist its effects, and the damage it deals can vary depending on the trap's severity. Use the Trap Save DCs and Attack Bonuses table and the Damage Severity by Level table for suggestions based on three levels of trap severity. A trap intended to be a setback is unlikely to kill or seriously harm characters of the indicated levels, whereas a dangerous trap is likely to seriously injure (and potentially kill) characters of the indicated levels. A deadly trap is likely to kill characters of the indicated levels.",
+          "is_exception": false,
+          "related_search_terms": [
+            "trap difficulty levels",
+            "how much damage do traps do",
+            "trap save dc by level",
+            "trap attack bonus",
+            "setback trap",
+            "dangerous trap",
+            "deadly trap"
+          ]
+        },
+        "related_keywords": [
+          "trap",
+          "severity",
+          "setback",
+          "dangerous",
+          "deadly",
+          "save DC",
+          "attack bonus",
+          "damage"
+        ]
+      },
+      {
+        "concept_name": "Complex Trap Activation",
+        "definition": "A type of trap that, once triggered, continues to execute a series of actions each round, mimicking a combat encounter.",
+        "rule_logic": {
+          "premise": "A complex trap is activated",
+          "implication": "The trap rolls initiative (using its initiative bonus), and on its turn, it activates again, often taking an action or producing a dynamic challenge.",
+          "exceptions": [],
+          "description_text": "Complex traps work like standard traps, except once activated they execute a series of actions each round. When a complex trap activates, it rolls initiative. The trap's description includes an initiative bonus. On its turn, the trap activates again, often taking an action. It might make successive attacks against intruders, create an effect that changes over time, or otherwise produce a dynamic challenge.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are complex traps",
+            "how do complex traps work",
+            "complex trap initiative",
+            "dynamic traps"
+          ]
+        },
+        "related_keywords": [
+          "complex trap",
+          "activation",
+          "initiative",
+          "ongoing effect",
+          "combat encounter"
+        ]
+      }
+    ],
+    "_chunk_header": "Traps in Play",
+    "_source_file": "traps"
+  },
+  {
+    "source_chapter": "Sample Traps",
+    "extracted_concepts": [
+      {
+        "concept_name": "Collapsing Roof Trap",
+        "definition": "A mechanical trap that uses a trip wire to collapse supports, bringing down a section of ceiling.",
+        "rule_logic": {
+          "premise": "Character attempts to spot trip wire",
+          "implication": "Successful DC 10 perception allows spotting the trip wire.",
+          "exceptions": [],
+          "description_text": "The DC to spot the trip wire is 10.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot trip wire dc",
+            "how to see collapsing roof trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "trip wire",
+          "bludgeoning damage",
+          "difficult terrain",
+          "Dexterity saving throw",
+          "thieves' tools",
+          "obstruction"
+        ]
+      },
+      {
+        "concept_name": "Collapsing Roof Trap - Disarming Trip Wire",
+        "definition": "The process of disarming the trip wire for a Collapsing Roof Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to disable trip wire using thieves' tools",
+          "implication": "Successful DC 15 Dexterity check disables the trip wire harmlessly.",
+          "exceptions": [
+            "A character without thieves' tools attempts this check with disadvantage using any edged weapon or tool."
+          ],
+          "description_text": "A successful DC 15 Dexterity check using thieves' tools disables the trip wire harmlessly. A character without thieves' tools can attempt this check with disadvantage using any edged weapon or edged tool. On a failed check, the trap triggers.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm collapsing roof trap",
+            "disable trip wire dc",
+            "thieves' tools trap disarm",
+            "disarm trap without tools"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "trip wire",
+          "disarm",
+          "Dexterity check",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Collapsing Roof Trap - Manual Trigger",
+        "definition": "A method to intentionally activate a Collapsing Roof Trap by knocking over supports.",
+        "rule_logic": {
+          "premise": "A character uses an action to knock over a beam supporting the unstable ceiling",
+          "implication": "The trap triggers.",
+          "exceptions": [],
+          "description_text": "As an action, a character can knock over a beam, causing the trap to trigger.",
+          "is_exception": false,
+          "related_search_terms": [
+            "trigger trap manually",
+            "activate collapsing roof"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "action",
+          "trigger"
+        ]
+      },
+      {
+        "concept_name": "Collapsing Roof Trap - Triggered Effects",
+        "definition": "The effects that occur when a Collapsing Roof Trap is triggered.",
+        "rule_logic": {
+          "premise": "The Collapsing Roof trap is triggered",
+          "implication": "Any creature in the area must succeed on a DC 15 Dexterity saving throw or take 22 (4d10) bludgeoning damage (half on success). The floor becomes difficult terrain.",
+          "exceptions": [],
+          "description_text": "When the trap is triggered, the unstable ceiling collapses. Any creature in the area beneath the unstable section must succeed on a DC 15 Dexterity saving throw, taking 22 (4d10) bludgeoning damage on a failed save, or half as much damage on a successful one. Once the trap is triggered, the floor of the area is filled with rubble and becomes difficult terrain.",
+          "is_exception": false,
+          "related_search_terms": [
+            "collapsing roof damage",
+            "trap bludgeoning damage",
+            "difficult terrain from rubble",
+            "Dexterity save for trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "bludgeoning damage",
+          "Dexterity saving throw",
+          "difficult terrain",
+          "area effect"
+        ]
+      },
+      {
+        "concept_name": "Falling Net Trap",
+        "definition": "A mechanical trap using a trip wire to release a net, restraining creatures.",
+        "rule_logic": {
+          "premise": "Character attempts to spot trip wire and net",
+          "implication": "Successful DC 10 perception allows spotting the trip wire and net.",
+          "exceptions": [],
+          "description_text": "The DC to spot the trip wire and net is 10.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot falling net trap dc",
+            "how to see net trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "trip wire",
+          "restrained",
+          "prone",
+          "Dexterity saving throw",
+          "thieves' tools",
+          "Strength check"
+        ]
+      },
+      {
+        "concept_name": "Falling Net Trap - Disarming Trip Wire",
+        "definition": "The process of disarming the trip wire for a Falling Net Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to break trip wire using thieves' tools",
+          "implication": "Successful DC 15 Dexterity check breaks the trip wire harmlessly.",
+          "exceptions": [
+            "A character without thieves' tools attempts this check with disadvantage using any edged weapon or tool."
+          ],
+          "description_text": "A successful DC 15 Dexterity check using thieves' tools breaks the trip wire harmlessly. A character without thieves' tools can attempt this check with disadvantage using any edged weapon or edged tool. On a failed check, the trap triggers.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm falling net trap",
+            "break trip wire dc",
+            "thieves' tools net trap",
+            "disarm trap without tools"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "trip wire",
+          "disarm",
+          "Dexterity check",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Falling Net Trap - Triggered Effects",
+        "definition": "The effects that occur when a Falling Net Trap is triggered.",
+        "rule_logic": {
+          "premise": "The Falling Net trap is triggered",
+          "implication": "The net is released, covering a 10-foot-square area. Creatures in the area are restrained. Creatures that fail a DC 10 Strength saving throw are also knocked prone.",
+          "exceptions": [],
+          "description_text": "When the trap is triggered, the net is released, covering a 10-foot-square area. Those in the area are trapped under the net and restrained, and those that fail a DC 10 Strength saving throw are also knocked prone.",
+          "is_exception": false,
+          "related_search_terms": [
+            "net trap effects",
+            "restrained condition",
+            "prone from net",
+            "Strength save for net trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "restrained",
+          "prone",
+          "Strength saving throw",
+          "area effect"
+        ]
+      },
+      {
+        "concept_name": "Falling Net Trap - Escaping the Net",
+        "definition": "Methods to escape or destroy the net from a Falling Net Trap.",
+        "rule_logic": {
+          "premise": "A creature is trapped under a net",
+          "implication": "As an action, the creature can make a DC 10 Strength check to free itself or another creature within its reach on a success. Alternatively, dealing 5 slashing damage to the net (AC 10) destroys a 5-foot-square section, freeing trapped creatures.",
+          "exceptions": [],
+          "description_text": "A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. The net has AC 10 and 20 hit points. Dealing 5 slashing damage to the net (AC 10) destroys a 5-foot-square section of it, freeing any creature trapped in that section.",
+          "is_exception": false,
+          "related_search_terms": [
+            "escape net trap",
+            "break net",
+            "Strength check to escape",
+            "attacking net"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "restrained",
+          "Strength check",
+          "action",
+          "slashing damage",
+          "AC",
+          "hit points"
+        ]
+      },
+      {
+        "concept_name": "Fire-Breathing Statue Trap",
+        "definition": "A magic trap activated by a pressure plate, causing a statue to emit a cone of fire.",
+        "rule_logic": {
+          "premise": "Character attempts to spot pressure plate or scorch marks",
+          "implication": "Successful DC 15 perception allows spotting the pressure plate and faint scorch marks.",
+          "exceptions": [],
+          "description_text": "The DC is 15 to spot the pressure plate, as well as faint scorch marks on the floor and walls.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot fire statue trap dc",
+            "how to see pressure plate"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "pressure plate",
+          "fire damage",
+          "cone",
+          "Dexterity saving throw",
+          "detect magic",
+          "dispel magic"
+        ]
+      },
+      {
+        "concept_name": "Fire-Breathing Statue Trap - Magic Detection",
+        "definition": "Detecting the magical nature of a Fire-Breathing Statue Trap.",
+        "rule_logic": {
+          "premise": "A spell or effect that can sense magic is used near the statue",
+          "implication": "An aura of evocation magic is revealed around the statue.",
+          "exceptions": [],
+          "description_text": "A spell or other effect that can sense the presence of magic, such as detect magic, reveals an aura of evocation magic around the statue.",
+          "is_exception": false,
+          "related_search_terms": [
+            "detect magic trap",
+            "fire statue magic type",
+            "evocation magic trap"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "detect magic",
+          "evocation"
+        ]
+      },
+      {
+        "concept_name": "Fire-Breathing Statue Trap - Triggering",
+        "definition": "The conditions under which a Fire-Breathing Statue Trap activates.",
+        "rule_logic": {
+          "premise": "More than 20 pounds of weight is placed on the pressure plate",
+          "implication": "The trap activates, causing the statue to release a 30-foot cone of fire.",
+          "exceptions": [],
+          "description_text": "The trap activates when more than 20 pounds of weight is placed on the pressure plate, causing the statue to release a 30-foot cone of fire.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fire statue trap trigger",
+            "pressure plate weight limit",
+            "cone of fire trap"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "pressure plate",
+          "trigger",
+          "fire",
+          "cone"
+        ]
+      },
+      {
+        "concept_name": "Fire-Breathing Statue Trap - Fire Cone Effects",
+        "definition": "The effects on creatures caught in the fire cone of a Fire-Breathing Statue Trap.",
+        "rule_logic": {
+          "premise": "A creature is in the 30-foot fire cone released by the statue",
+          "implication": "The creature must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "Each creature in the fire must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fire cone damage",
+            "Dexterity save fire",
+            "fire trap damage"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "fire damage",
+          "Dexterity saving throw",
+          "area effect"
+        ]
+      },
+      {
+        "concept_name": "Fire-Breathing Statue Trap - Disabling",
+        "definition": "Methods to disable or destroy a Fire-Breathing Statue Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to prevent activation or destroy the trap",
+          "implication": "Wedging an iron spike or other object under the pressure plate prevents activation. A successful *dispel magic* (DC 13) cast on the statue destroys the trap.",
+          "exceptions": [],
+          "description_text": "Wedging an iron spike or other object under the pressure plate prevents the trap from activating. A successful dispel magic (DC 13) cast on the statue destroys the trap.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm fire statue trap",
+            "stop pressure plate",
+            "dispel magic trap",
+            "destroy magic trap"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "disarm",
+          "dispel magic",
+          "pressure plate",
+          "spellcasting"
+        ]
+      },
+      {
+        "concept_name": "Simple Pit Trap",
+        "definition": "A basic pit trap, a hole covered by a camouflaged cloth.",
+        "rule_logic": {
+          "premise": "Character attempts to spot the pit",
+          "implication": "Successful DC 10 perception allows spotting the pit.",
+          "exceptions": [],
+          "description_text": "The DC to spot the pit is 10.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot simple pit dc",
+            "how to see pit trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "falling damage",
+          "Perception"
+        ]
+      },
+      {
+        "concept_name": "Simple Pit Trap - Triggered Effects",
+        "definition": "The effects on creatures triggering a Simple Pit Trap.",
+        "rule_logic": {
+          "premise": "A creature steps on the cloth covering a simple pit trap",
+          "implication": "The creature falls through, taking damage based on the pit's depth (usually 10 feet).",
+          "exceptions": [],
+          "description_text": "Anyone stepping on the cloth falls through and pulls the cloth down into the pit, taking damage based on the pit's depth (usually 10 feet, but some pits are deeper).",
+          "is_exception": false,
+          "related_search_terms": [
+            "simple pitfall damage",
+            "falling damage from trap",
+            "pit depth damage"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "falling damage",
+          "trigger"
+        ]
+      },
+      {
+        "concept_name": "Hidden Pit Trap",
+        "definition": "A pit trap with a cover constructed from material identical to the surrounding floor, which swings open when stepped on.",
+        "rule_logic": {
+          "premise": "Character attempts to discern an absence of foot traffic over the floor section",
+          "implication": "A successful DC 15 Wisdom (Perception) check discerns this absence.",
+          "exceptions": [],
+          "description_text": "A successful DC 15 Wisdom (Perception) check discerns an absence of foot traffic over the section of floor that forms the pit's cover.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot hidden pit dc",
+            "perception pit trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "trapdoor",
+          "falling damage",
+          "Wisdom Perception",
+          "Intelligence Investigation",
+          "arcane lock"
+        ]
+      },
+      {
+        "concept_name": "Hidden Pit Trap - Confirmation",
+        "definition": "Confirming the presence of a hidden pit trap after noticing anomalies.",
+        "rule_logic": {
+          "premise": "Character attempts to confirm a suspicious floor section is a pit cover",
+          "implication": "A successful DC 15 Intelligence (Investigation) check confirms it.",
+          "exceptions": [],
+          "description_text": "A successful DC 15 Intelligence (Investigation) check is necessary to confirm that the trapped section of floor is actually the cover of a pit.",
+          "is_exception": false,
+          "related_search_terms": [
+            "investigate pit trap dc",
+            "confirm hidden pit"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "Intelligence Investigation"
+        ]
+      },
+      {
+        "concept_name": "Hidden Pit Trap - Triggered Effects",
+        "definition": "The effects on creatures triggering a Hidden Pit Trap.",
+        "rule_logic": {
+          "premise": "A creature steps on the cover of a hidden pit trap",
+          "implication": "The cover swings open, causing the creature to fall into the pit below (usually 10 or 20 feet deep).",
+          "exceptions": [],
+          "description_text": "When a creature steps on the cover, it swings open like a trapdoor, causing the intruder to spill into the pit below. The pit is usually 10 or 20 feet deep but can be deeper.",
+          "is_exception": false,
+          "related_search_terms": [
+            "hidden pitfall damage",
+            "trapdoor fall"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "falling damage",
+          "trigger",
+          "trapdoor"
+        ]
+      },
+      {
+        "concept_name": "Hidden Pit Trap - Disabling",
+        "definition": "Methods to disable a Hidden Pit Trap.",
+        "rule_logic": {
+          "premise": "A hidden pit trap has been detected",
+          "implication": "An iron spike or similar object can be wedged between the cover and floor to prevent it from opening. The cover can also be magically held shut using *arcane lock* or similar magic.",
+          "exceptions": [],
+          "description_text": "Once the pit trap is detected, an iron spike or similar object can be wedged between the pit's cover and the surrounding floor in such a way as to prevent the cover from opening, thereby making it safe to cross. The cover can also be magically held shut using the arcane lock spell or similar magic.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm hidden pit",
+            "secure trapdoor",
+            "arcane lock trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "disarm",
+          "arcane lock",
+          "magic"
+        ]
+      },
+      {
+        "concept_name": "Locking Pit Trap",
+        "definition": "A hidden pit trap with a spring-loaded cover that snaps shut after a creature falls in, trapping them.",
+        "rule_logic": {
+          "premise": "A creature falls into a locking pit trap",
+          "implication": "The spring-loaded cover snaps shut, trapping the victim inside.",
+          "exceptions": [],
+          "description_text": "This pit trap is identical to a hidden pit trap, with one key exception: the trap door that covers the pit is spring-loaded. After a creature falls into the pit, the cover snaps shut to trap its victim inside.",
+          "is_exception": false,
+          "related_search_terms": [
+            "locking pitfall",
+            "trapped in pit"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "trapped",
+          "Strength check",
+          "Dexterity check",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Locking Pit Trap - Escaping/Opening",
+        "definition": "Methods to open or escape a Locking Pit Trap.",
+        "rule_logic": {
+          "premise": "Attempting to open the cover of a locking pit trap",
+          "implication": "A successful DC 20 Strength check is necessary to pry the cover open. The cover can also be smashed open. From inside, a DC 15 Dexterity check with thieves' tools (if mechanism is reachable and visible) can disable the spring. An external mechanism may also open it.",
+          "exceptions": [],
+          "description_text": "A successful DC 20 Strength check is necessary to pry the cover open. The cover can also be smashed open. A character in the pit can also attempt to disable the spring mechanism from the inside with a DC 15 Dexterity check using thieves' tools, provided that the mechanism can be reached and the character can see. In some cases, a mechanism (usually hidden behind a secret door nearby) opens the pit.",
+          "is_exception": false,
+          "related_search_terms": [
+            "open locking pit",
+            "escape pit trap",
+            "smash pit cover",
+            "disable pit mechanism"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "Strength check",
+          "Dexterity check",
+          "thieves' tools",
+          "action"
+        ]
+      },
+      {
+        "concept_name": "Spiked Pit Trap",
+        "definition": "A pit trap (simple, hidden, or locking) with sharpened wooden or iron spikes at the bottom.",
+        "rule_logic": {
+          "premise": "A creature falls into a spiked pit trap",
+          "implication": "The creature takes 11 (2d10) piercing damage from the spikes, in addition to any falling damage.",
+          "exceptions": [],
+          "description_text": "A creature falling into the pit takes 11 (2d10) piercing damage from the spikes, in addition to any falling damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spiked pit damage",
+            "piercing damage from pit",
+            "pit trap with spikes"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "spikes",
+          "piercing damage",
+          "falling damage"
+        ]
+      },
+      {
+        "concept_name": "Spiked Pit Trap - Poisoned Spikes",
+        "definition": "Spiked pit traps with poison smeared on the spikes.",
+        "rule_logic": {
+          "premise": "A creature takes piercing damage from poisoned spikes in a pit trap",
+          "implication": "The creature must make a DC 13 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "Even nastier versions have poison smeared on the spikes. In that case, anyone taking piercing damage from the spikes must also make a DC 13 Constitution saving throw, taking an 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "poisoned spikes damage",
+            "poison pit trap",
+            "Constitution save poison"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pit",
+          "spikes",
+          "poison damage",
+          "Constitution saving throw"
+        ]
+      },
+      {
+        "concept_name": "Poison Darts Trap",
+        "definition": "A mechanical trap activated by a pressure plate, firing poison-tipped darts from hidden tubes in the walls.",
+        "rule_logic": {
+          "premise": "Character attempts to spot dart holes or deduce pressure plate presence",
+          "implication": "Successful DC 15 perception spots dart holes. Successful DC 15 Intelligence (Investigation) deduces pressure plate.",
+          "exceptions": [],
+          "description_text": "The tiny holes in the walls are obscured by dust and cobwebs, or cleverly hidden amid bas-reliefs, murals, or frescoes that adorn the walls. The DC to spot them is 15. With a successful DC 15 Intelligence (Investigation) check, a character can deduce the presence of the pressure plate from variations in the mortar and stone used to create it, compared to the surrounding floor.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot dart holes dc",
+            "investigate pressure plate",
+            "hidden dart trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pressure plate",
+          "poison damage",
+          "piercing damage",
+          "ranged attack",
+          "Constitution saving throw",
+          "Intelligence Investigation",
+          "Perception"
+        ]
+      },
+      {
+        "concept_name": "Poison Darts Trap - Disabling",
+        "definition": "Methods to disable a Poison Darts Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to prevent trap activation",
+          "implication": "Wedging an iron spike or other object under the pressure plate prevents activation. Stuffing the holes with cloth or wax prevents darts from launching.",
+          "exceptions": [],
+          "description_text": "Wedging an iron spike or other object under the pressure plate prevents the trap from activating. Stuffing the holes with cloth or wax prevents the darts contained within from launching.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm poison darts trap",
+            "stop dart trap",
+            "block dart holes"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "disarm",
+          "pressure plate",
+          "obstruction"
+        ]
+      },
+      {
+        "concept_name": "Poison Darts Trap - Triggered Effects",
+        "definition": "The effects that occur when a Poison Darts Trap is triggered.",
+        "rule_logic": {
+          "premise": "More than 20 pounds of weight is placed on the pressure plate",
+          "implication": "Four darts are released. Each dart makes a ranged attack (+8 bonus) against a random target within 10 feet. A hit deals 2 (1d4) piercing damage, and the target must succeed on a DC 15 Constitution saving throw or take 11 (2d10) poison damage (half on success).",
+          "exceptions": [],
+          "description_text": "The trap activates when more than 20 pounds of weight is placed on the pressure plate, releasing four darts. Each dart makes a ranged attack with a +8 bonus against a random target within 10 feet of the pressure plate (vision is irrelevant to this attack roll). (If there are no targets in the area, the darts don't hit anything.) A target that is hit takes 2 (1d4) piercing damage and must succeed on a DC 15 Constitution saving throw, taking 11 (2d10) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "poison darts damage",
+            "dart trap attack roll",
+            "random target trap",
+            "Constitution save poison darts"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pressure plate",
+          "poison damage",
+          "piercing damage",
+          "ranged attack",
+          "Constitution saving throw",
+          "random target"
+        ]
+      },
+      {
+        "concept_name": "Poison Needle Trap",
+        "definition": "A mechanical trap with a poisoned needle hidden in a lock or object, delivering poison when opened incorrectly.",
+        "rule_logic": {
+          "premise": "Character attempts to deduce the trap's presence",
+          "implication": "A successful DC 20 Intelligence (Investigation) check allows deduction from lock alterations.",
+          "exceptions": [],
+          "description_text": "A successful DC 20 Intelligence (Investigation) check allows a character to deduce the trap's presence from alterations made to the lock to accommodate the needle.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot poison needle dc",
+            "investigate lock trap",
+            "hidden needle trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "lock",
+          "poison damage",
+          "piercing damage",
+          "poisoned condition",
+          "Constitution saving throw",
+          "Intelligence Investigation",
+          "Dexterity check",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Poison Needle Trap - Disarming",
+        "definition": "The process of disarming a Poison Needle Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to disarm the trap",
+          "implication": "A successful DC 15 Dexterity check using thieves' tools disarms the trap by removing the needle.",
+          "exceptions": [
+            "Unsuccessfully attempting to pick the lock triggers the trap."
+          ],
+          "description_text": "A successful DC 15 Dexterity check using thieves' tools disarms the trap, removing the needle from the lock. Unsuccessfully attempting to pick the lock triggers the trap.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm poison needle trap",
+            "thieves' tools lock trap",
+            "pick lock trap"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "lock",
+          "disarm",
+          "Dexterity check",
+          "thieves' tools"
+        ]
+      },
+      {
+        "concept_name": "Poison Needle Trap - Triggered Effects",
+        "definition": "The effects that occur when a Poison Needle Trap is triggered.",
+        "rule_logic": {
+          "premise": "The trap is triggered (e.g., by opening the chest without the proper key or failing to pick the lock)",
+          "implication": "The needle extends 3 inches, a creature within range takes 1 piercing damage and 11 (2d10) poison damage, and must succeed on a DC 15 Constitution saving throw or be poisoned for 1 hour.",
+          "exceptions": [],
+          "description_text": "When the trap is triggered, the needle extends 3 inches straight out from the lock. A creature within range takes 1 piercing damage and 11 (2d10) poison damage, and must succeed on a DC 15 Constitution saving throw or be poisoned for 1 hour.",
+          "is_exception": false,
+          "related_search_terms": [
+            "poison needle damage",
+            "poisoned condition from trap",
+            "Constitution save poison needle"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "poison damage",
+          "piercing damage",
+          "poisoned condition",
+          "Constitution saving throw",
+          "trigger",
+          "lock"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap",
+        "definition": "A mechanical trap where a heavy stone sphere is released from the ceiling by a pressure plate, rolling in a straight line.",
+        "rule_logic": {
+          "premise": "Character attempts to spot the trapdoor or pressure plate",
+          "implication": "Successful DC 15 Wisdom (Perception) spots the trapdoor and pressure plate.",
+          "exceptions": [],
+          "description_text": "With a successful DC 15 Wisdom (Perception) check, a character can spot the trapdoor and pressure plate.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spot rolling sphere trap dc",
+            "perceive pressure plate"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pressure plate",
+          "bludgeoning damage",
+          "Dexterity saving throw",
+          "prone",
+          "initiative",
+          "difficult terrain",
+          "Strength check",
+          "Wisdom Perception",
+          "Intelligence Investigation"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap - Investigation",
+        "definition": "Investigating the pressure plate and trapdoor of a Rolling Sphere Trap.",
+        "rule_logic": {
+          "premise": "Character searches the floor or inspects the ceiling",
+          "implication": "A successful DC 15 Intelligence (Investigation) check reveals the pressure plate (floor) or trapdoor (ceiling) from variations in stonework.",
+          "exceptions": [],
+          "description_text": "A search of the floor accompanied by a successful DC 15 Intelligence (Investigation) check reveals variations in the mortar and stone that betray the pressure plate's presence. The same check made while inspecting the ceiling notes variations in the stonework that reveal the trapdoor.",
+          "is_exception": false,
+          "related_search_terms": [
+            "investigate rolling sphere trap",
+            "find pressure plate",
+            "find trapdoor"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "Intelligence Investigation",
+          "pressure plate",
+          "trapdoor"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap - Disabling Pressure Plate",
+        "definition": "Method to disable the pressure plate of a Rolling Sphere Trap.",
+        "rule_logic": {
+          "premise": "Character attempts to prevent trap activation",
+          "implication": "Wedging an iron spike or other object under the pressure plate prevents the trap from activating.",
+          "exceptions": [],
+          "description_text": "Wedging an iron spike or other object under the pressure plate prevents the trap from activating.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disarm rolling sphere trap",
+            "block pressure plate"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "disarm",
+          "pressure plate",
+          "obstruction"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap - Triggered Activation",
+        "definition": "The activation sequence and movement of a Rolling Sphere Trap.",
+        "rule_logic": {
+          "premise": "20 or more pounds of pressure are placed on the pressure plate",
+          "implication": "A 10-foot-diameter stone sphere is released. All creatures roll initiative, the sphere rolls initiative with a +8 bonus, and moves 60 feet in a straight line on its turn.",
+          "exceptions": [],
+          "description_text": "When 20 or more pounds of pressure are placed on this trap's pressure plate, a hidden trapdoor in the ceiling opens, releasing a 10-foot-diameter rolling sphere of solid stone. Activation of the sphere requires all creatures present to roll initiative. The sphere rolls initiative with a +8 bonus. On its turn, it moves 60 feet in a straight line.",
+          "is_exception": false,
+          "related_search_terms": [
+            "rolling sphere initiative",
+            "trap initiative bonus",
+            "sphere movement speed",
+            "trigger rolling sphere"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "pressure plate",
+          "initiative",
+          "movement",
+          "sphere"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap - Movement and Contact",
+        "definition": "Rules for a creature's interaction with the moving Rolling Sphere Trap.",
+        "rule_logic": {
+          "premise": "The rolling sphere enters a creature's space, or a creature enters its space while it's rolling",
+          "implication": "The creature must succeed on a DC 15 Dexterity saving throw or take 55 (10d10) bludgeoning damage and be knocked prone. The sphere's space is difficult terrain.",
+          "exceptions": [],
+          "description_text": "The sphere can move through creatures' spaces, and creatures can move through its space, treating it as difficult terrain. Whenever the sphere enters a creature's space or a creature enters its space while it's rolling, that creature must succeed on a DC 15 Dexterity saving throw or take 55 (10d10) bludgeoning damage and be knocked prone.",
+          "is_exception": false,
+          "related_search_terms": [
+            "rolling sphere damage",
+            "Dexterity save vs sphere",
+            "prone from rolling trap",
+            "difficult terrain sphere"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "bludgeoning damage",
+          "Dexterity saving throw",
+          "prone",
+          "difficult terrain",
+          "movement"
+        ]
+      },
+      {
+        "concept_name": "Rolling Sphere Trap - Stopping the Sphere",
+        "definition": "Methods to slow or stop a Rolling Sphere Trap.",
+        "rule_logic": {
+          "premise": "A creature within 5 feet of the sphere attempts to slow it",
+          "implication": "As an action, a successful DC 20 Strength check reduces the sphere's speed by 15 feet. If speed drops to 0, it stops and is no longer a threat.",
+          "exceptions": [
+            "The sphere stops when it hits a wall or similar barrier. It can't go around corners, but can follow gentle curves."
+          ],
+          "description_text": "As an action, a creature within 5 feet of the sphere can attempt to slow it down with a DC 20 Strength check. On a successful check, the sphere's speed is reduced by 15 feet. If the sphere's speed drops to 0, it stops moving and is no longer a threat. The sphere stops when it hits a wall or similar barrier. It can't go around corners, but smart dungeon builders incorporate gentle, curving turns into nearby passages that allow the sphere to keep moving.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stop rolling sphere",
+            "slow sphere trap",
+            "Strength check vs sphere",
+            "sphere hit wall"
+          ]
+        },
+        "related_keywords": [
+          "mechanical trap",
+          "Strength check",
+          "action",
+          "speed",
+          "barrier"
+        ]
+      },
+      {
+        "concept_name": "Sphere of Annihilation Trap",
+        "definition": "A magic trap featuring a fixed, uncontrolled *sphere of annihilation* within a carved stone face, instantly obliterating anything that enters it.",
+        "rule_logic": {
+          "premise": "Character attempts to identify the magic within the carved stone face",
+          "implication": "A successful DC 20 Intelligence (Arcana) check reveals a *sphere of annihilation* that cannot be controlled or moved, otherwise identical to a normal *sphere of annihilation*.",
+          "exceptions": [],
+          "description_text": "A successful DC 20 Intelligence (Arcana) check reveals that the mouth contains a sphere of annihilation that can't be controlled or moved. It is otherwise identical to a normal sphere of annihilation.",
+          "is_exception": false,
+          "related_search_terms": [
+            "identify sphere of annihilation trap",
+            "arcana check magic trap",
+            "uncontrolled sphere of annihilation"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "sphere of annihilation",
+          "Intelligence Arcana",
+          "obliteration",
+          "dispel magic",
+          "sympathy"
+        ]
+      },
+      {
+        "concept_name": "Sphere of Annihilation Trap - Sympathy Enchantment",
+        "definition": "An optional enchantment on the Sphere of Annihilation Trap that compels creatures to approach it.",
+        "rule_logic": {
+          "premise": "Creature encounters a Sphere of Annihilation trap with a sympathy enchantment",
+          "implication": "Specified creatures feel an overwhelming urge to approach it and crawl inside its mouth, similar to the *sympathy* aspect of the *antipathy/sympathy* spell.",
+          "exceptions": [
+            "A successful *dispel magic* (DC 18) removes this enchantment."
+          ],
+          "description_text": "Some versions of the trap include an enchantment placed on the stone face, such that specified creatures feel an overwhelming urge to approach it and crawl inside its mouth. This effect is otherwise like the sympathy aspect of the antipathy/sympathy spell. A successful dispel magic (DC 18) removes this enchantment.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sympathy spell trap",
+            "compulsion trap",
+            "dispel sympathy enchantment",
+            "antipathy/sympathy spell"
+          ]
+        },
+        "related_keywords": [
+          "magic trap",
+          "sympathy",
+          "enchantment",
+          "compulsion",
+          "dispel magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Sample Traps",
+    "_source_file": "traps"
+  }
+]

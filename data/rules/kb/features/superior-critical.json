@@ -1,0 +1,32 @@
+{
+  "entity_name": "Superior Critical",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making a weapon attack roll",
+      "condition": "The unmodified d20 roll is 18, 19, or 20",
+      "outcome": "The weapon attack scores a critical hit",
+      "related_search_terms": [
+        "expanded critical range",
+        "crit range increase",
+        "critical hit chance",
+        "higher crit rate",
+        "attack roll",
+        "fighter crit"
+      ]
+    }
+  ],
+  "description_text": "Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20.",
+  "tags": [
+    "Fighter",
+    "Champion Subclass",
+    "Level 15 Feature"
+  ],
+  "related_search_terms": [
+    "Fighter Superior Critical",
+    "Champion Fighter ability",
+    "increased crit range",
+    "critical hits"
+  ]
+}

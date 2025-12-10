@@ -1,0 +1,35 @@
+{
+  "entity_name": "Protection From Energy",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "After spell is successfully cast and for its duration",
+      "condition": "Caster touches a willing creature AND Caster chooses one damage type from: acid, cold, fire, lightning, thunder",
+      "outcome": "Target creature gains resistance to the chosen damage type",
+      "related_search_terms": [
+        "damage reduction",
+        "elemental resistance",
+        "spell protection",
+        "acid damage",
+        "cold damage",
+        "fire damage",
+        "lightning damage",
+        "thunder damage",
+        "damage type resistance",
+        "defensive spell"
+      ]
+    }
+  ],
+  "description_text": "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.",
+  "tags": [
+    "Abjuration",
+    "Level 3 Spell"
+  ],
+  "related_search_terms": [
+    "damage mitigation spell",
+    "elemental protection",
+    "resist damage",
+    "defensive buff"
+  ]
+}

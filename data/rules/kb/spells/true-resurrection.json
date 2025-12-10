@@ -1,0 +1,64 @@
+{
+  "entity_name": "True Resurrection",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast on Dead Creature",
+      "condition": "Target dead for no longer than 200 years AND Target died for any reason EXCEPT old age AND Target's soul is free AND Target's soul is willing",
+      "outcome": "Target is restored to life with all its hit points",
+      "related_search_terms": [
+        "revive dead",
+        "bring back",
+        "death duration",
+        "soul willingness",
+        "max age for resurrection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature restored to life by this spell",
+      "condition": "Creature had wounds OR poison OR diseases OR curses OR damaged/missing organs/limbs upon death",
+      "outcome": "All wounds closed, any poison neutralized, all diseases cured, any curses lifted, damaged/missing organs and limbs replaced",
+      "related_search_terms": [
+        "full healing",
+        "curse removal",
+        "disease cure",
+        "poison cure",
+        "limb regeneration",
+        "body repair",
+        "restoration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature restored to life by this spell",
+      "condition": "Original body no longer exists AND Caster speaks creature's name",
+      "outcome": "A new body is provided, and the creature appears in an unoccupied space chosen by caster within 10 feet",
+      "related_search_terms": [
+        "body destroyed",
+        "no body remaining",
+        "resurrection with new form",
+        "teleportation after death",
+        "name invocation"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points.\nThis spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs.\nThe spell can even provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature then appears in an unoccupied space you choose within 10 feet of you.",
+  "tags": [
+    "healing",
+    "resurrection",
+    "restoration",
+    "divine",
+    "9th-level"
+  ],
+  "related_search_terms": [
+    "bringing back to life",
+    "dead creature",
+    "revive",
+    "healing magic",
+    "death counter",
+    "reincarnation",
+    "death limit"
+  ]
+}

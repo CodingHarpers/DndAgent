@@ -1,0 +1,70 @@
+{
+  "entity_name": "Alarm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster targets a door, a window, or an area within range no larger than a 20-foot cube",
+      "outcome": "Chosen area becomes warded until the spell ends",
+      "related_search_terms": [
+        "warded area",
+        "spell effect area",
+        "target area",
+        "perimeter defense",
+        "spell duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature touches or enters the warded area",
+      "condition": "Creature is Tiny or larger AND Creature was NOT designated during casting as exempt",
+      "outcome": "An alarm is activated",
+      "related_search_terms": [
+        "intruder detection",
+        "entry trigger",
+        "size requirement",
+        "hostile creature",
+        "unauthorized access"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Alarm is activated",
+      "condition": "Caster chose Mental alarm type during casting AND Caster is within 1 mile of the warded area",
+      "outcome": "Caster receives a mental ping; if sleeping, caster awakens",
+      "related_search_terms": [
+        "silent alert",
+        "remote notification",
+        "awakening",
+        "sleep interruption",
+        "mind ping"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Alarm is activated",
+      "condition": "Caster chose Audible alarm type during casting",
+      "outcome": "Sound of a hand bell for 10 seconds emanates within 60 feet of the warded area",
+      "related_search_terms": [
+        "loud alert",
+        "sound cue",
+        "local warning",
+        "noise",
+        "bell sound"
+      ]
+    }
+  ],
+  "description_text": "You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible. A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.",
+  "related_search_terms": [
+    "guard",
+    "security",
+    "warning",
+    "trap",
+    "alert system",
+    "sentinel",
+    "perimeter",
+    "abjuration",
+    "ritual"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "entity_name": "Sending",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature AND Caster is familiar with target",
+      "outcome": "Caster sends a message of 25 words or less to target's mind",
+      "related_search_terms": [
+        "mental communication",
+        "telepathy",
+        "short message",
+        "communicate",
+        "contact"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target receives message",
+      "condition": "Target knows the sender",
+      "outcome": "Target recognizes sender",
+      "related_search_terms": [
+        "identify sender",
+        "sender identity"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target receives message",
+      "condition": "none",
+      "outcome": "Target can immediately send a message of 25 words or less back to sender",
+      "related_search_terms": [
+        "reply",
+        "response",
+        "immediate return message"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target receives message",
+      "condition": "Target has an Intelligence score of at least 1",
+      "outcome": "Target understands the meaning of the message",
+      "related_search_terms": [
+        "intelligence requirement",
+        "comprehension",
+        "mind link"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is on a different plane of existence than the caster",
+      "outcome": "5% chance the message does not arrive",
+      "related_search_terms": [
+        "interplanar communication",
+        "plane travel",
+        "message failure",
+        "cosmic distance"
+      ]
+    }
+  ],
+  "description_text": "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.",
+  "tags": [
+    "communication",
+    "divination",
+    "mental",
+    "telepathy"
+  ],
+  "related_search_terms": [
+    "telepathy",
+    "communication",
+    "contact",
+    "short message",
+    "mind communication"
+  ]
+}

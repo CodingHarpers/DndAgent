@@ -1,0 +1,60 @@
+{
+  "entity_name": "Grease",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Movement through affected area",
+      "condition": "Creature is attempting to move through the 10-foot square area of Grease",
+      "outcome": "The 10-foot square area is Difficult Terrain",
+      "related_search_terms": [
+        "movement reduction",
+        "slowed",
+        "hindered movement",
+        "slippery ground"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell appears",
+      "condition": "Creature is standing in the 10-foot square area when Grease appears",
+      "outcome": "Creature must succeed on a Dexterity saving throw or fall Prone",
+      "related_search_terms": [
+        "dex save",
+        "prone condition",
+        "initial effect",
+        "knock down"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters area OR ends turn in area",
+      "condition": "Creature enters the 10-foot square area of Grease for the first time on a turn OR Creature ends its turn in the area",
+      "outcome": "Creature must succeed on a Dexterity saving throw or fall Prone",
+      "related_search_terms": [
+        "dex save",
+        "prone condition",
+        "ongoing effect",
+        "knock down",
+        "area control"
+      ]
+    }
+  ],
+  "description_text": "Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration. When the grease appears, each creature standing in its area must succeed on a dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a dexterity saving throw or fall prone.",
+  "tags": [
+    "1st-level",
+    "conjuration",
+    "spell",
+    "control",
+    "area_of_effect"
+  ],
+  "related_search_terms": [
+    "slippery",
+    "falling",
+    "prone",
+    "difficult terrain",
+    "control spell",
+    "dexterity save",
+    "area denial"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "entity_name": "Dominate Beast",
+  "logic_type": "spell",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a beast, visible, within range",
+      "outcome": "Target must succeed on a Wisdom saving throw or be Charmed by you for the duration",
+      "related_search_terms": [
+        "mind control",
+        "charm spell",
+        "beast control",
+        "saving throw",
+        "initial save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's initial Wisdom Saving Throw against this spell",
+      "condition": "You or creatures friendly to you are fighting the target",
+      "outcome": "Target has Advantage on the saving throw",
+      "related_search_terms": [
+        "hostile target",
+        "combat magic",
+        "resisting charm"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While creature is Charmed by this spell",
+      "condition": "You are conscious AND You and target are on the same plane of existence",
+      "outcome": "You have a telepathic link with the creature and can issue commands (no action required)",
+      "related_search_terms": [
+        "mind link",
+        "mental commands",
+        "control beast",
+        "charmed effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "You issue a command via telepathic link",
+      "condition": "Target is Charmed by this spell AND Command is simple and general",
+      "outcome": "Target does its best to obey the command",
+      "related_search_terms": [
+        "obedience",
+        "following orders",
+        "creature commands"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command completed OR No further direction received",
+      "condition": "Target is Charmed by this spell",
+      "outcome": "Target defends and preserves itself to the best of its ability",
+      "related_search_terms": [
+        "default behavior",
+        "self-preservation",
+        "idle state"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "You use your action",
+      "condition": "Target is Charmed by this spell",
+      "outcome": "You gain total and precise control of the target until the end of your next turn; target takes only your chosen actions",
+      "related_search_terms": [
+        "direct control",
+        "puppet control",
+        "full control",
+        "action economy"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target uses a reaction while under your total control",
+      "condition": "Target is under total control by this spell AND You have an available reaction",
+      "outcome": "You must use your reaction as well",
+      "related_search_terms": [
+        "shared reaction",
+        "controlled actions",
+        "reaction cost"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target takes damage",
+      "condition": "Target is Charmed by this spell",
+      "outcome": "Target makes a new Wisdom saving throw against the spell. If it succeeds, the spell ends.",
+      "related_search_terms": [
+        "break charm",
+        "damage breaks spell",
+        "concentration check",
+        "repeat save"
+      ]
+    }
+  ],
+  "description_text": "You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability. You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+  "tags": [
+    "enchantment",
+    "mind_control",
+    "charmed",
+    "beast",
+    "control_spell"
+  ],
+  "related_search_terms": [
+    "dominate",
+    "control beast",
+    "charm beast",
+    "animal control",
+    "beguile creature",
+    "telepathy"
+  ]
+}

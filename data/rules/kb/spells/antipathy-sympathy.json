@@ -1,0 +1,122 @@
+{
+  "entity_name": "Antipathy/Sympathy",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Designated creature starts turn/enters area/gains sight of target (Antipathy)",
+      "condition": "Designated creature can see target OR is within 60 feet of target AND creature fails Wisdom Saving Throw",
+      "outcome": "Creature becomes Frightened by the target",
+      "related_search_terms": [
+        "fear",
+        "repulsion",
+        "control",
+        "forced movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Frightened creature's turn (Antipathy)",
+      "condition": "Creature is Frightened by the target AND (creature can see target OR is within 60 feet of target)",
+      "outcome": "Creature must use movement to move to nearest safe spot from which it can't see the target",
+      "related_search_terms": [
+        "forced movement",
+        "retreat",
+        "flee",
+        "disengage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Designated creature starts turn/enters area/gains sight of target (Sympathy)",
+      "condition": "Designated creature can see target OR is within 60 feet of target AND creature fails Wisdom Saving Throw",
+      "outcome": "Creature must use movement on each of its turns to enter target's area or move within reach of target",
+      "related_search_terms": [
+        "attraction",
+        "forced movement",
+        "charm",
+        "approach"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature's turn (Sympathy)",
+      "condition": "Creature is affected by Sympathy AND has entered target's area or moved within reach of target",
+      "outcome": "Creature cannot willingly move away from the target",
+      "related_search_terms": [
+        "immobilized",
+        "bound",
+        "stuck"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target (of Antipathy/Sympathy) deals damage or harms an affected creature",
+      "condition": "N/A",
+      "outcome": "Affected creature makes a Wisdom Saving Throw to end the effect",
+      "related_search_terms": [
+        "breaking spell",
+        "damage breaks charm"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Affected creature ends its turn",
+      "condition": "Creature is NOT within 60 feet of target AND creature cannot see target",
+      "outcome": "Creature makes a Wisdom Saving Throw to end the effect",
+      "related_search_terms": [
+        "escape condition",
+        "breaking line of sight"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Every 24 hours while spell persists",
+      "condition": "Creature is affected by Antipathy/Sympathy",
+      "outcome": "Creature makes a Wisdom Saving Throw to end the effect",
+      "related_search_terms": [
+        "persistent effect",
+        "long-duration save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Wisdom Saving Throw against Antipathy/Sympathy",
+      "condition": "Save is successful",
+      "outcome": "Creature is no longer affected by Antipathy/Sympathy",
+      "related_search_terms": [
+        "spell ends",
+        "condition removed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature successfully saves against Antipathy/Sympathy",
+      "condition": "N/A",
+      "outcome": "Creature gains immunity to Antipathy/Sympathy for 1 minute",
+      "related_search_terms": [
+        "temporary immunity",
+        "save cooldown"
+      ]
+    }
+  ],
+  "description_text": "This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.***Antipathy.*** The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a wisdom saving throw or become frightened. The creature remains frightened while it can see the target or is within 60 feet of it. While frightened by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer frightened, but the creature becomes frightened again if it regains sight of the target or moves within 60 feet of it.***Sympathy.*** The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.If the target damages or otherwise harms an affected creature, the affected creature can make a wisdom saving throw to end the effect, as described below.***Ending the Effect.*** If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another wisdom saving throw every 24 hours while the spell persists.A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again.",
+  "tags": [
+    "enchantment",
+    "area_control",
+    "crowd_control",
+    "saving_throw_wisdom",
+    "forced_movement"
+  ],
+  "related_search_terms": [
+    "area control",
+    "crowd control",
+    "forced movement",
+    "charm",
+    "fear",
+    "aura",
+    "trap",
+    "avoidance",
+    "attraction"
+  ]
+}

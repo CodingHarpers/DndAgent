@@ -1,0 +1,104 @@
+{
+  "entity_name": "Conjure Elemental",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Choose an area of air, earth, fire, or water that fills a 10-foot cube within range AND an unoccupied space within 10 feet of that area",
+      "outcome": "An elemental of challenge rating 5 or lower appropriate to the chosen area appears",
+      "related_search_terms": [
+        "summon elemental",
+        "elemental companion",
+        "summon monster",
+        "creature appears"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Elemental Summoned",
+      "condition": "Elemental is present",
+      "outcome": "Elemental disappears if it drops to 0 hit points OR the spell ends",
+      "related_search_terms": [
+        "despawn condition",
+        "monster death",
+        "spell duration end",
+        "summon dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Elemental Summoned",
+      "condition": "Caster maintains concentration on the spell",
+      "outcome": "Elemental is friendly to caster and companions for the duration, obeys verbal commands (no action required by caster), and defends itself from hostile creatures if no commands are issued",
+      "related_search_terms": [
+        "minion control",
+        "friendly NPC",
+        "command creature",
+        "companion behavior"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Elemental Summoned",
+      "condition": "Elemental is present",
+      "outcome": "Roll initiative for the elemental; it has its own turns",
+      "related_search_terms": [
+        "combat order",
+        "NPC turns",
+        "monster turns",
+        "initiative roll"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's Concentration Broken",
+      "condition": "Concentration on Conjure Elemental is broken",
+      "outcome": "Caster loses control of the elemental, it becomes hostile toward caster and companions, and might attack",
+      "related_search_terms": [
+        "concentration check failed",
+        "hostile minion",
+        "lose control",
+        "wild creature"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Elemental is Uncontrolled",
+      "condition": "Caster has lost control of the elemental",
+      "outcome": "The elemental cannot be dismissed by the caster",
+      "related_search_terms": [
+        "cannot banish",
+        "undismissable creature",
+        "permanent summon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Elemental is Uncontrolled",
+      "condition": "Caster has lost control of the elemental",
+      "outcome": "The elemental disappears 1 hour after it was summoned",
+      "related_search_terms": [
+        "uncontrolled duration",
+        "timed disappearance",
+        "wild elemental duration"
+      ]
+    }
+  ],
+  "description_text": "You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An elemental of challenge rating 5 or lower appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a fire elemental emerges from a bonfire, and an earth elemental rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends. The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions. If your concentration is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it. The GM has the elemental's statistics.",
+  "tags": [
+    "spell",
+    "conjuration",
+    "summoning",
+    "elemental",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "summon elemental",
+    "elemental companion",
+    "creature summoning",
+    "minion spell",
+    "monster ally",
+    "concentration spell"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "entity_name": "Thunderwave",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Creature is within a 15-foot cube originating from caster",
+      "outcome": "Creature must make a Constitution saving throw",
+      "related_search_terms": [
+        "AoE",
+        "area damage",
+        "con save",
+        "saving throw prompt"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Failed",
+      "condition": "Creature was targeted by Thunderwave",
+      "outcome": "Creature takes 2d8 thunder damage",
+      "related_search_terms": [
+        "damage",
+        "thunder damage",
+        "failed save effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Failed",
+      "condition": "Creature was targeted by Thunderwave",
+      "outcome": "Creature is pushed 10 feet away from caster",
+      "related_search_terms": [
+        "forced movement",
+        "push",
+        "knockback"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Succeeded",
+      "condition": "Creature was targeted by Thunderwave",
+      "outcome": "Creature takes half of 2d8 thunder damage (1d8)",
+      "related_search_terms": [
+        "half damage",
+        "successful save effect",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Succeeded",
+      "condition": "Creature was targeted by Thunderwave",
+      "outcome": "Creature is not pushed",
+      "related_search_terms": [
+        "resist push",
+        "no knockback"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Unsecured object is completely within the 15-foot cube originating from caster",
+      "outcome": "Object is automatically pushed 10 feet away from caster",
+      "related_search_terms": [
+        "object interaction",
+        "environmental effect",
+        "push objects"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Any creature or entity",
+      "outcome": "A thunderous boom is emitted, audible out to 300 feet",
+      "related_search_terms": [
+        "audible range",
+        "sound effect",
+        "noise",
+        "detection"
+      ]
+    }
+  ],
+  "description_text": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.",
+  "tags": [],
+  "related_search_terms": [
+    "AoE spell",
+    "thunder damage",
+    "push effect",
+    "crowd control",
+    "evocation spell"
+  ]
+}

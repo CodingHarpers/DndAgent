@@ -1,0 +1,55 @@
+{
+  "entity_name": "Magic Weapon",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Casting",
+      "condition": "Target is a nonmagical weapon",
+      "outcome": "Target weapon becomes a magical weapon for the spell's duration",
+      "related_search_terms": [
+        "magical damage",
+        "overcome resistance",
+        "non-magical weapon",
+        "enchant weapon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Weapon Attack Roll",
+      "condition": "Attack is made using the affected weapon AND spell is active",
+      "outcome": "Add +1 bonus to the Attack Roll",
+      "related_search_terms": [
+        "to hit bonus",
+        "accuracy",
+        "hit chance",
+        "weapon buff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Weapon Damage Roll",
+      "condition": "Damage is dealt using the affected weapon AND spell is active",
+      "outcome": "Add +1 bonus to the Damage Roll",
+      "related_search_terms": [
+        "damage bonus",
+        "extra damage",
+        "weapon buff"
+      ]
+    }
+  ],
+  "description_text": "You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.",
+  "tags": [
+    "transmutation",
+    "buff",
+    "weapon_enhancement"
+  ],
+  "related_search_terms": [
+    "enhance weapon",
+    "enchant weapon",
+    "magic attack",
+    "magic damage",
+    "weapon spell",
+    "temporary magic item"
+  ]
+}

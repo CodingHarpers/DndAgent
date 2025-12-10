@@ -1,0 +1,47 @@
+{
+  "entity_name": "Arcane Tradition",
+  "logic_type": "character_progression",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player Character reaches Level 2",
+      "condition": "Player Character is a Wizard",
+      "outcome": "Player chooses an Arcane Tradition (subclass)",
+      "related_search_terms": [
+        "wizard subclass selection",
+        "specialization choice",
+        "level 2 wizard feature",
+        "arcane school choice"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Player Character reaches specific levels",
+      "condition": "Player Character has chosen an Arcane Tradition AND Character reaches Level 2 OR Level 6 OR Level 10 OR Level 14",
+      "outcome": "Player Character gains features associated with their chosen Arcane Tradition",
+      "related_search_terms": [
+        "subclass features",
+        "wizard progression",
+        "leveling benefits",
+        "arcane tradition abilities",
+        "school of magic features"
+      ]
+    }
+  ],
+  "description_text": "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.",
+  "tags": [
+    "wizard",
+    "subclass",
+    "class feature",
+    "progression",
+    "core mechanic"
+  ],
+  "related_search_terms": [
+    "wizard subclass",
+    "arcane tradition selection",
+    "subclass levels",
+    "wizard levels",
+    "specialization",
+    "magic school"
+  ]
+}

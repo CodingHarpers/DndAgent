@@ -1,0 +1,78 @@
+{
+  "entity_name": "Acid Arrow",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Casting",
+      "condition": "Target within range",
+      "outcome": "Make a ranged spell attack against the target",
+      "related_search_terms": [
+        "spell attack",
+        "attack roll",
+        "targeting",
+        "ranged spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Hit",
+      "condition": "Ranged spell attack roll succeeds",
+      "outcome": "Target takes 4d4 acid damage immediately",
+      "related_search_terms": [
+        "damage",
+        "acid damage",
+        "on hit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Hit",
+      "condition": "Ranged spell attack roll succeeds",
+      "outcome": "Target takes 2d4 acid damage at the end of its next turn",
+      "related_search_terms": [
+        "damage over time",
+        "dot",
+        "delayed damage",
+        "acid damage",
+        "persistent damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Miss",
+      "condition": "Ranged spell attack roll fails",
+      "outcome": "Target takes 2d4 acid damage",
+      "related_search_terms": [
+        "splash damage",
+        "partial damage",
+        "on miss",
+        "half damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Ranged Spell Attack Miss",
+      "condition": "Ranged spell attack roll fails",
+      "outcome": "Target does NOT take damage at the end of its next turn",
+      "related_search_terms": [
+        "no dot",
+        "no delayed damage",
+        "on miss"
+      ]
+    }
+  ],
+  "description_text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.",
+  "tags": [
+    "spell",
+    "damage",
+    "ranged attack",
+    "acid"
+  ],
+  "related_search_terms": [
+    "acid arrow",
+    "damage spell",
+    "arcane spell",
+    "ranged damage"
+  ]
+}

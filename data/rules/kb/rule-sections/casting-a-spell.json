@@ -1,0 +1,1405 @@
+[
+  {
+    "source_chapter": "Spellcasting",
+    "extracted_concepts": [
+      {
+        "concept_name": "Casting a Spell",
+        "definition": "The act of invoking magical effects by expending a spell slot or using a special ability, typically involving specific actions, gestures, words, and/or material components.",
+        "rule_logic": {
+          "premise": "A character decides to cast a spell described in their spell list or gained through a feature",
+          "implication": "The character performs the spell's casting time, expends required spell slots or resources, fulfills verbal, somatic, and/or material components, and then resolves the spell's effect according to its description",
+          "exceptions": [],
+          "description_text": "Casting a spell requires a character to perform its casting time, which is typically an Action, but can be a bonus action, reaction, or even minutes or hours. Spells also have specific components (verbal, somatic, material) that must be fulfilled. Upon successful casting, the spell's effects are resolved.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast a spell",
+            "spellcasting rules",
+            "what is spellcasting",
+            "spell action cost",
+            "components for spells"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Magic",
+          "Action",
+          "Bonus Action",
+          "Reaction",
+          "Casting Time",
+          "Spell Slot",
+          "Components",
+          "Verbal",
+          "Somatic",
+          "Material"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Casting a Spell",
+    "extracted_concepts": [
+      {
+        "concept_name": "General Spellcasting Rules",
+        "definition": "The overarching principles that apply to any spell cast by a character, regardless of the caster's class or the spell's specific magical outcome.",
+        "rule_logic": {
+          "premise": "A character casts any spell",
+          "implication": "The same basic rules are followed, irrespective of the character's class or the spell's specific effects",
+          "exceptions": [],
+          "description_text": "When a character casts any spell, the same basic rules are followed, regardless of the character's class or the spell's effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast spells",
+            "spellcasting basics",
+            "universal spell rules",
+            "character casting spells"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Casting",
+          "Magic",
+          "Rules",
+          "Character"
+        ]
+      },
+      {
+        "concept_name": "Spell Description Structure",
+        "definition": "The standardized format for presenting key information about a spell within the rulebook.",
+        "rule_logic": {
+          "premise": "Consulting a spell description",
+          "implication": "It begins with the spell's name, level, school of magic, casting time, range, components, and duration, followed by a description of the spell's effect",
+          "exceptions": [],
+          "description_text": "Each spell description begins with a block of information, including the spell's name, level, school of magic, casting time, range, components, and duration. The rest of a spell entry describes the spell's effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what's in a spell entry",
+            "spell information layout",
+            "how to read spell description",
+            "spell stat block",
+            "spell components",
+            "casting time",
+            "range",
+            "duration"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Description",
+          "Format",
+          "Casting Time",
+          "Range",
+          "Components",
+          "Duration",
+          "Level",
+          "School of Magic",
+          "Effect"
+        ]
+      }
+    ],
+    "_chunk_header": "Casting a Spell",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Casting Time",
+    "extracted_concepts": [
+      {
+        "concept_name": "Bonus Action Spell Casting",
+        "definition": "Casting a spell using a bonus action, indicating a swift casting time.",
+        "rule_logic": {
+          "premise": "A spell has a casting time of '1 Bonus Action' AND the caster has a bonus action available on their turn",
+          "implication": "The caster can use their bonus action to cast the spell. However, the caster cannot cast any other spell during the same turn, except for a cantrip with a casting time of 1 action.",
+          "exceptions": [],
+          "description_text": "A spell cast with a bonus action is especially swift. You must use a bonus action on your turn to cast the spell, provided that you haven't already taken a bonus action this turn. You can't cast another spell during the same turn, except for a cantrip with a casting time of 1 action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "bonus action spell",
+            "two spells in one turn",
+            "can I cast a spell and a cantrip",
+            "bonus action limit"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "bonus action",
+          "casting time",
+          "cantrip"
+        ]
+      },
+      {
+        "concept_name": "Reaction Spell Casting",
+        "definition": "Casting a spell instantaneously in response to a specific event.",
+        "rule_logic": {
+          "premise": "A spell has a casting time of '1 Reaction' AND the specific triggering event defined in the spell's description occurs",
+          "implication": "The caster can cast the spell as a reaction, taking a fraction of a second.",
+          "exceptions": [],
+          "description_text": "Some spells can be cast as reactions. These spells take a fraction of a second to bring about and are cast in response to some event. If a spell can be cast as a reaction, the spell description tells you exactly when you can do so.",
+          "is_exception": false,
+          "related_search_terms": [
+            "reaction spell",
+            "counterspell timing",
+            "when can I cast a reaction spell"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "reaction",
+          "casting time",
+          "event trigger"
+        ]
+      },
+      {
+        "concept_name": "Longer Spell Casting Times",
+        "definition": "Casting a spell that requires multiple turns or an extended period (minutes or hours) to complete.",
+        "rule_logic": {
+          "premise": "A spell has a casting time longer than a single action or reaction (e.g., minutes, hours, or is cast as a ritual)",
+          "implication": "The caster must spend their action each turn casting the spell and must maintain concentration throughout the casting duration. If concentration is broken, the spell fails but the spell slot is not expended. To attempt casting again, the process must restart.",
+          "exceptions": [],
+          "description_text": "Certain spells (including spells cast as rituals) require more time to cast: minutes or even hours. When you cast a spell with a casting time longer than a single action or reaction, you must spend your action each turn casting the spell, and you must maintain your concentration while you do so (see \"Concentration\" below). If your concentration is broken, the spell fails, but you don't expend a spell slot. If you want to try casting the spell again, you must start over.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ritual casting",
+            "long casting spell",
+            "concentration during casting",
+            "spell fails",
+            "expending spell slot for long casts"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "casting time",
+          "concentration",
+          "ritual",
+          "spell slot",
+          "action"
+        ]
+      }
+    ],
+    "_chunk_header": "Casting Time",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Spell Range",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Range",
+        "definition": "The maximum distance from the caster a spell's target can be located.",
+        "rule_logic": {
+          "premise": "A spell is cast",
+          "implication": "The spell's target must be within the spell's defined range",
+          "exceptions": [],
+          "description_text": "The target of a spell must be within the spell's range.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell distance",
+            "how far can a spell reach",
+            "range limit",
+            "casting distance"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "range",
+          "target",
+          "distance",
+          "feet"
+        ]
+      },
+      {
+        "concept_name": "Spell Target Types",
+        "definition": "The object, creature, or point in space that a spell is directed at.",
+        "rule_logic": {
+          "premise": "A spell is cast",
+          "implication": "The target can be a creature (e.g., magic missile), or a point in space (e.g., fireball)",
+          "exceptions": [],
+          "description_text": "For a spell like magic missile, the target is a creature. For a spell like fireball, the target is the point in space where the ball of fire erupts.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can a spell target",
+            "creature target",
+            "area target",
+            "point of origin spell"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "target",
+          "creature",
+          "point in space",
+          "area of effect"
+        ]
+      },
+      {
+        "concept_name": "Touch Range",
+        "definition": "A spell range indicating that the spell can only target a creature or object that the caster physically touches.",
+        "rule_logic": {
+          "premise": "A spell has a range of 'Touch'",
+          "implication": "The spell can only target a creature (including the caster) or object that the caster touches",
+          "exceptions": [],
+          "description_text": "Some spells can target only a creature (including you) that you touch.",
+          "is_exception": false,
+          "related_search_terms": [
+            "touch spell",
+            "contact range",
+            "how do touch spells work"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "range",
+          "touch",
+          "target",
+          "creature",
+          "object"
+        ]
+      },
+      {
+        "concept_name": "Self Range",
+        "definition": "A spell range indicating that the spell affects only the caster, or that the origin point of the spell's effect must be the caster.",
+        "rule_logic": {
+          "premise": "A spell has a range of 'Self'",
+          "implication": "The spell affects only the caster OR the origin point of the spell's effect (e.g., cones, lines) must be the caster",
+          "exceptions": [],
+          "description_text": "Other spells, such as the shield spell, affect only you. These spells have a range of self. Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell's effect must be you",
+          "is_exception": false,
+          "related_search_terms": [
+            "self spell",
+            "range self",
+            "cone origin",
+            "line origin",
+            "area of effect self",
+            "affecting only self"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "range",
+          "self",
+          "caster",
+          "origin",
+          "area of effect",
+          "cone",
+          "line"
+        ]
+      },
+      {
+        "concept_name": "Post-Casting Effect Range",
+        "definition": "A rule stating that a spell's effects are generally not limited by its initial range once it has been cast.",
+        "rule_logic": {
+          "premise": "A spell has been successfully cast",
+          "implication": "The spell's ongoing effects are no longer limited by its initial range",
+          "exceptions": [
+            "Unless the spell's description says otherwise"
+          ],
+          "description_text": "Once a spell is cast, its effects aren't limited by its range, unless the spell's description says otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell effects out of range",
+            "range after casting",
+            "ongoing spell range",
+            "maintain spell range",
+            "spell duration range"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "range",
+          "effect",
+          "duration",
+          "casting",
+          "limitation"
+        ]
+      }
+    ],
+    "_chunk_header": "Spell Range",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Spellcasting - Components",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Components (General)",
+        "definition": "The physical requirements a caster must meet to successfully cast a spell.",
+        "rule_logic": {
+          "premise": "A spell has one or more required components (Verbal, Somatic, Material) AND Caster cannot provide one or more required components",
+          "implication": "Caster is unable to cast the spell",
+          "exceptions": [],
+          "description_text": "A spell's components are the physical requirements you must meet in order to cast it. Each spell's description indicates whether it requires verbal (V), somatic (S), or material (M) components. If you can't provide one or more of a spell's components, you are unable to cast the spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell casting requirements",
+            "why can't I cast this spell",
+            "components list"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "requirements",
+          "verbal",
+          "somatic",
+          "material"
+        ]
+      },
+      {
+        "concept_name": "Verbal (V) Component",
+        "definition": "A spell component requiring the chanting of mystic words with specific pitch and resonance.",
+        "rule_logic": {
+          "premise": "A spell requires a Verbal (V) component AND Caster is gagged OR Caster is in an area of silence (e.g., *silence* spell)",
+          "implication": "Caster cannot cast the spell",
+          "exceptions": [],
+          "description_text": "Most spells require the chanting of mystic words. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is gagged or in an area of silence, such as one created by the *silence* spell, can't cast a spell with a verbal component.",
+          "is_exception": false,
+          "related_search_terms": [
+            "casting in silence",
+            "can't speak",
+            "mute casting",
+            "verbal spell restriction"
+          ]
+        },
+        "related_keywords": [
+          "verbal",
+          "V component",
+          "silence",
+          "gagged",
+          "speech"
+        ]
+      },
+      {
+        "concept_name": "Somatic (S) Component",
+        "definition": "A spell component requiring specific hand gestures or gesticulations.",
+        "rule_logic": {
+          "premise": "A spell requires a Somatic (S) component AND Caster does not have free use of at least one hand",
+          "implication": "Caster cannot cast the spell",
+          "exceptions": [],
+          "description_text": "Spellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have free use of at least one hand to perform these gestures.",
+          "is_exception": false,
+          "related_search_terms": [
+            "hand gestures",
+            "hands tied",
+            "grappled spellcaster",
+            "somatic spell restriction"
+          ]
+        },
+        "related_keywords": [
+          "somatic",
+          "S component",
+          "hand",
+          "gestures",
+          "free hand"
+        ]
+      },
+      {
+        "concept_name": "Material (M) Component (General)",
+        "definition": "A spell component requiring particular objects as specified in the spell's description.",
+        "rule_logic": {
+          "premise": "A spell requires a Material (M) component AND Caster has a component pouch OR Caster has a spellcasting focus",
+          "implication": "Caster can use the component pouch or spellcasting focus in place of the specified material components (unless a cost is indicated)",
+          "exceptions": [
+            "If a cost is indicated for a component, a character must have that specific component.",
+            "If a spell states that a material component is consumed, the caster must provide it for each casting."
+          ],
+          "description_text": "Casting some spells requires particular objects, specified in parentheses in the component entry. A character can use a component pouch or a spellcasting focus (found in \"Equipment\") in place of the components specified for a spell. But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell. If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell. A spellcaster must have a hand free to access a spell's material components-or to hold a spellcasting focus-but it can be the same hand that he or she uses to perform somatic components.",
+          "is_exception": false,
+          "related_search_terms": [
+            "material components",
+            "component pouch rules",
+            "spellcasting focus rules",
+            "M component",
+            "consumed components"
+          ]
+        },
+        "related_keywords": [
+          "material",
+          "M component",
+          "component pouch",
+          "spellcasting focus",
+          "cost",
+          "consumed"
+        ]
+      },
+      {
+        "concept_name": "Material (M) Component with Cost",
+        "definition": "A specific material component for which a monetary cost is indicated.",
+        "rule_logic": {
+          "premise": "A spell requires a Material (M) component AND A cost is indicated for that component",
+          "implication": "Caster must possess that specific, costly component; a component pouch or spellcasting focus cannot substitute for it",
+          "exceptions": [],
+          "description_text": "But if a cost is indicated for a component, a character must have that specific component before he or she can cast the spell.",
+          "is_exception": true,
+          "related_search_terms": [
+            "expensive spell components",
+            "gold for spells",
+            "costly components",
+            "can focus replace gold components"
+          ]
+        },
+        "related_keywords": [
+          "material",
+          "M component",
+          "cost",
+          "expensive",
+          "specific component"
+        ]
+      },
+      {
+        "concept_name": "Consumed Material (M) Component",
+        "definition": "A material component that is destroyed or used up when the spell is cast.",
+        "rule_logic": {
+          "premise": "A spell requires a Material (M) component AND The spell states the component is consumed by the spell",
+          "implication": "Caster must provide this component anew for each casting of the spell",
+          "exceptions": [],
+          "description_text": "If a spell states that a material component is consumed by the spell, the caster must provide this component for each casting of the spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "consumed spell components",
+            "reagents",
+            "one-time use components",
+            "material spell cost"
+          ]
+        },
+        "related_keywords": [
+          "material",
+          "M component",
+          "consumed",
+          "expended",
+          "recharge"
+        ]
+      },
+      {
+        "concept_name": "Material (M) Component Hand Requirement",
+        "definition": "The requirement for a spellcaster to have a free hand to handle material components or a spellcasting focus.",
+        "rule_logic": {
+          "premise": "A spell requires a Material (M) component (or the use of a spellcasting focus)",
+          "implication": "Caster must have a hand free to access the components or hold the focus",
+          "exceptions": [
+            "The same hand can be used for Somatic (S) components"
+          ],
+          "description_text": "A spellcaster must have a hand free to access a spell's material components-or to hold a spellcasting focus-but it can be the same hand that he or she uses to perform somatic components.",
+          "is_exception": false,
+          "related_search_terms": [
+            "free hand for materials",
+            "holding focus and casting",
+            "somatic and material same hand"
+          ]
+        },
+        "related_keywords": [
+          "material",
+          "M component",
+          "spellcasting focus",
+          "hand",
+          "free hand",
+          "somatic"
+        ]
+      }
+    ],
+    "_chunk_header": "Components",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Spells - Duration",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Duration",
+        "definition": "The length of time a spell's effects persist.",
+        "rule_logic": {
+          "premise": "A spell has a defined duration",
+          "implication": "The spell's effects last for the specified time (rounds, minutes, hours, years, or until dispelled/destroyed)",
+          "exceptions": [],
+          "description_text": "A spell's duration is the length of time the spell persists. A duration can be expressed in rounds, minutes, hours, or even years. Some spells specify that their effects last until the spells are dispelled or destroyed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long do spells last",
+            "spell length",
+            "duration types"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "time",
+          "effect"
+        ]
+      },
+      {
+        "concept_name": "Instantaneous Spell Duration",
+        "definition": "A type of spell duration where the magic exists only for an instant, producing an immediate effect.",
+        "rule_logic": {
+          "premise": "A spell is instantaneous",
+          "implication": "Its magic exists only for an instant AND its effects cannot be dispelled",
+          "exceptions": [],
+          "description_text": "Many spells are instantaneous. The spell harms, heals, creates, or alters a creature or an object in a way that can't be dispelled, because its magic exists only for an instant.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can instantaneous spells be dispelled",
+            "instant spell effects",
+            "duration zero"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "duration",
+          "dispelling",
+          "immediate"
+        ]
+      },
+      {
+        "concept_name": "Spell Concentration",
+        "definition": "The act of maintaining mental focus to keep a spell's magic active over time.",
+        "rule_logic": {
+          "premise": "A spell's Duration entry states it requires concentration",
+          "implication": "The caster must maintain concentration to keep the spell's magic active AND if concentration is lost, the spell ends",
+          "exceptions": [],
+          "description_text": "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. If a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. You can end concentration at any time (no action required). Normal activity, such as moving and attacking, doesn't interfere with concentration.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how does concentration work",
+            "what is concentration spell",
+            "ending concentration",
+            "can I move while concentrating"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "duration",
+          "condition",
+          "caster"
+        ]
+      },
+      {
+        "concept_name": "Loss of Concentration (Casting another concentration spell)",
+        "definition": "A condition under which a caster loses concentration on an active spell by attempting to cast a second concentration spell.",
+        "rule_logic": {
+          "premise": "Caster is concentrating on a spell AND Caster casts another spell that requires concentration",
+          "implication": "Caster loses concentration on the first spell AND Caster cannot concentrate on two spells at once",
+          "exceptions": [],
+          "description_text": "You lose concentration on a spell if you cast another spell that requires concentration. You can't concentrate on two spells at once.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I cast two concentration spells",
+            "multiple concentration spells",
+            "concentration limit"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "concentration",
+          "limit",
+          "restriction"
+        ]
+      },
+      {
+        "concept_name": "Loss of Concentration (Taking damage)",
+        "definition": "A condition under which a caster loses concentration on an active spell after taking damage, requiring a Constitution saving throw.",
+        "rule_logic": {
+          "premise": "Caster is concentrating on a spell AND Caster takes damage",
+          "implication": "Caster must make a Constitution saving throw to maintain concentration. The DC equals MAX(10, ROUND_UP(DamageTaken / 2)). Failure results in losing concentration. Taking damage from multiple sources requires separate saving throws for each source.",
+          "exceptions": [],
+          "description_text": "Whenever you take damage while you are concentrating on a spell, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher. If you take damage from multiple sources, such as an arrow and a dragon's breath, you make a separate saving throw for each source of damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "concentration check damage",
+            "constitution save for concentration",
+            "breaking concentration by damage",
+            "dc for concentration save"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "concentration",
+          "damage",
+          "saving throw",
+          "constitution"
+        ]
+      },
+      {
+        "concept_name": "Loss of Concentration (Incapacitated or Killed)",
+        "definition": "A condition under which a caster immediately loses concentration upon becoming incapacitated or dying.",
+        "rule_logic": {
+          "premise": "Caster is concentrating on a spell AND Caster becomes incapacitated OR Caster dies",
+          "implication": "Caster loses concentration on the spell",
+          "exceptions": [],
+          "description_text": "You lose concentration on a spell if you are incapacitated or if you die.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do incapacitated spells end concentration",
+            "death concentration",
+            "concentration and conditions"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "concentration",
+          "condition",
+          "death",
+          "incapacitated"
+        ]
+      },
+      {
+        "concept_name": "Loss of Concentration (Environmental Phenomena)",
+        "definition": "A condition under which a caster may lose concentration due to disruptive environmental factors, at the GM's discretion.",
+        "rule_logic": {
+          "premise": "Caster is concentrating on a spell AND GM decides certain environmental phenomena require a concentration check",
+          "implication": "Caster must succeed on a DC 10 Constitution saving throw to maintain concentration. Failure results in losing concentration.",
+          "exceptions": [],
+          "description_text": "The GM might also decide that certain environmental phenomena, such as a wave crashing over you while you're on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain concentration on a spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "environmental effects on concentration",
+            "gm concentration rules",
+            "natural phenomena concentration check"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "concentration",
+          "environment",
+          "GM discretion",
+          "saving throw"
+        ]
+      }
+    ],
+    "_chunk_header": "Duration",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Targets",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Targets",
+        "definition": "Entities that a spell's magic is directed towards, chosen by the caster.",
+        "rule_logic": {
+          "premise": "A spell requires one or more entities to be affected by its magic",
+          "implication": "The spell's description specifies whether it targets creatures, objects, or a point of origin for an area of effect",
+          "exceptions": [],
+          "description_text": "A typical spell requires you to pick one or more targets to be affected by the spell's magic. A spell's description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below).",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can a spell target",
+            "spell targeting rules",
+            "creature target",
+            "object target",
+            "area of effect target"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "target",
+          "creature",
+          "object",
+          "area of effect"
+        ]
+      },
+      {
+        "concept_name": "Spell Target Awareness",
+        "definition": "The degree to which a creature knows it has been targeted by a spell.",
+        "rule_logic": {
+          "premise": "A spell has no perceptible effect on a targeted creature",
+          "implication": "The creature might not know it was targeted by the spell",
+          "exceptions": [
+            "The spell specifically states the target is aware",
+            "The spell has a perceptible effect (e.g., crackling lightning)"
+          ],
+          "description_text": "Unless a spell has a perceptible effect, a creature might not know it was targeted by a spell at all. An effect like crackling lightning is obvious, but a more subtle effect, such as an attempt to read a creature's thoughts, typically goes unnoticed, unless a spell says otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do I know if I'm targeted by a spell",
+            "subtle spell awareness",
+            "hidden spell effect",
+            "detecting spells"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "target",
+          "awareness",
+          "perceptible effect",
+          "subtle"
+        ]
+      },
+      {
+        "concept_name": "Clear Path to Target",
+        "definition": "A prerequisite for targeting, requiring an unobstructed line of effect to the target.",
+        "rule_logic": {
+          "premise": "You attempt to target something with a spell or ability",
+          "implication": "You must have a clear path to it, meaning it cannot be behind total cover",
+          "exceptions": [],
+          "description_text": "To target something, you must have a clear path to it, so it can't be behind total cover.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I target through a wall",
+            "what is a clear path for spells",
+            "line of sight for spells",
+            "total cover spell targeting"
+          ]
+        },
+        "related_keywords": [
+          "target",
+          "spell",
+          "clear path",
+          "total cover",
+          "line of sight"
+        ]
+      },
+      {
+        "concept_name": "Area of Effect Obstruction",
+        "definition": "A rule determining the point of origin for an area of effect spell when an obstruction blocks the line of sight to the intended location.",
+        "rule_logic": {
+          "premise": "You attempt to place an area of effect at a point you cannot see AND an obstruction (e.g., a wall) is between you and that point",
+          "implication": "The point of origin for the area of effect comes into being on the near side of that obstruction",
+          "exceptions": [],
+          "description_text": "If you place an area of effect at a point that you can't see and an obstruction, such as a wall, is between you and that point, the point of origin comes into being on the near side of that obstruction.",
+          "is_exception": false,
+          "related_search_terms": [
+            "casting aoe through wall",
+            "area of effect around corner",
+            "spell obstruction",
+            "point of origin spell",
+            "line of sight aoe"
+          ]
+        },
+        "related_keywords": [
+          "area of effect",
+          "point of origin",
+          "obstruction",
+          "line of sight",
+          "spell placement"
+        ]
+      },
+      {
+        "concept_name": "Targeting Yourself with Spells",
+        "definition": "The rule for a spellcaster to choose themselves as a target for their own spells.",
+        "rule_logic": {
+          "premise": "A spell targets a creature of your choice",
+          "implication": "You can choose yourself as the target",
+          "exceptions": [
+            "The creature must be hostile",
+            "The creature must specifically be other than you"
+          ],
+          "description_text": "If a spell targets a creature of your choice, you can choose yourself, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you can target yourself.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I heal myself with a spell",
+            "can I buff myself with a spell",
+            "self-targeting spells",
+            "hostile creature spells"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "target",
+          "yourself",
+          "caster",
+          "choice"
+        ]
+      },
+      {
+        "concept_name": "Self-Targeting in Area of Effect",
+        "definition": "The rule that determines if a spellcaster is affected by their own area of effect spells.",
+        "rule_logic": {
+          "premise": "You are within the area of effect of a spell you cast",
+          "implication": "You are affected by the spell's area of effect (you 'can target yourself')",
+          "exceptions": [],
+          "description_text": "If you are in the area of effect of a spell you cast, you can target yourself.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do my aoe spells hit me",
+            "friendly fire aoe",
+            "self-inflicted spell damage",
+            "area of effect caster"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "area of effect",
+          "caster",
+          "self",
+          "effect"
+        ]
+      }
+    ],
+    "_chunk_header": "Targets",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Areas of Effect",
+    "extracted_concepts": [
+      {
+        "concept_name": "Area of Effect (General)",
+        "definition": "A region covered by a spell that can affect multiple creatures simultaneously, defined by a specific shape and a point of origin.",
+        "rule_logic": {
+          "premise": "A spell's description specifies an area of effect",
+          "implication": "The spell affects multiple creatures within that area according to its shape and point of origin rules",
+          "exceptions": [],
+          "description_text": "Spells such as burning hands and cone of cold cover an area, allowing them to affect multiple creatures at once. A spell's description specifies its area of effect, which typically has one of five different shapes: cone, cube, cylinder, line, or sphere.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell area",
+            "multiple targets",
+            "spell coverage",
+            "aoe spell",
+            "shape of spell"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Combat",
+          "Targeting"
+        ]
+      },
+      {
+        "concept_name": "Point of Origin (Area of Effect)",
+        "definition": "The specific location from which a spell's energy erupts for an area of effect.",
+        "rule_logic": {
+          "premise": "A spell has an area of effect",
+          "implication": "It has a point of origin from which its energy erupts. This point is positioned according to the spell's shape rules and can be a point in space, a creature, or an object.",
+          "exceptions": [],
+          "description_text": "Every area of effect has a point of origin, a location from which the spell's energy erupts. The rules for each shape specify how you position its point of origin. Typically, a point of origin is a point in space, but some spells have an area whose origin is a creature or an object.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell origin",
+            "casting point",
+            "where does the spell start"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Targeting"
+        ]
+      },
+      {
+        "concept_name": "Blocking Area of Effect",
+        "definition": "A rule determining when an obstruction prevents a location from being included in a spell's area of effect.",
+        "rule_logic": {
+          "premise": "A spell's effect expands in straight lines from the point of origin AND an obstruction provides total cover between the point of origin and a location within the potential area of effect",
+          "implication": "That location is NOT included in the spell's area",
+          "exceptions": [],
+          "description_text": "A spell's effect expands in straight lines from the point of origin. If no unblocked straight line extends from the point of origin to a location within the area of effect, that location isn't included in the spell's area. To block one of these imaginary lines, an obstruction must provide total cover.",
+          "is_exception": false,
+          "related_search_terms": [
+            "total cover",
+            "line of sight",
+            "spell obstruction",
+            "can spell hit through wall",
+            "aoe blocked"
+          ]
+        },
+        "related_keywords": [
+          "Cover",
+          "Spellcasting",
+          "Area of Effect",
+          "Line of Sight"
+        ]
+      },
+      {
+        "concept_name": "Cone Area of Effect",
+        "definition": "A spell area of effect shape that extends in a chosen direction from its point of origin, widening as it extends.",
+        "rule_logic": {
+          "premise": "A spell creates a cone area of effect",
+          "implication": "It extends in a chosen direction from its point of origin. Its width at any point is equal to its distance from the origin. The point of origin is NOT included in the cone's area, unless the caster decides otherwise.",
+          "exceptions": [],
+          "description_text": "A cone extends in a direction you choose from its point of origin. A cone's width at a given point along its length is equal to that point's distance from the point of origin. A cone's area of effect specifies its maximum length. A cone's point of origin is not included in the cone's area of effect, unless you decide otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cone spell",
+            "fire breath shape",
+            "aoe cone",
+            "burst spell shape"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Cone"
+        ]
+      },
+      {
+        "concept_name": "Cube Area of Effect",
+        "definition": "A spell area of effect shape that forms a cube, with its point of origin located anywhere on one of its faces.",
+        "rule_logic": {
+          "premise": "A spell creates a cube area of effect",
+          "implication": "Its point of origin lies anywhere on one of its faces. Its size is expressed as the length of each side. The point of origin is NOT included in the cube's area, unless the caster decides otherwise.",
+          "exceptions": [],
+          "description_text": "You select a cube's point of origin, which lies anywhere on a face of the cubic effect. The cube's size is expressed as the length of each side. A cube's point of origin is not included in the cube's area of effect, unless you decide otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cube spell",
+            "wall of stone shape",
+            "aoe cube",
+            "spatial spell"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Cube"
+        ]
+      },
+      {
+        "concept_name": "Cylinder Area of Effect",
+        "definition": "A spell area of effect shape whose point of origin is the center of a circular base, extending vertically up or down.",
+        "rule_logic": {
+          "premise": "A spell creates a cylinder area of effect",
+          "implication": "Its point of origin is the center of a circle of a specified radius (base), either on the ground or at the height of the effect. The effect expands from the origin to the perimeter of the circle, then shoots up or down to a specified height. The point of origin IS included in the cylinder's area of effect.",
+          "exceptions": [],
+          "description_text": "A cylinder's point of origin is the center of a circle of a particular radius, as given in the spell description. The circle must either be on the ground or at the height of the spell effect. The energy in a cylinder expands in straight lines from the point of origin to the perimeter of the circle, forming the base of the cylinder. The spell's effect then shoots up from the base or down from the top, to a distance equal to the height of the cylinder. A cylinder's point of origin is included in the cylinder's area of effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cylinder spell",
+            "spirit guardians shape",
+            "aoe cylinder",
+            "pillar spell"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Cylinder"
+        ]
+      },
+      {
+        "concept_name": "Line Area of Effect",
+        "definition": "A spell area of effect shape that extends in a straight path from its point of origin, covering an area defined by its length and width.",
+        "rule_logic": {
+          "premise": "A spell creates a line area of effect",
+          "implication": "It extends from its point of origin in a straight path up to its specified length, covering an area defined by its width. The point of origin is NOT included in the line's area, unless the caster decides otherwise.",
+          "exceptions": [],
+          "description_text": "A line extends from its point of origin in a straight path up to its length and covers an area defined by its width. A line's point of origin is not included in the line's area of effect, unless you decide otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "line spell",
+            "lightning bolt shape",
+            "aoe line",
+            "straight spell"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Line"
+        ]
+      },
+      {
+        "concept_name": "Sphere Area of Effect",
+        "definition": "A spell area of effect shape that extends outward in all directions from a central point of origin.",
+        "rule_logic": {
+          "premise": "A spell creates a sphere area of effect",
+          "implication": "It extends outward from its selected point of origin. Its size is expressed as a radius in feet. The point of origin IS included in the sphere's area of effect.",
+          "exceptions": [],
+          "description_text": "You select a sphere's point of origin, and the sphere extends outward from that point. The sphere's size is expressed as a radius in feet that extends from the point. A sphere's point of origin is included in the sphere's area of effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sphere spell",
+            "fireball shape",
+            "aoe sphere",
+            "explosion spell"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasting",
+          "Area of Effect",
+          "Sphere"
+        ]
+      }
+    ],
+    "_chunk_header": "Areas of Effect",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Spellcasting - Spell Saving Throws",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Saving Throws (General)",
+        "definition": "A roll made by a creature targeted by a spell to avoid or reduce some or all of the spell's effects.",
+        "rule_logic": {
+          "premise": "A spell specifies a saving throw is allowed to avoid its effects",
+          "implication": "The spell indicates the ability score used for the save and the specific outcomes for success or failure",
+          "exceptions": [],
+          "description_text": "Many spells specify that a target can make a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is a spell saving throw",
+            "how do spell saves work",
+            "resisting spells",
+            "spell effects on save"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Saving Throw",
+          "Ability Score",
+          "Success",
+          "Failure"
+        ]
+      },
+      {
+        "concept_name": "Spell Saving Throw DC Calculation",
+        "definition": "The Difficulty Class (DC) that a target must meet or exceed on a saving throw to resist the effects of a spell.",
+        "rule_logic": {
+          "premise": "Calculating the DC for a target to resist one of your spells",
+          "implication": "DC = 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers",
+          "exceptions": [],
+          "description_text": "The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spell save dc formula",
+            "how to calculate spell dc",
+            "my spell save dc",
+            "caster dc",
+            "spell difficulty class"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Saving Throw",
+          "DC",
+          "Difficulty Class",
+          "Spellcasting Ability Modifier",
+          "Proficiency Bonus",
+          "Special Modifiers"
+        ]
+      }
+    ],
+    "_chunk_header": "Spell Saving Throws",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Combat - Spell Attack Rolls",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Attack Roll Bonus",
+        "definition": "The bonus applied to an attack roll made as part of casting a spell.",
+        "rule_logic": {
+          "premise": "A spell requires the caster to make an attack roll",
+          "implication": "The attack bonus equals the caster's Spellcasting Ability Modifier + Proficiency Bonus",
+          "exceptions": [],
+          "description_text": "Your attack bonus with a spell attack equals your spellcasting ability modifier + your proficiency bonus.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate spell attack bonus",
+            "spell attack modifier",
+            "casting attack roll bonus",
+            "magic attack calculation"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting ability",
+          "proficiency bonus",
+          "attack roll",
+          "spell"
+        ]
+      },
+      {
+        "concept_name": "Ranged Spell Attack Disadvantage (Adjacent Hostile)",
+        "definition": "A condition causing disadvantage on ranged spell attack rolls when a hostile creature is within close proximity.",
+        "rule_logic": {
+          "premise": "Caster makes a ranged spell attack roll AND is within 5 feet of a hostile creature AND the hostile creature can see the caster AND the hostile creature is not incapacitated",
+          "implication": "Caster has disadvantage on the ranged spell attack roll",
+          "exceptions": [],
+          "description_text": "Remember that you have disadvantage on a ranged attack roll if you are within 5 feet of a hostile creature that can see you and that isn't incapacitated.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ranged spell attack in melee",
+            "casting spell next to enemy",
+            "disadvantage on spell attack",
+            "spell attack in combat",
+            "ranged attack disadvantage"
+          ]
+        },
+        "related_keywords": [
+          "ranged attack",
+          "disadvantage",
+          "hostile creature",
+          "incapacitated",
+          "spell attack"
+        ]
+      }
+    ],
+    "_chunk_header": "Spell Attack Rolls",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "Combining Magical Effects",
+    "extracted_concepts": [
+      {
+        "concept_name": "Combining Different Spell Effects",
+        "definition": "A rule governing how the effects of distinct spells interact when their durations overlap on a target or area.",
+        "rule_logic": {
+          "premise": "Multiple different spells are cast, and their durations overlap",
+          "implication": "The effects of those different spells add together",
+          "exceptions": [],
+          "description_text": "The effects of different spells add together while the durations of those spells overlap.",
+          "is_exception": false,
+          "related_search_terms": [
+            "multiple spells",
+            "stacking spells",
+            "spell interaction",
+            "buffs combine"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "magic",
+          "duration",
+          "effect",
+          "combine",
+          "add"
+        ]
+      },
+      {
+        "concept_name": "Combining Same Spell Effects (Multiple Castings)",
+        "definition": "A rule governing how the effects of the identical spell, cast multiple times, interact when their durations overlap on a target or area.",
+        "rule_logic": {
+          "premise": "The same spell is cast multiple times, and their durations overlap",
+          "implication": "The effects do not combine; instead, only the most potent effect (e.g., highest bonus) from those castings applies",
+          "exceptions": [],
+          "description_text": "The effects of the same spell cast multiple times don't combine, however. Instead, the most potent effect-such as the highest bonus-from those castings applies while their durations overlap. For example, if two clerics cast bless on the same target, that character gains the spell's benefit only once; he or she doesn't get to roll two bonus dice.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stacking bless",
+            "multiple bless spells",
+            "duplicate spells",
+            "most potent effect",
+            "highest bonus",
+            "same spell multiple times"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "magic",
+          "duration",
+          "effect",
+          "combine",
+          "stacking",
+          "potent"
+        ]
+      }
+    ],
+    "_chunk_header": "Combining Magical Effects",
+    "_source_file": "casting-a-spell"
+  },
+  {
+    "source_chapter": "The Schools of Magic",
+    "extracted_concepts": [
+      {
+        "concept_name": "Abjuration",
+        "definition": "A school of magic primarily focused on protection, creating magical barriers, negating harmful effects, or banishing creatures.",
+        "rule_logic": {
+          "premise": "A spell creates magical barriers, negates harmful effects, harms trespassers, or banishes creatures to other planes of existence",
+          "implication": "The spell is classified as an Abjuration spell",
+          "exceptions": [],
+          "description_text": "Abjuration spells are protective in nature, though some of them have aggressive uses. They create magical barriers, negate harmful effects, harm trespassers, or banish creatures to other planes of existence.",
+          "is_exception": false,
+          "related_search_terms": [
+            "abjuration spell effect",
+            "protective magic",
+            "banishment",
+            "magical barrier",
+            "negate magic"
+          ]
+        },
+        "related_keywords": [
+          "protective",
+          "barrier",
+          "negate",
+          "banish",
+          "defensive",
+          "aggressive"
+        ]
+      },
+      {
+        "concept_name": "Conjuration",
+        "definition": "A school of magic involving the transportation of objects and creatures, summoning, or the creation of objects or effects from nothing.",
+        "rule_logic": {
+          "premise": "A spell involves transportation of objects or creatures, summoning creatures or objects, or creating objects or effects out of nothing",
+          "implication": "The spell is classified as a Conjuration spell",
+          "exceptions": [],
+          "description_text": "Conjuration spells involve the transportation of objects and creatures from one location to another. Some spells summon creatures or objects to the caster's side, whereas others allow the caster to teleport to another location. Some conjurations create objects or effects out of nothing.",
+          "is_exception": false,
+          "related_search_terms": [
+            "conjuration spell effect",
+            "summoning magic",
+            "teleportation",
+            "create object magic",
+            "move creature"
+          ]
+        },
+        "related_keywords": [
+          "transportation",
+          "summon",
+          "teleport",
+          "create",
+          "conjure",
+          "relocate"
+        ]
+      },
+      {
+        "concept_name": "Divination",
+        "definition": "A school of magic focused on revealing information, such as secrets, glimpses of the future, locations of hidden things, or truths behind illusions.",
+        "rule_logic": {
+          "premise": "A spell reveals information, whether secrets, glimpses of the future, locations of hidden things, truth behind illusions, or visions of distant people or places",
+          "implication": "The spell is classified as a Divination spell",
+          "exceptions": [],
+          "description_text": "Divination spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places.",
+          "is_exception": false,
+          "related_search_terms": [
+            "divination spell effect",
+            "information magic",
+            "scrying",
+            "future sight",
+            "detect magic",
+            "find hidden things"
+          ]
+        },
+        "related_keywords": [
+          "reveal",
+          "information",
+          "secrets",
+          "future",
+          "location",
+          "truth",
+          "visions"
+        ]
+      },
+      {
+        "concept_name": "Enchantment",
+        "definition": "A school of magic that affects the minds of others, influencing or controlling their behavior.",
+        "rule_logic": {
+          "premise": "A spell affects the minds of others, influencing or controlling their behavior",
+          "implication": "The spell is classified as an Enchantment spell",
+          "exceptions": [],
+          "description_text": "Enchantment spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a friend, force creatures to take a course of action, or even control another creature like a puppet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "enchantment spell effect",
+            "mind control magic",
+            "charm person",
+            "compulsion",
+            "influence behavior"
+          ]
+        },
+        "related_keywords": [
+          "mind",
+          "influence",
+          "control",
+          "charm",
+          "compel",
+          "behavior"
+        ]
+      },
+      {
+        "concept_name": "Evocation",
+        "definition": "A school of magic that manipulates magical energy to produce desired effects, often destructive blasts or healing energy.",
+        "rule_logic": {
+          "premise": "A spell manipulates magical energy to produce effects such as blasts of fire or lightning, or to channel positive energy to heal wounds",
+          "implication": "The spell is classified as an Evocation spell",
+          "exceptions": [],
+          "description_text": "Evocation spells manipulate magical energy to produce a desired effect. Some call up blasts of fire or lightning. Others channel positive energy to heal wounds.",
+          "is_exception": false,
+          "related_search_terms": [
+            "evocation spell effect",
+            "fireball",
+            "lightning bolt",
+            "healing magic",
+            "destructive magic",
+            "energy blast"
+          ]
+        },
+        "related_keywords": [
+          "energy",
+          "manipulate",
+          "fire",
+          "lightning",
+          "heal",
+          "blast",
+          "positive energy"
+        ]
+      },
+      {
+        "concept_name": "Illusion",
+        "definition": "A school of magic that deceives the senses or minds of others, creating false perceptions or memories.",
+        "rule_logic": {
+          "premise": "A spell deceives the senses or minds of others, causing them to see things that are not there, miss things that are there, hear phantom noises, or remember things that never happened",
+          "implication": "The spell is classified as an Illusion spell",
+          "exceptions": [],
+          "description_text": "Illusion spells deceive the senses or minds of others. They cause people to see things that are not there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "illusion spell effect",
+            "deception magic",
+            "phantom images",
+            "false memories",
+            "misdirection spell"
+          ]
+        },
+        "related_keywords": [
+          "deceive",
+          "senses",
+          "mind",
+          "phantom",
+          "image",
+          "misdirection",
+          "false"
+        ]
+      },
+      {
+        "concept_name": "Necromancy",
+        "definition": "A school of magic that manipulates the energies of life and death, allowing for the granting or draining of life force, creation of undead, or resurrection.",
+        "rule_logic": {
+          "premise": "A spell manipulates the energies of life and death, such as granting life force, draining life energy, creating undead, or bringing the dead back to life",
+          "implication": "The spell is classified as a Necromancy spell",
+          "exceptions": [],
+          "description_text": "Necromancy spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create the undead, or even bring the dead back to life. Creating the undead through the use of necromancy spells such as *animate dead* is not a good act, and only evil casters use such spells frequently.",
+          "is_exception": false,
+          "related_search_terms": [
+            "necromancy spell effect",
+            "undead creation",
+            "life drain",
+            "raise dead",
+            "animate dead",
+            "death magic"
+          ]
+        },
+        "related_keywords": [
+          "life",
+          "death",
+          "energy",
+          "drain",
+          "undead",
+          "raise",
+          "animate",
+          "resurrection"
+        ]
+      },
+      {
+        "concept_name": "Transmutation",
+        "definition": "A school of magic that changes the properties of a creature, object, or environment.",
+        "rule_logic": {
+          "premise": "A spell changes the properties of a creature, object, or environment",
+          "implication": "The spell is classified as a Transmutation spell",
+          "exceptions": [],
+          "description_text": "Transmutation spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature, bolster the strength of an ally, make an object move at the caster's command, or enhance a creature's innate healing abilities to rapidly recover from injury.",
+          "is_exception": false,
+          "related_search_terms": [
+            "transmutation spell effect",
+            "polymorph",
+            "transform magic",
+            "alter properties",
+            "change form"
+          ]
+        },
+        "related_keywords": [
+          "change",
+          "properties",
+          "creature",
+          "object",
+          "environment",
+          "alter",
+          "transform"
+        ]
+      }
+    ],
+    "_chunk_header": "The Schools of Magic",
+    "_source_file": "casting-a-spell"
+  }
+]

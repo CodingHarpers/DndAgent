@@ -1,0 +1,83 @@
+{
+  "entity_name": "Compulsion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On initial spell cast",
+      "condition": "Target is a creature of caster's choice, visible to caster, within range, can hear caster, AND can be charmed",
+      "outcome": "Target must make a Wisdom saving throw. On a failed save, target is affected by this spell. (Target automatically succeeds if it cannot be charmed)",
+      "related_search_terms": [
+        "enchantment spell",
+        "mind control",
+        "forced movement setup",
+        "wisdom save",
+        "charm immunity",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On caster's turn while spell is active",
+      "condition": "Caster uses a bonus action, AND target is affected by Compulsion",
+      "outcome": "Caster designates a horizontal direction. Affected target must use as much of its movement as possible to move in that direction on its next turn. (Target can take any action before moving)",
+      "related_search_terms": [
+        "bonus action control",
+        "movement compulsion",
+        "directional movement",
+        "forced march"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Forced movement due to Compulsion",
+      "condition": "Designated direction leads into an obviously deadly hazard (e.g., fire, pit)",
+      "outcome": "Target is NOT compelled to move into the deadly hazard",
+      "related_search_terms": [
+        "hazard avoidance",
+        "safety constraint",
+        "deadly terrain",
+        "environmental danger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Forced movement due to Compulsion",
+      "condition": "Moving in the designated direction would provoke opportunity attacks",
+      "outcome": "Target WILL provoke opportunity attacks",
+      "related_search_terms": [
+        "opportunity attacks",
+        "provoking OA",
+        "movement penalty",
+        "forced movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After moving due to Compulsion on its turn",
+      "condition": "Target is affected by Compulsion",
+      "outcome": "Target can make another Wisdom saving throw. On a success, the spell effect ends for that target",
+      "related_search_terms": [
+        "repeated save",
+        "end condition",
+        "break free",
+        "wisdom save",
+        "ongoing effect"
+      ]
+    }
+  ],
+  "description_text": "Creatures of your choice that you can see within range and that can hear you must make a wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take any action before it moves. After moving in this way, it can make another Wisdom save to try to end the effect. A target isn't compelled to move into an obviously deadly hazard, such as a fire or a pit, but it will provoke opportunity attacks to move in the designated direction.",
+  "tags": [
+    "Enchantment",
+    "Control",
+    "Wisdom Save",
+    "Movement Control"
+  ],
+  "related_search_terms": [
+    "forced movement spell",
+    "mind control",
+    "bonus action spell",
+    "enemy positioning",
+    "battlefield control"
+  ]
+}

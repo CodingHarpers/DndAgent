@@ -1,0 +1,130 @@
+{
+  "entity_name": "Gate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster targets an unoccupied space they can see within range",
+      "outcome": "A circular portal is conjured, linking the current plane to a different plane of existence",
+      "related_search_terms": [
+        "planar travel",
+        "interdimensional portal",
+        "teleportation",
+        "plane shift"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Portal Creation",
+      "condition": "Caster chooses a diameter for the portal",
+      "outcome": "The portal's diameter can be made 5 to 20 feet",
+      "related_search_terms": [
+        "portal size",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Portal Creation",
+      "condition": "Caster chooses the portal's orientation",
+      "outcome": "The portal can be oriented in any chosen direction",
+      "related_search_terms": [
+        "portal facing",
+        "portal direction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Portal is active",
+      "condition": "Spell duration has not ended",
+      "outcome": "The portal lasts for the spell's duration",
+      "related_search_terms": [
+        "spell duration",
+        "portal permanence"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to travel through the portal",
+      "condition": "Creature or object attempts to pass through the portal",
+      "outcome": "Travel through the portal is possible only by moving through its front",
+      "related_search_terms": [
+        "portal directionality",
+        "one-way portal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature or object moves through the portal's front",
+      "condition": "Movement is successful",
+      "outcome": "The creature or object is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal",
+      "related_search_terms": [
+        "instant travel",
+        "planar transport",
+        "teleport",
+        "dimensional travel"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to open portal",
+      "condition": "A deity or planar ruler is present OR the target location is within their domain",
+      "outcome": "Deities and planar rulers can prevent the portal from opening",
+      "related_search_terms": [
+        "divine intervention",
+        "planar ruler authority",
+        "spell interference",
+        "domain protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster speaks the specific name of a creature (not a pseudonym, title, or nickname) AND that creature is on a different plane than the caster",
+      "outcome": "The portal opens in the named creature's immediate vicinity",
+      "related_search_terms": [
+        "creature summoning",
+        "targeted portal",
+        "planar creature retrieval"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Specific creature portal opens",
+      "condition": "Named creature is on a plane other than the caster's",
+      "outcome": "The named creature is drawn through the portal to the nearest unoccupied space on the caster's side of the portal",
+      "related_search_terms": [
+        "forced summoning",
+        "creature transport",
+        "planar extraction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature is summoned via Gate spell",
+      "condition": "Creature has been drawn through the portal",
+      "outcome": "The caster gains no special power over the creature, and it is free to act as the GM deems appropriate",
+      "related_search_terms": [
+        "uncontrolled summon",
+        "creature autonomy",
+        "hostile summon",
+        "neutral summon"
+      ]
+    }
+  ],
+  "description_text": "You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration. The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal. Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains. When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the GM deems appropriate. It might leave, attack you, or help you.",
+  "tags": [
+    "teleportation",
+    "conjuration",
+    "planar",
+    "high-level spell"
+  ],
+  "related_search_terms": [
+    "portal spell",
+    "plane travel",
+    "summoning spell",
+    "interplanar gateway",
+    "planar gate"
+  ]
+}

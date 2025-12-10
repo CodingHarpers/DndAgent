@@ -1,0 +1,78 @@
+{
+  "entity_name": "Lightning Bolt",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "None",
+      "outcome": "A line 100 feet long and 5 feet wide blasts out from caster in a chosen direction",
+      "related_search_terms": [
+        "AoE",
+        "line spell",
+        "area damage",
+        "spell shape",
+        "target area"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature in line",
+      "condition": "Dexterity saving throw failed",
+      "outcome": "Target takes 8d6 lightning damage",
+      "related_search_terms": [
+        "spell damage",
+        "dex save",
+        "lightning damage",
+        "failed save",
+        "direct damage",
+        "full damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature in line",
+      "condition": "Dexterity saving throw succeeded",
+      "outcome": "Target takes half 8d6 lightning damage",
+      "related_search_terms": [
+        "spell damage",
+        "dex save",
+        "lightning damage",
+        "successful save",
+        "reduced damage",
+        "half damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Flammable object in area AND object is NOT worn or carried",
+      "outcome": "Object ignites",
+      "related_search_terms": [
+        "fire",
+        "environmental effect",
+        "ignite",
+        "set on fire",
+        "flammable materials",
+        "object interaction"
+      ]
+    }
+  ],
+  "description_text": "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.The lightning ignites flammable objects in the area that aren't being worn or carried.",
+  "tags": [
+    "spell",
+    "damage",
+    "area of effect",
+    "evocation",
+    "lightning",
+    "environmental"
+  ],
+  "related_search_terms": [
+    "lightning bolt",
+    "line spell",
+    "dex save spell",
+    "high damage spell",
+    "fire starter",
+    "blasting spell"
+  ]
+}

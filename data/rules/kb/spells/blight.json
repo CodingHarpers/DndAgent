@@ -1,0 +1,104 @@
+{
+  "entity_name": "Blight",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature that is NOT an Undead or Construct AND is within range",
+      "outcome": "Target must make a Constitution saving throw",
+      "related_search_terms": [
+        "saving throw",
+        "con save",
+        "resist spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Failed",
+      "condition": "Target is a creature that is NOT an Undead or Construct",
+      "outcome": "Target takes 8d8 necrotic damage",
+      "related_search_terms": [
+        "failed save damage",
+        "necrotic damage",
+        "spell damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Succeeded",
+      "condition": "Target is a creature that is NOT an Undead or Construct",
+      "outcome": "Target takes half of 8d8 necrotic damage",
+      "related_search_terms": [
+        "successful save damage",
+        "reduced damage",
+        "half damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is an Undead or Construct",
+      "outcome": "The spell has no effect",
+      "related_search_terms": [
+        "immune",
+        "undead immunity",
+        "construct immunity",
+        "no damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a Plant creature or a magical plant",
+      "outcome": "Target makes its Constitution saving throw with disadvantage",
+      "related_search_terms": [
+        "plant vulnerability",
+        "disadvantage save",
+        "magical plant",
+        "extra effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw by Plant Creature or Magical Plant",
+      "condition": "Target is a Plant creature or a magical plant AND the saving throw is failed",
+      "outcome": "The spell deals maximum damage (64 necrotic damage)",
+      "related_search_terms": [
+        "max damage",
+        "plant killer",
+        "plant creature",
+        "magical plant",
+        "vulnerable to blight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a nonmagical plant that isn't a creature (e.g., a tree or shrub)",
+      "outcome": "Target doesn't make a saving throw; it withers and dies",
+      "related_search_terms": [
+        "kill plant",
+        "destroy plant",
+        "instant death plant",
+        "environmental effect"
+      ]
+    }
+  ],
+  "description_text": "Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. The spell has no effect on undead or constructs. If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it. If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.",
+  "tags": [
+    "necromancy",
+    "damage",
+    "single_target",
+    "saving_throw",
+    "5th_level_spell"
+  ],
+  "related_search_terms": [
+    "blight spell",
+    "necrotic spell",
+    "damage spell",
+    "plant damage",
+    "constitution save spell",
+    "wither spell"
+  ]
+}

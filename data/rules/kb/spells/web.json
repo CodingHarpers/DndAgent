@@ -1,0 +1,129 @@
+{
+  "entity_name": "Web",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Point chosen within range",
+      "outcome": "A 20-foot cube of webs fills the area for the duration",
+      "related_search_terms": [
+        "AoE",
+        "area of effect",
+        "duration",
+        "conjure"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature moves through webs",
+      "condition": "Creature is in the area of webs",
+      "outcome": "Area is Difficult Terrain",
+      "related_search_terms": [
+        "movement penalty",
+        "slow down",
+        "terrain effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to see through webs",
+      "condition": "Creature is attempting to see through webs",
+      "outcome": "Area is Lightly Obscured",
+      "related_search_terms": [
+        "vision penalty",
+        "obscurement",
+        "stealth",
+        "hiding"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of your next turn after casting",
+      "condition": "Webs are NOT anchored between two solid masses OR NOT layered across a floor, wall, or ceiling",
+      "outcome": "Conjured web collapses and spell ends",
+      "related_search_terms": [
+        "spell failure",
+        "environmental interaction",
+        "structure requirement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Webs layered over a flat surface",
+      "condition": "Webs are layered over a flat surface",
+      "outcome": "Webs have a depth of 5 feet",
+      "related_search_terms": [
+        "thickness",
+        "dimension",
+        "flat surface"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature starts its turn in the webs OR enters them during its turn",
+      "condition": "Creature fails a Dexterity saving throw against your spell save DC",
+      "outcome": "Creature is restrained as long as it remains in the webs",
+      "related_search_terms": [
+        "grapple",
+        "immobilize",
+        "dex save",
+        "control spell",
+        "entangled"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature takes an Action while restrained by webs",
+      "condition": "Creature succeeds on a Strength check against your spell save DC",
+      "outcome": "Creature is no longer restrained",
+      "related_search_terms": [
+        "escape",
+        "break free",
+        "strength check",
+        "restrained condition removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Any 5-foot cube of webs is exposed to fire",
+      "condition": "Webs are exposed to fire",
+      "outcome": "That 5-foot cube of webs burns away in 1 round",
+      "related_search_terms": [
+        "vulnerability",
+        "fire interaction",
+        "environmental hazard",
+        "destroy webs"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature starts its turn in burning webs",
+      "condition": "Creature is in a 5-foot cube of webs that is burning",
+      "outcome": "Creature takes 2d4 fire damage",
+      "related_search_terms": [
+        "dot",
+        "damage over time",
+        "hazardous environment",
+        "fire damage"
+      ]
+    }
+  ],
+  "description_text": "You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.Each creature that starts its turn in the webs or that enters them during its turn must make a dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.",
+  "tags": [
+    "Conjuration",
+    "Control",
+    "Area of Effect",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "Web spell",
+    "restrain",
+    "difficult terrain",
+    "obscured",
+    "fire damage",
+    "area control",
+    "hindrance",
+    "immobilize"
+  ]
+}

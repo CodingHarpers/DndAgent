@@ -1,0 +1,52 @@
+{
+  "entity_name": "Resistance",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "A willing creature is touched",
+      "outcome": "The target gains an ability: once before the spell ends, they can roll 1d4 and add it to one saving throw of their choice",
+      "related_search_terms": [
+        "cast spell",
+        "touch range",
+        "buff",
+        "target willing creature",
+        "beneficial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes a Saving Throw",
+      "condition": "Target chooses to use the granted ability from Resistance",
+      "outcome": "Target rolls 1d4 and adds the number rolled to that saving throw. This can be done before or after rolling the saving throw.",
+      "related_search_terms": [
+        "saving throw bonus",
+        "d4 bonus",
+        "saving throw modification",
+        "reaction to save"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target uses the granted ability",
+      "condition": "Target has rolled 1d4 and added it to a saving throw",
+      "outcome": "The spell 'Resistance' ends",
+      "related_search_terms": [
+        "spell duration",
+        "spell ends",
+        "one-time use",
+        "concentration spell"
+      ]
+    }
+  ],
+  "description_text": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.",
+  "tags": [],
+  "related_search_terms": [
+    "resistance spell",
+    "saving throw buff",
+    "d4 to save",
+    "cleric spell",
+    "druid spell"
+  ]
+}

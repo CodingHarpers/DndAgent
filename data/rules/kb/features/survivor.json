@@ -1,0 +1,35 @@
+{
+  "entity_name": "Survivor",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Start of turn",
+      "condition": "Current Hit Points > 0 AND Current Hit Points <= Max Hit Points / 2",
+      "outcome": "Regain Hit Points equal to 5 + Constitution Modifier",
+      "related_search_terms": [
+        "healing",
+        "regeneration",
+        "self-heal",
+        "hit point recovery",
+        "monk feature",
+        "endurance",
+        "tank"
+      ]
+    }
+  ],
+  "description_text": "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.",
+  "tags": [
+    "class_feature",
+    "monk_feature",
+    "healing",
+    "regeneration",
+    "18th_level"
+  ],
+  "related_search_terms": [
+    "monk survivor",
+    "hit point regeneration",
+    "combat resilience",
+    "self-sustaining"
+  ]
+}

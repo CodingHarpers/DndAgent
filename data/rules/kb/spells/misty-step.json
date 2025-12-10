@@ -1,0 +1,31 @@
+{
+  "entity_name": "Misty Step",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On casting Misty Step",
+      "condition": "There is an unoccupied space visible to the caster within 30 feet",
+      "outcome": "Caster teleports to the chosen space",
+      "related_search_terms": [
+        "teleport",
+        "short range movement",
+        "repositioning",
+        "escape",
+        "movement spell"
+      ]
+    }
+  ],
+  "description_text": "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.",
+  "tags": [
+    "teleportation",
+    "movement",
+    "spell"
+  ],
+  "related_search_terms": [
+    "misty step spell",
+    "teleport",
+    "short teleport",
+    "escape move"
+  ]
+}

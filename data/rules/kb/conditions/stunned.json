@@ -1,0 +1,77 @@
+{
+  "entity_name": "Stunned",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Stunned",
+      "condition": "N/A",
+      "outcome": "Creature is Incapacitated",
+      "related_search_terms": [
+        "incapacitated",
+        "disabled",
+        "helpless"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to move",
+      "condition": "Creature is Stunned",
+      "outcome": "Creature cannot move",
+      "related_search_terms": [
+        "immobilized",
+        "restrained",
+        "movement impaired",
+        "paralyzed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Strength Saving Throw",
+      "condition": "Creature is Stunned",
+      "outcome": "Saving Throw automatically fails",
+      "related_search_terms": [
+        "strength save failure",
+        "automatic failure",
+        "physical save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Dexterity Saving Throw",
+      "condition": "Creature is Stunned",
+      "outcome": "Saving Throw automatically fails",
+      "related_search_terms": [
+        "dexterity save failure",
+        "automatic failure",
+        "agility save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Roll is made against creature",
+      "condition": "Target creature is Stunned",
+      "outcome": "Attack Roll has Advantage",
+      "related_search_terms": [
+        "easy to hit",
+        "vulnerable to attacks",
+        "advantage on hit"
+      ]
+    }
+  ],
+  "description_text": "A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage.",
+  "tags": [
+    "condition",
+    "status effect",
+    "debuff",
+    "control"
+  ],
+  "related_search_terms": [
+    "stun",
+    "dazed",
+    "incapacitated",
+    "paralyzed",
+    "control",
+    "status"
+  ]
+}

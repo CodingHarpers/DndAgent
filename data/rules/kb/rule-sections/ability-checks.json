@@ -1,0 +1,478 @@
+[
+  {
+    "source_chapter": "Ability Checks",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ability Check",
+        "definition": "A roll of a d20 to determine the success or failure of an action, modified by an ability score and proficiency bonus, against a Difficulty Class (DC).",
+        "rule_logic": {
+          "premise": "Player character or NPC attempts an action with an uncertain outcome, and the Dungeon Master calls for an Ability Check",
+          "implication": "Roll 1d20 + relevant ability modifier + proficiency bonus (if proficient). Compare total to a Difficulty Class (DC). If total >= DC, the check succeeds; otherwise, it fails.",
+          "exceptions": [],
+          "description_text": "An ability check tests a character’s or monster’s innate talent and training in an effort to overcome a challenge. The DM calls for an ability check when a character or monster attempts an action (other than an attack or a saving throw) that has a chance of failure. When the outcome is uncertain, the dice determine the results. For every ability check, the DM decides which of the six ability scores is most relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class. To make an ability check, roll one of the twenty-sided dice (d20) and add the relevant ability modifier. As with other d20 rolls, apply any bonuses or penalties, and compare the total to the DC. If the total equals or exceeds the DC, the ability check is a success — the creature overcomes the challenge at hand. Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress at the cost of some consequence determined by the DM.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to make an ability check",
+            "rolling a d20",
+            "ability modifier",
+            "difficulty class",
+            "what is a skill check",
+            "skill vs ability check"
+          ]
+        },
+        "related_keywords": [
+          "ability score",
+          "d20",
+          "DC",
+          "modifier",
+          "proficiency",
+          "success",
+          "failure"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "ability-checks"
+  },
+  {
+    "source_chapter": "Ability Checks",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ability Check",
+        "definition": "A test of a character's or monster's innate talent and training, used to overcome a challenge.",
+        "rule_logic": {
+          "premise": "GM determines an action (other than an attack) has a chance of failure and an uncertain outcome",
+          "implication": "GM calls for an Ability Check, specifying the relevant ability and Difficulty Class (DC)",
+          "exceptions": [],
+          "description_text": "An ability check tests a character's or monster's innate talent and training in an effort to overcome a challenge. The GM calls for an ability check when a character or monster attempts an action (other than an attack) that has a chance of failure. When the outcome is uncertain, the dice determine the results.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when do I roll an ability check",
+            "what is an ability check",
+            "how to make an ability check"
+          ]
+        },
+        "related_keywords": [
+          "ability",
+          "skill",
+          "challenge",
+          "talent",
+          "training",
+          "d20"
+        ]
+      },
+      {
+        "concept_name": "Performing an Ability Check",
+        "definition": "The procedure for resolving an Ability Check.",
+        "rule_logic": {
+          "premise": "An Ability Check is called for",
+          "implication": "Roll a d20, add the relevant ability modifier, apply any other bonuses/penalties, and compare the total to the Difficulty Class (DC)",
+          "exceptions": [],
+          "description_text": "To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties, and compare the total to the DC.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to roll for ability check",
+            "ability check calculation",
+            "what to add to d20 for ability check"
+          ]
+        },
+        "related_keywords": [
+          "d20",
+          "ability modifier",
+          "bonus",
+          "penalty",
+          "DC",
+          "roll"
+        ]
+      },
+      {
+        "concept_name": "Ability Check Success/Failure",
+        "definition": "The outcome of an Ability Check based on the total compared to the DC.",
+        "rule_logic": {
+          "premise": "Total of Ability Check roll is equal to or greater than the DC",
+          "implication": "The ability check is a success; the creature overcomes the challenge",
+          "exceptions": [],
+          "description_text": "If the total equals or exceeds the DC, the ability check is a success-the creature overcomes the challenge at hand.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens if I beat the DC",
+            "success on ability check"
+          ]
+        },
+        "related_keywords": [
+          "success",
+          "DC",
+          "challenge",
+          "outcome"
+        ]
+      },
+      {
+        "concept_name": "Ability Check Failure",
+        "definition": "The outcome of an Ability Check when the total is less than the DC.",
+        "rule_logic": {
+          "premise": "Total of Ability Check roll is less than the DC",
+          "implication": "The ability check is a failure; the creature makes no progress toward the objective or makes progress combined with a setback determined by the GM",
+          "exceptions": [],
+          "description_text": "Otherwise, it's a failure, which means the character or monster makes no progress toward the objective or makes progress combined with a setback determined by the GM.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens if I fail the DC",
+            "failure on ability check",
+            "consequences of failing a check"
+          ]
+        },
+        "related_keywords": [
+          "failure",
+          "DC",
+          "setback",
+          "outcome"
+        ]
+      },
+      {
+        "concept_name": "Difficulty Class (DC)",
+        "definition": "A value set by the GM that represents the difficulty of a task for an Ability Check. The more difficult a task, the higher its DC.",
+        "rule_logic": {
+          "premise": "GM determines the difficulty of a task for an Ability Check",
+          "implication": "GM assigns a Difficulty Class (DC) from a range (e.g., Very easy: 5, Easy: 10, Medium: 15, Hard: 20, Very hard: 25, Nearly impossible: 30)",
+          "exceptions": [],
+          "description_text": "For every ability check, the GM decides which of the six abilities is relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class. The more difficult a task, the higher its DC.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is DC",
+            "how is DC determined",
+            "difficulty values",
+            "typical DCs"
+          ]
+        },
+        "related_keywords": [
+          "DC",
+          "difficulty",
+          "task",
+          "GM"
+        ]
+      }
+    ],
+    "_chunk_header": "Ability Checks",
+    "_source_file": "ability-checks"
+  },
+  {
+    "source_chapter": "Contests",
+    "extracted_concepts": [
+      {
+        "concept_name": "Contest",
+        "definition": "A special form of ability check used when two or more participants' efforts are directly opposed, such as both trying to achieve the same goal or one preventing another.",
+        "rule_logic": {
+          "premise": "Two or more creatures' efforts are directly opposed (e.g., trying to do the same thing and only one can succeed, or one trying to prevent another's goal)",
+          "implication": "Both participants make appropriate ability checks, apply bonuses/penalties, and compare their total check results. The participant with the higher total wins.",
+          "exceptions": [],
+          "description_text": "Sometimes one character's or monster's efforts are directly opposed to another's. This can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal. In situations like these, the outcome is determined by a special form of ability check, called a contest. Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their two checks. The participant with the higher check total wins the contest. That character or monster either succeeds at the action or prevents the other one from succeeding.",
+          "is_exception": false,
+          "related_search_terms": [
+            "opposed check",
+            "ability contest",
+            "who wins if we both try",
+            "direct opposition",
+            "comparing checks"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "opposed efforts",
+          "succeed",
+          "prevent",
+          "snatch",
+          "force open",
+          "holding closed",
+          "bonuses",
+          "penalties",
+          "DC",
+          "total"
+        ]
+      },
+      {
+        "concept_name": "Contest Tie",
+        "definition": "The outcome when two or more participants in a contest achieve the same total on their ability checks.",
+        "rule_logic": {
+          "premise": "A contest results in a tie (participants have the same total check result)",
+          "implication": "The situation remains the same as it was immediately before the contest was initiated.",
+          "exceptions": [],
+          "description_text": "If the contest results in a tie, the situation remains the same as it was before the contest. Thus, one contestant might win the contest by default. If two characters tie in a contest to snatch a ring off the floor, neither character grabs it. In a contest between a monster trying to open a door and an adventurer trying to keep the door closed, a tie means that the door remains shut.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens on a tie",
+            "contest draw",
+            "stalemate",
+            "no change on tie"
+          ]
+        },
+        "related_keywords": [
+          "tie",
+          "contest",
+          "ability check",
+          "situation remains the same",
+          "default win",
+          "snatch a ring",
+          "door remains shut"
+        ]
+      }
+    ],
+    "_chunk_header": "Contests",
+    "_source_file": "ability-checks"
+  },
+  {
+    "source_chapter": "Skills",
+    "extracted_concepts": [
+      {
+        "concept_name": "Skill (Game Mechanic)",
+        "definition": "A specific aspect of an ability score that a character or monster can be proficient in, representing a focused capability.",
+        "rule_logic": {
+          "premise": "Character or monster attempts an action that relates to a specific skill category",
+          "implication": "GM may call for an ability check using that skill (e.g., 'Make a Wisdom (Perception) check')",
+          "exceptions": [],
+          "description_text": "Each ability covers a broad range of capabilities, including skills that a character or a monster can be proficient in. A skill represents a specific aspect of an ability score, and an individual's proficiency in a skill demonstrates a focus on that aspect. Sometimes, the GM might ask for an ability check using a specific skill-for example, 'Make a Wisdom (Perception) check.'",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are skills",
+            "skill list",
+            "ability score skills",
+            "how skill checks work"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "proficiency",
+          "Strength",
+          "Athletics",
+          "Dexterity",
+          "Acrobatics",
+          "Sleight of Hand",
+          "Stealth",
+          "Intelligence",
+          "Arcana",
+          "History",
+          "Investigation",
+          "Nature",
+          "Religion",
+          "Wisdom",
+          "Animal Handling",
+          "Insight",
+          "Medicine",
+          "Perception",
+          "Survival",
+          "Charisma",
+          "Deception",
+          "Intimidation",
+          "Performance",
+          "Persuasion"
+        ]
+      },
+      {
+        "concept_name": "Skill Proficiency Benefit",
+        "definition": "The mechanical advantage gained when an individual is proficient in a specific skill and performs an action covered by that skill.",
+        "rule_logic": {
+          "premise": "Individual is proficient in a specific skill AND GM calls for an ability check involving that skill",
+          "implication": "Individual adds their proficiency bonus to that ability check",
+          "exceptions": [],
+          "description_text": "proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve that skill. Without proficiency in the skill, the individual makes a normal ability check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "proficiency bonus application",
+            "how skill proficiency works",
+            "adding proficiency to skill checks",
+            "unproficient skill check"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "ability check",
+          "skill check",
+          "trained skill"
+        ]
+      },
+      {
+        "concept_name": "Variant: Skills with Different Abilities",
+        "definition": "An optional rule allowing the GM to determine, or a player to request, that a skill proficiency be applied to an ability check using a different ability score than its default, based on the specific circumstances of the action.",
+        "rule_logic": {
+          "premise": "GM or player determines that a specific skill proficiency (e.g., Athletics) reasonably applies to an ability check using an unusual ability score (e.g., Constitution or Strength for Intimidation)",
+          "implication": "If the individual is proficient in the *skill*, they apply their proficiency bonus to the unusual ability check, just as they would for the skill's normal ability check.",
+          "exceptions": [],
+          "description_text": "Normally, your proficiency in a skill applies only to a specific kind of ability check... In some situations, though, your proficiency might reasonably apply to a different kind of check. In such cases, the GM might ask for a check using an unusual combination of ability and skill, or you might ask your GM if you can apply a proficiency to a different check.",
+          "is_exception": true,
+          "related_search_terms": [
+            "custom skill checks",
+            "flexible skill use",
+            "strength intimidation",
+            "constitution athletics",
+            "GM discretion skills",
+            "alternative ability for skill"
+          ]
+        },
+        "related_keywords": [
+          "variant rule",
+          "optional rule",
+          "GM discretion",
+          "ability check modification",
+          "skill proficiency flexibility"
+        ]
+      }
+    ],
+    "_chunk_header": "Skills",
+    "_source_file": "ability-checks"
+  },
+  {
+    "source_chapter": "Ability Checks - Passive Checks",
+    "extracted_concepts": [
+      {
+        "concept_name": "Passive Check",
+        "definition": "A special type of ability check that does not involve rolling dice, representing an average outcome or a GM-determined secret success.",
+        "rule_logic": {
+          "premise": "GM wants to determine success without a die roll OR task is done repeatedly (e.g. searching)",
+          "implication": "Calculate a 'passive score' instead of rolling. Base score is 10 + all normal modifiers for the check.",
+          "exceptions": [],
+          "description_text": "A passive check is a special kind of ability check that doesn't involve any die rolls. Such a check can represent the average result for a task done repeatedly, such as searching for secret doors over and over again, or can be used when the GM wants to secretly determine whether the characters succeed at something without rolling dice, such as noticing a hidden monster. Here's how to determine a character's total for a passive check: 10 + all modifiers that normally apply to the check. If the character has advantage on the check, add 5. For disadvantage, subtract 5. The game refers to a passive check total as a score.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate passive perception",
+            "what is a passive check",
+            "when do you use passive scores",
+            "average ability check result",
+            "no dice roll check"
+          ]
+        },
+        "related_keywords": [
+          "ability check",
+          "skill check",
+          "passive score",
+          "perception",
+          "investigation",
+          "stealth"
+        ]
+      },
+      {
+        "concept_name": "Passive Check with Advantage",
+        "definition": "A modification to the passive check calculation when a character has advantage on the associated ability check.",
+        "rule_logic": {
+          "premise": "Calculating a passive check AND character has advantage on that check",
+          "implication": "Add +5 to the base passive score (10 + modifiers)",
+          "exceptions": [],
+          "description_text": "If the character has advantage on the check, add 5.",
+          "is_exception": false,
+          "related_search_terms": [
+            "passive perception advantage",
+            "advantage on passive checks",
+            "how advantage affects passive scores"
+          ]
+        },
+        "related_keywords": [
+          "passive check",
+          "advantage",
+          "modifier",
+          "score calculation"
+        ]
+      },
+      {
+        "concept_name": "Passive Check with Disadvantage",
+        "definition": "A modification to the passive check calculation when a character has disadvantage on the associated ability check.",
+        "rule_logic": {
+          "premise": "Calculating a passive check AND character has disadvantage on that check",
+          "implication": "Subtract -5 from the base passive score (10 + modifiers)",
+          "exceptions": [],
+          "description_text": "For disadvantage, subtract 5.",
+          "is_exception": false,
+          "related_search_terms": [
+            "passive perception disadvantage",
+            "disadvantage on passive checks",
+            "how disadvantage affects passive scores"
+          ]
+        },
+        "related_keywords": [
+          "passive check",
+          "disadvantage",
+          "modifier",
+          "score calculation"
+        ]
+      }
+    ],
+    "_chunk_header": "Passive Checks",
+    "_source_file": "ability-checks"
+  },
+  {
+    "source_chapter": "Ability Scores - Working Together",
+    "extracted_concepts": [
+      {
+        "concept_name": "Working Together (General)",
+        "definition": "A mechanism allowing two or more characters to collaborate on a task, with one character taking the lead and potentially gaining advantage.",
+        "rule_logic": {
+          "premise": "Two or more characters attempt a task AND one character provides assistance to another",
+          "implication": "The character leading the effort (or with the highest ability modifier) makes an ability check with Advantage.",
+          "exceptions": [
+            "The helping character must be able to attempt the task alone (e.g., possess required proficiency).",
+            "The task must be one that is genuinely made more productive by multiple individuals."
+          ],
+          "description_text": "Sometimes two or more characters team up to attempt a task. The character who's leading the effort-or the one with the highest ability modifier-can make an ability check with advantage, reflecting the help provided by the other characters. A character can only provide help if the task is one that he or she could attempt alone. Moreover, a character can help only when two or more individuals working together would actually be productive.",
+          "is_exception": false,
+          "related_search_terms": [
+            "help another character",
+            "team up on task",
+            "advantage from help",
+            "can I help with this skill check"
+          ]
+        },
+        "related_keywords": [
+          "Help",
+          "Advantage",
+          "Ability Check",
+          "Cooperation"
+        ]
+      },
+      {
+        "concept_name": "Working Together (Combat)",
+        "definition": "The specific application of the 'Working Together' principle within combat scenarios.",
+        "rule_logic": {
+          "premise": "A character provides help to another character in combat",
+          "implication": "The helping character must use their 'Help' action.",
+          "exceptions": [],
+          "description_text": "In combat, this requires the Help action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "combat help",
+            "help action rules",
+            "assisting in battle"
+          ]
+        },
+        "related_keywords": [
+          "Help Action",
+          "Combat",
+          "Action"
+        ]
+      },
+      {
+        "concept_name": "Group Ability Check",
+        "definition": "A special type of ability check used when a group attempts a collective task, where individual successes determine group outcome.",
+        "rule_logic": {
+          "premise": "The GM asks for a group ability check for a collective task.",
+          "implication": "Every individual in the group makes the required ability check. IF at least half the group succeeds THEN the whole group succeeds ELSE the group fails.",
+          "exceptions": [],
+          "description_text": "When a number of individuals are trying to accomplish something as a group, the GM might ask for a group ability check. To make a group ability check, everyone in the group makes the ability check. If at least half the group succeeds, the whole group succeeds. Otherwise, the group fails.",
+          "is_exception": false,
+          "related_search_terms": [
+            "group skill check",
+            "party success",
+            "how group checks work",
+            "collective task check",
+            "group survival check"
+          ]
+        },
+        "related_keywords": [
+          "Group",
+          "Ability Check",
+          "Success",
+          "Failure",
+          "GM Ruling"
+        ]
+      }
+    ],
+    "_chunk_header": "Working Together",
+    "_source_file": "ability-checks"
+  }
+]

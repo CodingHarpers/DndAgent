@@ -1,0 +1,125 @@
+{
+  "entity_name": "Plane Shift",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster and up to eight willing creatures link hands",
+      "outcome": "Caster and willing creatures are transported to a specified different plane of existence",
+      "related_search_terms": [
+        "planar travel",
+        "teleportation",
+        "interplanar",
+        "plane hopping",
+        "group travel",
+        "willing targets"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (Willing Transport Mode)",
+      "condition": "Caster specifies destination in general terms",
+      "outcome": "Caster and willing creatures appear in or near that specified destination, at the GM's discretion",
+      "related_search_terms": [
+        "destination control",
+        "arrival point",
+        "precision travel",
+        "general location"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (Teleportation Circle Mode)",
+      "condition": "Caster knows the sigil sequence of a teleportation circle on another plane of existence",
+      "outcome": "Caster and willing creatures are transported to that teleportation circle",
+      "related_search_terms": [
+        "teleportation circle",
+        "precise teleport",
+        "known location",
+        "sigil sequence",
+        "exact arrival"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Arrival at Teleportation Circle",
+      "condition": "Teleportation circle is too small to hold all transported creatures",
+      "outcome": "Overflowing creatures appear in the closest unoccupied spaces next to the circle",
+      "related_search_terms": [
+        "overflow",
+        "spacing",
+        "crowded teleport",
+        "adjacent spaces"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Action",
+      "condition": "Target is an unwilling creature within caster's reach",
+      "outcome": "Caster makes a melee spell attack against the target",
+      "related_search_terms": [
+        "banish",
+        "unwilling target",
+        "combat spell",
+        "melee attack spell",
+        "forced movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee Spell Attack Hits",
+      "condition": "Target is hit by the melee spell attack",
+      "outcome": "Target must make a Charisma saving throw",
+      "related_search_terms": [
+        "saving throw",
+        "charisma save",
+        "banishment save",
+        "resist spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charisma Save Failed",
+      "condition": "Target failed the Charisma saving throw",
+      "outcome": "Target is transported to a random location on the plane of existence specified by the caster",
+      "related_search_terms": [
+        "forced travel",
+        "planar banishment",
+        "random location",
+        "exile",
+        "no return"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature is banished by Plane Shift",
+      "condition": "Creature transported to another plane by this spell (unwilling target)",
+      "outcome": "Creature must find its own way back to the original plane",
+      "related_search_terms": [
+        "stranded",
+        "no return trip",
+        "permanent banish",
+        "player agency for return",
+        "GM roleplay"
+      ]
+    }
+  ],
+  "description_text": "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the GM's discretion. Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle. You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.",
+  "tags": [
+    "teleportation",
+    "planar travel",
+    "banishment",
+    "6th-level",
+    "transmutation"
+  ],
+  "related_search_terms": [
+    "interplanar travel",
+    "other planes",
+    "planescape",
+    "plane hopping",
+    "banish spell",
+    "teleportation spell",
+    "dimensional travel"
+  ]
+}

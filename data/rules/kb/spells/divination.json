@@ -1,0 +1,71 @@
+{
+  "entity_name": "Divination",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Magic and offerings establish contact with a god or their servants",
+      "outcome": "Player asks a single question concerning a specific goal, event, or activity to occur within 7 days",
+      "related_search_terms": [
+        "ask question",
+        "seek knowledge",
+        "future events",
+        "prophecy",
+        "information gathering"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Question asked",
+      "condition": "GM provides a reply",
+      "outcome": "The GM offers a truthful reply (short phrase, cryptic rhyme, or omen)",
+      "related_search_terms": [
+        "truthful answer",
+        "GM information",
+        "omen",
+        "cryptic message",
+        "divine insight"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "GM provides reply",
+      "condition": "Reply is given",
+      "outcome": "The spell's reply does not account for possible circumstances that might change the outcome (e.g., additional spells, loss/gain of a companion)",
+      "related_search_terms": [
+        "limited foresight",
+        "dynamic future",
+        "future uncertainty",
+        "contingency plans"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Casting spell two or more times before finishing next long rest",
+      "condition": "Spell has been cast more than once since the last long rest",
+      "outcome": "There is a cumulative 25 percent chance for each casting after the first that you get a random reading (GM rolls in secret)",
+      "related_search_terms": [
+        "spell overuse penalty",
+        "random outcome",
+        "unreliable magic",
+        "repetition drawback"
+      ]
+    }
+  ],
+  "description_text": "Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The GM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen. The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.",
+  "tags": [
+    "spell",
+    "divination"
+  ],
+  "related_search_terms": [
+    "prophecy",
+    "future sight",
+    "foretell",
+    "guidance",
+    "information gathering",
+    "lore",
+    "omen",
+    "oracle"
+  ]
+}

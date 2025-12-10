@@ -1,0 +1,221 @@
+{
+  "entity_name": "Teleport",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Teleport)",
+      "condition": "Caster targets up to eight willing creatures within range OR Caster targets a single object within range AND object fits entirely inside a 10-foot cube AND object is not held or carried by an unwilling creature",
+      "outcome": "Target(s) are instantly transported to a selected destination",
+      "related_search_terms": [
+        "teleportation",
+        "instant travel",
+        "mass teleport",
+        "object transport"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Selecting Teleport destination",
+      "condition": "Destination is NOT known to the caster OR Destination is NOT on the same plane of existence as the caster",
+      "outcome": "Teleportation to this destination is NOT possible",
+      "related_search_terms": [
+        "teleport range",
+        "planar travel restrictions",
+        "unknown location"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Permanent circle' OR Familiarity is 'Associated object'",
+      "outcome": "Teleportation is On Target (d100 roll 01-100)",
+      "related_search_terms": [
+        "reliable teleport",
+        "safe travel",
+        "teleportation circle",
+        "anchored teleport"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Very familiar' AND d100 roll is 25-100",
+      "outcome": "Teleportation is On Target",
+      "related_search_terms": [
+        "known destination",
+        "frequent location",
+        "seen before"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Very familiar' AND d100 roll is 14-24",
+      "outcome": "Teleportation is Off Target (random distance 1d10 x 1d10 percent of intended distance, random direction)",
+      "related_search_terms": [
+        "teleport error",
+        "navigation mistake",
+        "off course"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Very familiar' AND d100 roll is 06-13",
+      "outcome": "Teleportation lands in a Similar Area (closest similar place on the plane)",
+      "related_search_terms": [
+        "thematic arrival",
+        "wrong wizard lab",
+        "similar environment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Very familiar' AND d100 roll is 01-05",
+      "outcome": "Teleportation results in a Mishap",
+      "related_search_terms": [
+        "teleport fail",
+        "bad outcome",
+        "chaotic magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Seen casually' AND d100 roll is 54-100",
+      "outcome": "Teleportation is On Target",
+      "related_search_terms": [
+        "briefly seen",
+        "casual knowledge"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Seen casually' AND d100 roll is 44-53",
+      "outcome": "Teleportation is Off Target (random distance 1d10 x 1d10 percent of intended distance, random direction)",
+      "related_search_terms": [
+        "teleport error",
+        "navigation mistake",
+        "off course"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Seen casually' AND d100 roll is 34-43",
+      "outcome": "Teleportation lands in a Similar Area (closest similar place on the plane)",
+      "related_search_terms": [
+        "thematic arrival",
+        "wrong wizard lab",
+        "similar environment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Seen casually' AND d100 roll is 01-33",
+      "outcome": "Teleportation results in a Mishap",
+      "related_search_terms": [
+        "teleport fail",
+        "bad outcome",
+        "chaotic magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Viewed once' OR Familiarity is 'Description' AND d100 roll is 74-100",
+      "outcome": "Teleportation is On Target",
+      "related_search_terms": [
+        "single viewing",
+        "map knowledge",
+        "hearsay destination"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Viewed once' OR Familiarity is 'Description' AND d100 roll is 54-73",
+      "outcome": "Teleportation is Off Target (random distance 1d10 x 1d10 percent of intended distance, random direction)",
+      "related_search_terms": [
+        "teleport error",
+        "navigation mistake",
+        "off course"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Viewed once' OR Familiarity is 'Description' AND d100 roll is 44-53",
+      "outcome": "Teleportation lands in a Similar Area (closest similar place on the plane)",
+      "related_search_terms": [
+        "thematic arrival",
+        "wrong wizard lab",
+        "similar environment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'Viewed once' OR Familiarity is 'Description' AND d100 roll is 01-43",
+      "outcome": "Teleportation results in a Mishap",
+      "related_search_terms": [
+        "teleport fail",
+        "bad outcome",
+        "chaotic magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'False destination' AND d100 roll is 51-100",
+      "outcome": "Teleportation lands in a Similar Area (closest similar place on the plane)",
+      "related_search_terms": [
+        "non-existent place",
+        "illusionary destination",
+        "fake map"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport destination accuracy check",
+      "condition": "Familiarity is 'False destination' AND d100 roll is 01-50",
+      "outcome": "Teleportation results in a Mishap",
+      "related_search_terms": [
+        "non-existent place",
+        "illusionary destination",
+        "fake map",
+        "teleport fail"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Teleport Mishap occurs",
+      "condition": "Teleportation results in a Mishap",
+      "outcome": "Each teleporting creature/object takes 3d10 force damage AND GM rerolls on the Teleport table to determine new outcome",
+      "related_search_terms": [
+        "teleport damage",
+        "re-teleport",
+        "unstable destination",
+        "mishap chain"
+      ]
+    }
+  ],
+  "description_text": "This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.",
+  "tags": [
+    "teleportation",
+    "travel",
+    "utility",
+    "spell"
+  ],
+  "related_search_terms": [
+    "dimension door",
+    "plane shift",
+    "fast travel",
+    "wizard spell",
+    "sorcerer spell"
+  ]
+}

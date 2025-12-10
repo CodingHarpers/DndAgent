@@ -1,0 +1,40 @@
+{
+  "entity_name": "Locate Animals or Plants",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Caster specifies a type of beast or plant AND at least one creature or plant of that type exists within 5 miles of the caster",
+      "outcome": "Caster learns the direction and distance to the closest creature or plant of the specified type",
+      "related_search_terms": [
+        "find creature",
+        "find plant",
+        "tracking spell",
+        "sense nature",
+        "wilderness utility",
+        "detection spell",
+        "biological tracking",
+        "identify location"
+      ]
+    }
+  ],
+  "description_text": "Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.",
+  "tags": [
+    "Divination",
+    "Utility",
+    "Nature",
+    "Exploration"
+  ],
+  "related_search_terms": [
+    "nature spell",
+    "divination spell",
+    "tracking",
+    "scrying",
+    "finding things",
+    "wildlife",
+    "botany",
+    "ranger spell",
+    "druid spell"
+  ]
+}

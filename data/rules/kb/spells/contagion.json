@@ -1,0 +1,192 @@
+{
+  "entity_name": "Contagion",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast (Contagion)",
+      "condition": "Target within caster's reach",
+      "outcome": "Caster makes a melee spell attack roll against target",
+      "related_search_terms": [
+        "touch spell",
+        "melee attack",
+        "initial cast",
+        "range"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee spell attack hits",
+      "condition": "Contagion's melee spell attack hits a creature",
+      "outcome": "Target is afflicted with a chosen disease (Blinding Sickness, Filth Fever, Flesh Rot, Mindfire, Seizure, or Slimy Doom)",
+      "related_search_terms": [
+        "apply disease",
+        "affliction",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "End of Target's Turn",
+      "condition": "Target is afflicted by Contagion and has not yet recovered or fully succumbed",
+      "outcome": "Target must make a Constitution saving throw",
+      "related_search_terms": [
+        "ongoing effect",
+        "disease progression",
+        "saving throw"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target accumulates three failed Constitution saving throws",
+      "condition": "Target has failed 3 Constitution saving throws against Contagion",
+      "outcome": "The chosen disease's effects last for the spell's duration; target stops making Constitution saving throws",
+      "related_search_terms": [
+        "full affliction",
+        "permanent disease",
+        "succumb",
+        "failed saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target accumulates three successful Constitution saving throws",
+      "condition": "Target has succeeded on 3 Constitution saving throws against Contagion",
+      "outcome": "Target recovers from the disease; the Contagion spell ends",
+      "related_search_terms": [
+        "cured",
+        "recovered",
+        "spell ends",
+        "successful saves"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Effect that removes or ameliorates disease is used",
+      "condition": "Target is afflicted by a disease from Contagion",
+      "outcome": "The effect applies to Contagion's induced disease",
+      "related_search_terms": [
+        "cure disease",
+        "remove condition",
+        "healing",
+        "dispel"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Blinding Sickness",
+      "condition": "Target has Blinding Sickness",
+      "outcome": "Target has disadvantage on Wisdom checks and Wisdom saving throws, and is Blinded",
+      "related_search_terms": [
+        "blinded condition",
+        "wisdom debuff",
+        "checks",
+        "saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Filth Fever",
+      "condition": "Target has Filth Fever",
+      "outcome": "Target has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength",
+      "related_search_terms": [
+        "strength debuff",
+        "attack rolls",
+        "physical impairment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Flesh Rot",
+      "condition": "Target has Flesh Rot",
+      "outcome": "Target has disadvantage on Charisma checks and vulnerability to all damage",
+      "related_search_terms": [
+        "charisma debuff",
+        "vulnerability",
+        "extra damage",
+        "social penalty"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Mindfire (Ability Scores)",
+      "condition": "Target has Mindfire",
+      "outcome": "Target has disadvantage on Intelligence checks and Intelligence saving throws",
+      "related_search_terms": [
+        "intelligence debuff",
+        "mental impairment",
+        "checks",
+        "saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Mindfire (Combat)",
+      "condition": "Target has Mindfire AND is in combat",
+      "outcome": "Target behaves as if under the effects of the confusion spell",
+      "related_search_terms": [
+        "confusion spell",
+        "combat control",
+        "random movement",
+        "attack self"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Seizure",
+      "condition": "Target has Seizure",
+      "outcome": "Target has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity",
+      "related_search_terms": [
+        "dexterity debuff",
+        "attack rolls",
+        "agility penalty"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is afflicted with Slimy Doom (Ability Scores)",
+      "condition": "Target has Slimy Doom",
+      "outcome": "Target has disadvantage on Constitution checks and Constitution saving throws",
+      "related_search_terms": [
+        "constitution debuff",
+        "endurance penalty",
+        "checks",
+        "saves"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage while afflicted with Slimy Doom",
+      "condition": "Target takes damage AND is afflicted by Slimy Doom",
+      "outcome": "Target is Stunned until the end of its next turn",
+      "related_search_terms": [
+        "stunned condition",
+        "damage reaction",
+        "crowd control",
+        "interruption"
+      ]
+    }
+  ],
+  "description_text": "Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.At the end of each of the target's turns, it must make a constitution saving throw. After failing three of these saving throws, the disease's effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.***Blinding Sickness.*** Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on wisdom checks and wisdom saving throws and is blinded.***Filth Fever.*** A raging fever sweeps through the creature's body. The creature has disadvantage on strength checks, strength saving throws, and attack rolls that use Strength.***Flesh Rot.*** The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.***Mindfire.*** The creature's mind becomes feverish. The creature has disadvantage on intelligence checks and intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.***Seizure.*** The creature is overcome with shaking. The creature has disadvantage on dexterity checks, dexterity saving throws, and attack rolls that use Dexterity.***Slimy Doom.*** The creature begins to bleed uncontrollably. The creature has disadvantage on constitution checks and constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.",
+  "tags": [
+    "spell",
+    "disease",
+    "debuff",
+    "condition",
+    "control",
+    "melee",
+    "attack",
+    "saving_throw"
+  ],
+  "related_search_terms": [
+    "Contagion spell",
+    "disease affliction",
+    "debuff spell",
+    "touch attack",
+    "ongoing effects",
+    "condition spell",
+    "blinding",
+    "confusion",
+    "vulnerability"
+  ]
+}

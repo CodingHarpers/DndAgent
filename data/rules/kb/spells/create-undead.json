@@ -1,0 +1,105 @@
+{
+  "entity_name": "Create Undead",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting Attempt",
+      "condition": "Current time is NOT night",
+      "outcome": "Spell Cannot be Cast",
+      "related_search_terms": [
+        "time restriction",
+        "daylight casting",
+        "night only"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Successful Spell Casting",
+      "condition": "Target is a corpse of a Medium or Small humanoid within range (up to 3 targets)",
+      "outcome": "Target corpse becomes a Ghoul under the caster's control",
+      "related_search_terms": [
+        "raise ghoul",
+        "animate corpse",
+        "undead minion",
+        "necromancy",
+        "body reanimation"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Start of Caster's Turn",
+      "condition": "Caster controls a Ghoul animated by this spell within 120 feet",
+      "outcome": "Caster can use a Bonus Action to issue commands to controlled Ghoul(s)",
+      "related_search_terms": [
+        "minion control",
+        "bonus action command",
+        "undead orders",
+        "directing creatures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ghoul's Turn",
+      "condition": "Caster did NOT issue a specific command to the Ghoul for this turn",
+      "outcome": "Ghoul defends itself against hostile creatures",
+      "related_search_terms": [
+        "autonomous action",
+        "self-preservation",
+        "minion default behavior"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command Issued to Ghoul",
+      "condition": "Ghoul is under Caster's control",
+      "outcome": "Ghoul continues to follow the command until its task is complete",
+      "related_search_terms": [
+        "standing orders",
+        "long-term commands",
+        "persistent command"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "24 Hours Elapsed",
+      "condition": "Ghoul was animated or control reasserted by this spell 24 hours ago",
+      "outcome": "Ghoul is no longer under the caster's control",
+      "related_search_terms": [
+        "control duration",
+        "expiration",
+        "minion limit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Successful Spell Casting on Controlled Ghoul(s)",
+      "condition": "Casting occurs before the current 24-hour control period ends on up to three Ghouls animated by this spell",
+      "outcome": "Control over the Ghoul(s) is reasserted for another 24 hours",
+      "related_search_terms": [
+        "renew control",
+        "maintain minion",
+        "recast spell",
+        "undead upkeep",
+        "extend duration"
+      ]
+    }
+  ],
+  "description_text": "You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The GM has game statistics for these creatures.)As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones.",
+  "tags": [
+    "Necromancy",
+    "Spell",
+    "Undead",
+    "Minion",
+    "Control",
+    "Summon"
+  ],
+  "related_search_terms": [
+    "raise ghoul",
+    "animate dead",
+    "undead creation",
+    "necromancer spell",
+    "ghoul horde",
+    "command undead"
+  ]
+}

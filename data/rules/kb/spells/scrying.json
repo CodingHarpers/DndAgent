@@ -1,0 +1,191 @@
+{
+  "entity_name": "Scrying",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature on the same plane of existence as caster",
+      "outcome": "Target makes a Wisdom Saving Throw",
+      "related_search_terms": [
+        "targeting rules",
+        "divination target",
+        "spell initiation",
+        "scrying a person"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster's knowledge of target is 'Secondhand'",
+      "outcome": "Saving Throw roll is increased by 5",
+      "related_search_terms": [
+        "save bonus",
+        "knowledge modifier",
+        "spell difficulty adjustment",
+        "unknown target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster's knowledge of target is 'Firsthand'",
+      "outcome": "Saving Throw roll is unchanged",
+      "related_search_terms": [
+        "save bonus",
+        "knowledge modifier",
+        "spell difficulty adjustment",
+        "met target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster's knowledge of target is 'Familiar'",
+      "outcome": "Saving Throw roll is decreased by 5",
+      "related_search_terms": [
+        "save penalty",
+        "knowledge modifier",
+        "spell difficulty adjustment",
+        "close acquaintance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster has a 'Likeness or picture' of the target",
+      "outcome": "Saving Throw roll is decreased by 2",
+      "related_search_terms": [
+        "material component bonus",
+        "physical connection",
+        "save penalty",
+        "photograph",
+        "portrait"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster has a 'Possession or garment' of the target",
+      "outcome": "Saving Throw roll is decreased by 4",
+      "related_search_terms": [
+        "material component bonus",
+        "physical connection",
+        "save penalty",
+        "item link"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Caster has a 'Body part, lock of hair, bit of nail, or the like' of the target",
+      "outcome": "Saving Throw roll is decreased by 10",
+      "related_search_terms": [
+        "material component bonus",
+        "physical connection",
+        "save penalty",
+        "strong connection",
+        "biological link"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target makes Wisdom Saving Throw",
+      "condition": "Target knows caster is casting Scrying",
+      "outcome": "Target can choose to fail the saving throw voluntarily",
+      "related_search_terms": [
+        "consenting to scry",
+        "voluntary failure",
+        "awareness of spell",
+        "cooperation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target's Wisdom Saving Throw is successful",
+      "condition": "Target was a creature",
+      "outcome": "Target is not affected by the spell; Caster cannot use Scrying on this target for 24 hours",
+      "related_search_terms": [
+        "spell failure",
+        "temporary immunity",
+        "scrying cooldown",
+        "resisted spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's Wisdom Saving Throw is failed",
+      "condition": "Target was a creature",
+      "outcome": "An invisible sensor is created within 10 feet of the target",
+      "related_search_terms": [
+        "sensor creation",
+        "scrying success",
+        "magical surveillance",
+        "monitoring spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Sensor is active (created by failed creature save)",
+      "condition": "N/A",
+      "outcome": "Caster can see and hear through the sensor as if physically present",
+      "related_search_terms": [
+        "remote vision",
+        "remote hearing",
+        "clairvoyance sensor",
+        "observing target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Sensor is active (created by failed creature save)",
+      "condition": "N/A",
+      "outcome": "Sensor moves with the target, remaining within 10 feet of it for the duration",
+      "related_search_terms": [
+        "tracking sensor",
+        "mobile sensor",
+        "following target",
+        "persistent surveillance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to perceive the sensor",
+      "condition": "Creature can see invisible objects",
+      "outcome": "Creature sees the sensor as a luminous orb about the size of a fist",
+      "related_search_terms": [
+        "detecting invisible",
+        "sensor detection",
+        "true sight interaction",
+        "anti-magic field"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a location caster has seen before",
+      "outcome": "Invisible sensor appears at that location and does not move for the duration; Caster can see and hear through it",
+      "related_search_terms": [
+        "location scrying",
+        "fixed observation",
+        "area surveillance",
+        "spying on a place"
+      ]
+    }
+  ],
+  "description_text": "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.\n| Knowledge | Save Modifier |\n|---|---|\n| Secondhand (you have heard of the target) | +5 |\n| Firsthand (you have met the target) | +0 |\n| Familiar (you know the target well) | -5 |\n\n| Connection | Save Modifier |\n|---|---|\n| Likeness or picture | -2 |\n| Possession or garment | -4 |\n| Body part, lock of hair, bit of nail, or the like | -10 |\nOn a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.\nOn a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.\nInstead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn't move.",
+  "tags": [
+    "Divination",
+    "Sensor",
+    "Tracking",
+    "Observation",
+    "Scrying Spell"
+  ],
+  "related_search_terms": [
+    "surveillance spell",
+    "spying magic",
+    "remote viewing",
+    "tracking spell",
+    "divination ritual"
+  ]
+}

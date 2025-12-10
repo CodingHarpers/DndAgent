@@ -1,0 +1,70 @@
+{
+  "entity_name": "Cone of Cold",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell is Cast",
+      "condition": "Creature is within the 60-foot cone area of effect",
+      "outcome": "Creature must make a Constitution saving throw",
+      "related_search_terms": [
+        "AoE spell",
+        "cone attack",
+        "Constitution save",
+        "area damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw is failed",
+      "condition": "Creature is affected by Cone of Cold spell",
+      "outcome": "Creature takes 8d8 cold damage",
+      "related_search_terms": [
+        "cold damage",
+        "full damage",
+        "failed save effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw is successful",
+      "condition": "Creature is affected by Cone of Cold spell",
+      "outcome": "Creature takes 4d8 cold damage (half of 8d8)",
+      "related_search_terms": [
+        "half damage",
+        "successful save effect",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is reduced to 0 hit points by this spell",
+      "condition": "Creature is killed by Cone of Cold",
+      "outcome": "Creature becomes a frozen statue until it thaws",
+      "related_search_terms": [
+        "death effect",
+        "frozen condition",
+        "petrification",
+        "statue",
+        "ice sculpture"
+      ]
+    }
+  ],
+  "description_text": "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws.",
+  "tags": [
+    "Spell",
+    "Evocation",
+    "5th-Level",
+    "Damage",
+    "Cold",
+    "Area of Effect",
+    "Saving Throw",
+    "Instantaneous"
+  ],
+  "related_search_terms": [
+    "cold cone",
+    "ice blast",
+    "winter spell",
+    "frost damage"
+  ]
+}

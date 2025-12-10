@@ -1,0 +1,91 @@
+{
+  "entity_name": "Moonbeam",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target point within range is chosen",
+      "outcome": "A 5-foot radius, 40-foot-high cylinder of dim light is created at the target point",
+      "related_search_terms": [
+        "AoE",
+        "illumination",
+        "light source",
+        "obscurement",
+        "cylinder",
+        "area effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters Moonbeam's area for the first time on a turn OR starts its turn in Moonbeam's area",
+      "condition": "Creature is in Moonbeam's area",
+      "outcome": "Creature makes a Constitution saving throw. On a failed save, creature takes 2d10 radiant damage. On a successful save, creature takes half as much radiant damage",
+      "related_search_terms": [
+        "radiant damage",
+        "AoE damage",
+        "turn start damage",
+        "area denial",
+        "Con save",
+        "damage over time"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Shapechanger makes a Constitution saving throw against Moonbeam's damage effect",
+      "condition": "Creature is a shapechanger",
+      "outcome": "The saving throw is made with disadvantage",
+      "related_search_terms": [
+        "werewolf",
+        "polymorph",
+        "wild shape",
+        "form change",
+        "disadvantage save",
+        "anti-shapechanger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Shapechanger fails Constitution saving throw against Moonbeam's damage effect",
+      "condition": "Creature is a shapechanger AND failed the saving throw",
+      "outcome": "Creature instantly reverts to its original form AND cannot assume a different form until it leaves Moonbeam's area",
+      "related_search_terms": [
+        "werewolf",
+        "polymorph",
+        "wild shape",
+        "forced transformation",
+        "form lock",
+        "anti-shapechanger"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On your turn after Moonbeam is cast",
+      "condition": "You use an action",
+      "outcome": "The Moonbeam cylinder can be moved up to 60 feet in any direction",
+      "related_search_terms": [
+        "move spell",
+        "reposition AoE",
+        "action economy",
+        "tactical spell",
+        "area control"
+      ]
+    }
+  ],
+  "description_text": "A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder. When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one. A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light. On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction.",
+  "tags": [
+    "Spell",
+    "Concentration",
+    "Damage",
+    "Area of Effect",
+    "Control",
+    "Radiant"
+  ],
+  "related_search_terms": [
+    "Moonbeam spell",
+    "druid spell",
+    "radiant beam",
+    "area damage",
+    "shapechanger counter",
+    "light spell"
+  ]
+}

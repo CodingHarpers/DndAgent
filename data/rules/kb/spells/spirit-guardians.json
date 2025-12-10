@@ -1,0 +1,116 @@
+{
+  "entity_name": "Spirit Guardians",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is active",
+      "condition": "Creature is within 15 feet of the caster",
+      "outcome": "Creature is within the Spirit Guardians area of effect",
+      "related_search_terms": [
+        "aura",
+        "zone",
+        "radius",
+        "proximity",
+        "persistent effect",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "When casting Spirit Guardians",
+      "condition": "Caster designates a creature they can see",
+      "outcome": "Designated creature is unaffected by Spirit Guardians",
+      "related_search_terms": [
+        "friendly fire",
+        "allies",
+        "exception",
+        "exclude targets",
+        "selective targeting"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is affected by Spirit Guardians",
+      "condition": "Creature is within the spell's area of effect",
+      "outcome": "Creature's speed is halved",
+      "related_search_terms": [
+        "movement penalty",
+        "slow",
+        "hindrance",
+        "difficult terrain",
+        "restrained"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is affected by Spirit Guardians",
+      "condition": "Creature enters area for the first time on a turn OR creature starts its turn in the area",
+      "outcome": "Creature must make a Wisdom saving throw",
+      "related_search_terms": [
+        "AoE damage trigger",
+        "turn start effect",
+        "entering zone effect",
+        "persistent damage",
+        "save or suck"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom saving throw triggered by Spirit Guardians",
+      "condition": "Saving throw failed AND caster alignment is Good or Neutral",
+      "outcome": "Creature takes 3d8 radiant damage",
+      "related_search_terms": [
+        "radiant damage",
+        "divine damage",
+        "holy damage",
+        "failed save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom saving throw triggered by Spirit Guardians",
+      "condition": "Saving throw failed AND caster alignment is Evil",
+      "outcome": "Creature takes 3d8 necrotic damage",
+      "related_search_terms": [
+        "necrotic damage",
+        "unholy damage",
+        "evil damage",
+        "failed save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom saving throw triggered by Spirit Guardians",
+      "condition": "Saving throw successful",
+      "outcome": "Creature takes half of the damage it would have taken on a failed save",
+      "related_search_terms": [
+        "half damage",
+        "reduced damage",
+        "successful save",
+        "damage resistance"
+      ]
+    }
+  ],
+  "description_text": "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.",
+  "tags": [
+    "spell",
+    "cleric",
+    "radiant damage",
+    "necrotic damage",
+    "area of effect",
+    "concentration",
+    "slow",
+    "wisdom save"
+  ],
+  "related_search_terms": [
+    "AoE spell",
+    "cleric spell",
+    "persistent effect",
+    "damage over time",
+    "slow effect",
+    "radiant damage",
+    "necrotic damage",
+    "zone control"
+  ]
+}

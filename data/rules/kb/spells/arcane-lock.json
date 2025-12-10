@@ -1,0 +1,90 @@
+{
+  "entity_name": "Arcane Lock",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target is a closed door, window, gate, chest, or other entryway",
+      "outcome": "Target becomes locked for the duration",
+      "related_search_terms": [
+        "seal",
+        "secure",
+        "magical lock",
+        "object locking"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Attempt to open locked object",
+      "condition": "Arcane Lock is active AND User is Caster OR User is a creature designated by caster during casting",
+      "outcome": "Object can be opened normally",
+      "related_search_terms": [
+        "authorized access",
+        "bypass",
+        "personal entry",
+        "designated creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Password spoken",
+      "condition": "Arcane Lock is active AND User knows the password AND User is within 5ft of object",
+      "outcome": "Arcane Lock is suppressed for 1 minute",
+      "related_search_terms": [
+        "secret phrase",
+        "temporary disable",
+        "verbal key",
+        "spell suppression"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to pass through or open object",
+      "condition": "Arcane Lock is active AND User is NOT Caster OR designated creature AND Password has NOT been spoken recently AND Spell has NOT been dispelled OR broken",
+      "outcome": "Object is impassable",
+      "related_search_terms": [
+        "blocked",
+        "barrier",
+        "no entry",
+        "secure portal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Knock spell cast",
+      "condition": "Arcane Lock is active on the object",
+      "outcome": "Arcane Lock is suppressed for 10 minutes",
+      "related_search_terms": [
+        "counterspell",
+        "unlock magic",
+        "spell interaction",
+        "override"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Attempt to break or pick lock on object",
+      "condition": "Arcane Lock is active on the object",
+      "outcome": "DC to break or pick locks increases by 10",
+      "related_search_terms": [
+        "fortify",
+        "reinforce",
+        "security increase",
+        "lockpicking difficulty"
+      ]
+    }
+  ],
+  "description_text": "You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes. While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10.",
+  "tags": [
+    "Abjuration",
+    "Level 2"
+  ],
+  "related_search_terms": [
+    "security spell",
+    "locking magic",
+    "door ward",
+    "anti-theft",
+    "object protection"
+  ]
+}

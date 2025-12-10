@@ -1,0 +1,83 @@
+{
+  "entity_name": "Reverse Gravity",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Area of Effect)",
+      "condition": "Creature or object is within a 50-foot radius, 100-foot high cylinder centered on a point within range AND is NOT anchored to the ground",
+      "outcome": "Creature or object falls upward and reaches the top of the area",
+      "related_search_terms": [
+        "gravity manipulation",
+        "anti-gravity",
+        "floating",
+        "lift",
+        "displace"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature within spell area when cast",
+      "condition": "Creature is subjected to upward fall AND can reach a fixed object AND succeeds on a Dexterity saving throw",
+      "outcome": "Creature grabs onto the object and avoids falling upward",
+      "related_search_terms": [
+        "dex save",
+        "grab object",
+        "avoid fall",
+        "resist spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Upward Fall Impact",
+      "condition": "Falling creature or object encounters a solid object (e.g., ceiling) during upward fall",
+      "outcome": "Creature or object strikes the solid object, as per a normal downward fall (potential bludgeoning damage)",
+      "related_search_terms": [
+        "fall damage",
+        "impact damage",
+        "hit ceiling",
+        "crush"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of upward fall (no impact)",
+      "condition": "Creature or object reaches the top of the area without striking anything",
+      "outcome": "Creature or object remains at the top of the area for the spell's duration",
+      "related_search_terms": [
+        "suspended",
+        "floating",
+        "held aloft",
+        "immobilized"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Duration Ends",
+      "condition": "Creature or object was affected by Reverse Gravity",
+      "outcome": "Affected creature or object falls back down",
+      "related_search_terms": [
+        "fall damage",
+        "gravity return",
+        "plummet",
+        "drop"
+      ]
+    }
+  ],
+  "description_text": "This spell reverses gravity in a 50-foot-radius, 100-foot high cylinder centered on a point within range. All creatures and objects that aren't somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration. At the end of the duration, affected objects and creatures fall back down.",
+  "tags": [
+    "Spell",
+    "6th-Level",
+    "Transmutation",
+    "Area of Effect",
+    "Control"
+  ],
+  "related_search_terms": [
+    "gravity manipulation",
+    "fall damage",
+    "aoe control",
+    "levitation",
+    "flying",
+    "environmental control"
+  ]
+}

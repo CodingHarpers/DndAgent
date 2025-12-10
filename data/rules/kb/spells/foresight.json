@@ -1,0 +1,90 @@
+{
+  "entity_name": "Foresight",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Surprise Check",
+      "condition": "Target is under effects of Foresight",
+      "outcome": "Target cannot be surprised",
+      "related_search_terms": [
+        "immune to surprise",
+        "ambush protection",
+        "initiative advantage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Roll",
+      "condition": "Target is under effects of Foresight",
+      "outcome": "Target's attack rolls have Advantage",
+      "related_search_terms": [
+        "offensive buff",
+        "accuracy boost",
+        "hit chance improvement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ability Check",
+      "condition": "Target is under effects of Foresight",
+      "outcome": "Target's ability checks have Advantage",
+      "related_search_terms": [
+        "skill check buff",
+        "attribute check enhancement",
+        "proficiency aid"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Saving Throw",
+      "condition": "Target is under effects of Foresight",
+      "outcome": "Target's saving throws have Advantage",
+      "related_search_terms": [
+        "defensive buff",
+        "resilience boost",
+        "spell evasion",
+        "resist effects"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Attacker targets creature under Foresight",
+      "outcome": "Attacker's attack rolls against target have Disadvantage",
+      "related_search_terms": [
+        "defensive debuff",
+        "hard to hit",
+        "miss chance for enemies",
+        "evasion boost"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Caster casts Foresight while another instance of Foresight (cast by the same caster) is active",
+      "outcome": "Previous Foresight spell ends immediately",
+      "related_search_terms": [
+        "spell duration limit",
+        "recasting spell",
+        "duplicate spell effect",
+        "concentration management"
+      ]
+    }
+  ],
+  "description_text": "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration. This spell immediately ends if you cast it again before its duration ends.",
+  "tags": [
+    "spell",
+    "divination",
+    "buff",
+    "enhancement"
+  ],
+  "related_search_terms": [
+    "prediction",
+    "premonition",
+    "future sight",
+    "omens",
+    "luck spell",
+    "all-around buff"
+  ]
+}

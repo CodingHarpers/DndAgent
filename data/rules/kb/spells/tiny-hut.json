@@ -1,0 +1,134 @@
+{
+  "entity_name": "Tiny Hut",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell is successfully cast",
+      "outcome": "Create a 10-foot-radius immobile dome of force around and above the caster, remaining stationary for the duration",
+      "related_search_terms": [
+        "shelter creation",
+        "force field",
+        "protective barrier"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster's movement",
+      "condition": "Caster leaves the dome's area",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "spell duration",
+        "caster proximity",
+        "ending effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Dome's area includes a creature larger than Medium OR more than nine creatures",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "casting failure",
+        "creature limit",
+        "size restriction"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Movement through dome",
+      "condition": "Creature or object was within the dome's area when the spell was cast",
+      "outcome": "Creature or object can move through the dome freely",
+      "related_search_terms": [
+        "passage",
+        "permeable barrier",
+        "initial occupants"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Movement through dome",
+      "condition": "Creature or object was NOT within the dome's area when the spell was cast",
+      "outcome": "Creature or object is barred from passing through the dome",
+      "related_search_terms": [
+        "blocking entry",
+        "impassable barrier",
+        "exclusion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell or magical effect attempts to cross dome boundary",
+      "condition": "Spell or magical effect originates outside the dome OR attempts to target through the dome",
+      "outcome": "Spell or magical effect cannot extend through the dome or be cast through it",
+      "related_search_terms": [
+        "anti-magic field",
+        "spell blocking",
+        "magical defense"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Environmental conditions outside",
+      "condition": "Weather outside the dome is uncomfortable or extreme",
+      "outcome": "Atmosphere inside the dome is comfortable and dry",
+      "related_search_terms": [
+        "weather protection",
+        "environmental comfort",
+        "shelter from elements"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's command",
+      "condition": "Caster is inside the dome",
+      "outcome": "The interior of the dome becomes dimly lit OR dark (caster's choice)",
+      "related_search_terms": [
+        "lighting control",
+        "darkness",
+        "dim light"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Visual observation of the dome",
+      "condition": "Observer is outside the dome",
+      "outcome": "The dome appears opaque, of any color chosen by the caster",
+      "related_search_terms": [
+        "concealment",
+        "hidden",
+        "visual barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Visual observation of the dome",
+      "condition": "Observer is inside the dome",
+      "outcome": "The dome appears transparent from the inside",
+      "related_search_terms": [
+        "visibility from inside",
+        "seeing out",
+        "vantage point"
+      ]
+    }
+  ],
+  "description_text": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.",
+  "tags": [
+    "Abjuration",
+    "Ritual",
+    "Utility",
+    "Defense",
+    "Exploration"
+  ],
+  "related_search_terms": [
+    "shelter",
+    "rest",
+    "camping",
+    "protection",
+    "barrier",
+    "safe haven",
+    "force dome",
+    "ritual spell"
+  ]
+}

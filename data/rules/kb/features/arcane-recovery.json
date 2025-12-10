@@ -1,0 +1,56 @@
+{
+  "entity_name": "Arcane Recovery",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "After finishing a Short Rest",
+      "condition": "This ability has not been used since the last Long Rest",
+      "outcome": "You can choose expended spell slots to recover",
+      "related_search_terms": [
+        "spell slot refresh",
+        "resource management",
+        "daily ability",
+        "short rest benefit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing expended spell slots to recover",
+      "condition": "Combined level of chosen spell slots",
+      "outcome": "Must be less than or equal to (Wizard Level / 2) rounded up",
+      "related_search_terms": [
+        "spell slot cap",
+        "recovery limit",
+        "wizard level scaling",
+        "maximum spell level recovered"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing expended spell slots to recover",
+      "condition": "Individual spell slot level",
+      "outcome": "Cannot be 6th level or higher",
+      "related_search_terms": [
+        "high level spell slots",
+        "epic spells",
+        "max spell level exclusion",
+        "forbidden spell slots"
+      ]
+    }
+  ],
+  "description_text": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher. For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.",
+  "tags": [
+    "wizard",
+    "resource_recovery",
+    "short_rest",
+    "spellcasting"
+  ],
+  "related_search_terms": [
+    "wizard ability",
+    "mana recovery",
+    "spell refresh",
+    "magic restoration",
+    "scholarly recovery"
+  ]
+}

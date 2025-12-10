@@ -1,0 +1,97 @@
+{
+  "entity_name": "Geas",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature caster can see within range AND Target can understand caster",
+      "outcome": "Target makes a Wisdom Saving Throw. On a failed save, Target becomes Charmed by Caster for the duration.",
+      "related_search_terms": [
+        "enchantment",
+        "mind control",
+        "saving throw",
+        "initial effect",
+        "spell save"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell is cast on a creature",
+      "condition": "Target creature cannot understand Caster",
+      "outcome": "Target is unaffected by Geas spell",
+      "related_search_terms": [
+        "language barrier",
+        "immunity",
+        "prerequisite",
+        "communication",
+        "spell failure"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charmed target acts in a manner directly counter to Caster's instructions",
+      "condition": "Target is Charmed by Geas spell AND Has not taken damage from Geas for this day",
+      "outcome": "Target takes 5d10 Psychic damage",
+      "related_search_terms": [
+        "punishment",
+        "disobedience",
+        "mental damage",
+        "daily limit",
+        "violation damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster issues a command to the charmed target",
+      "condition": "Command would result in certain death for the Charmed target",
+      "outcome": "Geas spell ends immediately",
+      "related_search_terms": [
+        "spell limit",
+        "suicide clause",
+        "breaking charm",
+        "command restriction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action",
+      "condition": "Caster chooses to dismiss Geas spell",
+      "outcome": "Geas spell ends",
+      "related_search_terms": [
+        "ending early",
+        "caster control",
+        "voluntary dismissal",
+        "spell dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is affected by a spell",
+      "condition": "The spell is Remove Curse, Greater Restoration, or Wish",
+      "outcome": "Geas spell ends",
+      "related_search_terms": [
+        "counterspell",
+        "dispelling magic",
+        "magic removal",
+        "spell termination",
+        "curse removal"
+      ]
+    }
+  ],
+  "description_text": "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell. You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends. You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it.",
+  "tags": [
+    "Enchantment",
+    "Control",
+    "Damage",
+    "Curse",
+    "Long Duration"
+  ],
+  "related_search_terms": [
+    "compulsion",
+    "forced service",
+    "magical command",
+    "long duration spell",
+    "charmed condition"
+  ]
+}

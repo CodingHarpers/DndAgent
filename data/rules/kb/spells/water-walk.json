@@ -1,0 +1,64 @@
+{
+  "entity_name": "Water Walk",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature affected by Water Walk attempts to move on liquid surface",
+      "condition": "Liquid surface is one of: water, acid, mud, snow, quicksand, or lava",
+      "outcome": "Creature can move across the liquid as if it were harmless solid ground",
+      "related_search_terms": [
+        "walk on water",
+        "traverse liquid",
+        "surface movement",
+        "avoid difficult terrain",
+        "liquid traversal",
+        "movement speed",
+        "terrain bypass"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature affected by Water Walk is crossing molten lava",
+      "condition": "None",
+      "outcome": "Creature can still take damage from the heat of the lava",
+      "related_search_terms": [
+        "lava damage",
+        "environmental hazard",
+        "heat damage",
+        "molten rock",
+        "environmental damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Water Walk spell is cast targeting a creature submerged in liquid",
+      "condition": "Target creature is submerged in liquid",
+      "outcome": "Target is carried to the surface of the liquid at a rate of 60 feet per round",
+      "related_search_terms": [
+        "rescue",
+        "drowning",
+        "submerged rescue",
+        "surface spell",
+        "liquid escape",
+        "ascend"
+      ]
+    }
+  ],
+  "description_text": "This spell grants the ability to move across any liquid surface--such as water, acid, mud, snow, quicksand, or lava--as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.",
+  "tags": [
+    "Abjuration",
+    "Movement",
+    "Utility"
+  ],
+  "related_search_terms": [
+    "walk on water",
+    "liquid travel",
+    "surface traversal",
+    "group movement",
+    "water safety",
+    "acid walk",
+    "lava walk",
+    "movement spell"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "entity_name": "Gaseous Form",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target is a willing creature touched by caster",
+      "outcome": "Target transforms into a misty cloud for the duration, along with worn and carried items",
+      "related_search_terms": [
+        "shapeshift",
+        "polymorph",
+        "creature transformation",
+        "alter self"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target's Hit Points change",
+      "condition": "Target drops to 0 Hit Points",
+      "outcome": "Gaseous Form spell ends",
+      "related_search_terms": [
+        "spell duration end",
+        "unconscious",
+        "dying"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Target is an incorporeal creature",
+      "outcome": "Target is not affected by Gaseous Form",
+      "related_search_terms": [
+        "ghost",
+        "spirit",
+        "undead immunity",
+        "incorporeal immunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Movement attempt",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target's only movement method is a flying speed of 10 feet",
+      "related_search_terms": [
+        "slow flight",
+        "hover",
+        "movement type change"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Movement attempt",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target can enter and occupy the space of another creature",
+      "related_search_terms": [
+        "overlap",
+        "squeeze",
+        "pass through foe",
+        "phasing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Target is in Gaseous Form AND damage is nonmagical",
+      "outcome": "Target has resistance to the damage",
+      "related_search_terms": [
+        "damage reduction",
+        "physical damage resist",
+        "bludgeoning piercing slashing resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes a saving throw",
+      "condition": "Target is in Gaseous Form AND saving throw is Strength, Dexterity, or Constitution",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "save bonus",
+        "resilience",
+        "evasion",
+        "stat save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Movement attempt through obstacles",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target can pass through small holes, narrow openings, and cracks",
+      "related_search_terms": [
+        "wall pass",
+        "infiltration",
+        "obstacle movement",
+        "escape"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Movement attempt through liquids",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target treats liquids as solid surfaces and cannot pass through them",
+      "related_search_terms": [
+        "water blockage",
+        "liquid impediment",
+        "no swimming"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Gravity or Incapacitation",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target cannot fall and remains hovering, even when stunned or incapacitated",
+      "related_search_terms": [
+        "levitation",
+        "stable flight",
+        "fall immunity",
+        "hovering"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target attempts to talk or manipulate objects",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target cannot talk or manipulate objects",
+      "related_search_terms": [
+        "silenced",
+        "disarmed",
+        "interaction inability"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target attempts to interact with carried/held objects",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Any objects target was carrying or holding cannot be dropped, used, or interacted with",
+      "related_search_terms": [
+        "item lock",
+        "inventory frozen",
+        "cannot use gear"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target attempts to make an attack",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target cannot attack",
+      "related_search_terms": [
+        "pacified",
+        "non-combat form",
+        "no offensive actions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target attempts to cast a spell",
+      "condition": "Target is in Gaseous Form",
+      "outcome": "Target cannot cast spells",
+      "related_search_terms": [
+        "spell lock",
+        "magic restriction",
+        "cannot cast"
+      ]
+    }
+  ],
+  "description_text": "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.",
+  "tags": [
+    "Transmutation",
+    "3rd-level",
+    "Concentration",
+    "Utility",
+    "Movement"
+  ],
+  "related_search_terms": [
+    "mist form",
+    "ethereal",
+    "intangible",
+    "flight spell",
+    "damage reduction spell",
+    "movement through walls",
+    "escape spell"
+  ]
+}

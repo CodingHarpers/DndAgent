@@ -1,0 +1,92 @@
+{
+  "entity_name": "Sunburst",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature is within 60ft radius of chosen point",
+      "outcome": "Creature must make a Constitution saving throw",
+      "related_search_terms": [
+        "area of effect",
+        "AOE",
+        "radiant burst",
+        "saving throw spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw (Sunburst)",
+      "condition": "Target is Undead OR Ooze",
+      "outcome": "Target makes the saving throw with Disadvantage",
+      "related_search_terms": [
+        "undead weakness",
+        "ooze vulnerability",
+        "special saving throw"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Failed (Sunburst)",
+      "condition": "Target creature",
+      "outcome": "Target takes 12d6 Radiant damage AND is Blinded for 1 minute",
+      "related_search_terms": [
+        "full damage",
+        "blinding",
+        "crowd control",
+        "debuff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Succeeded (Sunburst)",
+      "condition": "Target creature",
+      "outcome": "Target takes 6d6 Radiant damage (half) AND is not Blinded",
+      "related_search_terms": [
+        "half damage",
+        "resisted effect",
+        "evade blindness"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of Blinded Creature's Turn",
+      "condition": "Creature is Blinded by Sunburst",
+      "outcome": "Creature makes another Constitution saving throw. On a success, the Blinded condition ends.",
+      "related_search_terms": [
+        "repeated save",
+        "condition removal",
+        "recover from blindness",
+        "ongoing effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Darkness created by a spell exists within the 60ft radius",
+      "outcome": "That darkness is dispelled",
+      "related_search_terms": [
+        "counter darkness",
+        "light effect",
+        "dispel magic darkness",
+        "negate spell"
+      ]
+    }
+  ],
+  "description_text": "Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw. A creature blinded by this spell makes another constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded. This spell dispels any darkness in its area that was created by a spell.",
+  "tags": [
+    "Level 8",
+    "Evocation",
+    "Radiant Damage",
+    "Area of Effect",
+    "Blinding",
+    "Dispels Darkness"
+  ],
+  "related_search_terms": [
+    "sun spell",
+    "light explosion",
+    "mass blindness",
+    "anti-darkness spell",
+    "powerful AOE"
+  ]
+}

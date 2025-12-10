@@ -1,0 +1,73 @@
+{
+  "entity_name": "Fire Shield",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is active",
+      "condition": "N/A",
+      "outcome": "Caster radiates bright light in a 10-foot radius and dim light for an additional 10 feet",
+      "related_search_terms": [
+        "illumination",
+        "light source",
+        "vision impairment"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn",
+      "condition": "Caster wishes to end the spell",
+      "outcome": "Caster can use an action to end the spell",
+      "related_search_terms": [
+        "dispel",
+        "cancel spell",
+        "action economy",
+        "concentration"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell is cast",
+      "condition": "Caster chooses 'heat shield' mode",
+      "outcome": "Caster gains resistance to cold damage",
+      "related_search_terms": [
+        "elemental resistance",
+        "damage reduction",
+        "cold protection"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell is cast",
+      "condition": "Caster chooses 'cold shield' mode",
+      "outcome": "Caster gains resistance to fire damage",
+      "related_search_terms": [
+        "elemental resistance",
+        "damage reduction",
+        "fire protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature within 5 feet hits caster with a melee attack",
+      "condition": "Spell is active AND Attacker is within 5 feet AND Attacker hits caster with a melee attack",
+      "outcome": "Attacker suffers 2d8 damage of the chosen type (fire or cold)",
+      "related_search_terms": [
+        "retaliation",
+        "thornmail",
+        "aura damage",
+        "melee combat",
+        "close combat",
+        "reaction damage"
+      ]
+    }
+  ],
+  "description_text": "Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using an action to make it disappear. The flames are around you a heat shield or cold, your choice. The heat shield gives you cold damage resistance and the cold resistance to fire damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, flames spring from the shield. The attacker then suffers 2d8 points of fire damage or cold, depending on the model.",
+  "related_search_terms": [
+    "fire shield spell",
+    "fire resistance",
+    "cold resistance",
+    "retribution damage",
+    "damage aura",
+    "warding spell"
+  ]
+}

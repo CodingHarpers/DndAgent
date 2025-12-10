@@ -1,0 +1,34 @@
+{
+  "entity_name": "Stoneskin",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Damage source is nonmagical AND Damage type is Bludgeoning OR Piercing OR Slashing AND Spell is active on target",
+      "outcome": "Target gains Resistance to that damage instance",
+      "related_search_terms": [
+        "nonmagical damage",
+        "bludgeoning resistance",
+        "piercing resistance",
+        "slashing resistance",
+        "physical resistance",
+        "damage reduction",
+        "half damage"
+      ]
+    }
+  ],
+  "description_text": "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+  "tags": [
+    "Abjuration",
+    "Buff",
+    "Protection"
+  ],
+  "related_search_terms": [
+    "defensive spell",
+    "damage reduction spell",
+    "physical damage resistance",
+    "toughness",
+    "armor spell"
+  ]
+}

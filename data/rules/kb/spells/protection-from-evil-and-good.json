@@ -1,0 +1,72 @@
+{
+  "entity_name": "Protection from Evil and Good",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell is cast",
+      "condition": "Caster touches one willing creature",
+      "outcome": "Target gains protection against aberrations, celestials, elementals, fey, fiends, and undead until spell ends",
+      "related_search_terms": [
+        "spell effect duration",
+        "target selection",
+        "willing target",
+        "touched creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Protected creature is attacked",
+      "condition": "Attacker is an aberration, celestial, elemental, fey, fiend, or undead",
+      "outcome": "Attacker has disadvantage on attack rolls against the protected creature",
+      "related_search_terms": [
+        "defense buff",
+        "attack debuff",
+        "hard to hit",
+        "creature type interaction",
+        "monster attack penalty"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "An effect attempts to charm, frighten, or possess the protected creature",
+      "condition": "The effect originates from an aberration, celestial, elemental, fey, fiend, or undead",
+      "outcome": "Protected creature cannot be charmed, frightened, or possessed by the triggering creature",
+      "related_search_terms": [
+        "condition immunity",
+        "mental defense",
+        "anti-charm",
+        "anti-frighten",
+        "anti-possession",
+        "mind control prevention"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Protected creature attempts a new saving throw against an existing charm, frighten, or possess effect",
+      "condition": "The existing effect originated from an aberration, celestial, elemental, fey, fiend, or undead",
+      "outcome": "Protected creature has advantage on the saving throw",
+      "related_search_terms": [
+        "condition removal",
+        "save bonus",
+        "breaking control",
+        "advantage on save",
+        "ending conditions early"
+      ]
+    }
+  ],
+  "description_text": "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead. The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.",
+  "tags": [],
+  "related_search_terms": [
+    "protective spell",
+    "buff spell",
+    "holy spell",
+    "aberration defense",
+    "celestial defense",
+    "elemental defense",
+    "fey defense",
+    "fiend defense",
+    "undead defense",
+    "prevent condition",
+    "resistance to monsters"
+  ]
+}

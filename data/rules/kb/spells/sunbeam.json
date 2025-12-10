@@ -1,0 +1,121 @@
+{
+  "entity_name": "Sunbeam",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Initial Spell Cast",
+      "condition": "Creature is within 5-foot-wide, 60-foot-long line originating from caster",
+      "outcome": "Creature must make a Constitution saving throw",
+      "related_search_terms": [
+        "AoE spell",
+        "line attack",
+        "radiant damage area",
+        "group damage",
+        "save or suffer"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Failed",
+      "condition": "Creature within line fails its save",
+      "outcome": "Creature takes 6d8 radiant damage and is blinded until caster's next turn",
+      "related_search_terms": [
+        "full damage",
+        "blinded condition",
+        "condition application",
+        "damage and debuff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw Successful",
+      "condition": "Creature within line succeeds on its save",
+      "outcome": "Creature takes half 6d8 radiant damage and is not blinded",
+      "related_search_terms": [
+        "half damage",
+        "save for half",
+        "avoid condition",
+        "resist damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw for Sunbeam",
+      "condition": "Target creature is Undead OR target creature is an Ooze",
+      "outcome": "Target makes the save with disadvantage",
+      "related_search_terms": [
+        "undead weakness",
+        "ooze weakness",
+        "creature type vulnerability",
+        "specific enemy debuff"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn during spell duration",
+      "condition": "Caster uses an action",
+      "outcome": "Caster can create a new 5-foot-wide, 60-foot-long line, applying the initial effects",
+      "related_search_terms": [
+        "repeated effect",
+        "action economy",
+        "damage over time",
+        "持續傷害",
+        "recast effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is active (duration)",
+      "condition": "None",
+      "outcome": "A mote of brilliant radiance shines in caster's hand",
+      "related_search_terms": [
+        "spell visual",
+        "light source",
+        "hand glow"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is active (duration)",
+      "condition": "None",
+      "outcome": "Mote sheds bright light in a 30-foot radius and dim light for an additional 30 feet",
+      "related_search_terms": [
+        "illumination",
+        "light radius",
+        "vision range",
+        "environmental light"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is active (duration)",
+      "condition": "None",
+      "outcome": "The light produced by the mote is considered sunlight",
+      "related_search_terms": [
+        "sunlight sensitivity",
+        "vampire weakness",
+        "darkness counter",
+        "faerie fire counter"
+      ]
+    }
+  ],
+  "description_text": "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw. You can create a new line of radiance as your action on any turn until the spell ends. For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.",
+  "tags": [
+    "Radiant Damage",
+    "Blinding",
+    "Area of Effect",
+    "Light Source",
+    "Sunlight",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "sun spell",
+    "radiant beam",
+    "blinding light",
+    "aoe damage",
+    "repeating spell",
+    "undead bane",
+    "ooze bane"
+  ]
+}

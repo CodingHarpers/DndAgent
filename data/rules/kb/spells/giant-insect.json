@@ -1,0 +1,93 @@
+{
+  "entity_name": "Giant Insect",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is up to ten centipedes, three spiders, five wasps, or one scorpion AND within range (30ft)",
+      "outcome": "Target transforms into its giant version (Giant Centipede, Giant Spider, Giant Wasp, Giant Scorpion) for the duration",
+      "related_search_terms": [
+        "transform creature",
+        "enlarge animal",
+        "summon insects",
+        "insect minions",
+        "combat pets"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Transformed creature is active",
+      "condition": "You cast Giant Insect",
+      "outcome": "Transformed creatures obey your verbal commands and act on your turn in combat",
+      "related_search_terms": [
+        "control minions",
+        "command pets",
+        "action economy",
+        "group combat"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Transformed creature's HP changes",
+      "condition": "Transformed creature drops to 0 hit points",
+      "outcome": "Transformation ends for that creature",
+      "related_search_terms": [
+        "spell ends",
+        "minion defeated",
+        "revert form"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Your turn",
+      "condition": "You use an action",
+      "outcome": "You dismiss the effect on one transformed creature, ending its transformation",
+      "related_search_terms": [
+        "cancel spell",
+        "end early",
+        "dismiss minion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell duration ends",
+      "condition": "Duration (10 minutes, Concentration) expires",
+      "outcome": "Transformation ends for all affected creatures",
+      "related_search_terms": [
+        "concentration broken",
+        "spell expiry",
+        "time limit"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "GM consideration",
+      "condition": "A creature not explicitly listed as a target (centipede, spider, wasp, scorpion) is chosen",
+      "outcome": "GM may allow transformation, assigning statistics (e.g., a bee uses Giant Wasp statistics)",
+      "related_search_terms": [
+        "GM ruling",
+        "homebrew",
+        "variant targets",
+        "creative spellcasting"
+      ]
+    }
+  ],
+  "description_text": "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion. Each creature obeys your verbal commands, and in combat, they act on your turn each round. The GM has the statistics for these creatures and resolves their actions and movement. A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it. The GM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.",
+  "tags": [
+    "transmutation",
+    "conjuration",
+    "utility",
+    "combat",
+    "control",
+    "summoning"
+  ],
+  "related_search_terms": [
+    "insect transformation",
+    "animal companion",
+    "minion summoning",
+    "beast control",
+    "combat pet",
+    "nature spell"
+  ]
+}

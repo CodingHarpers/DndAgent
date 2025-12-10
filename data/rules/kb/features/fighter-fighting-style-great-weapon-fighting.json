@@ -1,0 +1,40 @@
+{
+  "entity_name": "Great Weapon Fighting",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "After rolling damage die for a melee weapon attack",
+      "condition": "Damage die result is 1 OR 2 AND The melee weapon is wielded with two hands AND The weapon has the Two-Handed OR Versatile property",
+      "outcome": "You can reroll that damage die and must use the new result, even if it is 1 or 2",
+      "related_search_terms": [
+        "damage roll",
+        "reroll",
+        "dice manipulation",
+        "minimum damage",
+        "two-handed weapon damage",
+        "versatile weapon damage"
+      ]
+    }
+  ],
+  "description_text": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.",
+  "tags": [
+    "fighting_style",
+    "combat_feature",
+    "damage_modification"
+  ],
+  "related_search_terms": [
+    "GWF",
+    "greatsword",
+    "maul",
+    "greataxe",
+    "polearm",
+    "longsword two-handed",
+    "battleaxe two-handed",
+    "warhammer two-handed",
+    "damage optimization",
+    "fighter fighting style",
+    "paladin fighting style",
+    "weapon damage"
+  ]
+}

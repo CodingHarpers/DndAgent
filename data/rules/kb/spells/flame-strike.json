@@ -1,0 +1,61 @@
+{
+  "entity_name": "Flame Strike",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Creature is within a 10-foot-radius, 40-foot-high cylinder centered on a point within range",
+      "outcome": "Creature must make a Dexterity saving throw",
+      "related_search_terms": [
+        "area of effect",
+        "AoE",
+        "cylinder spell",
+        "multiple targets",
+        "dex save",
+        "ranged spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity saving throw",
+      "condition": "Creature fails the saving throw",
+      "outcome": "Creature takes 4d6 fire damage AND 4d6 radiant damage",
+      "related_search_terms": [
+        "fire damage",
+        "radiant damage",
+        "full damage",
+        "failed save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity saving throw",
+      "condition": "Creature succeeds on the saving throw",
+      "outcome": "Creature takes half of 4d6 fire damage AND half of 4d6 radiant damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "reduced damage"
+      ]
+    }
+  ],
+  "description_text": "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.",
+  "tags": [
+    "spell",
+    "damage",
+    "AoE",
+    "fire",
+    "radiant"
+  ],
+  "related_search_terms": [
+    "flame strike",
+    "divine fire",
+    "fire damage",
+    "radiant damage",
+    "cleric spell",
+    "paladin spell",
+    "dex save",
+    "area damage"
+  ]
+}

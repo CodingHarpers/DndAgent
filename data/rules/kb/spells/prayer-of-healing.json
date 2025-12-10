@@ -1,0 +1,43 @@
+{
+  "entity_name": "Prayer of Healing",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature of your choice, you can see it, and it is within range (30 feet)",
+      "outcome": "Target regains hit points equal to 2d8 + your spellcasting ability modifier",
+      "related_search_terms": [
+        "restore HP",
+        "heal",
+        "hit point restoration",
+        "group heal"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is an Undead or a Construct",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "healing immunity",
+        "cannot heal undead",
+        "cannot heal constructs",
+        "unaffected by healing"
+      ]
+    }
+  ],
+  "description_text": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "tags": [
+    "healing",
+    "spell",
+    "cleric",
+    "bard"
+  ],
+  "related_search_terms": [
+    "mass healing",
+    "group heal",
+    "restore health",
+    "aoe heal"
+  ]
+}

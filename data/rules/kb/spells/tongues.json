@@ -1,0 +1,45 @@
+{
+  "entity_name": "Tongues",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Creature affected by Tongues hears a spoken language",
+      "condition": "Creature is affected by Tongues",
+      "outcome": "Creature understands the spoken language",
+      "related_search_terms": [
+        "comprehend language",
+        "understand any language",
+        "communication",
+        "language barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature affected by Tongues speaks",
+      "condition": "Creature is affected by Tongues AND Listener knows at least one language AND Listener can hear the speaking creature",
+      "outcome": "Listener understands what the speaking creature says",
+      "related_search_terms": [
+        "universal translator",
+        "be understood",
+        "speak across languages",
+        "communication spell"
+      ]
+    }
+  ],
+  "description_text": "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.",
+  "tags": [
+    "spell",
+    "divination",
+    "level 3",
+    "verbal",
+    "material",
+    "somatic"
+  ],
+  "related_search_terms": [
+    "language spell",
+    "communication magic",
+    "understanding languages",
+    "speaking languages"
+  ]
+}

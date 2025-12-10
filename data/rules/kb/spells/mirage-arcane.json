@@ -1,0 +1,74 @@
+{
+  "entity_name": "Mirage Arcane",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Target area is up to 1 mile square",
+      "outcome": "The area's terrain (including structures) appears, sounds, smells, and feels like a different type of terrain or structures; the terrain's general shape remains the same; creatures are not disguised, concealed, or added",
+      "related_search_terms": [
+        "terrain transformation",
+        "sensory manipulation",
+        "environmental illusion",
+        "landscape alteration",
+        "structure illusion",
+        "area effect",
+        "illusion terrain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to traverse or interact with the affected area",
+      "condition": "Within the spell's area AND illusion dictates a physical property (e.g., difficult terrain, impassable terrain, clear ground)",
+      "outcome": "Movement through the area is impeded, facilitated, or blocked according to the illusory tactile elements (e.g., clear ground becomes difficult terrain, a precipice becomes a slope)",
+      "related_search_terms": [
+        "difficult terrain",
+        "impassable terrain",
+        "movement restriction",
+        "tactile illusion",
+        "physical impediment",
+        "terrain modification"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Piece of illusory terrain is removed from the spell's area",
+      "condition": "Object is part of the illusion created by Mirage Arcane",
+      "outcome": "The illusory piece disappears immediately",
+      "related_search_terms": [
+        "illusion persistence",
+        "spell boundary",
+        "object disappearance",
+        "illusion limitations"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature with Truesight observes or interacts with the spell's area",
+      "condition": "Creature possesses Truesight",
+      "outcome": "Creature sees the terrain's true form; however, all other illusory elements (sound, smell, tactile) remain, and the creature can still physically interact with the illusion while aware of its presence",
+      "related_search_terms": [
+        "illusion counter",
+        "truesight detection",
+        "illusion perception",
+        "seeing through magic",
+        "anti-illusion"
+      ]
+    }
+  ],
+  "description_text": "You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain's general shape remains the same, however. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.Similarly, you can alter the appearance of structures, or add them where none are present. The spell doesn't disguise, conceal, or add creatures.The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.Creatures with truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.",
+  "tags": [
+    "illusion",
+    "terrain",
+    "environment",
+    "area of effect",
+    "spell"
+  ],
+  "related_search_terms": [
+    "mirage",
+    "environment control",
+    "landscape alteration spell",
+    "area manipulation"
+  ]
+}

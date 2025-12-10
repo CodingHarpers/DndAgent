@@ -1,0 +1,50 @@
+{
+  "entity_name": "Stone Shape",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell cast",
+      "condition": "Target is a stone object of Medium size or smaller OR a section of stone no more than 5 feet in any dimension",
+      "outcome": "The target stone is formed into any shape that suits the caster's purpose",
+      "related_search_terms": [
+        "shape rock",
+        "sculpt object",
+        "make passage",
+        "seal door",
+        "create idol",
+        "create weapon",
+        "create coffer",
+        "terraforming",
+        "rock manipulation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When forming stone into a shape with mechanical features",
+      "condition": "Attempting to create mechanical detail",
+      "outcome": "The object can have up to two hinges and a latch; finer mechanical detail is not possible",
+      "related_search_terms": [
+        "hinges",
+        "latches",
+        "complex mechanisms",
+        "moving parts",
+        "intricate details"
+      ]
+    }
+  ],
+  "description_text": "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.",
+  "tags": [
+    "transmutation",
+    "utility",
+    "terrain manipulation",
+    "object creation"
+  ],
+  "related_search_terms": [
+    "sculpt stone",
+    "rock manipulation",
+    "modify environment",
+    "create objects",
+    "stone carving"
+  ]
+}

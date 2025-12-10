@@ -1,0 +1,71 @@
+{
+  "entity_name": "Black Tentacles",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Targeted ground within range is a 20-foot square",
+      "outcome": "Ground in the area becomes difficult terrain",
+      "related_search_terms": [
+        "difficult terrain",
+        "movement penalty",
+        "area control",
+        "slow"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters affected area for the first time on a turn OR creature starts its turn in the affected area",
+      "condition": "Creature fails a Dexterity saving throw against your spell save DC",
+      "outcome": "Creature takes 3d6 bludgeoning damage AND is restrained by the tentacles until the spell ends",
+      "related_search_terms": [
+        "dex save",
+        "restrained condition",
+        "bludgeoning damage",
+        "crowd control",
+        "immobilize",
+        "area damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature starts its turn in the affected area",
+      "condition": "Creature is already restrained by Black Tentacles",
+      "outcome": "Creature takes 3d6 bludgeoning damage",
+      "related_search_terms": [
+        "ongoing damage",
+        "sustained damage",
+        "restrained damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature is restrained by Black Tentacles",
+      "condition": "Creature uses its action to make a Strength OR Dexterity check against your spell save DC AND succeeds",
+      "outcome": "Creature frees itself from the restrained condition",
+      "related_search_terms": [
+        "escape restraint",
+        "break free",
+        "str check",
+        "dex check",
+        "action cost"
+      ]
+    }
+  ],
+  "description_text": "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.",
+  "tags": [
+    "spell",
+    "area_of_effect",
+    "crowd_control",
+    "damage"
+  ],
+  "related_search_terms": [
+    "black tentacles spell",
+    "entangle spell",
+    "grapple spell",
+    "zone control",
+    "aoe damage",
+    "restraining spell"
+  ]
+}

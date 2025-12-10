@@ -1,0 +1,165 @@
+[
+  {
+    "source_chapter": "Chapter 1: Step-by-Step Characters - Proficiency Bonus",
+    "extracted_concepts": [
+      {
+        "concept_name": "Proficiency Bonus",
+        "definition": "A bonus reflecting a character's trained ability, determined by their level, and added to certain rolls or DCs.",
+        "rule_logic": {
+          "premise": "A character is proficient with an ability check, a saving throw, or an attack roll OR is calculating the DC of a spell/special ability",
+          "implication": "Add the character's proficiency bonus to the roll or the DC.",
+          "exceptions": [
+            "Cannot be added more than once to a single die roll or other game effect."
+          ],
+          "description_text": "Every character has a proficiency bonus, determined by your level. This bonus is added to ability checks, saving throws, and attack rolls you are proficient in. It is also added to the Difficulty Class (DC) of saving throws for spells or special abilities you use. Your proficiency bonus cannot be added to a single die roll or other game effect more than once.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is proficiency bonus",
+            "how to calculate proficiency bonus",
+            "when to add proficiency bonus",
+            "proficiency bonus application",
+            "doubling proficiency bonus",
+            "halving proficiency bonus"
+          ]
+        },
+        "related_keywords": [
+          "proficiency",
+          "ability check",
+          "saving throw",
+          "attack roll",
+          "difficulty class",
+          "character level"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "proficiency-bonus"
+  },
+  {
+    "source_chapter": "Player's Handbook - Proficiency Bonus",
+    "extracted_concepts": [
+      {
+        "concept_name": "Proficiency Bonus (General Application)",
+        "definition": "A bonus determined by character or monster level, added to certain die rolls.",
+        "rule_logic": {
+          "premise": "An ability check, saving throw, or attack roll rule specifies the use of proficiency bonus",
+          "implication": "Add the current proficiency bonus to the die roll",
+          "exceptions": [],
+          "description_text": "The bonus is used in the rules on ability checks, saving throws, and attack rolls.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how proficiency bonus works",
+            "when to add proficiency bonus",
+            "character level proficiency bonus"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "ability check",
+          "saving throw",
+          "attack roll",
+          "level"
+        ]
+      },
+      {
+        "concept_name": "Proficiency Bonus (No Stacking)",
+        "definition": "A rule preventing the proficiency bonus from being added more than once to a single roll, even if multiple sources suggest it.",
+        "rule_logic": {
+          "premise": "Two or more different rules allow adding the proficiency bonus to a single die roll or number",
+          "implication": "Add the proficiency bonus only once to that roll or number",
+          "exceptions": [],
+          "description_text": "Your proficiency bonus can't be added to a single die roll or other number more than once. For example, if two different rules say you can add your proficiency bonus to a Wisdom saving throw, you nevertheless add the bonus only once when you make the save.",
+          "is_exception": true,
+          "related_search_terms": [
+            "can i add proficiency bonus twice",
+            "multiple proficiency bonuses",
+            "stacking proficiency bonus",
+            "prof bonus limit"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "stacking",
+          "multiple effects",
+          "once"
+        ]
+      },
+      {
+        "concept_name": "Proficiency Bonus (Multiplication/Division Limit)",
+        "definition": "Rules governing how multiplication or division of the proficiency bonus is applied, ensuring it occurs only once per roll.",
+        "rule_logic": {
+          "premise": "A circumstance or rule causes the proficiency bonus to be multiplied or divided for a roll",
+          "implication": "Multiply or divide the proficiency bonus only once before applying it to the roll, even if multiple effects suggest it",
+          "exceptions": [],
+          "description_text": "Occasionally, your proficiency bonus might be multiplied or divided (doubled or halved, for example) before you apply it. ... If a circumstance suggests that your proficiency bonus applies more than once to the same roll, you still add it only once and multiply or divide it only once.",
+          "is_exception": true,
+          "related_search_terms": [
+            "double proficiency bonus",
+            "expertise rule",
+            "halve proficiency bonus",
+            "multiplying proficiency bonus",
+            "proficiency bonus stacking multiplication"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "multiplication",
+          "division",
+          "doubled",
+          "halved",
+          "expertise"
+        ]
+      },
+      {
+        "concept_name": "Proficiency Bonus (Multiplication without Base Proficiency)",
+        "definition": "A specific clarification that multiplying the proficiency bonus yields no benefit if the character is not ordinarily proficient in the relevant check.",
+        "rule_logic": {
+          "premise": "A feature allows multiplying the proficiency bonus for an ability check where the character would not normally add their proficiency bonus (i.e., is not proficient)",
+          "implication": "The proficiency bonus is considered 0 for that check, resulting in no benefit from the multiplication",
+          "exceptions": [],
+          "description_text": "By the same token, if a feature or effect allows you to multiply your proficiency bonus when making an ability check that wouldn't normally benefit from your proficiency bonus, you still don't add the bonus to the check. For that check your proficiency bonus is 0, given the fact that multiplying 0 by any number is still 0. For instance, if you lack proficiency in the History skill, you gain no benefit from a feature that lets you double your proficiency bonus when you make Intelligence (History) checks.",
+          "is_exception": true,
+          "related_search_terms": [
+            "expertise not proficient",
+            "double proficiency without proficiency",
+            "no benefit if not proficient skill",
+            "multiplying zero proficiency"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "multiplication",
+          "not proficient",
+          "expertise",
+          "skill check"
+        ]
+      },
+      {
+        "concept_name": "Proficiency Bonus (Attack/Save Multiplication Exception)",
+        "definition": "A general guideline that proficiency bonus is not typically multiplied for attack rolls or saving throws.",
+        "rule_logic": {
+          "premise": "Considering multiplying the proficiency bonus for an attack roll or saving throw",
+          "implication": "Do not multiply the proficiency bonus for attack rolls or saving throws, unless a specific feature or effect explicitly allows it (and follows other proficiency bonus rules)",
+          "exceptions": [],
+          "description_text": "In general, you don't multiply your proficiency bonus for attack rolls or saving throws. If a feature or effect allows you to do so, these same rules apply.",
+          "is_exception": true,
+          "related_search_terms": [
+            "multiply proficiency attack roll",
+            "double proficiency saving throw",
+            "expertise attack rolls",
+            "proficiency bonus combat"
+          ]
+        },
+        "related_keywords": [
+          "proficiency bonus",
+          "attack roll",
+          "saving throw",
+          "multiplication",
+          "general rule"
+        ]
+      }
+    ],
+    "_chunk_header": "Proficiency Bonus",
+    "_source_file": "proficiency-bonus"
+  }
+]

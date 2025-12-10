@@ -1,0 +1,36 @@
+{
+  "entity_name": "Mass Cure Wounds",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell successfully cast",
+      "condition": "Target is one of up to six chosen creatures within a 30-foot-radius sphere centered on a point within range AND Target is NOT an Undead AND Target is NOT a Construct",
+      "outcome": "Target regains 3d8 + Spellcasting Ability Modifier hit points",
+      "related_search_terms": [
+        "AoE healing",
+        "group heal",
+        "multiple targets healing",
+        "restore HP",
+        "area of effect heal",
+        "party healing"
+      ]
+    }
+  ],
+  "description_text": "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "tags": [
+    "healing",
+    "AoE",
+    "restoration",
+    "combat"
+  ],
+  "related_search_terms": [
+    "group healing spell",
+    "mass healing",
+    "cure wounds spell",
+    "restore hit points area",
+    "cleric spell",
+    "bard spell",
+    "healing wave"
+  ]
+}

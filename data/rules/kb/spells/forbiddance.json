@@ -1,0 +1,125 @@
+{
+  "entity_name": "Forbiddance",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Cast",
+      "condition": "Caster defines an area",
+      "outcome": "A ward is created that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor",
+      "related_search_terms": [
+        "area ward",
+        "zone size",
+        "protective area",
+        "ward dimensions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to enter warded area",
+      "condition": "Creature attempts to teleport into the area OR use portals (e.g., Gate spell) to enter the area",
+      "outcome": "Creature cannot teleport into the area or use portals to enter the area",
+      "related_search_terms": [
+        "anti-teleport",
+        "portal block",
+        "gate spell",
+        "dimensional travel",
+        "teleportation ward"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts planar travel into warded area",
+      "condition": "Creature attempts to access the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the Plane Shift spell",
+      "outcome": "Creature is prevented from accessing the area",
+      "related_search_terms": [
+        "planar ward",
+        "anti-planar travel",
+        "astral plane",
+        "ethereal plane",
+        "feywild",
+        "shadowfell",
+        "plane shift",
+        "dimensional barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters warded area OR starts turn in warded area",
+      "condition": "Creature is of a type chosen by the caster (celestials, elementals, fey, fiends, or undead) AND it's the first time it entered on this turn OR it's starting its turn there",
+      "outcome": "Creature takes 5d10 radiant or necrotic damage (caster's choice when casting spell)",
+      "related_search_terms": [
+        "area damage",
+        "zone damage",
+        "anti-creature type",
+        "radiant damage",
+        "necrotic damage",
+        "celestial",
+        "elemental",
+        "fey",
+        "fiend",
+        "undead",
+        "holy damage",
+        "unholy damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature enters warded area that would cause damage",
+      "condition": "Caster designated a password AND creature speaks the password as it enters the area",
+      "outcome": "Creature takes no damage from the spell",
+      "related_search_terms": [
+        "password bypass",
+        "friendly passage",
+        "safe zone",
+        "damage immunity"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting Forbiddance spell",
+      "condition": "The spell's area would overlap with the area of another Forbiddance spell",
+      "outcome": "The spell cannot be cast in that location",
+      "related_search_terms": [
+        "spell overlap",
+        "exclusive area",
+        "unique area",
+        "anti-stacking"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Casting Forbiddance spell",
+      "condition": "Spell is cast every day for 30 days in the same location",
+      "outcome": "The spell lasts until it is dispelled, and the material components are consumed on the last casting",
+      "related_search_terms": [
+        "permanent spell",
+        "long-term ritual",
+        "ritual casting",
+        "persistent effect",
+        "duration increase",
+        "dispellable"
+      ]
+    }
+  ],
+  "description_text": "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell. In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell). When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell. The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.",
+  "tags": [
+    "abjuration",
+    "area_effect",
+    "long_duration",
+    "damage",
+    "blocking",
+    "ward",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "anti-teleport",
+    "planar ward",
+    "area denial",
+    "zone control",
+    "holy ground",
+    "sanctuary",
+    "anti-extraplanar",
+    "damage zone"
+  ]
+}

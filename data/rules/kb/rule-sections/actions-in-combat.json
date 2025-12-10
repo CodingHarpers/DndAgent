@@ -1,0 +1,717 @@
+[
+  {
+    "source_chapter": "Combat - Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Action",
+        "definition": "The primary activity a creature can take on its turn in combat, typically limited to one per turn.",
+        "rule_logic": {
+          "premise": "It is a creature's turn in combat",
+          "implication": "Creature can take one Action (chosen from specific list or improvised)",
+          "exceptions": [],
+          "description_text": "On your turn, you can take one action. The PH gives the most common actions, but you are not limited to these actions. Your DM can allow you to use your action to perform other actions or improvise actions.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can I do on my turn",
+            "how many actions per turn",
+            "combat turn structure"
+          ]
+        },
+        "related_keywords": [
+          "Combat",
+          "Turn",
+          "Activity"
+        ]
+      },
+      {
+        "concept_name": "Attack Action",
+        "definition": "A common action used to make a melee or ranged attack. This action can involve multiple attacks for creatures with Extra Attack.",
+        "rule_logic": {
+          "premise": "Creature takes the Attack Action",
+          "implication": "Creature can make one melee or ranged attack, or multiple attacks if features like Extra Attack apply",
+          "exceptions": [],
+          "description_text": "The most common action to take in combat is the Attack action. With this action, you make one melee or ranged attack. Certain features, such as the Extra Attack feature of the fighter, allow you to make more than one attack with this action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to attack",
+            "multiple attacks",
+            "extra attack",
+            "melee attack",
+            "ranged attack"
+          ]
+        },
+        "related_keywords": [
+          "Combat",
+          "Attack",
+          "Damage",
+          "Weapon"
+        ]
+      },
+      {
+        "concept_name": "Cast a Spell Action",
+        "definition": "An action required to cast most spells, consuming the creature's action for the turn.",
+        "rule_logic": {
+          "premise": "Creature wishes to cast a spell with a casting time of 1 action",
+          "implication": "Creature uses its Action to Cast a Spell",
+          "exceptions": [],
+          "description_text": "Every spell has a casting time, which specifies how long it takes to cast the spell. Most spells have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast spells",
+            "spellcasting time",
+            "magic in combat"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Magic",
+          "Casting",
+          "Spellcaster"
+        ]
+      },
+      {
+        "concept_name": "Dash Action",
+        "definition": "An action that grants additional movement for the current turn.",
+        "rule_logic": {
+          "premise": "Creature takes the Dash Action",
+          "implication": "Creature gains additional movement equal to its speed for the current turn",
+          "exceptions": [],
+          "description_text": "When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. With a speed of 30 feet, for example, you can move 60 feet on your turn if you Dash.",
+          "is_exception": false,
+          "related_search_terms": [
+            "run faster",
+            "move further",
+            "increased speed"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Speed",
+          "Run",
+          "Combat"
+        ]
+      },
+      {
+        "concept_name": "Disengage Action",
+        "definition": "An action that allows a creature to move without provoking opportunity attacks for the rest of the turn.",
+        "rule_logic": {
+          "premise": "Creature takes the Disengage Action",
+          "implication": "Creature's movement does not provoke opportunity attacks for the rest of the current turn",
+          "exceptions": [],
+          "description_text": "If you take the Disengage action, your movement doesn’t provoke opportunity attacks for the rest of the turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to avoid opportunity attacks",
+            "moving away from enemy",
+            "escape combat"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Opportunity Attack",
+          "Escape",
+          "Combat"
+        ]
+      },
+      {
+        "concept_name": "Dodge Action",
+        "definition": "An action to focus on defense, making it harder for attackers to hit and for the creature to fail Dexterity saving throws.",
+        "rule_logic": {
+          "premise": "Creature takes the Dodge Action AND can see attacker AND attacker is not incapacitated",
+          "implication": "Attacks against creature have disadvantage, AND creature has advantage on Dexterity saving throws until start of next turn",
+          "exceptions": [],
+          "description_text": "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to defend",
+            "avoid getting hit",
+            "improve saving throws",
+            "disadvantage on attacks"
+          ]
+        },
+        "related_keywords": [
+          "Defense",
+          "AC",
+          "Saving Throw",
+          "Disadvantage",
+          "Advantage"
+        ]
+      },
+      {
+        "concept_name": "Help Action",
+        "definition": "An action to assist an ally in attacking or performing a task.",
+        "rule_logic": {
+          "premise": "Creature takes the Help Action AND assists an ally in attacking another creature",
+          "implication": "Ally gains advantage on the first attack roll against that creature until the start of the helper's next turn",
+          "exceptions": [],
+          "description_text": "You can lend your aid to another creature in the completion of a task or in combat. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with. If you are aiding an ally in attacking a creature, the target of the attack must be within 5 feet of you, and the ally gains advantage on the next attack roll against that creature. This benefit lasts until the start of your next turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "assist ally",
+            "grant advantage to friend",
+            "teamwork in combat"
+          ]
+        },
+        "related_keywords": [
+          "Support",
+          "Advantage",
+          "Ability Check",
+          "Attack Roll"
+        ]
+      },
+      {
+        "concept_name": "Hide Action",
+        "definition": "An action to attempt to conceal oneself from enemies, requiring a Dexterity (Stealth) check.",
+        "rule_logic": {
+          "premise": "Creature takes the Hide Action AND is in a location where it can be obscured",
+          "implication": "Creature makes a Dexterity (Stealth) check, opposed by active Wisdom (Perception) or passive Perception of enemies",
+          "exceptions": [],
+          "description_text": "When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits, as described in the “Unseen Attackers and Targets” section.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to stealth",
+            "become hidden",
+            "sneak attack",
+            "dexterity stealth"
+          ]
+        },
+        "related_keywords": [
+          "Stealth",
+          "Hidden",
+          "Perception",
+          "Obscured"
+        ]
+      },
+      {
+        "concept_name": "Ready Action",
+        "definition": "An action to prepare an action to be taken in response to a specific trigger.",
+        "rule_logic": {
+          "premise": "Creature takes the Ready Action",
+          "implication": "Creature chooses an action and a perceptible trigger. When trigger occurs, creature can use its reaction to perform the chosen action",
+          "exceptions": [],
+          "description_text": "Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn. First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or choose to move up to your speed in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever\" and \"If the goblin steps next to me, I will try to stab it.\" When the trigger occurs, you can either take your reaction or ignore the trigger. Remember that you can take only one reaction per round. When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "prepare action",
+            "hold turn",
+            "reaction combat",
+            "ready a spell"
+          ]
+        },
+        "related_keywords": [
+          "Reaction",
+          "Trigger",
+          "Concentration",
+          "Spell"
+        ]
+      },
+      {
+        "concept_name": "Search Action",
+        "definition": "An action to devote attention to finding something or someone.",
+        "rule_logic": {
+          "premise": "Creature takes the Search Action",
+          "implication": "Creature makes a Wisdom (Perception) check or an Intelligence (Investigation) check to find hidden objects or creatures",
+          "exceptions": [],
+          "description_text": "When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "find hidden items",
+            "look for clues",
+            "spot secret doors"
+          ]
+        },
+        "related_keywords": [
+          "Perception",
+          "Investigation",
+          "Hidden",
+          "Discovery"
+        ]
+      },
+      {
+        "concept_name": "Use an Object Action",
+        "definition": "An action to interact with an object that requires more than a simple interaction.",
+        "rule_logic": {
+          "premise": "Creature wishes to interact with an object beyond a free 'object interaction'",
+          "implication": "Creature uses its Action to Use an Object",
+          "exceptions": [],
+          "description_text": "You normally interact with an object while doing something else, such as drawing a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "activate item",
+            "operate mechanism",
+            "use potion",
+            "interact with environment"
+          ]
+        },
+        "related_keywords": [
+          "Object",
+          "Interaction",
+          "Item",
+          "Environment"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Action (Combat)",
+        "definition": "A primary activity a creature can perform on its turn during combat.",
+        "rule_logic": {
+          "premise": "On a creature's turn in combat",
+          "implication": "The creature can take one Action, chosen from: 1) Actions presented in the rules, 2) Actions granted by a class or special feature, or 3) An improvised action.",
+          "exceptions": [],
+          "description_text": "When you take your action on your turn, you can take one of the actions presented here, an action you gained from your class or a special feature, or an action that you improvise. Many monsters have action options of their own in their stat blocks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can I do on my turn",
+            "how many actions per turn",
+            "combat actions list",
+            "monster actions"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Combat",
+          "Turn",
+          "Standard Action",
+          "Class Feature",
+          "Special Feature"
+        ]
+      },
+      {
+        "concept_name": "Improvised Action (Combat)",
+        "definition": "An action performed in combat that is not explicitly detailed by the rules.",
+        "rule_logic": {
+          "premise": "A creature describes an action not detailed elsewhere in the rules",
+          "implication": "The GM determines if the action is possible and what kind of roll (if any) is needed to determine success or failure.",
+          "exceptions": [],
+          "description_text": "When you describe an action not detailed elsewhere in the rules, the GM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I try to do something custom",
+            "GM ruling on actions",
+            "unlisted actions",
+            "creative combat moves"
+          ]
+        },
+        "related_keywords": [
+          "Improvised",
+          "Action",
+          "Combat",
+          "GM Discretion",
+          "Rules Adjudication"
+        ]
+      }
+    ],
+    "_chunk_header": "Actions in Combat",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Combat - Attack Action",
+    "extracted_concepts": [
+      {
+        "concept_name": "Attack Action",
+        "definition": "A common combat action used to perform an offensive strike against a target, typically using a weapon or unarmed strike.",
+        "rule_logic": {
+          "premise": "Character takes the 'Attack' action",
+          "implication": "Character makes one melee attack OR one ranged attack",
+          "exceptions": [
+            "Certain features (e.g., Extra Attack) allow a character to make more than one attack with this action."
+          ],
+          "description_text": "With this action, you make one melee or ranged attack. Certain features, such as the Extra Attack feature of the fighter, allow you to make more than one attack with this action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many attacks can I make",
+            "attack action rules",
+            "what does attack action do",
+            "melee attack action",
+            "ranged attack action",
+            "combat actions"
+          ]
+        },
+        "related_keywords": [
+          "attack",
+          "action",
+          "combat",
+          "melee",
+          "ranged",
+          "extra attack",
+          "fighter"
+        ]
+      }
+    ],
+    "_chunk_header": "Attack",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Combat - Cast a Spell",
+    "extracted_concepts": [
+      {
+        "concept_name": "Casting a Spell",
+        "definition": "The act of invoking magical effects through a spell, requiring a specific duration of time.",
+        "rule_logic": {
+          "premise": "A spellcaster wishes to use a spell",
+          "implication": "The spellcaster must spend the spell's specified casting time to activate it. This casting time can be an action, a reaction, minutes, or hours.",
+          "exceptions": [],
+          "description_text": "Each spell has a casting time, which specifies whether the caster must use an action, a reaction, minutes, or even hours to cast the spell. Casting a spell is, therefore, not necessarily an action. Most spells do have a casting time of 1 action, so a spellcaster often uses his or her action in combat to cast such a spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast spells",
+            "spell casting time",
+            "action for spell",
+            "reaction spell casting",
+            "long casting spell",
+            "spell mechanics"
+          ]
+        },
+        "related_keywords": [
+          "Spellcasters",
+          "Spells",
+          "Casting Time",
+          "Action",
+          "Reaction"
+        ]
+      }
+    ],
+    "_chunk_header": "Cast a Spell",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat - Dash",
+    "extracted_concepts": [
+      {
+        "concept_name": "Dash Action",
+        "definition": "A combat action that grants a creature extra movement for its current turn.",
+        "rule_logic": {
+          "premise": "Creature takes the Dash action",
+          "implication": "Creature gains additional movement for the current turn, equal to its current speed (after applying any modifiers).",
+          "exceptions": [],
+          "description_text": "When you take the Dash action, you gain extra movement for the current turn. The increase equals your speed, after applying any modifiers. Any increase or decrease to your speed changes this additional movement by the same amount.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how dash works",
+            "extra movement combat",
+            "running in combat",
+            "increase speed",
+            "dash move"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "movement",
+          "speed",
+          "combat"
+        ]
+      }
+    ],
+    "_chunk_header": "Dash",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Disengage",
+        "definition": "An action taken in combat that allows a creature to move without provoking opportunity attacks.",
+        "rule_logic": {
+          "premise": "Creature takes the Disengage action",
+          "implication": "Creature's movement does not provoke opportunity attacks for the rest of the current turn",
+          "exceptions": [],
+          "description_text": "If you take the Disengage action, your movement doesn't provoke opportunity attacks for the rest of the turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "avoid opportunity attack",
+            "move safely",
+            "escape combat",
+            "run away"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "movement",
+          "opportunity attack",
+          "combat"
+        ]
+      }
+    ],
+    "_chunk_header": "Disengage",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Combat Actions",
+    "extracted_concepts": [
+      {
+        "concept_name": "Dodge Action",
+        "definition": "A combat action where a creature focuses entirely on avoiding attacks.",
+        "rule_logic": {
+          "premise": "A creature takes the Dodge action",
+          "implication": "Until the start of the creature's next turn: (1) Any attack roll made against the creature has disadvantage IF the creature can see the attacker, AND (2) The creature makes Dexterity saving throws with advantage.",
+          "exceptions": [
+            "The creature loses this benefit if it becomes incapacitated.",
+            "The creature loses this benefit if its speed drops to 0."
+          ],
+          "description_text": "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated (as explained in appendix PH-A) or if your speed drops to 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "dodge rules",
+            "how dodge works",
+            "disadvantage on attacks against me",
+            "advantage on dexterity saves",
+            "when does dodge end",
+            "lose dodge",
+            "combat action dodge"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Combat",
+          "Defense",
+          "Disadvantage",
+          "Advantage",
+          "Attack Roll",
+          "Saving Throw",
+          "Dexterity",
+          "Incapacitated",
+          "Speed"
+        ]
+      }
+    ],
+    "_chunk_header": "Dodge",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat - Help",
+    "extracted_concepts": [
+      {
+        "concept_name": "Help (Ability Check)",
+        "definition": "An action taken to assist another creature with an ability check, granting them advantage on the check.",
+        "rule_logic": {
+          "premise": "A creature takes the Help action to aid another creature's ability check",
+          "implication": "The aided creature gains Advantage on the next ability check it makes to perform that task, provided the check is made before the helper's next turn starts",
+          "exceptions": [],
+          "description_text": "You can lend your aid to another creature in the completion of a task. When you take the Help action, the creature you aid gains advantage on the next ability check it makes to perform the task you are helping with, provided that it makes the check before the start of your next turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "help ally skill check",
+            "advantage on ability check",
+            "assist a friend",
+            "how to help another player"
+          ]
+        },
+        "related_keywords": [
+          "Help Action",
+          "Ability Check",
+          "Advantage",
+          "Aid",
+          "Support"
+        ]
+      },
+      {
+        "concept_name": "Help (Attack)",
+        "definition": "An action taken to assist a friendly creature in attacking an enemy, granting them advantage on their first attack roll.",
+        "rule_logic": {
+          "premise": "A creature takes the Help action to aid a friendly creature attacking a target AND the target is within 5 feet of the helper",
+          "implication": "The aided creature's first attack roll against that target is made with Advantage, provided the attack occurs before the helper's next turn starts",
+          "exceptions": [],
+          "description_text": "Alternatively, you can aid a friendly creature in attacking a creature within 5 feet of you. You feint, distract the target, or in some other way team up to make your ally's attack more effective. If your ally attacks the target before your next turn, the first attack roll is made with advantage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "help ally attack",
+            "advantage on attack roll",
+            "distract enemy for ally",
+            "flanking rule",
+            "team up combat"
+          ]
+        },
+        "related_keywords": [
+          "Help Action",
+          "Attack Roll",
+          "Advantage",
+          "Combat",
+          "Support",
+          "Melee"
+        ]
+      }
+    ],
+    "_chunk_header": "Help",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Hide Action",
+        "definition": "An action taken in combat where a creature attempts to conceal itself from others.",
+        "rule_logic": {
+          "premise": "A creature takes the Hide action",
+          "implication": "The creature makes a Dexterity (Stealth) check to hide. If successful, the creature gains benefits as an unseen attacker/target.",
+          "exceptions": [],
+          "description_text": "When you take the Hide action, you make a Dexterity (Stealth) check in an attempt to hide, following the rules for hiding. If you succeed, you gain certain benefits, as described in the 'Unseen Attackers and Targets' section later in this chapter.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to hide",
+            "stealth check",
+            "hiding rules",
+            "unseen attacker",
+            "unseen target",
+            "benefits of hiding"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Combat",
+          "Stealth",
+          "Dexterity",
+          "Hiding",
+          "Unseen"
+        ]
+      }
+    ],
+    "_chunk_header": "Hide",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Combat - Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ready Action",
+        "definition": "An action taken on your turn to prepare a specific action or movement to occur as a reaction later, triggered by a perceivable circumstance.",
+        "rule_logic": {
+          "premise": "Player takes the Ready action on their turn",
+          "implication": "Player declares a perceivable trigger AND an action (or movement up to speed) to take as a reaction",
+          "exceptions": [],
+          "description_text": "To do so, you can take the Ready action on your turn, which lets you act using your reaction before the start of your next turn. First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ready an action",
+            "how to ready",
+            "prepare an action",
+            "set up a reaction"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Reaction",
+          "Trigger",
+          "Combat"
+        ]
+      },
+      {
+        "concept_name": "Ready Action Trigger",
+        "definition": "The specific perceivable circumstance that, when it occurs, allows a character who took the Ready action to use their prepared reaction.",
+        "rule_logic": {
+          "premise": "A declared perceivable trigger for a Ready action occurs",
+          "implication": "The player can choose to take their prepared reaction immediately after the trigger finishes OR ignore the trigger",
+          "exceptions": [
+            "Only one reaction can be taken per round."
+          ],
+          "description_text": "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens when trigger occurs",
+            "can I choose not to react",
+            "reaction limit"
+          ]
+        },
+        "related_keywords": [
+          "Ready Action",
+          "Reaction",
+          "Trigger"
+        ]
+      },
+      {
+        "concept_name": "Readying a Spell",
+        "definition": "A specific application of the Ready action where a spell is cast but its energy is held, to be released later as a reaction.",
+        "rule_logic": {
+          "premise": "Player takes the Ready action and chooses to ready a spell",
+          "implication": "The spell is cast as normal, its energy is held, AND requires concentration. If concentration is broken, the spell dissipates without effect. The spell must have a casting time of 1 action.",
+          "exceptions": [],
+          "description_text": "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration. If your concentration is broken, the spell dissipates without taking effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ready spell rules",
+            "concentration on ready spell",
+            "casting time for ready spell",
+            "can I ready any spell"
+          ]
+        },
+        "related_keywords": [
+          "Ready Action",
+          "Spellcasting",
+          "Concentration",
+          "Reaction"
+        ]
+      }
+    ],
+    "_chunk_header": "Ready",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Search Action",
+        "definition": "An action taken to devote attention to finding something.",
+        "rule_logic": {
+          "premise": "Player character takes the Search action",
+          "implication": "GM determines the appropriate skill check (Wisdom (Perception) or Intelligence (Investigation)) based on the nature of the search",
+          "exceptions": [],
+          "description_text": "When you take the Search action, you devote your attention to finding something. Depending on the nature of your search, the GM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to find hidden things",
+            "what happens when I search",
+            "perception vs investigation",
+            "search rules"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Skill Check",
+          "Wisdom (Perception)",
+          "Intelligence (Investigation)",
+          "GM Discretion"
+        ]
+      }
+    ],
+    "_chunk_header": "Search",
+    "_source_file": "actions-in-combat"
+  },
+  {
+    "source_chapter": "Combat - Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Use an Object Action",
+        "definition": "A specific action taken during a turn to interact with an object that explicitly requires an action, or to interact with multiple objects beyond a single free interaction.",
+        "rule_logic": {
+          "premise": "An object's use explicitly requires an action OR a character wishes to interact with more than one object on their turn",
+          "implication": "The character must spend their action to take the 'Use an Object' action",
+          "exceptions": [],
+          "description_text": "You normally interact with an object while doing something else, such as when you draw a sword as part of an attack. When an object requires your action for its use, you take the Use an Object action. This action is also useful when you want to interact with more than one object on your turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "interact with object",
+            "free action",
+            "object interaction",
+            "open door",
+            "draw weapon",
+            "multiple objects",
+            "action cost"
+          ]
+        },
+        "related_keywords": [
+          "Action",
+          "Object",
+          "Interaction",
+          "Turn"
+        ]
+      }
+    ],
+    "_chunk_header": "Use an Object",
+    "_source_file": "actions-in-combat"
+  }
+]

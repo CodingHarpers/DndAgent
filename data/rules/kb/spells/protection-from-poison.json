@@ -1,0 +1,59 @@
+{
+  "entity_name": "Protection from Poison",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Target creature is afflicted by one or more poisons",
+      "outcome": "One poison affecting the target is neutralized (chosen if known, otherwise random)",
+      "related_search_terms": [
+        "cure poison",
+        "remove poisoned condition",
+        "end poison effect",
+        "detoxify",
+        "antidote"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target attempts a saving throw",
+      "condition": "Saving throw is against the poisoned condition and spell duration persists",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "resist poisoned condition",
+        "poison save bonus",
+        "protection against poisoned"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target takes damage",
+      "condition": "Damage type is poison and spell duration persists",
+      "outcome": "Target has resistance to poison damage",
+      "related_search_terms": [
+        "poison damage reduction",
+        "half poison damage",
+        "reduce poison damage"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.",
+  "tags": [
+    "spell",
+    "abjuration",
+    "2nd-level",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger",
+    "cure",
+    "buff"
+  ],
+  "related_search_terms": [
+    "antidote spell",
+    "cure condition spell",
+    "damage resistance spell",
+    "poison ward"
+  ]
+}

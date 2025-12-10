@@ -1,0 +1,100 @@
+{
+  "entity_name": "Color Spray",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "scaling",
+      "trigger": "On Cast",
+      "condition": "Spell is cast",
+      "outcome": "Determine total hit points of creatures this spell can affect by rolling 6d10",
+      "related_search_terms": [
+        "spell potency",
+        "effect limit",
+        "hp threshold",
+        "dazzle"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target selection",
+      "condition": "Creature is within a 15-foot cone originating from the caster",
+      "outcome": "Creature is a potential target for the spell's effect",
+      "related_search_terms": [
+        "area of effect",
+        "cone spell",
+        "target area"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target eligibility check",
+      "condition": "Creature is unconscious OR Creature cannot see",
+      "outcome": "Creature is ignored for the purpose of being affected by this spell",
+      "related_search_terms": [
+        "immunity to blind",
+        "unconscious target",
+        "blind target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target prioritization",
+      "condition": "Multiple eligible creatures within the cone",
+      "outcome": "Creatures are affected in ascending order of their current hit points",
+      "related_search_terms": [
+        "lowest hp first",
+        "target order",
+        "hp priority"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is affected",
+      "condition": "Creature is the next in ascending HP order AND its current hit points are less than or equal to the remaining spell HP pool",
+      "outcome": "Creature is Blinded until the spell ends",
+      "related_search_terms": [
+        "blind condition",
+        "blinding effect",
+        "disadvantage on attacks",
+        "crowd control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is affected and blinded",
+      "condition": "Spell's HP pool has not been exhausted",
+      "outcome": "Subtract the creature's current hit points from the total remaining spell HP pool",
+      "related_search_terms": [
+        "hp consumption",
+        "resource tracking",
+        "spell limit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to affect next creature",
+      "condition": "Next creature's current hit points are greater than the remaining spell HP pool",
+      "outcome": "The spell's effect ends, and no more creatures are affected",
+      "related_search_terms": [
+        "spell ends",
+        "hp limit reached",
+        "effect cessation"
+      ]
+    }
+  ],
+  "description_text": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the spell ends. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.",
+  "tags": [
+    "Evocation",
+    "Blinding",
+    "Area of Effect",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "blind",
+    "cone spell",
+    "crowd control",
+    "low hit points",
+    "flash",
+    "save or suck"
+  ]
+}

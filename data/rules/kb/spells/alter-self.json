@@ -1,0 +1,178 @@
+{
+  "entity_name": "Alter Self",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "A 'Aquatic Adaptation' option is chosen",
+      "outcome": "Creature can breathe underwater",
+      "related_search_terms": [
+        "water breathing",
+        "underwater",
+        "aquatic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "A 'Aquatic Adaptation' option is chosen",
+      "outcome": "Creature gains a swimming speed equal to its walking speed",
+      "related_search_terms": [
+        "swim speed",
+        "movement speed",
+        "aquatic movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "A 'Change Appearance' option is chosen",
+      "outcome": "Creature transforms its physical appearance (height, weight, facial features, voice, hair length, coloration, distinguishing characteristics)",
+      "related_search_terms": [
+        "disguise",
+        "appearance change",
+        "shapeshift",
+        "impersonate"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "A 'Change Appearance' option is chosen",
+      "outcome": "Creature can appear as a member of another race",
+      "related_search_terms": [
+        "racial disguise",
+        "appear human",
+        "elf disguise"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Transforming appearance",
+      "condition": "A 'Change Appearance' option is chosen",
+      "outcome": "Creature's statistics do not change",
+      "related_search_terms": [
+        "stats unchanged",
+        "no stat boost",
+        "only appearance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Transforming appearance",
+      "condition": "A 'Change Appearance' option is chosen",
+      "outcome": "Creature cannot appear as a creature of a different size category",
+      "related_search_terms": [
+        "size limit",
+        "cannot change size",
+        "remain same size"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Transforming appearance",
+      "condition": "A 'Change Appearance' option is chosen",
+      "outcome": "Creature's basic shape remains the same (e.g., bipedal cannot become quadrupedal)",
+      "related_search_terms": [
+        "basic form",
+        "body shape",
+        "bipedal",
+        "quadrupedal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an action while 'Change Appearance' is active",
+      "condition": "Creature has the 'Change Appearance' option active",
+      "outcome": "Creature can change its appearance again",
+      "related_search_terms": [
+        "re-disguise",
+        "change disguise",
+        "action to change form"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "A 'Natural Weapons' option is chosen",
+      "outcome": "Creature grows natural weapons (claws, fangs, spines, horns, etc.)",
+      "related_search_terms": [
+        "claws",
+        "fangs",
+        "natural attack",
+        "melee weapon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes an unarmed strike",
+      "condition": "A 'Natural Weapons' option is chosen",
+      "outcome": "Unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage (appropriate to the chosen weapon)",
+      "related_search_terms": [
+        "unarmed damage",
+        "melee damage",
+        "weapon dice"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes an unarmed strike",
+      "condition": "A 'Natural Weapons' option is chosen",
+      "outcome": "Creature is proficient with its unarmed strikes",
+      "related_search_terms": [
+        "unarmed proficiency",
+        "proficient attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes an unarmed strike",
+      "condition": "A 'Natural Weapons' option is chosen",
+      "outcome": "The natural weapon is considered magic for overcoming resistances and immunities",
+      "related_search_terms": [
+        "magic weapon",
+        "magical attack",
+        "overcome resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes an attack roll or damage roll with its natural weapon",
+      "condition": "A 'Natural Weapons' option is chosen",
+      "outcome": "Creature has a +1 bonus to attack and damage rolls with the natural weapon",
+      "related_search_terms": [
+        "attack bonus",
+        "damage bonus",
+        "+1 weapon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an action while the spell lasts",
+      "condition": "A different option is desired than the current active one",
+      "outcome": "Creature can end one active option and gain the benefits of a different one",
+      "related_search_terms": [
+        "switch forms",
+        "change options",
+        "flexible casting"
+      ]
+    }
+  ],
+  "description_text": "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.\n***Aquatic Adaptation.*** You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.\n***Change Appearance.*** You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.\n***Natural Weapons.*** You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.",
+  "tags": [
+    "transmutation",
+    "utility",
+    "combat",
+    "exploration",
+    "disguise",
+    "self-buff"
+  ],
+  "related_search_terms": [
+    "shape change",
+    "form change",
+    "polymorph minor",
+    "self-modification",
+    "body alteration"
+  ]
+}

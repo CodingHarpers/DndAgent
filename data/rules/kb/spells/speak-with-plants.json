@@ -1,0 +1,135 @@
+{
+  "entity_name": "Speak with Plants",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell is active",
+      "condition": "Plants are within 30 feet of caster",
+      "outcome": "Plants gain limited sentience and animation, allowing communication and obedience to simple commands",
+      "related_search_terms": [
+        "plant talk",
+        "nature communication",
+        "animate plants",
+        "plant control",
+        "basic commands"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster questions plants",
+      "condition": "Plants are within spell's area AND events occurred within the past day",
+      "outcome": "Caster gains information about past events (creatures, weather, circumstances) from plants",
+      "related_search_terms": [
+        "past events",
+        "information gathering",
+        "track creatures",
+        "weather history",
+        "plant memory"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses to alter terrain",
+      "condition": "Terrain is difficult due to plant growth AND plants are present",
+      "outcome": "Difficult terrain becomes ordinary terrain for the spell's duration",
+      "related_search_terms": [
+        "clear path",
+        "remove difficult terrain",
+        "easy passage",
+        "plant removal",
+        "thickets"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster chooses to alter terrain",
+      "condition": "Terrain is ordinary AND plants are present",
+      "outcome": "Ordinary terrain becomes difficult terrain for the spell's duration, hindering movement",
+      "related_search_terms": [
+        "create difficult terrain",
+        "hinder movement",
+        "slow pursuers",
+        "vines",
+        "branches"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster commands plants",
+      "condition": "Plants are within spell effect",
+      "outcome": "Plants cannot uproot themselves and move about",
+      "related_search_terms": [
+        "immobile plants",
+        "plants can't move",
+        "fixed position"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster commands plants",
+      "condition": "Plants are within spell effect",
+      "outcome": "Plants can freely move branches, tendrils, and stalks",
+      "related_search_terms": [
+        "plant movement",
+        "tendril motion",
+        "branch sway",
+        "manipulate plants"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Plant creature is in the area",
+      "condition": "Plant creature is within spell's area",
+      "outcome": "Caster can communicate with the plant creature as if sharing a common language",
+      "related_search_terms": [
+        "talk to treant",
+        "shambling mound communication",
+        "plant monster speak",
+        "language barrier"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster communicates with plant creature",
+      "condition": "Plant creature is within spell's area",
+      "outcome": "Caster gains no magical ability to influence the plant creature",
+      "related_search_terms": [
+        "no plant creature charm",
+        "cannot control plant monster",
+        "persuasion only"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster commands plants to release",
+      "condition": "Creature is restrained by plants created by the entangle spell",
+      "outcome": "Entangle spell plants release the restrained creature",
+      "related_search_terms": [
+        "release entangled",
+        "free creature",
+        "cancel entangle",
+        "dispel plant restraint"
+      ]
+    }
+  ],
+  "description_text": "You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances. You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example. Plants might be able to perform other tasks on your behalf, at the GM's discretion. The spell doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks. If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it. This spell can cause the plants created by the entangle spell to release a restrained creature.",
+  "tags": [
+    "utility",
+    "communication",
+    "terrain_control",
+    "divination",
+    "nature"
+  ],
+  "related_search_terms": [
+    "plant communication",
+    "nature spell",
+    "terrain manipulation",
+    "information gathering",
+    "druid spell",
+    "ranger spell",
+    "plant speak",
+    "control plants",
+    "environmental effect"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "entity_name": "Hypnotic Pattern",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature is within the 30-foot cube area AND creature has line of sight to the pattern",
+      "outcome": "Creature is subjected to a Wisdom saving throw",
+      "related_search_terms": [
+        "area of effect",
+        "sight based",
+        "visual effect",
+        "crowd control setup"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw Failed",
+      "condition": "Creature failed the Wisdom saving throw against Hypnotic Pattern",
+      "outcome": "Creature is Charmed, Incapacitated, and its speed becomes 0 for the spell's duration",
+      "related_search_terms": [
+        "failed save",
+        "charmed condition",
+        "incapacitated condition",
+        "movement impairment",
+        "stun effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature takes damage",
+      "condition": "Creature is Charmed by Hypnotic Pattern",
+      "outcome": "Charmed condition from Hypnotic Pattern ends for the creature",
+      "related_search_terms": [
+        "ending condition",
+        "breaking charm",
+        "damage breaks effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Another creature uses an action",
+      "condition": "Creature is Charmed by Hypnotic Pattern AND the action is used to shake the creature out of its stupor",
+      "outcome": "Charmed condition from Hypnotic Pattern ends for the creature",
+      "related_search_terms": [
+        "ending condition",
+        "breaking charm",
+        "ally intervention",
+        "helping action"
+      ]
+    }
+  ],
+  "description_text": "You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.",
+  "tags": [
+    "illusion",
+    "control",
+    "charm",
+    "incapacitated",
+    "save_or_suck",
+    "aoe"
+  ],
+  "related_search_terms": [
+    "Hypnotic",
+    "Pattern",
+    "mind control",
+    "crowd control",
+    "disabling spell",
+    "area charm",
+    "stupor",
+    "visual spell"
+  ]
+}

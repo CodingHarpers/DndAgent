@@ -1,0 +1,64 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "character_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player Character levels up",
+      "condition": "Player Character reaches 4th, 8th, 12th, 16th, or 19th level",
+      "outcome": "Player Character gains the Ability Score Improvement feature",
+      "related_search_terms": [
+        "leveling up benefits",
+        "character advancement",
+        "milestone rewards"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Applying the Ability Score Improvement feature",
+      "condition": "Player chooses to increase one ability score",
+      "outcome": "Selected ability score increases by 2",
+      "related_search_terms": [
+        "stat boost",
+        "single stat increase",
+        "primary stat focus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Applying the Ability Score Improvement feature",
+      "condition": "Player chooses to increase two ability scores",
+      "outcome": "Two selected ability scores each increase by 1",
+      "related_search_terms": [
+        "stat boost",
+        "multiple stat increase",
+        "secondary stats"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to increase an ability score",
+      "condition": "Resulting ability score would exceed 20",
+      "outcome": "Ability score cannot be increased above 20 using this feature",
+      "related_search_terms": [
+        "stat cap",
+        "maximum score",
+        "ability limit"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "character_progression",
+    "feature",
+    "ability_score",
+    "level_up"
+  ],
+  "related_search_terms": [
+    "ASI",
+    "stat increase",
+    "skill bonus",
+    "character build",
+    "leveling benefits"
+  ]
+}

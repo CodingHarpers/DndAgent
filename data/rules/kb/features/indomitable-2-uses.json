@@ -1,0 +1,69 @@
+{
+  "entity_name": "Indomitable",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Player fails a saving throw",
+      "condition": "Player chooses to activate Indomitable (available uses remaining)",
+      "outcome": "Player rerolls the saving throw and must use the new result",
+      "related_search_terms": [
+        "reroll",
+        "saving throw",
+        "save",
+        "fail",
+        "second chance",
+        "fighter ability"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Indomitable is used",
+      "condition": "Player is Level 9-12",
+      "outcome": "Indomitable cannot be used again until a long rest (1 use per long rest)",
+      "related_search_terms": [
+        "recharge",
+        "per long rest",
+        "daily limit",
+        "resource management",
+        "single use"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Player reaches Level 13",
+      "condition": "Player meets level requirement",
+      "outcome": "Indomitable can be used twice between long rests",
+      "related_search_terms": [
+        "increased uses",
+        "level bonus",
+        "scaling ability",
+        "multiple uses"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Player reaches Level 17",
+      "condition": "Player meets level requirement",
+      "outcome": "Indomitable can be used three times between long rests",
+      "related_search_terms": [
+        "max uses",
+        "high level ability",
+        "ultimate ability"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.",
+  "tags": [
+    "Fighter",
+    "Class Feature",
+    "Saving Throw",
+    "Reroll",
+    "Action Economy"
+  ],
+  "related_search_terms": [
+    "fighter save reroll",
+    "indomitable will",
+    "second chance save",
+    "battle master ability"
+  ]
+}

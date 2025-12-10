@@ -1,0 +1,125 @@
+{
+  "entity_name": "Find Steed",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On spell cast",
+      "condition": "Unoccupied space within range available",
+      "outcome": "Summon a spirit steed of chosen form (e.g., warhorse, pony, camel, elk, mastiff). Steed's type is Celestial, Fey, or Fiend (caster's choice). If steed's base Intelligence is 5 or less, its Intelligence becomes 6, and it gains the ability to understand one chosen language spoken by caster.",
+      "related_search_terms": [
+        "mount summoning",
+        "animal companion",
+        "celestial mount",
+        "fey mount",
+        "fiend mount",
+        "intelligent animal",
+        "steed stats"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting a spell while mounted on the steed",
+      "condition": "Spell targets only the caster",
+      "outcome": "The spell also targets the steed",
+      "related_search_terms": [
+        "shared spells",
+        "buff sharing",
+        "mounted combat spells",
+        "caster protection",
+        "self-targeting spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Steed drops to 0 hit points",
+      "condition": "N/A",
+      "outcome": "Steed disappears, leaving no physical form",
+      "related_search_terms": [
+        "mount death",
+        "steed demise",
+        "hp loss",
+        "temporary mount"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Action",
+      "condition": "Caster chooses to dismiss the steed",
+      "outcome": "Steed disappears",
+      "related_search_terms": [
+        "unsummon mount",
+        "dismiss animal",
+        "send away steed",
+        "mount dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Find Steed again",
+      "condition": "Previous steed disappeared (due to 0 HP or dismissal)",
+      "outcome": "The same steed is summoned, restored to its hit point maximum",
+      "related_search_terms": [
+        "resurrection mount",
+        "permanent mount",
+        "heal mount",
+        "recast spell",
+        "re-summon companion"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "N/A",
+      "condition": "Steed is within 1 mile of caster",
+      "outcome": "Caster can communicate telepathically with the steed",
+      "related_search_terms": [
+        "mental link",
+        "animal telepathy",
+        "mind speak",
+        "command mount",
+        "long-distance communication"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to summon or bond with a new steed via this spell",
+      "condition": "Caster already has a steed bonded by this spell",
+      "outcome": "Cannot have more than one steed bonded by this spell at a time",
+      "related_search_terms": [
+        "spell limit",
+        "mount restriction",
+        "unique companion",
+        "single summon"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Action",
+      "condition": "Caster chooses to release the steed from its bond",
+      "outcome": "Steed is released from its bond and disappears",
+      "related_search_terms": [
+        "break bond",
+        "free mount",
+        "disenchant steed",
+        "release companion"
+      ]
+    }
+  ],
+  "description_text": "You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.While mounted on your steed, you can make any spell you cast that targets only you also target your steed.When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.While your steed is within 1 mile of you, you can communicate with it telepathically.You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.",
+  "tags": [
+    "spell",
+    "mount",
+    "conjuration",
+    "utility",
+    "companion"
+  ],
+  "related_search_terms": [
+    "summon mount",
+    "companion spell",
+    "paladin mount",
+    "caster mount",
+    "magical steed",
+    "warhorse spell",
+    "spirit animal"
+  ]
+}

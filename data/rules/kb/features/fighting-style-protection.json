@@ -1,0 +1,37 @@
+{
+  "entity_name": "Fighting Style: Protection",
+  "logic_type": "fighting_style_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "A creature you can see attacks an ally (target other than you)",
+      "condition": "The ally is within 5 feet of you AND You are wielding a shield AND You expend your reaction",
+      "outcome": "The attack roll against your ally has disadvantage",
+      "related_search_terms": [
+        "protect ally",
+        "defend",
+        "shield block",
+        "reaction defense",
+        "impose disadvantage",
+        "bodyguard"
+      ]
+    }
+  ],
+  "description_text": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.",
+  "tags": [
+    "fighting_style",
+    "protection",
+    "reaction",
+    "shield",
+    "disadvantage"
+  ],
+  "related_search_terms": [
+    "bodyguard",
+    "defender",
+    "interpose",
+    "guard",
+    "protect ally",
+    "reaction attack",
+    "shield master"
+  ]
+}

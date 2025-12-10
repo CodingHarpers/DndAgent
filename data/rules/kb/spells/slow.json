@@ -1,0 +1,118 @@
+{
+  "entity_name": "Slow",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Target Selection",
+      "condition": "Target is a creature",
+      "outcome": "Target must succeed on a Wisdom saving throw or be affected",
+      "related_search_terms": [
+        "wisdom save",
+        "spell save",
+        "resist spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Affected by Slow",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target's speed is halved",
+      "related_search_terms": [
+        "movement reduction",
+        "slowed movement",
+        "mobility debuff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Affected by Slow",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target has a -2 penalty to AC",
+      "related_search_terms": [
+        "armor class debuff",
+        "easier to hit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Affected by Slow",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target has a -2 penalty to Dexterity saving throws",
+      "related_search_terms": [
+        "dex save debuff",
+        "evasion penalty",
+        "area effect vulnerability"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature Affected by Slow",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target cannot use reactions",
+      "related_search_terms": [
+        "no reactions",
+        "stunned",
+        "incapacitated partial"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature Affected by Slow's Turn",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target can use either an action or a bonus action, not both",
+      "related_search_terms": [
+        "action economy",
+        "limited actions",
+        "restricted turn"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature Affected by Slow's Turn",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target cannot make more than one melee or ranged attack",
+      "related_search_terms": [
+        "attack limit",
+        "reduced attacks",
+        "single attack"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Affected by Slow attempts to cast a spell with 1 action casting time",
+      "condition": "Target is affected by Slow AND rolls a d20 for spell completion",
+      "outcome": "On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete it. If it can't, the spell is wasted.",
+      "related_search_terms": [
+        "spell delay",
+        "casting restriction",
+        "wasted spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of Creature's Turn",
+      "condition": "Target is affected by Slow",
+      "outcome": "Target makes another Wisdom saving throw; on a success, the effect ends",
+      "related_search_terms": [
+        "repeated save",
+        "end condition",
+        "resist effect"
+      ]
+    }
+  ],
+  "description_text": "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a wisdom saving throw or be affected by this spell for the duration. An affected target's speed is halved, it takes a -2 penalty to AC and dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. A creature affected by this spell makes another wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.",
+  "tags": [
+    "spell",
+    "control",
+    "debuff",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "slow spell",
+    "time magic",
+    "hindrance",
+    "disadvantage",
+    "area control"
+  ]
+}

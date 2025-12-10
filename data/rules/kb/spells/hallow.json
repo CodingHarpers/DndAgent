@@ -1,0 +1,188 @@
+{
+  "entity_name": "Hallow",
+  "logic_type": "spell",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Spell Cast",
+      "condition": "Area for Hallow spell includes an area already under the effect of another Hallow spell",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "overlapping area effects",
+        "spell stacking",
+        "territory dispute"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to enter Hallow area",
+      "condition": "Creature is a Celestial, Elemental, Fey, Fiend, or Undead (unless specifically excluded by the caster)",
+      "outcome": "Creature cannot enter the area",
+      "related_search_terms": [
+        "ward against evil",
+        "holy ground",
+        "repel undead",
+        "demon banishment"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Celestial, Elemental, Fey, Fiend, or Undead creature attempts to charm, frighten, or possess a creature within Hallow area",
+      "condition": "Acting creature is a Celestial, Elemental, Fey, Fiend, or Undead (unless specifically excluded by the caster)",
+      "outcome": "Attempt fails; acting creature cannot charm, frighten, or possess creatures within the Hallow area",
+      "related_search_terms": [
+        "condition immunity",
+        "mind control prevention",
+        "fear ward"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters Hallow area",
+      "condition": "Creature is currently Charmed, Frightened, or Possessed by a Celestial, Elemental, Fey, Fiend, or Undead",
+      "outcome": "The Charmed, Frightened, or Possessed condition on the creature ends immediately",
+      "related_search_terms": [
+        "condition removal",
+        "purify",
+        "break enchantment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature (designated by caster) enters Hallow area for the first time on a turn OR starts its turn within Hallow area",
+      "condition": "Hallow has an extra effect chosen that applies to this creature",
+      "outcome": "Creature can make a Charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.",
+      "related_search_terms": [
+        "area of effect save",
+        "ongoing effect resistance",
+        "spell ignore"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature (designated by caster) within Hallow area",
+      "condition": "Hallow has 'Courage' chosen as an extra effect AND creature is affected by Hallow's extra effect",
+      "outcome": "Creature cannot be Frightened",
+      "related_search_terms": [
+        "fear immunity",
+        "bravery",
+        "morale boost"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Within Hallow area",
+      "condition": "Hallow has 'Darkness' chosen as an extra effect",
+      "outcome": "Darkness fills the area. Normal light and magical light created by spells of a lower level than Hallow cannot illuminate the area.",
+      "related_search_terms": [
+        "magical darkness",
+        "heavy obscuring",
+        "shadow area"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Within Hallow area",
+      "condition": "Hallow has 'Daylight' chosen as an extra effect",
+      "outcome": "Bright light fills the area. Magical darkness created by spells of a lower level than Hallow cannot extinguish the light.",
+      "related_search_terms": [
+        "magical light",
+        "dispell darkness",
+        "anti-shadow"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature (designated by caster) takes damage within Hallow area",
+      "condition": "Hallow has 'Energy Protection' chosen for a specific damage type (except bludgeoning, piercing, or slashing) AND creature is affected by Hallow's extra effect AND creature takes that chosen damage type",
+      "outcome": "Creature has resistance to the chosen damage type",
+      "related_search_terms": [
+        "damage reduction",
+        "elemental resistance",
+        "spell protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature (designated by caster) takes damage within Hallow area",
+      "condition": "Hallow has 'Energy Vulnerability' chosen for a specific damage type (except bludgeoning, piercing, or slashing) AND creature is affected by Hallow's extra effect AND creature takes that chosen damage type",
+      "outcome": "Creature has vulnerability to the chosen damage type",
+      "related_search_terms": [
+        "damage amplification",
+        "elemental weakness",
+        "damage multiplier"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to turn dead body into undead within Hallow area",
+      "condition": "Hallow has 'Everlasting Rest' chosen as an extra effect AND dead body is interred in the Hallow area",
+      "outcome": "Dead body cannot be turned into undead",
+      "related_search_terms": [
+        "anti-necromancy",
+        "prevent undead creation",
+        "sacred burial"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature (designated by caster) attempts to move or travel using teleportation or extradimensional/interplanar means within Hallow area",
+      "condition": "Hallow has 'Extradimensional Interference' chosen as an extra effect AND creature is affected by Hallow's extra effect",
+      "outcome": "Creature cannot use teleportation or extradimensional/interplanar travel",
+      "related_search_terms": [
+        "anti-teleport",
+        "dimensional anchor",
+        "plane shift block"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature (designated by caster) within Hallow area",
+      "condition": "Hallow has 'Fear' chosen as an extra effect AND creature is affected by Hallow's extra effect",
+      "outcome": "Creature is Frightened",
+      "related_search_terms": [
+        "area fear",
+        "condition apply",
+        "terror zone"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Sound attempts to emanate from within or reach into Hallow area",
+      "condition": "Hallow has 'Silence' chosen as an extra effect",
+      "outcome": "No sound can emanate from within the area, and no sound can reach into it",
+      "related_search_terms": [
+        "magical silence",
+        "sound barrier",
+        "stealth area"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature (designated by caster) attempts to communicate with another creature within Hallow area",
+      "condition": "Hallow has 'Tongues' chosen as an extra effect AND creature is affected by Hallow's extra effect",
+      "outcome": "Creature can communicate with any other creature in the area, even if they don't share a common language",
+      "related_search_terms": [
+        "universal language",
+        "speak all languages",
+        "communication boon"
+      ]
+    }
+  ],
+  "description_text": "You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects. First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect. Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the GM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as ores or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area. Courage. Affected creatures can't be frightened while in the area. Darkness. Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area. Daylight. Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light. Energy Protection. Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing. Energy Vulnerability. Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing. Everlasting Rest. Dead bodies interred in the area can't be turned into undead. Extradimensional Interference. Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means. Fear. Affected creatures are frightened while in the area. Silence. No sound can emanate from within the area, and no sound can reach into it. Tongues. Affected creatures can communicate with any other creature in the area, even if they don't share a common language.",
+  "tags": [
+    "Abjuration",
+    "Area of Effect",
+    "Long Duration",
+    "Utility",
+    "Permanent Area Effect"
+  ],
+  "related_search_terms": [
+    "holy ground spell",
+    "warding spell",
+    "area protection",
+    "sacred space",
+    "unholy ground",
+    "zone of influence"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "entity_name": "Wall of Force",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Choose a point within range",
+      "outcome": "An invisible wall of force springs into existence",
+      "related_search_terms": [
+        "spell creation",
+        "force field appears"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses orientation or shape",
+      "outcome": "Wall appears as a horizontal, vertical, or angled barrier; or as a hemispherical dome, sphere (up to 10ft radius), or flat surface of panels",
+      "related_search_terms": [
+        "spell shaping",
+        "custom barrier",
+        "area control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When forming flat surface",
+      "condition": "Caster chooses flat surface shape",
+      "outcome": "Wall is made up of ten 10-foot-by-10-foot panels, each contiguous with another",
+      "related_search_terms": [
+        "panel dimensions",
+        "wall section",
+        "modular wall"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When forming sphere or hemisphere",
+      "condition": "Caster chooses spherical or hemispherical shape",
+      "outcome": "Wall has a radius of up to 10 feet",
+      "related_search_terms": [
+        "sphere size",
+        "dome radius",
+        "area dimensions"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall exists",
+      "condition": "None",
+      "outcome": "Wall is 1/4 inch thick",
+      "related_search_terms": [
+        "wall properties",
+        "physical dimensions"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall exists",
+      "condition": "None",
+      "outcome": "Wall lasts for the spell's duration",
+      "related_search_terms": [
+        "spell duration",
+        "persistent effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall appears",
+      "condition": "Wall cuts through a creature's space",
+      "outcome": "Creature is pushed to one side of the wall (caster's choice)",
+      "related_search_terms": [
+        "forced movement",
+        "displacement",
+        "spell placement effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to pass through wall",
+      "condition": "Physical passage",
+      "outcome": "Nothing can physically pass through the wall",
+      "related_search_terms": [
+        "impassable barrier",
+        "solid wall",
+        "block line of sight",
+        "prevent movement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Wall is targeted by damage",
+      "condition": "None",
+      "outcome": "Wall is immune to all damage",
+      "related_search_terms": [
+        "indestructible wall",
+        "invulnerable barrier",
+        "damage resistance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to dispel wall",
+      "condition": "Using Dispel Magic spell",
+      "outcome": "Wall can't be dispelled by dispel magic",
+      "related_search_terms": [
+        "anti-dispel",
+        "magic immunity",
+        "spell resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall is targeted by Disintegrate spell",
+      "condition": "A Disintegrate spell hits the wall",
+      "outcome": "Wall is destroyed instantly",
+      "related_search_terms": [
+        "spell counter",
+        "weakness to disintegrate",
+        "instant destruction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall exists",
+      "condition": "None",
+      "outcome": "Wall extends into the Ethereal Plane",
+      "related_search_terms": [
+        "ethereal barrier",
+        "planar interaction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to travel ethereally through wall",
+      "condition": "Creature attempts ethereal travel through wall",
+      "outcome": "Blocks ethereal travel through the wall",
+      "related_search_terms": [
+        "ethereal blockade",
+        "planar blocking",
+        "ghostly passage"
+      ]
+    }
+  ],
+  "description_text": "An invisible wall of force springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by dispel magic. A disintegrate spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane, blocking ethereal travel through the wall.",
+  "tags": [
+    "wall",
+    "force",
+    "barrier",
+    "abjuration"
+  ],
+  "related_search_terms": [
+    "force field",
+    "protective barrier",
+    "impenetrable wall",
+    "magical defense",
+    "area denial"
+  ]
+}

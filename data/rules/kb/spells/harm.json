@@ -1,0 +1,95 @@
+{
+  "entity_name": "Harm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On casting Harm",
+      "condition": "Target is a creature you can see within range",
+      "outcome": "Target must make a Constitution saving throw",
+      "related_search_terms": [
+        "Constitution save",
+        "saving throw",
+        "targeting",
+        "spell range"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw result",
+      "condition": "Target failed the saving throw",
+      "outcome": "Target takes 14d6 necrotic damage",
+      "related_search_terms": [
+        "necrotic damage",
+        "fail save",
+        "spell damage",
+        "high damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw result",
+      "condition": "Target succeeded on the saving throw",
+      "outcome": "Target takes half of 14d6 necrotic damage",
+      "related_search_terms": [
+        "half damage",
+        "success save",
+        "spell damage",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Harm deals damage",
+      "condition": "Damage would reduce target's hit points below 1",
+      "outcome": "Target's hit points are reduced to 1 instead of below 1",
+      "related_search_terms": [
+        "death prevention",
+        "not lethal",
+        "can't kill",
+        "survive damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution saving throw result",
+      "condition": "Target failed the saving throw",
+      "outcome": "Target's hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage taken",
+      "related_search_terms": [
+        "hit point maximum reduction",
+        "HP max debuff",
+        "disease effect",
+        "health reduction",
+        "long-term effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Effect removes a disease",
+      "condition": "Target's hit point maximum is reduced by Harm",
+      "outcome": "Target's hit point maximum returns to normal",
+      "related_search_terms": [
+        "cure disease",
+        "remove affliction",
+        "HP max recovery",
+        "restoration"
+      ]
+    }
+  ],
+  "description_text": "You unleash a virulent disease on a creature that you can see within range. The target must make a constitution saving throw. On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save. The damage can't reduce the target's hit points below 1. If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took. Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.",
+  "tags": [
+    "spell",
+    "disease",
+    "healing_reduction",
+    "damage"
+  ],
+  "related_search_terms": [
+    "Harm spell",
+    "necrotic spell",
+    "HP drain",
+    "disease spell",
+    "high level spell",
+    "cleric spell",
+    "druid spell"
+  ]
+}

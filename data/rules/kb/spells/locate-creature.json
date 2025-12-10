@@ -1,0 +1,90 @@
+{
+  "entity_name": "Locate Creature",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Successfully cast Locate Creature",
+      "condition": "Target creature chosen is valid (i.e., known specific creature OR nearest of a seen kind) AND Target creature is within 1000 feet of caster AND No running water at least 10 feet wide blocks a direct path between caster and target AND Target creature is not under the effects of a polymorph spell",
+      "outcome": "Caster senses the direction to the target creature's location",
+      "related_search_terms": [
+        "find direction",
+        "creature whereabouts",
+        "tracking target",
+        "target location"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster is sensing the target creature's direction via Locate Creature",
+      "condition": "Target creature is moving",
+      "outcome": "Caster knows the direction of the target creature's movement",
+      "related_search_terms": [
+        "tracking movement",
+        "is it moving",
+        "creature path",
+        "moving target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing a specific creature for Locate Creature",
+      "condition": "Caster has seen the specific creature up close (within 30 feet) at least once",
+      "outcome": "That specific creature is a valid choice",
+      "related_search_terms": [
+        "known creature target",
+        "individual target",
+        "familiar creature"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing a kind of creature for Locate Creature",
+      "condition": "Caster has seen a creature of that kind up close (within 30 feet) at least once",
+      "outcome": "The nearest creature of that kind is a valid choice",
+      "related_search_terms": [
+        "creature type target",
+        "species target",
+        "kind of creature",
+        "find a type of monster"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Locate Creature attempts to find a creature",
+      "condition": "The chosen creature is in a different form (e.g., under a polymorph spell)",
+      "outcome": "The spell fails to locate that creature",
+      "related_search_terms": [
+        "polymorph block",
+        "shapeshift immunity",
+        "form change prevents location",
+        "disguised creature"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Locate Creature attempts to find a creature",
+      "condition": "A direct path between caster and chosen creature is blocked by running water at least 10 feet wide",
+      "outcome": "The spell fails to locate that creature",
+      "related_search_terms": [
+        "running water block",
+        "anti-divination barrier",
+        "scrying obstruction",
+        "river impedes"
+      ]
+    }
+  ],
+  "description_text": "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement. The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close--within 30 feet--at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature. This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.",
+  "tags": [
+    "divination",
+    "scrying",
+    "tracking",
+    "information"
+  ],
+  "related_search_terms": [
+    "find creature",
+    "track target",
+    "locate monster",
+    "creature whereabouts"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "entity_name": "Chill Touch",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature within range",
+      "outcome": "Make a ranged spell attack against the target",
+      "related_search_terms": [
+        "spell attack",
+        "ranged attack",
+        "casting spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Hits",
+      "condition": "Attack roll result is a hit",
+      "outcome": "Target takes 1d8 necrotic damage",
+      "related_search_terms": [
+        "damage spell",
+        "necrotic damage",
+        "single target damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Ranged Spell Attack Hits",
+      "condition": "Attack roll result is a hit",
+      "outcome": "Target cannot regain hit points until the start of caster's next turn",
+      "related_search_terms": [
+        "healing prevention",
+        "anti-healing",
+        "regeneration stop",
+        "hit point block"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Hits",
+      "condition": "Attack roll result is a hit AND target is Undead",
+      "outcome": "Undead target has disadvantage on attack rolls against caster until the end of caster's next turn",
+      "related_search_terms": [
+        "undead debuff",
+        "attack debuff",
+        "monster specific effect",
+        "undead control"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Spellcaster reaches specified level",
+      "condition": "Caster is 5th level OR 11th level OR 17th level",
+      "outcome": "Base necrotic damage increases by 1d8 at each threshold (2d8 at 5th, 3d8 at 11th, 4d8 at 17th)",
+      "related_search_terms": [
+        "spell scaling",
+        "cantrip damage",
+        "level progression",
+        "damage increase"
+      ]
+    }
+  ],
+  "description_text": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "tags": [
+    "cantrip",
+    "necromancy",
+    "damage",
+    "debuff",
+    "ranged",
+    "single target"
+  ],
+  "related_search_terms": [
+    "cantrip",
+    "necrotic",
+    "anti-healing",
+    "undead control",
+    "ranged attack spell",
+    "ghostly hand"
+  ]
+}

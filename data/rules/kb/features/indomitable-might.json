@@ -1,0 +1,34 @@
+{
+  "entity_name": "Indomitable Might",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making a Strength check",
+      "condition": "Your total for the Strength check is less than your Strength score",
+      "outcome": "You can use your Strength score in place of the check's total",
+      "related_search_terms": [
+        "strength check",
+        "ability check",
+        "minimum strength",
+        "guaranteed result",
+        "dice roll replacement",
+        "barbarian feature"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
+  "tags": [
+    "Barbarian Feature",
+    "Level 18",
+    "Strength"
+  ],
+  "related_search_terms": [
+    "Barbarian",
+    "Indomitable",
+    "Might",
+    "Strength skill",
+    "ability score check",
+    "minimum result"
+  ]
+}

@@ -1,0 +1,355 @@
+[
+  {
+    "source_chapter": "Objects",
+    "extracted_concepts": [
+      {
+        "concept_name": "Object Definition",
+        "definition": "An inanimate thing that isn't a creature. Objects are subject to damage and destruction.",
+        "rule_logic": {
+          "premise": "An entity is inanimate and not a creature",
+          "implication": "The entity is considered an object for game rule purposes",
+          "exceptions": [],
+          "description_text": "For the purpose of these rules, an object is an inanimate thing that isn't a creature.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is an object",
+            "creature vs object",
+            "inanimate item"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "inanimate",
+          "creature"
+        ]
+      },
+      {
+        "concept_name": "Object AC and HP Determination",
+        "definition": "The Dungeon Master assigns an Armor Class (AC) and hit points (HP) to an object based on its material, size, and magical properties.",
+        "rule_logic": {
+          "premise": "An object's statistics (AC, HP) need to be determined",
+          "implication": "DM assigns AC and HP based on material, size, and magical nature. Hardness and HP increase with size and material durability.",
+          "exceptions": [],
+          "description_text": "For the purpose of these rules, an object is an inanimate thing that isn't a creature. The DM assigns an AC and hit points to an object based on its material and size. They can also determine whether the object has vulnerabilities, resistances, or immunities to certain types of damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object stats",
+            "how much hp does a door have",
+            "object ac",
+            "strong materials",
+            "weak materials",
+            "magical objects"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "AC",
+          "HP",
+          "damage",
+          "material",
+          "size",
+          "DM discretion"
+        ]
+      },
+      {
+        "concept_name": "Object Saving Throws and Ability Checks",
+        "definition": "Objects typically do not make saving throws or ability checks unless they are magical and explicitly state otherwise.",
+        "rule_logic": {
+          "premise": "An object is subjected to an effect that would normally require a saving throw or ability check",
+          "implication": "The object automatically fails the saving throw or ability check, unless it is a magic item with specific rules allowing it to make such a roll.",
+          "exceptions": [
+            "Magic items with specific rules"
+          ],
+          "description_text": "Objects don't normally make saving throws or ability checks; assume they automatically fail unless a magic item's description says otherwise.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can objects resist spells",
+            "object saves",
+            "do objects have stats",
+            "charming an object"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "saving throw",
+          "ability check",
+          "magic item",
+          "fail"
+        ]
+      },
+      {
+        "concept_name": "Damaging and Destroying Objects",
+        "definition": "Objects can be attacked and take damage. When an object's hit points are reduced to 0, it breaks or is destroyed.",
+        "rule_logic": {
+          "premise": "An object takes damage that reduces its HP to 0",
+          "implication": "The object breaks or is destroyed.",
+          "exceptions": [],
+          "description_text": "When an object takes damage, apply it to its current hit points. An object reduced to 0 hit points breaks or is destroyed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "destroying an object",
+            "breaking a wall",
+            "object destruction",
+            "object damage calculation"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "damage",
+          "HP",
+          "destroyed",
+          "broken"
+        ]
+      },
+      {
+        "concept_name": "Attacking Objects Held or Worn",
+        "definition": "Attacks targeting objects held or worn by a creature are resolved against the creature's AC, with the creature potentially taking the damage.",
+        "rule_logic": {
+          "premise": "A creature targets an object held or worn by another creature",
+          "implication": "The target creature's AC applies. If the attack hits, the creature can use its reaction to interpose itself and take the damage instead of the object. If the creature does not interpose, the object takes damage. If the object would provide cover, the target creature gains the appropriate AC bonus.",
+          "exceptions": [],
+          "description_text": "An object worn or carried by a creature has the creature's AC and takes damage as normal. If an object is being held or worn by a creature, the creature benefits from any cover the object provides. If an object is targeted directly, and the creature is holding or wearing it, the creature can use its reaction to interpose itself between the attacker and the object, taking the damage instead.",
+          "is_exception": false,
+          "related_search_terms": [
+            "attacking a shield",
+            "breaking a weapon",
+            "disarming",
+            "creature protecting object",
+            "object cover"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "held",
+          "worn",
+          "creature",
+          "AC",
+          "damage",
+          "reaction",
+          "cover"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "objects"
+  },
+  {
+    "source_chapter": "Objects",
+    "extracted_concepts": [
+      {
+        "concept_name": "Object Destruction (General Principle)",
+        "definition": "The overarching rule that any destructible object can eventually be destroyed with sufficient time and the appropriate tools, emphasizing common sense.",
+        "rule_logic": {
+          "premise": "Character attempts to destroy a destructible object",
+          "implication": "If character has enough time AND the right tools, THEN the object can be destroyed. DM must use common sense to determine success.",
+          "exceptions": [],
+          "description_text": "When characters need to saw through ropes, shatter a window, or smash a vampire's coffin, the only hard and fast rule is this: given enough time and the right tools, characters can destroy any destructible object. Use common sense when determining a character's success at damaging an object. Can a fighter cut through a section of a stone wall with a sword? No, the sword is likely to break before the wall does.",
+          "is_exception": false,
+          "related_search_terms": [
+            "destroying objects",
+            "breaking things",
+            "object durability",
+            "common sense object damage"
+          ]
+        },
+        "related_keywords": [
+          "destruction",
+          "objects",
+          "common sense",
+          "tools",
+          "time"
+        ]
+      },
+      {
+        "concept_name": "Object (Game Definition)",
+        "definition": "A discrete, inanimate item for the purpose of applying game rules.",
+        "rule_logic": {
+          "premise": "Game rule refers to an 'object'",
+          "implication": "The term refers to a discrete, inanimate item (e.g., window, door, sword, book, table, chair, stone). It does NOT include buildings or vehicles composed of multiple objects.",
+          "exceptions": [],
+          "description_text": "For the purpose of these rules, an object is a discrete, inanimate item like a window, door, sword, book, table, chair, or stone, not a building or a vehicle that is composed of many other objects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is an object",
+            "object definition",
+            "inanimate item",
+            "game object"
+          ]
+        },
+        "related_keywords": [
+          "definition",
+          "item",
+          "inanimate",
+          "discrete",
+          "game term"
+        ]
+      },
+      {
+        "concept_name": "Object Statistics (Conditional Application)",
+        "definition": "The practice of assigning game statistics like AC, HP, immunities, resistances, and vulnerabilities to objects when rapid resolution of damage is required.",
+        "rule_logic": {
+          "premise": "Time is a factor in determining damage to an object",
+          "implication": "DM CAN assign an Armor Class, hit points, immunities, resistances, and vulnerabilities to specific damage types to the object.",
+          "exceptions": [],
+          "description_text": "When time is a factor, you can assign an Armor Class and hit points to a destructible object. You can also give it immunities, resistances, and vulnerabilities to specific types of damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object stats",
+            "object AC",
+            "object HP",
+            "object resistances",
+            "fast object destruction"
+          ]
+        },
+        "related_keywords": [
+          "AC",
+          "HP",
+          "damage",
+          "immunities",
+          "resistances",
+          "vulnerabilities",
+          "time factor"
+        ]
+      },
+      {
+        "concept_name": "Object Armor Class (by Substance)",
+        "definition": "The measure of an object's difficulty to damage through physical strikes, determined by its material.",
+        "rule_logic": {
+          "premise": "Determining how difficult it is to damage an object with an attack",
+          "implication": "Use the object's Armor Class, based on its substance: Cloth/paper/rope (AC 11), Crystal/glass/ice (AC 13), Wood/bone (AC 15), Stone (AC 17), Iron/steel (AC 19), Mithral (AC 21), Adamantine (AC 23).",
+          "exceptions": [],
+          "description_text": "An object's Armor Class is a measure of how difficult it is to deal damage to the object when striking it (because the object has no chance of dodging out of the way). The Object Armor Class table provides suggested AC values for various substances.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object AC values",
+            "AC for materials",
+            "hitting objects",
+            "armor class objects"
+          ]
+        },
+        "related_keywords": [
+          "AC",
+          "Armor Class",
+          "object",
+          "substance",
+          "durability",
+          "material"
+        ]
+      },
+      {
+        "concept_name": "Object Hit Points (by Size and Resilience)",
+        "definition": "The amount of damage an object can withstand before losing its structural integrity, varying by size and resilience.",
+        "rule_logic": {
+          "premise": "Determining how much damage an object can take before being destroyed",
+          "implication": "Use the object's Hit Points, based on its size and resilience: Tiny fragile (2/1d4), Tiny resilient (5/2d4), Small fragile (3/1d6), Small resilient (10/3d6), Medium fragile (4/1d8), Medium resilient (18/4d8), Large fragile (5/1d10), Large resilient (27/5d10).",
+          "exceptions": [],
+          "description_text": "An object's hit points measure how much damage it can take before losing its structural integrity. Resilient objects have more hit points than fragile ones. Large objects also tend to have more hit points than small ones, unless breaking a small part of the object is just as effective as breaking the whole thing. The Object Hit Points table provides suggested hit points for fragile and resilient objects that are Large or smaller.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object HP values",
+            "hit points for objects",
+            "fragile object HP",
+            "resilient object HP",
+            "object health"
+          ]
+        },
+        "related_keywords": [
+          "HP",
+          "Hit Points",
+          "object",
+          "resilience",
+          "size",
+          "structural integrity",
+          "damage capacity"
+        ]
+      },
+      {
+        "concept_name": "Huge and Gargantuan Objects (Damage Rules)",
+        "definition": "Special rules for damaging extremely large objects, which may render normal weapons ineffective or require sectional HP tracking.",
+        "rule_logic": {
+          "premise": "Targeting a Huge or Gargantuan object with normal weapons",
+          "implication": "Normal weapons are typically of little use. DM can optionally track HP by dividing the object into Large or smaller sections, where destroying one section may ruin the whole object. Alternatively, DM can simply decide how long it withstands damage.",
+          "exceptions": [],
+          "description_text": "Normal weapons are of little use against many Huge and Gargantuan objects, such as a colossal statue, towering column of stone, or massive boulder. That said, one torch can burn a Huge tapestry, and an *earthquake* spell can reduce a colossus to rubble. You can track a Huge or Gargantuan object's hit points if you like, or you can simply decide how long the object can withstand whatever weapon or force is acting against it. If you track hit points for the object, divide it into Large or smaller sections, and track each section's hit points separately. Destroying one of those sections could ruin the entire object. For example, a Gargantuan statue of a human might topple over when one of its Large legs is reduced to 0 hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "huge object damage",
+            "gargantuan object HP",
+            "breaking statues",
+            "large object destruction"
+          ]
+        },
+        "related_keywords": [
+          "Huge",
+          "Gargantuan",
+          "objects",
+          "damage",
+          "hit points",
+          "sections",
+          "structural failure",
+          "weapons"
+        ]
+      },
+      {
+        "concept_name": "Objects and Damage Types",
+        "definition": "Rules specifying how different damage types interact with objects, including universal immunities and DM discretion for vulnerabilities and resistances.",
+        "rule_logic": {
+          "premise": "Object is targeted by damage",
+          "implication": "Object is immune to poison damage AND immune to psychic damage. DM MAY decide other damage types are more or less effective based on common sense (e.g., bludgeoning for smashing, fire/lightning for paper, pick for stone).",
+          "exceptions": [],
+          "description_text": "Objects are immune to poison and psychic damage. You might decide that some damage types are more effective against a particular object or substance than others. For example, bludgeoning damage works well for smashing things but not for cutting through rope or leather. Paper or cloth objects might be vulnerable to fire and lightning damage. A pick can chip away stone but can't effectively cut down a tree. As always, use your best judgment.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object immunities",
+            "object resistances",
+            "object vulnerabilities",
+            "poison damage objects",
+            "psychic damage objects",
+            "bludgeoning objects"
+          ]
+        },
+        "related_keywords": [
+          "damage types",
+          "immunities",
+          "resistances",
+          "vulnerabilities",
+          "poison",
+          "psychic",
+          "bludgeoning",
+          "fire",
+          "lightning",
+          "DM judgment"
+        ]
+      },
+      {
+        "concept_name": "Damage Threshold (Objects)",
+        "definition": "A property of large, resilient objects that grants immunity to damage unless a single attack or effect deals an amount of damage equal to or exceeding a specified value.",
+        "rule_logic": {
+          "premise": "Object with a Damage Threshold takes damage from a single attack or effect",
+          "implication": "IF the damage is LESS than the Damage Threshold, THEN the object takes 0 damage (immunity) and it's superficial. IF the damage is EQUAL TO or GREATER THAN the Damage Threshold, THEN the object takes damage as normal.",
+          "exceptions": [],
+          "description_text": "Big objects such as castle walls often have extra resilience represented by a damage threshold. An object with a damage threshold has immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes damage as normal. Any damage that fails to meet or exceed the object's damage threshold is considered superficial and doesn't reduce the object's hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "damage threshold explanation",
+            "object immunity to damage",
+            "breaking castle walls",
+            "superficial damage objects"
+          ]
+        },
+        "related_keywords": [
+          "Damage Threshold",
+          "immunity",
+          "large objects",
+          "resilience",
+          "superficial damage",
+          "single attack",
+          "effect",
+          "hit points"
+        ]
+      }
+    ],
+    "_chunk_header": "Objects",
+    "_source_file": "objects"
+  }
+]

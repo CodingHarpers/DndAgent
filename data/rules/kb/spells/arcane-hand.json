@@ -1,0 +1,159 @@
+{
+  "entity_name": "Arcane Hand",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Unoccupied space within range is chosen",
+      "outcome": "Create a Large hand of shimmering, translucent force that lasts for the spell's duration",
+      "related_search_terms": [
+        "summon hand",
+        "force construct",
+        "conjure hand"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arcane Hand active",
+      "condition": "Hand is an object",
+      "outcome": "Hand has AC 20, HP equal to your hit point maximum, Strength 26 (+8), Dexterity 10 (+0)",
+      "related_search_terms": [
+        "hand stats",
+        "object AC",
+        "object HP",
+        "hand strength"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arcane Hand active",
+      "condition": "Hand's hit points drop to 0",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "hand destroyed",
+        "spell broken",
+        "lose concentration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Your turn (bonus action)",
+      "condition": "Arcane Hand active",
+      "outcome": "You can move the hand up to 60 feet and cause one of its effects",
+      "related_search_terms": [
+        "command hand",
+        "control hand",
+        "bonus action spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Clenched Fist",
+      "condition": "Creature or object within 5 feet of the hand",
+      "outcome": "The hand strikes, make a melee spell attack using your statistics. On hit, deal 4d8 force damage",
+      "related_search_terms": [
+        "hand attack",
+        "force damage",
+        "melee spell attack",
+        "punch"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Forceful Hand",
+      "condition": "Creature within 5 feet of the hand",
+      "outcome": "The hand attempts to push; make hand's Strength check contested by target's Strength (Athletics). If target is Medium or smaller, you have advantage on the check. On success, push target up to 5 feet + (5 * your spellcasting ability modifier)",
+      "related_search_terms": [
+        "hand push",
+        "shove",
+        "forced movement",
+        "contest check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Forceful Hand success",
+      "condition": "Target pushed",
+      "outcome": "The hand moves with the target to remain within 5 feet of it",
+      "related_search_terms": [
+        "hand reposition",
+        "follow movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Grasping Hand",
+      "condition": "Huge or smaller creature within 5 feet of the hand",
+      "outcome": "The hand attempts to grapple; use hand's Strength score to resolve the grapple. If target is Medium or smaller, you have advantage on the check",
+      "related_search_terms": [
+        "hand grapple",
+        "restrain",
+        "grab",
+        "hold creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Grasping Hand (bonus action)",
+      "condition": "Hand is grappling a target",
+      "outcome": "The hand crushes the target, dealing bludgeoning damage equal to 2d6 + your spellcasting ability modifier",
+      "related_search_terms": [
+        "crush damage",
+        "grapple damage",
+        "squeeze"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Command: Interposing Hand",
+      "condition": "You and a chosen creature",
+      "outcome": "The hand moves to stay between you and the target, providing you with half cover against that target",
+      "related_search_terms": [
+        "hand cover",
+        "half cover",
+        "interpose",
+        "shield"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Command: Interposing Hand active",
+      "condition": "Target attempts to move through the hand's space AND Target's Strength score is less than or equal to the hand's Strength score",
+      "outcome": "Target cannot move through the hand's space",
+      "related_search_terms": [
+        "block movement",
+        "physical barrier"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Command: Interposing Hand active",
+      "condition": "Target attempts to move through the hand's space AND Target's Strength score is higher than the hand's Strength score",
+      "outcome": "Target can move toward you through the hand's space, but that space is difficult terrain for the target",
+      "related_search_terms": [
+        "difficult terrain",
+        "slow movement",
+        "hinder movement"
+      ]
+    }
+  ],
+  "description_text": "You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand. The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn't fill its space. When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it. ***Clenched Fist.*** The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d8 force damage. ***Forceful Hand.*** The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it. ***Grasping Hand.*** The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier. ***Interposing Hand.*** The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target.",
+  "tags": [
+    "spell",
+    "conjuration",
+    "control",
+    "damage",
+    "utility",
+    "force",
+    "arcane",
+    "object creation"
+  ],
+  "related_search_terms": [
+    "bigby's hand",
+    "mage hand",
+    "summon golem",
+    "force spell",
+    "control battlefield"
+  ]
+}

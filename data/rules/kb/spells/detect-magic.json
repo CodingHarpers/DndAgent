@@ -1,0 +1,58 @@
+{
+  "entity_name": "Detect Magic",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell active",
+      "condition": "Magic present within 30 feet of caster",
+      "outcome": "Caster senses the presence of magic",
+      "related_search_terms": [
+        "detect magical presence",
+        "magic aura",
+        "nearby magic",
+        "area of effect sensing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster senses magic AND uses an action",
+      "condition": "Target creature or object is visible AND within 30 feet AND bears magic",
+      "outcome": "Caster sees a faint aura around target AND learns its school of magic (if any)",
+      "related_search_terms": [
+        "identify magic",
+        "school of magic",
+        "magic identification",
+        "aura sight",
+        "examine magic"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to sense magic through a barrier",
+      "condition": "Barrier is 1 foot of stone OR 1 inch of common metal OR a thin sheet of lead OR 3 feet of wood OR 3 feet of dirt",
+      "outcome": "Sensing magic is blocked by the barrier",
+      "related_search_terms": [
+        "line of effect blocking",
+        "magic resistance",
+        "anti-magic barrier",
+        "blocked detection",
+        "line of sight"
+      ]
+    }
+  ],
+  "description_text": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+  "tags": [
+    "spell",
+    "divination",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "magic detection",
+    "divination spell",
+    "sense magic",
+    "aura sight",
+    "identify magic",
+    "anti-magic barriers"
+  ]
+}

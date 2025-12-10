@@ -1,0 +1,70 @@
+{
+  "entity_name": "Create or Destroy Water",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Cast spell, choose 'Create Water' option, target open container",
+      "condition": "Target is an open container within 30ft range",
+      "outcome": "Create up to 10 gallons of clean water within the container",
+      "related_search_terms": [
+        "create water",
+        "fill container",
+        "drinking water",
+        "survival",
+        "hydration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cast spell, choose 'Create Water' option, target area",
+      "condition": "Target is a 30-foot cube within 30ft range",
+      "outcome": "Water falls as rain within the 30-foot cube",
+      "related_search_terms": [
+        "create rain",
+        "environmental effect",
+        "douse fire",
+        "obscure vision"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cast spell, choose 'Destroy Water' option, target open container",
+      "condition": "Target is an open container within 30ft range containing water",
+      "outcome": "Destroy up to 10 gallons of water within the container",
+      "related_search_terms": [
+        "destroy water",
+        "empty container",
+        "remove water",
+        "drying up"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cast spell, choose 'Destroy Water' option, target area",
+      "condition": "Target is a 30-foot cube within 30ft range containing fog",
+      "outcome": "Destroy fog within the 30-foot cube",
+      "related_search_terms": [
+        "destroy fog",
+        "clear vision",
+        "dispell fog",
+        "counter fog cloud"
+      ]
+    }
+  ],
+  "description_text": "You either create or destroy water. Create Water. You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range. Destroy Water. You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.",
+  "tags": [
+    "1st-level",
+    "transmutation",
+    "cleric",
+    "druid",
+    "utility",
+    "environment_control"
+  ],
+  "related_search_terms": [
+    "water manipulation",
+    "survival spell",
+    "environmental effect",
+    "liquid control"
+  ]
+}

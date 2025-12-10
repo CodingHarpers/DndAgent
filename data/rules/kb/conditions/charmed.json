@@ -1,0 +1,59 @@
+{
+  "entity_name": "Charmed",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Charmed creature attempts to attack",
+      "condition": "Target of attack is the charmer",
+      "outcome": "Attack is prevented",
+      "related_search_terms": [
+        "prevent attack",
+        "controlled target",
+        "friendly fire",
+        "forced inaction",
+        "charmed control"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Charmed creature attempts to target with ability or effect",
+      "condition": "Ability or effect is harmful AND target is the charmer",
+      "outcome": "Targeting is prevented",
+      "related_search_terms": [
+        "prevent spell",
+        "prevent harmful ability",
+        "mind control",
+        "forced inaction",
+        "charmed limitations"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charmer makes an ability check",
+      "condition": "Ability check is to interact socially with the charmed creature",
+      "outcome": "Charmer gains Advantage on the ability check",
+      "related_search_terms": [
+        "persuasion",
+        "deception",
+        "intimidation",
+        "social roll",
+        "influence",
+        "charmer's benefit"
+      ]
+    }
+  ],
+  "description_text": "- A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects. - The charmer has advantage on any ability check to interact socially with the creature.",
+  "tags": [
+    "condition",
+    "mind-affecting",
+    "control"
+  ],
+  "related_search_terms": [
+    "charming",
+    "mind control",
+    "enchanted",
+    "compelled",
+    "social interaction benefit"
+  ]
+}

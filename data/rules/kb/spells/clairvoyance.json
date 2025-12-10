@@ -1,0 +1,73 @@
+{
+  "entity_name": "Clairvoyance",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target location is within range AND (familiar to caster OR an obvious unfamiliar location)",
+      "outcome": "Invisible sensor is created at target location for the duration",
+      "related_search_terms": [
+        "sensor creation",
+        "remote scrying",
+        "observation point"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to interact with sensor",
+      "condition": "Sensor is created by Clairvoyance",
+      "outcome": "Sensor cannot be attacked or otherwise interacted with",
+      "related_search_terms": [
+        "sensor immunity",
+        "invulnerable sensor",
+        "un-targetable"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster casts Clairvoyance",
+      "outcome": "Caster chooses to use either seeing or hearing through the sensor as if in its space",
+      "related_search_terms": [
+        "remote vision",
+        "remote hearing",
+        "sensory link"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "As an action",
+      "condition": "Caster concentrating on Clairvoyance",
+      "outcome": "Caster can switch between seeing and hearing through the sensor",
+      "related_search_terms": [
+        "change perception",
+        "toggle senses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to perceive sensor",
+      "condition": "Creature has See Invisibility OR Truesight OR similar ability",
+      "outcome": "Sensor is seen as a luminous, intangible orb about the size of a fist",
+      "related_search_terms": [
+        "detecting scrying",
+        "counter-scrying",
+        "revealing sensor"
+      ]
+    }
+  ],
+  "description_text": "You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with. When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing. A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.",
+  "tags": [
+    "Divination",
+    "Sensor",
+    "Scrying"
+  ],
+  "related_search_terms": [
+    "scrying",
+    "surveillance",
+    "remote viewing",
+    "espionage",
+    "spy spell"
+  ]
+}

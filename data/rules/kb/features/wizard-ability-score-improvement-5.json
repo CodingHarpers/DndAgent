@@ -1,0 +1,67 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "character_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player Character Reaches Level",
+      "condition": "Level is 4 OR Level is 8 OR Level is 12 OR Level is 16 OR Level is 19",
+      "outcome": "Player Character gains an Ability Score Improvement (ASI) opportunity",
+      "related_search_terms": [
+        "level up",
+        "character progression",
+        "milestone",
+        "ASI gain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an Ability Score Improvement opportunity",
+      "condition": "Player chooses to increase one ability score",
+      "outcome": "Selected ability score increases by 2",
+      "related_search_terms": [
+        "stat boost",
+        "single stat increase",
+        "strength increase",
+        "intelligence increase"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an Ability Score Improvement opportunity",
+      "condition": "Player chooses to increase two different ability scores",
+      "outcome": "First selected ability score increases by 1 AND Second selected ability score increases by 1",
+      "related_search_terms": [
+        "stat boost",
+        "two stat increase",
+        "versatility"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Applying Ability Score Improvement",
+      "condition": "Increasing an ability score would result in it exceeding 20",
+      "outcome": "The ability score cannot be increased above 20 by this feature",
+      "related_search_terms": [
+        "ability score cap",
+        "stat limit",
+        "maximum score",
+        "ASI limit"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "character progression",
+    "feature",
+    "ability scores",
+    "leveling"
+  ],
+  "related_search_terms": [
+    "ASI",
+    "stat increase",
+    "level up bonus",
+    "character customization",
+    "ability point gain"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "entity_name": "Half-Orc",
+  "logic_type": "race_feature",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Visual Perception Check",
+      "condition": "Area is dim light AND target within 60 feet",
+      "outcome": "Treat dim light as bright light",
+      "related_search_terms": [
+        "see in dim light",
+        "low light vision",
+        "night vision"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Visual Perception Check",
+      "condition": "Area is darkness AND target within 60 feet",
+      "outcome": "Treat darkness as dim light (monochromatic)",
+      "related_search_terms": [
+        "see in darkness",
+        "low light vision",
+        "night vision"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Score a critical hit with a melee weapon attack",
+      "condition": "Player is a Half-Orc",
+      "outcome": "Roll one additional weapon damage die and add it to the extra damage of the critical hit",
+      "related_search_terms": [
+        "crit damage",
+        "melee critical",
+        "extra damage dice",
+        "orc damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Player's hit points drop to 0",
+      "condition": "Player is a Half-Orc AND is not killed outright AND has not used Relentless Endurance since the last long rest",
+      "outcome": "Player drops to 1 hit point instead",
+      "related_search_terms": [
+        "death prevention",
+        "survive lethal damage",
+        "one hit point",
+        "long rest ability",
+        "endurance"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character creation",
+      "condition": "Player is a Half-Orc",
+      "outcome": "Gain proficiency in the Intimidation skill",
+      "related_search_terms": [
+        "intimidation proficiency",
+        "skill bonus",
+        "scare",
+        "frighten"
+      ]
+    }
+  ],
+  "description_text": "name: Half-Orc\nspeed: 30\nability_bonuses:\n  - entry:\n    ability_score:\n      name: STR\n    bonus: 2\n  - entry:\n    ability_score:\n      name: CON\n    bonus: 1\nalignment: Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.\nage: Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.\nsize: Medium\nsize_description: Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium.\nlanguages:\n  - entry:\n    name: Common\n  - entry:\n    name: Orc\nlanguage_desc: You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script.\ntraits:\n  - entry:\n    name: Darkvision\n  - entry:\n    name: Savage Attacks\n  - entry:\n    name: Relentless Endurance\n  - entry:\n    name: Menacing",
+  "tags": [
+    "race",
+    "half-orc"
+  ],
+  "related_search_terms": [
+    "half-orc abilities",
+    "half-orc traits",
+    "race features",
+    "orcish heritage"
+  ]
+}

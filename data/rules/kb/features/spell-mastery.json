@@ -1,0 +1,66 @@
+{
+  "entity_name": "Spell Mastery",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Upon gaining 18th Wizard level",
+      "condition": "Wizard has a spellbook",
+      "outcome": "Wizard designates one 1st-level wizard spell from spellbook as Mastered Spell 1; Wizard designates one 2nd-level wizard spell from spellbook as Mastered Spell 2",
+      "related_search_terms": [
+        "spell selection",
+        "spell choice",
+        "mastered spell designation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wizard casts a spell",
+      "condition": "Spell is a Mastered Spell AND Spell is prepared AND Spell is cast at its lowest level",
+      "outcome": "Spell slot is NOT expended for this casting",
+      "related_search_terms": [
+        "at-will casting",
+        "free spell",
+        "unlimited use",
+        "no spell slot cost"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Wizard casts a spell",
+      "condition": "Spell is a Mastered Spell AND Spell is cast at a higher level than its lowest level",
+      "outcome": "Spell slot MUST be expended normally for this casting",
+      "related_search_terms": [
+        "upcasting mastered spell",
+        "higher level casting"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Wizard spends 8 hours in study",
+      "condition": "Wizard has Spell Mastery feature",
+      "outcome": "Wizard can replace Mastered Spell 1 with a different 1st-level wizard spell from spellbook; Wizard can replace Mastered Spell 2 with a different 2nd-level wizard spell from spellbook",
+      "related_search_terms": [
+        "reselect spells",
+        "change mastered spells",
+        "retrain spells",
+        "modify spell mastery"
+      ]
+    }
+  ],
+  "description_text": "At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal. By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.",
+  "tags": [
+    "Wizard",
+    "Class Feature",
+    "Spellcasting",
+    "Resource Management",
+    "Level 18"
+  ],
+  "related_search_terms": [
+    "at-will spells",
+    "free spells",
+    "mastered spells",
+    "unlimited spells",
+    "wizard abilities"
+  ]
+}

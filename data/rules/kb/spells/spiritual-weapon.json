@@ -1,0 +1,57 @@
+{
+  "entity_name": "Spiritual Weapon",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell slot expended",
+      "outcome": "Create a floating, spectral weapon within range that lasts for 1 minute or until you cast this spell again",
+      "related_search_terms": [
+        "summon weapon",
+        "spectral entity",
+        "spell duration",
+        "persistent spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target creature within 5 feet of the created weapon",
+      "outcome": "Make one melee spell attack against the target. On a hit, target takes 1d8 + your spellcasting ability modifier force damage",
+      "related_search_terms": [
+        "initial attack",
+        "casting damage",
+        "spell attack roll",
+        "force damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As a bonus action on your turn",
+      "condition": "Spiritual Weapon is active",
+      "outcome": "Move the weapon up to 20 feet and repeat the melee spell attack against a creature within 5 feet of it. On a hit, target takes 1d8 + your spellcasting ability modifier force damage",
+      "related_search_terms": [
+        "bonus action attack",
+        "repeated damage",
+        "move weapon",
+        "follow-up attack"
+      ]
+    }
+  ],
+  "description_text": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier. As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it. The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.",
+  "tags": [
+    "cleric spell",
+    "summon",
+    "damage",
+    "bonus action",
+    "concentration-less"
+  ],
+  "related_search_terms": [
+    "cleric summon",
+    "spiritual weapon damage",
+    "bonus action spell",
+    "divine weapon",
+    "spectral weapon"
+  ]
+}

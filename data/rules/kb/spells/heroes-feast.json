@@ -1,0 +1,144 @@
+{
+  "entity_name": "Heroes' Feast",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Feast consumption",
+      "condition": "Feast is being consumed",
+      "outcome": "Consumption takes 1 hour",
+      "related_search_terms": [
+        "casting time",
+        "preparation time",
+        "duration"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Feast consumption ends",
+      "condition": "1 hour of consumption has passed",
+      "outcome": "Beneficial effects begin",
+      "related_search_terms": [
+        "effect delay",
+        "activation",
+        "start of buff"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Partaking of feast",
+      "condition": "Creatures wish to partake",
+      "outcome": "Up to twelve other creatures can partake",
+      "related_search_terms": [
+        "target limit",
+        "number of recipients",
+        "party buff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature partakes of feast",
+      "condition": "Creature is afflicted by any disease",
+      "outcome": "Creature is cured of all diseases",
+      "related_search_terms": [
+        "disease removal",
+        "healing",
+        "condition cleanse"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature partakes of feast",
+      "condition": "Creature is afflicted by any poison",
+      "outcome": "Creature is cured of all poison",
+      "related_search_terms": [
+        "poison removal",
+        "healing",
+        "condition cleanse"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Beneficial effects begin",
+      "condition": "Creature has partaken of feast",
+      "outcome": "Creature becomes immune to poison for 24 hours",
+      "related_search_terms": [
+        "poison immunity",
+        "anti-poison",
+        "condition protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Beneficial effects begin",
+      "condition": "Creature has partaken of feast",
+      "outcome": "Creature becomes immune to being frightened for 24 hours",
+      "related_search_terms": [
+        "fear immunity",
+        "bravery buff",
+        "mental fortitude"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Wisdom saving throw",
+      "condition": "Creature has partaken of feast AND beneficial effects are active",
+      "outcome": "Creature makes Wisdom saving throws with advantage for 24 hours",
+      "related_search_terms": [
+        "wis save buff",
+        "mental defense",
+        "saving throw bonus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Beneficial effects begin",
+      "condition": "Creature has partaken of feast",
+      "outcome": "Creature's hit point maximum increases by 2d10 for 24 hours",
+      "related_search_terms": [
+        "hp boost",
+        "health increase",
+        "temporary hp"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Beneficial effects begin",
+      "condition": "Creature's hit point maximum increases due to feast",
+      "outcome": "Creature gains hit points equal to the increase (2d10)",
+      "related_search_terms": [
+        "hp restoration",
+        "healing",
+        "health gain"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Beneficial effects active",
+      "condition": "Time elapsed since effects began",
+      "outcome": "Beneficial effects last for 24 hours",
+      "related_search_terms": [
+        "spell duration",
+        "buff duration",
+        "temporary effects"
+      ]
+    }
+  ],
+  "description_text": "You bring forth a great feast, including magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time, and the beneficial effects don't set in until this hour is over. Up to twelve other creatures can partake of the feast. A creature that partakes of the feast gains several benefits. The creature is cured of all diseases and poison, becomes immune to poison and being frightened, and makes all wisdom saving throws with advantage. Its hit point maximum also increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours.",
+  "tags": [
+    "Spell",
+    "Buff",
+    "Healing",
+    "Utility",
+    "Condition Removal"
+  ],
+  "related_search_terms": [
+    "healing spell",
+    "buff spell",
+    "party buff",
+    "condition removal",
+    "hp boost",
+    "fear immunity",
+    "poison immunity",
+    "wis save advantage"
+  ]
+}

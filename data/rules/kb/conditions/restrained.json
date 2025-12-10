@@ -1,0 +1,69 @@
+{
+  "entity_name": "Restrained",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to move or benefit from speed bonuses",
+      "condition": "Creature is affected by Restrained condition",
+      "outcome": "Creature's speed becomes 0 and cannot benefit from speed bonuses",
+      "related_search_terms": [
+        "movement speed",
+        "immobilized",
+        "stuck",
+        "cannot move",
+        "grappled"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack roll made against affected creature",
+      "condition": "Target creature is affected by Restrained condition",
+      "outcome": "Attack rolls against the target have Advantage",
+      "related_search_terms": [
+        "advantage on attack",
+        "easy to hit",
+        "vulnerable",
+        "exposed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack roll made by affected creature",
+      "condition": "Attacker is affected by Restrained condition",
+      "outcome": "Attacker's attack rolls have Disadvantage",
+      "related_search_terms": [
+        "disadvantage on attack",
+        "impaired attacks",
+        "struggling to hit",
+        "grappled attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity saving throw made by affected creature",
+      "condition": "Creature is affected by Restrained condition",
+      "outcome": "Creature has Disadvantage on Dexterity saving throws",
+      "related_search_terms": [
+        "dex save",
+        "clumsy",
+        "impaired dodging",
+        "reaction time",
+        "grappled saves"
+      ]
+    }
+  ],
+  "description_text": "A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed. Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage. The creature has disadvantage on Dexterity saving throws.",
+  "tags": [
+    "condition",
+    "combat",
+    "control"
+  ],
+  "related_search_terms": [
+    "immobilized",
+    "grappled",
+    "paralyzed",
+    "netted",
+    "webbed"
+  ]
+}

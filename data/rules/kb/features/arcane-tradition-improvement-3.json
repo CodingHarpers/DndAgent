@@ -1,0 +1,69 @@
+{
+  "entity_name": "Arcane Tradition (Feature)",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Reach 2nd level as a Wizard",
+      "condition": "None",
+      "outcome": "Choose one Arcane Tradition",
+      "related_search_terms": [
+        "wizard subclass choice",
+        "magic specialization",
+        "school of magic selection",
+        "subclass acquisition"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach 6th level as a Wizard",
+      "condition": "An Arcane Tradition has been chosen",
+      "outcome": "Gain the next feature of the chosen Arcane Tradition",
+      "related_search_terms": [
+        "subclass feature unlock",
+        "wizard progression",
+        "new ability gain",
+        "leveling up benefit"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach 10th level as a Wizard",
+      "condition": "An Arcane Tradition has been chosen",
+      "outcome": "Gain the next feature of the chosen Arcane Tradition",
+      "related_search_terms": [
+        "subclass feature unlock",
+        "wizard progression",
+        "new ability gain",
+        "leveling up benefit"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach 14th level as a Wizard",
+      "condition": "An Arcane Tradition has been chosen",
+      "outcome": "Gain the next feature of the chosen Arcane Tradition",
+      "related_search_terms": [
+        "subclass feature unlock",
+        "wizard progression",
+        "new ability gain",
+        "leveling up benefit"
+      ]
+    }
+  ],
+  "description_text": "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.",
+  "tags": [
+    "wizard",
+    "class feature",
+    "subclass",
+    "progression",
+    "character creation"
+  ],
+  "related_search_terms": [
+    "wizard subclass",
+    "arcane school",
+    "magic specialization",
+    "class progression",
+    "level-up benefits"
+  ]
+}

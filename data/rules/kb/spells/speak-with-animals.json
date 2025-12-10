@@ -1,0 +1,79 @@
+{
+  "entity_name": "Speak with Animals",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "While 'Speak with Animals' spell is active",
+      "condition": "Caster interacts with a beast",
+      "outcome": "Caster can comprehend and verbally communicate with the beast for the spell's duration",
+      "related_search_terms": [
+        "animal language",
+        "beast communication",
+        "understanding animals",
+        "talk to animals",
+        "animal speech"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster requests information from a beast",
+      "condition": "Beast has perceived information",
+      "outcome": "Beast can provide information about nearby locations, monsters, and perceptions within the past day",
+      "related_search_terms": [
+        "scouting",
+        "local information",
+        "monster location",
+        "recent events",
+        "animal perception",
+        "minimum knowledge",
+        "information gathering"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster requests information from a beast",
+      "condition": "Beast's intelligence and awareness is limited",
+      "outcome": "The scope and depth of information provided by the beast is limited by its intelligence and awareness",
+      "related_search_terms": [
+        "beast intelligence",
+        "animal knowledge limits",
+        "awareness limitation",
+        "simple minded"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster attempts to persuade a beast",
+      "condition": "GM's discretion applies to the success of the persuasion attempt",
+      "outcome": "Beast might be persuaded to perform a small favor",
+      "related_search_terms": [
+        "animal handling",
+        "charming animals",
+        "beast obedience",
+        "favor",
+        "persuasion check",
+        "GM fiat",
+        "animal diplomacy"
+      ]
+    }
+  ],
+  "description_text": "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at a minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the GM's discretion.",
+  "tags": [
+    "spell",
+    "divination",
+    "ritual",
+    "communication",
+    "beast",
+    "utility"
+  ],
+  "related_search_terms": [
+    "speak with animals spell",
+    "animal communication",
+    "talk to animals",
+    "understand animals",
+    "animal spell",
+    "beast language",
+    "comprehend animals"
+  ]
+}

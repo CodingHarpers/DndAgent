@@ -1,0 +1,60 @@
+{
+  "entity_name": "Martial Arts",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Attacking with an unarmed strike or monk weapon",
+      "condition": "User is unarmed OR wielding only monk weapons (shortswords OR simple melee weapons that are NOT two-handed OR heavy) AND User is NOT wearing armor AND User is NOT wielding a shield",
+      "outcome": "User can use Dexterity modifier instead of Strength modifier for attack rolls and damage rolls",
+      "related_search_terms": [
+        "DEX attack",
+        "DEX damage",
+        "monk attack stat",
+        "weapon finesse"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dealing damage with an unarmed strike or monk weapon",
+      "condition": "User is unarmed OR wielding only monk weapons (shortswords OR simple melee weapons that are NOT two-handed OR heavy) AND User is NOT wearing armor AND User is NOT wielding a shield",
+      "outcome": "Unarmed strike or monk weapon damage die becomes d4 (this die scales with monk level as per the Martial Arts table)",
+      "related_search_terms": [
+        "monk damage die",
+        "unarmed damage",
+        "weapon damage upgrade",
+        "scaling damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On user's turn, after taking the Attack action with an unarmed strike or monk weapon",
+      "condition": "User has NOT already used a bonus action AND User is unarmed OR wielding only monk weapons (shortswords OR simple melee weapons that are NOT two-handed OR heavy) AND User is NOT wearing armor AND User is NOT wielding a shield",
+      "outcome": "User can make one unarmed strike as a bonus action",
+      "related_search_terms": [
+        "extra attack",
+        "bonus action attack",
+        "unarmed bonus action",
+        "flurry of blows lite"
+      ]
+    }
+  ],
+  "description_text": "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two- handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:\n- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.\n- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.\n- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.\nCertain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.",
+  "tags": [
+    "monk",
+    "class feature",
+    "combat",
+    "weapon proficiency",
+    "unarmed combat",
+    "1st level"
+  ],
+  "related_search_terms": [
+    "monk combat",
+    "monk weapons",
+    "unarmed strikes",
+    "dexterity attacks",
+    "bonus action attack",
+    "monk damage",
+    "monk martial arts"
+  ]
+}

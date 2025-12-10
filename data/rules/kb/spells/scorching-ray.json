@@ -1,0 +1,66 @@
+{
+  "entity_name": "Scorching Ray",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell slot expended",
+      "outcome": "Create 3 Ranged Spell Attacks",
+      "related_search_terms": [
+        "multiple attacks",
+        "volley",
+        "projectiles",
+        "attack generation"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creating Ranged Spell Attacks",
+      "condition": "N/A",
+      "outcome": "Each ray can target the same creature or a different creature within range",
+      "related_search_terms": [
+        "split damage",
+        "multi-target",
+        "single target",
+        "focus fire"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Per ray fired",
+      "condition": "N/A",
+      "outcome": "Make a Ranged Spell Attack Roll",
+      "related_search_terms": [
+        "spell attack",
+        "to hit roll"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack Hits",
+      "condition": "N/A",
+      "outcome": "Target takes 2d6 Fire Damage",
+      "related_search_terms": [
+        "fire damage",
+        "direct damage",
+        "single hit damage"
+      ]
+    }
+  ],
+  "description_text": "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.",
+  "tags": [
+    "Spell",
+    "Damage",
+    "Attack",
+    "Evocation",
+    "Fire"
+  ],
+  "related_search_terms": [
+    "fire spell",
+    "damage spell",
+    "ray spell",
+    "multiple attacks spell",
+    "evocation spell"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "entity_name": "Expeditious Retreat",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Upon casting Expeditious Retreat",
+      "condition": "Player chooses to take the Dash action",
+      "outcome": "Player can take the Dash action",
+      "related_search_terms": [
+        "immediate dash",
+        "first turn movement",
+        "initial burst of speed"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Start of Player's Turn",
+      "condition": "Expeditious Retreat is active AND Player chooses to take the Dash action",
+      "outcome": "Player can use a Bonus Action to take the Dash action",
+      "related_search_terms": [
+        "bonus action dash",
+        "repeated movement",
+        "sustained speed",
+        "action economy buff",
+        "concentration spell"
+      ]
+    }
+  ],
+  "description_text": "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.",
+  "tags": [
+    "movement",
+    "utility",
+    "buff",
+    "action economy"
+  ],
+  "related_search_terms": [
+    "speed spell",
+    "fast movement",
+    "escape",
+    "repositioning",
+    "run away"
+  ]
+}

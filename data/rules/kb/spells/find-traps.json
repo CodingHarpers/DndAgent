@@ -1,0 +1,69 @@
+{
+  "entity_name": "Find Traps",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Trap exists within range AND Trap is within line of sight AND Trap meets the spell's definition",
+      "outcome": "Caster senses the presence of the trap",
+      "related_search_terms": [
+        "detect traps",
+        "trap detection",
+        "trap finding",
+        "sense danger",
+        "area scan"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When determining if an object is a 'trap' for this spell",
+      "condition": "Object would inflict a sudden or unexpected harmful or undesirable effect AND Object was specifically intended as such by its creator",
+      "outcome": "Object qualifies as a 'trap' for this spell (e.g., alarm spell, glyph of warding, mechanical pit trap)",
+      "related_search_terms": [
+        "trap definition",
+        "what counts as a trap",
+        "magic traps",
+        "mechanical traps"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When determining if an object is a 'trap' for this spell",
+      "condition": "Object is a natural hazard (e.g., natural weakness in floor, unstable ceiling, hidden sinkhole) OR Object was NOT specifically intended as a trap by its creator",
+      "outcome": "Object does NOT qualify as a 'trap' for this spell",
+      "related_search_terms": [
+        "natural hazards",
+        "environmental dangers",
+        "not a trap",
+        "natural weakness"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When sensing a trap",
+      "condition": "Trap is sensed by this spell",
+      "outcome": "Caster learns the general nature of the danger posed by the trap, but NOT the specific location of each trap",
+      "related_search_terms": [
+        "trap type",
+        "danger level",
+        "trap specifics",
+        "trap information",
+        "general location"
+      ]
+    }
+  ],
+  "description_text": "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, a glyph of warding, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole. This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense.",
+  "tags": [
+    "divination",
+    "first_level",
+    "spell"
+  ],
+  "related_search_terms": [
+    "trap detection",
+    "dungeon crawling",
+    "hazard perception",
+    "sense danger",
+    "finding hazards"
+  ]
+}

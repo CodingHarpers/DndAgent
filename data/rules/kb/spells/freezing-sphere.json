@@ -1,0 +1,121 @@
+{
+  "entity_name": "Freezing Sphere",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Explodes (Initial Casting or Thrown Globe)",
+      "condition": "Creature within 60-foot radius sphere",
+      "outcome": "Creature makes a Constitution saving throw. On a failed save, creature takes 10d6 cold damage. On a successful save, creature takes half as much damage.",
+      "related_search_terms": [
+        "AoE damage",
+        "cold damage",
+        "explosion",
+        "area effect",
+        "con save",
+        "saving throw",
+        "mass damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Globe strikes a body of water or liquid",
+      "condition": "Target is a body of water or a liquid that is principally water (not water-based creatures)",
+      "outcome": "Freezes liquid to a depth of 6 inches over a 30-foot square area for 1 minute",
+      "related_search_terms": [
+        "ice creation",
+        "environmental effect",
+        "water freezing",
+        "terrain alteration",
+        "control spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Water freezes due to Freezing Sphere",
+      "condition": "Creature was swimming on the surface of the frozen water",
+      "outcome": "Creature is trapped in the ice",
+      "related_search_terms": [
+        "immobilized",
+        "restrained",
+        "entangled",
+        "ice trap",
+        "movement restriction"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature is trapped in ice by Freezing Sphere",
+      "condition": "Creature uses an action",
+      "outcome": "Creature can make a Strength check against the caster's spell save DC to break free",
+      "related_search_terms": [
+        "escape condition",
+        "break free",
+        "strength check",
+        "action cost",
+        "spell DC"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "After completing spell casting",
+      "condition": "Caster refrains from firing the globe",
+      "outcome": "A small globe (sling stone size, cool to touch) appears in caster's hand. Can be given to another creature.",
+      "related_search_terms": [
+        "delayed cast",
+        "held spell",
+        "spell storage",
+        "tactical spell",
+        "preparation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Held globe is thrown or hurled with a sling",
+      "condition": "Globe shatters on impact",
+      "outcome": "Has the same effect as the normal casting of Freezing Sphere (explodes)",
+      "related_search_terms": [
+        "improvised weapon",
+        "thrown object",
+        "ranged attack",
+        "detonation",
+        "secondary effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "1 minute passes",
+      "condition": "Held globe has not shattered",
+      "outcome": "Globe explodes (same effect as the normal casting of Freezing Sphere)",
+      "related_search_terms": [
+        "timed effect",
+        "detonation",
+        "expiration",
+        "delayed explosion",
+        "automatic trigger"
+      ]
+    }
+  ],
+  "description_text": "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a constitution saving throw. On a failed save, a creature takes 10d6 cold damage. On a successful save, it takes half as much damage. If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free. You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes.",
+  "tags": [
+    "spell",
+    "evocation",
+    "cold",
+    "area_of_effect",
+    "control",
+    "environmental"
+  ],
+  "related_search_terms": [
+    "AoE spell",
+    "cold damage spell",
+    "ice spell",
+    "control spell",
+    "environmental effect",
+    "delayed spell",
+    "storage spell",
+    "ranged spell",
+    "area damage",
+    "winter spell",
+    "utility spell"
+  ]
+}

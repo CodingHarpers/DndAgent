@@ -1,0 +1,94 @@
+{
+  "entity_name": "Fire Bolt",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature or object within range",
+      "outcome": "Make a ranged spell attack roll against the target",
+      "related_search_terms": [
+        "spell attack",
+        "ranged attack",
+        "attack roll",
+        "targeting",
+        "hit or miss"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack hits",
+      "condition": "Target is a creature or object",
+      "outcome": "Target takes 1d10 Fire damage",
+      "related_search_terms": [
+        "fire damage",
+        "damage",
+        "direct damage",
+        "cantrip damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged Spell Attack hits",
+      "condition": "Target is a flammable object AND Target is NOT worn or carried",
+      "outcome": "Target ignites",
+      "related_search_terms": [
+        "ignite",
+        "set on fire",
+        "flammable object",
+        "environmental effect",
+        "object interaction"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation",
+      "condition": "Caster level is 5th or higher AND Caster level is less than 11th",
+      "outcome": "Damage dealt is 2d10 Fire damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level increase",
+        "damage increase",
+        "5th level spell"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation",
+      "condition": "Caster level is 11th or higher AND Caster level is less than 17th",
+      "outcome": "Damage dealt is 3d10 Fire damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level increase",
+        "damage increase",
+        "11th level spell"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation",
+      "condition": "Caster level is 17th or higher",
+      "outcome": "Damage dealt is 4d10 Fire damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level increase",
+        "damage increase",
+        "17th level spell"
+      ]
+    }
+  ],
+  "description_text": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
+  "tags": [
+    "Cantrip",
+    "Evocation",
+    "Damage",
+    "Fire"
+  ],
+  "related_search_terms": [
+    "fire cantrip",
+    "damage spell",
+    "ranged attack spell",
+    "ignite object",
+    "scaling cantrip"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "entity_name": "Circle of Death",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Point chosen within spell's range",
+      "outcome": "A 60-foot radius sphere of negative energy emanates from the chosen point, targeting each creature within it",
+      "related_search_terms": [
+        "AoE spell",
+        "area damage",
+        "multiple targets",
+        "radius effect",
+        "spell range"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature targeted by spell effect",
+      "condition": "Creature is within the 60-foot radius sphere",
+      "outcome": "Target must make a Constitution saving throw",
+      "related_search_terms": [
+        "saving throw",
+        "con save",
+        "resist spell",
+        "avoid effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's Constitution saving throw",
+      "condition": "Target failed the saving throw",
+      "outcome": "Target takes 8d6 necrotic damage",
+      "related_search_terms": [
+        "full damage",
+        "failed save",
+        "necrotic energy",
+        "spell damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target's Constitution saving throw",
+      "condition": "Target succeeded on the saving throw",
+      "outcome": "Target takes half of 8d6 necrotic damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "reduced damage",
+        "resist damage"
+      ]
+    }
+  ],
+  "description_text": "A sphere of negative energy ripples out in a 60-foot radius sphere from a point within range. Each creature in that area must make a constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.",
+  "tags": [
+    "spell",
+    "damage",
+    "necrotic",
+    "AoE",
+    "saving_throw"
+  ],
+  "related_search_terms": [
+    "Circle of Death spell",
+    "necromancy",
+    "mass damage",
+    "negative energy",
+    "area of effect damage"
+  ]
+}

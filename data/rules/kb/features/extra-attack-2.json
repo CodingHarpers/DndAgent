@@ -1,0 +1,59 @@
+{
+  "entity_name": "Extra Attack (2)",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Take the Attack action",
+      "condition": "Character level is 5 or higher in this class AND Character level is less than 11",
+      "outcome": "Make 2 weapon attacks instead of 1",
+      "related_search_terms": [
+        "fighter attacks",
+        "level 5 attacks",
+        "two attacks",
+        "attack action",
+        "additional attack"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Take the Attack action",
+      "condition": "Character level is 11 or higher in this class AND Character level is less than 20",
+      "outcome": "Make 3 weapon attacks instead of 1",
+      "related_search_terms": [
+        "fighter attacks",
+        "level 11 attacks",
+        "three attacks",
+        "more attacks",
+        "attack action upgrade"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Take the Attack action",
+      "condition": "Character level is 20 or higher in this class",
+      "outcome": "Make 4 weapon attacks instead of 1",
+      "related_search_terms": [
+        "fighter attacks",
+        "level 20 attacks",
+        "four attacks",
+        "max attacks",
+        "ultimate attack"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.",
+  "tags": [
+    "Combat",
+    "Action",
+    "Player Feature",
+    "Scaling"
+  ],
+  "related_search_terms": [
+    "multiple attacks",
+    "more attacks",
+    "fighter attacks",
+    "attack action bonus",
+    "extra attack progression"
+  ]
+}

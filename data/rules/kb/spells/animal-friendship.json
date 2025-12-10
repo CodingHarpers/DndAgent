@@ -1,0 +1,71 @@
+{
+  "entity_name": "Animal Friendship",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Target is a Beast AND Target is within Range AND Caster can See Target AND Target can See Caster AND Target can Hear Caster",
+      "outcome": "Target is Valid for Spell",
+      "related_search_terms": [
+        "spell target",
+        "valid target",
+        "beast target",
+        "line of sight",
+        "line of effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Cast",
+      "condition": "Target Beast's Intelligence Score >= 4",
+      "outcome": "Spell Fails",
+      "related_search_terms": [
+        "intelligence limit",
+        "beast intelligence",
+        "spell immunity",
+        "animal intelligence"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Target Beast's Intelligence Score < 4 AND Target Fails Wisdom Saving Throw",
+      "outcome": "Target is Charmed by Caster for Spell's Duration",
+      "related_search_terms": [
+        "charmed condition",
+        "mind control",
+        "animal companion",
+        "wisdom save fail",
+        "spell duration"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Charmed Target Takes Damage",
+      "condition": "Damage dealt by Caster OR Damage dealt by Caster's Companion",
+      "outcome": "Animal Friendship Spell Ends",
+      "related_search_terms": [
+        "breaking charm",
+        "spell end condition",
+        "hostile action",
+        "attacking charmed creature"
+      ]
+    }
+  ],
+  "description_text": "This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends.",
+  "tags": [
+    "Enchantment",
+    "Charm",
+    "Control",
+    "Beast",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "beast charm",
+    "animal control",
+    "befriend animal",
+    "wisdom save spell",
+    "non-hostile beast"
+  ]
+}

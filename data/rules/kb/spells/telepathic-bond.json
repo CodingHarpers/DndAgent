@@ -1,0 +1,66 @@
+{
+  "entity_name": "Telepathic Bond",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Casting (Telepathic Bond)",
+      "condition": "Caster chooses up to eight willing creatures within range AND Target's Intelligence score > 2",
+      "outcome": "Chosen creatures are psychically linked to all other affected creatures for the duration",
+      "related_search_terms": [
+        "party link",
+        "mental connection",
+        "group telepathy",
+        "int requirement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "During Telepathic Bond duration",
+      "condition": "Two or more creatures are linked by Telepathic Bond",
+      "outcome": "Linked creatures can communicate telepathically with each other",
+      "related_search_terms": [
+        "mind talk",
+        "silent communication",
+        "speak without words"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Telepathic communication via Telepathic Bond",
+      "condition": "Communicating creatures are linked",
+      "outcome": "Communication is possible over any distance, as long as creatures are on the same plane of existence",
+      "related_search_terms": [
+        "long-range communication",
+        "interplanar limit",
+        "global communication"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Telepathic communication via Telepathic Bond",
+      "condition": "Communicating creatures are linked",
+      "outcome": "Communication functions regardless of whether creatures share a common language",
+      "related_search_terms": [
+        "language barrier override",
+        "universal understanding",
+        "no common tongue needed"
+      ]
+    }
+  ],
+  "description_text": "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell.Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence.",
+  "tags": [
+    "communication",
+    "utility",
+    "divination_spell",
+    "level5_spell"
+  ],
+  "related_search_terms": [
+    "group communication spell",
+    "mind link",
+    "telepathy",
+    "party chat",
+    "long distance communication",
+    "inteligence check"
+  ]
+}

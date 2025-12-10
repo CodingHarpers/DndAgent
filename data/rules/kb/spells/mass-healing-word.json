@@ -1,0 +1,34 @@
+{
+  "entity_name": "Mass Healing Word",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses up to six creatures they can see within range AND Target is NOT an Undead or a Construct",
+      "outcome": "Each chosen creature regains hit points equal to 1d4 + Caster's Spellcasting Ability Modifier",
+      "related_search_terms": [
+        "group heal",
+        "area healing",
+        "multiple targets",
+        "cleric spell",
+        "bard spell",
+        "healing potion effect",
+        "restoration"
+      ]
+    }
+  ],
+  "description_text": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "tags": [
+    "healing",
+    "support",
+    "aoe"
+  ],
+  "related_search_terms": [
+    "mass heal",
+    "group cure",
+    "battlefield medic",
+    "divine spell",
+    "hit point recovery"
+  ]
+}

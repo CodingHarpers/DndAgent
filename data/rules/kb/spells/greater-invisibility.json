@@ -1,0 +1,49 @@
+{
+  "entity_name": "Greater Invisibility",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Spell Cast",
+      "condition": "Target is a creature touched by the caster",
+      "outcome": "Target gains the Invisible condition",
+      "related_search_terms": [
+        "invis",
+        "stealth spell",
+        "buff",
+        "condition grant",
+        "become invisible"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is Invisible due to this spell",
+      "condition": "Item is worn or carried by the target AND on the target's person",
+      "outcome": "Item also becomes Invisible",
+      "related_search_terms": [
+        "equipment invisibility",
+        "carried items",
+        "worn items",
+        "items disappear",
+        "gear invisible"
+      ]
+    }
+  ],
+  "description_text": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.",
+  "tags": [
+    "spell",
+    "illusion",
+    "4th_level",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "invisibility spell",
+    "greater invisibility",
+    "stealth buff",
+    "condition spell",
+    "buff spell",
+    "unseen attacker",
+    "making hidden",
+    "superior invisibility"
+  ]
+}

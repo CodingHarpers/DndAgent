@@ -1,0 +1,103 @@
+{
+  "entity_name": "Wind Wall",
+  "logic_type": "spell_effect",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Point chosen within range",
+      "outcome": "Wall up to 50ft long, 15ft high, 1ft thick, continuous path, lasts for duration, rises from ground",
+      "related_search_terms": [
+        "area of effect",
+        "barrier",
+        "line of effect",
+        "spatial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall Appears",
+      "condition": "Creature within wall's area",
+      "outcome": "Creature must make Strength saving throw. Takes 3d8 bludgeoning damage on failed save, or half on successful save",
+      "related_search_terms": [
+        "initial damage",
+        "blast",
+        "area damage",
+        "strength save"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Environmental Effect",
+      "condition": "Fog, smoke, or other gases within wall's area",
+      "outcome": "Fog, smoke, and other gases are kept at bay by strong wind",
+      "related_search_terms": [
+        "clear vision",
+        "environmental control",
+        "dispel fog"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Movement Attempt",
+      "condition": "Small or smaller flying creature or object attempts to pass through the wall",
+      "outcome": "Cannot pass through the wall",
+      "related_search_terms": [
+        "flight impediment",
+        "blocking movement",
+        "airborne barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Material enters wall",
+      "condition": "Loose, lightweight materials brought into the wall",
+      "outcome": "Materials fly upward",
+      "related_search_terms": [
+        "gust of wind",
+        "debris",
+        "object interaction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Projectile Attack",
+      "condition": "Arrow, bolt, or other ordinary projectile launched at target behind the wall",
+      "outcome": "Projectile is deflected upward and automatically misses",
+      "related_search_terms": [
+        "ranged attack defense",
+        "projectile shield",
+        "missile deflection",
+        "ranged combat hindrance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Movement Attempt",
+      "condition": "Creature in gaseous form attempts to pass through the wall",
+      "outcome": "Cannot pass through the wall",
+      "related_search_terms": [
+        "gaseous form block",
+        "spirit barrier",
+        "elemental resistance"
+      ]
+    }
+  ],
+  "description_text": "A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration. When the wall appears, each creature within its area must make a strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one. The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.",
+  "tags": [
+    "spell",
+    "evocation",
+    "wind",
+    "control",
+    "damage",
+    "barrier",
+    "area of effect"
+  ],
+  "related_search_terms": [
+    "gust",
+    "barrier spell",
+    "defensive spell",
+    "crowd control spell",
+    "wind current"
+  ]
+}

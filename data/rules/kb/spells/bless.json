@@ -1,0 +1,47 @@
+{
+  "entity_name": "Bless",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster chooses up to three creatures within range",
+      "outcome": "Chosen creatures become targets of Bless spell",
+      "related_search_terms": [
+        "target selection",
+        "area of effect",
+        "buff allies",
+        "spell targeting",
+        "multiple targets"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes an attack roll OR target makes a saving throw",
+      "condition": "Bless spell is active on target AND before the spell ends",
+      "outcome": "Target rolls 1d4 and adds the number rolled to the attack roll or saving throw",
+      "related_search_terms": [
+        "attack roll bonus",
+        "saving throw bonus",
+        "d4 bonus",
+        "buff",
+        "accuracy",
+        "resilience",
+        "support spell",
+        "dice addition"
+      ]
+    }
+  ],
+  "description_text": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.",
+  "tags": [
+    "buff",
+    "support"
+  ],
+  "related_search_terms": [
+    "blessing",
+    "divine favor",
+    "aid allies",
+    "enhance rolls",
+    "caster support"
+  ]
+}

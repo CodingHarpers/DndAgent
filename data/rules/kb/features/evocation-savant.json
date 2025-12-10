@@ -1,0 +1,49 @@
+{
+  "entity_name": "Evocation Savant",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Copying an Evocation spell into a spellbook",
+      "condition": "Character is a Wizard of the School of Evocation, 2nd level or higher",
+      "outcome": "The gold cost to copy the spell is halved",
+      "related_search_terms": [
+        "spellbook cost",
+        "learn spell",
+        "scribe spell",
+        "wizard feature",
+        "evocation school",
+        "spell research"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Copying an Evocation spell into a spellbook",
+      "condition": "Character is a Wizard of the School of Evocation, 2nd level or higher",
+      "outcome": "The time spent to copy the spell is halved",
+      "related_search_terms": [
+        "spellbook time",
+        "learn spell",
+        "scribe spell",
+        "wizard feature",
+        "evocation school",
+        "spell research"
+      ]
+    }
+  ],
+  "description_text": "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.",
+  "tags": [
+    "Wizard",
+    "School of Evocation",
+    "Class Feature",
+    "2nd Level",
+    "Spellcasting",
+    "Spellbook"
+  ],
+  "related_search_terms": [
+    "Evocation Wizard",
+    "spell learning",
+    "spellbook management",
+    "wizard proficiency"
+  ]
+}

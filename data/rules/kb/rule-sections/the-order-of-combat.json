@@ -1,0 +1,531 @@
+[
+  {
+    "source_chapter": "Combat - The Order of Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "The Order of Combat",
+        "definition": "The established sequence of events and procedures followed to resolve actions and determine outcomes during a combat encounter.",
+        "rule_logic": {
+          "premise": "A hostile situation begins and combat is initiated between creatures",
+          "implication": "Combat proceeds through the following phases: 1. Determine Surprise; 2. Establish Positions; 3. Roll Initiative; 4. Take Turns in Initiative Order; 5. End of Combat when all participants are defeated, flee, or stop fighting",
+          "exceptions": [],
+          "description_text": "Combat in Dungeons & Dragons is structured into a sequence of steps to ensure fair and organized play. This sequence begins with determining if any participants are surprised, followed by confirming everyone's starting location. Then, all combatants roll initiative to establish the order of turns. During each turn, creatures take actions until the conflict is resolved.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how does combat start",
+            "what happens first in combat",
+            "combat sequence",
+            "steps of combat",
+            "combat flow"
+          ]
+        },
+        "related_keywords": [
+          "combat",
+          "surprise",
+          "initiative",
+          "turns",
+          "round",
+          "battle"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "the-order-of-combat"
+  },
+  {
+    "source_chapter": "The Order of Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Combat Round",
+        "definition": "A unit of time in the game world during combat, representing approximately 6 seconds, within which each participant takes one turn.",
+        "rule_logic": {
+          "premise": "Combat is ongoing",
+          "implication": "Represents 6 seconds of game world time AND each participant takes a turn within it",
+          "exceptions": [],
+          "description_text": "A round represents about 6 seconds in the game world. During a round, each participant in a battle takes a turn. Once everyone has taken a turn, the fight continues to the next round if neither side has defeated the other.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long is a round",
+            "combat time unit",
+            "round duration"
+          ]
+        },
+        "related_keywords": [
+          "time",
+          "combat",
+          "duration"
+        ]
+      },
+      {
+        "concept_name": "Combat Turn",
+        "definition": "A period within a combat round when a single participant performs their actions, determined by initiative order.",
+        "rule_logic": {
+          "premise": "A combat round is in progress",
+          "implication": "Each participant takes one turn in initiative order",
+          "exceptions": [],
+          "description_text": "During a round, each participant in a battle takes a turn. The order of turns is determined at the beginning of a combat encounter, when everyone rolls initiative.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens on my turn",
+            "when do I act",
+            "turn order"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "participant",
+          "initiative"
+        ]
+      },
+      {
+        "concept_name": "Combat Encounter Procedure",
+        "definition": "The systematic sequence of steps to initiate and resolve a combat encounter.",
+        "rule_logic": {
+          "premise": "A combat encounter begins",
+          "implication": "Proceed through the following steps: 1. Determine surprise. 2. Establish positions. 3. Roll initiative. 4. Take turns in initiative order. 5. Begin the next round (repeat step 4) until the fighting stops.",
+          "exceptions": [],
+          "description_text": "The game organizes the chaos of combat into a cycle of rounds and turns. Combat Step by Step: 1. Determine surprise. The GM determines whether anyone involved in the combat encounter is surprised. 2. Establish positions. The GM decides where all the characters and monsters are located. 3. Roll initiative. Everyone involved in the combat encounter rolls initiative, determining the order of combatants' turns. 4. Take turns. Each participant in the battle takes a turn in initiative order. 5. Begin the next round. When everyone involved in the combat has had a turn, the round ends. Repeat step 4 until the fighting stops.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how does combat work",
+            "combat sequence",
+            "starting combat rules",
+            "combat steps"
+          ]
+        },
+        "related_keywords": [
+          "procedure",
+          "sequence",
+          "setup",
+          "flow"
+        ]
+      }
+    ],
+    "_chunk_header": "The Order of Combat",
+    "_source_file": "the-order-of-combat"
+  },
+  {
+    "source_chapter": "Combat - Surprise",
+    "extracted_concepts": [
+      {
+        "concept_name": "Surprise",
+        "definition": "A combat condition where one side of a battle gains an advantage over the other due to stealth or unawareness.",
+        "rule_logic": {
+          "premise": "GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side.",
+          "implication": "Any character or monster that doesn't notice a threat is surprised at the start of the encounter.",
+          "exceptions": [],
+          "description_text": "The GM determines who might be surprised. If neither side tries to be stealthy, they automatically notice each other. Otherwise, the GM compares the Dexterity (Stealth) checks of anyone hiding with the passive Wisdom (Perception) score of each creature on the opposing side. Any character or monster that doesn't notice a threat is surprised at the start of the encounter.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how surprise works",
+            "stealth vs perception",
+            "surprise round",
+            "who is surprised",
+            "combat initiation"
+          ]
+        },
+        "related_keywords": [
+          "combat",
+          "stealth",
+          "perception",
+          "initiative",
+          "encounter"
+        ]
+      },
+      {
+        "concept_name": "Surprised Condition Effects",
+        "definition": "The mechanical penalties applied to a creature that is surprised during combat.",
+        "rule_logic": {
+          "premise": "If a creature is surprised",
+          "implication": "That creature cannot move or take an action on its first turn of combat, and cannot take a reaction until that turn ends. A member of a group can be surprised even if other members are not.",
+          "exceptions": [],
+          "description_text": "If you're surprised, you can't move or take an action on your first turn of the combat, and you can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens when surprised",
+            "actions during surprise",
+            "movement when surprised",
+            "reactions when surprised",
+            "individual surprise"
+          ]
+        },
+        "related_keywords": [
+          "combat condition",
+          "turn",
+          "action",
+          "movement",
+          "reaction"
+        ]
+      }
+    ],
+    "_chunk_header": "Surprise",
+    "_source_file": "the-order-of-combat"
+  },
+  {
+    "source_chapter": "Combat - Initiative",
+    "extracted_concepts": [
+      {
+        "concept_name": "Initiative",
+        "definition": "A combat mechanic that determines the order of turns for all participants during a combat encounter.",
+        "rule_logic": {
+          "premise": "Combat starts",
+          "implication": "Every participant makes a Dexterity check. GM ranks combatants from highest to lowest Dexterity check total to establish initiative order. This order persists each round. GM rolls once for groups of identical creatures.",
+          "exceptions": [],
+          "description_text": "Initiative determines the order of turns during combat. When combat starts, every participant makes a Dexterity check to determine their place in the initiative order. The GM makes one roll for an entire group of identical creatures, so each member of the group acts at the same time. The GM ranks the combatants in order from the one with the highest Dexterity check total to the one with the lowest. This is the order (called the initiative order) in which they act during each round. The initiative order remains the same from round to round.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to start combat",
+            "who goes first",
+            "dex check combat",
+            "initiative roll",
+            "combat order",
+            "initiative sequence",
+            "group initiative"
+          ]
+        },
+        "related_keywords": [
+          "Initiative",
+          "Combat",
+          "Order",
+          "Dexterity Check",
+          "Round"
+        ]
+      },
+      {
+        "concept_name": "Initiative Tie Resolution (Standard)",
+        "definition": "The standard procedure for resolving situations where two or more combatants have the same initiative total.",
+        "rule_logic": {
+          "premise": "Two or more combatants have the same initiative check total",
+          "implication": "If among GM-controlled creatures, GM decides order. If among player characters, players decide order. If between monster and player character, GM decides order.",
+          "exceptions": [],
+          "description_text": "If a tie occurs, the GM decides the order among tied GM-controlled creatures, and the players decide the order among their tied characters. The GM can decide the order if the tie is between a monster and a player character.",
+          "is_exception": false,
+          "related_search_terms": [
+            "initiative tie break",
+            "who acts first tie",
+            "tied initiative",
+            "gm decides tie",
+            "players decide tie"
+          ]
+        },
+        "related_keywords": [
+          "Initiative",
+          "Tie",
+          "GM",
+          "Player Character",
+          "Order"
+        ]
+      },
+      {
+        "concept_name": "Initiative Tie Resolution (Optional)",
+        "definition": "An optional rule for resolving initiative ties by rolling an additional d20.",
+        "rule_logic": {
+          "premise": "Two or more combatants have the same initiative check total AND the GM chooses to use an optional rule",
+          "implication": "Tied characters and monsters each roll a d20; the combatant with the highest roll goes first.",
+          "exceptions": [],
+          "description_text": "Optionally, the GM can have the tied characters and monsters each roll a d20 to determine the order, highest roll going first.",
+          "is_exception": false,
+          "related_search_terms": [
+            "optional tie break",
+            "d20 tie break initiative",
+            "gm optional rules initiative",
+            "roll off for initiative"
+          ]
+        },
+        "related_keywords": [
+          "Initiative",
+          "Tie",
+          "Optional Rule",
+          "d20",
+          "GM"
+        ]
+      }
+    ],
+    "_chunk_header": "Initiative",
+    "_source_file": "the-order-of-combat"
+  },
+  {
+    "source_chapter": "Combat - Your Turn",
+    "extracted_concepts": [
+      {
+        "concept_name": "Your Turn (Combat)",
+        "definition": "The period of time during a round of combat when a character can perform actions and move.",
+        "rule_logic": {
+          "premise": "It is your turn",
+          "implication": "You can move a distance up to your speed AND take one action. You decide whether to move first or take your action first.",
+          "exceptions": [],
+          "description_text": "On your turn, you can move a distance up to your speed and take one action. You decide whether to move first or take your action first. Your speed--sometimes called your walking speed--is noted on your character sheet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can I do on my turn",
+            "combat turn structure",
+            "order of operations on turn"
+          ]
+        },
+        "related_keywords": [
+          "turn",
+          "combat round",
+          "action",
+          "movement",
+          "speed"
+        ]
+      },
+      {
+        "concept_name": "Forgoing Activity",
+        "definition": "The option to choose not to perform any actions or movement during a character's turn.",
+        "rule_logic": {
+          "premise": "It is your turn",
+          "implication": "You can forgo moving, taking an action, or doing anything at all.",
+          "exceptions": [],
+          "description_text": "You can forgo moving, taking an action, or doing anything at all on your turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "skip turn",
+            "do nothing on turn",
+            "pass turn"
+          ]
+        },
+        "related_keywords": [
+          "turn",
+          "action",
+          "movement",
+          "pass"
+        ]
+      },
+      {
+        "concept_name": "Bonus Action Availability",
+        "definition": "An additional, quicker action that can only be taken on a character's turn if explicitly granted by a special ability, spell, or game feature.",
+        "rule_logic": {
+          "premise": "A special ability, spell, or other game feature states that you can do something as a bonus action",
+          "implication": "You can take that bonus action on your turn. Otherwise, you do not have a bonus action to take.",
+          "exceptions": [],
+          "description_text": "Various class features, spells, and other abilities let you take an additional action on your turn called a bonus action. You can take a bonus action only when a special ability, spell, or other feature of the game states that you can do something as a bonus action. You otherwise don't have a bonus action to take.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when can I take a bonus action",
+            "do I get a bonus action every turn",
+            "bonus action rules"
+          ]
+        },
+        "related_keywords": [
+          "bonus action",
+          "action",
+          "class feature",
+          "spell",
+          "ability"
+        ]
+      },
+      {
+        "concept_name": "Bonus Action Limit",
+        "definition": "The maximum number of bonus actions a character can take during their turn.",
+        "rule_logic": {
+          "premise": "It is your turn",
+          "implication": "You can take only one bonus action.",
+          "exceptions": [],
+          "description_text": "You can take only one bonus action on your turn, so you must choose which bonus action to use when you have more than one available.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many bonus actions",
+            "multiple bonus actions",
+            "one bonus action per turn"
+          ]
+        },
+        "related_keywords": [
+          "bonus action",
+          "limit",
+          "turn"
+        ]
+      },
+      {
+        "concept_name": "Bonus Action Timing",
+        "definition": "The point during a character's turn when a bonus action can be taken.",
+        "rule_logic": {
+          "premise": "It is your turn AND you have a bonus action available",
+          "implication": "You choose when to take a bonus action during your turn, UNLESS the bonus action's timing is specified.",
+          "exceptions": [],
+          "description_text": "You choose when to take a bonus action during your turn, unless the bonus action's timing is specified, and anything that deprives you of your ability to take actions also prevents you from taking a bonus action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when to take bonus action",
+            "bonus action order"
+          ]
+        },
+        "related_keywords": [
+          "bonus action",
+          "timing",
+          "turn"
+        ]
+      },
+      {
+        "concept_name": "Bonus Action Deprivation",
+        "definition": "Conditions that prevent a character from taking a bonus action.",
+        "rule_logic": {
+          "premise": "Anything deprives you of your ability to take actions",
+          "implication": "It also prevents you from taking a bonus action.",
+          "exceptions": [],
+          "description_text": "anything that deprives you of your ability to take actions also prevents you from taking a bonus action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can't take bonus action",
+            "incapacitated bonus action",
+            "paralyzed bonus action"
+          ]
+        },
+        "related_keywords": [
+          "bonus action",
+          "deprived",
+          "actions",
+          "incapacitated"
+        ]
+      },
+      {
+        "concept_name": "Free Communication",
+        "definition": "Brief utterances and gestures made during a character's turn without consuming an action or movement.",
+        "rule_logic": {
+          "premise": "It is your turn",
+          "implication": "You can communicate however you are able, through brief utterances and gestures.",
+          "exceptions": [],
+          "description_text": "You can communicate however you are able, through brief utterances and gestures, as you take your turn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I talk on my turn",
+            "free communication combat",
+            "gestures combat"
+          ]
+        },
+        "related_keywords": [
+          "communication",
+          "free action",
+          "turn",
+          "combat"
+        ]
+      },
+      {
+        "concept_name": "Free Object Interaction",
+        "definition": "A single minor interaction with an object or environmental feature that does not require an action or movement, performed during a turn.",
+        "rule_logic": {
+          "premise": "It is your turn AND you interact with one object or feature of the environment AND the GM does not rule it requires special care or presents an unusual obstacle",
+          "implication": "You can interact with it for free, during either your move or your action.",
+          "exceptions": [],
+          "description_text": "You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.",
+          "is_exception": false,
+          "related_search_terms": [
+            "free item interaction",
+            "draw weapon free",
+            "open door free",
+            "minor action"
+          ]
+        },
+        "related_keywords": [
+          "object interaction",
+          "free action",
+          "environment",
+          "item",
+          "draw weapon"
+        ]
+      },
+      {
+        "concept_name": "Second Object Interaction",
+        "definition": "The cost associated with interacting with an additional object or feature beyond the first free interaction on a turn.",
+        "rule_logic": {
+          "premise": "It is your turn AND you want to interact with a second object",
+          "implication": "You need to use your action.",
+          "exceptions": [],
+          "description_text": "If you want to interact with a second object, you need to use your action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "multiple object interactions",
+            "action to pick up item",
+            "two objects turn"
+          ]
+        },
+        "related_keywords": [
+          "object interaction",
+          "action cost",
+          "item use"
+        ]
+      },
+      {
+        "concept_name": "GM Discretion for Object Interaction",
+        "definition": "The GM's authority to require an action for an object interaction normally considered free, if it demands special care or presents an unusual obstacle.",
+        "rule_logic": {
+          "premise": "An activity needs special care OR presents an unusual obstacle",
+          "implication": "The GM might require you to use an action for that activity.",
+          "exceptions": [],
+          "description_text": "The GM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the GM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.",
+          "is_exception": true,
+          "related_search_terms": [
+            "GM discretion object interaction",
+            "stuck door action",
+            "hard object use",
+            "unusual obstacle action"
+          ]
+        },
+        "related_keywords": [
+          "GM rule",
+          "object interaction",
+          "action cost",
+          "exception"
+        ]
+      },
+      {
+        "concept_name": "Special Object Action Requirement",
+        "definition": "Certain magic items or special objects inherently require an action to use, as specified in their description, overriding general interaction rules.",
+        "rule_logic": {
+          "premise": "A magic item or other special object's description states it requires an action to use",
+          "implication": "It always requires an action to use.",
+          "exceptions": [],
+          "description_text": "Some magic items and other special objects always require an action to use, as stated in their descriptions.",
+          "is_exception": true,
+          "related_search_terms": [
+            "magic item action cost",
+            "special object use",
+            "item property action"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "special object",
+          "action cost",
+          "exception",
+          "item description"
+        ]
+      }
+    ],
+    "_chunk_header": "Your Turn",
+    "_source_file": "the-order-of-combat"
+  },
+  {
+    "source_chapter": "Combat - Actions in Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Reaction",
+        "definition": "An instant response to a specific trigger, allowed by special abilities, spells, or situations, that can occur on any creature's turn.",
+        "rule_logic": {
+          "premise": "A special ability, spell, or situation allows for a Reaction, OR a specific trigger occurs (e.g., opportunity attack trigger)",
+          "implication": "A creature may take a Reaction. After taking a Reaction, the creature cannot take another one until the start of its next turn. If the Reaction interrupts another creature's turn, that creature's turn immediately resumes after the Reaction is resolved.",
+          "exceptions": [],
+          "description_text": "Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's. The opportunity attack, described later in this chapter, is the most common type of reaction. When you take a reaction, you can't take another one until the start of your next turn. If the reaction interrupts another creature's turn, that creature can continue its turn right after the reaction.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is a reaction",
+            "when can i use a reaction",
+            "how many reactions per round",
+            "opportunity attack reaction",
+            "interrupting turn",
+            "reaction trigger",
+            "reaction timing"
+          ]
+        },
+        "related_keywords": [
+          "action types",
+          "combat",
+          "turn order",
+          "special actions"
+        ]
+      }
+    ],
+    "_chunk_header": "Reactions",
+    "_source_file": "the-order-of-combat"
+  }
+]

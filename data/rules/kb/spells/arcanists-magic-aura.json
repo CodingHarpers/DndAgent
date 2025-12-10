@@ -1,0 +1,129 @@
+{
+  "entity_name": "Arcanist's Magic Aura",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is a willing creature OR an object not carried or worn by another creature",
+      "outcome": "Spell can be cast on target",
+      "related_search_terms": [
+        "spell target",
+        "casting requirements",
+        "valid target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "None",
+      "outcome": "Effect lasts for the spell's duration",
+      "related_search_terms": [
+        "spell length",
+        "how long does it last"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast on the same target every day for 30 days",
+      "condition": "The same effect (False Aura or Mask) is chosen each time",
+      "outcome": "The illusion lasts until dispelled",
+      "related_search_terms": [
+        "permanent effect",
+        "long term spell",
+        "dispel magic",
+        "making spell permanent"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Divination spell or magical effect attempts to detect magical auras",
+      "condition": "Target is a nonmagical object affected by False Aura",
+      "outcome": "Target appears magical",
+      "related_search_terms": [
+        "detect magic counter",
+        "fake magic item",
+        "disguise non-magic",
+        "hide mundane item"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Divination spell or magical effect attempts to detect magical auras",
+      "condition": "Target is a magical object affected by False Aura",
+      "outcome": "Target appears nonmagical",
+      "related_search_terms": [
+        "hide magic item",
+        "cloak magic",
+        "conceal enchantment",
+        "anti-detection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Divination spell or magical effect attempts to detect magical auras",
+      "condition": "Target is a magical object affected by False Aura AND a specific school of magic is chosen",
+      "outcome": "Target appears to belong to the chosen school of magic",
+      "related_search_terms": [
+        "change aura type",
+        "illusion school",
+        "alter magic signature",
+        "misleading magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature handles an object affected by False Aura",
+      "condition": "Caster chose to make the false magic apparent when casting",
+      "outcome": "The false magic is apparent to the creature handling the item",
+      "related_search_terms": [
+        "detect fake magic",
+        "handler awareness",
+        "obvious illusion",
+        "revealed magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell or magical effect attempts to detect creature types (e.g., Divine Sense, symbol spell trigger)",
+      "condition": "Target is affected by Mask AND a creature type is chosen",
+      "outcome": "Target is treated as the chosen creature type",
+      "related_search_terms": [
+        "hide creature type",
+        "disguise creature",
+        "anti-divine sense",
+        "change monster type",
+        "false identity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell or magical effect attempts to detect creature alignment",
+      "condition": "Target is affected by Mask AND an alignment is chosen",
+      "outcome": "Target is treated as the chosen alignment",
+      "related_search_terms": [
+        "hide alignment",
+        "change alignment detection",
+        "false alignment",
+        "misleading alignment"
+      ]
+    }
+  ],
+  "description_text": "You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.***False Aura.*** You change the way the target appears to spells and magical effects, such as detect magic, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item.***Mask.*** You change the way the target appears to spells and magical effects that detect creature types, such as a paladin's Divine Sense or the trigger of a symbol spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment.",
+  "tags": [
+    "Illusion",
+    "Divination Counter",
+    "Utility",
+    "Disguise",
+    "Misdirection"
+  ],
+  "related_search_terms": [
+    "illusion spell",
+    "anti-divination",
+    "hide magic",
+    "change aura",
+    "cloak identity",
+    "false information",
+    "deception magic"
+  ]
+}

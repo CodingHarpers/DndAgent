@@ -1,0 +1,84 @@
+{
+  "entity_name": "Commune With Nature",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Spell is successfully cast in a natural area (not replaced by construction)",
+      "outcome": "Caster gains knowledge of up to three facts of their choice about the area, regarding: terrain/bodies of water, prevalent plants/minerals/animals/peoples, powerful celestials/fey/fiends/elementals/undead, influence from other planes, or buildings.",
+      "related_search_terms": [
+        "information",
+        "scrying",
+        "divination",
+        "area knowledge",
+        "environmental info",
+        "terrain",
+        "water",
+        "plants",
+        "animals",
+        "monsters",
+        "planar influence",
+        "structures",
+        "choose facts"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell is cast in an outdoor environment",
+      "outcome": "Effective knowledge radius is 3 miles.",
+      "related_search_terms": [
+        "range calculation",
+        "outdoors range",
+        "wilderness range",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Spell is cast in a cave or natural underground setting",
+      "outcome": "Effective knowledge radius is 300 feet.",
+      "related_search_terms": [
+        "range calculation",
+        "underground range",
+        "cave range",
+        "area of effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Spell is cast in an area where nature has been replaced by construction (e.g., dungeons, towns)",
+      "outcome": "Spell fails to function.",
+      "related_search_terms": [
+        "restriction",
+        "cannot cast",
+        "dungeon",
+        "town",
+        "city",
+        "man-made environment",
+        "spell failure"
+      ]
+    }
+  ],
+  "description_text": "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:\n- terrain and bodies of water\n- prevalent plants, minerals, animals, or peoples\n- powerful celestials, fey, fiends, elementals, or undead\n- influence from other planes of existence\n- buildings\nFor example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.",
+  "tags": [
+    "Spell",
+    "Divination",
+    "5e",
+    "Nature",
+    "Information"
+  ],
+  "related_search_terms": [
+    "Commune With Nature spell",
+    "find information",
+    "divination spell",
+    "know territory",
+    "environmental spell",
+    "knowledge spell",
+    "ranger spell",
+    "druid spell"
+  ]
+}
