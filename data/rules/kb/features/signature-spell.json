@@ -1,0 +1,100 @@
+{
+  "entity_name": "Signature Spell",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character gains feature",
+      "condition": "Wizard reaches 20th level",
+      "outcome": "Character gains the Signature Spell feature",
+      "related_search_terms": [
+        "wizard capstone",
+        "high level ability",
+        "class feature gain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character gains Signature Spell feature",
+      "condition": "N/A",
+      "outcome": "Character chooses two 3rd-level wizard spells from their spellbook as signature spells",
+      "related_search_terms": [
+        "spell selection",
+        "feature choice",
+        "3rd level spells"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell preparation",
+      "condition": "Spell is a designated Signature Spell",
+      "outcome": "Signature Spell is always prepared",
+      "related_search_terms": [
+        "prepared spells",
+        "free preparation",
+        "always available"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Counting prepared spells",
+      "condition": "Spell is a designated Signature Spell",
+      "outcome": "Signature Spell does not count against the number of spells the character can have prepared",
+      "related_search_terms": [
+        "prepared spell limit",
+        "extra prepared spells",
+        "spell slot management"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Casting a spell",
+      "condition": "Spell is a designated Signature Spell",
+      "outcome": "Character can cast the Signature Spell once at 3rd level without expending a spell slot",
+      "related_search_terms": [
+        "free spell cast",
+        "at will spell",
+        "daily cast",
+        "resource free casting"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "After casting a Signature Spell for free",
+      "condition": "N/A",
+      "outcome": "Character cannot cast that specific Signature Spell for free again until they finish a short or long rest",
+      "related_search_terms": [
+        "rest refresh",
+        "limited use",
+        "recharge",
+        "per rest ability"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting a Signature Spell at a higher level",
+      "condition": "Spell level desired is higher than 3rd",
+      "outcome": "Character must expend a spell slot as normal",
+      "related_search_terms": [
+        "upcasting",
+        "normal spellcasting",
+        "spell slot cost"
+      ]
+    }
+  ],
+  "description_text": "When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don't count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can't do so again until you finish a short or long rest. If you want to cast either spell at a higher level, you must expend a spell slot as normal.",
+  "tags": [
+    "Wizard",
+    "Class Feature",
+    "20th Level",
+    "Spellcasting",
+    "Resource Management",
+    "Spell Slots"
+  ],
+  "related_search_terms": [
+    "wizard high level",
+    "spell mastery",
+    "free spells",
+    "capstone ability"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "entity_name": "Petrified",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Petrified",
+      "condition": "N/A",
+      "outcome": "Creature and any nonmagical objects it is wearing or carrying transform into a solid inanimate substance (usually stone); its weight increases by a factor of ten; it ceases aging",
+      "related_search_terms": [
+        "turned to stone",
+        "statue form",
+        "physical change",
+        "aging stopped",
+        "weight increase"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature is Petrified",
+      "condition": "N/A",
+      "outcome": "Creature is Incapacitated; creature cannot move; creature cannot speak; creature is unaware of its surroundings",
+      "related_search_terms": [
+        "helpless",
+        "paralyzed",
+        "stunned",
+        "disabled",
+        "unconscious",
+        "motionless"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack roll targets a Petrified creature",
+      "condition": "Target is Petrified",
+      "outcome": "Attack rolls against the creature have Advantage",
+      "related_search_terms": [
+        "vulnerable",
+        "easy target",
+        "hit chance",
+        "exposed"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Petrified creature attempts a Strength or Dexterity saving throw",
+      "condition": "Creature is Petrified",
+      "outcome": "Creature automatically fails Strength and Dexterity saving throws",
+      "related_search_terms": [
+        "no defense",
+        "helpless against saves",
+        "automatic failure"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Petrified creature takes damage",
+      "condition": "Creature is Petrified",
+      "outcome": "Creature has Resistance to all damage",
+      "related_search_terms": [
+        "damage reduction",
+        "toughness",
+        "durable",
+        "hardened"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Petrified creature is subjected to poison or disease OR has existing poison/disease",
+      "condition": "Creature is Petrified",
+      "outcome": "Creature is Immune to poison and disease; any existing poison or disease in its system is suspended, not neutralized",
+      "related_search_terms": [
+        "poison immunity",
+        "disease immunity",
+        "condition suspension",
+        "paused affliction",
+        "unaffected by"
+      ]
+    }
+  ],
+  "description_text": "A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging. The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings. Attack rolls against the creature have advantage. The creature automatically fails Strength and Dexterity saving throws. The creature has resistance to all damage. The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.",
+  "tags": [
+    "condition",
+    "debuff",
+    "control"
+  ],
+  "related_search_terms": [
+    "turned to stone",
+    "stone form",
+    "medusa",
+    "gorgon",
+    "flesh to stone",
+    "petrify"
+  ]
+}

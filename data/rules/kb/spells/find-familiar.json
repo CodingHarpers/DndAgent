@@ -1,0 +1,190 @@
+{
+  "entity_name": "Find Familiar",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Casting Find Familiar",
+      "condition": "Targeting an unoccupied space within range",
+      "outcome": "Gain the service of a familiar, a spirit that takes a chosen animal form (bat, cat, crab, frog, hawk, lizard, octopus, owl, poisonous snake, fish, rat, raven, sea horse, spider, or weasel), with the chosen form's statistics, but is of Celestial, Fey, or Fiend type (your choice) instead of Beast",
+      "related_search_terms": [
+        "summoning",
+        "companion",
+        "pet",
+        "spirit animal",
+        "creature type"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Familiar is present",
+      "condition": "N/A",
+      "outcome": "Familiar acts independently, obeys your commands, rolls its own initiative, and acts on its own turn",
+      "related_search_terms": [
+        "familiar control",
+        "pet behavior",
+        "initiative"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Familiar attempts to attack",
+      "condition": "N/A",
+      "outcome": "Familiar cannot take the Attack action",
+      "related_search_terms": [
+        "familiar combat",
+        "no attack",
+        "utility familiar"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Familiar's turn",
+      "condition": "N/A",
+      "outcome": "Familiar can take other actions as normal",
+      "related_search_terms": [
+        "familiar actions",
+        "help action",
+        "dash action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Familiar drops to 0 hit points",
+      "condition": "N/A",
+      "outcome": "Familiar disappears, leaving behind no physical form",
+      "related_search_terms": [
+        "familiar death",
+        "familiar unsummon",
+        "healing familiar"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Familiar disappeared due to 0 hit points",
+      "condition": "You cast Find Familiar again",
+      "outcome": "Familiar reappears",
+      "related_search_terms": [
+        "recasting familiar",
+        "familiar cost"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "N/A",
+      "condition": "Your familiar is within 100 feet of you",
+      "outcome": "You can communicate with your familiar telepathically",
+      "related_search_terms": [
+        "mental link",
+        "familiar range",
+        "communication"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an action",
+      "condition": "Your familiar is within 100 feet of you",
+      "outcome": "You see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has. During this time, you are deaf and blind with regard to your own senses.",
+      "related_search_terms": [
+        "scouting",
+        "reconnaissance",
+        "sensory link",
+        "remote viewing",
+        "familiar senses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an action",
+      "condition": "N/A",
+      "outcome": "You temporarily dismiss your familiar; it disappears into a pocket dimension where it awaits your summons",
+      "related_search_terms": [
+        "banish familiar",
+        "store familiar",
+        "familiar storage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an action",
+      "condition": "N/A",
+      "outcome": "You dismiss your familiar forever",
+      "related_search_terms": [
+        "kill familiar",
+        "release familiar",
+        "permanent dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "As an action",
+      "condition": "Your familiar is temporarily dismissed",
+      "outcome": "Your familiar reappears in any unoccupied space within 30 feet of you",
+      "related_search_terms": [
+        "recall familiar",
+        "summon familiar",
+        "familiar teleport"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to summon a new familiar",
+      "condition": "You already have a familiar",
+      "outcome": "You cannot have more than one familiar at a time",
+      "related_search_terms": [
+        "familiar limit",
+        "multiple familiars"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "You cast Find Familiar",
+      "condition": "You already have a familiar",
+      "outcome": "Your current familiar adopts a new chosen animal form (bat, cat, crab, frog, hawk, lizard, octopus, owl, poisonous snake, fish, rat, raven, sea horse, spider, or weasel)",
+      "related_search_terms": [
+        "familiar transformation",
+        "change familiar",
+        "familiar form"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "You cast a spell with a range of touch",
+      "condition": "Your familiar is within 100 feet of you AND your familiar uses its reaction to deliver the spell",
+      "outcome": "Your familiar delivers the spell as if it had cast the spell",
+      "related_search_terms": [
+        "touch spell range",
+        "familiar spellcasting",
+        "ranged touch spells"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Familiar delivers a touch spell requiring an attack roll",
+      "condition": "N/A",
+      "outcome": "You use your action modifier for the spell's attack roll",
+      "related_search_terms": [
+        "familiar attack roll",
+        "spell attack bonus"
+      ]
+    }
+  ],
+  "description_text": "Find Familiar\nYou gain the service of a familiar, a spirit that takes an animal form you choose: bat, cat, crab, frog (toad), hawk, lizard, octopus, owl, poisonous snake, fish (quipper), rat, raven, sea horse, spider, or weasel. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of a beast.\nYour familiar acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal.\nWhen the familiar drops to 0 hit points, it disappears, leaving behind no physical form. It reappears after you cast this spell again.\nWhile your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as an action, you can see through your familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.\nAs an action, you can temporarily dismiss your familiar. It disappears into a pocket dimension where it awaits your summons. Alternatively, you can dismiss it forever. As an action while it is temporarily dismissed, you can cause it to reappear in any unoccupied space within 30 feet of you.\nYou can't have more than one familiar at a time. If you cast this spell while you already have a familiar, you instead cause it to adopt a new form. Choose one of the forms from the above list. Your familiar transforms into the chosen creature.\nFinally, when you cast a spell with a range of touch, your familiar can deliver the spell as if it had cast the spell. Your familiar must be within 100 feet of you, and it must use its reaction to deliver the spell when you cast it. If the spell requires an attack roll, you use your action modifier for the roll.",
+  "tags": [
+    "spell",
+    "conjuration",
+    "utility",
+    "familiar",
+    "1st-level"
+  ],
+  "related_search_terms": [
+    "summon creature",
+    "companion",
+    "pet spell",
+    "scouting spell",
+    "telepathy",
+    "touch spell delivery",
+    "mage familiar",
+    "warlock familiar"
+  ]
+}

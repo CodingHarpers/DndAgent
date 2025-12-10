@@ -1,0 +1,228 @@
+[
+  {
+    "source_chapter": "Combat - Underwater Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Underwater Melee Attacks",
+        "definition": "Rules governing melee weapon attacks made by creatures submerged in water.",
+        "rule_logic": {
+          "premise": "Creature makes a melee weapon attack while submerged in water",
+          "implication": "Attack roll is made with disadvantage UNLESS the weapon is a dagger, javelin, shortsword, spear, trident, or any other weapon that the DM deems appropriate (similar to these weapons, designed for thrusting).",
+          "exceptions": [
+            "If weapon is a dagger, javelin, shortsword, spear, trident, or similar thrusting weapon, there is no disadvantage."
+          ],
+          "description_text": "When making a melee weapon attack, a creature that doesn't have a swimming speed (either natural or granted by magic) has disadvantage on the attack roll unless the weapon is a dagger, javelin, shortsword, spear, trident, or some other weapon that the DM rules is appropriate, like a weapon designed for thrusting.",
+          "is_exception": false,
+          "related_search_terms": [
+            "melee attack underwater",
+            "fighting underwater",
+            "underwater weapon disadvantage",
+            "thrusting weapon underwater"
+          ]
+        },
+        "related_keywords": [
+          "melee attack",
+          "underwater",
+          "disadvantage",
+          "weapon"
+        ]
+      },
+      {
+        "concept_name": "Underwater Ranged Attacks",
+        "definition": "Rules governing ranged weapon attacks made by creatures or at targets submerged in water.",
+        "rule_logic": {
+          "premise": "Creature makes a ranged weapon attack while submerged in water OR creature makes a ranged weapon attack at a target submerged in water",
+          "implication": "Attack roll is made with disadvantage, AND the attack automatically misses if it's beyond the weapon's normal range (even if within long range).",
+          "exceptions": [],
+          "description_text": "Ranged weapon attacks automatically miss a target beyond the weapon's normal range. Even against a target within normal range, the attack roll has disadvantage unless the weapon is a crossbow, a net, or a weapon that the DM rules is appropriate (like a harpoon).",
+          "is_exception": false,
+          "related_search_terms": [
+            "ranged attack underwater",
+            "bow underwater",
+            "crossbow underwater",
+            "underwater projectile",
+            "normal range underwater"
+          ]
+        },
+        "related_keywords": [
+          "ranged attack",
+          "underwater",
+          "disadvantage",
+          "miss",
+          "weapon range"
+        ]
+      },
+      {
+        "concept_name": "Underwater Spells",
+        "definition": "Rules governing the casting of spells while submerged in water.",
+        "rule_logic": {
+          "premise": "Creature casts a spell while submerged in water",
+          "implication": "Spells are unaffected unless they require fire to function (e.g., Fireball, Burning Hands), in which case they may be partially or completely ineffective at the DM's discretion. Other spells behave normally.",
+          "exceptions": [
+            "Spells that create fire or rely on fire damage may be ineffective or partially effective, at the DM's discretion."
+          ],
+          "description_text": "The only real impediment to casting spells underwater is that any spell that creates fire or uses fire damage is likely to be ineffective.",
+          "is_exception": false,
+          "related_search_terms": [
+            "spells underwater",
+            "casting underwater",
+            "fire spell underwater",
+            "magic underwater"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "underwater",
+          "fire damage",
+          "magic"
+        ]
+      },
+      {
+        "concept_name": "Underwater Movement (General)",
+        "definition": "Describes general movement rules for creatures without a swimming speed in water.",
+        "rule_logic": {
+          "premise": "Creature is submerged in water and does not have a swimming speed (either natural or granted by magic)",
+          "implication": "Creature's movement speed is halved.",
+          "exceptions": [],
+          "description_text": "A creature that doesn't have a swimming speed (either natural or granted by magic) has its movement speed halved.",
+          "is_exception": false,
+          "related_search_terms": [
+            "underwater speed",
+            "swimming without speed",
+            "slowed underwater",
+            "movement in water"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "underwater",
+          "swimming speed",
+          "speed halved"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "underwater-combat"
+  },
+  {
+    "source_chapter": "Underwater Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Underwater Melee Weapon Attack (without swimming speed)",
+        "definition": "The specific rules governing melee weapon attacks made underwater by creatures that do not possess a swimming speed.",
+        "rule_logic": {
+          "premise": "A creature that does not have a swimming speed (natural or magical) makes a melee weapon attack while underwater",
+          "implication": "The attack roll has disadvantage",
+          "exceptions": [
+            "Unless the weapon used is a dagger",
+            "Unless the weapon used is a javelin",
+            "Unless the weapon used is a shortsword",
+            "Unless the weapon used is a spear",
+            "Unless the weapon used is a trident"
+          ],
+          "description_text": "When making a melee weapon attack, a creature that doesn't have a swimming speed (either natural or granted by magic) has disadvantage on the attack roll unless the weapon is a dagger, javelin, shortsword, spear, or trident.",
+          "is_exception": false,
+          "related_search_terms": [
+            "underwater fighting",
+            "melee attack penalty water",
+            "can I hit with sword underwater",
+            "swimming combat"
+          ]
+        },
+        "related_keywords": [
+          "melee weapon attack",
+          "underwater",
+          "swimming speed",
+          "disadvantage",
+          "dagger",
+          "javelin",
+          "shortsword",
+          "spear",
+          "trident"
+        ]
+      },
+      {
+        "concept_name": "Underwater Ranged Weapon Attack (beyond normal range)",
+        "definition": "The specific rule governing ranged weapon attacks made underwater against targets beyond the weapon's normal range.",
+        "rule_logic": {
+          "premise": "A ranged weapon attack is made underwater AND targets a creature beyond the weapon's normal range",
+          "implication": "The attack automatically misses",
+          "exceptions": [],
+          "description_text": "A ranged weapon attack automatically misses a target beyond the weapon's normal range.",
+          "is_exception": false,
+          "related_search_terms": [
+            "underwater ranged attack range",
+            "bow and arrow underwater",
+            "long range water combat",
+            "projectile underwater"
+          ]
+        },
+        "related_keywords": [
+          "ranged weapon attack",
+          "underwater",
+          "normal range",
+          "automatically misses"
+        ]
+      },
+      {
+        "concept_name": "Underwater Ranged Weapon Attack (within normal range)",
+        "definition": "The specific rules governing ranged weapon attacks made underwater against targets within the weapon's normal range.",
+        "rule_logic": {
+          "premise": "A ranged weapon attack is made underwater AND targets a creature within the weapon's normal range",
+          "implication": "The attack roll has disadvantage",
+          "exceptions": [
+            "Unless the weapon used is a crossbow",
+            "Unless the weapon used is a net",
+            "Unless the weapon used is a thrown weapon like a javelin (including spear, trident, or dart)"
+          ],
+          "description_text": "Even against a target within normal range, the attack roll has disadvantage unless the weapon is a crossbow, a net, or a weapon that is thrown like a javelin (including a spear, trident, or dart).",
+          "is_exception": false,
+          "related_search_terms": [
+            "underwater ranged attack penalty",
+            "crossbow underwater",
+            "throwing spear underwater",
+            "net underwater"
+          ]
+        },
+        "related_keywords": [
+          "ranged weapon attack",
+          "underwater",
+          "normal range",
+          "disadvantage",
+          "crossbow",
+          "net",
+          "thrown weapon",
+          "javelin",
+          "spear",
+          "trident",
+          "dart"
+        ]
+      },
+      {
+        "concept_name": "Underwater Fire Damage Resistance",
+        "definition": "The specific rule regarding resistance to fire damage for creatures and objects fully immersed in water.",
+        "rule_logic": {
+          "premise": "A creature or object is fully immersed in water AND takes fire damage",
+          "implication": "It has resistance to fire damage",
+          "exceptions": [],
+          "description_text": "Creatures and objects that are fully immersed in water have resistance to fire damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fire damage resistance underwater",
+            "burning in water",
+            "water dampens fire",
+            "fireball in ocean"
+          ]
+        },
+        "related_keywords": [
+          "fully immersed",
+          "underwater",
+          "fire damage",
+          "resistance"
+        ]
+      }
+    ],
+    "_chunk_header": "Underwater Combat",
+    "_source_file": "underwater-combat"
+  }
+]

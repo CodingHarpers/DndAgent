@@ -1,0 +1,54 @@
+{
+  "entity_name": "Transport via Plants",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Casting Initiated",
+      "condition": "Caster targets a Large or larger inanimate plant within range AND Caster has previously seen or touched the desired destination plant (which must be on the same plane of existence)",
+      "outcome": "A magical link is established for the duration between the targeted plant and the destination plant",
+      "related_search_terms": [
+        "establish connection",
+        "plant portal setup",
+        "teleport anchor",
+        "spell requirement",
+        "destination condition",
+        "portal creation",
+        "magical conduit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature steps into a plant linked by Transport via Plants",
+      "condition": "The Transport via Plants spell is active AND The creature uses 5 feet of its movement",
+      "outcome": "The creature instantly exits from the destination plant",
+      "related_search_terms": [
+        "travel through plant",
+        "instant travel",
+        "plant network travel",
+        "short-range teleport",
+        "movement cost teleport",
+        "plant portal use",
+        "teleport using movement"
+      ]
+    }
+  ],
+  "description_text": "This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.",
+  "tags": [
+    "teleportation",
+    "travel",
+    "utility",
+    "druid",
+    "ranger"
+  ],
+  "related_search_terms": [
+    "plant travel",
+    "teleportation spell",
+    "long-distance travel",
+    "nature magic",
+    "druid spell",
+    "ranger spell",
+    "portal spell",
+    "plant portal"
+  ]
+}

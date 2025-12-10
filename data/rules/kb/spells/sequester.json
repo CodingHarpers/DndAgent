@@ -1,0 +1,95 @@
+{
+  "entity_name": "Sequester",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a willing creature or an object, and is touched by the caster",
+      "outcome": "Target becomes invisible",
+      "related_search_terms": [
+        "concealment",
+        "hidden",
+        "unseen",
+        "invisibility",
+        "stealth"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempted Divination",
+      "condition": "Target is affected by Sequester",
+      "outcome": "Target cannot be targeted by divination spells",
+      "related_search_terms": [
+        "anti-divination",
+        "scrying protection",
+        "undetectable",
+        "warding"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempted Perception via Scrying Sensor",
+      "condition": "Target is affected by Sequester AND Scrying sensor created by a divination spell",
+      "outcome": "Target cannot be perceived through the scrying sensor",
+      "related_search_terms": [
+        "anti-scrying",
+        "scrying protection",
+        "undetectable",
+        "warding"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature AND affected by Sequester",
+      "outcome": "Target enters a state of suspended animation (time ceases to flow for it, does not grow older)",
+      "related_search_terms": [
+        "stasis",
+        "preservation",
+        "suspended animation",
+        "no aging"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "During Casting",
+      "condition": "Caster sets a specific condition",
+      "outcome": "The Sequester spell ends early if the specified condition occurs or is visible within 1 mile of the target",
+      "related_search_terms": [
+        "conditional end",
+        "spell duration",
+        "trigger condition"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target takes any damage",
+      "condition": "Target is affected by Sequester",
+      "outcome": "The Sequester spell ends",
+      "related_search_terms": [
+        "spell disruption",
+        "damage break",
+        "vulnerability"
+      ]
+    }
+  ],
+  "description_text": "By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be targeted by divination spells or perceived through scrying sensors created by divination spells. If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older. You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include \"after 1,000 years\" or \"when the tarrasque awakens.\" This spell also ends if the target takes any damage.",
+  "tags": [
+    "Divination",
+    "Concealment",
+    "Preservation",
+    "Condition-based",
+    "Duration",
+    "Touch"
+  ],
+  "related_search_terms": [
+    "hide",
+    "conceal",
+    "preserve",
+    "stasis",
+    "undetectable",
+    "divination blocking",
+    "long-term storage"
+  ]
+}

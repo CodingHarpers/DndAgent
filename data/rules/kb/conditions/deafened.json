@@ -1,0 +1,42 @@
+{
+  "entity_name": "Deafened",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature is Deafened",
+      "condition": "N/A",
+      "outcome": "Creature cannot perceive sound",
+      "related_search_terms": [
+        "hearing loss",
+        "unable to hear",
+        "silence",
+        "sound perception"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Ability Check is made",
+      "condition": "Creature is Deafened AND Ability Check requires hearing",
+      "outcome": "Ability Check automatically fails",
+      "related_search_terms": [
+        "perception check",
+        "listen",
+        "spot check (auditory)",
+        "skill check failure"
+      ]
+    }
+  ],
+  "description_text": "A deafened creature can't hear and automatically fails any ability check that requires hearing.",
+  "tags": [
+    "condition",
+    "sensory",
+    "debuff"
+  ],
+  "related_search_terms": [
+    "ear damage",
+    "hearing impairment",
+    "soundless",
+    "mute"
+  ]
+}

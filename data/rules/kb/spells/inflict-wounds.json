@@ -1,0 +1,43 @@
+{
+  "entity_name": "Inflict Wounds",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On casting Inflict Wounds",
+      "condition": "Target is a creature within reach",
+      "outcome": "Caster makes a melee spell attack roll against the target",
+      "related_search_terms": [
+        "melee spell attack",
+        "touch range",
+        "targeting",
+        "spellcasting action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Inflict Wounds melee spell attack hits",
+      "condition": "The attack roll was successful",
+      "outcome": "Target takes 3d10 necrotic damage",
+      "related_search_terms": [
+        "necrotic damage",
+        "spell damage",
+        "damage on hit",
+        "successful attack"
+      ]
+    }
+  ],
+  "description_text": "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.",
+  "tags": [
+    "spell",
+    "damage",
+    "attack",
+    "necrotic"
+  ],
+  "related_search_terms": [
+    "inflict wounds spell",
+    "necrotic damage spell",
+    "melee spell",
+    "touch spell",
+    "cleric spell"
+  ]
+}

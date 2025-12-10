@@ -1,0 +1,82 @@
+{
+  "entity_name": "Wall of Fire",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster targets a solid surface within 120 feet",
+      "outcome": "Create an opaque wall of fire for 1 minute (60ft L x 20ft H x 1ft T OR ringed 20ft D x 20ft H x 1ft T)",
+      "related_search_terms": [
+        "area creation",
+        "obstacle",
+        "barrier",
+        "line of sight blocking",
+        "duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When wall appears",
+      "condition": "Creature is within the wall's area",
+      "outcome": "Creature makes a Dexterity saving throw. On a failed save, takes 5d8 fire damage. On a successful save, takes half 5d8 fire damage.",
+      "related_search_terms": [
+        "burst damage",
+        "initial damage",
+        "area damage",
+        "dex save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of creature's turn",
+      "condition": "Creature on the damaging side of the wall enters the wall for the first time this turn",
+      "outcome": "Creature takes 5d8 fire damage",
+      "related_search_terms": [
+        "movement damage",
+        "passing through fire",
+        "entering hazard",
+        "continuous damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of creature's turn",
+      "condition": "Creature on the damaging side of the wall is within 10 feet of that side OR inside the wall",
+      "outcome": "Creature takes 5d8 fire damage",
+      "related_search_terms": [
+        "persistent damage",
+        "area denial damage",
+        "standing in fire",
+        "turn damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Interaction with wall",
+      "condition": "Creature is on the non-damaging side of the wall or interacts with it from that side",
+      "outcome": "That side of the wall deals no damage",
+      "related_search_terms": [
+        "safe side",
+        "non-lethal area",
+        "directional damage",
+        "wall properties"
+      ]
+    }
+  ],
+  "description_text": "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet o f that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.The other side of the wall deals no damage.",
+  "tags": [
+    "evocation",
+    "fire",
+    "damage",
+    "area_control",
+    "line_of_effect_blocker"
+  ],
+  "related_search_terms": [
+    "fire wall",
+    "area denial",
+    "burning barrier",
+    "flame obstacle",
+    "spell trap"
+  ]
+}

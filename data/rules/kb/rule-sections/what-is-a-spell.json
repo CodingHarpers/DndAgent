@@ -1,0 +1,410 @@
+[
+  {
+    "source_chapter": "What Is a Spell?",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell",
+        "definition": "A discrete magical effect, often unpredictable, that is produced by a spellcaster and has defined characteristics such as a level, a casting time, a range, components, and a duration.",
+        "rule_logic": {
+          "premise": "A magical effect is created by a spellcaster",
+          "implication": "It is classified as a spell and possesses characteristics: level, casting time, range, components, and duration",
+          "exceptions": [],
+          "description_text": "A spell is a discrete magical effect, a single shaping of the magical energy that suffuses the multiverse into a prescribed form. In casting a spell, a character carefully plucks at the threads of the raw magic and weaves them together to create an effect with a specific, limited effect. Spells can be dazzling, explosive, or subtle. They can turn the tide of battle, influence the minds of others, bring the dead to life, or divine the truth. Some spells have long-lasting effects, while others are instantaneous.",
+          "is_exception": false,
+          "related_search_terms": [
+            "magic definition",
+            "what is magic",
+            "spell characteristics",
+            "how spells work",
+            "types of magic"
+          ]
+        },
+        "related_keywords": [
+          "magic",
+          "spellcaster",
+          "level",
+          "casting time",
+          "range",
+          "components",
+          "duration"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "What Is a Spell?",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell",
+        "definition": "A discrete magical effect, a single shaping of the multiverse's magical energies into a specific, limited expression.",
+        "rule_logic": {
+          "premise": "Magical energies from the multiverse are shaped and focused",
+          "implication": "A 'spell' is created, capable of producing specific effects such as dealing damage, healing, imposing/removing conditions, draining/restoring life, etc.",
+          "exceptions": [],
+          "description_text": "A spell is a discrete magical effect, a single shaping of the magical energies that suffuse the multiverse into a specific, limited expression. In casting a spell, a character carefully plucks at the invisible strands of raw magic suffusing the world, pins them in place in a particular pattern, sets them vibrating in a specific way, and then releases them to unleash the desired effect-in most cases, all in the span of seconds. Spells can be versatile tools, weapons, or protective wards. They can deal damage or undo it, impose or remove conditions, drain life energy away, and restore life to the dead.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is magic",
+            "how do spells work",
+            "spell definition",
+            "types of spell effects",
+            "magic in dnd"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Magic",
+          "Effect",
+          "Multiverse",
+          "Casting",
+          "Conditions",
+          "Damage",
+          "Healing",
+          "Utility"
+        ]
+      }
+    ],
+    "_chunk_header": "What Is a Spell?",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "Spells - Spell Level",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Level",
+        "definition": "A numerical value from 0 to 9 assigned to every spell, indicating its general power level and prerequisite spellcaster level.",
+        "rule_logic": {
+          "premise": "A spell exists",
+          "implication": "The spell has a level from 0 to 9, which indicates its power and a higher spellcaster level is required to cast higher level spells. Spell level and character level do not correspond directly (e.g., a 17th-level character typically casts 9th-level spells).",
+          "exceptions": [],
+          "description_text": "Every spell has a level from 0 to 9. A spell's level is a general indicator of how powerful it is. Cantrips are level 0. The higher a spell's level, the higher level a spellcaster must be to use that spell. Spell level and character level don't correspond directly. Typically, a character has to be at least 17th level, not 9th level, to cast a 9th-level spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is spell level",
+            "spell power indicator",
+            "cantrip level",
+            "highest spell level",
+            "spellcaster level for spell",
+            "character level vs spell level"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "level",
+          "cantrip",
+          "power",
+          "spellcaster",
+          "character level"
+        ]
+      }
+    ],
+    "_chunk_header": "Spell Level",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "Known and Prepared Spells",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Readiness Requirement",
+        "definition": "A spell must be firmly fixed in a spellcaster's mind, or accessible via a magic item, before it can be used.",
+        "rule_logic": {
+          "premise": "A spellcaster intends to use a spell",
+          "implication": "The spell must either be 'fixed in mind' (known or prepared) OR accessible via a magic item",
+          "exceptions": [],
+          "description_text": "Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or must have access to the spell in a magic item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast a spell",
+            "spell availability",
+            "prerequisites for casting",
+            "magic item spells"
+          ]
+        },
+        "related_keywords": [
+          "spell",
+          "casting",
+          "preparation",
+          "knowledge",
+          "magic item"
+        ]
+      },
+      {
+        "concept_name": "Known Spells (Always Fixed in Mind)",
+        "definition": "A limited list of spells that are inherently fixed in the mind of certain spellcasting classes and monsters, requiring no preparation process.",
+        "rule_logic": {
+          "premise": "Character is a Bard, Sorcerer, or certain magic-using monster",
+          "implication": "The character has a limited list of spells that are always fixed in mind and do not require a separate preparation process.",
+          "exceptions": [],
+          "description_text": "Members of a few classes, including bards and sorcerers, have a limited list of spells they know that are always fixed in mind. The same thing is true of many magic-using monsters.",
+          "is_exception": false,
+          "related_search_terms": [
+            "bard spellcasting",
+            "sorcerer spellcasting",
+            "monster spells",
+            "innate spellcasting",
+            "spells known"
+          ]
+        },
+        "related_keywords": [
+          "bard",
+          "sorcerer",
+          "monster",
+          "spell list",
+          "no preparation"
+        ]
+      },
+      {
+        "concept_name": "Prepared Spells",
+        "definition": "Spells that a spellcaster fixes in their mind through a specific preparation process, which varies by class.",
+        "rule_logic": {
+          "premise": "Character is a Cleric, Wizard, or similar class",
+          "implication": "The character must undergo a specific process of 'preparing spells' to have them fixed in mind and available for casting. This process is detailed in the class description.",
+          "exceptions": [],
+          "description_text": "Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process varies for different classes, as detailed in their descriptions.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cleric spell preparation",
+            "wizard spell preparation",
+            "how to prepare spells",
+            "daily spell preparation"
+          ]
+        },
+        "related_keywords": [
+          "cleric",
+          "wizard",
+          "spell preparation",
+          "spell slots"
+        ]
+      },
+      {
+        "concept_name": "Spell Capacity Limit",
+        "definition": "The maximum number of spells a spellcaster can have fixed in mind (known or prepared) at any given time.",
+        "rule_logic": {
+          "premise": "Any spellcaster",
+          "implication": "The number of spells a caster can have fixed in mind (known or prepared) at any given time is limited by the character's level.",
+          "exceptions": [],
+          "description_text": "In every case, the number of spells a caster can have fixed in mind at any given time depends on the character's level.",
+          "is_exception": false,
+          "related_search_terms": [
+            "max known spells",
+            "max prepared spells",
+            "spell limit by level",
+            "how many spells can I learn"
+          ]
+        },
+        "related_keywords": [
+          "spell limit",
+          "character level",
+          "spell capacity",
+          "known spells",
+          "prepared spells"
+        ]
+      }
+    ],
+    "_chunk_header": "Known and Prepared Spells",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "Spell Slots",
+    "extracted_concepts": [
+      {
+        "concept_name": "Spell Slots",
+        "definition": "A limited resource that spellcasters use to cast spells, representing the mental and physical exertion required to manipulate magic.",
+        "rule_logic": {
+          "premise": "A character casts a spell",
+          "implication": "Must expend a spell slot of that spell's level or higher. The spell fits into a slot of its own level or higher.",
+          "exceptions": [],
+          "description_text": "When a character casts a spell, he or she expends a slot of that spell's level or higher, effectively 'filling' a slot with the spell. You can think of a spell slot as a groove of a certain size-small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, but a 9th-level spell fits only in a 9th-level slot.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many spells can I cast",
+            "spell slot expenditure",
+            "spell slot cost",
+            "using spell slots",
+            "spell slot compatibility"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "resources",
+          "spell level",
+          "expenditure"
+        ]
+      },
+      {
+        "concept_name": "Spell Slot Recovery",
+        "definition": "The process by which expended spell slots are replenished.",
+        "rule_logic": {
+          "premise": "A character finishes a long rest",
+          "implication": "All expended spell slots are restored.",
+          "exceptions": [],
+          "description_text": "Finishing a long rest restores any expended spell slots.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when do spell slots come back",
+            "restoring spell slots",
+            "long rest spell slots",
+            "spell slot refresh"
+          ]
+        },
+        "related_keywords": [
+          "rest",
+          "long rest",
+          "spellcasting",
+          "resource management"
+        ]
+      },
+      {
+        "concept_name": "Casting Without Spell Slots",
+        "definition": "Special abilities that allow characters or monsters to cast spells without consuming a spell slot.",
+        "rule_logic": {
+          "premise": "Character or monster possesses a special ability (e.g., Way of the Four Elements monk, Warlock Eldritch Invocations, Pit Fiend)",
+          "implication": "Can cast spells without expending spell slots.",
+          "exceptions": [],
+          "description_text": "Some characters and monsters have special abilities that let them cast spells without using spell slots. For example, a monk who follows the Way of the Four Elements, a warlock who chooses certain eldritch invocations, and a pit fiend from the Nine Hells can all cast spells in such a way.",
+          "is_exception": true,
+          "related_search_terms": [
+            "cast without slots",
+            "free spellcasting",
+            "warlock invocations",
+            "monk spells",
+            "at will spells"
+          ]
+        },
+        "related_keywords": [
+          "exception",
+          "special ability",
+          "warlock",
+          "monk",
+          "monster abilities"
+        ]
+      },
+      {
+        "concept_name": "Casting a Spell at a Higher Level",
+        "definition": "The act of using a spell slot of a higher level than a spell's base level to cast that spell.",
+        "rule_logic": {
+          "premise": "A spellcaster casts a spell using a slot that is of a higher level than the spell's base level",
+          "implication": "The spell assumes the higher level for that casting. Some spells gain more powerful effects, as detailed in their description.",
+          "exceptions": [],
+          "description_text": "When a spellcaster casts a spell using a slot that is of a higher level than the spell, the spell assumes the higher level for that casting. For instance, if Umara casts *magic missile* using one of her 2nd-level slots, that *magic missile* is 2nd level. Effectively, the spell expands to fill the slot it is put into. Some spells, such as *magic missile* and *cure wounds*, have more powerful effects when cast at a higher level, as detailed in a spell's description.",
+          "is_exception": false,
+          "related_search_terms": [
+            "upcasting a spell",
+            "using higher level slots",
+            "spell level vs slot level",
+            "magic missile higher level",
+            "empowered spells"
+          ]
+        },
+        "related_keywords": [
+          "spellcasting",
+          "spell level",
+          "spell slots",
+          "upcasting",
+          "spell effects"
+        ]
+      },
+      {
+        "concept_name": "Casting in Armor",
+        "definition": "A proficiency requirement for spellcasters attempting to cast spells while wearing armor.",
+        "rule_logic": {
+          "premise": "A character is wearing armor AND attempts to cast a spell",
+          "implication": "The character must be proficient with the armor they are wearing to cast the spell. Otherwise, they are too distracted and physically hampered to cast, and cannot.",
+          "exceptions": [],
+          "description_text": "Because of the mental focus and precise gestures required for spellcasting, you must be proficient with the armor you are wearing to cast a spell. You are otherwise too distracted and physically hampered by your armor for spellcasting.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I cast spells in heavy armor",
+            "armor proficiency spellcasting",
+            "spell failure armor",
+            "distraction by armor",
+            "casting while armored"
+          ]
+        },
+        "related_keywords": [
+          "armor",
+          "proficiency",
+          "spellcasting",
+          "restriction",
+          "penalty",
+          "focus"
+        ]
+      }
+    ],
+    "_chunk_header": "Spell Slots",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "Cantrips",
+    "extracted_concepts": [
+      {
+        "concept_name": "Cantrip",
+        "definition": "A type of spell that has been fixed in the caster's mind through repeated practice, allowing for repeated casting without resource expenditure.",
+        "rule_logic": {
+          "premise": "Casting a cantrip",
+          "implication": "Does not consume a spell slot AND Does not require advance preparation AND Can be cast at will AND Spell level is 0",
+          "exceptions": [],
+          "description_text": "A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "cantrip rules",
+            "casting cantrips",
+            "0-level spells",
+            "at will spells",
+            "spell slot cost cantrip",
+            "what is a cantrip"
+          ]
+        },
+        "related_keywords": [
+          "Spell",
+          "Spellcasting",
+          "Magic",
+          "Spell Slot",
+          "Preparation",
+          "Spell Level"
+        ]
+      }
+    ],
+    "_chunk_header": "Cantrips",
+    "_source_file": "what-is-a-spell"
+  },
+  {
+    "source_chapter": "Spellcasting - Rituals",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ritual Casting",
+        "definition": "An alternative method of casting a spell with the 'ritual' tag, which allows it to be cast without expending a spell slot, but requires a significantly longer casting time.",
+        "rule_logic": {
+          "premise": "A spell has the 'ritual' tag AND a spellcaster possesses a feature granting ritual casting ability AND the caster has the spell prepared or on their list of spells known",
+          "implication": "The spell can be cast without expending a spell slot. Its casting time increases by 10 minutes, and it cannot be cast at a higher level.",
+          "exceptions": [
+            "A character's ritual feature may specify that the spell does not need to be prepared or known (e.g., Wizard's Ritual Casting)."
+          ],
+          "description_text": "Certain spells have a special tag: ritual. Such a spell can be cast following the normal rules for spellcasting, or the spell can be cast as a ritual. The ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level. To cast a spell as a ritual, a spellcaster must have a feature that grants the ability to do so. The caster must also have the spell prepared or on his or her list of spells known, unless the character's ritual feature specifies otherwise, as the wizard's does.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to cast a ritual spell",
+            "ritual spell duration",
+            "ritual spell slots",
+            "can rituals be upcast",
+            "what classes have ritual casting",
+            "wizard ritual casting rules"
+          ]
+        },
+        "related_keywords": [
+          "ritual",
+          "spell",
+          "spellcasting",
+          "spell slot",
+          "casting time",
+          "prepared spells",
+          "spells known"
+        ]
+      }
+    ],
+    "_chunk_header": "Rituals",
+    "_source_file": "what-is-a-spell"
+  }
+]

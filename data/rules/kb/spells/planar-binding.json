@@ -1,0 +1,122 @@
+{
+  "entity_name": "Planar Binding",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting (Planar Binding)",
+      "condition": "Target is a Celestial, Elemental, Fey, or Fiend AND Target is within spell range during entire casting",
+      "outcome": "Spell effect proceeds",
+      "related_search_terms": [
+        "target type",
+        "casting conditions",
+        "valid targets",
+        "bindable creatures",
+        "demon",
+        "angel",
+        "genie",
+        "sprite"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Completion of Spell Casting (Planar Binding)",
+      "condition": "Target fails Charisma Saving Throw",
+      "outcome": "Target is bound to the caster's service for the spell's duration",
+      "related_search_terms": [
+        "saving throw",
+        "charisma save",
+        "failed save",
+        "control",
+        "dominate",
+        "subjugate",
+        "service",
+        "failed enchantment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster issues instruction to bound creature",
+      "condition": "Creature is bound by Planar Binding",
+      "outcome": "Creature must follow instructions to the best of its ability",
+      "related_search_terms": [
+        "obey commands",
+        "follow orders",
+        "bound service",
+        "controlled creature",
+        "servitude",
+        "commanding a planar being"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster issues instruction to bound creature",
+      "condition": "Creature is bound by Planar Binding AND Creature is hostile to caster",
+      "outcome": "Creature strives to twist instructions to achieve its own objectives while obeying the letter",
+      "related_search_terms": [
+        "trickery",
+        "malicious compliance",
+        "hostile service",
+        "unwilling servant",
+        "twisting words",
+        "loophole"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Binding successful on summoned/created creature",
+      "condition": "Target was summoned or created by another spell",
+      "outcome": "The summoning/creation spell's duration extends to match Planar Binding's duration",
+      "related_search_terms": [
+        "summoned creatures",
+        "spell duration",
+        "extend spell",
+        "persistent summoning",
+        "long-term summons"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bound creature completes instructions before spell ends",
+      "condition": "Caster and creature are on the same plane of existence",
+      "outcome": "Creature travels to the caster to report completion",
+      "related_search_terms": [
+        "task complete",
+        "report back",
+        "return to caster",
+        "objective met",
+        "same plane travel"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Bound creature completes instructions before spell ends",
+      "condition": "Caster and creature are on different planes of existence",
+      "outcome": "Creature returns to the place it was bound and remains there until the spell ends",
+      "related_search_terms": [
+        "task complete",
+        "return to origin",
+        "different planes",
+        "remain in place",
+        "planar return"
+      ]
+    }
+  ],
+  "description_text": "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends.",
+  "tags": [
+    "Conjuration",
+    "Control",
+    "Binding",
+    "Duration"
+  ],
+  "related_search_terms": [
+    "summon control",
+    "demon binding",
+    "elemental control",
+    "fey subjugation",
+    "angelic servitude",
+    "long-term control",
+    "extraplanar service",
+    "charisma save spell"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "entity_name": "Glibness",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "When you make a Charisma check",
+      "condition": "Glibness spell is active",
+      "outcome": "You can replace the d20 roll with a 15",
+      "related_search_terms": [
+        "persuasion check",
+        "deception check",
+        "intimidation check",
+        "performance check",
+        "social skill",
+        "minimum roll",
+        "guaranteed roll",
+        "charisma skill check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When magic attempts to determine if you are telling the truth",
+      "condition": "Glibness spell is active",
+      "outcome": "Magic indicates that you are being truthful, regardless of what you say",
+      "related_search_terms": [
+        "detect lies",
+        "zone of truth",
+        "truth spell",
+        "mind reading magic",
+        "deception magic",
+        "lie detection"
+      ]
+    }
+  ],
+  "description_text": "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "buff",
+    "charisma"
+  ],
+  "related_search_terms": [
+    "lie detection immunity",
+    "charisma advantage",
+    "social spell",
+    "guaranteed deception"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "entity_name": "Healing Word",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Targeting",
+      "condition": "Target is a creature of your choice AND Target is visible AND Target is within spell range",
+      "outcome": "Target is eligible for the spell's effects",
+      "related_search_terms": [
+        "line of sight",
+        "spell range",
+        "target selection",
+        "choosing creature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell successfully targets an eligible creature",
+      "condition": "Target is NOT an Undead AND Target is NOT a Construct",
+      "outcome": "Target regains hit points equal to 1d4 + your spellcasting ability modifier",
+      "related_search_terms": [
+        "restore hp",
+        "recover health",
+        "battle healing",
+        "hit point restoration",
+        "direct healing"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell targeting",
+      "condition": "Target is an Undead OR Target is a Construct",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "healing immunity",
+        "creature type immunity",
+        "unaffected by healing",
+        "cannot heal constructs",
+        "cannot heal undead"
+      ]
+    }
+  ],
+  "description_text": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "tags": [
+    "healing",
+    "spell",
+    "restoration",
+    "cure"
+  ],
+  "related_search_terms": [
+    "emergency healing",
+    "quick heal",
+    "ranged healing",
+    "cleric spell",
+    "bard spell",
+    "divine magic"
+  ]
+}

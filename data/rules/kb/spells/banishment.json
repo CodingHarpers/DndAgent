@@ -1,0 +1,95 @@
+{
+  "entity_name": "Banishment",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Target visible within range AND Target fails Charisma Saving Throw",
+      "outcome": "Target is banished from current plane",
+      "related_search_terms": [
+        "charisma save",
+        "failed save",
+        "control spell",
+        "save or suck"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is banished",
+      "condition": "Target is native to the current plane",
+      "outcome": "Target is sent to a harmless demiplane AND Target is Incapacitated while in demiplane",
+      "related_search_terms": [
+        "demiplane",
+        "incapacitated",
+        "native creature",
+        "plane of origin",
+        "control effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is banished",
+      "condition": "Target is NOT native to the current plane",
+      "outcome": "Target is sent to its home plane",
+      "related_search_terms": [
+        "home plane",
+        "extraplanar creature",
+        "outsider",
+        "plane shift effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Banishment spell ends",
+      "condition": "Target was banished AND Target is native to the current plane",
+      "outcome": "Target reappears in the space it left or nearest unoccupied space",
+      "related_search_terms": [
+        "spell duration end",
+        "reappearance",
+        "return from demiplane",
+        "spatial return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Banishment spell ends",
+      "condition": "Target was banished AND Target is NOT native to the current plane AND Spell duration was LESS THAN 1 minute",
+      "outcome": "Target reappears in the space it left or nearest unoccupied space",
+      "related_search_terms": [
+        "early return",
+        "short duration banish",
+        "extraplanar return",
+        "spatial return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Banishment spell ends",
+      "condition": "Target was banished AND Target is NOT native to the current plane AND Spell duration was AT LEAST 1 minute",
+      "outcome": "Target does NOT return to the current plane",
+      "related_search_terms": [
+        "permanent banish",
+        "long duration banish",
+        "one minute banish",
+        "exile"
+      ]
+    }
+  ],
+  "description_text": "You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a charisma saving throw or be banished.If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.",
+  "tags": [
+    "control",
+    "abjuration",
+    "save or suck",
+    "single target",
+    "planar travel"
+  ],
+  "related_search_terms": [
+    "exile",
+    "plane shift",
+    "incapacitate",
+    "planar banishment",
+    "charisma save",
+    "dimensional travel"
+  ]
+}

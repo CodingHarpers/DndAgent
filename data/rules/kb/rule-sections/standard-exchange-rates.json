@@ -1,0 +1,267 @@
+[
+  {
+    "source_chapter": "Standard Exchange Rates",
+    "extracted_concepts": [
+      {
+        "concept_name": "Gold to Silver Exchange Rate",
+        "definition": "The standard conversion rate between gold pieces (gp) and silver pieces (sp).",
+        "rule_logic": {
+          "premise": "Player exchanges 1 Gold Piece (gp)",
+          "implication": "Player receives 10 Silver Pieces (sp)",
+          "exceptions": [],
+          "description_text": "One gold piece (gp) is worth ten silver pieces (sp).",
+          "is_exception": false,
+          "related_search_terms": [
+            "gold silver conversion",
+            "gp to sp",
+            "currency exchange",
+            "money value"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "gold",
+          "silver",
+          "exchange",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Silver to Copper Exchange Rate",
+        "definition": "The standard conversion rate between silver pieces (sp) and copper pieces (cp).",
+        "rule_logic": {
+          "premise": "Player exchanges 1 Silver Piece (sp)",
+          "implication": "Player receives 10 Copper Pieces (cp)",
+          "exceptions": [],
+          "description_text": "One silver piece (sp) is worth ten copper pieces (cp).",
+          "is_exception": false,
+          "related_search_terms": [
+            "silver copper conversion",
+            "sp to cp",
+            "currency exchange",
+            "money value"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "silver",
+          "copper",
+          "exchange",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Electrum to Silver Exchange Rate",
+        "definition": "The standard conversion rate between electrum pieces (ep) and silver pieces (sp).",
+        "rule_logic": {
+          "premise": "Player exchanges 1 Electrum Piece (ep)",
+          "implication": "Player receives 5 Silver Pieces (sp)",
+          "exceptions": [],
+          "description_text": "One electrum piece (ep) is worth five silver pieces (sp).",
+          "is_exception": false,
+          "related_search_terms": [
+            "electrum silver conversion",
+            "ep to sp",
+            "currency exchange",
+            "money value"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "electrum",
+          "silver",
+          "exchange",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Gold to Electrum Exchange Rate",
+        "definition": "The standard conversion rate between gold pieces (gp) and electrum pieces (ep).",
+        "rule_logic": {
+          "premise": "Player exchanges 1 Gold Piece (gp)",
+          "implication": "Player receives 2 Electrum Pieces (ep)",
+          "exceptions": [],
+          "description_text": "One gold piece (gp) is worth two electrum pieces (ep).",
+          "is_exception": false,
+          "related_search_terms": [
+            "gold electrum conversion",
+            "gp to ep",
+            "currency exchange",
+            "money value"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "gold",
+          "electrum",
+          "exchange",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Platinum to Gold Exchange Rate",
+        "definition": "The standard conversion rate between platinum pieces (pp) and gold pieces (gp).",
+        "rule_logic": {
+          "premise": "Player exchanges 1 Platinum Piece (pp)",
+          "implication": "Player receives 10 Gold Pieces (gp)",
+          "exceptions": [],
+          "description_text": "One platinum piece (pp) is worth ten gold pieces (gp).",
+          "is_exception": false,
+          "related_search_terms": [
+            "platinum gold conversion",
+            "pp to gp",
+            "currency exchange",
+            "money value"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "platinum",
+          "gold",
+          "exchange",
+          "money"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "standard-exchange-rates"
+  },
+  {
+    "source_chapter": "Standard Exchange Rates",
+    "extracted_concepts": [
+      {
+        "concept_name": "Copper Piece (CP) Exchange Rate",
+        "definition": "The standard exchange rate for a Copper Piece (CP) to other coin denominations.",
+        "rule_logic": {
+          "premise": "A quantity of Copper Pieces (CP) needs to be converted to another currency type",
+          "implication": "1 CP = 0.1 SP, 0.02 EP, 0.01 GP, or 0.001 PP",
+          "exceptions": [],
+          "description_text": "1 copper piece (cp) is worth one-tenth of a silver piece, one-fiftieth of an electrum piece, one-hundredth of a gold piece, or one-thousandth of a platinum piece.",
+          "is_exception": false,
+          "related_search_terms": [
+            "copper value",
+            "cp conversion",
+            "how much is a cp worth",
+            "cp to sp",
+            "cp to gp",
+            "smallest coin"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "coin",
+          "denomination",
+          "exchange rate",
+          "CP",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Silver Piece (SP) Exchange Rate",
+        "definition": "The standard exchange rate for a Silver Piece (SP) to other coin denominations.",
+        "rule_logic": {
+          "premise": "A quantity of Silver Pieces (SP) needs to be converted to another currency type",
+          "implication": "1 SP = 10 CP, 0.2 EP, 0.1 GP, or 0.01 PP",
+          "exceptions": [],
+          "description_text": "1 silver piece (sp) is worth ten copper pieces, one-fifth of an electrum piece, one-tenth of a gold piece, or one-hundredth of a platinum piece.",
+          "is_exception": false,
+          "related_search_terms": [
+            "silver value",
+            "sp conversion",
+            "how much is an sp worth",
+            "sp to cp",
+            "sp to gp"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "coin",
+          "denomination",
+          "exchange rate",
+          "SP",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Electrum Piece (EP) Exchange Rate",
+        "definition": "The standard exchange rate for an Electrum Piece (EP) to other coin denominations.",
+        "rule_logic": {
+          "premise": "A quantity of Electrum Pieces (EP) needs to be converted to another currency type",
+          "implication": "1 EP = 50 CP, 5 SP, 0.5 GP, or 0.05 PP",
+          "exceptions": [],
+          "description_text": "1 electrum piece (ep) is worth fifty copper pieces, five silver pieces, one-half of a gold piece, or one-twentieth of a platinum piece.",
+          "is_exception": false,
+          "related_search_terms": [
+            "electrum value",
+            "ep conversion",
+            "how much is an ep worth",
+            "ep to gp",
+            "rare coin"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "coin",
+          "denomination",
+          "exchange rate",
+          "EP",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Gold Piece (GP) Exchange Rate",
+        "definition": "The standard exchange rate for a Gold Piece (GP) to other coin denominations.",
+        "rule_logic": {
+          "premise": "A quantity of Gold Pieces (GP) needs to be converted to another currency type",
+          "implication": "1 GP = 100 CP, 10 SP, 2 EP, or 0.1 PP",
+          "exceptions": [],
+          "description_text": "1 gold piece (gp) is worth one hundred copper pieces, ten silver pieces, two electrum pieces, or one-tenth of a platinum piece.",
+          "is_exception": false,
+          "related_search_terms": [
+            "gold value",
+            "gp conversion",
+            "how much is a gp worth",
+            "gp to cp",
+            "gp to sp"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "coin",
+          "denomination",
+          "exchange rate",
+          "GP",
+          "money"
+        ]
+      },
+      {
+        "concept_name": "Platinum Piece (PP) Exchange Rate",
+        "definition": "The standard exchange rate for a Platinum Piece (PP) to other coin denominations.",
+        "rule_logic": {
+          "premise": "A quantity of Platinum Pieces (PP) needs to be converted to another currency type",
+          "implication": "1 PP = 1000 CP, 100 SP, 20 EP, or 10 GP",
+          "exceptions": [],
+          "description_text": "1 platinum piece (pp) is worth one thousand copper pieces, one hundred silver pieces, twenty electrum pieces, or ten gold pieces.",
+          "is_exception": false,
+          "related_search_terms": [
+            "platinum value",
+            "pp conversion",
+            "how much is a pp worth",
+            "pp to gp",
+            "most valuable coin"
+          ]
+        },
+        "related_keywords": [
+          "currency",
+          "coin",
+          "denomination",
+          "exchange rate",
+          "PP",
+          "money"
+        ]
+      }
+    ],
+    "_chunk_header": "Standard Exchange Rates",
+    "_source_file": "standard-exchange-rates"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "entity_name": "Silence",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Attempt to create or transmit sound",
+      "condition": "Location is within or attempting to pass through the 20-foot radius sphere",
+      "outcome": "No sound can be created or pass through",
+      "related_search_terms": [
+        "sound blocking",
+        "noise suppression",
+        "stealth",
+        "undetected",
+        "covert"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Receiving thunder damage",
+      "condition": "Creature or object is entirely inside the 20-foot radius sphere",
+      "outcome": "Becomes immune to thunder damage",
+      "related_search_terms": [
+        "thunder damage protection",
+        "sonic immunity",
+        "damage resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is within the sphere",
+      "condition": "Creature is entirely inside the 20-foot radius sphere",
+      "outcome": "Creature is deafened",
+      "related_search_terms": [
+        "hearing loss",
+        "sensory deprivation",
+        "deafness condition",
+        "communication hindrance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to cast a spell",
+      "condition": "Spell has a verbal component AND Caster is entirely inside the 20-foot radius sphere",
+      "outcome": "Spell cannot be cast",
+      "related_search_terms": [
+        "spell interruption",
+        "counterspell effect",
+        "magic disruption",
+        "anti-caster"
+      ]
+    }
+  ],
+  "description_text": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.",
+  "tags": [
+    "Abjuration",
+    "2nd-level spell",
+    "Area of Effect"
+  ],
+  "related_search_terms": [
+    "silence spell",
+    "sound dampening",
+    "stealth aid",
+    "magic counter",
+    "anti-magic zone",
+    "deafening effect"
+  ]
+}

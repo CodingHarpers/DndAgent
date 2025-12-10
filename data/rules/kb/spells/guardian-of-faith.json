@@ -1,0 +1,82 @@
+{
+  "entity_name": "Guardian of Faith",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Casting (Guardian of Faith)",
+      "condition": "Caster chooses an unoccupied space within range that they can see",
+      "outcome": "A Large spectral guardian appears, hovers, and occupies the chosen space for the spell's duration",
+      "related_search_terms": [
+        "summoning",
+        "spell placement",
+        "area creation",
+        "stationary summon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Hostile creature's movement",
+      "condition": "Creature is hostile to caster AND creature moves into a space within 10 feet of the guardian for the first time on a turn",
+      "outcome": "Creature must succeed on a Dexterity saving throw",
+      "related_search_terms": [
+        "proximity damage",
+        "area of effect trigger",
+        "movement activated trap",
+        "hostile interaction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw (Guardian of Faith)",
+      "condition": "Saving throw failed",
+      "outcome": "Target takes 20 radiant damage",
+      "related_search_terms": [
+        "radiant damage",
+        "failed save",
+        "spell damage",
+        "high damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw (Guardian of Faith)",
+      "condition": "Saving throw successful",
+      "outcome": "Target takes 10 radiant damage",
+      "related_search_terms": [
+        "half damage on save",
+        "successful save",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Guardian deals damage",
+      "condition": "Total damage dealt by the guardian reaches 60",
+      "outcome": "The guardian vanishes",
+      "related_search_terms": [
+        "damage threshold",
+        "spell duration limit",
+        "hit point equivalent",
+        "fragile summon"
+      ]
+    }
+  ],
+  "description_text": "A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your deity. Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.",
+  "tags": [
+    "spell",
+    "summon",
+    "radiant damage",
+    "area control",
+    "abjuration",
+    "trap"
+  ],
+  "related_search_terms": [
+    "Guardian of Faith spell",
+    "holy guardian",
+    "celestial protector",
+    "warding spell",
+    "area denial",
+    "sentinel spell"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "entity_name": "Weird",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature within 30-foot radius sphere centered on target point AND Fails Wisdom Saving Throw",
+      "outcome": "Creature becomes frightened for the duration",
+      "related_search_terms": [
+        "AoE fear",
+        "mass fear",
+        "wisdom save spell",
+        "crowd control",
+        "nightmare illusion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of frightened creature's turn",
+      "condition": "Creature is frightened by Weird spell AND Fails Wisdom Saving Throw",
+      "outcome": "Creature takes 4d10 psychic damage",
+      "related_search_terms": [
+        "damage over time",
+        "ongoing psychic damage",
+        "fear damage",
+        "repeated save damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of frightened creature's turn",
+      "condition": "Creature is frightened by Weird spell AND Succeeds on Wisdom Saving Throw",
+      "outcome": "Weird spell ends for that creature",
+      "related_search_terms": [
+        "ending fear effect",
+        "breaking spell",
+        "successful save",
+        "removing condition"
+      ]
+    }
+  ],
+  "description_text": "Drawing on the deepest fears of a group of creatures, you create illusory creatures in their minds, visible only to them. Each creature in a 30-foot-radius sphere centered on a point of your choice within range must make a wisdom saving throw. On a failed save, a creature becomes frightened for the duration. The illusion calls on the creature's deepest fears, manifesting its worst nightmares as an implacable threat. At the start of each of the frightened creature's turns, it must succeed on a wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends for that creature.",
+  "tags": [
+    "Spell",
+    "Illusion",
+    "Fear",
+    "Psychic Damage",
+    "Wisdom Save",
+    "Area of Effect"
+  ],
+  "related_search_terms": [
+    "Weird spell",
+    "fear spell",
+    "psychic damage spell",
+    "mass fear",
+    "nightmare spell",
+    "illusion magic",
+    "mental attack"
+  ]
+}

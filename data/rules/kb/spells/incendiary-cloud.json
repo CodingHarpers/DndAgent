@@ -1,0 +1,101 @@
+{
+  "entity_name": "Incendiary Cloud",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Point within range is chosen",
+      "outcome": "A 20-foot-radius sphere of swirling smoke and embers appears centered on the chosen point",
+      "related_search_terms": [
+        "AoE",
+        "area of effect",
+        "spell area",
+        "creation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cloud exists",
+      "condition": "Cloud area",
+      "outcome": "The area within the cloud spreads around corners and is Heavily Obscured",
+      "related_search_terms": [
+        "vision impairment",
+        "line of sight",
+        "concealment",
+        "obscured",
+        "darkness",
+        "stealth"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Cloud existence",
+      "condition": "Duration expires OR Wind of moderate or greater speed (at least 10 mph) disperses it",
+      "outcome": "The cloud disperses and ends",
+      "related_search_terms": [
+        "spell end",
+        "duration",
+        "environmental effect",
+        "wind",
+        "dispell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cloud appears",
+      "condition": "Creature is within the cloud's area",
+      "outcome": "Creature must make a Dexterity saving throw. Takes 10d8 fire damage on a failed save, or half as much damage on a successful one",
+      "related_search_terms": [
+        "initial damage",
+        "burst damage",
+        "dex save",
+        "fire damage",
+        "AoE damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters the spell's area OR Creature ends its turn there",
+      "condition": "Creature enters the area for the first time on a turn OR Creature ends its turn in the area",
+      "outcome": "Creature must make a Dexterity saving throw. Takes 10d8 fire damage on a failed save, or half as much damage on a successful one",
+      "related_search_terms": [
+        "damage over time",
+        "DoT",
+        "area denial",
+        "fire damage",
+        "dex save",
+        "continuous damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of caster's turn",
+      "condition": "Cloud exists",
+      "outcome": "The cloud moves 10 feet directly away from the caster in a direction chosen by the caster",
+      "related_search_terms": [
+        "cloud movement",
+        "spell movement",
+        "area control",
+        "positioning",
+        "forced movement"
+      ]
+    }
+  ],
+  "description_text": "A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. When the cloud appears, each creature in it must make a dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there. The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns.",
+  "tags": [
+    "evocation",
+    "damage",
+    "area_of_effect",
+    "fire_damage",
+    "obscurement"
+  ],
+  "related_search_terms": [
+    "fire cloud",
+    "smoke cloud",
+    "AoE",
+    "control spell",
+    "damage spell",
+    "area denial"
+  ]
+}

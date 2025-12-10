@@ -1,0 +1,65 @@
+{
+  "entity_name": "Daylight",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Point chosen within range",
+      "outcome": "Create 60ft radius sphere of bright light, extending to 120ft radius of dim light",
+      "related_search_terms": [
+        "light spell",
+        "illumination",
+        "area of effect",
+        "bright light",
+        "dim light"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Point chosen on an object that is held OR not worn/carried",
+      "outcome": "Light source originates from and moves with that object",
+      "related_search_terms": [
+        "mobile light",
+        "portable light",
+        "moving light source"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Light-emitting object is covered",
+      "condition": "Light source is an object AND object is completely covered by an opaque object",
+      "outcome": "Light is blocked (does not emanate)",
+      "related_search_terms": [
+        "hide light",
+        "extinguish light",
+        "darkness counter"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell's area overlaps with darkness",
+      "condition": "Overlap with area of darkness created by a spell of 3rd level or lower",
+      "outcome": "The darkness-creating spell is dispelled",
+      "related_search_terms": [
+        "counter darkness",
+        "dispel darkness",
+        "light vs darkness",
+        "magical darkness"
+      ]
+    }
+  ],
+  "description_text": "A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet. If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light. If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.",
+  "tags": [
+    "Evocation",
+    "Light",
+    "Utility"
+  ],
+  "related_search_terms": [
+    "light source",
+    "magical light",
+    "darkness counter",
+    "illumination spell"
+  ]
+}

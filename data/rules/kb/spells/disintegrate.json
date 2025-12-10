@@ -1,0 +1,103 @@
+{
+  "entity_name": "Disintegrate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Target Selection",
+      "condition": "Target is a creature OR an object OR a creation of magical force",
+      "outcome": "Target is valid for Disintegrate",
+      "related_search_terms": [
+        "spell target",
+        "target type",
+        "valid target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Targeted",
+      "condition": "Targeted creature fails Dexterity Saving Throw",
+      "outcome": "Target takes 10d6 + 40 force damage",
+      "related_search_terms": [
+        "dex save spell",
+        "force damage",
+        "damage spell",
+        "single target damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Damage Dealt",
+      "condition": "Creature's hit points are reduced to 0 by this spell's damage",
+      "outcome": "Creature and all non-magic items it wears/carries are disintegrated into fine gray dust",
+      "related_search_terms": [
+        "kill effect",
+        "instant death",
+        "disintegration effect",
+        "death condition"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to restore a disintegrated creature to life",
+      "condition": "Creature was disintegrated by Disintegrate spell",
+      "outcome": "Only True Resurrection OR Wish spell can restore the creature to life",
+      "related_search_terms": [
+        "revive limitation",
+        "resurrection restrictions",
+        "powerful death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object or Creation of Magical Force Targeted",
+      "condition": "Target is a nonmagical object OR creation of magical force AND Target is Large size or smaller",
+      "outcome": "Target is automatically disintegrated",
+      "related_search_terms": [
+        "object destruction",
+        "environmental damage",
+        "magical construct",
+        "force field destruction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Object or Creation of Magical Force Targeted",
+      "condition": "Target is a Huge or larger nonmagical object OR creation of magical force",
+      "outcome": "A 10-foot-cube portion of the target is disintegrated",
+      "related_search_terms": [
+        "partial destruction",
+        "large object damage",
+        "structural damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Magic Item Targeted",
+      "condition": "Target is a magic item",
+      "outcome": "Target is unaffected by Disintegrate",
+      "related_search_terms": [
+        "magic item resistance",
+        "item immunity",
+        "indestructible item"
+      ]
+    }
+  ],
+  "description_text": "A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by wall of force.A creature targeted by this spell must make a dexterity saving throw. On a failed save, the target takes 10d6 + 40 force damage. If this damage reduces the target to 0 hit points, it is disintegrated.A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell.",
+  "tags": [
+    "damage",
+    "death",
+    "destruction",
+    "single target",
+    "force",
+    "evocation",
+    "spell"
+  ],
+  "related_search_terms": [
+    "death ray",
+    "obliterate",
+    "force spell",
+    "destroy object",
+    "instant death spell"
+  ]
+}

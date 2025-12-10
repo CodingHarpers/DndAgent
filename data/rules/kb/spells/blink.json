@@ -1,0 +1,132 @@
+{
+  "entity_name": "Blink",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "At the end of your turn, for the spell's duration",
+      "condition": "d20 roll is 11 or higher AND Caster is NOT currently on the Ethereal Plane",
+      "outcome": "Caster vanishes from current plane of existence and appears in the Ethereal Plane.",
+      "related_search_terms": [
+        "teleport",
+        "plane shift",
+        "phasing",
+        "avoid damage",
+        "temporary displacement",
+        "ethereal travel"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "A d20 roll for Blink is 11 or higher",
+      "condition": "Caster is already on the Ethereal Plane when the roll occurs",
+      "outcome": "The Blink spell immediately fails and the spell slot is wasted.",
+      "related_search_terms": [
+        "spell failure",
+        "wasted spell slot",
+        "already ethereal",
+        "overlap",
+        "ethereal plane restriction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "At the start of your next turn",
+      "condition": "Caster is on the Ethereal Plane due to Blink",
+      "outcome": "Caster returns to an unoccupied space of their choice within 10 feet of where they vanished, or the nearest unoccupied space if none are available.",
+      "related_search_terms": [
+        "reappearance",
+        "teleport back",
+        "rejoin combat",
+        "displacement",
+        "return to material plane"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When the Blink spell ends",
+      "condition": "Caster is on the Ethereal Plane",
+      "outcome": "Caster returns to an unoccupied space of their choice within 10 feet of where they vanished, or the nearest unoccupied space if none are available.",
+      "related_search_terms": [
+        "reappearance",
+        "teleport back",
+        "rejoin combat",
+        "displacement",
+        "spell expiration"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Anytime during spell duration on Caster's turn",
+      "condition": "Caster chooses to dismiss the spell",
+      "outcome": "Caster can use an action to end the Blink spell.",
+      "related_search_terms": [
+        "cancel spell",
+        "end effect early",
+        "action economy",
+        "conscious dismissal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While Caster is on the Ethereal Plane due to Blink",
+      "condition": "Caster is observing their originating plane",
+      "outcome": "Caster can see and hear the originating plane in shades of gray, with a vision range limited to 60 feet.",
+      "related_search_terms": [
+        "limited vision",
+        "grayed out",
+        "observing from other plane",
+        "sensory input",
+        "ethereal perception"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While Caster is on the Ethereal Plane due to Blink",
+      "condition": "Caster attempts to affect or be affected by creatures not on the Ethereal Plane",
+      "outcome": "Caster cannot affect or be affected by creatures not on the Ethereal Plane.",
+      "related_search_terms": [
+        "cannot attack",
+        "no interaction",
+        "intangible",
+        "immune to damage",
+        "invulnerability"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While Caster is on the Ethereal Plane due to Blink",
+      "condition": "Creatures not on the Ethereal Plane attempt to perceive or interact with the Caster",
+      "outcome": "Creatures not on the Ethereal Plane cannot perceive or interact with the Caster, unless they have specific abilities to do so (e.g., See Invisibility, ability to interact with Ethereal Plane).",
+      "related_search_terms": [
+        "unseen",
+        "stealth",
+        "untargetable",
+        "hidden",
+        "ghosting",
+        "immune to spells",
+        "unaffected"
+      ]
+    }
+  ],
+  "description_text": "Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already on that plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismiss this spell as an action.While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.",
+  "tags": [
+    "Abjuration",
+    "2nd-level spell",
+    "Self",
+    "Teleportation",
+    "Ethereal Plane",
+    "Defensive",
+    "Concentration-free"
+  ],
+  "related_search_terms": [
+    "phasing",
+    "etherealness",
+    "plane hopping",
+    "avoid damage",
+    "escapes",
+    "invisibility",
+    "untargetable",
+    "teleport out"
+  ]
+}

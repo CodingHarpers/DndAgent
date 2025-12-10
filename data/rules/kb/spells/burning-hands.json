@@ -1,0 +1,56 @@
+{
+  "entity_name": "Burning Hands",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Creature within 15-foot cone AND Dexterity Saving Throw Failed",
+      "outcome": "Target takes 3d6 Fire Damage",
+      "related_search_terms": [
+        "fire damage",
+        "cone spell",
+        "failed save damage",
+        "aoe damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Creature within 15-foot cone AND Dexterity Saving Throw Succeeded",
+      "outcome": "Target takes half of 3d6 Fire Damage",
+      "related_search_terms": [
+        "fire damage",
+        "half damage",
+        "successful save",
+        "aoe damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Flammable object within 15-foot cone AND object is NOT worn or carried",
+      "outcome": "Object ignites",
+      "related_search_terms": [
+        "ignite object",
+        "set on fire",
+        "environmental effect",
+        "flammable material"
+      ]
+    }
+  ],
+  "description_text": "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.",
+  "tags": [
+    "Evocation",
+    "Damage",
+    "Area of Effect",
+    "Fire"
+  ],
+  "related_search_terms": [
+    "fire spell",
+    "cone attack",
+    "dex save spell",
+    "pyromancy",
+    "aoe fire"
+  ]
+}

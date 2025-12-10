@@ -1,0 +1,138 @@
+{
+  "entity_name": "Unconscious",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Unconscious",
+      "condition": "N/A",
+      "outcome": "Creature gains Incapacitated condition",
+      "related_search_terms": [
+        "incapacitated",
+        "disabled",
+        "stunned",
+        "unable to act"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to move",
+      "condition": "Creature is Unconscious",
+      "outcome": "Creature cannot move",
+      "related_search_terms": [
+        "movement restriction",
+        "paralyzed",
+        "immobile",
+        "restrained"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to speak",
+      "condition": "Creature is Unconscious",
+      "outcome": "Creature cannot speak",
+      "related_search_terms": [
+        "silenced",
+        "mute",
+        "speechless"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to perceive surroundings",
+      "condition": "Creature is Unconscious",
+      "outcome": "Creature is unaware of its surroundings",
+      "related_search_terms": [
+        "blinded",
+        "deafened",
+        "sensory deprivation",
+        "oblivious"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Unconscious",
+      "condition": "N/A",
+      "outcome": "Creature drops all held items",
+      "related_search_terms": [
+        "disarmed",
+        "item dropped",
+        "lose grip"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Unconscious",
+      "condition": "N/A",
+      "outcome": "Creature falls Prone",
+      "related_search_terms": [
+        "knocked down",
+        "prone condition",
+        "falls down"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Strength Saving Throw",
+      "condition": "Creature is Unconscious",
+      "outcome": "Saving Throw automatically fails",
+      "related_search_terms": [
+        "vulnerable save",
+        "no defense",
+        "helpless save",
+        "auto fail"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a Dexterity Saving Throw",
+      "condition": "Creature is Unconscious",
+      "outcome": "Saving Throw automatically fails",
+      "related_search_terms": [
+        "vulnerable save",
+        "no defense",
+        "helpless save",
+        "auto fail"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Target is Unconscious",
+      "outcome": "Attack roll has Advantage",
+      "related_search_terms": [
+        "easy to hit",
+        "helpless target",
+        "vulnerable",
+        "exposed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack hits",
+      "condition": "Target is Unconscious AND Attacker is within 5 feet",
+      "outcome": "Attack is a Critical Hit",
+      "related_search_terms": [
+        "coup de grace",
+        "finishing blow",
+        "automatic crit",
+        "insta-kill"
+      ]
+    }
+  ],
+  "description_text": "An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings. The creature drops whatever it's holding and falls prone. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage. Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.",
+  "tags": [
+    "condition",
+    "debuff",
+    "control",
+    "status_effect"
+  ],
+  "related_search_terms": [
+    "knocked out",
+    "asleep",
+    "stunned",
+    "helpless",
+    "defeated",
+    "downed"
+  ]
+}

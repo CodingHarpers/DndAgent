@@ -1,0 +1,80 @@
+{
+  "entity_name": "Fire Storm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Spell Cast",
+      "condition": "Location chosen within range",
+      "outcome": "A storm consisting of up to ten 10-foot cubes of roaring flame appears. Each cube must have at least one face adjacent to the face of another cube.",
+      "related_search_terms": [
+        "AoE shape",
+        "spell area",
+        "cube formation",
+        "configurable area"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Creature is in the spell's area",
+      "outcome": "Creature makes a Dexterity saving throw. Takes 7d10 fire damage on a failed save, or half as much damage on a successful one.",
+      "related_search_terms": [
+        "fire damage",
+        "dex save",
+        "AoE damage",
+        "half damage",
+        "burst damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Object is in the spell's area",
+      "outcome": "Objects in the area take fire damage.",
+      "related_search_terms": [
+        "object damage",
+        "environmental destruction",
+        "structure damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Flammable object is in the spell's area AND not worn or carried",
+      "outcome": "Flammable object ignites.",
+      "related_search_terms": [
+        "ignition",
+        "fire hazard",
+        "spreading fire"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Spell Cast",
+      "condition": "Caster chooses to exempt plant life",
+      "outcome": "Plant life in the area is unaffected by this spell.",
+      "related_search_terms": [
+        "selective targeting",
+        "plant protection",
+        "controlled effect"
+      ]
+    }
+  ],
+  "description_text": "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make a dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one. The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.",
+  "tags": [
+    "spell",
+    "evocation",
+    "fire",
+    "damage",
+    "area of effect",
+    "saving throw",
+    "environmental"
+  ],
+  "related_search_terms": [
+    "fire storm spell",
+    "aoe fire",
+    "high level damage spell",
+    "nature damage"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "entity_name": "Heat Metal",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Target is a manufactured metal object within range AND a creature is in physical contact with the object",
+      "outcome": "Creature takes 2d8 fire damage",
+      "related_search_terms": [
+        "initial damage",
+        "first round damage",
+        "on cast effect",
+        "touching metal",
+        "direct damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Use bonus action on subsequent turns (while spell is active)",
+      "condition": "Creature is in physical contact with the heated object",
+      "outcome": "Creature takes 2d8 fire damage",
+      "related_search_terms": [
+        "ongoing damage",
+        "sustained effect",
+        "fire damage over time",
+        "bonus action damage",
+        "concentrated damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature takes fire damage from the heated object while holding or wearing it",
+      "condition": "Creature fails a Constitution saving throw",
+      "outcome": "Creature must drop the object if it can",
+      "related_search_terms": [
+        "forced drop",
+        "disarm",
+        "weapon drop",
+        "armor drop",
+        "concentration save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature takes fire damage from the heated object while holding or wearing it",
+      "condition": "Creature fails a Constitution saving throw AND does NOT drop the object",
+      "outcome": "Creature has disadvantage on attack rolls and ability checks until the start of its next turn",
+      "related_search_terms": [
+        "attack penalty",
+        "ability check penalty",
+        "disadvantage condition",
+        "hot object penalty",
+        "combat disruption"
+      ]
+    }
+  ],
+  "description_text": "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again. If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a constitution saving throw or drop the object if it can. If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.",
+  "tags": [
+    "Evocation",
+    "Fire",
+    "Control",
+    "Damage",
+    "Concentration"
+  ],
+  "related_search_terms": [
+    "heat weapon",
+    "burn armor",
+    "metal control",
+    "disarm spell",
+    "combat debuff",
+    "damage over time spell"
+  ]
+}

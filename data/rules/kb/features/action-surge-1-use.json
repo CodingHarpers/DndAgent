@@ -1,0 +1,72 @@
+{
+  "entity_name": "Action Surge",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On your turn",
+      "condition": "Player activates Action Surge",
+      "outcome": "Player takes one additional action",
+      "related_search_terms": [
+        "extra action",
+        "second action",
+        "additional action",
+        "turn actions",
+        "combat actions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "After using Action Surge",
+      "condition": "Player level is less than 17",
+      "outcome": "Action Surge cannot be used again until after a short rest or long rest",
+      "related_search_terms": [
+        "recharge",
+        "cooldown",
+        "resource management",
+        "uses per rest",
+        "limitations"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Character gains a level",
+      "condition": "Character reaches 17th level",
+      "outcome": "Player can use Action Surge twice before a short rest or long rest",
+      "related_search_terms": [
+        "level upgrade",
+        "feature improvement",
+        "more uses",
+        "higher level feature",
+        "multiple uses"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Player attempts to use Action Surge",
+      "condition": "Action Surge has already been used during the current turn",
+      "outcome": "Player cannot use Action Surge again during the current turn",
+      "related_search_terms": [
+        "once per turn",
+        "turn limit",
+        "action economy",
+        "same turn restriction"
+      ]
+    }
+  ],
+  "description_text": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.",
+  "tags": [
+    "Fighter",
+    "class feature",
+    "action economy",
+    "resource",
+    "combat"
+  ],
+  "related_search_terms": [
+    "fighter ability",
+    "extra turn",
+    "combat utility",
+    "burst damage",
+    "action point"
+  ]
+}

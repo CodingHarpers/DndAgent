@@ -1,0 +1,105 @@
+{
+  "entity_name": "Enthrall",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature of your choice within range AND can hear you",
+      "outcome": "Target makes a Wisdom Saving Throw",
+      "related_search_terms": [
+        "targeting",
+        "saving throw",
+        "auditory",
+        "mind affecting"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw against Enthrall initiated",
+      "condition": "Target is immune to the Charmed condition",
+      "outcome": "Target automatically succeeds on the saving throw",
+      "related_search_terms": [
+        "charm immunity",
+        "condition immunity",
+        "auto success"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw against Enthrall initiated",
+      "condition": "Caster or caster's companions are fighting the target",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "combat advantage",
+        "hostile target",
+        "in-combat save",
+        "resistance to charm"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom Saving Throw against Enthrall",
+      "condition": "Target is affected by Enthrall",
+      "outcome": "Target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than the caster",
+      "related_search_terms": [
+        "distraction",
+        "perception debuff",
+        "attention",
+        "focus",
+        "disadvantage perception",
+        "mind control effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Ongoing effect of Enthrall on a target",
+      "condition": "Target can no longer hear the caster",
+      "outcome": "The disadvantage on Wisdom (Perception) checks ends for that target",
+      "related_search_terms": [
+        "spell duration",
+        "breaking effect",
+        "line of hearing",
+        "interruption"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Enthrall spell is active",
+      "condition": "Caster becomes incapacitated",
+      "outcome": "Enthrall spell ends",
+      "related_search_terms": [
+        "spell duration",
+        "concentration broken",
+        "incapacitated",
+        "spell end condition"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Enthrall spell is active",
+      "condition": "Caster can no longer speak",
+      "outcome": "Enthrall spell ends",
+      "related_search_terms": [
+        "spell duration",
+        "silenced",
+        "verbal component interrupted",
+        "spell end condition"
+      ]
+    }
+  ],
+  "description_text": "You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.",
+  "tags": [
+    "Enchantment",
+    "Verbal Component",
+    "Mind-Altering"
+  ],
+  "related_search_terms": [
+    "distraction spell",
+    "charm",
+    "enchantment magic",
+    "mind control",
+    "perception debuff",
+    "crowd control"
+  ]
+}

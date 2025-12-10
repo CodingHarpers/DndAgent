@@ -1,0 +1,110 @@
+{
+  "entity_name": "Produce Flame",
+  "logic_type": "spell",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is active",
+      "condition": "Flickering flame is in caster's hand",
+      "outcome": "Sheds bright light in a 10-foot radius and dim light for an additional 10 feet",
+      "related_search_terms": [
+        "light source",
+        "illumination",
+        "darkness",
+        "sight in dark"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Flame is in caster's hand",
+      "condition": "N/A",
+      "outcome": "Caster and their equipment are not harmed by the flame",
+      "related_search_terms": [
+        "safe spell",
+        "harmless",
+        "no self-damage"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn",
+      "condition": "Produce Flame spell is active",
+      "outcome": "Caster can dismiss the spell as an action",
+      "related_search_terms": [
+        "end spell",
+        "cancel magic",
+        "remove effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster casts Produce Flame",
+      "condition": "Another Produce Flame spell cast by the same caster is already active",
+      "outcome": "The previously active Produce Flame spell ends",
+      "related_search_terms": [
+        "recast",
+        "multiple spells",
+        "concentration"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On casting this spell OR As an action on a later turn",
+      "condition": "A creature is within 30 feet of the caster",
+      "outcome": "Caster can hurl the flame at a creature, making a ranged spell attack",
+      "related_search_terms": [
+        "attack action",
+        "ranged spell attack",
+        "offensive spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster makes a ranged spell attack by hurling the flame",
+      "condition": "N/A",
+      "outcome": "The Produce Flame spell ends",
+      "related_search_terms": [
+        "spell consumption",
+        "one-time attack",
+        "expend spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ranged spell attack made with hurled flame hits a target",
+      "condition": "N/A",
+      "outcome": "Target takes 1d8 fire damage",
+      "related_search_terms": [
+        "fire damage",
+        "direct damage",
+        "single target spell",
+        "attack damage"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Caster's level increases",
+      "condition": "Caster reaches 5th level OR 11th level OR 17th level",
+      "outcome": "Damage dealt by the spell increases by 1d8 (2d8 at 5th, 3d8 at 11th, 4d8 at 17th)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level progression",
+        "damage increase",
+        "higher levels"
+      ]
+    }
+  ],
+  "description_text": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "tags": [
+    "cantrip",
+    "evocation",
+    "fire"
+  ],
+  "related_search_terms": [
+    "fireball",
+    "fire bolt",
+    "light spell",
+    "damage cantrip",
+    "elemental spell"
+  ]
+}

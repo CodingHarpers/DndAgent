@@ -1,0 +1,135 @@
+{
+  "entity_name": "Half-Elf",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Base walking speed is 30 feet",
+      "related_search_terms": [
+        "movement",
+        "speed",
+        "racial trait",
+        "half-elf speed"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Increase Charisma score by 2",
+      "related_search_terms": [
+        "racial bonus",
+        "charisma increase",
+        "CHA bonus",
+        "ability score improvement"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Choose two different ability scores (other than Charisma); increase each chosen score by 1",
+      "related_search_terms": [
+        "racial bonus",
+        "ability score choice",
+        "customizable ASI",
+        "flexible ability scores"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Character's size is Medium",
+      "related_search_terms": [
+        "racial size",
+        "medium creature",
+        "size category"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Proficient in Common language",
+      "related_search_terms": [
+        "racial language",
+        "common",
+        "communication"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Proficient in Elvish language",
+      "related_search_terms": [
+        "racial language",
+        "elvish",
+        "communication"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Choose one additional language to be proficient in from the standard list of languages",
+      "related_search_terms": [
+        "racial language choice",
+        "extra language",
+        "linguist",
+        "language proficiency"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Grant the Darkvision racial trait",
+      "related_search_terms": [
+        "racial trait",
+        "darkvision",
+        "low-light vision",
+        "night vision"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Grant the Fey Ancestry racial trait",
+      "related_search_terms": [
+        "racial trait",
+        "fey ancestry",
+        "charm immunity",
+        "sleep immunity",
+        "advantage on saves vs charm"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character Creation",
+      "condition": "Player selects Half-Elf race",
+      "outcome": "Grant the Skill Versatility racial trait",
+      "related_search_terms": [
+        "racial trait",
+        "skill versatility",
+        "extra proficiencies",
+        "flexible skills"
+      ]
+    }
+  ],
+  "description_text": "Half-elves share the chaotic bent of their elven heritage. They value both personal freedom and creative expression, demonstrating neither love of leaders nor desire for followers. They chafe at rules, resent others' demands, and sometimes prove unreliable, or at least unpredictable. Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years. Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium. You can speak, read, and write Common, Elvish, and one extra language of your choice.",
+  "tags": [
+    "Race",
+    "Half-Elf",
+    "Player Character"
+  ],
+  "related_search_terms": [
+    "half-elf",
+    "race features",
+    "racial traits",
+    "character options"
+  ]
+}

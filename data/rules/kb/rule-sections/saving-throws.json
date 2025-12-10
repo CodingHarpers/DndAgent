@@ -1,0 +1,178 @@
+[
+  {
+    "source_chapter": "Chapter 7: Using Ability Scores - Saving Throws",
+    "extracted_concepts": [
+      {
+        "concept_name": "Saving Throw",
+        "definition": "A roll made to resist, avoid, or otherwise overcome a threat, such as a spell, trap, poison, or other effect.",
+        "rule_logic": {
+          "premise": "Character is subjected to an effect that specifies a saving throw is required AND the DM determines the relevant Ability Score and Difficulty Class (DC)",
+          "implication": "Roll 1d20 + relevant Ability Modifier + Proficiency Bonus (if proficient in that saving throw). Compare total to DC. If total >= DC, the saving throw succeeds. If total < DC, the saving throw fails. The effect specifies the consequences of success or failure.",
+          "exceptions": [],
+          "description_text": "To make a saving throw, roll a d20 and add the appropriate ability modifier. As with other d20 rolls, you add your proficiency bonus to your saving throws that you are proficient in. You don't normally add your proficiency bonus to your saving throws unless a feature or effect specifies that you do. A saving throw can be modified by a character's racial traits, class features, feats, magic items, and other effects. The DM also determines the Difficulty Class (DC) of the save.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to make a saving throw",
+            "saving throw calculation",
+            "what is a save",
+            "d20 roll",
+            "ability modifier",
+            "proficiency bonus",
+            "difficulty class",
+            "resist effect"
+          ]
+        },
+        "related_keywords": [
+          "d20",
+          "ability modifier",
+          "proficiency bonus",
+          "DC",
+          "resistance",
+          "threat"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "saving-throws"
+  },
+  {
+    "source_chapter": "Saving Throws",
+    "extracted_concepts": [
+      {
+        "concept_name": "Saving Throw (Save)",
+        "definition": "An attempt to resist a spell, a trap, a poison, a disease, or a similar threat.",
+        "rule_logic": {
+          "premise": "A character or monster is at risk of harm from a specific effect (spell, trap, poison, disease, etc.)",
+          "implication": "The character or monster is forced to make a saving throw.",
+          "exceptions": [],
+          "description_text": "A saving throw-also called a save-represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat. You don't normally decide to make a saving throw; you are forced to make one because your character or monster is at risk of harm.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is a saving throw",
+            "when do i make a save",
+            "resist spell",
+            "avoid trap",
+            "forced save"
+          ]
+        },
+        "related_keywords": [
+          "Defense",
+          "Resistance",
+          "Effect",
+          "Spell",
+          "Trap",
+          "Poison",
+          "Disease"
+        ]
+      },
+      {
+        "concept_name": "Making a Saving Throw",
+        "definition": "The procedure for rolling and calculating the result of a saving throw.",
+        "rule_logic": {
+          "premise": "A saving throw is required.",
+          "implication": "Roll a d20, add the appropriate ability modifier. Apply any situational bonus/penalty, advantage, or disadvantage.",
+          "exceptions": [],
+          "description_text": "To make a saving throw, roll a d20 and add the appropriate ability modifier. For example, you use your Dexterity modifier for a Dexterity saving throw. A saving throw can be modified by a situational bonus or penalty and can be affected by advantage and disadvantage, as determined by the GM.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to roll a save",
+            "saving throw roll",
+            "ability modifier save",
+            "advantage on saves",
+            "disadvantage on saves",
+            "situational bonus to save"
+          ]
+        },
+        "related_keywords": [
+          "Procedure",
+          "Roll",
+          "d20",
+          "Ability Modifier",
+          "Bonus",
+          "Penalty",
+          "Advantage",
+          "Disadvantage",
+          "GM"
+        ]
+      },
+      {
+        "concept_name": "Saving Throw Proficiency",
+        "definition": "An indicator that a character or monster has training in a specific type of saving throw.",
+        "rule_logic": {
+          "premise": "A character or monster is proficient in a specific saving throw (e.g., Dexterity saves).",
+          "implication": "Add the proficiency bonus to saving throws made using that particular ability score.",
+          "exceptions": [],
+          "description_text": "Each class gives proficiency in at least two saving throws. The wizard, for example, is proficient in Intelligence saves. As with skill proficiencies, proficiency in a saving throw lets a character add his or her proficiency bonus to saving throws made using a particular ability score. Some monsters have saving throw proficiencies as well.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is save proficiency",
+            "prof bonus saves",
+            "class saving throws",
+            "monster save proficiencies"
+          ]
+        },
+        "related_keywords": [
+          "Proficiency",
+          "Proficiency Bonus",
+          "Ability Score",
+          "Class Feature",
+          "Monster Trait"
+        ]
+      },
+      {
+        "concept_name": "Saving Throw Difficulty Class (DC)",
+        "definition": "The target number that a saving throw roll must meet or exceed to succeed.",
+        "rule_logic": {
+          "premise": "An effect requires a saving throw.",
+          "implication": "The DC for the saving throw is determined by the effect that causes it (e.g., caster's spellcasting ability and proficiency bonus for a spell).",
+          "exceptions": [],
+          "description_text": "The Difficulty Class for a saving throw is determined by the effect that causes it. For example, the DC for a saving throw allowed by a spell is determined by the caster's spellcasting ability and proficiency bonus.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is save DC",
+            "how is save DC calculated",
+            "spell save DC",
+            "trap save DC"
+          ]
+        },
+        "related_keywords": [
+          "Difficulty Class",
+          "DC",
+          "Target Number",
+          "Effect",
+          "Spellcasting Ability",
+          "Proficiency Bonus"
+        ]
+      },
+      {
+        "concept_name": "Saving Throw Outcome",
+        "definition": "The consequence of succeeding or failing a saving throw, as determined by the effect that caused it.",
+        "rule_logic": {
+          "premise": "A saving throw is completed (result is known).",
+          "implication": "The result (success or failure) determines the extent of harm or effect, as detailed by the effect. A successful save usually means no harm or reduced harm.",
+          "exceptions": [],
+          "description_text": "The result of a successful or failed saving throw is also detailed in the effect that allows the save. Usually, a successful save means that a creature suffers no harm, or reduced harm, from an effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens if I pass a save",
+            "what happens if I fail a save",
+            "successful saving throw",
+            "failed saving throw",
+            "harm from effect",
+            "reduced harm save"
+          ]
+        },
+        "related_keywords": [
+          "Outcome",
+          "Success",
+          "Failure",
+          "Harm",
+          "Effect",
+          "Consequence"
+        ]
+      }
+    ],
+    "_chunk_header": "Saving Throws",
+    "_source_file": "saving-throws"
+  }
+]

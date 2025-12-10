@@ -1,0 +1,108 @@
+{
+  "entity_name": "Conjure Minor Elementals",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses one option from the spell's list",
+      "outcome": "Summon specified number and challenge rating of Elementals",
+      "related_search_terms": [
+        "summoning",
+        "elemental creation",
+        "creature conjuration"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Elemental Summoning",
+      "condition": "Summoned creature placement",
+      "outcome": "Must appear in unoccupied spaces visible to the caster within range",
+      "related_search_terms": [
+        "placement",
+        "line of sight",
+        "available space"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Summoned Elemental State",
+      "condition": "Elemental drops to 0 hit points",
+      "outcome": "Elemental disappears",
+      "related_search_terms": [
+        "despawn",
+        "death condition",
+        "creature removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Summoned Elemental State",
+      "condition": "Spell ends",
+      "outcome": "Elemental disappears",
+      "related_search_terms": [
+        "despawn",
+        "duration end",
+        "spell termination"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Summoned Elemental Interaction",
+      "condition": "Elementals are summoned",
+      "outcome": "Summoned creatures are friendly to the caster and companions",
+      "related_search_terms": [
+        "friendly NPC",
+        "allies",
+        "controlled creatures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Initiative Order",
+      "condition": "Elementals are summoned",
+      "outcome": "Roll initiative for the summoned creatures as a group; they have their own turns",
+      "related_search_terms": [
+        "group initiative",
+        "action economy",
+        "combat turn"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Elemental Control",
+      "condition": "Caster issues a verbal command",
+      "outcome": "Summoned creatures obey the command (no action required by caster)",
+      "related_search_terms": [
+        "commanding creatures",
+        "mind control",
+        "action free"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Elemental Control",
+      "condition": "Caster does NOT issue a command",
+      "outcome": "Summoned creatures defend themselves from hostile creatures but take no other actions",
+      "related_search_terms": [
+        "default behavior",
+        "self defense",
+        "passive action"
+      ]
+    }
+  ],
+  "description_text": "You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears: One elemental of challenge rating 2 or lower; Two elementals of challenge rating 1 or lower; Four elementals of challenge rating 1/2 or lower; Eight elementals of challenge rating 1/4 or lower. An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.",
+  "tags": [
+    "Summoning",
+    "Elemental",
+    "Conjuration",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "conjure creatures",
+    "summon spell",
+    "elemental allies",
+    "minion spell",
+    "utility spell"
+  ]
+}

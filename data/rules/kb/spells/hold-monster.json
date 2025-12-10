@@ -1,0 +1,57 @@
+{
+  "entity_name": "Hold Monster",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see AND reach AND target is NOT Undead",
+      "outcome": "Target makes a Wisdom Saving Throw. On a failed save, target becomes Paralyzed for the spell's duration.",
+      "related_search_terms": [
+        "paralysis",
+        "immobilize",
+        "stun",
+        "wisdom save",
+        "save or suck",
+        "control spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is an Undead creature",
+      "outcome": "Spell has no effect on the target.",
+      "related_search_terms": [
+        "undead immunity",
+        "spell immunity",
+        "creature type",
+        "resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of each round",
+      "condition": "Target is currently Paralyzed by Hold Monster",
+      "outcome": "Target makes a new Wisdom Saving Throw. On a successful save, the Paralyzed condition from this spell ends for the creature.",
+      "related_search_terms": [
+        "repeated save",
+        "break free",
+        "end condition",
+        "resist spell"
+      ]
+    }
+  ],
+  "description_text": "Choose a creature you can see and reach. The target must make a saving throw of Wisdom or be paralyzed for the duration of the spell. This spell has no effect against the undead. At the end of each round, the target can make a new saving throw of Wisdom. If successful, the spell ends for the creature.",
+  "tags": [
+    "Spell",
+    "Enchantment",
+    "Control"
+  ],
+  "related_search_terms": [
+    "Paralyze spell",
+    "Wisdom save",
+    "creature control",
+    "CC spell",
+    "hold person larger target"
+  ]
+}

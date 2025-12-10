@@ -1,0 +1,143 @@
+{
+  "entity_name": "Speak with Dead",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Successful spell casting",
+      "condition": "Target is a corpse of your choice within range AND has a mouth AND is not undead AND was not the target of this spell within the last 10 days",
+      "outcome": "Corpse gains semblance of life and intelligence for communication, allowing it to answer questions",
+      "related_search_terms": [
+        "animate dead",
+        "talk to ghosts",
+        "interrogate corpse",
+        "necromancy communication"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting a corpse",
+      "condition": "Corpse does NOT have a mouth",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "mutilated corpse",
+        "missing mouth",
+        "body condition"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting a corpse",
+      "condition": "Corpse is undead",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "zombie",
+        "skeleton",
+        "lich",
+        "undead target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting a corpse",
+      "condition": "Corpse was the target of 'Speak with Dead' within the last 10 days",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "cooldown",
+        "re-use limit",
+        "recent casting"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "During spell duration",
+      "condition": "Number of questions asked to the corpse exceeds five",
+      "outcome": "Corpse ceases to answer questions",
+      "related_search_terms": [
+        "question limit",
+        "interrogation duration",
+        "information cap"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Corpse answers a question",
+      "condition": "None",
+      "outcome": "Corpse knows only what it knew in life, including languages it knew",
+      "related_search_terms": [
+        "memory limit",
+        "past knowledge",
+        "intelligence scope"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Corpse answers a question",
+      "condition": "None",
+      "outcome": "Answers are usually brief, cryptic, or repetitive",
+      "related_search_terms": [
+        "vague responses",
+        "unclear information",
+        "DM discretion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Corpse answers a question",
+      "condition": "Caster is hostile to the corpse OR corpse recognizes caster as an enemy",
+      "outcome": "Corpse is not compelled to offer a truthful answer",
+      "related_search_terms": [
+        "lying corpse",
+        "deception",
+        "untruthful answers",
+        "enemy interaction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Corpse is asked about post-death events",
+      "condition": "None",
+      "outcome": "Corpse does not comprehend anything that has happened since it died",
+      "related_search_terms": [
+        "current events",
+        "recent history",
+        "postmortem knowledge"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Corpse is asked to speculate about the future",
+      "condition": "None",
+      "outcome": "Corpse cannot speculate about future events",
+      "related_search_terms": [
+        "prophecy",
+        "foretelling",
+        "future sight"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster attempts to impart new information to corpse",
+      "condition": "None",
+      "outcome": "Corpse cannot learn new information",
+      "related_search_terms": [
+        "teaching dead",
+        "impart knowledge"
+      ]
+    }
+  ],
+  "description_text": "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days. Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events.",
+  "tags": [
+    "divination",
+    "necromancy",
+    "utility",
+    "communication"
+  ],
+  "related_search_terms": [
+    "talk to dead",
+    "commune with dead",
+    "interrogate body",
+    "corpse communication",
+    "information gathering spell"
+  ]
+}

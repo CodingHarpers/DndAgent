@@ -1,0 +1,75 @@
+{
+  "entity_name": "Vicious Mockery",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster can see target AND Target can hear caster AND Target is within range",
+      "outcome": "Target must make a Wisdom saving throw",
+      "related_search_terms": [
+        "wisdom save",
+        "mental assault",
+        "verbal spell",
+        "hearing required",
+        "line of sight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Save Failed (Wisdom)",
+      "condition": "Target failed Wisdom saving throw",
+      "outcome": "Target takes 1d4 psychic damage",
+      "related_search_terms": [
+        "damage",
+        "psychic damage",
+        "mind attack",
+        "failed save damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Save Failed (Wisdom)",
+      "condition": "Target failed Wisdom saving throw",
+      "outcome": "Target has disadvantage on its next attack roll before the end of its next turn",
+      "related_search_terms": [
+        "debuff",
+        "attack disadvantage",
+        "hindrance",
+        "combat penalty",
+        "next turn effect"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Caster reaches specific levels",
+      "condition": "Caster is 5th, 11th, or 17th level",
+      "outcome": "Base damage of Vicious Mockery increases by 1d4 (to 2d4, 3d4, 4d4 respectively)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level progression",
+        "increased damage per level",
+        "damage increase"
+      ]
+    }
+  ],
+  "description_text": "You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn. This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).",
+  "tags": [
+    "cantrip",
+    "enchantment",
+    "damage",
+    "debuff",
+    "wisdom_save",
+    "psychic_damage",
+    "verbal",
+    "bard_spell"
+  ],
+  "related_search_terms": [
+    "bard spell",
+    "insults",
+    "mind attack",
+    "psychic cantrip",
+    "vicious mockery spell",
+    "attack debuff"
+  ]
+}

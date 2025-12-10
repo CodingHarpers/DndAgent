@@ -1,0 +1,129 @@
+{
+  "entity_name": "Tiefling",
+  "logic_type": "race_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character's base walking speed is 30 feet",
+      "related_search_terms": [
+        "movement",
+        "speed",
+        "walk",
+        "racial speed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Character is a Tiefling",
+      "outcome": "Increase Intelligence score by 1",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "racial bonus",
+        "intelligence"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Character Creation",
+      "condition": "Character is a Tiefling",
+      "outcome": "Increase Charisma score by 2",
+      "related_search_terms": [
+        "ability score increase",
+        "stat bonus",
+        "racial bonus",
+        "charisma"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character's size is Medium",
+      "related_search_terms": [
+        "size category",
+        "reach",
+        "carrying capacity",
+        "humanoid size"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character knows the Common language",
+      "related_search_terms": [
+        "speaking",
+        "reading",
+        "writing",
+        "communication",
+        "common tongue"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character knows the Infernal language",
+      "related_search_terms": [
+        "speaking",
+        "reading",
+        "writing",
+        "communication",
+        "devil language"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character gains the Darkvision trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "special sense",
+        "see in darkness"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character gains the Hellish Resistance trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "damage resistance",
+        "fire resistance"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Always",
+      "condition": "Character is a Tiefling",
+      "outcome": "Character gains the Infernal Legacy trait",
+      "related_search_terms": [
+        "racial feature",
+        "innate ability",
+        "spellcasting",
+        "racial spells"
+      ]
+    }
+  ],
+  "description_text": "Tieflings mature at the same rate as humans but live a few years longer. Tieflings are about the same size and build as humans. Your size is Medium. You can speak, read, and write Common and Infernal. Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.",
+  "tags": [
+    "race",
+    "playable character",
+    "humanoid"
+  ],
+  "related_search_terms": [
+    "tiefling traits",
+    "devilish lineage",
+    "racial features",
+    "half-devil",
+    "infernal"
+  ]
+}

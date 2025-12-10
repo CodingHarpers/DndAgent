@@ -1,0 +1,42 @@
+{
+  "entity_name": "Dispel Magic",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature, object, or magical effect within range AND Target has an active spell of 3rd level or lower on it",
+      "outcome": "That spell ends",
+      "related_search_terms": [
+        "remove low level magic",
+        "automatic dispel",
+        "end minor spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature, object, or magical effect within range AND Target has an active spell of 4th level or higher on it",
+      "outcome": "Caster makes an ability check using their spellcasting ability against a DC of 10 + the spell's level. On a successful check, that spell ends",
+      "related_search_terms": [
+        "dispel high level magic",
+        "spellcasting ability check",
+        "dispel check",
+        "end powerful spell"
+      ]
+    }
+  ],
+  "description_text": "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.",
+  "tags": [
+    "abjuration",
+    "spell"
+  ],
+  "related_search_terms": [
+    "remove magic",
+    "countermagic",
+    "end effect",
+    "cleanse magic",
+    "debuff",
+    "magic suppression"
+  ]
+}

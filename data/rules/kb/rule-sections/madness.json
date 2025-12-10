@@ -1,0 +1,400 @@
+[
+  {
+    "source_chapter": "Conditions - Madness",
+    "extracted_concepts": [
+      {
+        "concept_name": "Madness",
+        "definition": "A mental affliction that can affect a creature, typically as a result of experiencing profound stress, terror, or magical effects. It manifests in three forms: short-term, long-term, and indefinite.",
+        "rule_logic": {
+          "premise": "A creature is subjected to an effect that causes madness (e.g., failed save against a spell, exposure to Eldritch horror)",
+          "implication": "The creature gains a specific form of madness (short-term, long-term, or indefinite) with its associated effects and duration, as determined by the source of the madness.",
+          "exceptions": [
+            "Specific spells can suppress or cure certain forms of madness: 'calm emotions' suppresses, 'lesser restoration' removes short-term and some long-term, 'dispel evil and good' and 'remove curse' remove some forms, and 'greater restoration' removes all forms of madness."
+          ],
+          "description_text": "Madness is a condition that afflicts a creature's mind, often due to extraordinary stress, horror, or magical effects. It can be short-term, long-term, or indefinite, with specific effects and durations. Certain spells can remove or suppress madness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "insanity",
+            "mental affliction",
+            "horror effect",
+            "mind effect",
+            "sanity loss",
+            "madness duration",
+            "cure madness"
+          ]
+        },
+        "related_keywords": [
+          "Condition",
+          "Mental",
+          "Affliction",
+          "Save",
+          "Effect",
+          "Duration",
+          "Spell"
+        ]
+      },
+      {
+        "concept_name": "Short-Term Madness",
+        "definition": "A temporary mental affliction lasting 1d10 minutes, triggered by traumatic events or magical effects.",
+        "rule_logic": {
+          "premise": "A creature is afflicted with Short-Term Madness",
+          "implication": "The creature experiences a randomly determined mental disturbance (e.g., babbling incoherently, becoming frightened, suffering disadvantage on attack rolls) for 1d10 minutes. At the end of the duration, the creature returns to normal.",
+          "exceptions": [],
+          "description_text": "A fit of short-term madness lasts for 1d10 minutes. An affected creature is subject to one of the following effects, determined by rolling on a Short-Term Madness table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "temporary insanity",
+            "brief mental effect",
+            "madness 1d10 minutes",
+            "short term mental disorder"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Temporary",
+          "Duration",
+          "Effect"
+        ]
+      },
+      {
+        "concept_name": "Long-Term Madness",
+        "definition": "A prolonged mental affliction lasting 1d10 x 10 hours, often resulting from sustained exposure to stress or powerful magic.",
+        "rule_logic": {
+          "premise": "A creature is afflicted with Long-Term Madness",
+          "implication": "The creature experiences a randomly determined mental disturbance (e.g., paranoia, delusions, phobias) for 1d10 x 10 hours. During this time, the creature might suffer from various disadvantages or specific behaviors.",
+          "exceptions": [
+            "Some long-term madnesses can be removed by 'lesser restoration' or other specific spells, depending on their nature."
+          ],
+          "description_text": "A spell or effect that causes long-term madness might cause an affected creature to be subject to one of the following effects for 1d10 x 10 hours, determined by rolling on a Long-Term Madness table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "extended insanity",
+            "prolonged mental effect",
+            "madness 1d10x10 hours",
+            "long term mental disorder"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Long Duration",
+          "Effect",
+          "Condition"
+        ]
+      },
+      {
+        "concept_name": "Indefinite Madness",
+        "definition": "A permanent mental affliction that persists until cured, typically caused by profound trauma, ancient evils, or powerful curses.",
+        "rule_logic": {
+          "premise": "A creature is afflicted with Indefinite Madness",
+          "implication": "The creature develops a permanent mental disturbance (e.g., catatonia, uncontrollable compulsions, profound personality change) that lasts until cured by magical means (such as 'greater restoration').",
+          "exceptions": [
+            "This form of madness can only be cured by powerful magic like 'greater restoration'."
+          ],
+          "description_text": "A spell or effect that causes indefinite madness might cause an affected creature to be subject to one of the following effects until cured, determined by rolling on an Indefinite Madness table. This form of madness requires 'greater restoration' to cure.",
+          "is_exception": false,
+          "related_search_terms": [
+            "permanent insanity",
+            "uncureable mental effect",
+            "madness until cured",
+            "indefinite mental disorder"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Permanent",
+          "Cure",
+          "Effect",
+          "Condition"
+        ]
+      },
+      {
+        "concept_name": "Curing Madness",
+        "definition": "Methods by which various forms of madness can be suppressed or removed through magical means.",
+        "rule_logic": {
+          "premise": "A creature is suffering from madness",
+          "implication": "Depending on the type of madness: 'calm emotions' can suppress it, 'lesser restoration' can remove short-term and some long-term madness, 'dispel evil and good' or 'remove curse' can remove some forms, and 'greater restoration' can remove all forms of madness.",
+          "exceptions": [],
+          "description_text": "'Calm emotions' suppresses the effects of madness, 'lesser restoration' removes short-term and some forms of long-term madness, and 'dispel evil and good' or 'remove curse' might also be able to rid a character of madness. A 'greater restoration' spell rids a character of any form of madness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "remove madness",
+            "heal madness",
+            "madness spells",
+            "end insanity effect"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Cure",
+          "Spell",
+          "Restoration",
+          "Condition"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "madness"
+  },
+  {
+    "source_chapter": "Dungeon Master's Guide - Madness",
+    "extracted_concepts": [
+      {
+        "concept_name": "Madness (Optional Rule Introduction)",
+        "definition": "An optional thematic element used to represent the psychological stress and trauma experienced by adventurers in campaigns with a strong horror theme.",
+        "rule_logic": {
+          "premise": "DM desires to reinforce a strong horror theme OR emphasize extraordinarily horrific threats within the campaign",
+          "implication": "DM might introduce and use madness rules to affect player characters",
+          "exceptions": [],
+          "description_text": "In a typical campaign, characters aren't driven mad by the horrors they face and the carnage they inflict day after day, but sometimes the stress of being an adventurer can be too much to bear. If your campaign has a strong horror theme, you might want to use madness as a way to reinforce that theme, emphasizing the extraordinarily horrific nature of the threats the adventurers face.",
+          "is_exception": false,
+          "related_search_terms": [
+            "madness rules",
+            "horror campaign d&d",
+            "stress in d&d",
+            "optional rules for madness",
+            "when to use madness"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Optional Rule",
+          "Horror Theme",
+          "Stress",
+          "Psychological Effects",
+          "Campaign Variation"
+        ]
+      }
+    ],
+    "_chunk_header": "Madness",
+    "_source_file": "madness"
+  },
+  {
+    "source_chapter": "Going Mad",
+    "extracted_concepts": [
+      {
+        "concept_name": "Madness Infliction and Resistance",
+        "definition": "A state of mental instability imposed by specific game effects, which characters can typically resist.",
+        "rule_logic": {
+          "premise": "A character is exposed to a madness-inducing effect (e.g., magical effects, specific spells like contact other plane or symbol, diseases, poisons, planar effects, or artifacts).",
+          "implication": "The character becomes subject to madness. Resisting this effect typically requires a Wisdom or Charisma saving throw.",
+          "exceptions": [],
+          "description_text": "Various magical effects, spells, diseases, poisons, planar effects, and artifacts can inflict madness. When such an effect occurs, the character can usually attempt a Wisdom or Charisma saving throw to resist. The Dungeon Master has the option to use these general madness rules in place of specific spell effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how characters get madness",
+            "causes of insanity",
+            "resist madness effect",
+            "madness saving throws",
+            "contact other plane madness rules",
+            "symbol spell insanity"
+          ]
+        },
+        "related_keywords": [
+          "Madness",
+          "Insanity",
+          "Saving Throw",
+          "Wisdom",
+          "Charisma",
+          "Spells",
+          "Diseases",
+          "Poisons",
+          "Planar Effects",
+          "Artifacts"
+        ]
+      }
+    ],
+    "_chunk_header": "Going Mad",
+    "_source_file": "madness"
+  },
+  {
+    "source_chapter": "Madness Effects",
+    "extracted_concepts": [
+      {
+        "concept_name": "Short-Term Madness",
+        "definition": "A temporary state of mental instability that imposes an effect from a specific table, lasting for a few minutes.",
+        "rule_logic": {
+          "premise": "A character is afflicted with short-term madness (e.g., from relatively mundane effects)",
+          "implication": "The character is subjected to an effect from the Short-Term Madness table for 1d10 minutes",
+          "exceptions": [],
+          "description_text": "A character afflicted with short-term madness is subjected to an effect from the Short-Term Madness table for 1d10 minutes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "short madness duration",
+            "short term madness effects",
+            "mundane madness",
+            "madness duration"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "condition",
+          "short",
+          "mental state",
+          "duration"
+        ]
+      },
+      {
+        "concept_name": "Long-Term Madness",
+        "definition": "A prolonged state of mental instability that imposes an effect from a specific table, lasting for several hours.",
+        "rule_logic": {
+          "premise": "A character is afflicted with long-term madness (e.g., from horrific or cumulative effects)",
+          "implication": "The character is subjected to an effect from the Long-Term Madness table for 1d10 × 10 hours",
+          "exceptions": [],
+          "description_text": "A character afflicted with long-term madness is subjected to an effect from the Long-Term Madness table for 1d10 × 10 hours.",
+          "is_exception": false,
+          "related_search_terms": [
+            "long madness duration",
+            "long term madness effects",
+            "horrific madness",
+            "cumulative madness",
+            "madness duration"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "condition",
+          "long",
+          "mental state",
+          "duration"
+        ]
+      },
+      {
+        "concept_name": "Indefinite Madness",
+        "definition": "A persistent state of mental instability that grants a new character flaw until cured.",
+        "rule_logic": {
+          "premise": "A character is afflicted with indefinite madness (e.g., from horrific or cumulative effects)",
+          "implication": "The character gains a new character flaw from the Indefinite Madness table that lasts until cured",
+          "exceptions": [],
+          "description_text": "A character afflicted with indefinite madness gains a new character flaw from the Indefinite Madness table that lasts until cured.",
+          "is_exception": false,
+          "related_search_terms": [
+            "indefinite madness flaw",
+            "how to cure madness",
+            "permanent madness effects",
+            "madness duration",
+            "character flaw"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "condition",
+          "indefinite",
+          "mental state",
+          "flaw",
+          "permanent"
+        ]
+      }
+    ],
+    "_chunk_header": "Madness Effects",
+    "_source_file": "madness"
+  },
+  {
+    "source_chapter": "Madness Rules - Curing Madness",
+    "extracted_concepts": [
+      {
+        "concept_name": "Suppressing Madness",
+        "definition": "Temporarily halting the effects of any madness.",
+        "rule_logic": {
+          "premise": "A creature is afflicted by any form of madness AND a 'calm emotions' spell is cast on it",
+          "implication": "The effects of the madness are suppressed",
+          "exceptions": [],
+          "description_text": "A *calm emotions* spell can suppress the effects of madness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "calm emotions madness",
+            "stop madness effects",
+            "temporary madness cure",
+            "madness suppression"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "calm emotions",
+          "spell",
+          "suppress"
+        ]
+      },
+      {
+        "concept_name": "Curing Short-Term or Long-Term Madness",
+        "definition": "Permanently removing the condition of short-term or long-term madness.",
+        "rule_logic": {
+          "premise": "A creature is afflicted by short-term madness OR long-term madness AND a 'lesser restoration' spell is cast on it",
+          "implication": "The creature is rid of the short-term OR long-term madness",
+          "exceptions": [],
+          "description_text": "A *lesser restoration* spell can rid a character of a short-term or long-term madness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "lesser restoration madness",
+            "cure short term madness",
+            "cure long term madness",
+            "remove madness condition"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "lesser restoration",
+          "spell",
+          "cure",
+          "short-term madness",
+          "long-term madness"
+        ]
+      },
+      {
+        "concept_name": "Curing Source-Dependent Madness",
+        "definition": "Potentially removing madness when its origin is specifically a curse or an evil influence.",
+        "rule_logic": {
+          "premise": "A creature is afflicted by madness AND the madness's source is a curse OR an evil influence AND a 'remove curse' OR 'dispel evil' spell is cast on it",
+          "implication": "The spell might prove effective in ridding the creature of the madness",
+          "exceptions": [],
+          "description_text": "Depending on the source of the madness, *remove curse* or *dispel evil* might also prove effective.",
+          "is_exception": false,
+          "related_search_terms": [
+            "remove curse madness",
+            "dispel evil madness",
+            "madness from curse",
+            "madness from evil source",
+            "source of madness cure"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "remove curse",
+          "dispel evil",
+          "spell",
+          "cure",
+          "curse",
+          "evil influence",
+          "source"
+        ]
+      },
+      {
+        "concept_name": "Curing Indefinite Madness",
+        "definition": "Permanently removing the condition of indefinite madness.",
+        "rule_logic": {
+          "premise": "A creature is afflicted by indefinite madness AND a 'greater restoration' spell OR more powerful magic is used on it",
+          "implication": "The creature is rid of the indefinite madness",
+          "exceptions": [],
+          "description_text": "A *greater restoration* spell or more powerful magic is required to rid a character of indefinite madness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "greater restoration madness",
+            "cure indefinite madness",
+            "powerful magic madness",
+            "remove indefinite madness",
+            "permanent madness cure"
+          ]
+        },
+        "related_keywords": [
+          "madness",
+          "greater restoration",
+          "spell",
+          "cure",
+          "indefinite madness",
+          "powerful magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Curing Madness",
+    "_source_file": "madness"
+  }
+]

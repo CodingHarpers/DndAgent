@@ -1,0 +1,160 @@
+{
+  "entity_name": "Dream",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Targeting the Dream spell",
+      "condition": "Target is known to caster AND Target is on the same plane of existence as caster AND Target sleeps (e.g., not an elf, construct, or undead)",
+      "outcome": "Target is valid for the spell",
+      "related_search_terms": [
+        "known creature",
+        "same plane",
+        "creatures that don't sleep",
+        "elves",
+        "undead",
+        "constructs",
+        "targeting requirements"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On casting the Dream spell",
+      "condition": "Caster OR a willing creature touched by caster",
+      "outcome": "Chosen creature enters a trance state, acting as the messenger for the spell",
+      "related_search_terms": [
+        "trance state",
+        "messenger",
+        "willing participant"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "While in trance as the messenger for Dream spell",
+      "condition": "Messenger is in trance state",
+      "outcome": "Messenger is aware of surroundings BUT cannot take actions OR move",
+      "related_search_terms": [
+        "immobilized",
+        "helpless",
+        "aware",
+        "dream state limitations"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While messenger is in trance AND target is asleep",
+      "condition": "Target creature is asleep",
+      "outcome": "Messenger appears in target's dreams, can converse with target, and can shape the dream environment (landscapes, objects, images) through the spell's duration",
+      "related_search_terms": [
+        "dream communication",
+        "dream manipulation",
+        "conversing in dreams",
+        "shaping dreams"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "At any time while messenger is in trance",
+      "condition": "Messenger chooses to emerge from trance",
+      "outcome": "Messenger emerges from trance, ending the Dream spell effect early",
+      "related_search_terms": [
+        "cancel spell",
+        "early termination",
+        "waking up"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Upon waking after being affected by Dream spell",
+      "condition": "Target was affected by Dream spell",
+      "outcome": "Target perfectly recalls the dream",
+      "related_search_terms": [
+        "memory",
+        "remember dream",
+        "conscious recall"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is awake when Dream spell is cast",
+      "condition": "Target is awake when spell is cast",
+      "outcome": "Messenger is aware target is awake AND Messenger can choose to end trance (ending spell) OR Messenger can wait for target to fall asleep (and then appear in dreams)",
+      "related_search_terms": [
+        "awake target",
+        "waiting for sleep",
+        "delayed effect",
+        "non-asleep target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During Dream spell interaction with an asleep target",
+      "condition": "Caster chooses to make messenger appear monstrous and terrifying AND Caster delivers a message of no more than ten words",
+      "outcome": "Target must make a Wisdom saving throw",
+      "related_search_terms": [
+        "nightmare message",
+        "terrifying dream",
+        "scary messenger",
+        "short message"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom saving throw against Nightmare option",
+      "condition": "Target fails Wisdom saving throw",
+      "outcome": "Target gains no benefit from the rest during which the nightmare lasts",
+      "related_search_terms": [
+        "no long rest benefits",
+        "exhaustion",
+        "bad sleep",
+        "unrested",
+        "nightmare consequence"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom saving throw against Nightmare option AND Target wakes up",
+      "condition": "Target fails Wisdom saving throw AND Target wakes up",
+      "outcome": "Target takes 3d6 psychic damage",
+      "related_search_terms": [
+        "psychic damage",
+        "dream damage",
+        "mental assault",
+        "nightmare damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom saving throw against Nightmare option",
+      "condition": "Caster possesses a body part, lock of hair, clipping from a nail, or similar portion of the target's body",
+      "outcome": "Target makes the saving throw with disadvantage",
+      "related_search_terms": [
+        "component disadvantage",
+        "voodoo doll",
+        "sympathetic magic",
+        "personal effect",
+        "saving throw penalty"
+      ]
+    }
+  ],
+  "description_text": "This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move. If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams. You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage. If you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage.",
+  "tags": [
+    "divination",
+    "enchantment",
+    "communication",
+    "sleep",
+    "psychic damage",
+    "long rest prevention",
+    "dream",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "dream spell",
+    "commune dream",
+    "nightmare",
+    "mind affecting spell",
+    "sleep manipulation",
+    "dream walking",
+    "mental attack"
+  ]
+}

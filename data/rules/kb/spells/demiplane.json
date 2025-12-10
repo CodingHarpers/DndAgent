@@ -1,0 +1,88 @@
+{
+  "entity_name": "Demiplane",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target a flat solid surface within range",
+      "outcome": "A shadowy door is created on the surface; The door is large enough for Medium creatures to pass unhindered",
+      "related_search_terms": [
+        "door creation",
+        "portal",
+        "planar gate",
+        "access point"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Door is opened (new demiplane)",
+      "condition": "Caster chooses to create a new demiplane",
+      "outcome": "The door leads to an empty 30-foot cube demiplane; The demiplane's walls appear to be wood or stone",
+      "related_search_terms": [
+        "pocket dimension",
+        "planar space",
+        "extra-dimensional",
+        "storage dimension",
+        "new plane"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster has previously created a demiplane with this spell",
+      "outcome": "Caster can choose to connect the shadowy door to an owned previously created demiplane",
+      "related_search_terms": [
+        "reusing demiplane",
+        "multiple demiplanes",
+        "persistent storage",
+        "connecting to demiplane",
+        "existing plane"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster knows the nature and contents of a demiplane created by another creature's Demiplane spell",
+      "outcome": "Caster can choose to connect the shadowy door to that other creature's demiplane",
+      "related_search_terms": [
+        "invading demiplane",
+        "shared demiplane",
+        "spying",
+        "accessing other's storage",
+        "foreign plane"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell ends",
+      "condition": "Any creatures or objects are inside the demiplane",
+      "outcome": "The shadowy door disappears (both sides); Creatures and objects inside the demiplane become trapped there",
+      "related_search_terms": [
+        "trapping",
+        "imprisonment",
+        "spell duration",
+        "demiplane exit",
+        "getting stuck",
+        "disappearing door"
+      ]
+    }
+  ],
+  "description_text": "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side. Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead.",
+  "tags": [
+    "teleportation",
+    "conjuration",
+    "utility",
+    "plane shifting",
+    "storage",
+    "trap"
+  ],
+  "related_search_terms": [
+    "pocket dimension",
+    "extra-dimensional space",
+    "portal",
+    "planar travel",
+    "secure storage",
+    "interplanar travel"
+  ]
+}

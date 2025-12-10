@@ -1,0 +1,104 @@
+{
+  "entity_name": "Acid Splash",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On casting Acid Splash",
+      "condition": "One creature is within range",
+      "outcome": "Can target one creature",
+      "related_search_terms": [
+        "single target",
+        "targeting spell",
+        "creature target"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On casting Acid Splash",
+      "condition": "Two creatures are within range AND within 5 feet of each other",
+      "outcome": "Can target two creatures",
+      "related_search_terms": [
+        "multiple targets",
+        "aoe targeting",
+        "adjacent enemies",
+        "splash effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature is targeted by Acid Splash",
+      "condition": "Target fails a Dexterity saving throw",
+      "outcome": "Target takes 1d6 acid damage",
+      "related_search_terms": [
+        "dex save fail",
+        "acid damage",
+        "spell damage",
+        "on fail",
+        "cantrip damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A creature is targeted by Acid Splash",
+      "condition": "Target succeeds on a Dexterity saving throw",
+      "outcome": "Target takes 0 damage",
+      "related_search_terms": [
+        "dex save success",
+        "no damage",
+        "on success",
+        "evade spell"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Caster's character level increases",
+      "condition": "Caster's character level is 5th",
+      "outcome": "Acid Splash damage increases to 2d6 acid damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 5 damage",
+        "damage increase",
+        "spell progression"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Caster's character level increases",
+      "condition": "Caster's character level is 11th",
+      "outcome": "Acid Splash damage increases to 3d6 acid damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 11 damage",
+        "damage increase",
+        "spell progression"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Caster's character level increases",
+      "condition": "Caster's character level is 17th",
+      "outcome": "Acid Splash damage increases to 4d6 acid damage",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 17 damage",
+        "damage increase",
+        "spell progression"
+      ]
+    }
+  ],
+  "description_text": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 acid damage. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+  "tags": [
+    "cantrip",
+    "acid",
+    "damage",
+    "evocation"
+  ],
+  "related_search_terms": [
+    "acid spell",
+    "cantrip",
+    "damage spell",
+    "dexterity save spell",
+    "AoE cantrip",
+    "splash damage"
+  ]
+}

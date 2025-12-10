@@ -1,0 +1,66 @@
+{
+  "entity_name": "Antilife Shell",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "None",
+      "outcome": "A 10-foot radius barrier extends from and moves with the caster, centered on them, for the spell's duration",
+      "related_search_terms": [
+        "mobile protection",
+        "aura",
+        "personal shield",
+        "area effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature attempts to pass or reach through the barrier",
+      "condition": "Creature is NOT an Undead AND Creature is NOT a Construct",
+      "outcome": "Creature is prevented from passing or reaching through the barrier",
+      "related_search_terms": [
+        "force field",
+        "repulsion",
+        "blocking movement",
+        "area denial"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Affected creature attempts to attack or cast spell through barrier",
+      "condition": "Creature is NOT an Undead AND Creature is NOT a Construct AND Creature uses a ranged attack, reach weapon, or spell",
+      "outcome": "Creature can cast spells or make attacks with ranged/reach weapons through the barrier",
+      "related_search_terms": [
+        "projectile passage",
+        "spell casting through barrier",
+        "ranged attacks allowed"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster moves",
+      "condition": "Caster's movement forces a creature (that is NOT Undead and NOT Construct) to pass through the barrier",
+      "outcome": "Antilife Shell spell immediately ends",
+      "related_search_terms": [
+        "spell cancellation",
+        "forced movement",
+        "breaking concentration"
+      ]
+    }
+  ],
+  "description_text": "A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration. The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier. If you move so that an affected creature is forced to pass through the barrier, the spell ends.",
+  "tags": [
+    "spell",
+    "abjuration",
+    "barrier",
+    "protection",
+    "control"
+  ],
+  "related_search_terms": [
+    "protective spell",
+    "anti-creature field",
+    "personal shield",
+    "no-entry zone"
+  ]
+}

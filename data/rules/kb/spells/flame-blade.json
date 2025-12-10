@@ -1,0 +1,89 @@
+{
+  "entity_name": "Flame Blade",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On casting Flame Blade",
+      "condition": "Caster has a free hand",
+      "outcome": "A fiery blade appears in the caster's free hand, persists for the spell's duration",
+      "related_search_terms": [
+        "summon weapon",
+        "conjure weapon",
+        "magic weapon",
+        "evocation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fiery blade is let go",
+      "condition": "N/A",
+      "outcome": "Fiery blade disappears",
+      "related_search_terms": [
+        "drop weapon",
+        "dispel blade"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Fiery blade has disappeared",
+      "condition": "Caster has a free hand",
+      "outcome": "Caster can evoke the blade again as a bonus action",
+      "related_search_terms": [
+        "re-summon weapon",
+        "re-conjure blade",
+        "bonus action spell",
+        "re-create weapon"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action",
+      "condition": "Caster chooses to make a melee spell attack with the fiery blade",
+      "outcome": "Caster makes a melee spell attack roll",
+      "related_search_terms": [
+        "melee attack",
+        "spell attack",
+        "attack action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee spell attack with fiery blade hits",
+      "condition": "N/A",
+      "outcome": "Target takes 3d6 fire damage",
+      "related_search_terms": [
+        "fire damage",
+        "spell damage",
+        "combat damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fiery blade is present",
+      "condition": "N/A",
+      "outcome": "Fiery blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet",
+      "related_search_terms": [
+        "illumination",
+        "light source",
+        "darkness",
+        "visibility"
+      ]
+    }
+  ],
+  "description_text": "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage.The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+  "tags": [
+    "spell",
+    "evocation",
+    "fire",
+    "combat",
+    "druid"
+  ],
+  "related_search_terms": [
+    "fire spell",
+    "melee spell",
+    "druid spell",
+    "magical weapon",
+    "burning weapon"
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "entity_name": "Imprisonment",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature visible within range",
+      "outcome": "Target must succeed on a Wisdom saving throw or be bound by the spell",
+      "related_search_terms": [
+        "wisdom save",
+        "save or suck",
+        "binding spell",
+        "resistance"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Wisdom Saving Throw against Imprisonment",
+      "condition": "Target succeeds on the saving throw",
+      "outcome": "Target becomes immune to this spell if the same caster casts it again",
+      "related_search_terms": [
+        "spell immunity",
+        "repeated casting",
+        "failed attempt"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is affected by Imprisonment",
+      "condition": "N/A",
+      "outcome": "Target does not need to breathe, eat, or drink",
+      "related_search_terms": [
+        "sustenance",
+        "survival",
+        "stasis"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is affected by Imprisonment",
+      "condition": "N/A",
+      "outcome": "Target does not age",
+      "related_search_terms": [
+        "immortality",
+        "eternal",
+        "stasis"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to locate or perceive target via Divination magic",
+      "condition": "Target is affected by Imprisonment",
+      "outcome": "Divination spells cannot locate or perceive the target",
+      "related_search_terms": [
+        "scrying block",
+        "anti-detection",
+        "hidden",
+        "unlocatable"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Burial) is cast and succeeds",
+      "condition": "N/A",
+      "outcome": "Target is entombed far beneath the earth in a sphere of magical force",
+      "related_search_terms": [
+        "buried alive",
+        "force cage",
+        "magical prison"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Interaction with Burial sphere",
+      "condition": "N/A",
+      "outcome": "Nothing can pass through the magical force sphere",
+      "related_search_terms": [
+        "impenetrable",
+        "barrier",
+        "forcefield"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to teleport or use planar travel into or out of Burial sphere",
+      "condition": "N/A",
+      "outcome": "Cannot teleport or use planar travel into or out of the sphere",
+      "related_search_terms": [
+        "anti-teleport",
+        "planar lock",
+        "magical barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Chaining) is cast and succeeds",
+      "condition": "N/A",
+      "outcome": "Target is restrained until the spell ends",
+      "related_search_terms": [
+        "bound",
+        "grappled",
+        "immobilized"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to move target",
+      "condition": "Target is affected by Imprisonment (Chaining)",
+      "outcome": "Target cannot move or be moved by any means",
+      "related_search_terms": [
+        "immobile",
+        "anchored",
+        "rooted"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Hedged Prison) is cast and succeeds",
+      "condition": "N/A",
+      "outcome": "Target is transported into a tiny demiplane (e.g., labyrinth, cage, tower)",
+      "related_search_terms": [
+        "pocket dimension",
+        "extra-dimensional prison",
+        "banishment"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to teleport or use planar travel into or out of Hedged Prison demiplane",
+      "condition": "Target is in Hedged Prison demiplane",
+      "outcome": "Demiplane is warded against teleportation and planar travel",
+      "related_search_terms": [
+        "anti-teleport",
+        "planar lock",
+        "dimension ward"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Minimus Containment) is cast and succeeds",
+      "condition": "N/A",
+      "outcome": "Target shrinks to a height of 1 inch",
+      "related_search_terms": [
+        "reduce",
+        "tiny",
+        "miniature"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Minimus Containment) is cast and succeeds",
+      "condition": "Target has shrunk",
+      "outcome": "Target is imprisoned inside a gemstone or similar object",
+      "related_search_terms": [
+        "bottled",
+        "gem prison",
+        "sealed"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Interaction with gemstone (Minimus Containment)",
+      "condition": "N/A",
+      "outcome": "Nothing (except light) can pass through the gemstone",
+      "related_search_terms": [
+        "sealed barrier",
+        "impenetrable",
+        "solid prison"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to cut or break gemstone (Minimus Containment)",
+      "condition": "Spell remains in effect",
+      "outcome": "Gemstone cannot be cut or broken",
+      "related_search_terms": [
+        "unbreakable",
+        "durable",
+        "magically reinforced"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to teleport or use planar travel into or out of gemstone (Minimus Containment)",
+      "condition": "N/A",
+      "outcome": "Cannot teleport or use planar travel into or out of the gemstone",
+      "related_search_terms": [
+        "anti-teleport",
+        "planar lock",
+        "magical barrier"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment (Slumber) is cast and succeeds",
+      "condition": "N/A",
+      "outcome": "Target falls asleep and cannot be awoken",
+      "related_search_terms": [
+        "eternal sleep",
+        "coma",
+        "unconscious"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Specified condition is met",
+      "condition": "Condition was specified during casting (GM-approved: reasonable, observable, not based on intangibles)",
+      "outcome": "Imprisonment spell ends and target is released",
+      "related_search_terms": [
+        "release condition",
+        "breaking spell",
+        "freedom"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Dispel Magic cast on Imprisonment",
+      "condition": "Dispel Magic is cast as a 9th-level spell AND targets the prison or special component",
+      "outcome": "Imprisonment spell ends",
+      "related_search_terms": [
+        "counterspell",
+        "remove magic",
+        "high-level dispel"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Imprisonment cast using a special component that is already being used for another Imprisonment spell",
+      "condition": "N/A",
+      "outcome": "The target of the first casting is immediately freed",
+      "related_search_terms": [
+        "spell overlap",
+        "component conflict",
+        "recast"
+      ]
+    }
+  ],
+  "description_text": "You create a magical restraint to hold a creature that you can see within range. The target must succeed on a wisdom saving throw or be bound by the spell; if it succeeds, it is immune to this spell if you cast it again. While affected by this spell, the creature doesn't need to breathe, eat, or drink, and it doesn't age. Divination spells can't locate or perceive the target.When you cast the spell, you choose one of the following forms of imprisonment.***Burial.*** The target is entombed far beneath the earth in a sphere of magical force that is just large enough to contain the target. Nothing can pass through the sphere, nor can any creature teleport or use planar travel to get into or out of it.The special component for this version of the spell is a small mithral orb.***Chaining.*** Heavy chains, firmly rooted in the ground, hold the target in place. The target is restrained until the spell ends, and it can't move or be moved by any means until then.The special component for this version of the spell is a fine chain of precious metal.***Hedged Prison.*** The spell transports the target into a tiny demiplane that is warded against teleportation and planar travel. The demiplane can be a labyrinth, a cage, a tower, or any similar confined structure or area of your choice.The special component for this version of the spell is a miniature representation of the prison made from jade.***Minimus Containment.*** The target shrinks to a height of 1 inch and is imprisoned inside a gemstone or similar object. Light can pass through the gemstone normally (allowing the target to see out and other creatures to see in), but nothing else can pass through, even by means of teleportation or planar travel. The gemstone can't be cut or broken while the spell remains in effect.The special component for this version of the spell is a large, transparent gemstone, such as a corundum, diamond, or ruby.***Slumber.*** The target falls asleep and can't be awoken.The special component for this version of the spell consists of rare soporific herbs.***Ending the Spell.*** During the casting of the spell, in any of its versions, you can specify a condition that will cause the spell to end and release the target. The condition can be as specific or as elaborate as you choose, but the GM must agree that the condition is reasonable and has a likelihood of coming to pass. The conditions can be based on a creature's name, identity, or deity but otherwise must be based on observable actions or qualities and not based on intangibles such as level, class, or hit points.A dispel magic spell can end the spell only if it is cast as a 9th-level spell, targeting either the prison or the special component used to create it.You can use a particular special component to create only one prison at a time. If you cast the spell again using the same component, the target of the first casting is immediately freed from its binding.",
+  "tags": [
+    "Abjuration",
+    "9th-level",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "imprison",
+    "trap",
+    "restrain",
+    "seal",
+    "contain",
+    "eternal sleep",
+    "demiplane",
+    "burial",
+    "chaining",
+    "hedged prison",
+    "minimus containment",
+    "slumber",
+    "magical restraint"
+  ]
+}

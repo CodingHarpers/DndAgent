@@ -1,0 +1,79 @@
+{
+  "entity_name": "Instant Summons",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is object, weighs 10 pounds or less, and longest dimension is 6 feet or less",
+      "outcome": "Target object receives an invisible mark on its surface; Object's name is invisibly inscribed on the sapphire material component",
+      "related_search_terms": [
+        "mark item",
+        "enchant object",
+        "preparation ritual"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Each time this spell is cast",
+      "outcome": "A different sapphire material component is consumed",
+      "related_search_terms": [
+        "material cost",
+        "consumed component",
+        "one-time use component"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On using an Action (speak item's name and crush sapphire)",
+      "condition": "No other creature is holding or carrying the marked item",
+      "outcome": "The marked item instantly appears in your hand, regardless of physical or planar distances; The spell ends",
+      "related_search_terms": [
+        "teleport item",
+        "retrieve item",
+        "summon object",
+        "remote retrieval",
+        "any distance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On using an Action (speak item's name and crush sapphire)",
+      "condition": "Another creature is holding or carrying the marked item",
+      "outcome": "The marked item does NOT transport to your hand; You learn the identity of the creature possessing the object; You learn the rough location of that creature at that moment",
+      "related_search_terms": [
+        "locate item",
+        "track item",
+        "identify thief",
+        "scrying",
+        "object tracking"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dispel Magic or similar effect successfully applied",
+      "condition": "Target of Dispel Magic is the sapphire",
+      "outcome": "Instant Summons spell effect ends",
+      "related_search_terms": [
+        "counterspell",
+        "remove magic",
+        "anti-magic"
+      ]
+    }
+  ],
+  "description_text": "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this spell, you must use a different sapphire.At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.Dispel magic or a similar effect successfully applied to the sapphire ends this spell's effect.",
+  "tags": [
+    "conjuration",
+    "utility",
+    "item retrieval",
+    "tracking"
+  ],
+  "related_search_terms": [
+    "summon item",
+    "item teleportation",
+    "portable hole alternative",
+    "magic item storage",
+    "remote access"
+  ]
+}

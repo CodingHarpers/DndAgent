@@ -1,0 +1,35 @@
+{
+  "entity_name": "Fighting Style: Defense",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Always Active",
+      "condition": "Player character is wearing armor",
+      "outcome": "Player character gains +1 bonus to AC",
+      "related_search_terms": [
+        "AC bonus",
+        "armor class",
+        "defense bonus",
+        "tanking",
+        "durability",
+        "armored combat",
+        "wearing armor"
+      ]
+    }
+  ],
+  "description_text": "While you are wearing armor, you gain a +1 bonus to AC.",
+  "tags": [
+    "fighting style",
+    "feature",
+    "defense",
+    "armor"
+  ],
+  "related_search_terms": [
+    "AC boost",
+    "armor bonus",
+    "tank build",
+    "durability",
+    "defense fighting style"
+  ]
+}

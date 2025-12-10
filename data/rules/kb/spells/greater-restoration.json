@@ -1,0 +1,99 @@
+{
+  "entity_name": "Greater Restoration",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target has at least one level of exhaustion",
+      "outcome": "Target's exhaustion level is reduced by one",
+      "related_search_terms": [
+        "remove exhaustion",
+        "fatigue",
+        "tired",
+        "cure exhaustion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target is charmed",
+      "outcome": "One effect causing the charmed condition on the target ends",
+      "related_search_terms": [
+        "remove charm",
+        "cure charm",
+        "un-charm"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target is petrified",
+      "outcome": "One effect causing the petrified condition on the target ends",
+      "related_search_terms": [
+        "cure petrification",
+        "remove stone",
+        "reverse petrify"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target is affected by a curse OR Target is attuned to a cursed magic item",
+      "outcome": "One curse affecting the target ends OR Target's attunement to one cursed magic item ends",
+      "related_search_terms": [
+        "remove curse",
+        "break attunement",
+        "cursed item removal",
+        "hex"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target has an effect reducing at least one of its ability scores",
+      "outcome": "All effects causing reduction to one chosen ability score of the target end",
+      "related_search_terms": [
+        "restore ability score",
+        "end stat drain",
+        "cure ability damage",
+        "strength drain",
+        "dexterity drain",
+        "constitution drain",
+        "intelligence drain",
+        "wisdom drain",
+        "charisma drain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Greater Restoration spell cast",
+      "condition": "Target has an effect reducing its hit point maximum",
+      "outcome": "One effect reducing the target's hit point maximum ends",
+      "related_search_terms": [
+        "restore hp max",
+        "cure max hp reduction",
+        "heal max hp loss",
+        "life drain cure"
+      ]
+    }
+  ],
+  "description_text": "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target: One effect that charmed or petrified the target, One curse, including the target's attunement to a cursed magic item, Any reduction to one of the target's ability scores, One effect reducing the target's hit point maximum",
+  "tags": [
+    "spell",
+    "restoration",
+    "healing",
+    "utility",
+    "5e",
+    "cleric spell",
+    "druid spell",
+    "bard spell"
+  ],
+  "related_search_terms": [
+    "cure disease",
+    "condition removal",
+    "dispel magic",
+    "debuff removal",
+    "healing spell"
+  ]
+}

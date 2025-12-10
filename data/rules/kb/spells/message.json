@@ -1,0 +1,65 @@
+{
+  "entity_name": "Message",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting Message spell",
+      "condition": "Target is a creature within range",
+      "outcome": "Only the target hears the message, and only the caster hears the target's whispered reply",
+      "related_search_terms": [
+        "secret communication",
+        "private message",
+        "whisper spell",
+        "covert message"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Casting Message spell through a barrier",
+      "condition": "Caster is familiar with the target AND Caster knows the target is beyond the barrier",
+      "outcome": "The spell can be cast through solid objects",
+      "related_search_terms": [
+        "line of sight ignored",
+        "casting through walls",
+        "bypassing obstacles"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Message spell path encounters a barrier",
+      "condition": "Barrier is magical silence OR 1 foot of stone OR 1 inch of common metal OR a thin sheet of lead OR 3 feet of wood",
+      "outcome": "The spell is blocked",
+      "related_search_terms": [
+        "spell impedance",
+        "anti-magic",
+        "blocking communication"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Message spell",
+      "condition": "N/A",
+      "outcome": "The spell path does not have to follow a straight line AND can travel freely around corners or through openings",
+      "related_search_terms": [
+        "indirect spell",
+        "line of effect",
+        "bends around corners"
+      ]
+    }
+  ],
+  "description_text": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.",
+  "tags": [
+    "cantrip",
+    "communication",
+    "utility",
+    "divination"
+  ],
+  "related_search_terms": [
+    "telepathy",
+    "whisper",
+    "communication spell",
+    "covert message",
+    "secret talk"
+  ]
+}

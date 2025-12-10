@@ -1,28 +1,34 @@
-from typing import List, Dict, Any, Type
-import google.generativeai as genai
+from typing import List, Dict, Any, Type, Optional
+from google import genai
+from google.genai import types
+from google.genai.types import HttpOptions
 from app.config import settings
 import json
+import traceback
+import dotenv
+import os
+
+dotenv.load_dotenv()
 
 class GenerationClient:
     def __init__(self):
-        genai.configure(api_key=settings.GEMINI_API_KEY)
-        self.model = genai.GenerativeModel(settings.LLM_MODEL_NAME)
+        # Configure the client as requested (relying on env vars or default creds)
+        self.client = genai.Client(
+            http_options=HttpOptions(api_version="v1")
+        )
+        self.model_name = settings.LLM_MODEL_NAME
 
     def generate_text(self, system_prompt: str, user_prompt: str, temperature: float = 0.7) -> str:
         try:
-            # Gemini Pattern: "System Prompt" as first User message
-            messages = [
-                {"role": "user", "parts": [{"text": system_prompt}]},
-                {"role": "user", "parts": [{"text": user_prompt}]}
-            ]
-            
-            response = self.model.generate_content(
-                messages,
-                generation_config=genai.types.GenerationConfig(
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=user_prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=system_prompt,
                     temperature=temperature
                 )
             )
-            return response.text
+            return response.text or ""
         except Exception as e:
             print(f"LLM Text Error: {e}")
             return "Thinking... (Error in AI generation)"
@@ -31,28 +37,27 @@ class GenerationClient:
         # Create schema definition
         schema_json = json.dumps(response_model.model_json_schema())
         
-        # Construct messages following the "System as User" pattern
-        # Explicitly instruct JSON output in the prompt logic as well
+        # Construct system instruction
         system_instruction = (
             f"{system_prompt}\n\n"
             f"You MUST output valid JSON only, matching this schema:\n{schema_json}"
         )
         
-        messages = [
-            {"role": "user", "parts": [{"text": system_instruction}]},
-            {"role": "user", "parts": [{"text": user_prompt}]}
-        ]
-
         try:
-            response = self.model.generate_content(
-                messages,
-                generation_config=genai.types.GenerationConfig(
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=user_prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=system_instruction,
                     response_mime_type="application/json",
                     temperature=0.2 # Lower temperature for structural stability
                 )
             )
             
             text = response.text
+            if not text:
+                return None
+            
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0]
             elif "```" in text:
@@ -64,13 +69,18 @@ class GenerationClient:
             print("Falling back to standard generation...")
             
             # Fallback: Retry with simple text generation if structured mode fails
-            # Sometimes models or old keys struggle with JSON mode
             try:
-                fallback_messages = [
-                    {"role": "user", "parts": [{"text": f"{system_instruction}\n\nUser Input: {user_prompt}"}]}
-                ]
-                response = self.model.generate_content(fallback_messages)
+                # For fallback, we just append user prompt to system instruction as a simple content
+                fallback_prompt = f"{system_instruction}\n\nUser Input: {user_prompt}"
+                
+                response = self.client.models.generate_content(
+                    model=self.model_name,
+                    contents=fallback_prompt
+                )
                 text = response.text
+                if not text:
+                    return None
+                
                 if "```json" in text:
                     text = text.split("```json")[1].split("```")[0]
                 elif "```" in text:
@@ -81,38 +91,26 @@ class GenerationClient:
                 return None
 
     
-    def generate_with_tools(self, system_prompt: str, user_prompt: str, tools: List[Dict]) -> Any:
+    def generate_with_tools(self, system_prompt: str, user_prompt: str, tools: List[Any]) -> Any:
         """
         Generates content using tool calling capabilities.
-        Returns the raw GenerateContentResponse to allow inspection of function calls.
+        Returns the raw response to allow inspection of function calls.
         """
         try:
-            # Gemini Tool Configuration
-            # tools arg expects a list of Tool objects or dicts (if using OpenAI compat layer)
-            # The google.generativeai SDK supports passing a list of FunctionDeclarations
-            # But simpler: pass the list of dicts if using the new auto-conversion or define properly.
+            # The google.genai SDK supports passing a list of Tool objects
             
-            # For this SDK version, we can pass tools directly to `tools` arg in logic.
-            
-            # Message Structure
-            messages = [
-                {"role": "user", "parts": [{"text": f"{system_prompt}\n\n{user_prompt}"}]}
-            ]
-            
-            # Note: The SDK handles tool conversion if we pass them correctly. 
-            # We preserve the raw response so the caller can check `part.function_call`.
-            
-            response = self.model.generate_content(
-                messages,
-                tools=tools, # Pass tools here
-                generation_config=genai.types.GenerationConfig(
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=user_prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=system_prompt,
+                    tools=tools, # Pass tools here
                     temperature=0.1 # Low temp for tool precision
                 )
             )
             return response
             
         except Exception as e:
-            import traceback
             traceback.print_exc()
             print(f"LLM Tool Gen Error: {repr(e)}")
             return None

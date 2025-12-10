@@ -1,0 +1,96 @@
+{
+  "entity_name": "Haste",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "While under the effect of Haste",
+      "condition": "Target is affected by Haste",
+      "outcome": "Target's speed is doubled",
+      "related_search_terms": [
+        "movement speed",
+        "fast movement",
+        "running",
+        "locomotion"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "While under the effect of Haste",
+      "condition": "Target is affected by Haste",
+      "outcome": "Target gains a +2 bonus to AC",
+      "related_search_terms": [
+        "armor class",
+        "defense buff",
+        "harder to hit",
+        "AC bonus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When making a Dexterity Saving Throw",
+      "condition": "Target is affected by Haste",
+      "outcome": "Target has advantage on the saving throw",
+      "related_search_terms": [
+        "dex save",
+        "evasion",
+        "area effect spells",
+        "dodging attacks"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "At the start of the Target's Turn",
+      "condition": "Target is affected by Haste",
+      "outcome": "Target gains one additional action",
+      "related_search_terms": [
+        "extra turn",
+        "bonus action",
+        "more actions per turn",
+        "turn economy"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "When using the additional action granted by Haste",
+      "condition": "Target uses the additional action from Haste",
+      "outcome": "Action can only be Attack (one weapon attack), Dash, Disengage, Hide, or Use an Object action",
+      "related_search_terms": [
+        "limited action",
+        "restricted action",
+        "specific actions",
+        "haste action use"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When the Haste spell ends on the target",
+      "condition": "Target was previously affected by Haste",
+      "outcome": "Target cannot move or take actions until after its next turn",
+      "related_search_terms": [
+        "exhaustion",
+        "fatigue",
+        "downtime",
+        "spell consequence",
+        "lethargy",
+        "stunned after haste"
+      ]
+    }
+  ],
+  "description_text": "Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.",
+  "tags": [
+    "buff",
+    "transmutation",
+    "combat",
+    "movement",
+    "action economy"
+  ],
+  "related_search_terms": [
+    "speed buff",
+    "turn economy",
+    "action surge",
+    "utility spell",
+    "combat enhancement",
+    "mobility spell"
+  ]
+}

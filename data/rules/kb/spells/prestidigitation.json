@@ -1,0 +1,110 @@
+{
+  "entity_name": "Prestidigitation",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Within range",
+      "outcome": "Create instantaneous, harmless sensory effect (e.g., shower of sparks, puff of wind, faint musical notes, odd odor)",
+      "related_search_terms": [
+        "sensory illusion",
+        "minor distraction",
+        "harmless effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a candle, torch, or small campfire within range",
+      "outcome": "Instantly light or snuff out the target",
+      "related_search_terms": [
+        "fire control",
+        "light source",
+        "extinguish flame"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is an object no larger than 1 cubic foot within range",
+      "outcome": "Instantly clean or soil the target",
+      "related_search_terms": [
+        "cleaning magic",
+        "soiling object",
+        "minor alteration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is up to 1 cubic foot of nonliving material within range",
+      "outcome": "Chill, warm, or flavor the material for 1 hour",
+      "related_search_terms": [
+        "temperature control",
+        "food alteration",
+        "flavor change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is an object or surface within range",
+      "outcome": "Make a color, small mark, or symbol appear on the target for 1 hour",
+      "related_search_terms": [
+        "marking",
+        "temporary symbol",
+        "tagging"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "None",
+      "outcome": "Create a nonmagical trinket or an illusory image that can fit in your hand, lasting until the end of your next turn",
+      "related_search_terms": [
+        "minor illusion",
+        "temporary trinket",
+        "small image"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting Prestidigitation multiple times",
+      "condition": "Non-instantaneous effects are active",
+      "outcome": "Up to three non-instantaneous effects can be active at a time",
+      "related_search_terms": [
+        "active spell limit",
+        "cantrip cap",
+        "effect concurrency"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster has an active non-instantaneous Prestidigitation effect",
+      "condition": "Caster uses an action",
+      "outcome": "Caster can dismiss one such effect",
+      "related_search_terms": [
+        "dismiss spell",
+        "cancel effect",
+        "end magic"
+      ]
+    }
+  ],
+  "description_text": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range': You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor. You instantaneously light or snuff out a candle, a torch, or a small campfire. You instantaneously clean or soil an object no larger than 1 cubic foot. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour. You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour. You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+  "tags": [
+    "cantrip",
+    "utility",
+    "minor magic",
+    "illusion",
+    "transmutation"
+  ],
+  "related_search_terms": [
+    "minor magic",
+    "trick spell",
+    "utility cantrip",
+    "flavor magic",
+    "novice spell",
+    "small effects"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "entity_name": "Indomitable",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Player fails a saving throw",
+      "condition": "Player chooses to activate Indomitable",
+      "outcome": "Player rerolls the saving throw",
+      "related_search_terms": [
+        "reroll save",
+        "fail save",
+        "saving throw re-roll",
+        "fighter save",
+        "indomitable will",
+        "second chance"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Player rerolls a saving throw using Indomitable",
+      "condition": "None",
+      "outcome": "Player must use the new roll result",
+      "related_search_terms": [
+        "mandatory reroll",
+        "forced roll",
+        "no choice"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Character gains Indomitable feature",
+      "condition": "Character Level is 9",
+      "outcome": "Indomitable can be used 1 time between long rests",
+      "related_search_terms": [
+        "initial uses",
+        "per long rest",
+        "feature limit",
+        "1 use"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Character's Indomitable feature improves",
+      "condition": "Character Level is 13",
+      "outcome": "Indomitable can be used 2 times between long rests",
+      "related_search_terms": [
+        "increased uses",
+        "more rerolls",
+        "2 uses",
+        "level 13 feature"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Character's Indomitable feature improves",
+      "condition": "Character Level is 17",
+      "outcome": "Indomitable can be used 3 times between long rests",
+      "related_search_terms": [
+        "maximum uses",
+        "final uses",
+        "3 uses",
+        "level 17 feature"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.",
+  "tags": [
+    "fighter",
+    "feature",
+    "saving throw",
+    "reroll",
+    "resource"
+  ],
+  "related_search_terms": [
+    "indomitable spirit",
+    "save reroll",
+    "fighter feature",
+    "second chance save",
+    "battle master"
+  ]
+}

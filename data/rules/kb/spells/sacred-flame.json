@@ -1,0 +1,57 @@
+{
+  "entity_name": "Sacred Flame",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On successful spell cast",
+      "condition": "Target fails Dexterity saving throw",
+      "outcome": "Target takes 1d8 radiant damage",
+      "related_search_terms": [
+        "radiant damage",
+        "dex save",
+        "damage spell",
+        "cantrip damage",
+        "failed save"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target makes Dexterity saving throw against Sacred Flame",
+      "condition": "Target has cover",
+      "outcome": "Target does NOT receive AC or Dexterity saving throw bonus from cover",
+      "related_search_terms": [
+        "ignore cover",
+        "line of sight",
+        "saving throw bonus",
+        "cover negation",
+        "no cover benefit"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Character gains a level",
+      "condition": "Caster's level reaches 5th, 11th, or 17th",
+      "outcome": "Spell's radiant damage increases by 1d8 (2d8 at 5th, 3d8 at 11th, 4d8 at 17th)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level scaling",
+        "damage increase",
+        "higher levels"
+      ]
+    }
+  ],
+  "description_text": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "tags": [
+    "cantrip",
+    "evocation",
+    "radiant"
+  ],
+  "related_search_terms": [
+    "radiant cantrip",
+    "divine spell",
+    "cleric cantrip",
+    "damage over cover",
+    "ranged attack spell"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "entity_name": "Shield of Faith",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is active and maintained",
+      "condition": "Creature of your choice within range is targeted",
+      "outcome": "Target gains a +2 bonus to AC for the duration",
+      "related_search_terms": [
+        "AC buff",
+        "defense boost",
+        "armor class improvement",
+        "protection spell",
+        "divine shield"
+      ]
+    }
+  ],
+  "description_text": "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.",
+  "tags": [
+    "spell",
+    "buff",
+    "defensive"
+  ],
+  "related_search_terms": [
+    "Shield of Faith spell",
+    "AC bonus",
+    "protection",
+    "armor class",
+    "cleric spell"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "entity_name": "Darkness",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Point chosen within range",
+      "outcome": "Magical darkness fills a 15-foot-radius sphere centered on the chosen point for the duration, spreading around corners",
+      "related_search_terms": [
+        "AoE",
+        "obscurement",
+        "area spell",
+        "magic darkness"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Visual Detection Check",
+      "condition": "Creature has darkvision AND is attempting to see through magical darkness created by this spell",
+      "outcome": "Creature cannot see through the magical darkness",
+      "related_search_terms": [
+        "darkvision counter",
+        "blindness",
+        "obscured"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Light Source Interaction",
+      "condition": "Nonmagical light attempts to illuminate an area affected by this spell's magical darkness",
+      "outcome": "Nonmagical light cannot illuminate the magical darkness",
+      "related_search_terms": [
+        "light cancellation",
+        "non-magical light immunity"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Source Movement",
+      "condition": "The point chosen for the spell's origin is on an object held by the caster OR an object not being worn or carried",
+      "outcome": "The magical darkness emanates from and moves with that object",
+      "related_search_terms": [
+        "portable darkness",
+        "mobile AoE",
+        "moving spell effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Source Obscurement",
+      "condition": "The object from which the magical darkness emanates is completely covered by an opaque object (e.g., bowl, helm)",
+      "outcome": "The magical darkness is blocked",
+      "related_search_terms": [
+        "counterspell",
+        "dispell",
+        "darkness suppression",
+        "blocking effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Area Overlap",
+      "condition": "Any area of this spell's magical darkness overlaps with an area of light created by a spell of 2nd level or lower",
+      "outcome": "The spell that created the light is dispelled",
+      "related_search_terms": [
+        "light spell counter",
+        "dispelling light",
+        "spell interaction"
+      ]
+    }
+  ],
+  "description_text": "Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it. If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness. If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.",
+  "tags": [
+    "spell",
+    "2nd-level",
+    "evocation",
+    "darkness",
+    "obscurement"
+  ],
+  "related_search_terms": [
+    "blind",
+    "hiding",
+    "stealth",
+    "shadow",
+    "line of sight",
+    "vision denial"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "entity_name": "Gentle Repose",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "While Gentle Repose is active on a corpse or remains",
+      "condition": "Target is a corpse or other remains",
+      "outcome": "Target is protected from decay",
+      "related_search_terms": [
+        "preservation",
+        "decay",
+        "rot",
+        "decomposition",
+        "spoilage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to turn target into an undead creature",
+      "condition": "Gentle Repose is active on target corpse or remains",
+      "outcome": "Target cannot become undead",
+      "related_search_terms": [
+        "undead creation",
+        "necromancy protection",
+        "zombie",
+        "skeleton",
+        "animate dead prevention"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Determining elapsed time for resurrection spells (e.g., Raise Dead)",
+      "condition": "Target corpse was under the effect of Gentle Repose during a period of time",
+      "outcome": "Days spent under Gentle Repose do not count towards the resurrection spell's time limit",
+      "related_search_terms": [
+        "resurrection timer",
+        "raise dead time",
+        "preserve corpse for resurrection",
+        "revivify",
+        "true resurrection",
+        "death clock",
+        "time limit extension"
+      ]
+    }
+  ],
+  "description_text": "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead. The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead.",
+  "tags": [
+    "necromancy",
+    "preservation",
+    "corpse",
+    "dead",
+    "ritual",
+    "resurrection"
+  ],
+  "related_search_terms": [
+    "corpse preservation",
+    "funeral rites",
+    "delay resurrection",
+    "body storage",
+    "mummification"
+  ]
+}

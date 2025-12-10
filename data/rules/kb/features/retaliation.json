@@ -1,0 +1,30 @@
+{
+  "entity_name": "Retaliation",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player takes damage",
+      "condition": "Damaging creature is within 5 feet of player AND Player has an available reaction",
+      "outcome": "Player can use their reaction to make one melee weapon attack against the damaging creature",
+      "related_search_terms": [
+        "counterattack",
+        "melee counter",
+        "reaction attack",
+        "opportunity attack",
+        "revenge hit"
+      ]
+    }
+  ],
+  "description_text": "Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon Attack against that creature.",
+  "tags": [
+    "level_14_feature",
+    "combat_ability",
+    "reaction_action"
+  ],
+  "related_search_terms": [
+    "retaliate",
+    "damage response",
+    "fighter feature"
+  ]
+}

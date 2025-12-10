@@ -1,0 +1,49 @@
+{
+  "entity_name": "Hold Person",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a Humanoid AND Target is within range AND Caster can see target AND Target fails a Wisdom saving throw",
+      "outcome": "Target is Paralyzed for the spell's duration",
+      "related_search_terms": [
+        "paralysis",
+        "immobilize",
+        "wisdom save",
+        "condition effect",
+        "crowd control",
+        "humanoid only",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "At the end of each of the target's turns",
+      "condition": "Target is currently affected by Hold Person AND Target succeeds on a Wisdom saving throw",
+      "outcome": "Spell ends on the target",
+      "related_search_terms": [
+        "repeated save",
+        "break free",
+        "end condition",
+        "save ends",
+        "paralysis removal",
+        "wisdom save"
+      ]
+    }
+  ],
+  "description_text": "Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "concentration",
+    "save_or_suck",
+    "single_target"
+  ],
+  "related_search_terms": [
+    "paralyze",
+    "hold monster (similar)",
+    "control spell",
+    "humanoid restraint"
+  ]
+}

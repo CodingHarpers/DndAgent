@@ -1,0 +1,106 @@
+{
+  "entity_name": "Calm Emotions",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Humanoid creature within a 20-foot-radius sphere centered on a chosen point within range",
+      "outcome": "Creature must make a Charisma saving throw OR creature can choose to fail the saving throw",
+      "related_search_terms": [
+        "AoE",
+        "group control",
+        "charisma save",
+        "voluntary failure",
+        "saving throw"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature fails Charisma saving throw (or chooses to fail)",
+      "condition": "Caster chooses to suppress effects",
+      "outcome": "Any effect causing the target to be charmed or frightened is suppressed",
+      "related_search_terms": [
+        "remove fear",
+        "remove charm",
+        "condition removal",
+        "mental effect",
+        "dispel"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Calm Emotions spell ends",
+      "condition": "An effect was suppressed by Calm Emotions AND the original duration of the suppressed effect has not expired",
+      "outcome": "The suppressed effect resumes",
+      "related_search_terms": [
+        "spell duration",
+        "effect end",
+        "condition return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature fails Charisma saving throw (or chooses to fail)",
+      "condition": "Caster chooses to make target indifferent about hostile creatures",
+      "outcome": "Target becomes indifferent about creatures of the caster's choice that it is hostile toward",
+      "related_search_terms": [
+        "pacify",
+        "de-escalate",
+        "neutralize hostility",
+        "mind control"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Indifferent target is attacked or harmed by a spell",
+      "condition": "Target is currently indifferent due to Calm Emotions",
+      "outcome": "The indifference effect ends",
+      "related_search_terms": [
+        "breaking spell",
+        "aggression",
+        "combat",
+        "hostile action"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Indifferent target witnesses any of its friends being harmed",
+      "condition": "Target is currently indifferent due to Calm Emotions",
+      "outcome": "The indifference effect ends",
+      "related_search_terms": [
+        "breaking spell",
+        "ally hurt",
+        "witness violence"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Calm Emotions spell ends",
+      "condition": "Target was made indifferent towards hostile creatures by Calm Emotions",
+      "outcome": "Creature becomes hostile again (unless the GM rules otherwise)",
+      "related_search_terms": [
+        "spell duration",
+        "hostility resumes",
+        "temporary peace"
+      ]
+    }
+  ],
+  "description_text": "You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects. You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the GM rules otherwise.",
+  "tags": [
+    "Enchantment",
+    "Spell",
+    "Condition Manipulation",
+    "Crowd Control",
+    "Non-lethal",
+    "Pacification"
+  ],
+  "related_search_terms": [
+    "calming spell",
+    "emotional control",
+    "pacification",
+    "fear removal",
+    "charm removal",
+    "group enchantment"
+  ]
+}

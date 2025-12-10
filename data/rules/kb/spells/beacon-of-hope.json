@@ -1,0 +1,58 @@
+{
+  "entity_name": "Beacon of Hope",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Wisdom Saving Throw",
+      "condition": "Creature is a chosen target of Beacon of Hope",
+      "outcome": "Creature's Wisdom saving throw has Advantage",
+      "related_search_terms": [
+        "mental save",
+        "willpower save",
+        "mind control resistance",
+        "divine protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Death Saving Throw",
+      "condition": "Creature is a chosen target of Beacon of Hope",
+      "outcome": "Creature's Death saving throw has Advantage",
+      "related_search_terms": [
+        "dying condition",
+        "stabilize",
+        "near death",
+        "death protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature regains hit points from any healing",
+      "condition": "Creature is a chosen target of Beacon of Hope",
+      "outcome": "Creature regains the maximum possible number of hit points from that healing",
+      "related_search_terms": [
+        "max healing",
+        "potent healing",
+        "burst healing",
+        "hp recovery",
+        "cleric healing"
+      ]
+    }
+  ],
+  "description_text": "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.",
+  "tags": [
+    "healing",
+    "buff",
+    "concentration",
+    "divine"
+  ],
+  "related_search_terms": [
+    "saving throws advantage",
+    "death saves advantage",
+    "maximize healing",
+    "hp gain boost",
+    "condition removal",
+    "cleric spell"
+  ]
+}

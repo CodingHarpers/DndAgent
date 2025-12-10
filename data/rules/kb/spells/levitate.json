@@ -1,0 +1,94 @@
+{
+  "entity_name": "Levitate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature or object visible within range AND weighs up to 500 pounds",
+      "outcome": "Target rises vertically up to 20 feet and remains suspended for the duration",
+      "related_search_terms": [
+        "float",
+        "lift",
+        "suspend",
+        "elevate",
+        "defy gravity",
+        "initial effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Targeting Unwilling Creature",
+      "condition": "Target is an unwilling creature",
+      "outcome": "Target can attempt a Constitution saving throw. If successful, spell has no effect",
+      "related_search_terms": [
+        "save",
+        "resist",
+        "cc",
+        "control",
+        "unwilling target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Levitated Target Movement",
+      "condition": "Levitated target wants to move horizontally or vertically AND can push or pull against a fixed object or surface within reach",
+      "outcome": "Target can move as if climbing",
+      "related_search_terms": [
+        "climb speed",
+        "horizontal movement",
+        "wall walk",
+        "ceiling walk"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's Turn (controlling target's altitude)",
+      "condition": "Caster is NOT the target of Levitate",
+      "outcome": "Caster can use an action to change the target's altitude by up to 20 feet in either direction, as long as the target remains within spell range",
+      "related_search_terms": [
+        "caster control",
+        "altitude change",
+        "vertical movement",
+        "move target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's Turn (controlling own altitude)",
+      "condition": "Caster IS the target of Levitate",
+      "outcome": "Caster can move up or down as part of their move",
+      "related_search_terms": [
+        "self levitate",
+        "caster movement",
+        "personal altitude control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell Ends",
+      "condition": "Target is still aloft",
+      "outcome": "Target floats gently to the ground",
+      "related_search_terms": [
+        "safe landing",
+        "fall damage negation",
+        "graceful descent"
+      ]
+    }
+  ],
+  "description_text": "One creature or object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a constitution saving throw is unaffected.The target can move only by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing. You can change the target's altitude by up to 20 feet in either direction on your turn. If you are the target, you can move up or down as part of your move. Otherwise, you can use your action to move the target, which must remain within the spell's range.When the spell ends, the target floats gently to the ground if it is still aloft.",
+  "tags": [
+    "Transmutation",
+    "Utility",
+    "Movement",
+    "Control"
+  ],
+  "related_search_terms": [
+    "float spell",
+    "anti-gravity",
+    "fly",
+    "suspend creature",
+    "move object",
+    "vertical mobility"
+  ]
+}

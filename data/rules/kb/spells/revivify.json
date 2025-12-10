@@ -1,0 +1,65 @@
+{
+  "entity_name": "Revivify",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Revivify is cast",
+      "condition": "Target is a creature that has died within the last minute AND Target did not die of old age",
+      "outcome": "Target returns to life with 1 hit point",
+      "related_search_terms": [
+        "resurrection",
+        "healing",
+        "death save",
+        "bring back to life",
+        "stabilize",
+        "dead character",
+        "instant resurrection"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to return a creature to life using Revivify",
+      "condition": "Target died of old age",
+      "outcome": "Spell Fails (Cannot return creature to life)",
+      "related_search_terms": [
+        "old age death",
+        "unrevivable",
+        "spell limits",
+        "cannot resurrect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Revivify is cast",
+      "condition": "Target has missing body parts",
+      "outcome": "Missing body parts are NOT restored by this spell",
+      "related_search_terms": [
+        "limb restoration",
+        "disfigurement",
+        "permanent injury",
+        "regenerate",
+        "body parts"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
+  "tags": [
+    "healing",
+    "resurrection",
+    "necromancy",
+    "cleric",
+    "paladin",
+    "death"
+  ],
+  "related_search_terms": [
+    "bring back to life",
+    "healing spell",
+    "resurrection spell",
+    "death",
+    "dying",
+    "1 hp",
+    "dead",
+    "revive"
+  ]
+}

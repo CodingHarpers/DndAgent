@@ -1,0 +1,140 @@
+{
+  "entity_name": "Private Sanctum",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses a cube area (5ft to 100ft side) within range",
+      "outcome": "Area becomes magically secure for the spell's duration or until dismissed by caster's action",
+      "related_search_terms": [
+        "secure area",
+        "ward",
+        "protective spell",
+        "area of effect",
+        "duration spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster decides on security properties",
+      "outcome": "Any or all of the following properties can be applied to the warded area",
+      "related_search_terms": [
+        "customizable spell",
+        "spell options",
+        "choose effects"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Sound attempt to pass barrier",
+      "condition": "Sound barrier property was chosen when casting",
+      "outcome": "Sound cannot pass through the barrier at the edge of the warded area",
+      "related_search_terms": [
+        "silence",
+        "noise blocking",
+        "soundproof",
+        "anti-sound"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Vision attempt through barrier",
+      "condition": "Vision barrier property was chosen when casting",
+      "outcome": "Barrier appears dark and foggy, preventing vision (including darkvision) through it",
+      "related_search_terms": [
+        "obscured",
+        "blind",
+        "fog",
+        "anti-vision",
+        "darkness effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Divination spell sensor attempted inside protected area",
+      "condition": "Divination sensor blocking property was chosen when casting",
+      "outcome": "Sensor cannot appear inside the protected area",
+      "related_search_terms": [
+        "anti-scrying",
+        "anti-detection",
+        "magical privacy",
+        "sensor blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Divination spell sensor attempted to pass through barrier",
+      "condition": "Divination sensor blocking property was chosen when casting",
+      "outcome": "Sensor cannot pass through the barrier at its perimeter",
+      "related_search_terms": [
+        "anti-scrying",
+        "anti-detection",
+        "magical privacy",
+        "sensor blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Divination spell targets a creature in the area",
+      "condition": "Divination targeting blocking property was chosen when casting AND creature is in the area",
+      "outcome": "Creatures in the area can't be targeted by divination spells",
+      "related_search_terms": [
+        "anti-scrying",
+        "anti-detection",
+        "magical privacy",
+        "target blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Teleportation attempt into or out of warded area",
+      "condition": "Teleportation blocking property was chosen when casting",
+      "outcome": "Nothing can teleport into or out of the warded area",
+      "related_search_terms": [
+        "anti-teleport",
+        "dimensional anchor",
+        "no teleport",
+        "travel blocking"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Planar travel attempt within warded area",
+      "condition": "Planar travel blocking property was chosen when casting",
+      "outcome": "Planar travel is blocked within the warded area",
+      "related_search_terms": [
+        "anti-planar travel",
+        "dimensional travel blocking",
+        "no planar shift"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast repeatedly",
+      "condition": "Spell is cast on the same spot every day for a year",
+      "outcome": "The spell's effect becomes permanent",
+      "related_search_terms": [
+        "permanent ward",
+        "long-term ritual",
+        "enduring effect",
+        "ritual casting"
+      ]
+    }
+  ],
+  "description_text": "You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it. When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties: - Sound can't pass through the barrier at the edge of the warded area. - The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it. - Sensors created by divination spells can't appear inside the protected area or pass through the barrier at its perimeter. - Creatures in the area can't be targeted by divination spells. - Nothing can teleport into or out of the warded area. - Planar travel is blocked within the warded area. Casting this spell on the same spot every day for a year makes this effect permanent.",
+  "tags": [
+    "abjuration",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "warding spell",
+    "security spell",
+    "protection",
+    "area control",
+    "anti-scrying",
+    "anti-teleportation",
+    "fortification"
+  ]
+}

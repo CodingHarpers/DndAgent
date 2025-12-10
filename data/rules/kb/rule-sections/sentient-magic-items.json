@@ -1,0 +1,558 @@
+[
+  {
+    "source_chapter": "Magic Items - Sentient Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Sentient Magic Item",
+        "definition": "A magic item that possesses its own intelligence, will, personality, and alignment, capable of independent thought, emotion, and interaction.",
+        "rule_logic": {
+          "premise": "A magic item has an Intelligence score of 10 or higher",
+          "implication": "The item is sentient and possesses an alignment, senses (typically darkvision out to 120 feet), and languages.",
+          "exceptions": [],
+          "description_text": "If a magic item has an Intelligence score of 10 or higher, it is sentient. An item has an alignment, and senses (typically darkvision out to 120 feet), and it can communicate with its wielder telepathically.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to know if item is sentient",
+            "intelligent item requirements",
+            "item intelligence score",
+            "magic item with personality"
+          ]
+        },
+        "related_keywords": [
+          "Magic Item",
+          "Sentient",
+          "Intelligence",
+          "Alignment",
+          "Personality"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Communication",
+        "definition": "The manner in which a sentient magic item interacts and conveys information to its wielder or others.",
+        "rule_logic": {
+          "premise": "A magic item is sentient",
+          "implication": "The item can communicate with its wielder telepathically. Some sentient items also possess the ability to speak aloud.",
+          "exceptions": [],
+          "description_text": "An item [...] can communicate with its wielder telepathically. Some sentient items are also able to speak.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do sentient items talk",
+            "item telepathy",
+            "does my sword talk",
+            "sentient weapon speech"
+          ]
+        },
+        "related_keywords": [
+          "Communication",
+          "Telepathy",
+          "Speech",
+          "Interaction"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Influence",
+        "definition": "The ability of a sentient magic item to exert its will upon its wielder, potentially compelling actions or refusing cooperation.",
+        "rule_logic": {
+          "premise": "The goals of a sentient item conflict with the wielder's actions or intentions, OR the item attempts to compel the wielder to act in a specific way",
+          "implication": "The wielder must make a Charisma saving throw (DC typically set by the item's Charisma score or DM). On a failed save, the item can refuse to be used, compel a specific action, or take control of the wielder.",
+          "exceptions": [],
+          "description_text": "If the item’s goals are in direct opposition to the wielder’s, or the item is attempting to compel the wielder to act in a certain way, the wielder must make a Charisma saving throw (DC determined by the item’s Charisma score, or by the DM). On a failed save, the item can refuse to be used, can compel the wielder to do something specific (within reason), or can take control of the wielder until its demand is met or for a specific duration (up to 1d6 days).",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item takes control",
+            "item tries to control me",
+            "charisma save vs item",
+            "item refuses to work",
+            "magic item conflict",
+            "compelled by item"
+          ]
+        },
+        "related_keywords": [
+          "Influence",
+          "Control",
+          "Charisma Save",
+          "Conflict",
+          "Compulsion",
+          "Refusal"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Voluntary Submission",
+        "definition": "A wielder's choice to willingly yield to a sentient item's demands or control without resistance.",
+        "rule_logic": {
+          "premise": "A wielder chooses to willingly submit to a sentient item's demands",
+          "implication": "No Charisma saving throw is required; the item's will is imposed directly.",
+          "exceptions": [],
+          "description_text": "The wielder can choose to willingly submit to the item’s demands, in which case no saving throw is required.",
+          "is_exception": false,
+          "related_search_terms": [
+            "submitting to magic item",
+            "giving in to sentient weapon",
+            "voluntarily controlled by item"
+          ]
+        },
+        "related_keywords": [
+          "Submission",
+          "Voluntary",
+          "No Save",
+          "Control"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "sentient-magic-items"
+  },
+  {
+    "source_chapter": "Magic Items - Sentient Magic Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Sentient Magic Item",
+        "definition": "A magic item that possesses sentience and personality, behaving like a character with its own ideals, bonds, and flaws.",
+        "rule_logic": {
+          "premise": "An item is identified as a sentient magic item",
+          "implication": "It functions as an NPC under the GM's control",
+          "exceptions": [],
+          "description_text": "Sentient magic items function as NPCs under the GM's control.",
+          "is_exception": false,
+          "related_search_terms": [
+            "GM control sentient item",
+            "how sentient items work",
+            "who controls sentient magic items"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "sentient",
+          "personality",
+          "NPC",
+          "wielder",
+          "weapon",
+          "consumable",
+          "activated property"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Property Control",
+        "definition": "Rules governing the control of activated properties for sentient magic items.",
+        "rule_logic": {
+          "premise": "A sentient magic item has an activated property",
+          "implication": "The activated property is under the item's control, not its wielder's",
+          "exceptions": [],
+          "description_text": "Any activated property of the item is under the item's control, not its wielder's.",
+          "is_exception": false,
+          "related_search_terms": [
+            "who activates sentient item abilities",
+            "sentient item abilities",
+            "wielder control over magic item"
+          ]
+        },
+        "related_keywords": [
+          "sentient magic item",
+          "activated property",
+          "wielder control",
+          "item control"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item - Good Relationship",
+        "definition": "The condition and outcome when a wielder maintains a positive relationship with a sentient magic item.",
+        "rule_logic": {
+          "premise": "Wielder maintains a good relationship with a sentient magic item",
+          "implication": "Wielder can access the item's activated properties normally",
+          "exceptions": [],
+          "description_text": "As long as the wielder maintains a good relationship with the item, the wielder can access those properties normally.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item good relationship",
+            "how to use sentient item powers",
+            "accessing sentient item abilities"
+          ]
+        },
+        "related_keywords": [
+          "sentient magic item",
+          "relationship",
+          "activated property access",
+          "wielder benefit"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item - Strained Relationship",
+        "definition": "The consequences that occur when the relationship between a wielder and a sentient magic item becomes strained.",
+        "rule_logic": {
+          "premise": "Relationship between wielder and sentient magic item is strained",
+          "implication": "The item can suppress its activated properties OR turn them against the wielder",
+          "exceptions": [],
+          "description_text": "If the relationship is strained, the item can suppress its activated properties or even turn them against the wielder.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item turns hostile",
+            "magic item refuses to work",
+            "strained relationship magic item",
+            "sentient item betrayal"
+          ]
+        },
+        "related_keywords": [
+          "sentient magic item",
+          "relationship",
+          "suppress properties",
+          "item turns against wielder"
+        ]
+      },
+      {
+        "concept_name": "Sentient Consumable Items (Exclusion)",
+        "definition": "A rule stating that consumable magic items cannot be sentient.",
+        "rule_logic": {
+          "premise": "An item is a consumable item (e.g., potion, scroll)",
+          "implication": "Item is never sentient",
+          "exceptions": [],
+          "description_text": "Consumable items such as potions and scrolls are never sentient.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can potions be sentient",
+            "sentient scrolls",
+            "consumable sentient magic item",
+            "types of sentient items"
+          ]
+        },
+        "related_keywords": [
+          "consumable item",
+          "potion",
+          "scroll",
+          "sentience",
+          "magic item types"
+        ]
+      }
+    ],
+    "_chunk_header": "Sentient Magic Items",
+    "_source_file": "sentient-magic-items"
+  },
+  {
+    "source_chapter": "Dungeon Master's Guide - Sentient Magic Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Creating Sentient Magic Items",
+        "definition": "The process of establishing a magic item's persona, including its mental abilities, communication methods, senses, alignment, and special purpose, following NPC creation guidelines with specific item-related exceptions.",
+        "rule_logic": {
+          "premise": "DM decides to make a magic item sentient",
+          "implication": "Create the item's persona similar to an NPC, applying specific rules for abilities, communication, senses, alignment, and purpose.",
+          "exceptions": [],
+          "description_text": "When you decide to make a magic item sentient, you create the item's persona in the same way you would create an NPC, with a few exceptions described here.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to make sentient item",
+            "magic item personality",
+            "DM sentient item guide",
+            "creating intelligent items"
+          ]
+        },
+        "related_keywords": [
+          "sentient item",
+          "magic item",
+          "item creation",
+          "DM guide"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Abilities (Mental Scores)",
+        "definition": "The Intelligence, Wisdom, and Charisma scores assigned to a sentient magic item, determining its cognitive and social capabilities.",
+        "rule_logic": {
+          "premise": "A magic item is sentient",
+          "implication": "It possesses Intelligence, Wisdom, and Charisma scores. These can be chosen by the DM OR determined randomly by rolling 4d6 (dropping the lowest) for each score.",
+          "exceptions": [],
+          "description_text": "A sentient magic item has Intelligence, Wisdom, and Charisma scores. You can choose the item's abilities or determine them randomly. To determine them randomly, roll 4d6 for each one, dropping the lowest roll and totaling the rest.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item intelligence",
+            "magic item wisdom",
+            "item charisma score",
+            "generating item stats"
+          ]
+        },
+        "related_keywords": [
+          "abilities",
+          "intelligence",
+          "wisdom",
+          "charisma",
+          "stats",
+          "roll 4d6"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Communication",
+        "definition": "The method by which a sentient magic item conveys its thoughts, emotions, or speech, ranging from emotional transmission to telepathy or verbal speech in languages.",
+        "rule_logic": {
+          "premise": "A magic item is sentient",
+          "implication": "It has an ability to communicate. The DM can choose the method OR roll on a d100 table:\n  - 01-60: Transmits emotion to wielder.\n  - 61-90: Speaks, reads, and understands languages.\n  - 91-100: Speaks, reads, understands languages AND communicates telepathically with wielder.",
+          "exceptions": [],
+          "description_text": "A sentient item has some ability to communicate, either by sharing its emotions, broadcasting its thoughts telepathically, or speaking aloud. You can choose how it communicates or roll on the following table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how sentient items talk",
+            "item telepathy",
+            "magic item language",
+            "communicating with items"
+          ]
+        },
+        "related_keywords": [
+          "communication",
+          "emotion",
+          "telepathy",
+          "language",
+          "speech"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Senses",
+        "definition": "The perceptual capabilities of a sentient magic item, allowing it to be aware of its surroundings within a limited range.",
+        "rule_logic": {
+          "premise": "A magic item is sentient",
+          "implication": "It can perceive its surroundings. The DM can choose its senses OR roll on a d4 table:\n  - 1: Hearing and normal vision out to 30 feet.\n  - 2: Hearing and normal vision out to 60 feet.\n  - 3: Hearing and normal vision out to 120 feet.\n  - 4: Hearing and darkvision out to 120 feet.",
+          "exceptions": [],
+          "description_text": "With sentience comes awareness. A sentient item can perceive its surroundings out to a limited range. You can choose its senses or roll on the following table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item vision",
+            "magic item darkvision",
+            "item hearing range",
+            "item perception"
+          ]
+        },
+        "related_keywords": [
+          "senses",
+          "perception",
+          "vision",
+          "hearing",
+          "darkvision"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Alignment",
+        "definition": "The moral and ethical compass that guides a sentient magic item's behavior and personality.",
+        "rule_logic": {
+          "premise": "A magic item is sentient",
+          "implication": "It possesses an alignment. The DM can choose an alignment (possibly suggested by its nature/creator) OR roll on a d100 table for a random alignment.",
+          "exceptions": [],
+          "description_text": "A sentient magic item has an alignment. Its creator or nature might suggest an alignment. If not, you can pick an alignment or roll on the following table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item morality",
+            "magic item alignment chart",
+            "good magic item",
+            "evil magic item"
+          ]
+        },
+        "related_keywords": [
+          "alignment",
+          "lawful",
+          "chaotic",
+          "good",
+          "evil",
+          "neutral"
+        ]
+      },
+      {
+        "concept_name": "Sentient Magic Item Special Purpose",
+        "definition": "A primary objective or goal that a sentient magic item relentlessly pursues, which can dictate its cooperation or conflict with its wielder.",
+        "rule_logic": {
+          "premise": "A magic item is sentient and is given a special purpose",
+          "implication": "IF wielder's actions align with purpose THEN item remains cooperative. IF wielder deviates from purpose THEN conflict may arise, potentially causing the item to prevent use of its activated properties. The DM can choose a purpose OR roll on a d10 table for a random purpose.",
+          "exceptions": [],
+          "description_text": "You can give a sentient item an objective it pursues, perhaps to the exclusion of all else. As long as the wielder's use of the item aligns with that special purpose, the item remains cooperative. Deviating from this course might cause conflict between the wielder and the item, and could even cause the item to prevent the use of its activated properties. You can pick a special purpose or roll on the following table.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item objective",
+            "magic item conflict",
+            "item refuses commands",
+            "item quest",
+            "item goal"
+          ]
+        },
+        "related_keywords": [
+          "special purpose",
+          "objective",
+          "cooperation",
+          "conflict",
+          "wielder",
+          "activated properties"
+        ]
+      }
+    ],
+    "_chunk_header": "Creating Sentient Magic Items",
+    "_source_file": "sentient-magic-items"
+  },
+  {
+    "source_chapter": "Magic Items - Sentient Magic Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Sentient Item Conflict",
+        "definition": "A state of disagreement that arises when a sentient magic item's wielder acts contrary to the item's alignment or purpose, potentially leading to the item imposing demands or exerting control.",
+        "rule_logic": {
+          "premise": "A sentient item's wielder acts in a manner opposed to the item's alignment or purpose",
+          "implication": "Conflict arises; the sentient item makes a Charisma check contested by the wielder's Charisma check",
+          "exceptions": [],
+          "description_text": "A sentient item has a will of its own, shaped by its personality and alignment. If its wielder acts in a manner opposed to the item's alignment or purpose, conflict can arise. When such a conflict occurs, the item makes a Charisma check contested by the wielder's Charisma check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "sentient item disagreement",
+            "magic item rebellion",
+            "item personality conflict",
+            "wielder opposing item"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Conflict",
+          "Charisma Check",
+          "Contested Check",
+          "Alignment"
+        ]
+      },
+      {
+        "concept_name": "Sentient Item Demands",
+        "definition": "Demands made by a sentient item upon its wielder if the item wins a contested Charisma check during a conflict.",
+        "rule_logic": {
+          "premise": "A sentient item wins a Charisma check contested by its wielder",
+          "implication": "The item makes one or more demands: insists on being carried/worn at all times, demands disposal of repugnant items, demands pursuit of its goals exclusively, OR demands to be given to someone else",
+          "exceptions": [],
+          "description_text": "If the item wins the contest, it makes one or more of the following demands: The item insists on being carried or worn at all times. The item demands that its wielder dispose of anything the item finds repugnant. The item demands that its wielder pursue the item's goals to the exclusion of all other goals. The item demands to be given to someone else.",
+          "is_exception": false,
+          "related_search_terms": [
+            "item's wishes",
+            "sentient item control",
+            "magic item commands",
+            "disagree with magic item"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Demands",
+          "Conflict",
+          "Charisma Check",
+          "Wielder"
+        ]
+      },
+      {
+        "concept_name": "Sentient Item Retribution",
+        "definition": "Actions a sentient item can take if its wielder refuses to comply with its demands after winning a conflict contest.",
+        "rule_logic": {
+          "premise": "A sentient item's wielder refuses to comply with the item's demands",
+          "implication": "The item can do any or all of the following: Make it impossible for its wielder to attune to it; Suppress one or more of its activated properties; Attempt to take control of its wielder",
+          "exceptions": [],
+          "description_text": "If its wielder refuses to comply with the item's wishes, the item can do any or all of the following: Make it impossible for its wielder to attune to it. Suppress one or more of its activated properties. Attempt to take control of its wielder.",
+          "is_exception": false,
+          "related_search_terms": [
+            "magic item punishment",
+            "item refusal consequence",
+            "sentient item consequences",
+            "cannot attune magic item"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Refusal",
+          "Attunement",
+          "Properties",
+          "Control"
+        ]
+      },
+      {
+        "concept_name": "Sentient Item Control Attempt",
+        "definition": "The process by which a sentient item attempts to directly control its wielder.",
+        "rule_logic": {
+          "premise": "A sentient item attempts to take control of its wielder",
+          "implication": "The wielder must make a Charisma saving throw (DC = 12 + the item's Charisma modifier)",
+          "exceptions": [],
+          "description_text": "If a sentient item attempts to take control of its wielder, the wielder must make a Charisma saving throw, with a DC equal to 12 + the item's Charisma modifier.",
+          "is_exception": false,
+          "related_search_terms": [
+            "item mind control",
+            "wielder saving throw",
+            "sentient item DC",
+            "magic item enthrallment"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Control",
+          "Charisma Saving Throw",
+          "DC",
+          "Wielder"
+        ]
+      },
+      {
+        "concept_name": "Sentient Item Charmed Condition",
+        "definition": "The condition applied to a wielder who fails a saving throw against a sentient item's control attempt.",
+        "rule_logic": {
+          "premise": "A wielder fails a Charisma saving throw against a sentient item's control attempt",
+          "implication": "The wielder is charmed by the item for 1d12 hours and must try to follow the item's commands",
+          "exceptions": [],
+          "description_text": "On a failed save, the wielder is charmed by the item for 1d12 hours. While charmed, the wielder must try to follow the item's commands.",
+          "is_exception": false,
+          "related_search_terms": [
+            "charmed by item",
+            "magic item control duration",
+            "forced to obey item",
+            "item enchantment"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Charmed",
+          "Condition",
+          "Saving Throw",
+          "Commands"
+        ]
+      },
+      {
+        "concept_name": "Breaking Sentient Item Charm",
+        "definition": "A specific condition allowing a charmed wielder to attempt to end the charmed effect early.",
+        "rule_logic": {
+          "premise": "A wielder charmed by a sentient item takes damage",
+          "implication": "The wielder can repeat the saving throw, ending the effect on a success",
+          "exceptions": [],
+          "description_text": "If the wielder takes damage, it can repeat the saving throw, ending the effect on a success.",
+          "is_exception": false,
+          "related_search_terms": [
+            "end charmed condition",
+            "sentient item charm damage",
+            "repeat save charmed",
+            "resist item control"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Charmed",
+          "Damage",
+          "Saving Throw",
+          "End Effect"
+        ]
+      },
+      {
+        "concept_name": "Sentient Item Control Cooldown",
+        "definition": "A limitation on how frequently a sentient item can attempt to take control of its wielder.",
+        "rule_logic": {
+          "premise": "A sentient item attempts to control its wielder (regardless of success or failure)",
+          "implication": "The item can't use this power again until the next dawn",
+          "exceptions": [],
+          "description_text": "Whether the attempt to control its user succeeds or fails, the item can't use this power again until the next dawn.",
+          "is_exception": false,
+          "related_search_terms": [
+            "item control limit",
+            "sentient item daily power",
+            "magic item control frequency",
+            "cooldown control attempt"
+          ]
+        },
+        "related_keywords": [
+          "Sentient Item",
+          "Control",
+          "Cooldown",
+          "Dawn",
+          "Limit"
+        ]
+      }
+    ],
+    "_chunk_header": "Conflict",
+    "_source_file": "sentient-magic-items"
+  }
+]

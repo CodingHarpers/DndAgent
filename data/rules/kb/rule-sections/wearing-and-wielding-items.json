@@ -1,0 +1,290 @@
+[
+  {
+    "source_chapter": "Equipment - Wearing and Wielding Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Donning Armor",
+        "definition": "The process of putting on a suit of armor, which consumes a specific amount of time depending on the armor type.",
+        "rule_logic": {
+          "premise": "Character attempts to wear a suit of armor",
+          "implication": "Time is consumed before armor grants its protective benefits. Light Armor: 1 minute. Medium Armor: 5 minutes. Heavy Armor: 10 minutes.",
+          "exceptions": [],
+          "description_text": "Donning a suit of armor takes time. You can only benefit from the armor's AC if you are proficient with it and have spent the requisite time donning it. Light Armor takes 1 minute to don, Medium Armor takes 5 minutes, and Heavy Armor takes 10 minutes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "putting on armor",
+            "armor don time",
+            "how long to wear armor",
+            "armor preparation"
+          ]
+        },
+        "related_keywords": [
+          "armor",
+          "don",
+          "time",
+          "light armor",
+          "medium armor",
+          "heavy armor"
+        ]
+      },
+      {
+        "concept_name": "Doffing Armor",
+        "definition": "The process of taking off a suit of armor, which consumes a specific amount of time depending on the armor type.",
+        "rule_logic": {
+          "premise": "Character attempts to remove a suit of armor",
+          "implication": "Time is consumed to remove the armor. Light Armor: 1 minute. Medium Armor: 1 minute. Heavy Armor: 5 minutes.",
+          "exceptions": [],
+          "description_text": "Doffing a suit of armor also takes time. Removing Light Armor takes 1 minute, Medium Armor takes 1 minute, and Heavy Armor takes 5 minutes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "taking off armor",
+            "armor doff time",
+            "removing armor",
+            "stripping armor"
+          ]
+        },
+        "related_keywords": [
+          "armor",
+          "doff",
+          "time",
+          "light armor",
+          "medium armor",
+          "heavy armor"
+        ]
+      },
+      {
+        "concept_name": "Drawing or Stowing Item (Free Interaction)",
+        "definition": "The act of taking out or putting away a weapon, shield, or similar small item as a minor part of a character's turn.",
+        "rule_logic": {
+          "premise": "Character is performing movement or an action AND wants to draw or stow one item (weapon, shield, etc.)",
+          "implication": "This counts as one free object interaction for the turn and does not consume the character's action.",
+          "exceptions": [
+            "If the character wishes to draw or stow more than one item, subsequent items require an action."
+          ],
+          "description_text": "You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you dash through a doorway, or you could draw your weapon as part of the same action you use to attack. If you want to interact with a second object, you need to use your action.",
+          "is_exception": false,
+          "related_search_terms": [
+            "draw weapon",
+            "stow shield",
+            "free action item",
+            "object interaction",
+            "pull out weapon",
+            "put away weapon"
+          ]
+        },
+        "related_keywords": [
+          "weapon",
+          "shield",
+          "draw",
+          "stow",
+          "free interaction",
+          "object"
+        ]
+      },
+      {
+        "concept_name": "Multiple Object Interactions",
+        "definition": "Performing more than one minor interaction with objects or environmental features during a single turn.",
+        "rule_logic": {
+          "premise": "Character has already used their one free object interaction AND wants to interact with another object or feature of the environment (e.g., draw a second weapon, open a second door)",
+          "implication": "The character must use their Action to perform the additional interaction.",
+          "exceptions": [],
+          "description_text": "If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use.",
+          "is_exception": true,
+          "related_search_terms": [
+            "two weapons draw",
+            "open two doors",
+            "use action for item",
+            "extra object interaction"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "object interaction",
+          "multiple",
+          "item"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "wearing-and-wielding-items"
+  },
+  {
+    "source_chapter": "Wearing and Wielding Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Wearing or Wielding Magic Items",
+        "definition": "The physical act of equipping or holding a magic item in its intended manner to use its properties.",
+        "rule_logic": {
+          "premise": "A creature intends to use a magic item's properties",
+          "implication": "The magic item must be worn or wielded in its intended fashion (e.g., boots on feet, armor donned, weapon held)",
+          "exceptions": [],
+          "description_text": "Using a magic item's properties might mean wearing or wielding it. A magic item meant to be worn must be donned in the intended fashion: boots go on the feet, gloves on the hands, hats and helmets on the head, and rings on the finger. Magic armor must be donned, a shield strapped to the arm, a cloak fastened about the shoulders. A weapon must be held.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to equip magic items",
+            "using magic items",
+            "requirements for magic items"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "equip",
+          "wear",
+          "wield",
+          "properties"
+        ]
+      },
+      {
+        "concept_name": "Magic Item Sizing (General)",
+        "definition": "The general rule that magic items adjust to fit the creature wearing them, regardless of size or build.",
+        "rule_logic": {
+          "premise": "A magic item is meant to be worn by a creature",
+          "implication": "The item can fit the creature regardless of its size or build, often by magically adjusting itself",
+          "exceptions": [
+            "DM discretion for specific story reasons or for non-humanoid creatures"
+          ],
+          "description_text": "In most cases, a magic item that's meant to be worn can fit a creature regardless of size or build. Many magic garments are made to be easily adjustable, or they magically adjust themselves to the wearer.",
+          "is_exception": false,
+          "related_search_terms": [
+            "do magic items resize",
+            "can a gnome wear giant armor",
+            "magic item fit"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "sizing",
+          "fit",
+          "adjustable",
+          "wearer"
+        ]
+      },
+      {
+        "concept_name": "Magic Item Sizing (Exception)",
+        "definition": "An exception to the general rule of magic item resizing, allowing a Dungeon Master to rule that an item only fits creatures of a specific size or shape.",
+        "rule_logic": {
+          "premise": "There is a good story reason for a magic item to fit only creatures of a certain size or shape (e.g., drow-made armor for elves, dwarf-made items for dwarves)",
+          "implication": "The Dungeon Master can rule that the item does not adjust and only fits creatures matching the specific criteria",
+          "exceptions": [],
+          "description_text": "Rare exceptions exist. If the story suggests a good reason for an item to fit only creatures of a certain size or shape, you can rule that it doesn't adjust. For example, drow-made armor might fit elves only. Dwarves might make items usable only by dwarf-sized and dwarf-shaped folk.",
+          "is_exception": true,
+          "related_search_terms": [
+            "when do magic items not fit",
+            "race-specific magic items",
+            "DM ruling on item size"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "sizing",
+          "exception",
+          "DM discretion",
+          "story reason",
+          "race specific"
+        ]
+      },
+      {
+        "concept_name": "Non-Humanoid Magic Item Use",
+        "definition": "Guidelines for a Dungeon Master to determine if a nonhumanoid creature can effectively wear or use a magic item.",
+        "rule_logic": {
+          "premise": "A nonhumanoid creature attempts to wear a magic item",
+          "implication": "The Dungeon Master uses discretion to determine if the item functions as intended, considering the creature's anatomy (e.g., ring on a tentacle may work, boots on a serpent's tail won't)",
+          "exceptions": [],
+          "description_text": "When a nonhumanoid tries to wear an item, use your discretion as to whether the item functions as intended. A ring placed on a tentacle might work, but a serpentfolk with a snakelike tail instead of legs can't wear boots.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can monsters wear magic items",
+            "animal magic items",
+            "item use by creatures",
+            "DM discretion nonhumanoid"
+          ]
+        },
+        "related_keywords": [
+          "nonhumanoid",
+          "magic item",
+          "DM discretion",
+          "anatomy",
+          "function"
+        ]
+      }
+    ],
+    "_chunk_header": "Wearing and Wielding Items",
+    "_source_file": "wearing-and-wielding-items"
+  },
+  {
+    "source_chapter": "Magic Items - Wearing Multiple Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Wearing Multiple Items of the Same Kind",
+        "definition": "A guideline for how many of a particular type of magic item a character can wear at one time.",
+        "rule_logic": {
+          "premise": "A character attempts to wear more than one magic item of a specific type (footwear, gloves/gauntlets, bracers, armor, headwear, cloak)",
+          "implication": "Character cannot normally wear more than one of each specified item type simultaneously.",
+          "exceptions": [
+            "Dungeon Master can use common sense to allow exceptions (e.g., circlet under helmet, layered cloaks)."
+          ],
+          "description_text": "Use common sense to determine whether more than one of a given kind of magic item can be worn. A character can't normally wear more than one pair of footwear, one pair of gloves or gauntlets, one pair of bracers, one suit of armor, one item of headwear, and one cloak. You can make exceptions; a character might be able to wear a circlet under a helmet, for example, or to layer two cloaks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many magic items can I wear",
+            "can I wear two cloaks",
+            "multiple rings",
+            "magic item slots",
+            "attunement limit"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "wearing",
+          "limit",
+          "footwear",
+          "gloves",
+          "gauntlets",
+          "bracers",
+          "armor",
+          "headwear",
+          "cloak",
+          "common sense",
+          "DM ruling"
+        ]
+      }
+    ],
+    "_chunk_header": "Multiple Items of the Same Kind",
+    "_source_file": "wearing-and-wielding-items"
+  },
+  {
+    "source_chapter": "Magic Items - Paired Items",
+    "extracted_concepts": [
+      {
+        "concept_name": "Paired Items",
+        "definition": "Certain magic items, such as boots, bracers, gauntlets, and gloves, are designed to be worn in pairs.",
+        "rule_logic": {
+          "premise": "A character is wearing an item that is part of a pair (e.g., boots, bracers, gauntlets, gloves)",
+          "implication": "Benefits from the item are only imparted if both items of the pair are worn AND the items are a matching pair.",
+          "exceptions": [],
+          "description_text": "Items that come in pairs—such as boots, bracers, gauntlets, and gloves—impart their benefits only if both items of the pair are worn. For example, a character wearing a boot of striding and springing on one foot and a boot of elvenkind on the other foot gains no benefit from either.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wearing two different boots",
+            "mismatched gloves",
+            "magic item pairs",
+            "do I need both boots",
+            "magic boot rules",
+            "bracers rules",
+            "gauntlets rules",
+            "gloves rules"
+          ]
+        },
+        "related_keywords": [
+          "Paired Items",
+          "Magic Items",
+          "Worn Items",
+          "Equipment",
+          "Attunement"
+        ]
+      }
+    ],
+    "_chunk_header": "Paired Items",
+    "_source_file": "wearing-and-wielding-items"
+  }
+]

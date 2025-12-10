@@ -1,0 +1,106 @@
+{
+  "entity_name": "Warding Bond",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Target is subject to an AC check or Saving Throw",
+      "condition": "Spell 'Warding Bond' is active AND target is within 60 feet of caster",
+      "outcome": "Target gains +1 bonus to Armor Class AND all Saving Throws",
+      "related_search_terms": [
+        "armor class buff",
+        "saving throw bonus",
+        "defense boost",
+        "passive protection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Spell 'Warding Bond' is active AND target is within 60 feet of caster",
+      "outcome": "Target has resistance to all damage types",
+      "related_search_terms": [
+        "damage reduction",
+        "half damage",
+        "universal resistance",
+        "damage mitigation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Spell 'Warding Bond' is active",
+      "outcome": "Caster takes an equal amount of damage that the target took",
+      "related_search_terms": [
+        "hp transfer",
+        "shared suffering",
+        "symbiotic damage",
+        "damage echo"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster's hit points reach 0",
+      "condition": "Spell 'Warding Bond' is active",
+      "outcome": "Spell 'Warding Bond' ends",
+      "related_search_terms": [
+        "caster incapacitated",
+        "spell broken",
+        "concentration loss",
+        "unconscious"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster and target relative positions change",
+      "condition": "Caster and target are separated by more than 60 feet",
+      "outcome": "Spell 'Warding Bond' ends",
+      "related_search_terms": [
+        "range exceeded",
+        "break connection",
+        "teleport out of range",
+        "distance limit"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Warding Bond spell is cast",
+      "condition": "Warding Bond is cast on either the current caster or the current target while an existing Warding Bond spell is active",
+      "outcome": "Existing Warding Bond spell ends",
+      "related_search_terms": [
+        "multiple warding bonds",
+        "override spell",
+        "new casting"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster wishes to end the spell",
+      "condition": "Caster uses their action",
+      "outcome": "Spell 'Warding Bond' ends",
+      "related_search_terms": [
+        "cancel spell",
+        "voluntary end",
+        "action to dismiss"
+      ]
+    }
+  ],
+  "description_text": "This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage. The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.",
+  "tags": [
+    "Abjuration",
+    "Spell",
+    "Buff",
+    "Defensive",
+    "Damage Reduction",
+    "Shared Damage"
+  ],
+  "related_search_terms": [
+    "protective spell",
+    "connection spell",
+    "hp transfer",
+    "team buff",
+    "tanking",
+    "support spell",
+    "guardian"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "entity_name": "Blinded",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Perception",
+      "condition": "Creature is Blinded",
+      "outcome": "Creature cannot see",
+      "related_search_terms": [
+        "vision impairment",
+        "sight",
+        "darkness",
+        "cannot perceive"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Ability Check",
+      "condition": "Creature is Blinded AND Ability Check requires sight",
+      "outcome": "Ability Check automatically fails",
+      "related_search_terms": [
+        "perception check",
+        "investigation check",
+        "search",
+        "spotting",
+        "read",
+        "visual task"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Target is Blinded",
+      "outcome": "Attack has Advantage",
+      "related_search_terms": [
+        "easier to hit",
+        "vulnerable",
+        "combat",
+        "defense",
+        "targeting"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Outgoing Attack Roll",
+      "condition": "Attacker is Blinded",
+      "outcome": "Attack has Disadvantage",
+      "related_search_terms": [
+        "harder to hit",
+        "inaccurate",
+        "missing",
+        "combat",
+        "offense"
+      ]
+    }
+  ],
+  "description_text": "A blinded creature can't see and automatically fails any ability check that requires sight. Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+  "tags": [
+    "condition",
+    "status_effect",
+    "disadvantage",
+    "advantage",
+    "vision"
+  ],
+  "related_search_terms": [
+    "blind",
+    "eyes",
+    "sightless",
+    "dark",
+    "obscured vision"
+  ]
+}

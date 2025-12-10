@@ -1,0 +1,85 @@
+{
+  "entity_name": "Fireball",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Fireball is cast",
+      "condition": "Creature is within a 20-foot radius sphere centered on the chosen point",
+      "outcome": "Creature must make a Dexterity saving throw",
+      "related_search_terms": [
+        "AoE",
+        "area damage",
+        "dex save prompt",
+        "saving throw initiation",
+        "crowd control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature's Dexterity saving throw against Fireball fails",
+      "condition": "N/A",
+      "outcome": "Creature takes 8d6 Fire Damage",
+      "related_search_terms": [
+        "full damage",
+        "failed save",
+        "fire damage",
+        "direct damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature's Dexterity saving throw against Fireball succeeds",
+      "condition": "N/A",
+      "outcome": "Creature takes 4d6 Fire Damage (half damage)",
+      "related_search_terms": [
+        "half damage",
+        "successful save",
+        "fire damage",
+        "reduced damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fireball's explosion occurs",
+      "condition": "Environmental obstacle (e.g., corner) present within affected area",
+      "outcome": "Fireball's effect spreads around corners, ignoring line of sight/cover from them",
+      "related_search_terms": [
+        "line of effect",
+        "environmental interaction",
+        "ignore cover",
+        "AoE spread"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fireball's explosion occurs",
+      "condition": "Flammable object is within the 20-foot radius sphere AND object is NOT worn or carried",
+      "outcome": "Flammable object ignites",
+      "related_search_terms": [
+        "environmental hazard",
+        "set on fire",
+        "object damage",
+        "area effect"
+      ]
+    }
+  ],
+  "description_text": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.",
+  "tags": [
+    "spell",
+    "evocation",
+    "damage",
+    "fire",
+    "AoE",
+    "area_of_effect"
+  ],
+  "related_search_terms": [
+    "Fireball spell",
+    "explosion",
+    "magic damage",
+    "wizard spell",
+    "sorcerer spell",
+    "ignite",
+    "flames"
+  ]
+}

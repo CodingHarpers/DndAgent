@@ -1,0 +1,58 @@
+{
+  "entity_name": "Feather Fall",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "When a creature is targeted by Feather Fall while falling",
+      "condition": "Creature is one of up to five falling creatures within range when spell is cast",
+      "outcome": "Creature's rate of descent slows to 60 feet per round until the spell ends",
+      "related_search_terms": [
+        "slowed fall",
+        "controlled descent",
+        "gravity reduction",
+        "fall speed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When an affected creature lands",
+      "condition": "Feather Fall is active on the creature AND creature lands before the spell ends",
+      "outcome": "Creature takes no falling damage",
+      "related_search_terms": [
+        "fall damage immunity",
+        "safe landing",
+        "impact absorption"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When an affected creature lands",
+      "condition": "Feather Fall is active on the creature AND creature lands before the spell ends",
+      "outcome": "Creature can land on its feet",
+      "related_search_terms": [
+        "stable landing",
+        "upright landing",
+        "controlled posture"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When an affected creature lands",
+      "condition": "Feather Fall is active on the creature AND creature lands before the spell ends",
+      "outcome": "Feather Fall spell ends for that specific creature",
+      "related_search_terms": [
+        "spell termination",
+        "effect conclusion",
+        "individual spell end"
+      ]
+    }
+  ],
+  "description_text": "Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.",
+  "related_search_terms": [
+    "fall protection",
+    "gravity control",
+    "safe landing spell",
+    "falling defense",
+    "descent magic"
+  ]
+}

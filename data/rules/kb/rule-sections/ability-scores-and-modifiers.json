@@ -1,0 +1,116 @@
+[
+  {
+    "source_chapter": "Ability Scores and Modifiers",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ability Score",
+        "definition": "A numerical representation of a creature's raw talent and prowess in one of six fundamental areas: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.",
+        "rule_logic": {
+          "premise": "A creature possesses inherent capabilities in one of the six fundamental areas",
+          "implication": "The creature has an Ability Score (typically 3 to 18 for player characters, up to 30 for powerful monsters) for that ability.",
+          "exceptions": [],
+          "description_text": "Every monster and character has six ability scores. They are the character's or monster's raw talent and prowess. The six abilities are Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what are ability scores",
+            "list of abilities",
+            "character stats",
+            "strength score",
+            "dexterity score",
+            "constitution score",
+            "intelligence score",
+            "wisdom score",
+            "charisma score"
+          ]
+        },
+        "related_keywords": [
+          "Strength",
+          "Dexterity",
+          "Constitution",
+          "Intelligence",
+          "Wisdom",
+          "Charisma",
+          "Attribute",
+          "Stat",
+          "Raw Talent"
+        ]
+      },
+      {
+        "concept_name": "Ability Modifier Calculation",
+        "definition": "A numerical value derived directly from an Ability Score, which is applied as a bonus or penalty to most rolls that rely on that ability, such as attack rolls, ability checks, and saving throws.",
+        "rule_logic": {
+          "premise": "A creature has an Ability Score",
+          "implication": "Calculate the Ability Modifier using the formula: (Ability Score - 10) / 2, rounded down. This modifier can range from -5 (for a score of 1) to +10 (for a score of 30).",
+          "exceptions": [],
+          "description_text": "Every ability also has a modifier, derived from the score and ranging from -5 (for an ability score of 1) to +10 (for an ability score of 30). The Ability Modifier applies to nearly every attack roll, ability check, and saving throw that uses that ability.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate modifier",
+            "ability score modifier table",
+            "what is modifier",
+            "modifier formula",
+            "dex modifier",
+            "str modifier",
+            "con modifier",
+            "int modifier",
+            "wis modifier",
+            "cha modifier",
+            "bonus from ability score"
+          ]
+        },
+        "related_keywords": [
+          "Modifier",
+          "Bonus",
+          "Penalty",
+          "Calculation",
+          "Check",
+          "Save",
+          "Attack Roll",
+          "Formula"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "ability-scores-and-modifiers"
+  },
+  {
+    "source_chapter": "Ability Scores and Modifiers",
+    "extracted_concepts": [
+      {
+        "concept_name": "Ability Modifier Calculation",
+        "definition": "A derived value from an Ability Score that represents a bonus or penalty applied to attack rolls, ability checks, and saving throws.",
+        "rule_logic": {
+          "premise": "Given an Ability Score (AS)",
+          "implication": "Ability Modifier = floor((AS - 10) / 2)",
+          "exceptions": [],
+          "description_text": "To determine an ability modifier without consulting the table, subtract 10 from the ability score and then divide the total by 2 (round down).",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate ability modifier",
+            "ability score bonus",
+            "modifier calculation",
+            "strength modifier",
+            "dexterity modifier",
+            "constitution modifier",
+            "intelligence modifier",
+            "wisdom modifier",
+            "charisma modifier",
+            "what is my modifier"
+          ]
+        },
+        "related_keywords": [
+          "Ability Score",
+          "Modifier",
+          "Bonus",
+          "Penalty",
+          "Calculation",
+          "Attack Roll",
+          "Ability Check",
+          "Saving Throw"
+        ]
+      }
+    ],
+    "_chunk_header": "Ability Scores and Modifiers",
+    "_source_file": "ability-scores-and-modifiers"
+  }
+]

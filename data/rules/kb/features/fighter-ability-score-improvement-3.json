@@ -1,0 +1,59 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "character_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player character reaches a new level",
+      "condition": "Player character level is 4 OR 6 OR 8 OR 12 OR 14 OR 16 OR 19",
+      "outcome": "Player character gains an Ability Score Improvement opportunity",
+      "related_search_terms": [
+        "level up benefit",
+        "milestone reward",
+        "character advancement benefit",
+        "class feature gain"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Player character uses an Ability Score Improvement opportunity",
+      "condition": "Player character chooses to increase ability scores",
+      "outcome": "One ability score increases by 2 OR Two different ability scores each increase by 1",
+      "related_search_terms": [
+        "stat allocation",
+        "point distribution",
+        "raise stats",
+        "+1 stat",
+        "+2 stat",
+        "ability score choice"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Player character attempts to increase an ability score using this feature",
+      "condition": "The chosen ability score would exceed 20",
+      "outcome": "The ability score cannot be increased above 20 using this feature",
+      "related_search_terms": [
+        "stat maximum",
+        "ability score limit",
+        "hard cap",
+        "20 stat cap"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "Feature",
+    "Character Progression",
+    "Core Rule",
+    "Class Feature"
+  ],
+  "related_search_terms": [
+    "ASI",
+    "Level Up",
+    "Stat Boost",
+    "Increase Stats",
+    "Ability Scores",
+    "Character Advancement"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "entity_name": "Cure Wounds",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On successful spell cast",
+      "condition": "A creature is touched AND the target is NOT an Undead AND the target is NOT a Construct",
+      "outcome": "Target regains hit points equal to 1d8 + Spellcasting Ability Modifier",
+      "related_search_terms": [
+        "healing spell",
+        "restore hit points",
+        "regain health",
+        "touch healing",
+        "cleric healing",
+        "bard healing",
+        "druid healing",
+        "paladin healing"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell targets a creature",
+      "condition": "Target is an Undead OR Target is a Construct",
+      "outcome": "Spell has no effect",
+      "related_search_terms": [
+        "healing immunity",
+        "undead healing",
+        "construct healing",
+        "cannot heal specific types"
+      ]
+    }
+  ],
+  "description_text": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+  "tags": [
+    "Healing",
+    "Touch",
+    "1st-level",
+    "Abjuration"
+  ],
+  "related_search_terms": [
+    "cure",
+    "heal",
+    "hit points",
+    "cleric spell",
+    "bard spell",
+    "druid spell",
+    "paladin spell"
+  ]
+}

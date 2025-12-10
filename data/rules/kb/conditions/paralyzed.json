@@ -1,0 +1,69 @@
+{
+  "entity_name": "Paralyzed",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature becomes Paralyzed",
+      "condition": "Creature is Paralyzed",
+      "outcome": "Creature gains Incapacitated condition and cannot move or speak",
+      "related_search_terms": [
+        "incapacitated",
+        "unable to act",
+        "restrained",
+        "helpless",
+        "immobilized",
+        "silenced"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature makes a saving throw",
+      "condition": "Creature is Paralyzed AND the saving throw is Strength OR Dexterity",
+      "outcome": "Creature automatically fails the saving throw",
+      "related_search_terms": [
+        "failed save",
+        "no save",
+        "vulnerable to spells",
+        "control spells"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Target of the attack is Paralyzed",
+      "outcome": "Attack roll has Advantage",
+      "related_search_terms": [
+        "easy to hit",
+        "exposed",
+        "vulnerable",
+        "advantage on attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack hits",
+      "condition": "Target of the attack is Paralyzed AND Attacker is within 5 feet of the target",
+      "outcome": "The hit becomes a Critical Hit",
+      "related_search_terms": [
+        "auto crit",
+        "critical hit",
+        "coup de grace",
+        "melee advantage",
+        "finishing move"
+      ]
+    }
+  ],
+  "description_text": "A paralyzed creature is incapacitated (see the condition) and can't move or speak. The creature automatically fails Strength and Dexterity saving throws. Attack rolls against the creature have advantage. Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.",
+  "tags": [
+    "condition"
+  ],
+  "related_search_terms": [
+    "paralysis",
+    "stunned",
+    "helpless",
+    "frozen",
+    "petrified",
+    "immobilized"
+  ]
+}

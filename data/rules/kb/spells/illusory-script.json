@@ -1,0 +1,82 @@
+{
+  "entity_name": "Illusory Script",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to read the script",
+      "condition": "Creature was designated by the caster when the spell was cast",
+      "outcome": "The writing appears normal, in the caster's hand, and conveys the intended meaning",
+      "related_search_terms": [
+        "designated recipient",
+        "true text",
+        "secret communique",
+        "intended message"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to read the script",
+      "condition": "Creature was NOT designated by the caster when the spell was cast AND the caster did NOT choose an alternative message",
+      "outcome": "The writing appears as an unknown or magical, unintelligible script",
+      "related_search_terms": [
+        "garbled text",
+        "gibberish",
+        "magical script",
+        "unreadable text"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to read the script",
+      "condition": "Creature was NOT designated by the caster when the spell was cast AND the caster chose an alternative message AND the alternative language is one the caster knows",
+      "outcome": "The writing appears as an entirely different message, in a different hand and language",
+      "related_search_terms": [
+        "decoy message",
+        "false information",
+        "misdirection",
+        "alter message"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Illusory Script is dispelled",
+      "condition": "The spell is active",
+      "outcome": "The original script and the illusion both disappear",
+      "related_search_terms": [
+        "spell ends",
+        "remove magic",
+        "message vanishes",
+        "dispel magic"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature with Truesight attempts to read the script",
+      "condition": "Creature possesses Truesight",
+      "outcome": "The creature can read the hidden, true message",
+      "related_search_terms": [
+        "see through illusion",
+        "detect magic",
+        "reveal truth",
+        "read hidden message"
+      ]
+    }
+  ],
+  "description_text": "You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration. To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know. Should the spell be dispelled, the original script and the illusion both disappear. A creature with truesight can read the hidden message.",
+  "tags": [
+    "illusion",
+    "writing",
+    "communication",
+    "utility",
+    "script"
+  ],
+  "related_search_terms": [
+    "secret message",
+    "hidden text",
+    "magical writing",
+    "document protection",
+    "forgery",
+    "altering documents",
+    "message concealment"
+  ]
+}

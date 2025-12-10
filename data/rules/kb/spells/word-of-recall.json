@@ -1,0 +1,72 @@
+{
+  "entity_name": "Word of Recall",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is Cast (successfully)",
+      "condition": "A sanctuary has been previously designated by the caster AND Caster chooses up to five willing creatures within 5 feet of them",
+      "outcome": "Caster and chosen creatures instantly teleport to the nearest unoccupied space of the designated sanctuary",
+      "related_search_terms": [
+        "teleport",
+        "group travel",
+        "emergency escape",
+        "return home",
+        "divine travel"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell is Cast (as a designation attempt)",
+      "condition": "Casting occurs within a location that is dedicated to or strongly linked to the caster's deity",
+      "outcome": "The location becomes the designated sanctuary for future castings of Word of Recall by the caster",
+      "related_search_terms": [
+        "set teleport location",
+        "establish sanctuary",
+        "divine waypoint",
+        "ritual preparation",
+        "home base"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell is Cast (for teleportation)",
+      "condition": "No sanctuary has been previously designated by the caster for Word of Recall",
+      "outcome": "The spell has no effect",
+      "related_search_terms": [
+        "spell failure",
+        "pre-requisite not met",
+        "wasted spell slot",
+        "no destination"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell is Cast (as a designation attempt)",
+      "condition": "Casting occurs in an area that is NOT dedicated to or strongly linked to the caster's deity",
+      "outcome": "The spell has no effect (the location is not designated as a sanctuary)",
+      "related_search_terms": [
+        "invalid sanctuary",
+        "wrong location",
+        "divine restriction",
+        "designation failure"
+      ]
+    }
+  ],
+  "description_text": "You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect. You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn't dedicated to your deity, the spell has no effect.",
+  "tags": [
+    "teleportation",
+    "cleric spell",
+    "divine magic",
+    "travel",
+    "ritual"
+  ],
+  "related_search_terms": [
+    "teleport",
+    "travel spell",
+    "divine escape",
+    "sanctuary spell",
+    "return spell",
+    "home spell"
+  ]
+}

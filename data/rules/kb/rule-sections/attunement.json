@@ -1,0 +1,389 @@
+[
+  {
+    "source_chapter": "Magic Items - Attunement",
+    "extracted_concepts": [
+      {
+        "concept_name": "Attunement",
+        "definition": "A special bond required for a creature to use the magical properties of certain magic items, typically those of rare or greater rarity.",
+        "rule_logic": {
+          "premise": "A creature is attempting to use the magical properties of an item that requires attunement",
+          "implication": "The creature must first become attuned to the item.",
+          "exceptions": [],
+          "description_text": "Some magic items require their user to attune to them before their magical properties can be used. Attuning to a magic item requires a creature to spend a short rest focused on only that item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to attune",
+            "using magic items",
+            "magic item requirements",
+            "what is attunement"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "attune",
+          "magical properties",
+          "attuned"
+        ]
+      },
+      {
+        "concept_name": "Maximum Attuned Items",
+        "definition": "The limit on how many magic items a single creature can be attuned to simultaneously.",
+        "rule_logic": {
+          "premise": "A creature is attuned to magic items",
+          "implication": "The creature cannot be attuned to more than three magic items at a time.",
+          "exceptions": [],
+          "description_text": "A creature can be attuned to no more than three magic items at a time.",
+          "is_exception": false,
+          "related_search_terms": [
+            "attunement slots",
+            "how many magic items can I use",
+            "attuned item limit"
+          ]
+        },
+        "related_keywords": [
+          "attunement limit",
+          "three items",
+          "magic item slots"
+        ]
+      },
+      {
+        "concept_name": "Attunement Process",
+        "definition": "The procedure a creature must follow to become attuned to a magic item.",
+        "rule_logic": {
+          "premise": "A creature wishes to attune to a magic item",
+          "implication": "The creature must spend a short rest focused on only that item. During this rest, the creature must be in physical contact with the item and learns its properties, how to use them, and whether it requires an action to use. The attunement ends if the creature dies, or if the item is more than 100 feet away for 24 hours.",
+          "exceptions": [
+            "Some items have additional requirements for attunement, which are specified in their descriptions."
+          ],
+          "description_text": "Attuning to a magic item requires a creature to spend a short rest focused on only that item. If the short rest is interrupted, the attunement attempt fails. Otherwise, at the end of the short rest, the creature gains an understanding of the item's properties and how to use them, as well as whether it requires an action to use. A creature can't be attuned to more than one copy of the same item. The attunement lasts until the creature dies, or until the item is more than 100 feet away from the creature for 24 hours. A creature can also voluntarily end attunement by spending another short rest focused on the item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to attune to an item",
+            "attune short rest",
+            "attunement requirements",
+            "learn item properties"
+          ]
+        },
+        "related_keywords": [
+          "short rest",
+          "attunement duration",
+          "item properties",
+          "magic item"
+        ]
+      },
+      {
+        "concept_name": "Ending Attunement",
+        "definition": "The conditions under which a creature's attunement to a magic item ceases.",
+        "rule_logic": {
+          "premise": "A creature is attuned to a magic item AND one of the following occurs: the creature dies, the item is more than 100 feet away for 24 hours, OR the creature spends a short rest focused on ending attunement",
+          "implication": "The attunement to that item ends.",
+          "exceptions": [],
+          "description_text": "The attunement lasts until the creature dies, or until the item is more than 100 feet away from the creature for 24 hours. A creature can also voluntarily end attunement by spending another short rest focused on the item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to un-attune",
+            "break attunement",
+            "losing attunement",
+            "death and attunement"
+          ]
+        },
+        "related_keywords": [
+          "unattune",
+          "attunement end",
+          "death",
+          "distance"
+        ]
+      },
+      {
+        "concept_name": "Exceeding Attunement Limit",
+        "definition": "The consequence of attempting to attune to more magic items than allowed by the rules.",
+        "rule_logic": {
+          "premise": "A creature attempts to attune to a fourth (or more) magic item",
+          "implication": "The creature must immediately choose one of the other items it is already attuned to and end its attunement to that item.",
+          "exceptions": [],
+          "description_text": "If you try to attune to a fourth item, you must end your attunement to one of the other items.",
+          "is_exception": false,
+          "related_search_terms": [
+            "too many attuned items",
+            "attune to more than three",
+            "what happens if I attune too many"
+          ]
+        },
+        "related_keywords": [
+          "attunement conflict",
+          "over-attune",
+          "swap attunement"
+        ]
+      },
+      {
+        "concept_name": "Duplicate Item Attunement",
+        "definition": "A restriction regarding attuning to multiple copies of the same magic item.",
+        "rule_logic": {
+          "premise": "A creature is attuned to a magic item AND attempts to attune to another copy of the exact same item",
+          "implication": "The attunement attempt fails, as a creature cannot be attuned to more than one copy of the same item.",
+          "exceptions": [],
+          "description_text": "A creature can't be attuned to more than one copy of the same item.",
+          "is_exception": true,
+          "related_search_terms": [
+            "attune to two rings of protection",
+            "multiple copies same item",
+            "duplicate magic items"
+          ]
+        },
+        "related_keywords": [
+          "duplicate items",
+          "same item",
+          "attunement restriction"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "attunement"
+  },
+  {
+    "source_chapter": "Magic Items - Attunement",
+    "extracted_concepts": [
+      {
+        "concept_name": "Attunement",
+        "definition": "A required bond between a creature and certain magic items, enabling the creature to utilize the item's magical properties.",
+        "rule_logic": {
+          "premise": "Magic item requires attunement",
+          "implication": "Creature must form an attunement bond with the item to use its magical properties",
+          "exceptions": [],
+          "description_text": "Some magic items require a creature to form a bond with them before their magical properties can be used. This bond is called attunement, and certain items have a prerequisite for it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what is attunement",
+            "how attunement works",
+            "magic item bond",
+            "attunement requirement"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "bond",
+          "magical properties",
+          "prerequisite"
+        ]
+      },
+      {
+        "concept_name": "Attunement Prerequisite (Class)",
+        "definition": "A specific class requirement that a creature must meet to attune to certain magic items.",
+        "rule_logic": {
+          "premise": "Magic item attunement prerequisite is a class",
+          "implication": "Creature must be a member of that class. IF the class is spellcasting, a monster qualifies if it has spell slots and uses that class's spell list.",
+          "exceptions": [],
+          "description_text": "If the prerequisite is a class, a creature must be a member of that class to attune to the item. (If the class is a spellcasting class, a monster qualifies if it has spell slots and uses that class's spell list.)",
+          "is_exception": false,
+          "related_search_terms": [
+            "attunement class restriction",
+            "can a monster attune",
+            "spellcasting class attunement",
+            "class prerequisite"
+          ]
+        },
+        "related_keywords": [
+          "prerequisite",
+          "class",
+          "spellcasting",
+          "monster",
+          "spell slots"
+        ]
+      },
+      {
+        "concept_name": "Attunement Prerequisite (Spellcaster)",
+        "definition": "A general spellcaster requirement that a creature must meet to attune to certain magic items.",
+        "rule_logic": {
+          "premise": "Magic item attunement prerequisite is to be a spellcaster",
+          "implication": "Creature qualifies if it can cast at least one spell using its traits or features (not using a magic item or similar).",
+          "exceptions": [],
+          "description_text": "If the prerequisite is to be a spellcaster, a creature qualifies if it can cast at least one spell using its traits or features, not using a magic item or the like.",
+          "is_exception": false,
+          "related_search_terms": [
+            "attunement spellcaster requirement",
+            "who is a spellcaster for attunement",
+            "casting spells for attunement"
+          ]
+        },
+        "related_keywords": [
+          "prerequisite",
+          "spellcaster",
+          "spell",
+          "traits",
+          "features"
+        ]
+      },
+      {
+        "concept_name": "Unattuned Magic Item Benefits",
+        "definition": "The properties of a magic item that a creature can use without being attuned to it.",
+        "rule_logic": {
+          "premise": "Creature possesses a magic item requiring attunement",
+          "implication": "Creature gains only the nonmagical benefits of the item, UNLESS its description states otherwise.",
+          "exceptions": [],
+          "description_text": "Without becoming attuned to an item that requires attunement, a creature gains only its nonmagical benefits, unless its description states otherwise. For example, a magic shield that requires attunement provides the benefits of a normal shield to a creature not attuned to it, but none of its magical properties.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I use a magic item without attunement",
+            "magic shield not attuned",
+            "nonmagical properties of magic items",
+            "benefits without attunement"
+          ]
+        },
+        "related_keywords": [
+          "magic item",
+          "nonmagical",
+          "benefits",
+          "unattuned",
+          "exception"
+        ]
+      },
+      {
+        "concept_name": "Process of Attuning to an Item",
+        "definition": "The ritualistic steps a creature must take to establish attunement with a magic item.",
+        "rule_logic": {
+          "premise": "Creature attempts to attune to a magic item",
+          "implication": "Creature must spend a short rest focused on only that item while in physical contact with it (cannot be the same short rest used to learn properties). IF the short rest is interrupted, attunement fails. ELSE, at the end of the short rest, the creature gains intuitive understanding of how to activate the item's magical properties.",
+          "exceptions": [],
+          "description_text": "Attuning to an item requires a creature to spend a short rest focused on only that item while being in physical contact with it (this can't be the same short rest used to learn the item's properties). This focus can take the form of weapon practice (for a weapon), meditation (for a wondrous item), or some other appropriate activity. If the short rest is interrupted, the attunement attempt fails. Otherwise, at the end of the short rest, the creature gains an intuitive understanding of how to activate any magical properties of the item, including any necessary command words.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to attune to an item",
+            "attunement time",
+            "short rest attunement",
+            "interrupted attunement",
+            "command words"
+          ]
+        },
+        "related_keywords": [
+          "short rest",
+          "focus",
+          "physical contact",
+          "interruption",
+          "procedure",
+          "command words"
+        ]
+      },
+      {
+        "concept_name": "Attunement Limit (Item Specificity)",
+        "definition": "The restriction that a single magic item can only be attuned to one creature at any given time.",
+        "rule_logic": {
+          "premise": "A magic item is subject to attunement",
+          "implication": "The item can be attuned to only one creature at a time.",
+          "exceptions": [],
+          "description_text": "An item can be attuned to only one creature at a time...",
+          "is_exception": false,
+          "related_search_terms": [
+            "can two people attune to one item",
+            "shared attunement",
+            "exclusive attunement"
+          ]
+        },
+        "related_keywords": [
+          "limit",
+          "single creature",
+          "exclusivity",
+          "magic item"
+        ]
+      },
+      {
+        "concept_name": "Attunement Limit (Creature Total)",
+        "definition": "The maximum number of magic items a single creature can be attuned to simultaneously.",
+        "rule_logic": {
+          "premise": "Creature attempts to attune to a magic item",
+          "implication": "A creature can be attuned to no more than three magic items at a time. An attempt to attune to a fourth item fails, requiring the creature to end attunement to an existing item first.",
+          "exceptions": [],
+          "description_text": "...and a creature can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; the creature must end its attunement to an item first.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how many magic items can I attune to",
+            "attunement slots",
+            "three item limit",
+            "max attunement"
+          ]
+        },
+        "related_keywords": [
+          "limit",
+          "maximum",
+          "three items",
+          "attunement slots",
+          "failure"
+        ]
+      },
+      {
+        "concept_name": "Attunement Limit (Duplicate Items)",
+        "definition": "The rule preventing a creature from attuning to multiple identical copies of a magic item.",
+        "rule_logic": {
+          "premise": "Creature attempts to attune to a magic item",
+          "implication": "A creature can't attune to more than one copy of an item (e.g., cannot attune to more than one *ring of protection* at a time).",
+          "exceptions": [],
+          "description_text": "Additionally, a creature can't attune to more than one copy of an item. For example, a creature can't attune to more than one *ring of protection* at a time.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I attune to two rings of protection",
+            "duplicate magic items attunement",
+            "multiple copies attunement"
+          ]
+        },
+        "related_keywords": [
+          "limit",
+          "duplicate",
+          "copy",
+          "ring of protection",
+          "identical items"
+        ]
+      },
+      {
+        "concept_name": "Ending Attunement (Conditions)",
+        "definition": "The specific conditions under which a creature's attunement to a magic item automatically terminates.",
+        "rule_logic": {
+          "premise": "A creature is attuned to an item",
+          "implication": "Attunement ends IF the creature no longer satisfies prerequisites OR the item is more than 100 feet away for at least 24 hours OR the creature dies OR another creature attunes to the item.",
+          "exceptions": [],
+          "description_text": "A creature's attunement to an item ends if the creature no longer satisfies the prerequisites for attunement, if the item has been more than 100 feet away for at least 24 hours, if the creature dies, or if another creature attunes to the item.",
+          "is_exception": false,
+          "related_search_terms": [
+            "when does attunement end",
+            "losing attunement",
+            "attunement range limit",
+            "player death attunement",
+            "attunement prerequisites lost"
+          ]
+        },
+        "related_keywords": [
+          "end",
+          "prerequisites",
+          "distance",
+          "death",
+          "another creature",
+          "termination"
+        ]
+      },
+      {
+        "concept_name": "Ending Attunement (Voluntary)",
+        "definition": "The conscious act by which a creature can choose to end its attunement to a magic item.",
+        "rule_logic": {
+          "premise": "Creature wishes to voluntarily end attunement to an item",
+          "implication": "Creature can end attunement by spending another short rest focused on the item, UNLESS the item is cursed.",
+          "exceptions": [],
+          "description_text": "A creature can also voluntarily end attunement by spending another short rest focused on the item, unless the item is cursed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to un-attune",
+            "voluntary attunement end",
+            "cursed item attunement",
+            "ending attunement process"
+          ]
+        },
+        "related_keywords": [
+          "voluntary",
+          "end",
+          "short rest",
+          "cursed item",
+          "choice"
+        ]
+      }
+    ],
+    "_chunk_header": "Attunement",
+    "_source_file": "attunement"
+  }
+]

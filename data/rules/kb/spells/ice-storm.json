@@ -1,0 +1,60 @@
+{
+  "entity_name": "Ice Storm",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature is within a 20-foot radius, 40-foot-high cylinder centered on a point within range",
+      "condition": "Target fails a Dexterity saving throw",
+      "outcome": "Target takes 2d8 bludgeoning damage AND 4d6 cold damage",
+      "related_search_terms": [
+        "AoE damage",
+        "Dex save failed",
+        "full damage",
+        "cold bludgeoning"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature is within a 20-foot radius, 40-foot-high cylinder centered on a point within range",
+      "condition": "Target succeeds on a Dexterity saving throw",
+      "outcome": "Target takes half 2d8 bludgeoning damage AND half 4d6 cold damage",
+      "related_search_terms": [
+        "reduced damage",
+        "half damage",
+        "Dex save success",
+        "resisted damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Area is the 20-foot radius, 40-foot-high cylinder affected by the spell",
+      "outcome": "Area becomes difficult terrain until the end of the caster's next turn",
+      "related_search_terms": [
+        "area control",
+        "movement impediment",
+        "hindrance",
+        "terrain alteration",
+        "AoE difficult terrain"
+      ]
+    }
+  ],
+  "description_text": "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one. Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.",
+  "tags": [
+    "spell",
+    "evocation",
+    "damage",
+    "crowd_control",
+    "AOE",
+    "4th_level_spell"
+  ],
+  "related_search_terms": [
+    "hail spell",
+    "ice damage",
+    "bludgeoning cold",
+    "area effect spell",
+    "dex save spell",
+    "movement reduction"
+  ]
+}

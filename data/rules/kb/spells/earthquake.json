@@ -1,0 +1,134 @@
+{
+  "entity_name": "Earthquake",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Duration",
+      "condition": "Ground in 100-foot-radius area is affected by tremor",
+      "outcome": "Ground in area becomes difficult terrain",
+      "related_search_terms": [
+        "movement penalty",
+        "slowed movement",
+        "terrain impediment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature on ground in area",
+      "condition": "Creature is concentrating AND fails a Constitution saving throw",
+      "outcome": "Creature's concentration is broken",
+      "related_search_terms": [
+        "spell disruption",
+        "concentration loss",
+        "casting interruption"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When spell is cast OR at the end of your turn while concentrating",
+      "condition": "Creature is on the ground in the area AND fails a Dexterity saving throw",
+      "outcome": "Creature is knocked prone",
+      "related_search_terms": [
+        "knockdown",
+        "prone condition",
+        "movement impediment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of your next turn after casting the spell",
+      "condition": "GM determines terrain allows fissures",
+      "outcome": "1d6 fissures open (10 ft wide, 1d10x10 ft deep), extending across the area",
+      "related_search_terms": [
+        "terrain change",
+        "environmental hazard",
+        "ground breaking",
+        "chasms"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fissure opens at a creature's location",
+      "condition": "Creature fails a Dexterity saving throw",
+      "outcome": "Creature falls into the fissure",
+      "related_search_terms": [
+        "pitfall",
+        "chasm fall",
+        "falling damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fissure opens at a creature's location",
+      "condition": "Creature succeeds on a Dexterity saving throw",
+      "outcome": "Creature moves with the fissure's edge as it opens (does not fall in)",
+      "related_search_terms": [
+        "avoid hazard",
+        "safe movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fissure opens beneath a structure",
+      "condition": "Fissure opens beneath a structure",
+      "outcome": "Structure automatically collapses",
+      "related_search_terms": [
+        "building destruction",
+        "structural failure",
+        "terrain collapse"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "When spell is cast OR at the start of your turn while concentrating",
+      "condition": "Structure in contact with the ground in the area",
+      "outcome": "Deals 50 bludgeoning damage to the structure",
+      "related_search_terms": [
+        "siege damage",
+        "building damage",
+        "environmental destruction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A structure collapses",
+      "condition": "Creature within half the structure's height AND fails a Dexterity saving throw",
+      "outcome": "Creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in rubble (requiring DC 20 Strength (Athletics) check as an action to escape)",
+      "related_search_terms": [
+        "rubble damage",
+        "crushing damage",
+        "debris",
+        "trapped"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A structure collapses",
+      "condition": "Creature within half the structure's height AND succeeds on a Dexterity saving throw",
+      "outcome": "Creature takes half (5d6) bludgeoning damage, is not prone, and is not buried",
+      "related_search_terms": [
+        "half damage",
+        "avoid collapse",
+        "dodge debris"
+      ]
+    }
+  ],
+  "description_text": "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area. The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a constitution saving throw. On a failed save, the creature's concentration is broken. When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a dexterity saving throw. On a failed save, the creature is knocked prone. This spell can have additional effects depending on the terrain in the area, as determined by the GM. Fissures. Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the GM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below). Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The GM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried.",
+  "tags": [
+    "evocation",
+    "area of effect",
+    "control",
+    "damage",
+    "environmental"
+  ],
+  "related_search_terms": [
+    "AoE control",
+    "terrain alteration",
+    "structure damage",
+    "concentration break",
+    "prone condition",
+    "destruction",
+    "hindrance"
+  ]
+}

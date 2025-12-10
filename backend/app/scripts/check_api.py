@@ -39,13 +39,16 @@ def check_api():
     print("\n--- Testing Gemini Generation ---")
     
     # Diagnostic: List models
-    import google.generativeai as genai
-    genai.configure(api_key=gemini_key)
-    print("Available Models:")
+    from google import genai
+    from google.genai import types
+    
     try:
-        for m in genai.list_models():
-            if 'generateContent' in m.supported_generation_methods:
-                print(f" - {m.name}")
+        # Use a temporary client for listing models
+        temp_client = genai.Client(api_key=gemini_key, http_options=types.HttpOptions(api_version="v1"))
+        print("Available Models:")
+        for m in temp_client.models.list():
+            # In v1 API, models are returned differently. We check name.
+            print(f" - {m.name}")
     except Exception as list_err:
         print(f"Error listing models: {list_err}")
 

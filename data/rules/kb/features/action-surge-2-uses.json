@@ -1,0 +1,71 @@
+{
+  "entity_name": "Action Surge",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Player activates Action Surge",
+      "condition": "On player's turn",
+      "outcome": "Player gains one additional action for that turn",
+      "related_search_terms": [
+        "extra action",
+        "additional action",
+        "combat boost",
+        "fighter action",
+        "more attacks",
+        "burst damage"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Action Surge is used",
+      "condition": "Player is less than 17th level",
+      "outcome": "Action Surge becomes unavailable until player completes a short rest or long rest",
+      "related_search_terms": [
+        "cooldown",
+        "resource management",
+        "once per rest",
+        "feature exhaustion"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Action Surge is used",
+      "condition": "Player is 17th level or higher",
+      "outcome": "Action Surge can be used one more time before requiring a short rest or long rest to recharge",
+      "related_search_terms": [
+        "two uses",
+        "high level fighter",
+        "multiple per rest",
+        "improved resource"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Player attempts to use Action Surge multiple times on the same turn",
+      "condition": "Player is 17th level or higher",
+      "outcome": "Action Surge cannot be used more than once on the same turn",
+      "related_search_terms": [
+        "one per turn",
+        "turn limit",
+        "action surge cap"
+      ]
+    }
+  ],
+  "description_text": "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action. Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.",
+  "tags": [
+    "Fighter",
+    "Resource",
+    "Combat",
+    "Action Economy"
+  ],
+  "related_search_terms": [
+    "extra action",
+    "more actions",
+    "multiple actions",
+    "fighter ability",
+    "nova damage",
+    "burst damage",
+    "turn manipulation"
+  ]
+}

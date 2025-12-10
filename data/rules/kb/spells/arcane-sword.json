@@ -1,0 +1,61 @@
+{
+  "entity_name": "Arcane Sword",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "When Arcane Sword appears (on spell cast)",
+      "condition": "You choose a target within 5 feet of the sword",
+      "outcome": "You make a melee spell attack. On a hit, the target takes 3d10 force damage.",
+      "related_search_terms": [
+        "initial damage",
+        "first attack",
+        "summon damage",
+        "creation damage",
+        "melee spell attack"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Each of your turns, while Arcane Sword spell persists",
+      "condition": "You use a bonus action",
+      "outcome": "You move the sword up to 20 feet to a spot you can see. You choose a target within 5 feet of the sword. You make a melee spell attack. On a hit, the target takes 3d10 force damage.",
+      "related_search_terms": [
+        "bonus action attack",
+        "recurring damage",
+        "sword reposition",
+        "sustained damage",
+        "repeated attack",
+        "move and attack"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Arcane Sword spell is cast",
+      "condition": "None",
+      "outcome": "A sword-shaped plane of force hovers within range. It lasts for the duration.",
+      "related_search_terms": [
+        "summon duration",
+        "persistent effect",
+        "sword existence",
+        "force construct"
+      ]
+    }
+  ],
+  "description_text": "You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.",
+  "tags": [
+    "Attack",
+    "Damage",
+    "Summon",
+    "Bonus Action",
+    "Force"
+  ],
+  "related_search_terms": [
+    "summoned weapon",
+    "floating weapon",
+    "force damage spell",
+    "bonus action spell",
+    "persistent spell",
+    "melee spell attack"
+  ]
+}

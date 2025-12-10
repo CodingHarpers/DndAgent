@@ -1,0 +1,101 @@
+{
+  "entity_name": "Mage Hand",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses a point within range",
+      "outcome": "A spectral, floating hand appears at the chosen point",
+      "related_search_terms": [
+        "summon",
+        "conjure",
+        "create hand",
+        "ghost hand"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hand exists",
+      "condition": "Spell duration expires OR Caster uses an action to dismiss the hand OR Hand is more than 30 feet away from caster OR Caster casts Mage Hand again",
+      "outcome": "Hand vanishes",
+      "related_search_terms": [
+        "end spell",
+        "dismiss hand",
+        "distance limit",
+        "recast spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn",
+      "condition": "Caster has an action available",
+      "outcome": "Caster can use an Action to control the hand",
+      "related_search_terms": [
+        "control hand",
+        "direct hand",
+        "remote action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action to control the hand",
+      "condition": "None",
+      "outcome": "Hand can be moved up to 30 feet",
+      "related_search_terms": [
+        "move hand",
+        "reposition",
+        "extend reach"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster uses an action to control the hand",
+      "condition": "Target is an object, unlocked door/container, item in open container, or vial",
+      "outcome": "Hand can manipulate an object, open an unlocked door/container, stow/retrieve an item from an open container, or pour contents out of a vial",
+      "related_search_terms": [
+        "interact remotely",
+        "pick up item",
+        "open door",
+        "steal item",
+        "pour liquid"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hand attempts an action",
+      "condition": "Attempted action is an attack OR Attempted action is activating a magic item",
+      "outcome": "Cannot perform the action",
+      "related_search_terms": [
+        "no combat",
+        "non-combat utility",
+        "cannot activate magic"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hand attempts to carry an object",
+      "condition": "Object's weight is greater than 10 pounds",
+      "outcome": "Cannot carry the object",
+      "related_search_terms": [
+        "weight limit",
+        "lifting capacity",
+        "strength limit"
+      ]
+    }
+  ],
+  "description_text": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again. You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it. The hand can't attack, activate magic items, or carry more than 10 pounds.",
+  "tags": [
+    "cantrip",
+    "utility",
+    "conjuration",
+    "manipulation",
+    "ranged"
+  ],
+  "related_search_terms": [
+    "mage hand cantrip",
+    "telekinetic hand",
+    "remote interaction",
+    "utility spell"
+  ]
+}

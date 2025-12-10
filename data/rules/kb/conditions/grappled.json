@@ -1,0 +1,59 @@
+{
+  "entity_name": "Grappled",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature is Grappled",
+      "condition": "Creature's speed is being determined or modified",
+      "outcome": "Creature's speed becomes 0 AND Creature cannot benefit from any bonus to its speed",
+      "related_search_terms": [
+        "movement restriction",
+        "immobilized",
+        "cannot move",
+        "speed penalty",
+        "restrained movement"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Grappler's status changes",
+      "condition": "Grappler becomes Incapacitated",
+      "outcome": "Grappled condition ends for the grappled creature",
+      "related_search_terms": [
+        "grapple break",
+        "escape grapple",
+        "grapple release",
+        "incapacitated grappler"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "An effect is applied to the grappled creature",
+      "condition": "Effect removes the grappled creature from the reach of the grappler OR grappling effect",
+      "outcome": "Grappled condition ends for the grappled creature",
+      "related_search_terms": [
+        "forced movement",
+        "pushed away",
+        "pulled away",
+        "teleported",
+        "grapple break",
+        "escape grapple",
+        "thunderwave"
+      ]
+    }
+  ],
+  "description_text": "A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed. The condition ends if the grappler is incapacitated (see the condition). The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell.",
+  "tags": [
+    "condition",
+    "movement_restriction",
+    "control"
+  ],
+  "related_search_terms": [
+    "restrained",
+    "grabbed",
+    "held",
+    "tangled",
+    "grapple rules"
+  ]
+}

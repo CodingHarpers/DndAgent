@@ -1,0 +1,150 @@
+{
+  "entity_name": "Faithful Hound",
+  "logic_type": "spell_effect",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster targets an unoccupied space within range that is visible to them",
+      "outcome": "A phantom watchdog is conjured in the target space",
+      "related_search_terms": [
+        "summon creature",
+        "conjure ally",
+        "spell creation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hound is active",
+      "condition": "Spell duration expires OR Caster uses an action to dismiss the hound OR Caster moves more than 100 feet away from the hound",
+      "outcome": "The hound disappears",
+      "related_search_terms": [
+        "spell duration",
+        "dismiss spell",
+        "range limit",
+        "despawn"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to perceive the hound",
+      "condition": "Creature is not the caster",
+      "outcome": "The hound is invisible to that creature",
+      "related_search_terms": [
+        "unseen minion",
+        "invisible pet",
+        "stealthy companion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hound is targeted by an attack or harmful effect",
+      "condition": "Any attempt to harm the hound",
+      "outcome": "The hound cannot be harmed and takes no damage",
+      "related_search_terms": [
+        "untargetable",
+        "immune damage",
+        "invulnerable",
+        "indestructible"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature comes within 30 feet of the hound",
+      "condition": "Creature is Small or larger AND Creature has NOT spoken the specified password",
+      "outcome": "The hound barks loudly",
+      "related_search_terms": [
+        "alarm spell",
+        "sentry",
+        "alert system",
+        "guard dog"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Hound attempts to perceive",
+      "condition": "Target is invisible",
+      "outcome": "The hound can see invisible creatures",
+      "related_search_terms": [
+        "see invisible",
+        "true sight",
+        "invisible detection"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Hound attempts to perceive",
+      "condition": "Target is on the Ethereal Plane",
+      "outcome": "The hound can see into the Ethereal Plane",
+      "related_search_terms": [
+        "ethereal detection",
+        "plane sight"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Hound encounters an illusion",
+      "condition": "An illusion is present",
+      "outcome": "The hound ignores illusions",
+      "related_search_terms": [
+        "illusion detection",
+        "dispel illusion",
+        "perceive reality"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of Caster's Turn",
+      "condition": "At least one creature hostile to the caster is within 5 feet of the hound",
+      "outcome": "The hound attempts to bite one hostile creature within 5 feet",
+      "related_search_terms": [
+        "automatic attack",
+        "sentinel effect",
+        "guard dog attack"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Hound makes a bite attack roll",
+      "condition": "None",
+      "outcome": "Attack bonus = Caster's Spellcasting Ability Modifier + Caster's Proficiency Bonus",
+      "related_search_terms": [
+        "attack roll calculation",
+        "to hit bonus",
+        "spell attack bonus"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Hound's bite attack hits",
+      "condition": "Attack roll result meets or exceeds target's AC",
+      "outcome": "Target takes 4d8 piercing damage",
+      "related_search_terms": [
+        "piercing damage",
+        "attack damage",
+        "bite attack"
+      ]
+    }
+  ],
+  "description_text": "You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it. The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions. At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.",
+  "tags": [
+    "summoning",
+    "utility",
+    "detection",
+    "damage",
+    "invisibility",
+    "guardian",
+    "sentry"
+  ],
+  "related_search_terms": [
+    "phantom dog",
+    "guardian",
+    "sentry",
+    "alarm",
+    "invisible dog",
+    "watchdog",
+    "arcane eye",
+    "unseen servant",
+    "familiar"
+  ]
+}

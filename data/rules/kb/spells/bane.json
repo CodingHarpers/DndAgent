@@ -1,0 +1,60 @@
+{
+  "entity_name": "Bane",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Caster chooses up to three creatures they can see within range",
+      "outcome": "Each chosen creature must make a Charisma Saving Throw",
+      "related_search_terms": [
+        "spell targeting",
+        "initial save",
+        "charisma save",
+        "targeting multiple creatures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes an Attack Roll",
+      "condition": "Target previously failed the initial Charisma Saving Throw AND Spell has not ended",
+      "outcome": "Target must roll 1d4 and subtract the number rolled from the Attack Roll",
+      "related_search_terms": [
+        "attack debuff",
+        "attack penalty",
+        "reduce attack",
+        "bane effect",
+        "roll d4"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes a Saving Throw",
+      "condition": "Target previously failed the initial Charisma Saving Throw AND Spell has not ended",
+      "outcome": "Target must roll 1d4 and subtract the number rolled from the Saving Throw",
+      "related_search_terms": [
+        "save debuff",
+        "saving throw penalty",
+        "reduce save",
+        "bane effect",
+        "roll d4"
+      ]
+    }
+  ],
+  "description_text": "Up to three creatures of your choice that you can see within range must make charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.",
+  "tags": [
+    "spell",
+    "debuff",
+    "enchantment",
+    "first_level",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "bane spell",
+    "charisma save",
+    "d4 penalty",
+    "attack roll debuff",
+    "saving throw debuff",
+    "enemy debuff"
+  ]
+}

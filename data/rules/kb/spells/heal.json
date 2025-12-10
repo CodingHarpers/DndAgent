@@ -1,0 +1,87 @@
+{
+  "entity_name": "Heal",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range",
+      "outcome": "Target regains 70 hit points",
+      "related_search_terms": [
+        "hp restoration",
+        "health gain",
+        "battle healing",
+        "direct healing"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range AND Target is Blinded",
+      "outcome": "Blindness condition ends on target",
+      "related_search_terms": [
+        "remove blindness",
+        "cure condition",
+        "status effect removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range AND Target is Deafened",
+      "outcome": "Deafness condition ends on target",
+      "related_search_terms": [
+        "remove deafness",
+        "cure condition",
+        "status effect removal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you can see within range AND Target is affected by any disease",
+      "outcome": "All diseases affecting target end",
+      "related_search_terms": [
+        "remove disease",
+        "cure infection",
+        "disease cleansing"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is a Construct",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "construct immunity",
+        "healing restriction",
+        "creature type exclusion"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is Undead",
+      "outcome": "Spell has no effect on target",
+      "related_search_terms": [
+        "undead immunity",
+        "healing restriction",
+        "creature type exclusion"
+      ]
+    }
+  ],
+  "description_text": "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.",
+  "tags": [
+    "healing",
+    "restoration",
+    "condition removal",
+    "disease removal"
+  ],
+  "related_search_terms": [
+    "restore health",
+    "cure conditions",
+    "remove disease",
+    "cleric spell",
+    "divine healing"
+  ]
+}

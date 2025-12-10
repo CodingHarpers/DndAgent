@@ -1,0 +1,59 @@
+{
+  "entity_name": "Extra Attack",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "scaling",
+      "trigger": "Take the Attack action on your turn",
+      "condition": "Character's class level is 5th or higher AND Character's class level is less than 11th",
+      "outcome": "You can make two weapon attacks instead of one",
+      "related_search_terms": [
+        "multiple attacks",
+        "attack action bonus",
+        "fighter attacks",
+        "martial attacks",
+        "second attack"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Take the Attack action on your turn",
+      "condition": "Character's class level is 11th or higher AND Character's class level is less than 20th",
+      "outcome": "You can make three weapon attacks instead of one",
+      "related_search_terms": [
+        "more attacks",
+        "level 11 feature",
+        "increased attacks",
+        "third attack"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Take the Attack action on your turn",
+      "condition": "Character's class level is 20th or higher",
+      "outcome": "You can make four weapon attacks instead of one",
+      "related_search_terms": [
+        "capstone feature",
+        "max attacks",
+        "level 20 power",
+        "fourth attack"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.",
+  "tags": [
+    "combat",
+    "action",
+    "scaling",
+    "class_feature"
+  ],
+  "related_search_terms": [
+    "multiple attacks",
+    "more attacks",
+    "fighter feature",
+    "martial character",
+    "extra attack rule",
+    "number of attacks",
+    "attack action"
+  ]
+}

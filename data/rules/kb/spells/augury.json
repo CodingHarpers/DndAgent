@@ -1,0 +1,100 @@
+{
+  "entity_name": "Augury",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "A specific course of action is planned within the next 30 minutes",
+      "outcome": "Receive an omen from an otherworldly entity about the results of the planned action",
+      "related_search_terms": [
+        "predict future",
+        "foretell",
+        "divine guidance",
+        "seek knowledge"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Omen received",
+      "condition": "Planned action leads to generally good results",
+      "outcome": "Omen is 'Weal'",
+      "related_search_terms": [
+        "good omen",
+        "positive outcome",
+        "beneficial results"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Omen received",
+      "condition": "Planned action leads to generally bad results",
+      "outcome": "Omen is 'Woe'",
+      "related_search_terms": [
+        "bad omen",
+        "negative outcome",
+        "detrimental results"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Omen received",
+      "condition": "Planned action leads to both good and bad results",
+      "outcome": "Omen is 'Weal and woe'",
+      "related_search_terms": [
+        "mixed outcome",
+        "ambiguous results",
+        "bittersweet"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Omen received",
+      "condition": "Planned action leads to results that are not especially good or bad",
+      "outcome": "Omen is 'Nothing'",
+      "related_search_terms": [
+        "neutral outcome",
+        "insignificant results",
+        "no strong consequence"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Omen interpretation",
+      "condition": "Possible circumstances might change the outcome after casting (e.g., additional spells, companion changes)",
+      "outcome": "The omen does NOT account for these possible changing circumstances",
+      "related_search_terms": [
+        "static prediction",
+        "incomplete information",
+        "future changes not included",
+        "limited foresight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Augury",
+      "condition": "This is the second or subsequent casting of Augury before completing your next long rest",
+      "outcome": "There is a cumulative 25% chance (per casting after the first) to get a random reading (GM makes a secret roll)",
+      "related_search_terms": [
+        "spell fatigue",
+        "overcasting penalty",
+        "unreliable omen",
+        "random result risk",
+        "consequence of repeated casting"
+      ]
+    }
+  ],
+  "description_text": "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens:\n- Weal, for good results\n- Woe, for bad results\n- Weal and woe, for both good and bad results\n- Nothing, for results that aren't especially good or bad\nThe spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.\nIf you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.",
+  "tags": [
+    "Divination",
+    "Spell"
+  ],
+  "related_search_terms": [
+    "foresight",
+    "prophecy",
+    "future",
+    "omen",
+    "divination spell",
+    "consult oracle"
+  ]
+}

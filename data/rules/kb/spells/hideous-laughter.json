@@ -1,0 +1,72 @@
+{
+  "entity_name": "Hideous Laughter",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Target Selection",
+      "condition": "Target creature has an Intelligence score of 4 or less",
+      "outcome": "Target is NOT affected by Hideous Laughter",
+      "related_search_terms": [
+        "immunity",
+        "low intelligence",
+        "mindless",
+        "unaffected"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Cast",
+      "condition": "Caster chooses a visible creature within range AND Target has Intelligence 5 or higher",
+      "outcome": "Target must succeed on a Wisdom saving throw or falls prone, becomes incapacitated, and is unable to stand up for the duration",
+      "related_search_terms": [
+        "wisdom save",
+        "save or suck",
+        "control spell",
+        "prone condition",
+        "incapacitated condition",
+        "disable",
+        "laughing fit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of Target's Turn",
+      "condition": "Target is currently affected by Hideous Laughter",
+      "outcome": "Target can make another Wisdom saving throw. On a success, the spell ends for the target",
+      "related_search_terms": [
+        "recurring save",
+        "concentration check",
+        "break free",
+        "end condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target takes damage",
+      "condition": "Target is currently affected by Hideous Laughter",
+      "outcome": "Target can make a Wisdom saving throw with Advantage. On a success, the spell ends for the target",
+      "related_search_terms": [
+        "damage save",
+        "concentration break",
+        "advantage save"
+      ]
+    }
+  ],
+  "description_text": "A creature of your choice that you can see within range perceives everything as hilariously funny and falls into fits of laughter if this spell affects it. The target must succeed on a wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for the duration. A creature with an Intelligence score of 4 or less isn't affected.At the end of each of its turns, and each time it takes damage, the target can make another wisdom saving throw. The target had advantage on the saving throw if it's triggered by damage. On a success, the spell ends.",
+  "tags": [
+    "1st_level",
+    "enchantment",
+    "concentration",
+    "save_or_suck",
+    "control"
+  ],
+  "related_search_terms": [
+    "Tasha's Hideous Laughter",
+    "mind control",
+    "laughter spell",
+    "incapacitate",
+    "prone",
+    "wisdom saving throw"
+  ]
+}

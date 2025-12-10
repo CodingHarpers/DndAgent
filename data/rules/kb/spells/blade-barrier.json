@@ -1,0 +1,71 @@
+{
+  "entity_name": "Blade Barrier",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature is behind the wall",
+      "condition": "Line of attack/effect passes through the wall",
+      "outcome": "Target gains 3/4 cover",
+      "related_search_terms": [
+        "protection",
+        "defense",
+        "obscurement",
+        "barrier",
+        "partial cover"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to move through wall's space",
+      "condition": "Creature is within the wall's 5-foot thick space",
+      "outcome": "Wall's space is difficult terrain (each 1 foot of movement costs 2 feet)",
+      "related_search_terms": [
+        "movement penalty",
+        "impeded movement",
+        "slow",
+        "obstacle"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters wall's area for the first time on a turn OR starts its turn in wall area",
+      "condition": "Creature fails a Dexterity saving throw",
+      "outcome": "Creature takes 6d10 slashing damage",
+      "related_search_terms": [
+        "area damage",
+        "persistent damage",
+        "hazard",
+        "dex save fail",
+        "full damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters wall's area for the first time on a turn OR starts its turn in wall area",
+      "condition": "Creature succeeds on a Dexterity saving throw",
+      "outcome": "Creature takes half damage (3d10 slashing damage)",
+      "related_search_terms": [
+        "half damage",
+        "reduced damage",
+        "area damage",
+        "dex save success"
+      ]
+    }
+  ],
+  "description_text": "You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain. When a creature enters the wall's area for the first time on a turn or starts its turn there, the creature must make a dexterity saving throw. On a failed save, the creature takes 6d10 slashing damage. On a successful save, the creature takes half as much damage.",
+  "tags": [
+    "Evocation",
+    "Damage",
+    "Area Control",
+    "Barrier",
+    "Dexterity Save"
+  ],
+  "related_search_terms": [
+    "wall spell",
+    "damage over time",
+    "razor wall",
+    "magical barrier",
+    "crowd control spell"
+  ]
+}

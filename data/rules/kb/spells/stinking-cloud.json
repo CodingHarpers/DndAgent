@@ -1,0 +1,113 @@
+{
+  "entity_name": "Stinking Cloud",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast",
+      "condition": "Point within range chosen",
+      "outcome": "Create 20-foot-radius sphere of yellow, nauseating gas centered on that point. The cloud spreads around corners and is heavily obscured.",
+      "related_search_terms": [
+        "AoE",
+        "area effect",
+        "obscured area",
+        "vision obstruction",
+        "line of sight",
+        "gas cloud"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Cloud created",
+      "condition": "Cloud active",
+      "outcome": "Cloud lingers for its duration",
+      "related_search_terms": [
+        "persistent effect",
+        "duration",
+        "remaining"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Start of creature's turn",
+      "condition": "Creature is completely within the cloud",
+      "outcome": "Creature must make a Constitution saving throw against poison",
+      "related_search_terms": [
+        "Con save",
+        "poison effect",
+        "start of turn trigger",
+        "area of effect save",
+        "sickening gas"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature fails CON save against Stinking Cloud poison",
+      "condition": "Saving throw failed",
+      "outcome": "Creature spends its action that turn retching and reeling",
+      "related_search_terms": [
+        "action loss",
+        "incapacitated",
+        "retching",
+        "reeling",
+        "disabling effect",
+        "control spell"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature attempts CON save against Stinking Cloud poison",
+      "condition": "Creature does not need to breathe OR Creature is immune to poison",
+      "outcome": "Creature automatically succeeds on the saving throw",
+      "related_search_terms": [
+        "poison immunity",
+        "breathless",
+        "construct immunity",
+        "undead immunity",
+        "gas immunity"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "End of Round",
+      "condition": "Moderate wind (at least 10 miles per hour) is present AND cloud has been active for 4 rounds",
+      "outcome": "Cloud disperses",
+      "related_search_terms": [
+        "wind effect",
+        "environmental dispersion",
+        "weather effect",
+        "AoE removal",
+        "dispersed spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "End of Round",
+      "condition": "Strong wind (at least 20 miles per hour) is present AND cloud has been active for 1 round",
+      "outcome": "Cloud disperses",
+      "related_search_terms": [
+        "strong wind effect",
+        "rapid dispersion",
+        "weather effect",
+        "AoE removal",
+        "dispersed spell"
+      ]
+    }
+  ],
+  "description_text": "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.Each creature that is completely within the cloud at the start of its turn must make a constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.",
+  "tags": [
+    "Conjuration",
+    "Level 3",
+    "Control",
+    "Condition",
+    "Area of Effect"
+  ],
+  "related_search_terms": [
+    "stink bomb",
+    "gas cloud",
+    "area denial",
+    "crowd control",
+    "poison cloud",
+    "nauseating gas"
+  ]
+}

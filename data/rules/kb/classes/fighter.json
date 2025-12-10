@@ -1,0 +1,325 @@
+{
+  "class_name": "Fighter",
+  "logic_type": "class_progression",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Character Creation",
+      "condition": "Class Selected is Fighter",
+      "outcome": "Hit Die is d10 AND Grant Proficiency: All Armor, Shields, Simple Weapons, Martial Weapons, Saving Throw: STR, Saving Throw: CON AND Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
+      "related_search_terms": [
+        "starting stats",
+        "fighter hp",
+        "fighter proficiencies",
+        "armor proficiency",
+        "weapon proficiency",
+        "saving throws"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 1",
+      "condition": "Class Level == 1",
+      "outcome": "Set Proficiency Bonus to 2",
+      "related_search_terms": [
+        "proficiency modifier",
+        "prof bonus",
+        "level 1 stats"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 1",
+      "condition": "Class Level == 1",
+      "outcome": "Gain Feature: Fighting Style AND Gain Feature: Second Wind",
+      "related_search_terms": [
+        "level 1 fighter",
+        "starting features",
+        "fighting style choice"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 2",
+      "condition": "Class Level == 2",
+      "outcome": "Set Max Action Surges to 1",
+      "related_search_terms": [
+        "action surge uses",
+        "fighter action"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 2",
+      "condition": "Class Level == 2",
+      "outcome": "Gain Feature: Action Surge (1 use)",
+      "related_search_terms": [
+        "level 2 fighter",
+        "action surge uses",
+        "extra action"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 3",
+      "condition": "Class Level == 3",
+      "outcome": "Gain Feature: Martial Archetype",
+      "related_search_terms": [
+        "level 3 fighter",
+        "subclass",
+        "fighter archetype"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 4",
+      "condition": "Class Level == 4",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 4 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 5",
+      "condition": "Class Level == 5",
+      "outcome": "Set Proficiency Bonus to 3 AND Set Number of Extra Attacks to 1",
+      "related_search_terms": [
+        "proficiency modifier",
+        "prof bonus",
+        "extra attack count"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 5",
+      "condition": "Class Level == 5",
+      "outcome": "Gain Feature: Extra Attack",
+      "related_search_terms": [
+        "level 5 fighter",
+        "multiple attacks"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 6",
+      "condition": "Class Level == 6",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 6 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 7",
+      "condition": "Class Level == 7",
+      "outcome": "Gain Feature: Martial Archetype feature",
+      "related_search_terms": [
+        "level 7 fighter",
+        "subclass feature"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 8",
+      "condition": "Class Level == 8",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 8 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 9",
+      "condition": "Class Level == 9",
+      "outcome": "Set Proficiency Bonus to 4 AND Set Max Indomitable Uses to 1",
+      "related_search_terms": [
+        "proficiency modifier",
+        "prof bonus",
+        "indomitable uses"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 9",
+      "condition": "Class Level == 9",
+      "outcome": "Gain Feature: Indomitable (1 use)",
+      "related_search_terms": [
+        "level 9 fighter",
+        "reroll save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 10",
+      "condition": "Class Level == 10",
+      "outcome": "Gain Feature: Martial Archetype feature",
+      "related_search_terms": [
+        "level 10 fighter",
+        "subclass feature"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 11",
+      "condition": "Class Level == 11",
+      "outcome": "Set Number of Extra Attacks to 2",
+      "related_search_terms": [
+        "extra attack count",
+        "more attacks"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 11",
+      "condition": "Class Level == 11",
+      "outcome": "Gain Feature: Extra Attack (2)",
+      "related_search_terms": [
+        "level 11 fighter",
+        "multiple attacks"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 12",
+      "condition": "Class Level == 12",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 12 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 13",
+      "condition": "Class Level == 13",
+      "outcome": "Set Proficiency Bonus to 5 AND Set Max Indomitable Uses to 2",
+      "related_search_terms": [
+        "proficiency modifier",
+        "prof bonus",
+        "indomitable uses"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 13",
+      "condition": "Class Level == 13",
+      "outcome": "Gain Feature: Indomitable (2 uses)",
+      "related_search_terms": [
+        "level 13 fighter",
+        "reroll save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 14",
+      "condition": "Class Level == 14",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 14 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 15",
+      "condition": "Class Level == 15",
+      "outcome": "Gain Feature: Martial Archetype feature",
+      "related_search_terms": [
+        "level 15 fighter",
+        "subclass feature"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 16",
+      "condition": "Class Level == 16",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 16 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 17",
+      "condition": "Class Level == 17",
+      "outcome": "Set Proficiency Bonus to 6 AND Set Max Action Surges to 2 AND Set Max Indomitable Uses to 3",
+      "related_search_terms": [
+        "proficiency modifier",
+        "prof bonus",
+        "action surge uses",
+        "indomitable uses"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 17",
+      "condition": "Class Level == 17",
+      "outcome": "Gain Feature: Action Surge (2 uses) AND Gain Feature: Indomitable (3 uses)",
+      "related_search_terms": [
+        "level 17 fighter",
+        "extra action",
+        "reroll save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 18",
+      "condition": "Class Level == 18",
+      "outcome": "Gain Feature: Martial Archetype feature",
+      "related_search_terms": [
+        "level 18 fighter",
+        "subclass feature"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 19",
+      "condition": "Class Level == 19",
+      "outcome": "Gain Feature: Ability Score Improvement",
+      "related_search_terms": [
+        "level 19 fighter",
+        "asi",
+        "ability scores"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Reach Level 20",
+      "condition": "Class Level == 20",
+      "outcome": "Set Number of Extra Attacks to 3",
+      "related_search_terms": [
+        "extra attack count",
+        "more attacks"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Reach Level 20",
+      "condition": "Class Level == 20",
+      "outcome": "Gain Feature: Extra Attack (3)",
+      "related_search_terms": [
+        "level 20 fighter",
+        "capstone"
+      ]
+    }
+  ],
+  "description_text": "The Fighter class focuses on mastery of combat, granting powerful martial abilities and a high number of attacks. Fighters gain a d10 Hit Die, proficiency in all armor, shields, simple and martial weapons, and Strength and Constitution saving throws. They choose two skills from a specific list. Their progression involves gaining Fighting Styles, Action Surges for extra actions, the ability to reroll failed saves with Indomitable, and multiple opportunities for Extra Attack, allowing them to make up to three attacks per action. They also select a Martial Archetype at level 3, which grants additional features at levels 3, 7, 10, 15, and 18, specializing their combat style. Fighters receive numerous Ability Score Improvements throughout their career.",
+  "related_search_terms": [
+    "fighter class",
+    "fighter dnd",
+    "fighter levels",
+    "combatant",
+    "martial class"
+  ]
+}

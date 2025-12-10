@@ -1,0 +1,100 @@
+{
+  "entity_name": "Shillelagh",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Melee Attack Roll with affected weapon",
+      "condition": "Spell is active AND Using a club or quarterstaff affected by Shillelagh",
+      "outcome": "Use caster's spellcasting ability modifier instead of Strength modifier for attack roll",
+      "related_search_terms": [
+        "wisdom attack",
+        "charisma attack",
+        "intelligence attack",
+        "spell attack bonus",
+        "finesse weapon",
+        "melee spell attack"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee Damage Roll with affected weapon",
+      "condition": "Spell is active AND Using a club or quarterstaff affected by Shillelagh",
+      "outcome": "Use caster's spellcasting ability modifier instead of Strength modifier for damage roll",
+      "related_search_terms": [
+        "wisdom damage",
+        "charisma damage",
+        "intelligence damage",
+        "spell damage bonus",
+        "scaling damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee Damage Roll with affected weapon",
+      "condition": "Spell is active AND Using a club or quarterstaff affected by Shillelagh",
+      "outcome": "Weapon's damage die becomes a d8",
+      "related_search_terms": [
+        "increased damage",
+        "weapon dice upgrade",
+        "d8 weapon damage",
+        "damage boost"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell is cast on a club or quarterstaff",
+      "condition": "Weapon is NOT already magical",
+      "outcome": "Weapon becomes magical for the spell's duration",
+      "related_search_terms": [
+        "overcome resistance",
+        "magic damage type",
+        "non-magical resistance",
+        "physical resistance",
+        "magical attacks"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster casts Shillelagh again",
+      "condition": "A previous Shillelagh spell is active",
+      "outcome": "The previous Shillelagh spell ends",
+      "related_search_terms": [
+        "spell duration management",
+        "recasting spells",
+        "concentration spell",
+        "single target spell"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster lets go of the affected weapon",
+      "condition": "Shillelagh spell is active on the weapon",
+      "outcome": "The Shillelagh spell ends",
+      "related_search_terms": [
+        "losing weapon",
+        "disarming",
+        "spell termination",
+        "holding weapon"
+      ]
+    }
+  ],
+  "description_text": "The wood of a club or a quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.",
+  "tags": [
+    "Cantrip",
+    "Transmutation",
+    "Druid",
+    "Attack",
+    "Melee",
+    "Buff"
+  ],
+  "related_search_terms": [
+    "druid weapon",
+    "magic weapon",
+    "spell attack",
+    "quarterstaff",
+    "club",
+    "wisdom weapon",
+    "nature's power"
+  ]
+}

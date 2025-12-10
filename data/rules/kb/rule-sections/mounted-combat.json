@@ -1,0 +1,503 @@
+[
+  {
+    "source_chapter": "Mounted Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Riding a Mount",
+        "definition": "The general act of sitting atop and being carried by a creature (mount) that serves as a steed.",
+        "rule_logic": {
+          "premise": "A character is mounted on a creature that serves as a steed",
+          "implication": "The character and mount share the same initiative count. The character can choose to control the mount or allow it to act independently.",
+          "exceptions": [],
+          "description_text": "While you're mounted, you have two options. You can either control the mount or allow it to act independently. Intelligent creatures, such as a dragon, often act independently.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to ride a horse",
+            "mounted movement",
+            "mount initiative",
+            "mounts general rules"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "riding",
+          "steed",
+          "initiative"
+        ]
+      },
+      {
+        "concept_name": "Controlling a Mount (Rider's Control)",
+        "definition": "The rider directs the mount's actions and movement during combat.",
+        "rule_logic": {
+          "premise": "A character is mounted and chooses to control their mount",
+          "implication": "The mount acts on the rider's initiative count. The mount is limited to taking only the Dash, Disengage, or Dodge actions on its turn. The rider dictates its movement.",
+          "exceptions": [],
+          "description_text": "If you control your mount, it acts on your turn. It can move and take an action, Dash, Disengage, or Dodge. The mount cannot attack if you are controlling it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount actions",
+            "controlling horse in combat",
+            "rider control",
+            "mount movement"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "control",
+          "rider",
+          "action economy",
+          "dash",
+          "disengage",
+          "dodge"
+        ]
+      },
+      {
+        "concept_name": "Independent Mount",
+        "definition": "A mount that acts on its own initiative and makes its own decisions, typically for intelligent creatures or when the rider chooses not to control it.",
+        "rule_logic": {
+          "premise": "A character is mounted and the mount is intelligent OR the rider allows the mount to act independently",
+          "implication": "The mount retains its own place in the initiative order and acts as normal, taking any action available to it. The rider can attempt to direct its movement using an action.",
+          "exceptions": [],
+          "description_text": "An independent mount retains its place in the initiative order. Bearing a rider doesn't impede it, and it acts as normal. The rider can direct its movement but not its actions. Intelligent mounts will typically act independently.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount acts on its own",
+            "intelligent mounts combat",
+            "riding a dragon",
+            "mount free will"
+          ]
+        },
+        "related_keywords": [
+          "independent mount",
+          "intelligent mount",
+          "initiative",
+          "mount actions"
+        ]
+      },
+      {
+        "concept_name": "Directing Independent Mount Movement",
+        "definition": "The process by which a rider attempts to guide an independent mount's movement.",
+        "rule_logic": {
+          "premise": "A rider is on an independent mount and wishes to direct its movement",
+          "implication": "The rider must use their action to make a DC 10 Wisdom (Animal Handling) check. On a success, the mount moves as the rider directs for that turn. On a failure, the mount chooses its own movement.",
+          "exceptions": [],
+          "description_text": "To control an independent mount, you must use your action to make a Wisdom (Animal Handling) check (DC 10). On a success, you direct its movement for that turn. On a failure, it acts as it chooses.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to make my horse move",
+            "animal handling check mount",
+            "controlling mount movement",
+            "mount obey command"
+          ]
+        },
+        "related_keywords": [
+          "animal handling",
+          "independent mount",
+          "movement control",
+          "action",
+          "wisdom check"
+        ]
+      },
+      {
+        "concept_name": "Dismounting",
+        "definition": "The act of getting off a mount voluntarily.",
+        "rule_logic": {
+          "premise": "A character wishes to dismount from a mount",
+          "implication": "The act costs an amount of movement equal to half the character's speed. The character lands in an unoccupied space within 5 feet of the mount. If the character doesn't have enough movement, they fall prone.",
+          "exceptions": [],
+          "description_text": "Dismounting costs an amount of movement equal to half your speed. You fall prone if you don't have enough movement left.",
+          "is_exception": false,
+          "related_search_terms": [
+            "getting off horse",
+            "dismounting rules",
+            "movement cost to dismount",
+            "prone after dismount"
+          ]
+        },
+        "related_keywords": [
+          "dismount",
+          "movement cost",
+          "prone",
+          "movement"
+        ]
+      },
+      {
+        "concept_name": "Forced Dismount",
+        "definition": "Being involuntarily separated from a mount due to its condition.",
+        "rule_logic": {
+          "premise": "A mount is knocked prone or reduced to 0 hit points",
+          "implication": "The rider is dismounted. The rider must succeed on a DC 10 Dexterity saving throw or fall prone in a space within 5 feet of the mount.",
+          "exceptions": [
+            "A rider can use their reaction to dismount as the mount falls, landing on their feet."
+          ],
+          "description_text": "If your mount is knocked prone, you can use your reaction to dismount as it falls and land on your feet. Otherwise, you are dismounted and fall prone in a space within 5 feet of it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what happens if my horse dies",
+            "mount knocked prone",
+            "falling off mount",
+            "dex save dismount"
+          ]
+        },
+        "related_keywords": [
+          "forced dismount",
+          "prone",
+          "mount death",
+          "dexterity save",
+          "reaction"
+        ]
+      },
+      {
+        "concept_name": "Targeting a Mount in Combat",
+        "definition": "Rules for how attacks and effects can be directed at either a mounted creature or its rider.",
+        "rule_logic": {
+          "premise": "An attacker targets a creature that is mounted OR an effect targets a creature that is mounted",
+          "implication": "The attacker can choose to target either the mount or the rider. If an effect targets the mount, the rider can choose to have it target them instead.",
+          "exceptions": [],
+          "description_text": "If an effect targets a creature you're riding, you can choose to have it target you instead. This might be useful if your mount has low AC or hit points.",
+          "is_exception": false,
+          "related_search_terms": [
+            "can I attack the horse",
+            "targeting rider or mount",
+            "mounted combat targeting",
+            "attack mount"
+          ]
+        },
+        "related_keywords": [
+          "targeting",
+          "mount",
+          "rider",
+          "attack",
+          "spell target"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "mounted-combat"
+  },
+  {
+    "source_chapter": "Combat - Mounted Combat",
+    "extracted_concepts": [
+      {
+        "concept_name": "Mount Eligibility",
+        "definition": "Criteria for a creature to serve as a mount for a rider, enabling mounted combat rules.",
+        "rule_logic": {
+          "premise": "A creature is willing AND is at least one size larger than the rider AND has appropriate anatomy",
+          "implication": "The creature can serve as a mount",
+          "exceptions": [],
+          "description_text": "A willing creature that is at least one size larger than you and that has an appropriate anatomy can serve as a mount, using the following rules.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can I ride",
+            "mount size requirements",
+            "can I ride a monster",
+            "choosing a mount",
+            "mount rules criteria"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "rider",
+          "creature size",
+          "willing",
+          "anatomy"
+        ]
+      }
+    ],
+    "_chunk_header": "Mounted Combat",
+    "_source_file": "mounted-combat"
+  },
+  {
+    "source_chapter": "Combat - Mounting and Dismounting",
+    "extracted_concepts": [
+      {
+        "concept_name": "Mounting or Dismounting",
+        "definition": "The act of getting on or off a creature designated as a mount.",
+        "rule_logic": {
+          "premise": "Character wishes to mount a creature within 5 feet OR dismount a creature they are riding, AND it is during their move, AND this action has not been taken yet during the current move, AND character has movement remaining equal to or greater than half their speed",
+          "implication": "Costs movement equal to half the character's speed. This action can only be performed once per move.",
+          "exceptions": [],
+          "description_text": "Once during your move, you can mount a creature that is within 5 feet of you or dismount. Doing so costs an amount of movement equal to half your speed. For example, if your speed is 30 feet, you must spend 15 feet of movement to mount a horse. Therefore, you can't mount it if you don't have 15 feet of movement left or if your speed is 0.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to mount a horse",
+            "dismounting rules",
+            "movement cost riding",
+            "getting on a mount",
+            "getting off a mount"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "dismount",
+          "movement",
+          "speed"
+        ]
+      },
+      {
+        "concept_name": "Forced Movement While Mounted",
+        "definition": "The condition where a mount is moved against its will while a character is riding it, potentially leading to the character falling off.",
+        "rule_logic": {
+          "premise": "An effect moves the character's mount against its will while the character is on it",
+          "implication": "The character must succeed on a DC 10 Dexterity saving throw OR fall off the mount, landing prone in a space within 5 feet of it.",
+          "exceptions": [],
+          "description_text": "If an effect moves your mount against its will while you're on it, you must succeed on a DC 10 Dexterity saving throw or fall off the mount, landing prone in a space within 5 feet of it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount pushed away",
+            "mount moved unwillingly",
+            "forced move rider",
+            "falling off mount",
+            "dexterity save mounted"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "forced movement",
+          "dexterity saving throw",
+          "prone",
+          "fall off"
+        ]
+      },
+      {
+        "concept_name": "Rider Knocked Prone While Mounted",
+        "definition": "The condition where a character is knocked prone while they are riding a mount, potentially leading to them falling off.",
+        "rule_logic": {
+          "premise": "A character is knocked prone while mounted",
+          "implication": "The character must succeed on a DC 10 Dexterity saving throw OR fall off the mount, landing prone in a space within 5 feet of it.",
+          "exceptions": [],
+          "description_text": "If you're knocked prone while mounted, you must make the same saving throw.",
+          "is_exception": false,
+          "related_search_terms": [
+            "rider knocked prone",
+            "prone on mount",
+            "falling off mount prone",
+            "mounted prone saving throw"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "prone",
+          "dexterity saving throw",
+          "fall off"
+        ]
+      },
+      {
+        "concept_name": "Mount Knocked Prone (with Reaction)",
+        "definition": "The immediate dismounting action a character can take using their reaction when their mount is knocked prone.",
+        "rule_logic": {
+          "premise": "Character's mount is knocked prone AND the character uses their reaction",
+          "implication": "The character can dismount as the mount falls and land on their feet.",
+          "exceptions": [],
+          "description_text": "If your mount is knocked prone, you can use your reaction to dismount it as it falls and land on your feet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount falls prone reaction",
+            "dismount safely",
+            "save mount prone",
+            "rider reaction mount down"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "prone",
+          "reaction",
+          "dismount"
+        ]
+      },
+      {
+        "concept_name": "Mount Knocked Prone (without Reaction)",
+        "definition": "The consequence for a character when their mount is knocked prone and they do not use a reaction to dismount safely.",
+        "rule_logic": {
+          "premise": "Character's mount is knocked prone AND the character does NOT use their reaction to dismount",
+          "implication": "The character is dismounted and falls prone in a space within 5 feet of the mount.",
+          "exceptions": [],
+          "description_text": "Otherwise, you are dismounted and fall prone in a space within 5 feet it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount falls prone no reaction",
+            "rider falls with mount",
+            "prone when mount falls",
+            "automatic dismount prone"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "prone",
+          "dismount",
+          "fall"
+        ]
+      }
+    ],
+    "_chunk_header": "Mounting and Dismounting",
+    "_source_file": "mounted-combat"
+  },
+  {
+    "source_chapter": "Controlling a Mount",
+    "extracted_concepts": [
+      {
+        "concept_name": "Mount Options",
+        "definition": "The choices a rider has regarding how their mount acts during combat or exploration.",
+        "rule_logic": {
+          "premise": "A character is mounted",
+          "implication": "The character can choose to either control the mount or allow it to act independently.",
+          "exceptions": [
+            "If the mount is an intelligent creature (e.g., dragon), it acts independently regardless of rider's choice."
+          ],
+          "description_text": "While you're mounted, you have two options. You can either control the mount or allow it to act independently. Intelligent creatures, such as dragons, act independently.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how do mounts work",
+            "can I control my mount",
+            "mount behavior",
+            "what can my mount do"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "rider",
+          "control",
+          "independent"
+        ]
+      },
+      {
+        "concept_name": "Controlled Mount",
+        "definition": "A mount whose actions are directed by its rider, typically after being trained.",
+        "rule_logic": {
+          "premise": "A character wants to control a mount",
+          "implication": "The mount must be trained to accept a rider (e.g., domesticated horses).",
+          "exceptions": [],
+          "description_text": "You can control a mount only if it has been trained to accept a rider. Domesticated horses, donkeys, and similar creatures are assumed to have such training.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to control a horse",
+            "mount training requirements",
+            "domesticated animals as mounts"
+          ]
+        },
+        "related_keywords": [
+          "trained",
+          "domestication",
+          "control",
+          "rider"
+        ]
+      },
+      {
+        "concept_name": "Controlled Mount Initiative",
+        "definition": "The order of action for a mount that is being controlled by a rider.",
+        "rule_logic": {
+          "premise": "A character mounts a trained mount and chooses to control it",
+          "implication": "The mount's initiative changes to match the rider's initiative.",
+          "exceptions": [],
+          "description_text": "The initiative of a controlled mount changes to match yours when you mount it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mount initiative order",
+            "when does my mount act",
+            "controlled mount turn"
+          ]
+        },
+        "related_keywords": [
+          "initiative",
+          "controlled mount",
+          "rider turn"
+        ]
+      },
+      {
+        "concept_name": "Controlled Mount Actions",
+        "definition": "The limited actions a mount can take when under the control of a rider.",
+        "rule_logic": {
+          "premise": "A mount is controlled by a rider",
+          "implication": "The mount moves as directed by the rider and can only take the Dash, Disengage, or Dodge actions.",
+          "exceptions": [],
+          "description_text": "It moves as you direct it, and it has only three action options: Dash, Disengage, and Dodge. A controlled mount can move and act even on the turn that you mount it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what actions can a controlled mount take",
+            "can my mount attack",
+            "controlled mount movement",
+            "mounting and acting in same turn"
+          ]
+        },
+        "related_keywords": [
+          "actions",
+          "dash",
+          "disengage",
+          "dodge",
+          "movement",
+          "controlled mount"
+        ]
+      },
+      {
+        "concept_name": "Independent Mount Initiative",
+        "definition": "The order of action for a mount that is acting on its own.",
+        "rule_logic": {
+          "premise": "A mount is allowed to act independently",
+          "implication": "The mount retains its original place in the initiative order.",
+          "exceptions": [],
+          "description_text": "An independent mount retains its place in the initiative order.",
+          "is_exception": false,
+          "related_search_terms": [
+            "independent mount turn order",
+            "when does an uncontrolled mount act"
+          ]
+        },
+        "related_keywords": [
+          "initiative",
+          "independent mount",
+          "uncontrolled"
+        ]
+      },
+      {
+        "concept_name": "Independent Mount Actions",
+        "definition": "The unrestricted actions a mount can take when acting on its own.",
+        "rule_logic": {
+          "premise": "A mount is allowed to act independently",
+          "implication": "The mount can take any actions it wishes and moves as it wishes, unrestricted by the rider. It may act against the rider's wishes (e.g., flee, attack a specific foe).",
+          "exceptions": [],
+          "description_text": "Bearing a rider puts no restrictions on the actions the mount can take, and it moves and acts as it wishes. It might flee from combat, rush to attack and devour a badly injured foe, or otherwise act against your wishes.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what can an independent mount do",
+            "uncontrolled mount behavior",
+            "can an independent mount attack"
+          ]
+        },
+        "related_keywords": [
+          "actions",
+          "movement",
+          "independent mount",
+          "unpredictable",
+          "freedom"
+        ]
+      },
+      {
+        "concept_name": "Opportunity Attack vs. Mounted Target",
+        "definition": "How opportunity attacks are resolved when a mounted character or their mount provokes them.",
+        "rule_logic": {
+          "premise": "A mount (with a rider) provokes an opportunity attack",
+          "implication": "The attacker can choose to target either the rider or the mount.",
+          "exceptions": [],
+          "description_text": "In either case, if the mount provokes an opportunity attack while you're on it, the attacker can target you or the mount.",
+          "is_exception": false,
+          "related_search_terms": [
+            "opportunity attack mounted combat",
+            "AoO against mount",
+            "can I hit the rider or the mount",
+            "targeting mounted creatures"
+          ]
+        },
+        "related_keywords": [
+          "opportunity attack",
+          "AoO",
+          "mounted combat",
+          "targeting",
+          "rider",
+          "mount"
+        ]
+      }
+    ],
+    "_chunk_header": "Controlling a Mount",
+    "_source_file": "mounted-combat"
+  }
+]

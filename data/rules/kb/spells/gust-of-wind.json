@@ -1,0 +1,100 @@
+{
+  "entity_name": "Gust of Wind",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature starts its turn in the line of wind",
+      "condition": "Creature fails a Strength saving throw",
+      "outcome": "Creature is pushed 15 feet away from the caster in a direction following the line",
+      "related_search_terms": [
+        "forced movement",
+        "push",
+        "strength save",
+        "area control",
+        "crowd control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature starts its turn in the line of wind",
+      "condition": "Creature succeeds on a Strength saving throw",
+      "outcome": "Creature is not pushed",
+      "related_search_terms": [
+        "strength save",
+        "resistance to push"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to move within the line of wind",
+      "condition": "Creature is moving closer to the caster",
+      "outcome": "Creature must spend 2 feet of movement for every 1 foot moved",
+      "related_search_terms": [
+        "difficult terrain",
+        "reduced movement",
+        "impeded movement",
+        "moving against wind"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Gust of Wind is active",
+      "condition": "Gas or vapor is present in the line's area",
+      "outcome": "Gas or vapor is dispersed",
+      "related_search_terms": [
+        "clear fog",
+        "remove mist",
+        "counter gas cloud"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Gust of Wind is active",
+      "condition": "Unprotected flame (e.g., candle, torch) is present in the line's area",
+      "outcome": "Flame is extinguished",
+      "related_search_terms": [
+        "extinguish fire",
+        "darkness",
+        "light sources"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Gust of Wind is active",
+      "condition": "Protected flame (e.g., lantern) is present in the line's area",
+      "outcome": "Flame dances wildly and has a 50% chance to be extinguished",
+      "related_search_terms": [
+        "extinguish fire",
+        "darkness",
+        "light sources"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn while Gust of Wind is active",
+      "condition": "Caster uses a bonus action",
+      "outcome": "Caster can change the direction of the line of wind",
+      "related_search_terms": [
+        "reposition spell",
+        "control effect",
+        "re-aim spell"
+      ]
+    }
+  ],
+  "description_text": "A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a strength saving throw or be pushed 15 feet away from you in a direction following the line. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you. The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them. As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.",
+  "tags": [
+    "Evocation",
+    "Control",
+    "Wind",
+    "Force"
+  ],
+  "related_search_terms": [
+    "wind spell",
+    "push effect",
+    "line spell",
+    "area denial",
+    "movement control",
+    "environmental effect"
+  ]
+}

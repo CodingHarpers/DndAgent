@@ -1,0 +1,110 @@
+{
+  "entity_name": "Conjure Woodland Beings",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Caster chooses one option AND target spaces are unoccupied, visible, and within range",
+      "outcome": "Summon fey creatures according to choice: One CR 2 or lower, OR Two CR 1 or lower, OR Four CR 1/2 or lower, OR Eight CR 1/4 or lower",
+      "related_search_terms": [
+        "summoning spell",
+        "fey creatures",
+        "minions",
+        "allies",
+        "challenge rating",
+        "multiple creatures",
+        "unoccupied space",
+        "within range"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Creature State Change",
+      "condition": "A summoned creature drops to 0 hit points OR the spell ends",
+      "outcome": "The summoned creature disappears",
+      "related_search_terms": [
+        "creature duration",
+        "despawn",
+        "death of summon",
+        "spell duration"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature Summoned",
+      "condition": "Creature is summoned by this spell",
+      "outcome": "Creature is friendly to the caster and their companions",
+      "related_search_terms": [
+        "friendly NPC",
+        "ally",
+        "disposition",
+        "loyalty"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Combat Start",
+      "condition": "Summoned creatures are present",
+      "outcome": "Roll initiative for summoned creatures as a group; they have their own turns",
+      "related_search_terms": [
+        "initiative roll",
+        "group turns",
+        "combat order",
+        "action economy"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's Turn",
+      "condition": "Caster issues verbal commands to summoned creatures",
+      "outcome": "Creatures obey commands (no action required by caster to command them)",
+      "related_search_terms": [
+        "commanding summons",
+        "control creatures",
+        "minion actions",
+        "verbal orders"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Summoned creature's turn",
+      "condition": "Caster does NOT issue commands AND hostile creatures are present",
+      "outcome": "Creatures defend themselves from hostile creatures",
+      "related_search_terms": [
+        "default behavior",
+        "self-defense",
+        "no command",
+        "automatic actions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Summoned creature's turn",
+      "condition": "Caster does NOT issue commands AND no hostile creatures are present",
+      "outcome": "Creatures take no actions",
+      "related_search_terms": [
+        "idle creatures",
+        "passive behavior",
+        "no action",
+        "standby"
+      ]
+    }
+  ],
+  "description_text": "You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears: One fey creature of challenge rating 2 or lower, Two fey creatures of challenge rating 1 or lower, Four fey creatures of challenge rating 1/2 or lower, Eight fey creatures of challenge rating 1/4 or lower. A summoned creature disappears when it drops to 0 hit points or when the spell ends. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the creatures' statistics.",
+  "tags": [
+    "spell",
+    "conjuration",
+    "summoning",
+    "fey",
+    "control",
+    "utility"
+  ],
+  "related_search_terms": [
+    "summon fey",
+    "call animals",
+    "woodland allies",
+    "nature magic",
+    "summon helper"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "entity_name": "Arcane Eye",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Arcane Eye)",
+      "condition": "N/A",
+      "outcome": "An invisible, magical eye is created within range, hovering in the air for the duration",
+      "related_search_terms": [
+        "scrying",
+        "surveillance",
+        "invisible construct",
+        "summon eye",
+        "remote sensor"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Arcane Eye is active",
+      "condition": "N/A",
+      "outcome": "Caster mentally receives visual information from the eye",
+      "related_search_terms": [
+        "remote vision",
+        "scouting",
+        "perception",
+        "sensor feed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Eye is providing visual information",
+      "condition": "N/A",
+      "outcome": "Eye has normal vision and darkvision out to 30 feet, and can look in every direction",
+      "related_search_terms": [
+        "darkvision",
+        "360 vision",
+        "perception range",
+        "sight",
+        "low-light vision",
+        "night vision"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster's turn",
+      "condition": "Arcane Eye is active",
+      "outcome": "Caster can use an action to move the eye",
+      "related_search_terms": [
+        "control eye",
+        "reposition",
+        "explore",
+        "scout action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster uses an action to move the eye",
+      "condition": "N/A",
+      "outcome": "Eye moves up to 30 feet in any direction",
+      "related_search_terms": [
+        "speed",
+        "movement distance",
+        "remote movement"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arcane Eye movement",
+      "condition": "N/A",
+      "outcome": "No limit to how far the eye can move from the caster",
+      "related_search_terms": [
+        "unlimited range",
+        "long distance scouting",
+        "remote operation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arcane Eye movement attempt",
+      "condition": "Attempting to move the eye into another plane of existence",
+      "outcome": "Eye cannot enter another plane of existence",
+      "related_search_terms": [
+        "interplanar travel",
+        "dimensional barrier",
+        "plane shift"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Arcane Eye movement attempt",
+      "condition": "Path is blocked by a solid barrier",
+      "outcome": "Eye's movement is blocked by solid barriers",
+      "related_search_terms": [
+        "walls",
+        "obstacles",
+        "impassable terrain",
+        "physical obstruction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Arcane Eye movement attempt",
+      "condition": "Opening is at least 1 inch in diameter",
+      "outcome": "Eye can pass through the opening",
+      "related_search_terms": [
+        "small holes",
+        "cracks",
+        "vents",
+        "tight spaces",
+        "squeeze through"
+      ]
+    }
+  ],
+  "description_text": "You create an invisible, magical eye within range that hovers in the air for the duration. You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction. As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.",
+  "tags": [
+    "scrying",
+    "divination",
+    "utility",
+    "exploration",
+    "sensor"
+  ],
+  "related_search_terms": [
+    "invisible scout",
+    "remote viewing",
+    "spying spell",
+    "magical camera",
+    "sensor spell",
+    "dungeon exploration"
+  ]
+}

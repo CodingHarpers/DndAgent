@@ -1,0 +1,906 @@
+[
+  {
+    "source_chapter": "The Environment",
+    "extracted_concepts": [
+      {
+        "concept_name": "Difficult Terrain",
+        "definition": "Any ground or area that impedes a creature's movement, requiring extra effort or time to traverse.",
+        "rule_logic": {
+          "premise": "A creature moves into or through an area designated as difficult terrain",
+          "implication": "Each foot of movement costs 2 feet instead of 1 foot",
+          "exceptions": [],
+          "description_text": "Every foot of movement in difficult terrain costs 1 extra foot. This rule is true even if multiple things in an area create difficult terrain. If an area contains two types of difficult terrain, for example, it doesn't cost 4 feet per 1 foot moved, only 3 feet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "movement cost",
+            "rough ground",
+            "slow down",
+            "terrain penalty",
+            "extra movement",
+            "impeded movement"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Terrain",
+          "Environment",
+          "Speed"
+        ]
+      },
+      {
+        "concept_name": "Dim Light (Lightly Obscured)",
+        "definition": "An area of light that creates a lightly obscured effect, such as twilight, moonlight, or flickering torches.",
+        "rule_logic": {
+          "premise": "A creature attempts to perceive something in an area of dim light",
+          "implication": "The area is lightly obscured, and creatures have disadvantage on Wisdom (Perception) checks that rely on sight",
+          "exceptions": [],
+          "description_text": "Dim light, also called shadows, creates a lightly obscured area. An area of dim light has a perceptible boundary between it and a brightly lit area or total darkness. A creature in a lightly obscured area has disadvantage on Wisdom (Perception) checks that rely on sight.",
+          "is_exception": false,
+          "related_search_terms": [
+            "shadows",
+            "low light",
+            "perception disadvantage",
+            "seeing in dim light",
+            "lightly obscured",
+            "disadvantage perception"
+          ]
+        },
+        "related_keywords": [
+          "Light",
+          "Vision",
+          "Perception",
+          "Environment"
+        ]
+      },
+      {
+        "concept_name": "Darkness (Heavily Obscured)",
+        "definition": "The complete absence of light, creating a heavily obscured area.",
+        "rule_logic": {
+          "premise": "A creature attempts to perceive something in an area of darkness",
+          "implication": "The area is heavily obscured, and creatures effectively suffer from the blinded condition",
+          "exceptions": [],
+          "description_text": "Darkness creates a heavily obscured area. Creatures in a heavily obscured area effectively suffer from the blinded condition.",
+          "is_exception": false,
+          "related_search_terms": [
+            "total darkness",
+            "blind",
+            "perception in darkness",
+            "seeing nothing",
+            "heavily obscured",
+            "blinded condition"
+          ]
+        },
+        "related_keywords": [
+          "Light",
+          "Vision",
+          "Perception",
+          "Environment",
+          "Blinded"
+        ]
+      },
+      {
+        "concept_name": "Heavy Obscurement (Effect)",
+        "definition": "A condition where an area is so heavily obscured that vision is impossible, such as darkness, opaque fog, or dense foliage.",
+        "rule_logic": {
+          "premise": "An area is heavily obscured",
+          "implication": "Creatures within or attempting to see into the area are effectively blinded",
+          "exceptions": [],
+          "description_text": "A heavily obscured area--such as darkness, opaque fog, or dense foliage--blocks vision entirely. A creature in a heavily obscured area effectively suffers from the blinded condition.",
+          "is_exception": false,
+          "related_search_terms": [
+            "blinded",
+            "no vision",
+            "fog",
+            "dense foliage",
+            "obscured vision"
+          ]
+        },
+        "related_keywords": [
+          "Vision",
+          "Obscurement",
+          "Condition",
+          "Blindness",
+          "Environment"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "The Environment",
+    "extracted_concepts": [],
+    "_chunk_header": "The Environment",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "Combat - Falling",
+    "extracted_concepts": [
+      {
+        "concept_name": "Falling Damage",
+        "definition": "Damage incurred by a creature when falling from a significant height, calculated based on the distance fallen.",
+        "rule_logic": {
+          "premise": "A creature falls from a height",
+          "implication": "Creature takes 1d6 bludgeoning damage for every 10 feet fallen",
+          "exceptions": [],
+          "description_text": "At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much fall damage",
+            "fall damage calculation",
+            "max fall damage",
+            "bludgeoning damage from fall"
+          ]
+        },
+        "related_keywords": [
+          "fall",
+          "damage",
+          "bludgeoning",
+          "height"
+        ]
+      },
+      {
+        "concept_name": "Falling - Prone Condition",
+        "definition": "The condition a creature assumes upon landing after a fall, unless specific criteria are met.",
+        "rule_logic": {
+          "premise": "A creature falls and lands",
+          "implication": "Creature lands prone",
+          "exceptions": [
+            "IF creature avoids taking damage from the fall"
+          ],
+          "description_text": "The creature lands prone, unless it avoids taking damage from the fall.",
+          "is_exception": false,
+          "related_search_terms": [
+            "prone after falling",
+            "do I land prone from fall",
+            "avoid prone fall"
+          ]
+        },
+        "related_keywords": [
+          "fall",
+          "prone",
+          "condition",
+          "landing"
+        ]
+      },
+      {
+        "concept_name": "Maximum Falling Damage",
+        "definition": "The upper limit of bludgeoning damage a creature can take from a single fall, regardless of the height fallen.",
+        "rule_logic": {
+          "premise": "A creature takes damage from falling",
+          "implication": "Damage taken from falling is capped at 20d6 bludgeoning damage",
+          "exceptions": [],
+          "description_text": "A creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6.",
+          "is_exception": false,
+          "related_search_terms": [
+            "max fall damage",
+            "highest fall damage",
+            "fall damage cap"
+          ]
+        },
+        "related_keywords": [
+          "fall",
+          "damage",
+          "maximum",
+          "limit"
+        ]
+      }
+    ],
+    "_chunk_header": "Falling",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "Combat - Suffocating",
+    "extracted_concepts": [
+      {
+        "concept_name": "Hold Breath Duration",
+        "definition": "The maximum amount of time a creature can actively hold its breath before it begins to suffocate.",
+        "rule_logic": {
+          "premise": "A creature is holding its breath",
+          "implication": "Duration for holding breath is (1 + Constitution modifier) minutes, with a minimum duration of 30 seconds",
+          "exceptions": [],
+          "description_text": "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).",
+          "is_exception": false,
+          "related_search_terms": [
+            "how long can I hold breath",
+            "underwater combat",
+            "drowning rules",
+            "breath holding time"
+          ]
+        },
+        "related_keywords": [
+          "suffocation",
+          "breath",
+          "constitution",
+          "duration",
+          "minutes",
+          "underwater"
+        ]
+      },
+      {
+        "concept_name": "Suffocating Effects",
+        "definition": "The state and consequences a creature faces after it has run out of breath or is choking.",
+        "rule_logic": {
+          "premise": "A creature runs out of breath OR a creature is choking",
+          "implication": "Creature can survive for (Constitution modifier) rounds (minimum of 1 round) before consequences occur. THEN at the start of its next turn after this duration, it drops to 0 hit points, is dying, AND cannot regain hit points OR be stabilized until it can breathe again.",
+          "exceptions": [],
+          "description_text": "When a creature runs out of breath or is choking, it can survive for a number of rounds equal to its Constitution modifier (minimum of 1 round). At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again.",
+          "is_exception": false,
+          "related_search_terms": [
+            "drowning rules",
+            "choking rules",
+            "suffocation damage",
+            "dying from no air",
+            "cannot breathe",
+            "suffocating condition",
+            "effects of no air"
+          ]
+        },
+        "related_keywords": [
+          "suffocation",
+          "breath",
+          "constitution",
+          "rounds",
+          "0 hit points",
+          "dying",
+          "stabilize",
+          "choking",
+          "condition"
+        ]
+      }
+    ],
+    "_chunk_header": "Suffocating",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "Vision and Light",
+    "extracted_concepts": [
+      {
+        "concept_name": "Lightly Obscured",
+        "definition": "An area where vision is partially hindered, such as dim light, patchy fog, or moderate foliage.",
+        "rule_logic": {
+          "premise": "Creature is in a lightly obscured area",
+          "implication": "Creature has disadvantage on Wisdom (Perception) checks that rely on sight",
+          "exceptions": [],
+          "description_text": "In a lightly obscured area, such as dim light, patchy fog, or moderate foliage, creatures have disadvantage on Wisdom (Perception) checks that rely on sight.",
+          "is_exception": false,
+          "related_search_terms": [
+            "disadvantage perception",
+            "dim light vision",
+            "fog vision",
+            "foliage sight"
+          ]
+        },
+        "related_keywords": [
+          "vision",
+          "obscured",
+          "light",
+          "perception",
+          "disadvantage"
+        ]
+      },
+      {
+        "concept_name": "Heavily Obscured",
+        "definition": "An area where vision is entirely blocked, such as darkness, opaque fog, or dense foliage.",
+        "rule_logic": {
+          "premise": "Creature is in a heavily obscured area",
+          "implication": "Creature effectively suffers from the blinded condition",
+          "exceptions": [],
+          "description_text": "A heavily obscured area-such as darkness, opaque fog, or dense foliage-blocks vision entirely. A creature effectively suffers from the blinded condition (see appendix PH-A) when trying to see something in that area.",
+          "is_exception": false,
+          "related_search_terms": [
+            "blinded condition",
+            "darkness vision",
+            "dense fog combat",
+            "blocked vision"
+          ]
+        },
+        "related_keywords": [
+          "vision",
+          "obscured",
+          "darkness",
+          "blinded"
+        ]
+      },
+      {
+        "concept_name": "Bright Light",
+        "definition": "An illumination category where most creatures can see normally, including daylight and strong light sources.",
+        "rule_logic": {
+          "premise": "Creature is in an area of bright light",
+          "implication": "Creature sees normally",
+          "exceptions": [],
+          "description_text": "Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.",
+          "is_exception": false,
+          "related_search_terms": [
+            "normal vision",
+            "torchlight effect",
+            "sunlight rules",
+            "illumination"
+          ]
+        },
+        "related_keywords": [
+          "light",
+          "illumination",
+          "vision"
+        ]
+      },
+      {
+        "concept_name": "Dim Light",
+        "definition": "An illumination category also called shadows, typically a boundary between bright light and darkness, or weak natural light.",
+        "rule_logic": {
+          "premise": "An area is considered dim light",
+          "implication": "The area creates a lightly obscured area",
+          "exceptions": [],
+          "description_text": "Dim light, also called shadows, creates a lightly obscured area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.",
+          "is_exception": false,
+          "related_search_terms": [
+            "shadow rules",
+            "twilight vision",
+            "moonlight effect",
+            "lightly obscured dim light"
+          ]
+        },
+        "related_keywords": [
+          "light",
+          "illumination",
+          "obscured",
+          "shadows"
+        ]
+      },
+      {
+        "concept_name": "Darkness",
+        "definition": "An illumination category representing the complete absence of light.",
+        "rule_logic": {
+          "premise": "An area is considered darkness",
+          "implication": "The area creates a heavily obscured area",
+          "exceptions": [],
+          "description_text": "Darkness creates a heavily obscured area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.",
+          "is_exception": false,
+          "related_search_terms": [
+            "darkness vision",
+            "magical darkness",
+            "unlit dungeon",
+            "heavily obscured darkness"
+          ]
+        },
+        "related_keywords": [
+          "darkness",
+          "illumination",
+          "obscured",
+          "vision"
+        ]
+      },
+      {
+        "concept_name": "Blindsight",
+        "definition": "A special sense that allows a creature to perceive its surroundings without relying on sight within a specific radius.",
+        "rule_logic": {
+          "premise": "Creature has blindsight within a specific radius",
+          "implication": "Creature can perceive its surroundings without relying on sight within that radius",
+          "exceptions": [],
+          "description_text": "A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ooze vision",
+            "echolocation",
+            "heightened senses",
+            "seeing without eyes",
+            "blindsight range"
+          ]
+        },
+        "related_keywords": [
+          "blindsight",
+          "senses",
+          "vision",
+          "perception"
+        ]
+      },
+      {
+        "concept_name": "Darkvision",
+        "definition": "A special sense allowing a creature to see in darkness as if it were dim light, within a specified range.",
+        "rule_logic": {
+          "premise": "Creature has darkvision within a specified range AND is in an area of darkness",
+          "implication": "Within that range, the creature sees darkness as dim light (meaning the area is only lightly obscured for them). The creature cannot discern color, only shades of gray.",
+          "exceptions": [],
+          "description_text": "Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in darkness, only shades of gray.",
+          "is_exception": false,
+          "related_search_terms": [
+            "see in dark",
+            "night vision",
+            "darkvision color",
+            "underground vision",
+            "darkvision range",
+            "lightly obscured by darkvision"
+          ]
+        },
+        "related_keywords": [
+          "darkvision",
+          "darkness",
+          "dim light",
+          "vision",
+          "obscured",
+          "color"
+        ]
+      },
+      {
+        "concept_name": "Truesight",
+        "definition": "A superior special sense allowing a creature to see beyond normal and magical obscurations, and perceive hidden truths.",
+        "rule_logic": {
+          "premise": "Creature has truesight within a specific range",
+          "implication": "Within that range, the creature can: see in normal and magical darkness; see invisible creatures and objects; automatically detect visual illusions and succeed on saving throws against them; perceive the original form of a shapechanger or a creature transformed by magic; and see into the Ethereal Plane",
+          "exceptions": [],
+          "description_text": "A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.",
+          "is_exception": false,
+          "related_search_terms": [
+            "see invisible",
+            "detect illusions",
+            "see magical darkness",
+            "ethereal plane vision",
+            "true seeing",
+            "shapechanger true form",
+            "truesight range"
+          ]
+        },
+        "related_keywords": [
+          "truesight",
+          "darkness",
+          "invisible",
+          "illusion",
+          "shapechanger",
+          "ethereal",
+          "vision",
+          "magic"
+        ]
+      }
+    ],
+    "_chunk_header": "Vision and Light",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "Food and Water",
+    "extracted_concepts": [
+      {
+        "concept_name": "Exhaustion (Food/Water Deprivation)",
+        "definition": "A condition suffered by characters who fail to consume the required daily amounts of food or water.",
+        "rule_logic": {
+          "premise": "Character does not eat or drink the full required amount of food or water",
+          "implication": "Character suffers the effects of exhaustion",
+          "exceptions": [
+            "Exhaustion caused by lack of food or water cannot be removed until the character eats and drinks the full required amount"
+          ],
+          "description_text": "Characters who don't eat or drink suffer the effects of exhaustion (see appendix PH-A). Exhaustion caused by lack of food or water can't be removed until the character eats and drinks the full required amount.",
+          "is_exception": false,
+          "related_search_terms": [
+            "food exhaustion",
+            "water exhaustion",
+            "starvation",
+            "dehydration",
+            "removing exhaustion"
+          ]
+        },
+        "related_keywords": [
+          "exhaustion",
+          "food",
+          "water",
+          "survival",
+          "condition"
+        ]
+      },
+      {
+        "concept_name": "Daily Food Requirement",
+        "definition": "The standard amount of food a character needs per day to remain healthy.",
+        "rule_logic": {
+          "premise": "Standard daily activity",
+          "implication": "Character needs one pound of food per day",
+          "exceptions": [
+            "Character can subsist on half rations, where eating half a pound of food counts as half a day without food"
+          ],
+          "description_text": "A character needs one pound of food per day and can make food last longer by subsisting on half rations. Eating half a pound of food in a day counts as half a day without food.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much food do I need",
+            "rations",
+            "food weight",
+            "subsisting"
+          ]
+        },
+        "related_keywords": [
+          "food",
+          "rations",
+          "survival"
+        ]
+      },
+      {
+        "concept_name": "Food Deprivation Exhaustion",
+        "definition": "The rule for determining when a character suffers exhaustion due to lack of food.",
+        "rule_logic": {
+          "premise": "Character goes without food for a number of days exceeding (3 + Constitution modifier, minimum 1 day)",
+          "implication": "Character automatically suffers one level of exhaustion at the end of each day beyond that limit",
+          "exceptions": [],
+          "description_text": "A character can go without food for a number of days equal to 3 + his or her Constitution modifier (minimum 1). At the end of each day beyond that limit, a character automatically suffers one level of exhaustion.",
+          "is_exception": false,
+          "related_search_terms": [
+            "starvation rules",
+            "how long without food",
+            "constitution modifier food",
+            "exhaustion from hunger"
+          ]
+        },
+        "related_keywords": [
+          "food",
+          "exhaustion",
+          "constitution",
+          "starvation",
+          "survival"
+        ]
+      },
+      {
+        "concept_name": "Reset Food Deprivation Count",
+        "definition": "The condition for resetting the count of days a character has gone without food.",
+        "rule_logic": {
+          "premise": "Character consumes a normal day of eating (full required amount of food)",
+          "implication": "The count of days without food is reset to zero",
+          "exceptions": [],
+          "description_text": "A normal day of eating resets the count of days without food to zero.",
+          "is_exception": false,
+          "related_search_terms": [
+            "reset starvation",
+            "eating food count",
+            "ending hunger effects"
+          ]
+        },
+        "related_keywords": [
+          "food",
+          "starvation",
+          "reset",
+          "survival"
+        ]
+      },
+      {
+        "concept_name": "Daily Water Requirement",
+        "definition": "The standard amount of water a character needs per day to remain hydrated.",
+        "rule_logic": {
+          "premise": "Standard daily activity",
+          "implication": "Character needs one gallon of water per day",
+          "exceptions": [
+            "Character needs two gallons of water per day if the weather is hot"
+          ],
+          "description_text": "A character needs one gallon of water per day, or two gallons per day if the weather is hot.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how much water do I need",
+            "water in hot weather",
+            "dehydration needs"
+          ]
+        },
+        "related_keywords": [
+          "water",
+          "hydration",
+          "survival",
+          "weather"
+        ]
+      },
+      {
+        "concept_name": "Water Deprivation Exhaustion (Half Water)",
+        "definition": "The rule for suffering exhaustion when consuming only half the required daily water.",
+        "rule_logic": {
+          "premise": "Character drinks only half the daily required amount of water",
+          "implication": "Character must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day",
+          "exceptions": [],
+          "description_text": "A character who drinks only half that much water must succeed on a DC 15 Constitution saving throw or suffer one level of exhaustion at the end of the day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "drinking half water",
+            "dc 15 constitution save water",
+            "dehydration exhaustion",
+            "water saving throw"
+          ]
+        },
+        "related_keywords": [
+          "water",
+          "exhaustion",
+          "constitution save",
+          "dehydration",
+          "survival"
+        ]
+      },
+      {
+        "concept_name": "Water Deprivation Exhaustion (Less Than Half Water)",
+        "definition": "The rule for suffering exhaustion when consuming less than half the required daily water.",
+        "rule_logic": {
+          "premise": "Character has access to and drinks less than half the daily required amount of water",
+          "implication": "Character automatically suffers one level of exhaustion at the end of the day",
+          "exceptions": [],
+          "description_text": "A character with access to even less water automatically suffers one level of exhaustion at the end of the day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "no water exhaustion",
+            "severe dehydration",
+            "automatic exhaustion water"
+          ]
+        },
+        "related_keywords": [
+          "water",
+          "exhaustion",
+          "dehydration",
+          "survival"
+        ]
+      },
+      {
+        "concept_name": "Aggravated Exhaustion from Water Deprivation",
+        "definition": "An exception to the standard exhaustion level when a character is already exhausted and suffers from water deprivation.",
+        "rule_logic": {
+          "premise": "Character already has one or more levels of exhaustion AND Character suffers exhaustion from water deprivation (either half water or less than half water scenarios)",
+          "implication": "Character takes two levels of exhaustion instead of one",
+          "exceptions": [],
+          "description_text": "If the character already has one or more levels of exhaustion, the character takes two levels in either case.",
+          "is_exception": true,
+          "related_search_terms": [
+            "increased exhaustion water",
+            "already exhausted water",
+            "double exhaustion water",
+            "cumulative exhaustion"
+          ]
+        },
+        "related_keywords": [
+          "exhaustion",
+          "water",
+          "dehydration",
+          "exception",
+          "condition"
+        ]
+      }
+    ],
+    "_chunk_header": "Food and Water",
+    "_source_file": "the-environment"
+  },
+  {
+    "source_chapter": "Interacting with Objects",
+    "extracted_concepts": [
+      {
+        "concept_name": "Simple Object Interaction",
+        "definition": "A character's action to interact with an object that is straightforward to resolve without complex mechanics.",
+        "rule_logic": {
+          "premise": "Character attempts a simple interaction with an object (e.g., moving a lever)",
+          "implication": "GM describes the outcome, if any",
+          "exceptions": [],
+          "description_text": "A character's interaction with objects in an environment is often simple to resolve in the game. The player tells the GM that his or her character is doing something, such as moving a lever, and the GM describes what, if anything, happens.",
+          "is_exception": false,
+          "related_search_terms": [
+            "interact with object",
+            "simple action",
+            "game master decision",
+            "pull lever",
+            "open door"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "interaction",
+          "GM",
+          "action"
+        ]
+      },
+      {
+        "concept_name": "Forcing an Object",
+        "definition": "Attempting to manipulate an object that is stuck, rusted, or otherwise difficult to move or activate.",
+        "rule_logic": {
+          "premise": "Character attempts to interact with an object that is stuck or difficult to move (e.g., a rusted lever)",
+          "implication": "GM calls for a Strength check; DC is set by GM based on difficulty",
+          "exceptions": [],
+          "description_text": "If the lever is rusted in position, though, a character might need to force it. In such a situation, the GM might call for a Strength check to see whether the character can wrench the lever into place. The GM sets the DC for any such check based on the difficulty of the task.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stuck object",
+            "strength check object",
+            "force open",
+            "rusted mechanism",
+            "breaking object"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "strength check",
+          "DC",
+          "GM",
+          "force"
+        ]
+      },
+      {
+        "concept_name": "Object Damage Immunities",
+        "definition": "Specific damage types from which objects are inherently protected.",
+        "rule_logic": {
+          "premise": "An object is targeted by poison damage OR an object is targeted by psychic damage",
+          "implication": "Object is immune to poison damage AND object is immune to psychic damage",
+          "exceptions": [],
+          "description_text": "Objects are immune to poison and psychic damage...",
+          "is_exception": false,
+          "related_search_terms": [
+            "object damage",
+            "poison door",
+            "psychic wall",
+            "object resistance",
+            "damage types object"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "immunity",
+          "poison damage",
+          "psychic damage"
+        ]
+      },
+      {
+        "concept_name": "Object Damage Vulnerability",
+        "definition": "How objects are affected by physical and magical attacks that are not poison or psychic.",
+        "rule_logic": {
+          "premise": "An object is targeted by damage types other than poison or psychic",
+          "implication": "Object can be affected by physical and magical attacks much like creatures can",
+          "exceptions": [],
+          "description_text": "...but otherwise they can be affected by physical and magical attacks much like creatures can.",
+          "is_exception": false,
+          "related_search_terms": [
+            "attacking objects",
+            "physical damage object",
+            "magical damage object",
+            "damaging scenery",
+            "object hp"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "damage",
+          "physical attack",
+          "magical attack"
+        ]
+      },
+      {
+        "concept_name": "Object Armor Class and Hit Points Determination",
+        "definition": "The method by which an object's durability in combat is established.",
+        "rule_logic": {
+          "premise": "Determining an object's combat statistics (AC, HP)",
+          "implication": "GM determines an object's Armor Class AND GM determines an object's hit points",
+          "exceptions": [],
+          "description_text": "The GM determines an object's Armor Class and hit points...",
+          "is_exception": false,
+          "related_search_terms": [
+            "object stats",
+            "door hp",
+            "wall ac",
+            "object durability",
+            "gm object stats"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "AC",
+          "HP",
+          "GM"
+        ]
+      },
+      {
+        "concept_name": "Object Damage Resistance/Immunity (GM Discretion)",
+        "definition": "The Game Master's ability to assign specific resistances or immunities to objects based on their nature or composition.",
+        "rule_logic": {
+          "premise": "An object's specific damage resistances or immunities need to be determined",
+          "implication": "GM might decide that certain objects have resistance or immunity to certain kinds of attacks (e.g., hard to cut a rope with a club)",
+          "exceptions": [],
+          "description_text": "...and might decide that certain objects have resistance or immunity to certain kinds of attacks. (It's hard to cut a rope with a club, for example.)",
+          "is_exception": false,
+          "related_search_terms": [
+            "object resistance",
+            "object immunity",
+            "cutting rope",
+            "bludgeoning damage object",
+            "GM rule object"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "resistance",
+          "immunity",
+          "GM",
+          "damage type"
+        ]
+      },
+      {
+        "concept_name": "Object Saving Throws (Strength and Dexterity)",
+        "definition": "The outcome when an object is required to make a Strength or Dexterity saving throw.",
+        "rule_logic": {
+          "premise": "An object is required to make a Strength saving throw OR an object is required to make a Dexterity saving throw",
+          "implication": "Object always fails Strength saving throws AND object always fails Dexterity saving throws",
+          "exceptions": [],
+          "description_text": "Objects always fail Strength and Dexterity saving throws...",
+          "is_exception": false,
+          "related_search_terms": [
+            "object saves",
+            "knock over statue",
+            "dex save object",
+            "strength save object",
+            "object spell effects"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "saving throw",
+          "Strength save",
+          "Dexterity save",
+          "fail"
+        ]
+      },
+      {
+        "concept_name": "Object Saving Throws (Other Types)",
+        "definition": "The outcome when an object is required to make a saving throw other than Strength or Dexterity.",
+        "rule_logic": {
+          "premise": "An effect requires an object to make a saving throw (other than Strength or Dexterity)",
+          "implication": "Object is immune to effects that require other saves",
+          "exceptions": [],
+          "description_text": "...and they are immune to effects that require other saves.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object wisdom save",
+            "object charisma save",
+            "object constitution save",
+            "object intelligence save",
+            "magic on objects"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "saving throw",
+          "immunity",
+          "effect"
+        ]
+      },
+      {
+        "concept_name": "Object Breaking",
+        "definition": "The condition under which an object is considered destroyed.",
+        "rule_logic": {
+          "premise": "An object drops to 0 hit points",
+          "implication": "Object breaks",
+          "exceptions": [],
+          "description_text": "When an object drops to 0 hit points, it breaks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "object destroyed",
+            "destroying object",
+            "object hp",
+            "breaking down door"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "HP",
+          "break",
+          "destroyed"
+        ]
+      },
+      {
+        "concept_name": "Breaking Object via Strength Check",
+        "definition": "An alternative method for a character to destroy an object through sheer physical force.",
+        "rule_logic": {
+          "premise": "A character attempts to break an object using raw strength",
+          "implication": "Character makes a Strength check; DC is set by GM",
+          "exceptions": [],
+          "description_text": "A character can also attempt a Strength check to break an object. The GM sets the DC for any such check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "smash object",
+            "break door strength",
+            "force open chest",
+            "dc to break object",
+            "strength check to destroy"
+          ]
+        },
+        "related_keywords": [
+          "object",
+          "Strength check",
+          "DC",
+          "break",
+          "destroy"
+        ]
+      }
+    ],
+    "_chunk_header": "Interacting with Objects",
+    "_source_file": "the-environment"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "entity_name": "Dueling",
+  "logic_type": "fighting_style",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making a damage roll with a melee weapon",
+      "condition": "Wielding a melee weapon in one hand AND no other weapons are wielded",
+      "outcome": "Gain a +2 bonus to the damage roll",
+      "related_search_terms": [
+        "damage bonus",
+        "single weapon",
+        "one weapon fighting",
+        "sword and board",
+        "one-handed melee"
+      ]
+    }
+  ],
+  "description_text": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.",
+  "tags": [
+    "fighting style",
+    "player_feature",
+    "combat",
+    "damage_modifier"
+  ],
+  "related_search_terms": [
+    "one-handed weapon",
+    "melee damage bonus",
+    "no off-hand weapon",
+    "dueling bonus"
+  ]
+}

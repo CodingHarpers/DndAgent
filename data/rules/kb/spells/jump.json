@@ -1,0 +1,33 @@
+{
+  "entity_name": "Jump",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature attempts a jump",
+      "condition": "Creature is under the effect of the Jump spell",
+      "outcome": "The creature's jump distance is tripled",
+      "related_search_terms": [
+        "long jump",
+        "high jump",
+        "movement",
+        "athletics check",
+        "acrobatics check",
+        "leap"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature. The creature's jump distance is tripled until the spell ends.",
+  "tags": [
+    "1st-level",
+    "Transmutation",
+    "Touch Range",
+    "Buff"
+  ],
+  "related_search_terms": [
+    "enhanced movement",
+    "leap",
+    "mobility spell",
+    "athletics boost"
+  ]
+}

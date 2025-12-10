@@ -1,0 +1,122 @@
+{
+  "entity_name": "Thaumaturgy",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster chooses to magnify voice",
+      "outcome": "Caster's voice booms up to three times as loud as normal for 1 minute",
+      "related_search_terms": [
+        "loud voice",
+        "amplify sound",
+        "voice volume",
+        "intimidation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster targets existing flames within range",
+      "outcome": "Targeted flames flicker, brighten, dim, or change color for 1 minute",
+      "related_search_terms": [
+        "control fire",
+        "light manipulation",
+        "fire aesthetics",
+        "distraction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster targets a point on the ground within range",
+      "outcome": "Harmless tremors occur in the ground for 1 minute",
+      "related_search_terms": [
+        "ground shake",
+        "minor earthquake",
+        "distraction",
+        "fear effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster chooses a point within range",
+      "outcome": "An instantaneous sound (e.g., rumble, cry, whispers) originates from the chosen point",
+      "related_search_terms": [
+        "sound effect",
+        "auditory illusion",
+        "distraction",
+        "mimicry"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster targets an unlocked door or window within range",
+      "outcome": "The targeted unlocked door or window instantaneously flies open or slams shut",
+      "related_search_terms": [
+        "door control",
+        "window control",
+        "door slam",
+        "door open",
+        "instantaneous effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast (choose effect option)",
+      "condition": "Caster chooses to alter eye appearance",
+      "outcome": "Caster's eyes alter their appearance for 1 minute",
+      "related_search_terms": [
+        "eye color change",
+        "glowing eyes",
+        "intimidation",
+        "disguise"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Cast Thaumaturgy (1-minute effect)",
+      "condition": "Three 1-minute effects from Thaumaturgy are already active",
+      "outcome": "Cannot activate a new 1-minute effect until an existing one ends or is dismissed",
+      "related_search_terms": [
+        "maximum active effects",
+        "cantrip limit",
+        "concentration-like",
+        "concurrent spells",
+        "stacking spells"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "A 1-minute effect from Thaumaturgy is active",
+      "condition": "Caster expends an action",
+      "outcome": "Caster can dismiss one chosen active 1-minute effect from Thaumaturgy",
+      "related_search_terms": [
+        "end effect early",
+        "turn off spell",
+        "action cost for dismissal",
+        "remove effect"
+      ]
+    }
+  ],
+  "description_text": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range.\n- Your voice booms up to three times as loud as normal for 1 minute.\n- You cause flames to flicker, brighten, dim, or change color for 1 minute.\n- You cause harmless tremors in the ground for 1 minute.\n- You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n- You instantaneously cause an unlocked door or window to fly open or slam shut.\n- You alter the appearance of your eyes for 1 minute.\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+  "tags": [
+    "cantrip",
+    "utility",
+    "minor_effect",
+    "sound",
+    "visual",
+    "object_manipulation",
+    "control"
+  ],
+  "related_search_terms": [
+    "prestidigitation-like",
+    "minor magic",
+    "trickery",
+    "subtle magic",
+    "divine magic",
+    "performance"
+  ]
+}

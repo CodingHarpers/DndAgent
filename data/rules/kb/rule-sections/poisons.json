@@ -1,0 +1,526 @@
+[
+  {
+    "source_chapter": "Poisons Overview",
+    "extracted_concepts": [
+      {
+        "concept_name": "Poisoned Condition",
+        "definition": "A major adverse condition imposed upon a creature, indicating it is suffering from the effects of a toxic substance.",
+        "rule_logic": {
+          "premise": "Creature is under the effect of the 'Poisoned' condition",
+          "implication": "Creature has disadvantage on attack rolls AND creature has disadvantage on ability checks",
+          "exceptions": [],
+          "description_text": "A poisoned creature has disadvantage on attack rolls and ability checks.",
+          "is_exception": false,
+          "related_search_terms": [
+            "what does poisoned do",
+            "poisoned status effect",
+            "disadvantage from poison",
+            "poisoned attack rolls",
+            "poisoned ability checks"
+          ]
+        },
+        "related_keywords": [
+          "condition",
+          "disadvantage",
+          "attack rolls",
+          "ability checks",
+          "status effect"
+        ]
+      },
+      {
+        "concept_name": "Poison Damage Type",
+        "definition": "A specific category of damage typically inflicted by toxic substances, diseases, or certain magical effects.",
+        "rule_logic": {
+          "premise": "Creature takes damage from a source dealing 'poison damage'",
+          "implication": "Creature's hit points are reduced by the specified amount, and the damage type is 'Poison'",
+          "exceptions": [
+            "If creature has Poison Immunity, THEN creature takes no damage",
+            "If creature has Poison Resistance, THEN creature takes half damage"
+          ],
+          "description_text": "Poison damage is a common damage type. Many creatures are immune or resistant to poison damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "poison damage type",
+            "what is poison damage",
+            "resistance to poison damage",
+            "immunity to poison damage",
+            "damage types"
+          ]
+        },
+        "related_keywords": [
+          "damage type",
+          "resistance",
+          "immunity",
+          "hit points",
+          "toxic"
+        ]
+      },
+      {
+        "concept_name": "Applying Poison (Weapon or Ammunition)",
+        "definition": "The procedural act of coating a weapon or piece of ammunition with a dose of poison, enabling its delivery upon impact.",
+        "rule_logic": {
+          "premise": "Creature possesses a dose of poison AND wants to apply it to a weapon or ammunition",
+          "implication": "Creature uses an action to apply the poison. The poison remains potent for 1 minute OR until it hits a creature. The next creature hit is subjected to the poison's effects (typically a Constitution saving throw against a specific DC).",
+          "exceptions": [
+            "Specific poisons may have different application times (e.g., bonus action) or different durations/number of uses."
+          ],
+          "description_text": "You can use an action to apply a dose of poison to one weapon or to one piece of ammunition. The poison remains potent for 1 minute or until you hit a creature with the weapon or ammunition. When you hit a creature, it is subjected to the poison's effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to poison weapon",
+            "poison an arrow",
+            "poison duration weapon",
+            "applying poison rules",
+            "poison action cost",
+            "weapon poison"
+          ]
+        },
+        "related_keywords": [
+          "action",
+          "weapon",
+          "ammunition",
+          "delivery",
+          "duration",
+          "saving throw",
+          "combat action",
+          "equipment"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "poisons"
+  },
+  {
+    "source_chapter": "Poisons",
+    "extracted_concepts": [
+      {
+        "concept_name": "Contact Poison",
+        "definition": "A type of poison that is applied to an object and affects a creature upon contact with exposed skin.",
+        "rule_logic": {
+          "premise": "Creature touches contact poison with exposed skin",
+          "implication": "Creature suffers the poison's effects",
+          "exceptions": [],
+          "description_text": "Contact poison can be smeared on an object and remains potent until it is touched or washed off. A creature that touches contact poison with exposed skin suffers its effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how contact poison works",
+            "applying contact poison",
+            "contact poison activation",
+            "washing off poison"
+          ]
+        },
+        "related_keywords": [
+          "poison type",
+          "application method",
+          "contact"
+        ]
+      },
+      {
+        "concept_name": "Ingested Poison",
+        "definition": "A type of poison that must be swallowed entirely to take effect, often delivered in food or liquid.",
+        "rule_logic": {
+          "premise": "Creature swallows an entire dose of ingested poison",
+          "implication": "Creature suffers the poison's effects",
+          "exceptions": [
+            "DM may decide a partial dose allows advantage on saving throw or deals half damage on a failed save"
+          ],
+          "description_text": "A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how ingested poison works",
+            "eating poison",
+            "poisoning food",
+            "partial poison dose"
+          ]
+        },
+        "related_keywords": [
+          "poison type",
+          "application method",
+          "ingested"
+        ]
+      },
+      {
+        "concept_name": "Inhaled Poison",
+        "definition": "A type of poison in powder or gas form that takes effect when breathed in, affecting creatures in a 5-foot cube.",
+        "rule_logic": {
+          "premise": "Creature is subjected to inhaled poison within a 5-foot cube",
+          "implication": "Creature suffers the poison's effects",
+          "exceptions": [
+            "Holding one's breath is ineffective"
+          ],
+          "description_text": "These poisons are powders or gases that take effect when inhaled. Blowing the powder or releasing the gas subjects creatures in a 5-foot cube to its effect. The resulting cloud dissipates immediately afterward. Holding one's breath is ineffective against inhaled poisons, as they affect nasal membranes, tear ducts, and other parts of the body.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how inhaled poison works",
+            "breathing poison",
+            "gas poison",
+            "holding breath against poison",
+            "poison cloud"
+          ]
+        },
+        "related_keywords": [
+          "poison type",
+          "application method",
+          "inhaled"
+        ]
+      },
+      {
+        "concept_name": "Injury Poison",
+        "definition": "A type of poison applied to objects that deal piercing or slashing damage, taking effect when delivered through a wound.",
+        "rule_logic": {
+          "premise": "Creature takes piercing or slashing damage from an object coated with injury poison",
+          "implication": "Creature is exposed to the poison's effects",
+          "exceptions": [],
+          "description_text": "Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how injury poison works",
+            "poisoning weapons",
+            "poisoned arrows",
+            "trap poison",
+            "piercing damage poison",
+            "slashing damage poison"
+          ]
+        },
+        "related_keywords": [
+          "poison type",
+          "application method",
+          "injury"
+        ]
+      },
+      {
+        "concept_name": "Assassin's Blood",
+        "definition": "An ingested poison causing poison damage and the poisoned condition for 24 hours.",
+        "rule_logic": {
+          "premise": "Creature subjected to Assassin's Blood",
+          "implication": "Must make a DC 10 Constitution saving throw. On a failed save: takes 6 (1d12) poison damage AND is poisoned for 24 hours. On a successful save: takes half damage AND is not poisoned.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned.",
+          "is_exception": false,
+          "related_search_terms": [
+            "assassin's blood effect",
+            "dc 10 poison",
+            "poisoned condition",
+            "ingested poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "ingested poison",
+          "damage",
+          "poisoned condition"
+        ]
+      },
+      {
+        "concept_name": "Burnt Othur Fumes",
+        "definition": "An inhaled poison causing initial poison damage and requiring repeated saving throws on subsequent turns.",
+        "rule_logic": {
+          "premise": "Creature subjected to Burnt Othur Fumes",
+          "implication": "Must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage AND must repeat the saving throw at the start of each of its turns. On each successive failed save: takes 3 (1d6) poison damage. After three successful saves: the poison ends.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the character takes 3 (1d6) poison damage. After three successful saves, the poison ends.",
+          "is_exception": false,
+          "related_search_terms": [
+            "burnt othur fumes effect",
+            "persistent poison damage",
+            "inhaled poison dc 13",
+            "repeated saving throw poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "inhaled poison",
+          "damage",
+          "recurring effect"
+        ]
+      },
+      {
+        "concept_name": "Crawler Mucus",
+        "definition": "A contact poison harvested from crawlers, causing the poisoned and paralyzed conditions.",
+        "rule_logic": {
+          "premise": "Creature subjected to Crawler Mucus",
+          "implication": "Must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute AND is paralyzed. Creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          "is_exception": false,
+          "related_search_terms": [
+            "crawler mucus effect",
+            "paralysis poison",
+            "contact poison dc 13",
+            "end paralysis",
+            "crawler poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "contact poison",
+          "poisoned condition",
+          "paralyzed condition"
+        ]
+      },
+      {
+        "concept_name": "Drow Poison",
+        "definition": "An injury poison, typically drow-made, causing the poisoned condition and potential unconsciousness.",
+        "rule_logic": {
+          "premise": "Creature subjected to Drow Poison",
+          "implication": "Must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more: the creature is also unconscious while poisoned. Creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+          "is_exception": false,
+          "related_search_terms": [
+            "drow poison effect",
+            "unconscious poison",
+            "dc 13 poison",
+            "wake up condition",
+            "injury poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "injury poison",
+          "poisoned condition",
+          "unconsciousness",
+          "drow"
+        ]
+      },
+      {
+        "concept_name": "Essence of Ether",
+        "definition": "An inhaled poison that causes the poisoned and unconscious conditions for 8 hours.",
+        "rule_logic": {
+          "premise": "Creature subjected to Essence of Ether",
+          "implication": "Must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours AND is unconscious. Creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+          "is_exception": false,
+          "related_search_terms": [
+            "essence of ether effect",
+            "knockout gas",
+            "inhaled poison dc 15",
+            "unconscious for 8 hours"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "inhaled poison",
+          "poisoned condition",
+          "unconsciousness"
+        ]
+      },
+      {
+        "concept_name": "Malice",
+        "definition": "An inhaled poison that causes the poisoned and blinded conditions for 1 hour.",
+        "rule_logic": {
+          "premise": "Creature subjected to Malice",
+          "implication": "Must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour AND is blinded.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded.",
+          "is_exception": false,
+          "related_search_terms": [
+            "malice poison effect",
+            "blinding poison",
+            "inhaled poison dc 15",
+            "blinded condition"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "inhaled poison",
+          "poisoned condition",
+          "blinded condition"
+        ]
+      },
+      {
+        "concept_name": "Midnight Tears",
+        "definition": "An ingested poison with a delayed effect, causing significant poison damage at midnight.",
+        "rule_logic": {
+          "premise": "Creature ingests Midnight Tears",
+          "implication": "Suffers no effect until the stroke of midnight. If the poison has not been neutralized before then: creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "midnight tears effect",
+            "delayed poison",
+            "deadly poison",
+            "dc 17 poison",
+            "ingested poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "ingested poison",
+          "damage",
+          "delayed effect"
+        ]
+      },
+      {
+        "concept_name": "Oil of Taggit",
+        "definition": "A contact poison that causes the poisoned and unconscious conditions for 24 hours.",
+        "rule_logic": {
+          "premise": "Creature subjected to Oil of Taggit",
+          "implication": "Must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours AND is unconscious. Creature wakes up if it takes damage.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage.",
+          "is_exception": false,
+          "related_search_terms": [
+            "oil of taggit effect",
+            "knockout oil",
+            "contact poison dc 13",
+            "unconscious poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "contact poison",
+          "poisoned condition",
+          "unconsciousness"
+        ]
+      },
+      {
+        "concept_name": "Pale Tincture",
+        "definition": "An ingested poison causing recurring poison damage and preventing healing until its effect ends after seven successful saves.",
+        "rule_logic": {
+          "premise": "Creature subjected to Pale Tincture",
+          "implication": "Must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage AND become poisoned. The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws: the effect ends AND the creature can heal normally.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can't be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally.",
+          "is_exception": false,
+          "related_search_terms": [
+            "pale tincture effect",
+            "unhealable damage",
+            "persistent poison",
+            "dc 16 poison",
+            "ingested poison",
+            "long-term poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "ingested poison",
+          "damage",
+          "healing prevention",
+          "recurring effect"
+        ]
+      },
+      {
+        "concept_name": "Purple Worm Poison",
+        "definition": "A highly potent injury poison harvested from purple worms, inflicting significant poison damage.",
+        "rule_logic": {
+          "premise": "Creature subjected to Purple Worm Poison",
+          "implication": "Must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "purple worm poison effect",
+            "deadly injury poison",
+            "dc 19 poison",
+            "high damage poison",
+            "injury poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "injury poison",
+          "damage",
+          "purple worm"
+        ]
+      },
+      {
+        "concept_name": "Serpent Venom",
+        "definition": "An injury poison harvested from giant poisonous snakes, inflicting poison damage.",
+        "rule_logic": {
+          "premise": "Creature subjected to Serpent Venom",
+          "implication": "Must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "serpent venom effect",
+            "snake poison",
+            "dc 11 poison",
+            "injury poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "injury poison",
+          "damage",
+          "snake"
+        ]
+      },
+      {
+        "concept_name": "Torpor",
+        "definition": "An ingested poison causing the poisoned and incapacitated conditions for an extended duration.",
+        "rule_logic": {
+          "premise": "Creature subjected to Torpor",
+          "implication": "Must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours AND is incapacitated.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated.",
+          "is_exception": false,
+          "related_search_terms": [
+            "torpor poison effect",
+            "incapacitating poison",
+            "dc 15 poison",
+            "ingested poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "ingested poison",
+          "poisoned condition",
+          "incapacitated condition"
+        ]
+      },
+      {
+        "concept_name": "Truth Serum",
+        "definition": "An ingested poison compelling a creature, if poisoned, to speak only the truth for an hour.",
+        "rule_logic": {
+          "premise": "Creature subjected to Truth Serum",
+          "implication": "Must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can't knowingly speak a lie, as if under the effect of a *zone of truth* spell.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can't knowingly speak a lie, as if under the effect of a *zone of truth* spell.",
+          "is_exception": false,
+          "related_search_terms": [
+            "truth serum effect",
+            "compelled truth",
+            "dc 11 poison",
+            "ingested poison",
+            "zone of truth"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "ingested poison",
+          "poisoned condition",
+          "truth compulsion"
+        ]
+      },
+      {
+        "concept_name": "Wyvern Poison",
+        "definition": "An injury poison harvested from wyverns, inflicting significant poison damage.",
+        "rule_logic": {
+          "premise": "Creature subjected to Wyvern Poison",
+          "implication": "Must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "exceptions": [],
+          "description_text": "A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+          "is_exception": false,
+          "related_search_terms": [
+            "wyvern poison effect",
+            "deadly injury poison",
+            "dc 15 poison",
+            "injury poison"
+          ]
+        },
+        "related_keywords": [
+          "poison",
+          "injury poison",
+          "damage",
+          "wyvern"
+        ]
+      }
+    ],
+    "_chunk_header": "Poisons",
+    "_source_file": "poisons"
+  }
+]

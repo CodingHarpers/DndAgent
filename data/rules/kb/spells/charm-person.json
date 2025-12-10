@@ -1,0 +1,85 @@
+{
+  "entity_name": "Charm Person",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is Humanoid AND Target is within Range AND Caster can see Target",
+      "outcome": "Target must make a Wisdom Saving Throw",
+      "related_search_terms": [
+        "target selection",
+        "humanoid only",
+        "line of sight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target makes Wisdom Saving Throw against Charm Person",
+      "condition": "Caster or Caster's companions are fighting Target",
+      "outcome": "Target makes Saving Throw with Advantage",
+      "related_search_terms": [
+        "combat condition",
+        "hostile target",
+        "advantage save"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Target fails Wisdom Saving Throw against Charm Person",
+      "condition": "N/A",
+      "outcome": "Target is Charmed by Caster",
+      "related_search_terms": [
+        "failed save effect",
+        "mind control",
+        "control effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Charmed condition from Charm Person is active",
+      "condition": "Caster or Caster's companions deal damage to Target OR Caster or Caster's companions take any harmful action against Target",
+      "outcome": "Charmed condition immediately ends",
+      "related_search_terms": [
+        "breaking charm",
+        "harmful action",
+        "attack charmed target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charmed condition from Charm Person is active",
+      "condition": "N/A",
+      "outcome": "Charmed creature regards Caster as a friendly acquaintance",
+      "related_search_terms": [
+        "social effect",
+        "NPC disposition",
+        "attitude change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charm Person spell ends",
+      "condition": "N/A",
+      "outcome": "Creature knows it was Charmed by the Caster",
+      "related_search_terms": [
+        "post-spell effect",
+        "awareness of charm",
+        "reputation consequence"
+      ]
+    }
+  ],
+  "description_text": "You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.",
+  "tags": [
+    "Enchantment",
+    "Social",
+    "Control"
+  ],
+  "related_search_terms": [
+    "charm",
+    "mind control",
+    "influence",
+    "persuasion",
+    "social spell"
+  ]
+}

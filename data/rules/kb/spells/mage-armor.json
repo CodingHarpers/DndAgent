@@ -1,0 +1,54 @@
+{
+  "entity_name": "Mage Armor",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Upon successful casting and for the duration of the spell",
+      "condition": "Target is a willing creature AND target is not wearing armor",
+      "outcome": "Target's base AC becomes 13 + its Dexterity modifier",
+      "related_search_terms": [
+        "AC boost",
+        "defense spell",
+        "armor class improvement",
+        "unarmored defense",
+        "protection spell",
+        "AC calculation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "During the spell's duration",
+      "condition": "Target dons armor",
+      "outcome": "Mage Armor spell ends",
+      "related_search_terms": [
+        "spell termination",
+        "cancel spell",
+        "armor worn",
+        "don armor"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "As an action",
+      "condition": "Caster dismisses the spell",
+      "outcome": "Mage Armor spell ends",
+      "related_search_terms": [
+        "caster action",
+        "dismissal",
+        "end spell early",
+        "spell control"
+      ]
+    }
+  ],
+  "description_text": "You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.",
+  "tags": [],
+  "related_search_terms": [
+    "arcane defense",
+    "magical protection",
+    "AC buff spell",
+    "wizard armor",
+    "sorcerer armor",
+    "defensive magic"
+  ]
+}

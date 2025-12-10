@@ -1,0 +1,105 @@
+{
+  "entity_name": "Reincarnate",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast Targeting",
+      "condition": "Target is a dead humanoid OR a piece of a dead humanoid AND Target has been dead no longer than 10 days",
+      "outcome": "Spell can target the creature",
+      "related_search_terms": [
+        "resurrection target",
+        "dead body",
+        "time limit for revive",
+        "humanoid remains",
+        "spell range"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Spell Resolution",
+      "condition": "Target's soul is NOT free OR Target's soul is NOT willing to enter the new body",
+      "outcome": "Spell fails",
+      "related_search_terms": [
+        "soul not free",
+        "soul unwilling",
+        "resurrection failure",
+        "failed revive"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Success",
+      "condition": "N/A",
+      "outcome": "A new adult body is formed for the target",
+      "related_search_terms": [
+        "body regeneration",
+        "new physical form",
+        "body creation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Success",
+      "condition": "N/A",
+      "outcome": "The target's soul is called to enter the new body",
+      "related_search_terms": [
+        "soul recall",
+        "return soul",
+        "spirit return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Spell Success",
+      "condition": "N/A",
+      "outcome": "The reincarnated creature's race changes according to a d100 roll (01-04 Dragonborn, 05-13 Dwarf hill, 14-21 Dwarf mountain, 22-25 Elf dark, 26-34 Elf high, 35-42 Elf wood, 43-46 Gnome forest, 47-52 Gnome rock, 53-56 Half-elf, 57-60 Half-orc, 61-68 Halfling lightfoot, 69-76 Halfling stout, 77-96 Human, 97-00 Tiefling) OR the GM chooses a form",
+      "related_search_terms": [
+        "racial change",
+        "random race",
+        "new racial identity",
+        "race roll table"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Post-Reincarnation",
+      "condition": "N/A",
+      "outcome": "The creature recalls its former life and experiences; The creature retains the capabilities it had in its original form",
+      "related_search_terms": [
+        "memories intact",
+        "skills retained",
+        "personality",
+        "knowledge retention"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Post-Reincarnation",
+      "condition": "N/A",
+      "outcome": "The creature exchanges its original race for the new one and changes its racial traits accordingly",
+      "related_search_terms": [
+        "racial feature change",
+        "new race abilities",
+        "old racial traits lost"
+      ]
+    }
+  ],
+  "description_text": "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails. The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The GM rolls a d 100 and consults the following table to determine what form the creature takes when restored to life, or the GM chooses a form. | d100 | Race |---|---| | 01-04 | Dragonborn | | 05-13 | Dwarf, hill | | 14-21 | Dwarf, mountain | | 22-25 | Elf, dark | | 26-34 | Elf, high | | 35-42 | Elf, wood | | 43-46 | Gnome, forest | | 47-52 | Gnome, rock | | 53-56 | Half-elf | | 57-60 | Half-orc | | 61-68 | Halfling, lightfoot | | 69-76 | Halfling, stout | | 77-96 | Human | | 97-00 | Tiefling | The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.",
+  "tags": [
+    "spell",
+    "necromancy",
+    "resurrection",
+    "healing"
+  ],
+  "related_search_terms": [
+    "bring back to life",
+    "revive",
+    "change race",
+    "dead character",
+    "soul",
+    "new body",
+    "character change",
+    "rebirth"
+  ]
+}

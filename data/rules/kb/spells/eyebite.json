@@ -1,0 +1,143 @@
+{
+  "entity_name": "Eyebite",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting Eyebite initially OR Caster uses an action on their turn while Eyebite is active",
+      "condition": "Target is a creature of caster's choice within 60 feet AND caster can see target AND target has not previously succeeded on a saving throw against this casting of Eyebite",
+      "outcome": "Target makes a Wisdom saving throw. On failure, caster chooses one of 'Asleep', 'Panicked', or 'Sickened' effects to apply to the target for the spell's duration.",
+      "related_search_terms": [
+        "target selection",
+        "applying conditions",
+        "wisdom save",
+        "spell effect",
+        "concentration",
+        "action economy",
+        "spell activation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom save against Eyebite and 'Asleep' is chosen",
+      "condition": "Target is affected by Eyebite's 'Asleep' option",
+      "outcome": "Target becomes Unconscious.",
+      "related_search_terms": [
+        "unconscious",
+        "sleep",
+        "incapacitated",
+        "falling asleep"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is Unconscious from Eyebite's 'Asleep' effect",
+      "condition": "Target takes any damage",
+      "outcome": "Target is no longer Unconscious, and Eyebite's 'Asleep' effect ends on them.",
+      "related_search_terms": [
+        "wake up",
+        "ending condition",
+        "damage",
+        "waking from sleep"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is Unconscious from Eyebite's 'Asleep' effect",
+      "condition": "Another creature uses its action to shake the sleeper awake",
+      "outcome": "Target is no longer Unconscious, and Eyebite's 'Asleep' effect ends on them.",
+      "related_search_terms": [
+        "wake up",
+        "ending condition",
+        "action to wake",
+        "shaking awake"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom save against Eyebite and 'Panicked' is chosen",
+      "condition": "Target is affected by Eyebite's 'Panicked' option",
+      "outcome": "Target is Frightened of the caster.",
+      "related_search_terms": [
+        "frightened",
+        "fear effect",
+        "control",
+        "panicked condition"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On target's turn",
+      "condition": "Target is Frightened of the caster due to Eyebite's 'Panicked' option AND there is somewhere to move away from the caster",
+      "outcome": "Target must take the Dash action and move away from the caster by the safest and shortest available route.",
+      "related_search_terms": [
+        "forced movement",
+        "dash",
+        "running away",
+        "pathfinding",
+        "forced action",
+        "movement restriction"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Any time while target is affected by Eyebite's 'Panicked' option",
+      "condition": "Target moves to a place at least 60 feet away from the caster AND target can no longer see the caster",
+      "outcome": "Eyebite's 'Panicked' effect ends on the target.",
+      "related_search_terms": [
+        "ending fear",
+        "breaking line of sight",
+        "distance",
+        "escape",
+        "line of sight"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Wisdom save against Eyebite and 'Sickened' is chosen",
+      "condition": "Target is affected by Eyebite's 'Sickened' option",
+      "outcome": "Target has Disadvantage on attack rolls and ability checks.",
+      "related_search_terms": [
+        "debuff",
+        "disadvantage attacks",
+        "disadvantage ability checks",
+        "hindered",
+        "weakened",
+        "sickened condition"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of target's turn",
+      "condition": "Target is affected by Eyebite's 'Sickened' option",
+      "outcome": "Target makes a Wisdom saving throw. On success, Eyebite's 'Sickened' effect ends on them.",
+      "related_search_terms": [
+        "repeated save",
+        "repetition",
+        "ending debuff",
+        "chance to recover",
+        "saving throw at end of turn"
+      ]
+    }
+  ],
+  "description_text": "For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can't target a creature again if it has succeeded on a saving throw against this casting of eyebite.***Asleep.*** The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.***Panicked.*** The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.***Sickened.*** The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another wisdom saving throw. If it succeeds, the effect ends.",
+  "tags": [
+    "spell",
+    "control",
+    "condition",
+    "debuff",
+    "concentration"
+  ],
+  "related_search_terms": [
+    "Eyebite",
+    "sleep spell",
+    "fear spell",
+    "debuff spell",
+    "condition application",
+    "concentration spell",
+    "unconscious",
+    "frightened",
+    "disadvantage",
+    "crowd control"
+  ]
+}

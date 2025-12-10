@@ -1,0 +1,68 @@
+{
+  "entity_name": "Poison Spray",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature visible within range fails Constitution saving throw",
+      "outcome": "Target takes 1d12 poison damage",
+      "related_search_terms": [
+        "poison damage",
+        "Constitution save",
+        "con save spell",
+        "cantrip damage",
+        "direct damage"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation for Poison Spray",
+      "condition": "Caster level is 5 or higher",
+      "outcome": "Poison Spray's damage increases by 1d12 (total 2d12 poison damage)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 5 damage",
+        "spell damage increase"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation for Poison Spray",
+      "condition": "Caster level is 11 or higher",
+      "outcome": "Poison Spray's damage increases by an additional 1d12 (total 3d12 poison damage)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 11 damage",
+        "spell damage increase"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage calculation for Poison Spray",
+      "condition": "Caster level is 17 or higher",
+      "outcome": "Poison Spray's damage increases by an additional 1d12 (total 4d12 poison damage)",
+      "related_search_terms": [
+        "cantrip scaling",
+        "level 17 damage",
+        "spell damage increase"
+      ]
+    }
+  ],
+  "description_text": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
+  "tags": [
+    "cantrip",
+    "evocation",
+    "damage",
+    "poison",
+    "saving throw"
+  ],
+  "related_search_terms": [
+    "poison spray spell",
+    "cantrip poison",
+    "noxious gas",
+    "con save cantrip",
+    "melee cantrip",
+    "ranged cantrip"
+  ]
+}

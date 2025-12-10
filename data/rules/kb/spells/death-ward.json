@@ -1,0 +1,48 @@
+{
+  "entity_name": "Death Ward",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Target would drop to 0 hit points",
+      "condition": "Condition is a result of taking damage AND spell is active",
+      "outcome": "Target instead drops to 1 hit point; spell ends",
+      "related_search_terms": [
+        "save from death",
+        "survive damage",
+        "death prevention",
+        "hp preservation",
+        "near death",
+        "knocked out"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is subjected to an effect that would kill it instantaneously",
+      "condition": "Effect does NOT deal damage AND spell is active",
+      "outcome": "Effect is negated against the target; spell ends",
+      "related_search_terms": [
+        "instant kill protection",
+        "avoid instant death",
+        "negate death effect",
+        "death save",
+        "vorpal sword",
+        "disintegration"
+      ]
+    }
+  ],
+  "description_text": "You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends. If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.",
+  "tags": [
+    "Abjuration",
+    "Protection",
+    "Buff"
+  ],
+  "related_search_terms": [
+    "death prevention spell",
+    "survivability buff",
+    "hp save",
+    "instant death protection",
+    "anti-death spell",
+    "revival spell"
+  ]
+}

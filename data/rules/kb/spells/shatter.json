@@ -1,0 +1,86 @@
+{
+  "entity_name": "Shatter",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Each creature within 10-foot radius sphere centered on chosen point within range",
+      "outcome": "Creature must make a Constitution saving throw",
+      "related_search_terms": [
+        "AoE",
+        "area effect",
+        "saving throw",
+        "Con save",
+        "target selection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw",
+      "condition": "Creature fails the saving throw",
+      "outcome": "Creature takes 3d8 thunder damage",
+      "related_search_terms": [
+        "failed save",
+        "full damage",
+        "thunder damage",
+        "spell damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw",
+      "condition": "Creature succeeds on the saving throw",
+      "outcome": "Creature takes half of 3d8 thunder damage",
+      "related_search_terms": [
+        "successful save",
+        "half damage",
+        "reduced damage",
+        "thunder damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Constitution Saving Throw",
+      "condition": "Creature is made of inorganic material (such as stone, crystal, or metal)",
+      "outcome": "Creature has disadvantage on the saving throw",
+      "related_search_terms": [
+        "constructs",
+        "golems",
+        "elementals",
+        "stone creatures",
+        "metal creatures",
+        "disadvantage on save",
+        "material vulnerability"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Non-magical item is not worn or carried AND within 10-foot radius sphere",
+      "outcome": "Item suffers damage",
+      "related_search_terms": [
+        "object damage",
+        "destroy items",
+        "environmental damage",
+        "structure damage"
+      ]
+    }
+  ],
+  "description_text": "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw. A non-magical item that is not worn or carried also suffers damage if it is in the area of the spell.",
+  "tags": [
+    "damage",
+    "AoE",
+    "saving throw",
+    "thunder",
+    "object interaction",
+    "material specific"
+  ],
+  "related_search_terms": [
+    "sound spell",
+    "loud noise",
+    "destructive spell",
+    "breaking objects",
+    "area of effect damage"
+  ]
+}

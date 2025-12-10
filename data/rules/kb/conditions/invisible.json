@@ -1,0 +1,85 @@
+{
+  "entity_name": "Invisible",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Visual Perception Check",
+      "condition": "Observer does NOT possess magic (e.g., See Invisibility) OR a special sense (e.g., Truesight, Blindsight) to perceive invisibility",
+      "outcome": "Invisible creature is visually imperceptible",
+      "related_search_terms": [
+        "see invisible",
+        "truesight",
+        "blindsight",
+        "detection",
+        "perceive",
+        "spot check",
+        "cannot be seen"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature attempts to Hide",
+      "condition": "Creature is Invisible",
+      "outcome": "Creature is considered Heavily Obscured for the purpose of the Hiding attempt",
+      "related_search_terms": [
+        "hiding",
+        "stealth",
+        "obscurement",
+        "line of sight",
+        "advantage on hide"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Location Detection Attempt",
+      "condition": "Invisible creature makes noise OR leaves tracks",
+      "outcome": "Invisible creature's location can be detected by sound or tracks",
+      "related_search_terms": [
+        "perceive invisible location",
+        "sound detection",
+        "tracking invisible",
+        "stealth counter",
+        "blind-fighting",
+        "tremorsense"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Incoming Attack Roll",
+      "condition": "Target is Invisible AND Attacker cannot see target",
+      "outcome": "Attack roll has Disadvantage",
+      "related_search_terms": [
+        "unseen target",
+        "miss chance",
+        "defense",
+        "hard to hit",
+        "attack disadvantage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Outgoing Attack Roll",
+      "condition": "Attacker is Invisible AND Target cannot see attacker",
+      "outcome": "Attack roll has Advantage",
+      "related_search_terms": [
+        "unseen attacker",
+        "surprise attack",
+        "accuracy boost",
+        "attack advantage"
+      ]
+    }
+  ],
+  "description_text": "An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves. Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.",
+  "tags": [
+    "condition",
+    "invisibility",
+    "vision"
+  ],
+  "related_search_terms": [
+    "invisible condition",
+    "unseen",
+    "stealth advantage",
+    "disadvantage attacks"
+  ]
+}

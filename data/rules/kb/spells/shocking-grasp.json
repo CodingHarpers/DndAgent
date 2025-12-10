@@ -1,0 +1,80 @@
+{
+  "entity_name": "Shocking Grasp",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is a creature you try to touch",
+      "outcome": "Make a melee spell attack against the target",
+      "related_search_terms": [
+        "melee spell attack",
+        "touch attack",
+        "casting spell",
+        "initiate combat"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Melee Spell Attack Roll",
+      "condition": "Target is wearing armor made of metal",
+      "outcome": "Attack roll has Advantage",
+      "related_search_terms": [
+        "advantage attack",
+        "metal armor",
+        "electrical conduit",
+        "shocked armor"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Hits",
+      "condition": "Melee spell attack against target is successful",
+      "outcome": "Target takes 1d8 lightning damage",
+      "related_search_terms": [
+        "lightning damage",
+        "spell damage",
+        "cantrip damage",
+        "damage on hit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Hits",
+      "condition": "Melee spell attack against target is successful",
+      "outcome": "Target cannot take reactions until the start of its next turn",
+      "related_search_terms": [
+        "reaction denial",
+        "prevent reactions",
+        "no opportunity attack",
+        "stun reactions"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Damage Calculation",
+      "condition": "Caster's character level",
+      "outcome": "Damage increases by 1d8 at 5th level (2d8 total), 11th level (3d8 total), and 17th level (4d8 total)",
+      "related_search_terms": [
+        "spell scaling",
+        "cantrip scaling",
+        "level up damage",
+        "increased damage"
+      ]
+    }
+  ],
+  "description_text": "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+  "tags": [
+    "spell",
+    "cantrip",
+    "evocation",
+    "lightning"
+  ],
+  "related_search_terms": [
+    "electric attack",
+    "touch spell",
+    "reaction denial",
+    "melee spell",
+    "lightning cantrip"
+  ]
+}

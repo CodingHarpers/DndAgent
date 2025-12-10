@@ -1,0 +1,79 @@
+{
+  "entity_name": "Commune",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On spell cast",
+      "condition": "Spell is active",
+      "outcome": "Caster contacts deity or divine proxy and can ask up to three yes or no questions",
+      "related_search_terms": [
+        "divination",
+        "information",
+        "guidance",
+        "ask gods"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Question asked during spell duration",
+      "condition": "Deity can answer the question",
+      "outcome": "Caster receives a correct answer (yes or no)",
+      "related_search_terms": [
+        "truth",
+        "oracle",
+        "divine information",
+        "certainty"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Question asked during spell duration",
+      "condition": "Information lies beyond the deity's knowledge",
+      "outcome": "Caster receives 'unclear' as an answer",
+      "related_search_terms": [
+        "limited knowledge",
+        "divine limits",
+        "unknown information"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Answer is to be provided by GM",
+      "condition": "One-word answer could be misleading OR contrary to deity's interests",
+      "outcome": "GM provides a short phrase as an answer instead of yes/no",
+      "related_search_terms": [
+        "GM discretion",
+        "divine will",
+        "narrative answer"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Casting Commune after the first time",
+      "condition": "Before finishing your next long rest",
+      "outcome": "Cumulative 25% chance for each casting after the first that you get no answer (GM rolls secretly)",
+      "related_search_terms": [
+        "spell exhaustion",
+        "overuse penalty",
+        "divine displeasure",
+        "repeated casting"
+      ]
+    }
+  ],
+  "description_text": "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The GM makes this roll in secret.",
+  "tags": [
+    "divination",
+    "ritual",
+    "cleric",
+    "paladin",
+    "spell"
+  ],
+  "related_search_terms": [
+    "divine contact",
+    "asking gods",
+    "future knowledge",
+    "divine insight",
+    "information gathering spell"
+  ]
+}

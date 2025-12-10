@@ -1,0 +1,260 @@
+{
+  "entity_name": "Shapechange",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Shapechange)",
+      "condition": "Caster chooses a creature form",
+      "outcome": "Caster transforms into chosen creature form for duration",
+      "related_search_terms": [
+        "transformation",
+        "polymorph",
+        "assume form"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing a new form",
+      "condition": "Desired creature's Challenge Rating > Caster's level",
+      "outcome": "Cannot choose this creature as new form",
+      "related_search_terms": [
+        "CR limit",
+        "level restriction"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing a new form",
+      "condition": "Desired creature is a construct OR Desired creature is undead",
+      "outcome": "Cannot choose this creature as new form",
+      "related_search_terms": [
+        "invalid forms",
+        "constructs",
+        "undead"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Choosing a new form",
+      "condition": "Caster has NOT seen the sort of desired creature at least once",
+      "outcome": "Cannot choose this creature as new form",
+      "related_search_terms": [
+        "familiarity",
+        "knowledge requirement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Caster's game statistics are replaced by creature's statistics",
+      "related_search_terms": [
+        "stat block",
+        "new stats"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Caster retains alignment, Intelligence, Wisdom, and Charisma scores",
+      "related_search_terms": [
+        "mental stats",
+        "personality"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Caster retains all skill and saving throw proficiencies AND gains creature's proficiencies",
+      "related_search_terms": [
+        "proficiency boost",
+        "skill bonuses"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Calculating proficiency bonus for a skill/save",
+      "condition": "Creature has proficiency in a skill/save Caster also has proficiency in AND Creature's bonus is higher than Caster's",
+      "outcome": "Use creature's proficiency bonus for that skill/save",
+      "related_search_terms": [
+        "higher bonus",
+        "override proficiency"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to use new form's abilities",
+      "condition": "New form has Legendary Actions OR New form has Lair Actions",
+      "outcome": "Caster cannot use Legendary Actions or Lair Actions",
+      "related_search_terms": [
+        "boss monster abilities",
+        "legendary creatures"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Caster assumes new form's hit points and Hit Dice",
+      "related_search_terms": [
+        "health pool",
+        "HP change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation ends",
+      "condition": "None",
+      "outcome": "Caster reverts to number of hit points had before transformation",
+      "related_search_terms": [
+        "HP reset",
+        "revert health"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation ends due to dropping to 0 HP",
+      "condition": "Excess damage taken beyond new form's HP",
+      "outcome": "Excess damage carries over to Caster's normal form",
+      "related_search_terms": [
+        "overflow damage",
+        "damage transfer"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation ends due to dropping to 0 HP",
+      "condition": "Excess damage does NOT reduce Caster's normal form to 0 hit points",
+      "outcome": "Caster is not knocked unconscious upon reverting",
+      "related_search_terms": [
+        "stay conscious",
+        "survive transformation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During transformation",
+      "condition": "New form is physically capable of using Caster's class, race, or other features",
+      "outcome": "Caster retains and can use those features",
+      "related_search_terms": [
+        "retained abilities",
+        "physical limitations"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to use Caster's special senses (e.g., darkvision)",
+      "condition": "New form does NOT also have that special sense",
+      "outcome": "Caster cannot use that special sense",
+      "related_search_terms": [
+        "sense restriction",
+        "darkvision",
+        "blindsight"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to speak during transformation",
+      "condition": "New form cannot normally speak",
+      "outcome": "Caster cannot speak",
+      "related_search_terms": [
+        "communication",
+        "animal form",
+        "mute"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Caster chooses whether equipment falls to ground, merges, or is worn",
+      "related_search_terms": [
+        "equipment handling",
+        "gear",
+        "items"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During transformation",
+      "condition": "Equipment is worn by new form",
+      "outcome": "Worn equipment functions as normal",
+      "related_search_terms": [
+        "functional gear",
+        "attuned items"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Determining if equipment can be worn",
+      "condition": "GM determines equipment is NOT practical for new form's shape/size",
+      "outcome": "Equipment cannot be worn and must fall or merge",
+      "related_search_terms": [
+        "GM discretion",
+        "size mismatch",
+        "gear issues"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Transformation complete",
+      "condition": "None",
+      "outcome": "Equipment does not change shape or size to match new form",
+      "related_search_terms": [
+        "no resizing",
+        "static equipment"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During transformation",
+      "condition": "Equipment is merged into new form",
+      "outcome": "Merged equipment has no effect",
+      "related_search_terms": [
+        "inactive items",
+        "unavailable gear"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "During spell duration",
+      "condition": "Caster uses an action",
+      "outcome": "Caster can assume a different creature form (following initial restrictions)",
+      "related_search_terms": [
+        "re-shape",
+        "change form again"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Re-shapeshifting into a new form",
+      "condition": "New form has more hit points than current form",
+      "outcome": "Caster's hit points remain at their current value (do not increase)",
+      "related_search_terms": [
+        "HP carry over",
+        "no free healing"
+      ]
+    }
+  ],
+  "description_text": "You assume the form of a different creature for the duration. The new form can be of any creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait. Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus listed in its statistics is higher than yours, use the creature's bonus in place of yours. You can't use any legendary actions or lair actions of the new form. You assume the hit points and Hit Dice of the new form. When you revert to your normal form, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious. You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can't use any special senses you have (for example, darkvision) unless your new form also has that sense. You can only speak if the creature can normally speak. When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The GM determines whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state. During this spell's duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception: if your new form has more hit points than your current one, your hit points remain at their current value.",
+  "tags": [
+    "transmutation",
+    "9th_level_spell",
+    "utility",
+    "combat",
+    "exploration",
+    "polymorph"
+  ],
+  "related_search_terms": [
+    "alter self",
+    "wild shape",
+    "true polymorph",
+    "transformation spell",
+    "creature form",
+    "stat change",
+    "high level magic"
+  ]
+}

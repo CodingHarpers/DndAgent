@@ -1,1 +1,10 @@
+*.ps1
 .env
+data/rules/chromaDB/
+data/rules/_backup/
+data/rules/dnd_5e_data/
+5e-srd-api/
+5e-database/
+_backup/
+backend/app/agents/__pycache__/__init__.cpython-311.pyc
+*.pyc

@@ -1,0 +1,46 @@
+{
+  "entity_name": "Counterspell",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Casting Counterspell targeting a creature casting a spell",
+      "condition": "Target creature is casting a spell of 3rd level or lower",
+      "outcome": "Target creature's spell fails and has no effect",
+      "related_search_terms": [
+        "interrupt spell",
+        "stop casting",
+        "prevent spell",
+        "negate spell",
+        "low level spell counter"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Casting Counterspell targeting a creature casting a spell",
+      "condition": "Target creature is casting a spell of 4th level or higher AND Ability check using your spellcasting ability succeeds against a DC equal to (10 + the target's spell level)",
+      "outcome": "Target creature's spell fails and has no effect",
+      "related_search_terms": [
+        "interrupt spell",
+        "stop casting",
+        "prevent spell",
+        "negate spell",
+        "high level spell counter",
+        "spellcasting ability check",
+        "DC calculation"
+      ]
+    }
+  ],
+  "description_text": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.",
+  "tags": [
+    "abjuration",
+    "interrupt"
+  ],
+  "related_search_terms": [
+    "spell interruption",
+    "spell negation",
+    "stop spell",
+    "counter magic",
+    "abjuration spell"
+  ]
+}

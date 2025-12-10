@@ -1,0 +1,47 @@
+{
+  "entity_name": "Poisoned",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Attack Roll",
+      "condition": "Creature is Poisoned",
+      "outcome": "Attack roll has disadvantage",
+      "related_search_terms": [
+        "poison attack penalty",
+        "disadvantage to hit",
+        "impaired combat"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Ability Check",
+      "condition": "Creature is Poisoned",
+      "outcome": "Ability check has disadvantage",
+      "related_search_terms": [
+        "poison skill check",
+        "disadvantage on checks",
+        "impaired actions",
+        "dex check",
+        "str check",
+        "con check",
+        "int check",
+        "wis check",
+        "cha check"
+      ]
+    }
+  ],
+  "description_text": "A poisoned creature has disadvantage on attack rolls and ability checks.",
+  "tags": [
+    "condition",
+    "debuff",
+    "disadvantage"
+  ],
+  "related_search_terms": [
+    "poison",
+    "toxic",
+    "status effect",
+    "ailing",
+    "sick"
+  ]
+}

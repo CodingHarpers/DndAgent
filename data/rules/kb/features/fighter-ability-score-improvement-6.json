@@ -1,0 +1,66 @@
+{
+  "entity_name": "Ability Score Improvement",
+  "logic_type": "character_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character gains a level",
+      "condition": "Character Level is 4 OR 6 OR 8 OR 12 OR 14 OR 16 OR 19",
+      "outcome": "Character gains one Ability Score Improvement choice",
+      "related_search_terms": [
+        "level up bonus",
+        "stat increase",
+        "character progression",
+        "ASI availability"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an Ability Score Improvement choice",
+      "condition": "Player chooses to increase one ability score",
+      "outcome": "Selected Ability Score increases by 2",
+      "related_search_terms": [
+        "single stat boost",
+        "major increase",
+        "primary attribute increase"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Using an Ability Score Improvement choice",
+      "condition": "Player chooses to increase two different ability scores",
+      "outcome": "Each selected Ability Score increases by 1",
+      "related_search_terms": [
+        "dual stat boost",
+        "minor increases",
+        "secondary attribute increase"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to increase an ability score",
+      "condition": "Increased ability score would exceed 20",
+      "outcome": "Ability score cannot be increased above 20 using this feature",
+      "related_search_terms": [
+        "stat cap",
+        "ability max",
+        "score limit",
+        "hard cap"
+      ]
+    }
+  ],
+  "description_text": "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+  "tags": [
+    "core rule",
+    "character progression",
+    "ability scores"
+  ],
+  "related_search_terms": [
+    "ASI",
+    "level up",
+    "stat increase",
+    "character building",
+    "attributes",
+    "player ability scores"
+  ]
+}

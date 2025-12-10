@@ -1,0 +1,57 @@
+{
+  "entity_name": "Zone of Truth",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Creature enters Zone of Truth for the first time on a turn OR Creature starts its turn in Zone of Truth",
+      "condition": "Zone of Truth spell is active",
+      "outcome": "Creature makes a Charisma saving throw",
+      "related_search_terms": [
+        "saving throw",
+        "charisma save",
+        "area effect trigger",
+        "turn start effect"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Affected creature attempts to speak a deliberate lie",
+      "condition": "Creature failed Charisma saving throw against Zone of Truth AND Creature is currently within Zone of Truth's radius",
+      "outcome": "Creature cannot speak the deliberate lie",
+      "related_search_terms": [
+        "cannot lie",
+        "forced truth",
+        "deception prevention",
+        "compulsion to speak truth",
+        "verbal constraint"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature makes a Charisma saving throw against Zone of Truth",
+      "condition": "Caster of Zone of Truth",
+      "outcome": "Caster knows whether the creature succeeded or failed its saving throw",
+      "related_search_terms": [
+        "caster awareness",
+        "knowledge of save",
+        "spell feedback",
+        "information grant"
+      ]
+    }
+  ],
+  "description_text": "You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw. An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can remain evasive in its answers as long as it remains within the boundaries of the truth.",
+  "tags": [
+    "abjuration",
+    "control",
+    "social",
+    "truth"
+  ],
+  "related_search_terms": [
+    "lie detection",
+    "interrogation",
+    "honesty spell",
+    "truth serum",
+    "social encounter spell"
+  ]
+}

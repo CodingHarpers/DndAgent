@@ -1,0 +1,103 @@
+{
+  "entity_name": "Magic Missile",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Magic Missile is cast",
+      "outcome": "Create 3 glowing darts of magical force",
+      "related_search_terms": [
+        "spell effect",
+        "projectile generation",
+        "number of missiles"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Assigning a dart to a target",
+      "condition": "Target is a creature",
+      "outcome": "Target must be visible to the caster",
+      "related_search_terms": [
+        "target selection",
+        "line of sight",
+        "visible target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Assigning a dart to a target",
+      "condition": "Target is a creature",
+      "outcome": "Target must be within the spell's range",
+      "related_search_terms": [
+        "target selection",
+        "spell range",
+        "range limit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dart is assigned to a valid target",
+      "condition": "Target meets visibility and range criteria",
+      "outcome": "Dart automatically hits its target (no attack roll or saving throw required)",
+      "related_search_terms": [
+        "guaranteed hit",
+        "no attack roll",
+        "unavoidable damage",
+        "auto-hit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dart hits its target",
+      "condition": "A dart has hit a creature",
+      "outcome": "Target takes 1d4 + 1 force damage",
+      "related_search_terms": [
+        "damage calculation",
+        "force damage type",
+        "d4 damage",
+        "spell damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Darts are launched",
+      "condition": "Multiple darts are created by the spell",
+      "outcome": "All darts strike simultaneously",
+      "related_search_terms": [
+        "simultaneous impact",
+        "concurrent strike",
+        "instantaneous damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Darts are launched",
+      "condition": "Multiple darts are created by the spell",
+      "outcome": "Darts can be directed to hit one creature or several creatures",
+      "related_search_terms": [
+        "multi-target spell",
+        "single-target burst",
+        "damage distribution"
+      ]
+    }
+  ],
+  "description_text": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+  "tags": [
+    "spell",
+    "damage",
+    "force",
+    "evocation",
+    "ranged",
+    "magic_missile"
+  ],
+  "related_search_terms": [
+    "auto-hit",
+    "guaranteed damage",
+    "force damage",
+    "spell attack",
+    "ranged attack",
+    "multiple targets",
+    "unavoidable damage"
+  ]
+}

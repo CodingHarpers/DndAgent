@@ -1,0 +1,197 @@
+{
+  "entity_name": "Magnificent Mansion",
+  "logic_type": "spell_effect",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Spell is cast successfully",
+      "outcome": "Conjure an extradimensional dwelling (mansion) at a chosen location within range, lasting for the duration.",
+      "related_search_terms": [
+        "conjure dwelling",
+        "create space",
+        "safe house",
+        "portable home"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Mansion Creation",
+      "condition": "Mansion is created",
+      "outcome": "The mansion's entrance shimmers faintly, is 5 feet wide and 10 feet tall, and its location is chosen by the caster.",
+      "related_search_terms": [
+        "entrance dimensions",
+        "portal appearance",
+        "doorway"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Creature attempts to enter dwelling",
+      "condition": "Creature is the caster OR designated by caster upon casting AND portal is open",
+      "outcome": "Creature can enter the extradimensional dwelling.",
+      "related_search_terms": [
+        "access control",
+        "guest entry",
+        "authorized access"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Caster action",
+      "condition": "Caster is within 30 feet of the portal",
+      "outcome": "Caster can open or close the portal.",
+      "related_search_terms": [
+        "portal control",
+        "close door",
+        "open entrance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Portal state",
+      "condition": "Portal is closed",
+      "outcome": "Portal becomes invisible.",
+      "related_search_terms": [
+        "hidden entrance",
+        "invisible door",
+        "concealed portal"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature inside dwelling",
+      "condition": "Creature is inside the mansion",
+      "outcome": "The atmosphere is clean, fresh, and warm.",
+      "related_search_terms": [
+        "comfortable environment",
+        "pleasant conditions",
+        "sanitation"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Mansion creation or modification",
+      "condition": "Caster chooses floor plan",
+      "outcome": "Floor plan cannot exceed 50 cubes (each 10 feet on a side), and the place is furnished and decorated as chosen by the caster.",
+      "related_search_terms": [
+        "custom layout",
+        "size limit",
+        "interior design",
+        "furnishings"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Need for food",
+      "condition": "Creature is inside the mansion",
+      "outcome": "Mansion contains sufficient food for a nine-course banquet for up to 100 people.",
+      "related_search_terms": [
+        "provisioning",
+        "food supply",
+        "feast",
+        "catering"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Mansion creation",
+      "condition": "Mansion is created",
+      "outcome": "100 near-transparent servants appear to attend all who enter.",
+      "related_search_terms": [
+        "conjure servants",
+        "staff",
+        "domestic help",
+        "spirit attendants"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Servant creation",
+      "condition": "Servants are created",
+      "outcome": "Caster decides the visual appearance and attire of the servants.",
+      "related_search_terms": [
+        "customize servants",
+        "servant appearance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster gives orders",
+      "condition": "Caster gives an order to a servant",
+      "outcome": "Servants are completely obedient to the caster's orders.",
+      "related_search_terms": [
+        "loyal staff",
+        "command servants",
+        "obedient help"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Servant action",
+      "condition": "Servant performs a task",
+      "outcome": "Servant can perform any task a normal human servant could perform, but cannot attack or directly harm another creature.",
+      "related_search_terms": [
+        "non-combat staff",
+        "utility servants",
+        "domestic tasks",
+        "restricted actions"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Servant movement",
+      "condition": "Servant attempts to move",
+      "outcome": "Servant can go anywhere in the mansion but cannot leave it.",
+      "related_search_terms": [
+        "confined servants",
+        "bound to mansion",
+        "limited mobility"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Object removal",
+      "condition": "Furnishings or other objects created by this spell are removed from the mansion",
+      "outcome": "Object dissipates into smoke.",
+      "related_search_terms": [
+        "temporary objects",
+        "non-transferable items",
+        "disappearing items"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell ends",
+      "condition": "Creature is inside the extradimensional space when the spell ends",
+      "outcome": "Creature is expelled into the open spaces nearest to the entrance.",
+      "related_search_terms": [
+        "forced exit",
+        "spell duration end",
+        "teleport out",
+        "expulsion"
+      ]
+    }
+  ],
+  "description_text": "You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible. Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm. You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.",
+  "tags": [
+    "Conjuration",
+    "Utility",
+    "Exploration",
+    "Extradimensional",
+    "Travel"
+  ],
+  "related_search_terms": [
+    "portable home",
+    "safe haven",
+    "personal space",
+    "rest",
+    "private retreat",
+    "extradimensional space",
+    "servants",
+    "food",
+    "shelter",
+    "luxury",
+    "spell for lodging"
+  ]
+}

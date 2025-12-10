@@ -1,0 +1,91 @@
+{
+  "entity_name": "Insect Plague",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell's area is created",
+      "condition": "Creature is within the spell's 20-foot-radius sphere",
+      "outcome": "Creature makes a Constitution saving throw. Takes 4d10 piercing damage on a failed save, or half as much damage on a successful one",
+      "related_search_terms": [
+        "initial damage",
+        "on cast",
+        "AoE damage",
+        "piercing damage",
+        "saving throw",
+        "con save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature enters the spell's area for the first time on a turn",
+      "condition": "Creature enters the spell's 20-foot-radius sphere for the first time on a turn",
+      "outcome": "Creature makes a Constitution saving throw. Takes 4d10 piercing damage on a failed save, or half as much damage on a successful one",
+      "related_search_terms": [
+        "hazard",
+        "zone damage",
+        "entering effect",
+        "persistent damage",
+        "saving throw",
+        "con save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature ends its turn within the spell's area",
+      "condition": "Creature ends its turn within the spell's 20-foot-radius sphere",
+      "outcome": "Creature makes a Constitution saving throw. Takes 4d10 piercing damage on a failed save, or half as much damage on a successful one",
+      "related_search_terms": [
+        "hazard",
+        "zone damage",
+        "standing in effect",
+        "persistent damage",
+        "saving throw",
+        "con save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell's area exists",
+      "condition": "Creature is within the spell's 20-foot-radius sphere",
+      "outcome": "The area is lightly obscured for creatures within or attempting to see through it",
+      "related_search_terms": [
+        "visibility",
+        "line of sight",
+        "obscured vision",
+        "seeing through",
+        "vision penalty"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature attempts to move within spell's area",
+      "condition": "Creature is within the spell's 20-foot-radius sphere",
+      "outcome": "Movement within the area costs extra movement (difficult terrain)",
+      "related_search_terms": [
+        "movement reduction",
+        "slowed",
+        "terrain penalty",
+        "area control"
+      ]
+    }
+  ],
+  "description_text": "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain. When the area appears, each creature in it must make a constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.",
+  "tags": [
+    "damage",
+    "control",
+    "area_of_effect",
+    "difficult_terrain",
+    "obscured_area",
+    "saving_throw"
+  ],
+  "related_search_terms": [
+    "AoE",
+    "control spell",
+    "damage over time",
+    "insect swarm",
+    "locusts",
+    "area denial",
+    "zone control"
+  ]
+}

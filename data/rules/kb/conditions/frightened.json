@@ -1,0 +1,53 @@
+{
+  "entity_name": "Frightened",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making an Ability Check",
+      "condition": "Source of fear is within line of sight",
+      "outcome": "Ability Check has Disadvantage",
+      "related_search_terms": [
+        "fear effect",
+        "debuff",
+        "skill check penalty",
+        "frightened checks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Making an Attack Roll",
+      "condition": "Source of fear is within line of sight",
+      "outcome": "Attack Roll has Disadvantage",
+      "related_search_terms": [
+        "fear effect",
+        "debuff",
+        "combat penalty",
+        "attack penalty",
+        "frightened attacks"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempting to Move",
+      "condition": "Attempting to willingly move closer to the source of fear",
+      "outcome": "Movement is prevented",
+      "related_search_terms": [
+        "movement restriction",
+        "forced movement",
+        "retreat prevention",
+        "fear movement"
+      ]
+    }
+  ],
+  "description_text": "A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight. The creature can't willingly move closer to the source of its fear.",
+  "tags": [
+    "condition"
+  ],
+  "related_search_terms": [
+    "fear",
+    "fear condition",
+    "fright",
+    "crowd control"
+  ]
+}

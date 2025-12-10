@@ -1,0 +1,32 @@
+{
+  "entity_name": "Blur",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "A creature makes an attack roll against the target",
+      "condition": "Target is affected by Blur AND Attacker relies on sight AND Attacker cannot see through illusions (e.g., does not have Truesight or Blindsight)",
+      "outcome": "Attacker has disadvantage on the attack roll",
+      "related_search_terms": [
+        "disadvantage attacks",
+        "miss chance",
+        "hard to hit",
+        "evasion",
+        "defense",
+        "visual distortion",
+        "blurry"
+      ]
+    }
+  ],
+  "description_text": "Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.",
+  "tags": [
+    "defensive",
+    "illusion"
+  ],
+  "related_search_terms": [
+    "blurred vision",
+    "defensive spell",
+    "evasive",
+    "illusion magic"
+  ]
+}

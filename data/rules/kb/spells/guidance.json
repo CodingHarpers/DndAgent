@@ -1,0 +1,61 @@
+{
+  "entity_name": "Guidance",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "On Cast",
+      "condition": "Target is a willing creature AND Target is touched",
+      "outcome": "Target gains the ability to roll 1d4 and add it to an ability check ONCE before the spell ends",
+      "related_search_terms": [
+        "spell cast",
+        "target selection",
+        "willing target",
+        "touch spell",
+        "buff"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Before or after making an Ability Check",
+      "condition": "Target chooses to use the Guidance effect AND Guidance effect has not been used yet",
+      "outcome": "Target rolls 1d4 and adds the number rolled to the Ability Check result",
+      "related_search_terms": [
+        "ability check bonus",
+        "skill check",
+        "d4 bonus",
+        "assistance",
+        "advantageous roll",
+        "cleric cantrip",
+        "druid cantrip"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "After target uses the Guidance effect",
+      "condition": "Guidance effect has been used",
+      "outcome": "Spell ends",
+      "related_search_terms": [
+        "spell duration",
+        "one-time use",
+        "spell expiry"
+      ]
+    }
+  ],
+  "description_text": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+  "tags": [
+    "cantrip",
+    "support"
+  ],
+  "related_search_terms": [
+    "cantrip",
+    "ability check boost",
+    "skill check assist",
+    "divine magic",
+    "cleric spell",
+    "druid spell",
+    "d4",
+    "help",
+    "buff"
+  ]
+}

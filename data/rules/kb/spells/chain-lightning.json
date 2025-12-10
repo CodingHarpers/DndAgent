@@ -1,0 +1,90 @@
+{
+  "entity_name": "Chain Lightning",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Target is a creature or object you can see within spell's range",
+      "outcome": "A primary target is chosen for the lightning bolt",
+      "related_search_terms": [
+        "primary target",
+        "initial hit",
+        "first bolt",
+        "target selection"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "After Primary Target is Chosen",
+      "condition": "Up to three other creatures or objects are within 30 feet of the primary target",
+      "outcome": "Up to three secondary targets are chosen, each hit by a separate bolt",
+      "related_search_terms": [
+        "secondary targets",
+        "arc to targets",
+        "bouncing lightning",
+        "multi-target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target Selection",
+      "condition": "A creature or object has already been targeted by any bolt from this casting of Chain Lightning",
+      "outcome": "That creature or object cannot be targeted again by another bolt from this casting",
+      "related_search_terms": [
+        "unique targets",
+        "no duplicate targets",
+        "one hit per target"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A target is hit by a lightning bolt",
+      "condition": "Target is a creature or object",
+      "outcome": "Target must make a Dexterity saving throw",
+      "related_search_terms": [
+        "dex save",
+        "dodge",
+        "resist lightning"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw",
+      "condition": "Save Failed",
+      "outcome": "Target takes 10d8 lightning damage",
+      "related_search_terms": [
+        "full damage",
+        "failed save damage",
+        "lightning damage"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Dexterity Saving Throw",
+      "condition": "Save Succeeded",
+      "outcome": "Target takes half 10d8 lightning damage",
+      "related_search_terms": [
+        "half damage",
+        "successful save damage",
+        "reduced damage"
+      ]
+    }
+  ],
+  "description_text": "You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts. A target must make a dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.",
+  "tags": [
+    "spell",
+    "evocation",
+    "lightning",
+    "damage",
+    "dexterity save",
+    "multi-target"
+  ],
+  "related_search_terms": [
+    "lightning spell",
+    "multi-target damage",
+    "aoe spell",
+    "electricity damage",
+    "chain spell"
+  ]
+}

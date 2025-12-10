@@ -1,0 +1,63 @@
+{
+  "entity_name": "Fear",
+  "logic_type": "spell",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Creature within 30-foot cone",
+      "outcome": "Creature makes a Wisdom saving throw. On failure, creature drops whatever it is holding AND becomes Frightened by this spell for the duration.",
+      "related_search_terms": [
+        "AoE fear",
+        "cone spell",
+        "wisdom save",
+        "frightened condition",
+        "disarm",
+        "drop items",
+        "crowd control"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Start of Frightened creature's turn",
+      "condition": "Creature is Frightened by this spell AND there is an available route to move away from the caster",
+      "outcome": "Creature must take the Dash action AND move away from the caster by the safest available route.",
+      "related_search_terms": [
+        "forced movement",
+        "run away",
+        "dash action",
+        "frightened movement",
+        "compelled movement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "End of Frightened creature's turn",
+      "condition": "Creature is Frightened by this spell AND does not have line of sight to the caster",
+      "outcome": "Creature can make a Wisdom saving throw. On a successful save, the Frightened condition (from this spell) ends for that creature.",
+      "related_search_terms": [
+        "breaking line of sight",
+        "ending fear",
+        "wisdom save",
+        "escape condition",
+        "concentration save"
+      ]
+    }
+  ],
+  "description_text": "You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration. While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a wisdom saving throw. On a successful save, the spell ends for that creature.",
+  "tags": [
+    "Spell",
+    "Level 3",
+    "Illusion",
+    "Crowd Control",
+    "Debuff"
+  ],
+  "related_search_terms": [
+    "fear spell",
+    "mental attack",
+    "wisdom save spell",
+    "frightened condition",
+    "cone spell",
+    "phantasmal image"
+  ]
+}

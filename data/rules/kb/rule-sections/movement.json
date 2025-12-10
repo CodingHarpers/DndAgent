@@ -1,0 +1,588 @@
+[
+  {
+    "source_chapter": "Movement",
+    "extracted_concepts": [
+      {
+        "concept_name": "Movement",
+        "definition": "The act of a creature traversing distance across a game area, typically measured in feet.",
+        "rule_logic": {
+          "premise": "A creature wants to traverse distance in the game world",
+          "implication": "The creature utilizes its movement speed, measured in feet",
+          "exceptions": [],
+          "description_text": "Every creature has a movement speed, representing how far it can move in a single round. This speed is typically expressed in feet.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how far can I move",
+            "movement speed",
+            "moving in combat",
+            "walking distance",
+            "distance measurement"
+          ]
+        },
+        "related_keywords": [
+          "speed",
+          "distance",
+          "feet",
+          "traverse",
+          "combat"
+        ]
+      }
+    ],
+    "_chunk_header": "Introduction",
+    "_source_file": "movement"
+  },
+  {
+    "source_chapter": "Movement",
+    "extracted_concepts": [
+      {
+        "concept_name": "GM Movement Summarization",
+        "definition": "The Dungeon Master's ability to narratively describe and summarize character movement over distances without requiring exact calculations of time or distance.",
+        "rule_logic": {
+          "premise": "GM is describing adventurer movement over a period of time or distance",
+          "implication": "GM can summarize travel without calculating exact distances or travel times",
+          "exceptions": [],
+          "description_text": "The GM can summarize the adventurers' movement without calculating exact distances or travel times: 'You travel through the forest and find the dungeon entrance late in the evening of the third day.' Even in a dungeon, particularly a large dungeon or a cave network, the GM can summarize movement between encounters: 'After killing the guardian at the entrance to the ancient dwarven stronghold, you consult your map, which leads you through miles of echoing corridors to a chasm bridged by a narrow stone arch.'",
+          "is_exception": false,
+          "related_search_terms": [
+            "GM travel rules",
+            "DM movement",
+            "summarizing travel",
+            "narrative movement"
+          ]
+        },
+        "related_keywords": [
+          "GM",
+          "Movement",
+          "Travel",
+          "Narrative",
+          "Dungeon Master"
+        ]
+      },
+      {
+        "concept_name": "Travel Time Factors",
+        "definition": "The key elements that determine the duration required to move between two locations.",
+        "rule_logic": {
+          "premise": "Determining travel time between locations is necessary",
+          "implication": "The calculation depends on the creature's speed, the creature's travel pace, AND the terrain being traversed",
+          "exceptions": [],
+          "description_text": "The rules for determining travel time depend on two factors: the speed and travel pace of the creatures moving and the terrain they're moving over.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how to calculate travel time",
+            "what affects travel speed",
+            "factors for travel duration",
+            "movement speed rules"
+          ]
+        },
+        "related_keywords": [
+          "Travel Time",
+          "Speed",
+          "Travel Pace",
+          "Terrain",
+          "Calculation",
+          "Movement"
+        ]
+      }
+    ],
+    "_chunk_header": "Movement",
+    "_source_file": "movement"
+  },
+  {
+    "source_chapter": "Movement - Speed and Travel",
+    "extracted_concepts": [
+      {
+        "concept_name": "Speed (Combat)",
+        "definition": "The maximum distance a character or monster can move in feet during one round of combat.",
+        "rule_logic": {
+          "premise": "A character or monster moves during combat",
+          "implication": "Movement distance is limited by its Speed value per round",
+          "exceptions": [],
+          "description_text": "Every character and monster has a speed, which is the distance in feet that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life-threatening situation.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how far can I move",
+            "movement per round",
+            "combat movement",
+            "character speed"
+          ]
+        },
+        "related_keywords": [
+          "movement",
+          "combat",
+          "distance",
+          "round"
+        ]
+      },
+      {
+        "concept_name": "Travel Pace (General)",
+        "definition": "The rate at which a group of adventurers covers long distances outside of combat, chosen from Fast, Normal, or Slow.",
+        "rule_logic": {
+          "premise": "A group of adventurers is traveling long distances",
+          "implication": "They choose a Travel Pace (Fast, Normal, Slow) which determines distance covered per minute, hour, or day, and has specific effects",
+          "exceptions": [],
+          "description_text": "While traveling, a group of adventurers can move at a normal, fast, or slow pace, as shown on the Travel Pace table. The table states how far the party can move in a period of time and whether the pace has any effect.",
+          "is_exception": false,
+          "related_search_terms": [
+            "how fast can we travel",
+            "overland movement",
+            "daily travel",
+            "group movement"
+          ]
+        },
+        "related_keywords": [
+          "travel",
+          "pace",
+          "movement",
+          "overland",
+          "exploration"
+        ]
+      },
+      {
+        "concept_name": "Fast Travel Pace",
+        "definition": "A travel pace that emphasizes speed over awareness.",
+        "rule_logic": {
+          "premise": "Adventurers choose Fast Travel Pace",
+          "implication": "They cover 400 feet/minute, 4 miles/hour, or 30 miles/day AND suffer a -5 penalty to passive Wisdom (Perception) scores",
+          "exceptions": [],
+          "description_text": "A fast pace makes characters less perceptive. Distance per Minute: 400 feet, Distance per Hour: 4 miles, Distance per Day: 30 miles. Effect: -5 penalty to passive Wisdom (Perception) scores.",
+          "is_exception": false,
+          "related_search_terms": [
+            "fast travel penalty",
+            "passive perception reduction",
+            "travel speed fast",
+            "covering distance quickly"
+          ]
+        },
+        "related_keywords": [
+          "travel",
+          "pace",
+          "fast",
+          "perception",
+          "penalty"
+        ]
+      },
+      {
+        "concept_name": "Normal Travel Pace",
+        "definition": "A balanced travel pace with no specific benefits or penalties.",
+        "rule_logic": {
+          "premise": "Adventurers choose Normal Travel Pace",
+          "implication": "They cover 300 feet/minute, 3 miles/hour, or 24 miles/day with no listed additional effects",
+          "exceptions": [],
+          "description_text": "Distance per Minute: 300 feet, Distance per Hour: 3 miles, Distance per Day: 24 miles. Effect: -.",
+          "is_exception": false,
+          "related_search_terms": [
+            "standard travel speed",
+            "average travel distance",
+            "normal pace movement"
+          ]
+        },
+        "related_keywords": [
+          "travel",
+          "pace",
+          "normal",
+          "standard"
+        ]
+      },
+      {
+        "concept_name": "Slow Travel Pace",
+        "definition": "A deliberate travel pace that allows for caution and stealth.",
+        "rule_logic": {
+          "premise": "Adventurers choose Slow Travel Pace",
+          "implication": "They cover 200 feet/minute, 2 miles/hour, or 18 miles/day AND are able to use stealth",
+          "exceptions": [],
+          "description_text": "A slow pace makes it possible to sneak around and to search an area more carefully. Distance per Minute: 200 feet, Distance per Hour: 2 miles, Distance per Day: 18 miles. Effect: Able to use stealth.",
+          "is_exception": false,
+          "related_search_terms": [
+            "stealth travel",
+            "slow pace benefit",
+            "careful movement",
+            "sneaking while traveling"
+          ]
+        },
+        "related_keywords": [
+          "travel",
+          "pace",
+          "slow",
+          "stealth",
+          "exploration"
+        ]
+      },
+      {
+        "concept_name": "Forced March",
+        "definition": "Extending daily travel beyond the standard 8-hour limit, risking exhaustion.",
+        "rule_logic": {
+          "premise": "Characters travel for more than 8 hours in a day",
+          "implication": "For each additional hour of travel, characters cover the Hour column distance for their pace AND each character must make a Constitution saving throw at the end of that hour. The DC is 10 + (number of hours past 8). On a failed save, the character suffers one level of exhaustion.",
+          "exceptions": [],
+          "description_text": "The Travel Pace table assumes that characters travel for 8 hours in day. They can push on beyond that limit, at the risk of exhaustion. For each additional hour of travel beyond 8 hours, the characters cover the distance shown in the Hour column for their pace, and each character must make a Constitution saving throw at the end of the hour. The DC is 10 + 1 for each hour past 8 hours. On a failed saving throw, a character suffers one level of exhaustion.",
+          "is_exception": false,
+          "related_search_terms": [
+            "travel exhaustion",
+            "traveling too long",
+            "long distance travel penalty",
+            "constitution save travel",
+            "overtime travel"
+          ]
+        },
+        "related_keywords": [
+          "travel",
+          "exhaustion",
+          "constitution saving throw",
+          "long rest",
+          "endurance"
+        ]
+      },
+      {
+        "concept_name": "Mounts and Vehicles (Travel)",
+        "definition": "Rules governing travel pace when using mounts or vehicles.",
+        "rule_logic": {
+          "premise": "Characters are traveling using mounts or vehicles",
+          "implication": "For short spans (up to an hour), many animals move faster than humanoids. Mounted characters can gallop for about an hour, covering twice the usual fast pace distance. Land vehicles follow normal pace rules. Waterborne vessels are limited by their speed and do not apply fast/slow pace penalties/benefits. Special mounts/vehicles allow swifter travel.",
+          "exceptions": [],
+          "description_text": "For short spans of time (up to an hour), many animals move much faster than humanoids. A mounted character can ride at a gallop for about an hour, covering twice the usual distance for a fast pace. If fresh mounts are available every 8 to 10 miles, characters can cover larger distances at this pace, but this is very rare except in densely populated areas. Characters in wagons, carriages, or other land vehicles choose a pace as normal. Characters in a waterborne vessel are limited to the speed of the vessel, and they don't suffer penalties for a fast pace or gain benefits from a slow pace. Depending on the vessel and the size of the crew, ships might be able to travel for up to 24 hours per day. Certain special mounts, such as a pegasus or griffon, or special vehicles, such as a *carpet of flying*, allow you to travel more swiftly.",
+          "is_exception": false,
+          "related_search_terms": [
+            "mounted travel speed",
+            "vehicle travel rules",
+            "boat speed",
+            "ship travel",
+            "galloping",
+            "flying mount speed"
+          ]
+        },
+        "related_keywords": [
+          "mounts",
+          "vehicles",
+          "travel",
+          "waterborne",
+          "land",
+          "transportation"
+        ]
+      },
+      {
+        "concept_name": "Mounted Gallop",
+        "definition": "A temporary burst of speed for a mounted character.",
+        "rule_logic": {
+          "premise": "A mounted character rides at a gallop for up to one hour",
+          "implication": "They cover twice the usual distance for a fast pace in that hour (8 miles)",
+          "exceptions": [],
+          "description_text": "A mounted character can ride at a gallop for about an hour, covering twice the usual distance for a fast pace.",
+          "is_exception": false,
+          "related_search_terms": [
+            "horse speed",
+            "fastest mount speed",
+            "double travel distance mount"
+          ]
+        },
+        "related_keywords": [
+          "mount",
+          "gallop",
+          "speed",
+          "travel",
+          "fast pace"
+        ]
+      },
+      {
+        "concept_name": "Waterborne Vessel Travel",
+        "definition": "Specific rules for movement when traveling by boat or ship.",
+        "rule_logic": {
+          "premise": "Characters are traveling in a waterborne vessel",
+          "implication": "Their travel speed is limited to the vessel's speed, and they do not suffer penalties for a fast pace or gain benefits from a slow pace. Vessels may travel up to 24 hours per day depending on type and crew.",
+          "exceptions": [],
+          "description_text": "Characters in a waterborne vessel are limited to the speed of the vessel, and they don't suffer penalties for a fast pace or gain benefits from a slow pace. Depending on the vessel and the size of the crew, ships might be able to travel for up to 24 hours per day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "ship movement",
+            "boat travel rules",
+            "sea voyage speed",
+            "no perception penalty on boat"
+          ]
+        },
+        "related_keywords": [
+          "vessel",
+          "waterborne",
+          "ship",
+          "boat",
+          "travel",
+          "speed"
+        ]
+      },
+      {
+        "concept_name": "Difficult Terrain",
+        "definition": "Environmental obstacles that impede movement, such as dense forests, deep swamps, or rubble.",
+        "rule_logic": {
+          "premise": "A creature moves through difficult terrain",
+          "implication": "Movement cost is doubled (1 foot of movement costs 2 feet of speed), effectively moving at half speed and covering only half the normal distance over any period (minute, hour, day)",
+          "exceptions": [],
+          "description_text": "You move at half speed in difficult terrain--moving 1 foot in difficult terrain costs 2 feet of speed-so you can cover only half the normal distance in a minute, an hour, or a day.",
+          "is_exception": false,
+          "related_search_terms": [
+            "movement penalty",
+            "half speed",
+            "terrain hindrance",
+            "forest movement",
+            "swamp travel",
+            "rubble speed"
+          ]
+        },
+        "related_keywords": [
+          "terrain",
+          "movement",
+          "speed penalty",
+          "obstacle",
+          "impediment"
+        ]
+      }
+    ],
+    "_chunk_header": "Speed",
+    "_source_file": "movement"
+  },
+  {
+    "source_chapter": "Special Types of Movement",
+    "extracted_concepts": [
+      {
+        "concept_name": "Climbing, Swimming, and Crawling Movement Cost",
+        "definition": "The additional movement cost incurred when a creature climbs, swims, or crawls without a specific speed for that movement type.",
+        "rule_logic": {
+          "premise": "Creature is climbing, swimming, or crawling AND does not possess a specific climbing or swimming speed",
+          "implication": "Each foot of movement costs 1 extra foot (total 2 feet per foot moved). If in difficult terrain, each foot costs 2 extra feet (total 3 feet per foot moved).",
+          "exceptions": [
+            "Creature has a climbing speed",
+            "Creature has a swimming speed"
+          ],
+          "description_text": "While climbing or swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless a creature has a climbing or swimming speed.",
+          "is_exception": false,
+          "related_search_terms": [
+            "movement cost climbing",
+            "swimming speed",
+            "crawling speed",
+            "difficult terrain movement",
+            "extra movement cost"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Climbing",
+          "Swimming",
+          "Crawling",
+          "Difficult Terrain"
+        ]
+      },
+      {
+        "concept_name": "Difficult Climb/Swim Check (GM Option)",
+        "definition": "An optional rule allowing the Game Master to require a Strength (Athletics) check for particularly challenging climbing or swimming conditions.",
+        "rule_logic": {
+          "premise": "GM determines climbing surface is slippery or has few handholds OR water conditions are rough",
+          "implication": "Requires a successful Strength (Athletics) check to make progress.",
+          "exceptions": [],
+          "description_text": "At the GM's option, climbing a slippery vertical surface or one with few handholds requires a successful Strength (Athletics) check. Similarly, gaining any distance in rough water might require a successful Strength (Athletics) check.",
+          "is_exception": false,
+          "related_search_terms": [
+            "climbing check",
+            "swimming check",
+            "athletics check for climbing",
+            "rough water swim",
+            "gm discretion"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Climbing",
+          "Swimming",
+          "Ability Checks",
+          "Strength (Athletics)",
+          "GM Option"
+        ]
+      },
+      {
+        "concept_name": "Long Jump Distance",
+        "definition": "The horizontal distance a creature can jump, determined by its Strength score, varying based on whether it has a running start.",
+        "rule_logic": {
+          "premise": "Creature performs a long jump AND moves at least 10 feet on foot immediately before the jump",
+          "implication": "Covers a number of feet up to its Strength score.",
+          "exceptions": [
+            "Standing Long Jump: Leap only half the distance (Strength score / 2 feet)."
+          ],
+          "description_text": "When you make a long jump, you cover a number of feet up to your Strength score if you move at least 10 feet on foot immediately before the jump. When you make a standing long jump, you can leap only half that distance.",
+          "is_exception": false,
+          "related_search_terms": [
+            "long jump calculation",
+            "running long jump",
+            "standing long jump",
+            "strength and jump distance"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "Long Jump",
+          "Strength"
+        ]
+      },
+      {
+        "concept_name": "Long Jump Movement Cost",
+        "definition": "The movement expenditure required to perform any type of long jump.",
+        "rule_logic": {
+          "premise": "Creature performs a long jump",
+          "implication": "Each foot cleared on the jump costs 1 foot of movement.",
+          "exceptions": [],
+          "description_text": "Either way, each foot you clear on the jump costs a foot of movement.",
+          "is_exception": false,
+          "related_search_terms": [
+            "jump movement cost",
+            "long jump speed",
+            "movement expenditure"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "Movement Speed"
+        ]
+      },
+      {
+        "concept_name": "Long Jump Obstacle Clearance (GM Option)",
+        "definition": "An optional rule for handling low obstacles during a long jump, requiring a Strength (Athletics) check at the GM's discretion.",
+        "rule_logic": {
+          "premise": "GM determines the height of the jump matters AND obstacle is no taller than a quarter of the jump's distance",
+          "implication": "Requires a successful DC 10 Strength (Athletics) check to clear the obstacle. Failure results in hitting the obstacle.",
+          "exceptions": [],
+          "description_text": "At your GM's option, you must succeed on a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump's distance), such as a hedge or low wall. Otherwise, you hit it.",
+          "is_exception": false,
+          "related_search_terms": [
+            "jump over obstacle",
+            "long jump obstacle check",
+            "athletics check jumping",
+            "hitting obstacle jump",
+            "gm discretion jump"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "Obstacles",
+          "Strength (Athletics)",
+          "GM Option"
+        ]
+      },
+      {
+        "concept_name": "Long Jump Difficult Terrain Landing",
+        "definition": "The consequence and required check when landing a long jump in difficult terrain.",
+        "rule_logic": {
+          "premise": "Creature lands a long jump in difficult terrain",
+          "implication": "Must succeed on a DC 10 Dexterity (Acrobatics) check to land on its feet. Failure results in landing prone.",
+          "exceptions": [],
+          "description_text": "When you land in difficult terrain, you must succeed on a DC 10 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land prone.",
+          "is_exception": false,
+          "related_search_terms": [
+            "jump land prone",
+            "acrobatics check landing",
+            "difficult terrain jump",
+            "fall after jump"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "Difficult Terrain",
+          "Dexterity (Acrobatics)",
+          "Prone"
+        ]
+      },
+      {
+        "concept_name": "High Jump Distance",
+        "definition": "The vertical distance a creature can jump, determined by its Strength modifier, varying based on whether it has a running start.",
+        "rule_logic": {
+          "premise": "Creature performs a high jump AND moves at least 10 feet on foot immediately before the jump",
+          "implication": "Leaps into the air a number of feet equal to (3 + its Strength modifier).",
+          "exceptions": [
+            "Standing High Jump: Jump only half that distance ((3 + Strength modifier) / 2 feet)."
+          ],
+          "description_text": "When you make a high jump, you leap into the air a number of feet equal to 3 + your Strength modifier if you move at least 10 feet on foot immediately before the jump. When you make a standing high jump, you can jump only half that distance.",
+          "is_exception": false,
+          "related_search_terms": [
+            "high jump calculation",
+            "running high jump",
+            "standing high jump",
+            "strength modifier jump"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "High Jump",
+          "Strength Modifier"
+        ]
+      },
+      {
+        "concept_name": "High Jump Movement Cost",
+        "definition": "The movement expenditure required to perform any type of high jump.",
+        "rule_logic": {
+          "premise": "Creature performs a high jump",
+          "implication": "Each foot cleared on the jump costs 1 foot of movement.",
+          "exceptions": [],
+          "description_text": "Either way, each foot you clear on the jump costs a foot of movement.",
+          "is_exception": false,
+          "related_search_terms": [
+            "jump movement cost",
+            "high jump speed",
+            "movement expenditure"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "Movement Speed"
+        ]
+      },
+      {
+        "concept_name": "High Jump Increased Height (GM Option)",
+        "definition": "An optional rule allowing the Game Master to permit a Strength (Athletics) check to jump higher than normally allowed.",
+        "rule_logic": {
+          "premise": "GM determines circumstances allow for jumping higher than normal",
+          "implication": "Creature might make a Strength (Athletics) check to jump higher.",
+          "exceptions": [],
+          "description_text": "In some circumstances, your GM might allow you to make a Strength (Athletics) check to jump higher than you normally can.",
+          "is_exception": false,
+          "related_search_terms": [
+            "athletics check for high jump",
+            "jump higher roll",
+            "gm high jump rule"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "High Jump",
+          "Strength (Athletics)",
+          "GM Option"
+        ]
+      },
+      {
+        "concept_name": "High Jump Reaching Height",
+        "definition": "The maximum vertical height a creature can reach with its arms extended during a high jump.",
+        "rule_logic": {
+          "premise": "Creature performs a high jump AND extends its arms",
+          "implication": "Can reach a distance above itself equal to (height of the jump + (1.5 * creature's height)).",
+          "exceptions": [],
+          "description_text": "You can extend your arms half your height above yourself during the jump. Thus, you can reach above you a distance equal to the height of the jump plus 1.5 times your height.",
+          "is_exception": false,
+          "related_search_terms": [
+            "reach height jump",
+            "grab ledge jump",
+            "high jump reach calculation",
+            "how high can i reach"
+          ]
+        },
+        "related_keywords": [
+          "Movement",
+          "Jumping",
+          "High Jump",
+          "Reach"
+        ]
+      }
+    ],
+    "_chunk_header": "Special Types of Movement",
+    "_source_file": "movement"
+  }
+]

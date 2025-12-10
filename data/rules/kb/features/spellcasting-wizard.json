@@ -1,0 +1,32 @@
+{
+  "entity_name": "Wizard Spellcasting (Spellbook Possession)",
+  "logic_type": "class_feature",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Character is a Wizard",
+      "condition": "Is a Wizard",
+      "outcome": "Possesses a spellbook",
+      "related_search_terms": [
+        "wizard equipment",
+        "class feature",
+        "arcane items",
+        "starting gear"
+      ]
+    }
+  ],
+  "description_text": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.",
+  "tags": [
+    "Wizard",
+    "Spellcasting",
+    "Spellbook",
+    "Class Feature"
+  ],
+  "related_search_terms": [
+    "Wizard",
+    "Arcane Magic",
+    "Spellbook",
+    "Magic User",
+    "Caster"
+  ]
+}

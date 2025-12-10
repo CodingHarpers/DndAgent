@@ -1,0 +1,34 @@
+{
+  "entity_name": "Shield (Spell)",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "An attack targets you",
+      "condition": "Shield spell is cast as a reaction",
+      "outcome": "You gain a +5 bonus to AC against the triggering attack and until the start of your next turn",
+      "related_search_terms": [
+        "armor class increase",
+        "defense spell",
+        "prevent hit",
+        "reaction spell",
+        "ac boost",
+        "warding spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "You are targeted by Magic Missile",
+      "condition": "Shield spell is active",
+      "outcome": "You take no damage from Magic Missile",
+      "related_search_terms": [
+        "negate magic missile",
+        "magic missile protection",
+        "spell immunity",
+        "absorb magic missile",
+        "counter spell damage"
+      ]
+    }
+  ],
+  "description_text": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+}

@@ -1,0 +1,44 @@
+{
+  "entity_name": "Incapacitated",
+  "logic_type": "condition_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Attempt to take an action",
+      "condition": "Creature is Incapacitated",
+      "outcome": "Cannot take an action",
+      "related_search_terms": [
+        "action economy",
+        "stunned",
+        "paralyzed",
+        "unable to act",
+        "immobilized"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Attempt to take a reaction",
+      "condition": "Creature is Incapacitated",
+      "outcome": "Cannot take a reaction",
+      "related_search_terms": [
+        "reaction economy",
+        "opportunity attack",
+        "counterspell",
+        "no reactions"
+      ]
+    }
+  ],
+  "description_text": "An incapacitated creature can't take actions or reactions.",
+  "tags": [
+    "condition",
+    "status effect"
+  ],
+  "related_search_terms": [
+    "disable",
+    "control",
+    "stun",
+    "knocked out",
+    "unable to move",
+    "helpless"
+  ]
+}

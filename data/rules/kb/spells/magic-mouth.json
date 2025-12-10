@@ -1,0 +1,132 @@
+{
+  "entity_name": "Magic Mouth",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Target is an object within range",
+      "outcome": "Object is designated for Magic Mouth",
+      "related_search_terms": [
+        "target selection",
+        "spell targeting",
+        "object target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Target object is NOT worn or carried by another creature",
+      "outcome": "Object cannot be worn/carried by other creatures at time of casting",
+      "related_search_terms": [
+        "occupied object",
+        "owned item",
+        "held item"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Message length does NOT exceed 25 words",
+      "outcome": "Verbal message is stored for later articulation",
+      "related_search_terms": [
+        "message length",
+        "verbal recording",
+        "spell message"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Trigger circumstance is based on visual conditions occurring within 30 feet of the object",
+      "outcome": "Trigger for message delivery is established",
+      "related_search_terms": [
+        "visual trigger",
+        "line of sight trigger",
+        "sensor trigger"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Spell Casting",
+      "condition": "Trigger circumstance is based on audible conditions occurring within 30 feet of the object",
+      "outcome": "Trigger for message delivery is established",
+      "related_search_terms": [
+        "audible trigger",
+        "sound trigger",
+        "proximity alert"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Defined trigger conditions are satisfied",
+      "condition": "Object does NOT possess a mouth or similar feature",
+      "outcome": "A magical mouth appears on the object",
+      "related_search_terms": [
+        "spell manifestation",
+        "visual effect",
+        "mouth creation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Defined trigger conditions are satisfied",
+      "condition": "Object possesses a mouth or similar feature (e.g., statue mouth)",
+      "outcome": "The existing mouth or feature animates",
+      "related_search_terms": [
+        "object animation",
+        "speaking statue",
+        "mimicry"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Defined trigger conditions are satisfied",
+      "condition": "N/A",
+      "outcome": "The object articulates the stored message imitating the caster's voice and tone",
+      "related_search_terms": [
+        "message delivery",
+        "speaking object",
+        "voice imitation"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell Casting",
+      "condition": "Caster chooses one option",
+      "outcome": "Spell ends after the message is delivered",
+      "related_search_terms": [
+        "one-time message",
+        "single use spell",
+        "temporary effect"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Spell Casting",
+      "condition": "Caster chooses one option",
+      "outcome": "Spell persists and repeats the message whenever trigger conditions are met",
+      "related_search_terms": [
+        "repeated message",
+        "persistent spell",
+        "recurring effect"
+      ]
+    }
+  ],
+  "description_text": "You plant a message to an object in the range of the spell. The message is verbalized when the trigger conditions are met. Choose an object that you see, and that is not worn or carried by another creature. Then say the message, which should not exceed 25 words but listening can take up to 10 minutes. Finally, establish the circumstances that trigger the spell to deliver your message. When these conditions are satisfied, a magical mouth appears on the object and it articulates the message imitating your voice, the same tone used during implantation of the message. If the selected object has a mouth or something that approaches such as the mouth of a statue, the magic mouth come alive at this point, giving the illusion that the words come from the mouth of the object. When you cast this spell, you may decide that the spell ends when the message is delivered or it can persist and repeat the message whenever circumstances occur. The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it.",
+  "tags": [
+    "Divination",
+    "Utility",
+    "Message",
+    "Trap",
+    "Triggered Effect"
+  ],
+  "related_search_terms": [
+    "message spell",
+    "speaking object",
+    "triggered spell",
+    "alert system",
+    "security spell",
+    "recorded message"
+  ]
+}

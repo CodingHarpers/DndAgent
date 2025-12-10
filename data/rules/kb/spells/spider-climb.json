@@ -1,0 +1,47 @@
+{
+  "entity_name": "Spider Climb",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "A willing creature is touched by the caster",
+      "condition": "The Spider Climb spell is active on the creature",
+      "outcome": "The creature gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free",
+      "related_search_terms": [
+        "wall crawling",
+        "ceiling walking",
+        "climbing movement",
+        "unrestricted movement",
+        "gravity defiance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "A willing creature is touched by the caster",
+      "condition": "The Spider Climb spell is active on the creature",
+      "outcome": "The creature gains a climbing speed equal to its walking speed",
+      "related_search_terms": [
+        "climb speed",
+        "movement buff",
+        "speed increase",
+        "vertical speed"
+      ]
+    }
+  ],
+  "description_text": "Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.",
+  "tags": [
+    "transmutation",
+    "utility",
+    "movement",
+    "exploration"
+  ],
+  "related_search_terms": [
+    "climbing",
+    "wall walk",
+    "ceiling walk",
+    "movement spell",
+    "buff spell",
+    "spider",
+    "vertical movement"
+  ]
+}

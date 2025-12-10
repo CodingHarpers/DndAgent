@@ -1,0 +1,105 @@
+{
+  "entity_name": "Awaken",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target is a Huge or smaller beast OR Target is a Huge or smaller plant",
+      "outcome": "Spell can be cast on target",
+      "related_search_terms": [
+        "target type",
+        "creature size",
+        "valid target"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "On Cast",
+      "condition": "Target has no Intelligence score OR Target's Intelligence score is 3 or less",
+      "outcome": "Spell can be cast on target",
+      "related_search_terms": [
+        "intelligence requirement",
+        "mental capacity",
+        "sapience prerequisite"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell successfully cast",
+      "condition": "Target is a valid beast or plant",
+      "outcome": "Target's Intelligence score becomes 10",
+      "related_search_terms": [
+        "stat increase",
+        "intelligence boost",
+        "cognitive enhancement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell successfully cast",
+      "condition": "Target is a valid beast or plant",
+      "outcome": "Target gains the ability to speak one language known by the caster",
+      "related_search_terms": [
+        "language acquisition",
+        "communication",
+        "sentience"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell successfully cast",
+      "condition": "Target is a plant",
+      "outcome": "Target gains the ability to move its limbs, roots, vines, and creepers; Target gains senses similar to a human's",
+      "related_search_terms": [
+        "plant animation",
+        "mobile plant",
+        "plant senses",
+        "awakened plant abilities"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell successfully cast",
+      "condition": "Target is a valid awakened creature",
+      "outcome": "Target is Charmed by the caster for 30 days OR until caster or companions harm it",
+      "related_search_terms": [
+        "charmed condition",
+        "mind control",
+        "temporary ally",
+        "forced friendship"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Charmed condition ends",
+      "condition": "Awakened creature was previously Charmed by the caster",
+      "outcome": "Creature chooses whether to remain friendly to the caster, based on its treatment during the charmed state",
+      "related_search_terms": [
+        "long-term allegiance",
+        "creature loyalty",
+        "post-spell relationship",
+        "animal companion"
+      ]
+    }
+  ],
+  "description_text": "After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your GM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree. The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed.",
+  "tags": [
+    "spell",
+    "enchantment",
+    "transformation",
+    "creature modification",
+    "control"
+  ],
+  "related_search_terms": [
+    "animal intelligence",
+    "sentient plants",
+    "mind affecting spell",
+    "ally creation",
+    "charm animal",
+    "control plant",
+    "permanent pet",
+    "awakening",
+    "beast companion"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "entity_name": "True Strike",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell Cast (Action)",
+      "condition": "Target is within range",
+      "outcome": "Caster gains a magical insight into target's defenses that persists until the end of the caster's next turn or until the spell ends",
+      "related_search_terms": [
+        "spell cast",
+        "action cost",
+        "target selection",
+        "setup spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster makes an attack roll",
+      "condition": "It is the caster's next turn AND It is the first attack roll made against the target of True Strike AND The True Strike effect has not ended",
+      "outcome": "That attack roll has Advantage",
+      "related_search_terms": [
+        "advantage on attack",
+        "buff",
+        "next turn benefit",
+        "single attack buff",
+        "foresight",
+        "aimed shot"
+      ]
+    }
+  ],
+  "description_text": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+  "tags": [
+    "cantrip",
+    "divination",
+    "single_target",
+    "buff"
+  ],
+  "related_search_terms": [
+    "attack advantage",
+    "prediction",
+    "insight",
+    "ranged attack buff",
+    "melee attack buff",
+    "cantrip buff"
+  ]
+}

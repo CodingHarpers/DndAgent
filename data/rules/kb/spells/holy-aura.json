@@ -1,0 +1,72 @@
+{
+  "entity_name": "Holy Aura",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Initial Effect)",
+      "condition": "Creature of your choice is within 30-foot radius",
+      "outcome": "Target creature sheds dim light in a 5-foot radius",
+      "related_search_terms": [
+        "light source",
+        "illumination",
+        "aura",
+        "spell effect"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Saving Throw",
+      "condition": "Creature is an affected target of Holy Aura",
+      "outcome": "Target creature has advantage on all saving throws",
+      "related_search_terms": [
+        "resistance",
+        "protection",
+        "magical defense",
+        "spell save",
+        "condition save"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Attack Roll Against Affected Creature",
+      "condition": "Attacker is NOT the affected target AND affected creature is under Holy Aura effect",
+      "outcome": "Attacker has disadvantage on attack rolls against the affected creature",
+      "related_search_terms": [
+        "defense buff",
+        "hard to hit",
+        "miss chance",
+        "protection spell"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Fiend or Undead hits affected creature with melee attack",
+      "condition": "Attacker is a fiend OR an undead AND attacker hits an affected creature with a melee attack",
+      "outcome": "Attacker must succeed on a Constitution saving throw or be blinded until the spell ends",
+      "related_search_terms": [
+        "retaliation",
+        "monster interaction",
+        "blind condition",
+        "cc",
+        "crowd control"
+      ]
+    }
+  ],
+  "description_text": "Divine light washes out from you and coalesces in a soft radiance in a 30-foot radius around you. Creatures of your choice in that radius when you cast this spell shed dim light in a 5-foot radius and have advantage on all saving throws, and other creatures have disadvantage on attack rolls against them until the spell ends. In addition, when a fiend or an undead hits an affected creature with a melee attack, the aura flashes with brilliant light. The attacker must succeed on a constitution saving throw or be blinded until the spell ends.",
+  "tags": [
+    "spell",
+    "cleric",
+    "paladin",
+    "aura",
+    "buff",
+    "control"
+  ],
+  "related_search_terms": [
+    "divine spell",
+    "protection spell",
+    "group buff",
+    "anti-fiend",
+    "anti-undead"
+  ]
+}

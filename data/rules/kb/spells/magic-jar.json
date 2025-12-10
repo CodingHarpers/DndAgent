@@ -1,0 +1,280 @@
+{
+  "entity_name": "Magic Jar",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell is cast",
+      "condition": "Caster casts Magic Jar",
+      "outcome": "Caster's soul leaves its body and enters the spell's container. Caster's original body falls into a catatonic state.",
+      "related_search_terms": [
+        "soul transfer",
+        "spirit form",
+        "empty body",
+        "caster body status"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's soul is in the container",
+      "condition": "Caster's soul is in the container",
+      "outcome": "Caster is aware of its surroundings as if in the container's space.",
+      "related_search_terms": [
+        "container senses",
+        "soul awareness",
+        "spirit perception"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster's soul is in the container",
+      "condition": "Caster's soul is in the container",
+      "outcome": "Caster cannot move or use reactions.",
+      "related_search_terms": [
+        "immobile soul",
+        "spirit restrictions",
+        "helpless spirit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster's soul is in the container",
+      "condition": "Caster's soul is in the container",
+      "outcome": "Caster can use its action to project its soul up to 100 feet out of the container.",
+      "related_search_terms": [
+        "project spirit",
+        "soul movement",
+        "ghostly action"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster projects soul",
+      "condition": "Caster chooses to return to their original body",
+      "outcome": "Caster's soul returns to its original body, and the Magic Jar spell ends.",
+      "related_search_terms": [
+        "end spell",
+        "repossess own body",
+        "soul recall"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Caster attempts possession",
+      "condition": "Target is a Humanoid AND target is within 100 feet AND Caster can see target AND target is NOT warded by Protection from Evil and Good OR Magic Circle",
+      "outcome": "Caster can attempt to possess the target's body.",
+      "related_search_terms": [
+        "valid target",
+        "possession target",
+        "warded creature",
+        "immune to possession"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster attempts possession of a valid target",
+      "condition": "Caster attempts possession",
+      "outcome": "Target must make a Charisma saving throw.",
+      "related_search_terms": [
+        "possession save",
+        "resist mind control",
+        "charisma resistance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target fails Charisma saving throw",
+      "condition": "Target failed the Charisma saving throw",
+      "outcome": "Caster's soul moves into the target's body. The target's original soul becomes trapped in the container.",
+      "related_search_terms": [
+        "successful possession",
+        "body control",
+        "soul swap",
+        "target soul trapped"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target succeeds on Charisma saving throw",
+      "condition": "Target succeeded on the Charisma saving throw",
+      "outcome": "Target resists possession. Caster cannot attempt to possess this specific target again for 24 hours.",
+      "related_search_terms": [
+        "resisted possession",
+        "immune for a day",
+        "failed possession attempt"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster possesses a creature's body",
+      "condition": "Caster is possessing a creature's body",
+      "outcome": "Caster controls the possessed body.",
+      "related_search_terms": [
+        "take over body",
+        "puppet control",
+        "mind control"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster possesses a creature's body",
+      "condition": "Caster is possessing a creature's body",
+      "outcome": "Caster's game statistics are replaced by the possessed creature's statistics, EXCEPT Caster retains its own alignment, Intelligence, Wisdom, and Charisma scores.",
+      "related_search_terms": [
+        "stat change",
+        "physical stats",
+        "mental stats",
+        "character sheet change"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster possesses a creature's body",
+      "condition": "Caster is possessing a creature's body",
+      "outcome": "Caster retains the benefit of its own class features. If the possessed creature has class levels, Caster cannot use any of the possessed creature's class features.",
+      "related_search_terms": [
+        "retain abilities",
+        "host abilities",
+        "class ability transfer",
+        "possession skills"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature's soul is trapped in the container",
+      "condition": "A creature's soul is trapped in the container",
+      "outcome": "The trapped soul can perceive from the container using its own senses but cannot move or take actions.",
+      "related_search_terms": [
+        "host soul",
+        "trapped spirit senses",
+        "helpless soul"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster is possessing a body",
+      "condition": "Caster uses an action AND the container is within 100 feet",
+      "outcome": "Caster's soul returns from the host body to the container. The host creature's soul returns to its own body.",
+      "related_search_terms": [
+        "leave host",
+        "release body",
+        "soul return to jar"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Host body dies while Caster is possessing it",
+      "condition": "Host body dies while Caster is possessing it",
+      "outcome": "The host creature dies.",
+      "related_search_terms": [
+        "host death",
+        "possessed body killed"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Host body dies while Caster is possessing it",
+      "condition": "Host body dies while Caster is possessing it",
+      "outcome": "Caster must make a Charisma saving throw against its own spellcasting DC.",
+      "related_search_terms": [
+        "caster survival check",
+        "soul resilience",
+        "death save for spirit"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster made Charisma saving throw (Host body died)",
+      "condition": "Caster succeeded on the Charisma saving throw AND the container is within 100 feet",
+      "outcome": "Caster's soul returns to the container.",
+      "related_search_terms": [
+        "return to jar",
+        "escape death",
+        "soul saved"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Caster made Charisma saving throw (Host body died)",
+      "condition": "Caster failed the Charisma saving throw OR the container is NOT within 100 feet",
+      "outcome": "Caster dies.",
+      "related_search_terms": [
+        "caster perish",
+        "soul destroyed",
+        "spirit death"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Container is destroyed OR Magic Jar spell ends",
+      "condition": "Container is destroyed OR Magic Jar spell ends",
+      "outcome": "Caster's soul immediately returns to its original body.",
+      "related_search_terms": [
+        "spell end effect",
+        "jar broken",
+        "soul forced return"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Container is destroyed OR Magic Jar spell ends",
+      "condition": "Caster's original body is more than 100 feet away from Caster's current soul location OR Caster's original body is dead",
+      "outcome": "Caster dies.",
+      "related_search_terms": [
+        "distance death",
+        "body already dead",
+        "soul perishes"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Container is destroyed OR Magic Jar spell ends",
+      "condition": "Another creature's soul is in the container AND its original body is alive AND its original body is within 100 feet of the container",
+      "outcome": "The other creature's soul returns to its original body.",
+      "related_search_terms": [
+        "release trapped soul",
+        "host soul freed",
+        "other soul returns"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Container is destroyed OR Magic Jar spell ends",
+      "condition": "Another creature's soul is in the container AND its original body is NOT alive OR its original body is NOT within 100 feet of the container",
+      "outcome": "The other creature dies.",
+      "related_search_terms": [
+        "host soul dies",
+        "trapped soul death",
+        "soul lost"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Magic Jar spell ends",
+      "condition": "Magic Jar spell ends",
+      "outcome": "The container used for the spell's material component is destroyed.",
+      "related_search_terms": [
+        "material component destruction",
+        "jar breaks",
+        "spell cleanup"
+      ]
+    }
+  ],
+  "description_text": "Your body falls into a catatonic state as your soul leaves it and enters the container you used for the spell's material component. While your soul inhabits the container, you are aware of your surroundings as if you were in the container's space. You can't move or use reactions. The only action you can take is to project your soul up to 100 feet out of the container, either returning to your living body (and ending the spell) or attempting to possess a humanoids body. You can attempt to possess any humanoid within 100 feet of you that you can see (creatures warded by a protection from evil and good or magic circle spell can't be possessed). The target must make a charisma saving throw. On a failure, your soul moves into the target's body, and the target's soul becomes trapped in the container. On a success, the target resists your efforts to possess it, and you can't attempt to possess it again for 24 hours. Once you possess a creature's body, you control it. Your game statistics are replaced by the statistics of the creature, though you retain your alignment and your Intelligence, Wisdom, and Charisma scores. You retain the benefit of your own class features. If the target has any class levels, you can't use any of its class features. Meanwhile, the possessed creature's soul can perceive from the container using its own senses, but it can't move or take actions at all. While possessing a body, you can use your action to return from the host body to the container if it is within 100 feet of you, returning the host creature's soul to its body. If the host body dies while you're in it, the creature dies, and you must make a charisma saving throw against your own spellcasting DC. On a success, you return to the container if it is within 100 feet of you. Otherwise, you die. If the container is destroyed or the spell ends, your soul immediately returns to your body. If your body is more than 100 feet away from you or if your body is dead when you attempt to return to it, you die. If another creature's soul is in the container when it is destroyed, the creature's soul returns to its body if the body is alive and within 100 feet. Otherwise, that creature dies. When the spell ends, the container is destroyed.",
+  "tags": [
+    "necromancy",
+    "possession",
+    "soul",
+    "control",
+    "spirit",
+    "body swap"
+  ],
+  "related_search_terms": [
+    "magic jar spell",
+    "body control",
+    "soul trapping",
+    "mind control",
+    "ghostly form",
+    "container magic"
+  ]
+}

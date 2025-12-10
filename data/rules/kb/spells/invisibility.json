@@ -1,0 +1,65 @@
+{
+  "entity_name": "Invisibility",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "grant",
+      "trigger": "Spell is cast successfully",
+      "condition": "Caster touches a creature",
+      "outcome": "Target gains the 'Invisible' condition until the spell ends",
+      "related_search_terms": [
+        "turn invisible",
+        "become unseen",
+        "hide",
+        "stealth"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Target is under the effect of 'Invisibility' spell",
+      "condition": "Item is worn OR carried by the target",
+      "outcome": "Item becomes invisible",
+      "related_search_terms": [
+        "invisible gear",
+        "hidden equipment",
+        "concealed items"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target makes an attack",
+      "condition": "Target is currently invisible due to this spell",
+      "outcome": "Invisibility spell ends for that target",
+      "related_search_terms": [
+        "break invisibility",
+        "revealed",
+        "uncloak",
+        "stop being invisible"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Target casts a spell",
+      "condition": "Target is currently invisible due to this spell",
+      "outcome": "Invisibility spell ends for that target",
+      "related_search_terms": [
+        "break invisibility",
+        "revealed",
+        "uncloak",
+        "magic breaks stealth"
+      ]
+    }
+  ],
+  "description_text": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.",
+  "tags": [
+    "spell",
+    "illusion"
+  ],
+  "related_search_terms": [
+    "stealth spell",
+    "hiding magic",
+    "disappear",
+    "unseen",
+    "concealment"
+  ]
+}

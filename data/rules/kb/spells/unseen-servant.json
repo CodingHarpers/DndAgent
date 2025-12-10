@@ -1,0 +1,98 @@
+{
+  "entity_name": "Unseen Servant",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Spell Cast (Unseen Servant)",
+      "condition": "Unoccupied space on the ground within range (30 feet)",
+      "outcome": "Creates an invisible, mindless, shapeless force with AC 10, 1 HP, and Strength 2. It cannot attack.",
+      "related_search_terms": [
+        "summon",
+        "minion",
+        "construct",
+        "utility spell",
+        "invisible helper",
+        "servant stats"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Servant's hit points change",
+      "condition": "Servant's hit points drop to 0",
+      "outcome": "The Unseen Servant spell ends",
+      "related_search_terms": [
+        "spell duration",
+        "minion death",
+        "destroy servant",
+        "dispel"
+      ]
+    },
+    {
+      "type": "grant",
+      "trigger": "Once on each of your turns",
+      "condition": "You use a bonus action",
+      "outcome": "You can mentally command the servant to move up to 15 feet and interact with an object or perform simple tasks.",
+      "related_search_terms": [
+        "bonus action",
+        "control minion",
+        "utility action",
+        "servant commands",
+        "interact object"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Servant performs a task",
+      "condition": "Task is a simple task that a human servant could do",
+      "outcome": "Servant can perform tasks such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine.",
+      "related_search_terms": [
+        "utility",
+        "chores",
+        "non-combat actions",
+        "household tasks",
+        "minion capabilities"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Servant receives a command",
+      "condition": "N/A",
+      "outcome": "Servant performs the task to the best of its ability until completed, then waits for the next command.",
+      "related_search_terms": [
+        "autonomous action",
+        "task execution",
+        "minion AI",
+        "servant behavior"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Commanding the servant to move",
+      "condition": "Command would move the servant more than 60 feet away from the caster",
+      "outcome": "The Unseen Servant spell ends",
+      "related_search_terms": [
+        "range limit",
+        "spell range",
+        "breaking spell",
+        "distance limit",
+        "caster proximity"
+      ]
+    }
+  ],
+  "description_text": "This spell creates an invisible, mindless, shapeless force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.Once on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.",
+  "tags": [
+    "conjuration",
+    "utility",
+    "minion",
+    "first-level spell"
+  ],
+  "related_search_terms": [
+    "unseen helper",
+    "invisible minion",
+    "utility spell",
+    "minor conjuration",
+    "servant spell",
+    "chore automation"
+  ]
+}

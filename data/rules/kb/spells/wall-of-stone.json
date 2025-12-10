@@ -1,0 +1,173 @@
+{
+  "entity_name": "Wall of Stone",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "On Cast",
+      "condition": "Point chosen within range",
+      "outcome": "Create nonmagical wall of solid stone (up to ten 10x10 ft panels, 6in thick, or ten 10x20 ft panels, 3in thick)",
+      "related_search_terms": [
+        "summon wall",
+        "barrier",
+        "block LOS",
+        "create cover",
+        "terrain creation"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall appears",
+      "condition": "Wall cuts through a creature's space",
+      "outcome": "Creature is pushed to one side of the wall (caster's choice)",
+      "related_search_terms": [
+        "push",
+        "forced movement",
+        "displacement",
+        "wall placement"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall appears",
+      "condition": "Creature would be surrounded on all sides by the wall (or wall and another solid surface)",
+      "outcome": "Creature makes Dexterity saving throw. On success, can use reaction to move up to its speed to escape enclosure.",
+      "related_search_terms": [
+        "trap",
+        "imprison",
+        "escape",
+        "dex save",
+        "trapping creature"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Wall creation",
+      "condition": "Wall placement",
+      "outcome": "Cannot occupy same space as creature or object. Must merge with and be solidly supported by existing stone.",
+      "related_search_terms": [
+        "placement rules",
+        "terrain interaction",
+        "foundation",
+        "support requirements"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall creation",
+      "condition": "Caster's desire and placement constraints met",
+      "outcome": "Wall can have any desired shape (e.g., bridge chasm, create ramp, non-vertical)",
+      "related_search_terms": [
+        "utility",
+        "terrain manipulation",
+        "bridge",
+        "ramp",
+        "shaping wall"
+      ]
+    },
+    {
+      "type": "constraint",
+      "trigger": "Wall creation",
+      "condition": "Creating a span greater than 20 feet in length",
+      "outcome": "Must halve the size of each panel to create supports.",
+      "related_search_terms": [
+        "structural integrity",
+        "long spans",
+        "support",
+        "engineering wall"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall creation",
+      "condition": "Caster desires crude shaping",
+      "outcome": "Can crudely shape wall to create crenellations, battlements, etc.",
+      "related_search_terms": [
+        "fortification",
+        "battlements",
+        "defenses",
+        "shelter",
+        "cover"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Wall exists",
+      "condition": "N/A",
+      "outcome": "Wall is a nonmagical object made of stone. Each panel has AC 15.",
+      "related_search_terms": [
+        "object stats",
+        "durability",
+        "armor class",
+        "wall stats"
+      ]
+    },
+    {
+      "type": "scaling",
+      "trigger": "Wall exists",
+      "condition": "N/A",
+      "outcome": "Each panel has 30 hit points per inch of thickness.",
+      "related_search_terms": [
+        "HP",
+        "damage threshold",
+        "durability",
+        "wall health",
+        "breaking wall"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Panel takes damage",
+      "condition": "Panel reduced to 0 hit points",
+      "outcome": "Panel is destroyed. GM may decide connected panels collapse.",
+      "related_search_terms": [
+        "destroy wall",
+        "breach defense",
+        "collapse",
+        "breaking through"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell duration ends",
+      "condition": "Caster maintained concentration for the entire duration",
+      "outcome": "Wall becomes permanent and cannot be dispelled.",
+      "related_search_terms": [
+        "permanent effect",
+        "duration",
+        "concentration",
+        "lasting wall"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Spell duration ends",
+      "condition": "Caster did NOT maintain concentration for the entire duration OR concentration is broken early",
+      "outcome": "Wall disappears.",
+      "related_search_terms": [
+        "temporary effect",
+        "concentration break",
+        "spell ends",
+        "vanishing wall"
+      ]
+    }
+  ],
+  "description_text": "A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall. The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp. If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on. The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion. If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.",
+  "tags": [
+    "creation",
+    "control",
+    "evocation",
+    "concentration",
+    "permanent",
+    "utility"
+  ],
+  "related_search_terms": [
+    "stone wall",
+    "barrier",
+    "blockade",
+    "terrain",
+    "construction",
+    "fortification",
+    "area denial"
+  ]
+}

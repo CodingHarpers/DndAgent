@@ -1,0 +1,61 @@
+{
+  "entity_name": "Spike Growth",
+  "logic_type": "spell_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Ground transformation",
+      "condition": "Spell is cast on a point within range",
+      "outcome": "Ground in a 20-foot radius twists and sprouts hard spikes and thorns, becoming difficult terrain",
+      "related_search_terms": [
+        "difficult terrain",
+        "movement penalty",
+        "area control",
+        "terrain alteration",
+        "hindrance"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Creature movement",
+      "condition": "Creature moves into or within the affected area",
+      "outcome": "Creature takes 2d4 piercing damage for every 5 feet it travels",
+      "related_search_terms": [
+        "damage over time",
+        "punish movement",
+        "piercing damage",
+        "area damage",
+        "hazardous ground"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Approaching hazardous area",
+      "condition": "Creature could NOT see the area when the spell was cast AND Creature makes a Wisdom (Perception) check against the spell save DC",
+      "outcome": "On success, creature recognizes the terrain as hazardous",
+      "related_search_terms": [
+        "hidden hazard",
+        "camouflaged trap",
+        "perception check",
+        "spotting danger",
+        "terrain recognition"
+      ]
+    }
+  ],
+  "description_text": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast can make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.",
+  "tags": [
+    "area_control",
+    "damage",
+    "hindrance",
+    "perception",
+    "terrain_effect"
+  ],
+  "related_search_terms": [
+    "AoE",
+    "area of effect",
+    "plant spell",
+    "ground spell",
+    "movement denial",
+    "environmental damage"
+  ]
+}

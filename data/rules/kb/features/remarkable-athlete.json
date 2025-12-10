@@ -1,0 +1,49 @@
+{
+  "entity_name": "Remarkable Athlete",
+  "logic_type": "feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Making a Strength, Dexterity, or Constitution check",
+      "condition": "The check does not already include your proficiency bonus",
+      "outcome": "Add half your proficiency bonus (round up) to the check's total",
+      "related_search_terms": [
+        "skill check",
+        "ability check",
+        "athletic",
+        "acrobatics",
+        "endurance",
+        "physical check"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Making a running long jump",
+      "condition": "N/A",
+      "outcome": "The distance you can cover increases by a number of feet equal to your Strength modifier",
+      "related_search_terms": [
+        "jumping distance",
+        "athletic feat",
+        "movement",
+        "jump boost"
+      ]
+    }
+  ],
+  "description_text": "Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus. In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.",
+  "tags": [
+    "racial_feature",
+    "class_feature",
+    "fighter_feature"
+  ],
+  "related_search_terms": [
+    "remarkable athlete",
+    "half proficiency",
+    "proficiency bonus",
+    "strength check",
+    "dexterity check",
+    "constitution check",
+    "running long jump",
+    "jump distance",
+    "strength modifier"
+  ]
+}

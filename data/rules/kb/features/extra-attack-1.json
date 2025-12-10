@@ -1,0 +1,65 @@
+{
+  "entity_name": "Extra Attack",
+  "logic_type": "class_feature_mechanic",
+  "mechanics": [
+    {
+      "type": "effect",
+      "trigger": "Take the Attack action",
+      "condition": "Character has Extra Attack (Level 5) class feature AND is on their turn",
+      "outcome": "Make two attacks instead of one",
+      "related_search_terms": [
+        "multiple attacks",
+        "second attack",
+        "fighter attack",
+        "ranger attack",
+        "paladin attack",
+        "combat turn",
+        "scaling attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Take the Attack action",
+      "condition": "Character has Extra Attack (Level 11) class feature AND is on their turn",
+      "outcome": "Make three attacks instead of one",
+      "related_search_terms": [
+        "multiple attacks",
+        "third attack",
+        "fighter attack",
+        "combat turn",
+        "scaling attacks"
+      ]
+    },
+    {
+      "type": "effect",
+      "trigger": "Take the Attack action",
+      "condition": "Character has Extra Attack (Level 20) class feature AND is on their turn",
+      "outcome": "Make four attacks instead of one",
+      "related_search_terms": [
+        "multiple attacks",
+        "fourth attack",
+        "fighter attack",
+        "combat turn",
+        "scaling attacks"
+      ]
+    }
+  ],
+  "description_text": "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.",
+  "tags": [
+    "class_feature",
+    "combat",
+    "action_economy",
+    "scaling"
+  ],
+  "related_search_terms": [
+    "extra attacks",
+    "multiattack",
+    "attack action",
+    "fighter feature",
+    "ranger feature",
+    "paladin feature",
+    "battlemaster",
+    "champion",
+    "eldritch knight"
+  ]
+}
