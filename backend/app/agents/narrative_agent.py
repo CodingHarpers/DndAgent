@@ -1,0 +1,65 @@
+from app.models.schemas import Scene, RuleAdjudicationResult
+from app.services.generation import generation_client
+from typing import Dict, Any
+
+class NarrativeAgent:
+    def generate_scene(self, player_input: str, context: Dict, rule_result: RuleAdjudicationResult) -> Scene:
+        # Construct prompt
+        system_prompt = "You are a D&D Dungeon Master. Generate the next scene based on player input and rule outcomes."
+        user_prompt = f"Player: {player_input}\nRules: {rule_result}\nContext: {context}"
+        
+        # Call LLM
+        print(f"[NarrativeAgent] Generating scene for input: {player_input}...")
+        try:
+            scene = generation_client.generate_structured(
+                system_prompt, 
+                user_prompt, 
+                Scene
+            )
+            print("[NarrativeAgent] Generation successful.")
+        except Exception as e:
+            print(f"[NarrativeAgent] Generation failed: {e}")
+            scene = None
+        
+        if not scene:
+            # Fallback if LLM fails
+            return Scene(
+                scene_id="error_id",
+                title="The Mists of Confusion",
+                narrative_text="The Dungeon Master seems distracted (LLM Error). Please try again.",
+                location="Void",
+                characters_present=[],
+                available_actions=["Retry"]
+            )
+        
+        return scene
+
+    def generate_outcome_narration(self, action_result: Dict) -> Scene:
+        """
+        Generates a scene describing the outcome of a backend action (e.g. buy/sell).
+        The action_result is the TRUTH. The LLM simply narrates it.
+        """
+        # Unwrap result
+        success = action_result.get("success", False)
+        message = action_result.get("message", "Unknown outcome.")
+        
+        system_prompt = "You are a D&D Dungeon Master. Narrate the outcome of the player's action based STRICTLY on the provided result."
+        user_prompt = f"Action Result: {action_result}\n\nNarrate this event briefly and describe the current scene."
+        
+        try:
+             scene = generation_client.generate_structured(
+                system_prompt, 
+                user_prompt, 
+                Scene
+            )
+        except Exception as e:
+            print(f"[NarrativeAgent] Narration failed: {e}")
+            scene = Scene(
+                title=f"Action {'Success' if success else 'Failed'}",
+                narrative_text=f"{message}",
+                characters_present=[],
+                location="Current Location",
+                available_actions=["Continue"]
+            )
+            
+        return scene
