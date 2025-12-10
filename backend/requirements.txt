@@ -10,13 +10,14 @@ neo4j>=5.17.0
 python-dotenv>=1.0.1
 requests>=2.31.0
 pytest>=8.0.0
-google-genai
+google-genai>=0.3.0
 aiofiles
 aiohttp
 auto_mix_prep
 langchain_chroma
 langchain_core
 langchain_google_genai
+langchain_huggingface
 langchain_huggingface
 langchain_openai
 langchain_text_splitters
