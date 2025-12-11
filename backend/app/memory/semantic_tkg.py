@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+import random
 from typing import List, Dict, Any
 from app.models.schemas import EntityNode, RelationshipEdge
 from app.config import settings
@@ -20,8 +21,14 @@ class SemanticTKG:
             f"MERGE (n:{label} {{id: $id}}) "
             "SET n += $props"
         )
+        query = (
+            f"MERGE (n:{label} {{id: $id}}) "
+            "SET n += $props"
+        )
         with self.driver.session() as session:
-            session.run(query, id=entity.id, props=entity.properties)
+            # Pydantic models need explicit conversion to dict for Neo4j driver
+            props = entity.properties.model_dump(exclude_unset=True)
+            session.run(query, id=entity.id, props=props)
 
     def add_relationship(self, rel: RelationshipEdge):
         # Sanitize type by wrapping in backticks
@@ -32,7 +39,9 @@ class SemanticTKG:
             "SET r += $props"
         )
         with self.driver.session() as session:
-            session.run(query, source_id=rel.source_id, target_id=rel.target_id, props=rel.properties)
+            # Pydantic models need explicit conversion to dict for Neo4j driver
+            props = rel.properties.model_dump(exclude_unset=True)
+            session.run(query, source_id=rel.source_id, target_id=rel.target_id, props=props)
 
     def query_subgraph(self, cypher_query: str, params: Dict = None) -> List[Dict]:
         with self.driver.session() as session:
@@ -131,16 +140,37 @@ class SemanticTKG:
         
         with self.driver.session() as session:
             # 1. Get current gold and item value
-            check_query = """
-            MATCH (p:Character {id: $pid}), (i:Item {id: $iid})
-            RETURN p.gold as gold, i.value as value, i.name as name
+            # 1. Get current gold and item value
+            # Standardize invalid inputs
+            search_term = item_id.strip()
+            
+            # Tokenize for flexible matching (e.g. "healing potion" -> matches "Potion of Healing")
+            # We filter out short words to avoid noise if needed, but for now simple split is fine.
+            tokens = [t.lower() for t in search_term.split() if len(t) > 2]
+            if not tokens: # Fallback if only short words
+                tokens = [search_term.lower()]
+
+            # Cypher query: Find item where ALL tokens are present in the name (case-insensitive)
+            find_query = """
+            MATCH (p:Character {id: $pid})
+            OPTIONAL MATCH (i:Item)
+            WHERE i.id = $iid OR 
+                  (size($tokens) > 0 AND all(token IN $tokens WHERE toLower(i.name) CONTAINS token))
+            WITH p, i
+            ORDER BY size(i.name) ASC 
+            LIMIT 1
+            RETURN p.gold as gold, i.value as value, i.name as name, i.id as found_id
             """
-            res = session.run(check_query, pid=pid, iid=item_id).single()
-            if not res:
-                return {"success": False, "message": "Player or Item not found."}
+            
+            res = session.run(find_query, pid=pid, iid=item_id, tokens=tokens).single()
+            
+            if not res or not res['found_id']:
+                return {"success": False, "message": f"Item '{item_id}' not found."}
             
             gold = res['gold']
+            actual_item_id = res['found_id']
             val_str = str(res['value'])
+            
             # simple parse: remove 'gp' and int()
             try:
                 cost = int(''.join(filter(str.isdigit, val_str)))
@@ -157,7 +187,7 @@ class SemanticTKG:
             MERGE (p)-[:OWNS {acquired_at: datetime()}]->(i)
             RETURN p.gold as new_balance
             """
-            session.run(buy_query, pid=pid, iid=item_id, cost=cost)
+            session.run(buy_query, pid=pid, iid=actual_item_id, cost=cost)
             
             return {"success": True, "message": f"Purchased {res['name']} for {cost}gp", "new_balance": gold - cost}
 
@@ -170,17 +200,27 @@ class SemanticTKG:
         
         with self.driver.session() as session:
             # 1. Verify Ownership and Get Value
-            # Use WHERE type(r) = 'OWNS' to avoid Neo4j warning if type missing
+            # 1. Verify Ownership and Get Value
+            search_term = item_id.strip()
+            tokens = [t.lower() for t in search_term.split() if len(t) > 2]
+            if not tokens:
+                tokens = [search_term.lower()]
+
             check_query = """
-            MATCH (p:Character {id: $pid})-[r]->(i:Item {id: $iid})
-            WHERE type(r) = 'OWNS'
-            RETURN p.gold as gold, i.value as value, i.name as name
+            MATCH (p:Character {id: $pid})-[r:OWNS]->(i:Item)
+            WHERE i.id = $iid OR 
+                  (size($tokens) > 0 AND all(token IN $tokens WHERE toLower(i.name) CONTAINS token))
+            WITH p, i, r
+            LIMIT 1
+            RETURN p.gold as gold, i.value as value, i.name as name, i.id as found_id, elementId(r) as rid
             """
-            res = session.run(check_query, pid=pid, iid=item_id).single()
+            res = session.run(check_query, pid=pid, iid=item_id, tokens=tokens).single()
+            
             if not res:
-                return {"success": False, "message": "You don't own this item."}
+                return {"success": False, "message": f"You don't own '{item_id}'."}
             
             gold = res['gold']
+            actual_item_id = res['found_id']
             val_str = str(res['value'])
             try:
                 base_value = int(''.join(filter(str.isdigit, val_str)))
@@ -197,11 +237,100 @@ class SemanticTKG:
             SET p.gold = p.gold + $sell_value
             RETURN p.gold as new_balance
             """
-            session.run(sell_query, pid=pid, iid=item_id, sell_value=sell_value)
+            session.run(sell_query, pid=pid, iid=actual_item_id, sell_value=sell_value)
             
             return {
                 "success": True, 
                 "message": f"Sold {res['name']} for {sell_value}gp", 
                 "gold_gained": sell_value,
                 "new_balance": gold + sell_value
+            }
+
+    def roll_dice(self, sides: int, times: int = 1) -> int:
+        return sum(random.randint(1, sides) for _ in range(times))
+
+    def attack(self, session_id: str, target_id: str) -> Dict[str, Any]:
+        """
+        Executes an attack from the player to a target.
+        """
+        pid = "player_main"
+
+        with self.driver.session() as session:
+            # 1. Get Attacker and Target Stats
+            # We assume target is a Character or Enemy node
+            query_stats = """
+            MATCH (p:Character {id: $pid})
+            OPTIONAL MATCH (t {id: $tid})
+            RETURN p, t, labels(t) as t_labels
+            """
+            res = session.run(query_stats, pid=pid, tid=target_id).single()
+            
+            if not res or not res['t']:
+                return {"success": False, "message": "Target not found."}
+            
+            player = dict(res['p'])
+            target = dict(res['t'])
+            target_labels = res['t_labels'] or []
+
+            # Check if target is alive
+            if target.get('hp_current', 0) <= 0:
+                 return {"success": False, "message": "Target is already defeated."}
+
+            # 2. Combat Calculation (2d6 System)
+            # Hit Check: 2d6 vs Target Defense (or default 10)
+            roll_1 = self.roll_dice(6)
+            roll_2 = self.roll_dice(6)
+            attack_roll = roll_1 + roll_2
+            
+            # Simple defense stat or default to 10
+            target_defense = target.get('defense', 10)
+            
+            hit = attack_roll >= target_defense
+            
+            damage = 0
+            if hit:
+                # Damage Roll: Weapon Die (default d6) + Power Mod
+                # Simplify: just use d6 + power/3 for now or similar
+                # User asked for weapon-based dice, let's look for equipped weapon
+                # For MVP, let's just assume a d8 base damage + power bonus (e.g. power-10)
+                power_bonus = max(0, (player.get('power', 10) - 10) // 2)
+                damage = self.roll_dice(8) + power_bonus
+                
+                # Apply Damage
+                new_hp = target.get('hp_current', 10) - damage
+                
+                update_query = """
+                MATCH (t {id: $tid})
+                SET t.hp_current = $new_hp
+                MERGE (p:Character {id: $pid})
+                MERGE (p)-[r:ATTACKED {
+                    roll: $roll,
+                    damage: $damage,
+                    hit: $hit,
+                    timestamp: datetime()
+                }]->(t)
+                RETURN t.hp_current
+                """
+                session.run(update_query, tid=target_id, pid=pid, new_hp=new_hp, roll=attack_roll, damage=damage, hit=hit)
+            else:
+                 # Log Miss
+                log_query = """
+                MATCH (t {id: $tid}), (p:Character {id: $pid})
+                MERGE (p)-[r:ATTACKED {
+                    roll: $roll,
+                    damage: 0,
+                    hit: $hit,
+                    timestamp: datetime()
+                }]->(t)
+                """
+                session.run(log_query, tid=target_id, pid=pid, roll=attack_roll, hit=hit)
+
+            return {
+                "success": True,
+                "hit": hit,
+                "roll": attack_roll,
+                "damage": damage,
+                "target_id": target_id,
+                "target_hp": target.get('hp_current', 10) - damage if hit else target.get('hp_current', 10),
+                "message": f"Attacked {target.get('name', 'Enemy')}. Roll: {attack_roll} (Target: {target_defense}). {'HIT' if hit else 'MISS'} for {damage} dmg."
             }

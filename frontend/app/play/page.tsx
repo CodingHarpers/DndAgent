@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import StatsPanel from '@/components/StatsPanel';
 import InventoryPanel from '@/components/InventoryPanel';
+import CombatLog from '@/components/CombatLog';
 
 type Scene = {
     scene_id?: string; // Add this
@@ -14,6 +15,7 @@ type Scene = {
 
 export default function PlayPage() {
     const [scene, setScene] = useState<Scene | null>(null);
+    const [actionLog, setActionLog] = useState<any>(null);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
     const [sessionId, setSessionId] = useState<string>("");
@@ -32,6 +34,7 @@ export default function PlayPage() {
             });
             const data = await res.json();
             setScene(data);
+            setActionLog(null);
             const sid = data.metadata?.session_id || data.scene_id || data.session_id; // Check all possible locations
             if (sid) {
                 console.log("Session started with ID:", sid);
@@ -71,6 +74,12 @@ export default function PlayPage() {
             });
             const data = await res.json();
             setScene(data.scene);
+
+            if (data.action_log) {
+                setActionLog(data.action_log);
+            } else {
+                setActionLog(null);
+            }
 
             // Update Stats if returned
             if (data.player_stats) {
@@ -115,6 +124,9 @@ export default function PlayPage() {
                                     <h2 className="text-2xl text-purple-300 border-b border-gray-700 pb-2 mb-4">
                                         {scene.title}
                                     </h2>
+
+                                    {actionLog && <CombatLog log={actionLog} />}
+
                                     <p className="text-lg leading-relaxed whitespace-pre-wrap">
                                         {scene.narrative_text}
                                     </p>

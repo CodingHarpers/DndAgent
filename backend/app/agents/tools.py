@@ -1,43 +1,44 @@
-from google.genai import types
+from typing import Dict, Any, Optional
+from langchain_core.tools import tool
 
-# Define schemas for parameters using types.Schema
-buy_item_params = types.Schema(
-    type=types.Type.OBJECT,
-    properties={
-        "item_id": types.Schema(
-            type=types.Type.STRING,
-            description="The ID of the item to buy (e.g., 'item_rusty_sword')."
-        )
-    },
-    required=["item_id"]
-)
+class DndTools:
+    """
+    Factory for D&D game tools that interact with the Temporal Knowledge Graph (TKG) and Rules Engine.
+    """
+    def __init__(self, tkg, rules_agent=None):
+        self.tkg = tkg
+        self.rules_agent = rules_agent
 
-sell_item_params = types.Schema(
-    type=types.Type.OBJECT,
-    properties={
-        "item_id": types.Schema(
-            type=types.Type.STRING,
-            description="The ID of the item to sell."
-        )
-    },
-    required=["item_id"]
-)
+    def get_buy_tool(self):
+        @tool
+        def buy_item(item_id: str, session_id: str) -> Dict[str, Any]:
+            """
+            Attempt to buy an item from a merchant. 
+            Use this tool when the player explicitly states they want to purchase or buy a specific item.
+            """
+            # Implementation delegates to the TKG
+            result = self.tkg.purchase_item(session_id, item_id)
+            return {"result": result, "action": "buy_item", "item_id": item_id}
+        return buy_item
 
-# Define FunctionDeclarations
-buy_item_func = types.FunctionDeclaration(
-    name="buy_item",
-    description="Attempt to buy an item from a merchant. Use this when the player explicitly wants to purchase something.",
-    parameters=buy_item_params
-)
+    def get_sell_tool(self):
+        @tool
+        def sell_item(item_id: str, session_id: str) -> Dict[str, Any]:
+            """
+            Attempt to sell an item owned by the player.
+            Use this tool when the player explicitly states they want to sell or lists an item to sell.
+            """
+            result = self.tkg.sell_item(session_id, item_id)
+            return {"result": result, "action": "sell_item", "item_id": item_id}
+        return sell_item
 
-sell_item_func = types.FunctionDeclaration(
-    name="sell_item",
-    description="Attempt to sell an item owned by the player. Use this when the player explicitly wants to sell something.",
-    parameters=sell_item_params
-)
-
-# Create the Tool object
-dnd_tool_instance = types.Tool(function_declarations=[buy_item_func, sell_item_func])
-
-# Export as a list, because GenerateContentConfig.tools expects a list of Tool objects
-dnd_tools = [dnd_tool_instance]
+    def get_attack_tool(self):
+        @tool
+        def attack(target_id: str, session_id: str) -> Dict[str, Any]:
+            """
+            Attempt to attack a target in combat.
+            Use this tool when the player explicitly wants to fight, attack, or strike a target.
+            """
+            result = self.tkg.attack(session_id, target_id)
+            return {"result": result, "action": "attack", "target_id": target_id}
+        return attack

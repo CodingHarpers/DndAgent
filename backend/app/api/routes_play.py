@@ -1,13 +1,13 @@
 from fastapi import APIRouter, HTTPException, Depends
 from app.models.schemas import PlayerInput, TurnResponse, Scene, RuleAdjudicationResult, BuyRequest
-from app.agents.orchestrator import OrchestratorAgent
+from app.agents.orchestrator import DungeonMasterOrchestrator
 # Dependency injection handled here in a real app
 
 router = APIRouter()
 
 # Singleton instance for demo purposes
 # In prod, manage lifecycle properly
-orchestrator = OrchestratorAgent()
+orchestrator = DungeonMasterOrchestrator()
 
 @router.post("/start_session", response_model=Scene)
 async def start_session():
