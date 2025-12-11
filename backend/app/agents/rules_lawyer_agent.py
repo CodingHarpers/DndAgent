@@ -14,10 +14,10 @@ class RulesLawyerAgent:
         # Convert context dictionary to a string representation for the lawyer
         # Ensure 'rpg_state' and other keys are included clearly
         context_str = json.dumps(context, indent=2)
-        print(f"context_str: {context_str}")
+        print(f"[RulesLawyerAgent] context_str: {context_str}, player_input: {player_input}")
         req = RuleAdjudicationRequest(query=player_input, context=context_str)
         result_text = self.lawyer.check_rule(req)
-        print(f"result_text: {result_text}")
+        print(f"[RulesLawyerAgent] result_text: {result_text}")
         return RuleAdjudicationResult(
             explanation=result_text
         )
