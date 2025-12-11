@@ -37,10 +37,6 @@ sell_item_func = types.FunctionDeclaration(
 )
 
 # Create the Tool object
-# In google-genai, tools is usually a list of Tool objects in the config.
-# We'll export the list of tools directly, or a single Tool object wrapping functions.
-# Usually: tools=[types.Tool(function_declarations=[...])]
-
 dnd_tool_instance = types.Tool(function_declarations=[buy_item_func, sell_item_func])
 
 # Export as a list, because GenerateContentConfig.tools expects a list of Tool objects

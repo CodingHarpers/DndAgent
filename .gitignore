@@ -1,5 +1,6 @@
 *.ps1
 .env
+.venv/
 data/rules/chromaDB/
 data/rules/_backup/
 data/rules/dnd_5e_data/
@@ -12,3 +13,17 @@ backend/data/rules/dnd_5e_data/
 backend/app/__pycache__/
 backend/app/memory/__pycache__/episodic_store.cpython-311.pyc
 backend/data/rules/ChromaDB/
+backend/app/agents/__pycache__/__init__.cpython-311.pyc
+*.pyc
+backend/app/__pycache__/
+backend/app/agents/__pycache__/
+backend/app/memory/__pycache__/
+backend/app/scripts/__pycache__/
+backend/app/utils/__pycache__/
+backend/app/api/__pycache__/
+backend/app/api/routes_debug.cpython-311.pyc
+backend/app/api/routes_play.cpython-311.pyc
+backend/app/api/routes_world.cpython-311.pyc
+backend/app/api/routes_world.cpython-311.pyc
+backend/app/agents/__pycache__/
+backend/app/__pycache__/
