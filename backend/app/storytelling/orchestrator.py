@@ -4,8 +4,8 @@ from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, SystemMessage
 
-from src.storytelling.agents import AgentFactory
-from src.storytelling.tools import StorytellingTools
+from .agents import AgentFactory
+from .tools import StorytellingTools
 
 class AgentState(TypedDict):
     messages: List[BaseMessage]

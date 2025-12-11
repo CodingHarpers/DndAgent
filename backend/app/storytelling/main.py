@@ -5,9 +5,9 @@ from enum import Enum
 from typing import List, Optional, Dict
 from langchain_core.messages import BaseMessage, SystemMessage, AIMessage, HumanMessage
 
-from src.storytelling.orchestrator import DungeonMasterOrchestrator
-from src.memory.router import MemoryRouter
-from src.rulerag.lawyer import RulesLawyer
+from .orchestrator import DungeonMasterOrchestrator
+from ..memory.router import MemoryRouter
+from ..rules.lawyer import RulesLawyer
 
 class GamePhase(str, Enum):
     CHARACTER_CREATION = "character_creation"
