@@ -1,5 +1,7 @@
 from typing import Dict, Any, List
 import uuid
+import os
+from datetime import datetime
 # LangGraph & LangChain imports
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
@@ -239,6 +241,13 @@ class DungeonMasterOrchestrator:
         last_message = final_messages[-1]
         narrative_text = last_message.content
 
+        # Persist basic conversation log for this turn
+        self._log_conversation(
+            session_id=session_id,
+            player_input=player_input,
+            narrative_text=narrative_text,
+        )
+
         # 6. Proactive rules adjudication when no explicit tool was executed
         # Detect whether any tool message was used during this graph run.
         tools_executed = any(isinstance(m, ToolMessage) for m in final_messages)
@@ -323,3 +332,28 @@ class DungeonMasterOrchestrator:
             player_stats=current_stats,
             action_log=None
         )
+
+    def _log_conversation(self, session_id: str, player_input: str, narrative_text: str) -> None:
+        """
+        Append the current turn's conversation (player input + DM response) to a log file.
+
+        Logs are stored under a local 'logs' directory, one file per session.
+        """
+        try:
+            # Ensure logs directory exists (relative to backend working dir)
+            logs_dir = "logs"
+            os.makedirs(logs_dir, exist_ok=True)
+
+            log_path = os.path.join(logs_dir, f"{session_id}.log")
+            timestamp = datetime.utcnow().isoformat()
+
+            with open(log_path, "a", encoding="utf-8") as f:
+                f.write(f"[{timestamp}] session_id={session_id}\n")
+                f.write("Player:\n")
+                f.write(f"{player_input}\n\n")
+                f.write("DungeonMaster:\n")
+                f.write(f"{narrative_text}\n")
+                f.write("-" * 40 + "\n\n")
+        except Exception as e:
+            # Logging should never break gameplay; fail silently except for debug print.
+            print(f"[Orchestrator] Failed to write conversation log: {e}")
