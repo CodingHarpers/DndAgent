@@ -34,23 +34,16 @@ class GenerationClient:
             return "Thinking... (Error in AI generation)"
 
     def generate_structured(self, system_prompt: str, user_prompt: str, response_model: Type[Any]) -> Any:
-        # Create schema definition
-        schema_json = json.dumps(response_model.model_json_schema())
-        
-        # Construct system instruction
-        system_instruction = (
-            f"{system_prompt}\n\n"
-            f"You MUST output valid JSON only, matching this schema:\n{schema_json}"
-        )
-        
         try:
+            # Use native structured output if available
             response = self.client.models.generate_content(
                 model=self.model_name,
                 contents=user_prompt,
                 config=types.GenerateContentConfig(
-                    system_instruction=system_instruction,
+                    system_instruction=system_prompt,
                     response_mime_type="application/json",
-                    temperature=0.2 # Lower temperature for structural stability
+                    response_schema=response_model,
+                    temperature=0.2 
                 )
             )
             
@@ -58,6 +51,7 @@ class GenerationClient:
             if not text:
                 return None
             
+            # Clean up potential markdown code blocks
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0]
             elif "```" in text:
@@ -68,14 +62,25 @@ class GenerationClient:
             print(f"LLM Native Structured Error: {e}")
             print("Falling back to standard generation...")
             
-            # Fallback: Retry with simple text generation if structured mode fails
+            # Fallback: Retry with manual schema injection
             try:
+                schema_json = json.dumps(response_model.model_json_schema())
+                fallback_instruction = (
+                    f"{system_prompt}\n\n"
+                    f"You MUST output a valid JSON OBJECT INSTANCE that matches the following schema. "
+                    f"Do NOT output the schema definition itself.\n\n"
+                    f"Schema:\n{schema_json}"
+                )
+                
                 # For fallback, we just append user prompt to system instruction as a simple content
-                fallback_prompt = f"{system_instruction}\n\nUser Input: {user_prompt}"
+                fallback_prompt = f"{fallback_instruction}\n\nUser Input: {user_prompt}"
                 
                 response = self.client.models.generate_content(
                     model=self.model_name,
-                    contents=fallback_prompt
+                    contents=fallback_prompt,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json"
+                    )
                 )
                 text = response.text
                 if not text:

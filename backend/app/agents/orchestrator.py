@@ -1,10 +1,16 @@
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from app.models.schemas import Scene, TurnResponse, RuleAdjudicationResult
 from app.agents.narrative_agent import NarrativeAgent
 from app.agents.rules_lawyer_agent import RulesLawyerAgent
 from app.agents.world_builder_agent import WorldBuilderAgent
 from app.memory.router import MemoryRouter
 import uuid
+from pydantic import BaseModel
+
+class RuleCheckDecision(BaseModel):
+    should_check: bool
+    query: str
+    reason: str
 
 class OrchestratorAgent:
     def __init__(self):
@@ -98,8 +104,44 @@ class OrchestratorAgent:
 
         # 3b. Standard Flow (if no tool executed)
         if not new_scene:
-            # Rules Adjudication
-            rule_result = self.rules_agent.adjudicate(player_input, context)
+            # Rules Adjudication Decision
+            rule_check_system = (
+                "You are the Game Master's PROACTIVE Rules Assistant.\n"
+                "Your goal is to identify ANY opportunity where D&D 5e mechanics should influence the outcome. Don't just validate actions; look for bonuses, checks, and lore.\n\n"
+                "### CHECK AGGRESSIVELY FOR THESE TRIGGERS:\n"
+                "1. **Situational Awareness (Perception/Insight)**:\n"
+                "   - Entering a new area? -> Check for Passive Perception (traps, hidden doors).\n"
+                "   - Meeting an NPC? -> Check for Insight (detect lies).\n"
+                "2. **Tactical Modifiers (Advantage/Disadvantage)**:\n"
+                "   - Is the player Hiding? Flanking? In dim light? Prone?\n"
+                "   - Ask Lawyer: 'Does attacking a Prone target give Advantage?'\n"
+                "3. **Character Progression & Builds**:\n"
+                "   - Did they ask about leveling up? -> Ask Lawyer: 'What features does a Fighter get at Level 3?'\n"
+                "   - Did they ask about their Race? -> Ask Lawyer: 'What are the traits of a Tiefling?'\n"
+                "4. **Action Validity & Mechanics**:\n"
+                "   - Casting spells? -> Check Range, Components (V/S/M), Slots.\n"
+                "   - Grappling/Shoving? -> Check Athletics vs Acrobatics rules.\n"
+                "5. **Lore & Knowledge**:\n"
+                "   - Inspecting a rune/monster? -> Check Arcana/Nature/History DC.\n\n"
+                "Output JSON with:\n"
+                "- should_check: bool\n"
+                "- query: str (Formulate a specific question for the Rules Lawyer describing the exact state)\n"
+                "- reason: str (Why is this check needed?)"
+            )
+            
+            rule_check_user = (
+                f"Current State: {rpg_context}\n"
+                f"Player Input: \"{player_input}\"\n"
+                "Identify any necessary rule checks, passive scores, or tactical advantages."
+            )
+            
+            decision = generation_client.generate_structured(rule_check_system, rule_check_user, RuleCheckDecision)
+            print(f"Rule Check Decision: {decision}")
+            if decision and decision.should_check:
+                print(f"[Orchestrator] Rule Check Triggered: {decision.query} (Reason: {decision.reason})")
+                rule_result = self.rules_agent.adjudicate(decision.query, context)
+            else:
+                rule_result = None # No rule check needed
             
             new_scene = self.narrative_agent.generate_scene(
                 player_input, 

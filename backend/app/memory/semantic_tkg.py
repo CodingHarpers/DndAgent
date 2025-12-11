@@ -98,8 +98,10 @@ class SemanticTKG:
 
     def get_inventory(self, session_id: str) -> List[Dict]:
         pid = "player_main"
+        # Use WHERE type(r) = 'OWNS' to avoid Neo4j warning if relationship type doesn't exist yet
         query = """
-        MATCH (p:Character {id: $id})-[:OWNS]->(i:Item)
+        MATCH (p:Character {id: $id})-[r]->(i:Item)
+        WHERE type(r) = 'OWNS'
         RETURN i.id as id, i.name as name, labels(i) as labels, i
         """
         items = []
@@ -168,8 +170,10 @@ class SemanticTKG:
         
         with self.driver.session() as session:
             # 1. Verify Ownership and Get Value
+            # Use WHERE type(r) = 'OWNS' to avoid Neo4j warning if type missing
             check_query = """
-            MATCH (p:Character {id: $pid})-[r:OWNS]->(i:Item {id: $iid})
+            MATCH (p:Character {id: $pid})-[r]->(i:Item {id: $iid})
+            WHERE type(r) = 'OWNS'
             RETURN p.gold as gold, i.value as value, i.name as name
             """
             res = session.run(check_query, pid=pid, iid=item_id).single()
@@ -187,7 +191,8 @@ class SemanticTKG:
             
             # 2. Execute Sell
             sell_query = """
-            MATCH (p:Character {id: $pid})-[r:OWNS]->(i:Item {id: $iid})
+            MATCH (p:Character {id: $pid})-[r]->(i:Item {id: $iid})
+            WHERE type(r) = 'OWNS'
             DELETE r
             SET p.gold = p.gold + $sell_value
             RETURN p.gold as new_balance

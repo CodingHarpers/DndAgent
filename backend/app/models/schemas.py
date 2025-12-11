@@ -47,15 +47,12 @@ class RuleEntry(BaseModel):
     exceptions: Optional[str] = None
     source_ref: str
 
-class RuleAdjudicationRequeust(BaseModel):
+class RuleAdjudicationRequest(BaseModel):
     query: str
     context: str
 
 class RuleAdjudicationResult(BaseModel):
-    decision: Literal["ALLOWED", "DENIED", "ROLL_CHECK", "INFO"]
-    required_rolls: List[str] = Field(default_factory=list)
     explanation: str
-    applied_rules: List[str] = Field(default_factory=list)
 
 # --- Narrative / Scene Models ---
 

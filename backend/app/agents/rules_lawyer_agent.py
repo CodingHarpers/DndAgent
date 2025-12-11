@@ -1,18 +1,23 @@
-from app.models.schemas import RuleAdjudicationResult
+from app.models.schemas import RuleAdjudicationResult, RuleAdjudicationRequest
 from typing import Dict, Any
+from app.rules.lawyer import RulesLawyer
+import json
 
 class RulesLawyerAgent:
+    def __init__(self):
+        self.lawyer = RulesLawyer()
+
     def adjudicate(self, player_input: str, context: Dict) -> RuleAdjudicationResult:
-        # Simplistic keyword check for demo
-        decision = "ALLOWED"
-        explanation = "Action proceeds normally."
-        
-        if "attack" in player_input.lower():
-            decision = "ROLL_CHECK"
-            explanation = "You need to roll for attack."
-            
+        """
+        Adjudicates the player's input based on the provided context (game state).
+        """
+        # Convert context dictionary to a string representation for the lawyer
+        # Ensure 'rpg_state' and other keys are included clearly
+        context_str = json.dumps(context, indent=2)
+        print(f"[RulesLawyerAgent] context_str: {context_str}, player_input: {player_input}")
+        req = RuleAdjudicationRequest(query=player_input, context=context_str)
+        result_text = self.lawyer.check_rule(req)
+        print(f"[RulesLawyerAgent] result_text: {result_text}")
         return RuleAdjudicationResult(
-            decision=decision,
-            explanation=explanation,
-            required_rolls=["d20"] if decision == "ROLL_CHECK" else []
+            explanation=result_text
         )
