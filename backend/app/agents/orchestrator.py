@@ -1,10 +1,16 @@
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from app.models.schemas import Scene, TurnResponse, RuleAdjudicationResult
 from app.agents.narrative_agent import NarrativeAgent
 from app.agents.rules_lawyer_agent import RulesLawyerAgent
 from app.agents.world_builder_agent import WorldBuilderAgent
 from app.memory.router import MemoryRouter
 import uuid
+from pydantic import BaseModel
+
+class RuleCheckDecision(BaseModel):
+    should_check: bool
+    query: str
+    reason: str
 
 class OrchestratorAgent:
     def __init__(self):
@@ -98,8 +104,30 @@ class OrchestratorAgent:
 
         # 3b. Standard Flow (if no tool executed)
         if not new_scene:
-            # Rules Adjudication
-            rule_result = self.rules_agent.adjudicate(player_input, context)
+            # Rules Adjudication Decision
+            rule_check_system = (
+                "You are the Game Master's assistant.\n"
+                "Your job is to decide if we need to consult the Rule Book (Lawyer) for the current situation.\n"
+                "Triggers for Rule Check:\n"
+                "A. Action Validation: Casting spells (range/target check), Attacks, Feature usage.\n"
+                "B. State Interactions: Entity is Prone, Blinded, Grappled, etc. and trying to act.\n"
+                "C. Passive Checks: Entering new areas (traps, hazards), environmental effects.\n"
+                "D. Resource Usage: Using spell slots, limited abilities (check availability).\n\n"
+                "Output JSON with:\n"
+                "- should_check: bool\n"
+                "- query: str (The specific question for the lawyer if true, else empty)\n"
+                "- reason: str (Why)"
+            )
+            
+            rule_check_user = f"Context: {rpg_context}\nPlayer Input: \"{player_input}\""
+            
+            decision = generation_client.generate_structured(rule_check_system, rule_check_user, RuleCheckDecision)
+            
+            if decision and decision.should_check:
+                print(f"[Orchestrator] Rule Check Triggered: {decision.query} (Reason: {decision.reason})")
+                rule_result = self.rules_agent.adjudicate(decision.query, context)
+            else:
+                rule_result = None # No rule check needed
             
             new_scene = self.narrative_agent.generate_scene(
                 player_input, 

@@ -6,16 +6,18 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from ingestPipeline import UnifiedDndLoader
+from .ingestPipeline import UnifiedDndLoader
 from langchain_openai import OpenAIEmbeddings
+from ..models.schemas import RuleAdjudicationRequest
 import dotenv
 dotenv.load_dotenv()
+
 
 class RulesLawyer:
     def __init__(self):
         # Configuration
-        self.persist_dir = "data/rules/chromaDB"
-        self.kb_path = "data/rules/kb"
+        self.persist_dir = os.getenv("CHROMA_DB_DIR", "backend/data/rules/ChromaDB")
+        self.kb_path = os.getenv("RULES_KB_DIR", "backend/data/rules/kb")
         
         # Initialize Embeddings
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -24,6 +26,7 @@ class RulesLawyer:
         if os.path.exists(self.persist_dir) and os.listdir(self.persist_dir):
             print(f"Loading existing vector store from {self.persist_dir}...")
             self.vectorstore = Chroma(
+                collection_name='vector_db',
                 persist_directory=self.persist_dir,
                 embedding_function=self.embeddings
             )
@@ -42,15 +45,20 @@ class RulesLawyer:
             )
             # 使用 split_documents 而不是直接用 ingested_docs
             ingested_docs = text_splitter.split_documents(ingested_docs)
+            print(f"Split into {len(ingested_docs)} chunks.")
             print("starting to build vector store")
             self.vectorstore = Chroma.from_documents(
+                collection_name='vector_db',
                 documents=ingested_docs,
                 embedding=self.embeddings,
                 persist_directory=self.persist_dir
             )
             print("vector store built")
+        
         self.retriever = self.vectorstore.as_retriever(search_kwargs={"k": 10})
         print("retriever initialized")
+        # print(self.retriever.invoke("What is the rule for casting a spell?"))
+        #
         # Define Prompt 
         template = """You are the **Dungeon Master's Intelligent Rule Assistant**.
 Your goal is to function as a real-time "Rule Knowledge Base," interpreting the input scenario based strictly on the provided RULES and DOCUMENTS to guide the DM's next steps.
@@ -122,23 +130,23 @@ Answer:"""
 
         context_parts = []
         rules_parts = []
-        with open("docs.txt", "w") as f:
-            for d in docs:
-                f.write(str(d))
-                f.write("\n\n")
-                f.write("--------------------------------")
-                f.write("\n\n")
+        # with open("docs.txt", "w") as f:
+        #     for d in docs:
+        #         f.write(str(d))
+        #         f.write("\n\n")
+        #         f.write("--------------------------------")
+        #         f.write("\n\n")
  
         for d in docs:
             try:
                 # Restore original JSON from metadata
                 data = json.loads(d.metadata['original_json'])
                 doc_type = d.metadata['type']
-                with open("docs.txt", "a") as f:
-                    f.write(str(d))
-                    f.write("\n\n")
-                    f.write("--------------------------------")
-                    f.write("\n\n")
+                # with open("docs.txt", "a") as f:
+                #     f.write(str(d))
+                #     f.write("\n\n")
+                #     f.write("--------------------------------")
+                #     f.write("\n\n")
                 
                 if doc_type == "entity_or_class":
                     name = data.get('entity_name') or data.get('class_name')
@@ -176,28 +184,29 @@ Answer:"""
             except Exception as e:
                 print(f"Error parsing doc metadata: {e}")
                 continue
-        with open("context_parts.txt", "w") as f:
-            f.write("\n\n".join(context_parts))
-        with open("rules_parts.txt", "w") as f:
-            f.write("\n".join(rules_parts))
+        # with open("context_parts.txt", "w") as f:
+        #     f.write("\n\n".join(context_parts))
+        # with open("rules_parts.txt", "w") as f:
+        #     f.write("\n".join(rules_parts))
 
         return {
             "context": "\n\n".join(context_parts),
             "rules": "\n".join(rules_parts)
         }
 
-    def check_rule(self, question):
+    def check_rule(self, description:RuleAdjudicationRequest):
         """
-        Applies strict logic to determine the outcome.
-        query: str
+        Applies strict logic to determine the outcome and guide the DM's next steps.
+        description: RuleAdjudicationRequest
         """
-        return self.chain.invoke(question)
+        input_text = f"Context: {description.context}\nQuery: {description.query}"
+        return self.chain.invoke(input_text)
 
 if __name__ == "__main__":
     print("Initializing RulesLawyer...")
     lawyer = RulesLawyer()
     print("Adjudicating...")
-    result = lawyer.check_rule("The player is casting a spell and the target is immune to the spell.")
+    result = lawyer.check_rule(RuleAdjudicationRequest(query="The player is casting a spell and the target is immune to the spell. The spell is Fireball.", context="The player is casting a spell and the target is immune to the spell. The spell is Fireball."))
     print("Result:")
     print(result)
     with open("result.txt", "w") as f:
