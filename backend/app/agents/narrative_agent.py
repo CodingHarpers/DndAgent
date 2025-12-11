@@ -1,4 +1,5 @@
 from typing import List, Dict, Any, Optional
+import os
 
 # LangChain core
 from langchain_core.messages import BaseMessage, SystemMessage, HumanMessage, AIMessage

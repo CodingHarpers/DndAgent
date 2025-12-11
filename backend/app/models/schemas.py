@@ -107,11 +107,16 @@ class WorldExtractionResult(BaseModel):
 # --- RPG Mechanics Models ---
 
 class PlayerStats(BaseModel):
+    name: Optional[str] = "Traveler"
+    race: Optional[str] = None
+    char_class: Optional[str] = Field(None, alias="class")
     hp_current: int
     hp_max: int
     gold: int
     power: int
     speed: int
+
+    model_config = ConfigDict(populate_by_name=True)
 
 class InventoryItem(BaseModel):
     id: str

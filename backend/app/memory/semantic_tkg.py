@@ -97,6 +97,9 @@ class SemanticTKG:
             if result:
                 props = result['p']
                 return {
+                    "name": props.get("name", "Traveler"),
+                    "race": props.get("race"),
+                    "class": props.get("class"),
                     "hp_current": props.get("hp_current", 10),
                     "hp_max": props.get("hp_max", 10),
                     "gold": props.get("gold", 0),
@@ -104,6 +107,19 @@ class SemanticTKG:
                     "speed": props.get("speed", 10)
                 }
             return {}
+
+    def update_player_profile(self, session_id: str, name: str, race: str, char_class: str) -> Dict[str, Any]:
+        """Updates the player's profile (Name, Race, Class)."""
+        pid = "player_main"
+        query = (
+            "MATCH (p:Character {id: $id}) "
+            "SET p.name = $name, p.race = $race, p.class = $char_class "
+            "RETURN p"
+        )
+        with self.driver.session() as session:
+            session.run(query, id=pid, name=name, race=race, char_class=char_class)
+        return {"success": True, "message": f"Character updated: {name} the {race} {char_class}"}
+
 
     def get_inventory(self, session_id: str) -> List[Dict]:
         pid = "player_main"

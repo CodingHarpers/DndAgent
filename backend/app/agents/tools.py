@@ -42,3 +42,14 @@ class DndTools:
             result = self.tkg.attack(session_id, target_id)
             return {"result": result, "action": "attack", "target_id": target_id}
         return attack
+
+    def get_create_character_tool(self):
+        @tool
+        def create_character(name: str, race: str, char_class: str, session_id: str) -> Dict[str, Any]:
+            """
+            Sets the player's Name, Race, and Class.
+            Use this tool ONLY during character creation when the player provides these details.
+            """
+            result = self.tkg.update_player_profile(session_id, name, race, char_class)
+            return {"result": result, "action": "create_character"}
+        return create_character

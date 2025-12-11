@@ -56,14 +56,26 @@ class DungeonMasterOrchestrator:
         self.tools = [
             self.tool_factory.get_buy_tool(),
             self.tool_factory.get_sell_tool(),
-            self.tool_factory.get_attack_tool()
+            self.tool_factory.get_attack_tool(),
+            self.tool_factory.get_create_character_tool()
         ]
         
         # 3. Bind tools to the Narrative Agent's LLM
         # Note: NarrativeAgent needs a method to bind tools. We will add this.
         self.narrative_agent_wrapper.bind_tools(self.tools)
 
-        # 4. Build the LangGraph
+        # 4. Load Module
+        try:
+             with open("data/story/hallows_end.txt", "r") as f:
+                self.module_content = f.read()
+        except FileNotFoundError:
+             try:
+                 with open("../data/story/hallows_end.txt", "r") as f:
+                    self.module_content = f.read()
+             except:
+                self.module_content = "Welcome to the adventure."
+
+        # 5. Build the LangGraph
         self.app = self._build_graph()
 
     def _build_graph(self):
@@ -143,14 +155,16 @@ class DungeonMasterOrchestrator:
             "hp_current": 20, "hp_max": 20, "gold": 50, "power": 12, "speed": 10
         }
         self.world_agent.tkg.create_player(session_id, "Traveler", initial_stats)
+        # Reset character details for new session
+        self.world_agent.tkg.update_player_profile(session_id, "Traveler", "Unknown", "Unknown")
 
         initial_scene = Scene(
             scene_id=session_id,
             title="The Beginning",
-            narrative_text="You stand at the entrance of a dark dungeon. The air is cold and damp.",
-            location="Dungeon Entrance",
+            narrative_text=f"{self.module_content}\n\nBefore we begin, please tell me: What is your Name, Race, and Class?",
+            location="Hallow's End",
             characters_present=[],
-            available_actions=["Enter the dungeon", "Look around"],
+            available_actions=["Create Character"],
             metadata={"session_id": session_id}
         )
         return initial_scene
@@ -184,9 +198,29 @@ class DungeonMasterOrchestrator:
         # We can treat this as a fresh tailored prompt or append to a history if we were tracking it statefully.
         # Since this API is stateless per request (restoring session), we construct a robust system prompt.
         
+        # Check Character Creation Status
+        player_race = stats.get('race')
+        player_class = stats.get('class')
+        
+        if not player_race or not player_class or player_race == "Unknown" or player_class == "Unknown":
+             system_instruction = (
+                "GAME PHASE: CHARACTER CREATION\n"
+                "You are the Dungeon Master. The player needs to create their character.\n"
+                "The player should provide Name, Race, and Class.\n"
+                "Extract these details and use the `create_character` tool to save them.\n"
+                "If information is missing, ask for it.\n"
+                "Once the tool is successfully called, transition to the game intro.\n"
+                f"Module Content: {self.module_content}\n"
+             )
+        else:
+             system_instruction = (
+                "You are the Dungeon Master. Guide the player through the adventure.\n"
+                f"Module Content: {self.module_content}\n"
+                "Use the provided tools to manage game state (Buying, Selling, Attacking).\n"
+             )
+
         system_prompt = (
-            "You are the Dungeon Master. Guide the player through the adventure.\n"
-            "Use the provided tools to manage game state (Buying, Selling, Attacking).\n"
+            f"{system_instruction}\n"
             "When calling a tool, ALWAYS pass the 'session_id' provided in the context.\n"
             f"{rpg_context}\n"
             f"Memory Context: {memory_context}\n"
