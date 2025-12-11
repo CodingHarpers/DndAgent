@@ -95,7 +95,6 @@ Answer:"""
         self.prompt = ChatPromptTemplate.from_template(template)
         
         # Initialize LLM
-        # Using gemini-1.5-flash as the currently available flash model
         self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
         
         # Build Chain

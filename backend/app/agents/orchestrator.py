@@ -3,7 +3,13 @@ import uuid
 # LangGraph & LangChain imports
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
-from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, SystemMessage
+from langchain_core.messages import (
+    BaseMessage,
+    HumanMessage,
+    AIMessage,
+    SystemMessage,
+    ToolMessage,
+)
 # App imports
 from app.models.schemas import Scene, TurnResponse, PlayerStats
 from app.agents.narrative_agent import NarrativeAgent
@@ -12,6 +18,7 @@ from app.agents.world_builder_agent import WorldBuilderAgent
 from app.memory.router import MemoryRouter
 from app.agents.tools import DndTools
 from app.agents.state import AgentState
+from app.services.generation import generation_client
 import uuid
 from pydantic import BaseModel
 
@@ -19,7 +26,7 @@ class RuleCheckDecision(BaseModel):
     should_check: bool
     query: str
     reason: str
-    
+
 class DungeonMasterOrchestrator:
     """
     Orchestrates the game loop using a LangGraph state machine.
@@ -198,61 +205,62 @@ class DungeonMasterOrchestrator:
         last_message = final_messages[-1]
         narrative_text = last_message.content
 
+        # 6. Proactive rules adjudication when no explicit tool was executed
+        # Detect whether any tool message was used during this graph run.
+        tools_executed = any(isinstance(m, ToolMessage) for m in final_messages)
 
+        rule_result = None
+        if not tools_executed:
+            # Rules Adjudication Decision (ported from legacy orchestrator flow)
+            rule_check_system = (
+                "You are the Game Master's PROACTIVE Rules Assistant.\n"
+                "Your goal is to identify ANY opportunity where D&D 5e mechanics should influence the outcome. Don't just validate actions; look for bonuses, checks, and lore.\n\n"
+                "### CHECK AGGRESSIVELY FOR THESE TRIGGERS:\n"
+                "1. **Situational Awareness (Perception/Insight)**:\n"
+                "   - Entering a new area? -> Check for Passive Perception (traps, hidden doors).\n"
+                "   - Meeting an NPC? -> Check for Insight (detect lies).\n"
+                "2. **Tactical Modifiers (Advantage/Disadvantage)**:\n"
+                "   - Is the player Hiding? Flanking? In dim light? Prone?\n"
+                "   - Ask Lawyer: 'Does attacking a Prone target give Advantage?'\n"
+                "3. **Character Progression & Builds**:\n"
+                "   - Did they ask about leveling up? -> Ask Lawyer: 'What features does a Fighter get at Level 3?'\n"
+                "   - Did they ask about their Race? -> Ask Lawyer: 'What are the traits of a Tiefling?'\n"
+                "4. **Action Validity & Mechanics**:\n"
+                "   - Casting spells? -> Check Range, Components (V/S/M), Slots.\n"
+                "   - Grappling/Shoving? -> Check Athletics vs Acrobatics rules.\n"
+                "5. **Lore & Knowledge**:\n"
+                "   - Inspecting a rune/monster? -> Check Arcana/Nature/History DC.\n\n"
+                "Output JSON with:\n"
+                "- should_check: bool\n"
+                "- query: str (Formulate a specific question for the Rules Lawyer describing the exact state)\n"
+                "- reason: str (Why is this check needed?)"
+            )
 
-            
+            rule_check_user = (
+                f"Current State: {rpg_context}\n"
+                f"Player Input: \"{player_input}\"\n"
+                f"Final Narrative: \"{narrative_text}\"\n"
+                "Identify any necessary rule checks, passive scores, or tactical advantages."
+            )
 
-    # # 3b. Standard Flow (if no tool executed)
-    # if not new_scene:
-    #     # Rules Adjudication Decision
-    #     rule_check_system = (
-    #         "You are the Game Master's PROACTIVE Rules Assistant.\n"
-    #         "Your goal is to identify ANY opportunity where D&D 5e mechanics should influence the outcome. Don't just validate actions; look for bonuses, checks, and lore.\n\n"
-    #         "### CHECK AGGRESSIVELY FOR THESE TRIGGERS:\n"
-    #         "1. **Situational Awareness (Perception/Insight)**:\n"
-    #         "   - Entering a new area? -> Check for Passive Perception (traps, hidden doors).\n"
-    #         "   - Meeting an NPC? -> Check for Insight (detect lies).\n"
-    #         "2. **Tactical Modifiers (Advantage/Disadvantage)**:\n"
-    #         "   - Is the player Hiding? Flanking? In dim light? Prone?\n"
-    #         "   - Ask Lawyer: 'Does attacking a Prone target give Advantage?'\n"
-    #         "3. **Character Progression & Builds**:\n"
-    #         "   - Did they ask about leveling up? -> Ask Lawyer: 'What features does a Fighter get at Level 3?'\n"
-    #         "   - Did they ask about their Race? -> Ask Lawyer: 'What are the traits of a Tiefling?'\n"
-    #         "4. **Action Validity & Mechanics**:\n"
-    #         "   - Casting spells? -> Check Range, Components (V/S/M), Slots.\n"
-    #         "   - Grappling/Shoving? -> Check Athletics vs Acrobatics rules.\n"
-    #         "5. **Lore & Knowledge**:\n"
-    #         "   - Inspecting a rune/monster? -> Check Arcana/Nature/History DC.\n\n"
-    #         "Output JSON with:\n"
-    #         "- should_check: bool\n"
-    #         "- query: str (Formulate a specific question for the Rules Lawyer describing the exact state)\n"
-    #         "- reason: str (Why is this check needed?)"
-    #     )
-        
-    #     rule_check_user = (
-    #         f"Current State: {rpg_context}\n"
-    #         f"Player Input: \"{player_input}\"\n"
-    #         "Identify any necessary rule checks, passive scores, or tactical advantages."
-    #     )
-        
-    #     decision = generation_client.generate_structured(rule_check_system, rule_check_user, RuleCheckDecision)
-    #     print(f"Rule Check Decision: {decision}")
-    #     if decision and decision.should_check:
-    #         print(f"[Orchestrator] Rule Check Triggered: {decision.query} (Reason: {decision.reason})")
-    #         rule_result = self.rules_agent.adjudicate(decision.query, context)
-    #     else:
-    #         rule_result = None # No rule check needed
-        
-    #     new_scene = self.narrative_agent.generate_scene(
-    #         player_input, 
-    #         context, 
-    #         rule_result
-    #     )
-        
-    #     # World Update for standard narrative
-    #     if new_scene:
-    #         self.world_agent.update_world(new_scene)
-        
+            decision = generation_client.generate_structured(
+                rule_check_system, rule_check_user, RuleCheckDecision
+            )
+            print(f"Rule Check Decision: {decision}")
+
+            if decision and decision.should_check:
+                print(
+                    f"[Orchestrator] Rule Check Triggered: {decision.query} "
+                    f"(Reason: {decision.reason})"
+                )
+                context: Dict[str, Any] = {
+                    "rpg_state": rpg_context,
+                    "memory_context": memory_context,
+                    "player_input": player_input,
+                    "narrative_text": narrative_text,
+                    "session_id": session_id,
+                }
+                rule_result = self.rules_agent.adjudicate(decision.query, context)
 
         try:
             current_stats = PlayerStats(**tkg.get_player_stats(session_id))
@@ -277,7 +285,7 @@ class DungeonMasterOrchestrator:
 
         return TurnResponse(
             scene=new_scene,
-            rule_outcome=None, # Handled implicitly by tools now
+            rule_outcome=rule_result,
             player_stats=current_stats,
             action_log=None
         )

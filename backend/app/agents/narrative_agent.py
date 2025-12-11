@@ -1,6 +1,4 @@
-import os
 from typing import List, Dict, Any, Optional
-from dotenv import load_dotenv
 
 # LangChain core
 from langchain_core.messages import BaseMessage, SystemMessage, HumanMessage, AIMessage
@@ -12,7 +10,8 @@ from google import genai
 from google.genai import types
 from google.genai.types import HttpOptions
 
-load_dotenv()
+# App imports
+from app.config import settings
 
 class NarrativeAgent(Runnable):
     """
@@ -27,15 +26,13 @@ class NarrativeAgent(Runnable):
     for better control and latest features.
     """
     
-    def __init__(self, model_name: str = "gemini-2.5-flash", tools: List = None):
-        self.model_name = model_name
+    def __init__(self, model_name: str = None, tools: List = None):
+        self.model_name = model_name or settings.LLM_MODEL_NAME
         self.tools = tools or []
         
         # Initialize Client
-        # Ensure GEMINI_API_KEY is in .env
-        api_key = os.getenv("GEMINI_API_KEY")
         self.client = genai.Client(
-            api_key=api_key,
+            api_key=settings.GEMINI_API_KEY,
             http_options=HttpOptions(api_version="v1beta")
         )
         

@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     # LLM
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
-    LLM_MODEL_NAME: str = "gemini-2.0-flash"
+    LLM_MODEL_NAME: str = "gemini-2.5-flash"
     EMBEDDING_MODEL_NAME: str = "text-embedding-3-small"
 
     # Databases
