@@ -28,3 +28,4 @@ backend/app/api/routes_world.cpython-311.pyc
 backend/app/agents/__pycache__/
 backend/app/__pycache__/
 chroma_db/
+backend/data/logs/

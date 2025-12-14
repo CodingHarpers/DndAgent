@@ -369,7 +369,7 @@ class DungeonMasterOrchestrator:
         """
         try:
             # Ensure logs directory exists (relative to backend working dir)
-            logs_dir = "logs"
+            logs_dir = "data/logs"
             os.makedirs(logs_dir, exist_ok=True)
 
             log_path = os.path.join(logs_dir, f"{session_id}.jsonl")
@@ -382,6 +382,7 @@ class DungeonMasterOrchestrator:
             }
             with open(log_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            print(f"[Orchestrator] Logged turn {round_number} to: {log_path}")
         except Exception as e:
             # Logging should never break gameplay; fail silently except for debug print.
             print(f"[Orchestrator] Failed to write conversation log: {e}")
