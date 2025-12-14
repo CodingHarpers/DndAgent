@@ -1,7 +1,7 @@
 from typing import Dict, Any, List
 import uuid
 import os
-from datetime import datetime
+import json
 
 # LangGraph & LangChain imports
 from langgraph.graph import StateGraph, END
@@ -84,6 +84,8 @@ class DungeonMasterOrchestrator:
 
         # 6. In-memory session history storage
         self.session_histories: Dict[str, List[BaseMessage]] = {}
+        # 7. Per-session round counter (1, 2, 3...) for structured logging / analytics
+        self.session_round_numbers: Dict[str, int] = {}
 
     def _build_graph(self):
         """
@@ -156,6 +158,8 @@ class DungeonMasterOrchestrator:
         Initializes a new game session.
         """
         session_id = str(uuid.uuid4())
+        # Initialize round counter for this session
+        self.session_round_numbers[session_id] = 0
         
         # Initialize Player in TKG
         initial_stats = {
@@ -185,6 +189,10 @@ class DungeonMasterOrchestrator:
         3. Runs the Graph.
         4. Returns the final narrative and updated state.
         """
+        # Round counter (monotonic per session)
+        round_number = self.session_round_numbers.get(session_id, 0) + 1
+        self.session_round_numbers[session_id] = round_number
+
         # 1. Fetch RPG State
         tkg = self.world_agent.tkg
         stats = tkg.get_player_stats(session_id)
@@ -251,13 +259,6 @@ class DungeonMasterOrchestrator:
         last_message = final_messages[-1]
         narrative_text = last_message.content
 
-        # Persist basic conversation log for this turn
-        self._log_conversation(
-            session_id=session_id,
-            player_input=player_input,
-            narrative_text=narrative_text,
-        )
-
         # 6. Proactive rules adjudication when no explicit tool was executed
         # Detect whether any tool message was used during this graph run.
         tools_executed = any(isinstance(m, ToolMessage) for m in final_messages)
@@ -315,6 +316,15 @@ class DungeonMasterOrchestrator:
                 }
                 rule_result = self.rules_agent.adjudicate(decision.query, context)
 
+        # Persist structured JSON log for this turn (after we know rule_result)
+        self._log_conversation(
+            session_id=session_id,
+            round_number=round_number,
+            player_input=player_input,
+            rule_result=(rule_result.explanation if rule_result else None),
+            narrative_text=narrative_text,
+        )
+
         try:
             current_stats = PlayerStats(**tkg.get_player_stats(session_id))
         except:
@@ -343,27 +353,35 @@ class DungeonMasterOrchestrator:
             action_log=None
         )
 
-    def _log_conversation(self, session_id: str, player_input: str, narrative_text: str) -> None:
+    def _log_conversation(
+        self,
+        session_id: str,
+        round_number: int,
+        player_input: str,
+        rule_result: str | None,
+        narrative_text: str,
+    ) -> None:
         """
-        Append the current turn's conversation (player input + DM response) to a log file.
+        Append the current turn's data to a JSONL log file (one JSON object per line).
 
         Logs are stored under a local 'logs' directory, one file per session.
+        Intentionally excludes timestamps to make downstream processing stable/reproducible.
         """
         try:
             # Ensure logs directory exists (relative to backend working dir)
             logs_dir = "logs"
             os.makedirs(logs_dir, exist_ok=True)
 
-            log_path = os.path.join(logs_dir, f"{session_id}.log")
-            timestamp = datetime.utcnow().isoformat()
-
+            log_path = os.path.join(logs_dir, f"{session_id}.jsonl")
+            record = {
+                "round_number": round_number,
+                "session_id": session_id,
+                "player_input": player_input,
+                "rule_result": rule_result,
+                "narrative_text": narrative_text,
+            }
             with open(log_path, "a", encoding="utf-8") as f:
-                f.write(f"[{timestamp}] session_id={session_id}\n")
-                f.write("Player:\n")
-                f.write(f"{player_input}\n\n")
-                f.write("DungeonMaster:\n")
-                f.write(f"{narrative_text}\n")
-                f.write("-" * 40 + "\n\n")
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
         except Exception as e:
             # Logging should never break gameplay; fail silently except for debug print.
             print(f"[Orchestrator] Failed to write conversation log: {e}")
