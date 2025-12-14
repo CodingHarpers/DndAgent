@@ -264,7 +264,7 @@ class DungeonMasterOrchestrator:
         tools_executed = any(isinstance(m, ToolMessage) for m in final_messages)
 
         rule_result = None
-        if not tools_executed:
+        if True:
             # Rules Adjudication Decision (ported from legacy orchestrator flow)
             rule_check_system = (
                 "You are the Game Master's PROACTIVE Rules Assistant.\n"
@@ -377,7 +377,7 @@ class DungeonMasterOrchestrator:
                 "round_number": round_number,
                 "session_id": session_id,
                 "player_input": player_input,
-                "rule_result": rule_result,
+                # "rule_result": rule_result,
                 "narrative_text": narrative_text,
             }
             with open(log_path, "a", encoding="utf-8") as f:
