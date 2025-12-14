@@ -1,6 +1,6 @@
 ## Preparation
 Use preprocessed kb files, or
-1. deploy dnd api and run `download_data.py`.
+1. deploy [dnd api](https://www.dnd5eapi.co/) and run `download_data.py`.
 2. run `process_kb.py` to parse raw api content to rule knowledge base.
 ## ingested file statics
 ```
