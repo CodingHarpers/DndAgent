@@ -1,5 +1,8 @@
 from typing import Dict, Any, List
 import uuid
+import os
+from datetime import datetime
+
 # LangGraph & LangChain imports
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
@@ -19,13 +22,14 @@ from app.memory.router import MemoryRouter
 from app.agents.tools import DndTools
 from app.agents.state import AgentState
 from app.services.generation import generation_client
-import uuid
 from pydantic import BaseModel
+
 
 class RuleCheckDecision(BaseModel):
     should_check: bool
     query: str
     reason: str
+
 
 class DungeonMasterOrchestrator:
     """
@@ -66,13 +70,13 @@ class DungeonMasterOrchestrator:
 
         # 4. Load Module
         try:
-             with open("data/story/hallows_end.txt", "r") as f:
+            with open("data/story/hallows_end.txt", "r") as f:
                 self.module_content = f.read()
         except FileNotFoundError:
-             try:
-                 with open("../data/story/hallows_end.txt", "r") as f:
+            try:
+                with open("../data/story/hallows_end.txt", "r") as f:
                     self.module_content = f.read()
-             except:
+            except:
                 self.module_content = "Welcome to the adventure."
 
         # 5. Build the LangGraph
@@ -191,7 +195,7 @@ class DungeonMasterOrchestrator:
             f"Health: {stats.get('hp_current')}/{stats.get('hp_max')}\n"
             f"Gold: {stats.get('gold')}\n"
             f"Inventory: {[i['name'] for i in inventory]}\n"
-            f"Session ID: {session_id}" # Important for tools to know the session!
+            f"Session ID: {session_id}"  # Important for tools to know the session!
         )
         
         # 2. Retrieve Memory Context
@@ -206,7 +210,7 @@ class DungeonMasterOrchestrator:
         player_class = stats.get('class')
         
         if not player_race or not player_class or player_race == "Unknown" or player_class == "Unknown":
-             system_instruction = (
+            system_instruction = (
                 "GAME PHASE: CHARACTER CREATION\n"
                 "You are the Dungeon Master. The player needs to create their character.\n"
                 "The player should provide Name, Race, and Class.\n"
@@ -214,13 +218,13 @@ class DungeonMasterOrchestrator:
                 "If information is missing, ask for it.\n"
                 "Once the tool is successfully called, transition to the game intro.\n"
                 f"Module Content: {self.module_content}\n"
-             )
+            )
         else:
-             system_instruction = (
+            system_instruction = (
                 "You are the Dungeon Master. Guide the player through the adventure.\n"
                 f"Module Content: {self.module_content}\n"
                 "Use the provided tools to manage game state (Buying, Selling, Attacking).\n"
-             )
+            )
 
         system_prompt = (
             f"{system_instruction}\n"
@@ -239,13 +243,20 @@ class DungeonMasterOrchestrator:
         # 5. Extract Result & Update History
         final_messages = final_state["messages"]
         
-        # Update history: Filter out the initial SystemMessage (index 0) and store the rest
+        # Update history: Filter out the initial SystemMessage and store the rest
         # This preserves the full conversation flow including tool calls
         new_history = [m for m in final_messages if not isinstance(m, SystemMessage)]
         self.session_histories[session_id] = new_history
 
         last_message = final_messages[-1]
         narrative_text = last_message.content
+
+        # Persist basic conversation log for this turn
+        self._log_conversation(
+            session_id=session_id,
+            player_input=player_input,
+            narrative_text=narrative_text,
+        )
 
         # 6. Proactive rules adjudication when no explicit tool was executed
         # Detect whether any tool message was used during this graph run.
@@ -315,13 +326,13 @@ class DungeonMasterOrchestrator:
             scene_id=session_id,
             title="Adventure Continues",
             narrative_text=narrative_text,
-            location="Unknown", # Ideally extracted from state
+            location="Unknown",  # Ideally extracted from state
             characters_present=[],
             available_actions=[],
             metadata={"session_id": session_id}
         )
 
-        # 6. Update World State (Async in production, sync here for MVP)
+        # 7. Update World State (Async in production, sync here for MVP)
         # Verify that we actually want to update the world with this narrative
         self.world_agent.update_world(new_scene)
 
@@ -331,3 +342,28 @@ class DungeonMasterOrchestrator:
             player_stats=current_stats,
             action_log=None
         )
+
+    def _log_conversation(self, session_id: str, player_input: str, narrative_text: str) -> None:
+        """
+        Append the current turn's conversation (player input + DM response) to a log file.
+
+        Logs are stored under a local 'logs' directory, one file per session.
+        """
+        try:
+            # Ensure logs directory exists (relative to backend working dir)
+            logs_dir = "logs"
+            os.makedirs(logs_dir, exist_ok=True)
+
+            log_path = os.path.join(logs_dir, f"{session_id}.log")
+            timestamp = datetime.utcnow().isoformat()
+
+            with open(log_path, "a", encoding="utf-8") as f:
+                f.write(f"[{timestamp}] session_id={session_id}\n")
+                f.write("Player:\n")
+                f.write(f"{player_input}\n\n")
+                f.write("DungeonMaster:\n")
+                f.write(f"{narrative_text}\n")
+                f.write("-" * 40 + "\n\n")
+        except Exception as e:
+            # Logging should never break gameplay; fail silently except for debug print.
+            print(f"[Orchestrator] Failed to write conversation log: {e}")
