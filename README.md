@@ -14,6 +14,7 @@
 - [Architecture](#-architecture)
 - [Data Monitoring](#-data-monitoring)
 - [Troubleshooting](#-troubleshooting)
+- [Detailed Instructions](INSTRUCTION.md)
 
 ---
 
@@ -36,14 +37,19 @@ The project is divided into a Python-based backend (FastAPI + LangGraph) and a N
 │   └── components/           # React Components (CombatLog, InventoryPanel)
 ├── data/                     # Data Storage
 │   ├── rules/                # D&D 5e Rules Data (JSON)
-│   └── story/                # Story Modules
+│   ├── story/                # Story Modules
+│   └── logs/                 # Session Logs
 ├── scripts/                  # Root-level experiment scripts
+├── tests/                    # Unit Tests
 └── docker-compose.yml        # Infrastructure Definition
 ```
 
 ---
 
 ## 🚀 Installation
+
+> [!TIP]
+> For a detailed, step-by-step setup guide for new teammates, please refer to [INSTRUCTION.md](INSTRUCTION.md).
 
 ### 1. Prerequisites
 *   **Docker Desktop**: Must be installed and running.
@@ -204,10 +210,10 @@ Visualize the game world and memory in the Neo4j Browser.
 
 ## 🐛 Troubleshooting
 
+For a comprehensive guide on common issues (API keys, database connections, logging), please refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
 | Issue | Solution |
 | :--- | :--- |
-| **API Key Error** | Check `.env` file and ensure `GOOGLE_API_KEY` is set. Restart containers. |
+| **API Key Error** | Check `.env` file and ensure `GOOGLE_API_KEY` is set. |
 | **Database Empty** | Run the seed command: `docker-compose exec backend python -m app.scripts.seed` |
 | **Connection Refused** | Ensure Docker containers are running: `docker-compose ps` |
-| **Frontend/Backend Logs** | View logs: `docker-compose logs -f backend` or `frontend` |
-| **Rebuild Required** | If you changed `requirements.txt`: `docker-compose up --build` |
