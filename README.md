@@ -3,29 +3,63 @@
 
 "Erudite Automaton" – A fully autonomous AI Dungeon Master (DM) for D&D 5e.
 
-## 🚀 Quick Start
+---
+
+## 📚 Table of Contents
+- [Code Structure](#-code-structure)
+- [Installation](#-installation)
+- [Environment Setup](#-environment-setup)
+- [Usage & Demonstrations](#-usage--demonstrations)
+- [Reproducible Experiments](#-reproducible-experiments)
+- [Architecture](#-architecture)
+- [Data Monitoring](#-data-monitoring)
+- [Troubleshooting](#-troubleshooting)
+
+---
+
+## 📂 Code Structure
+
+The project is divided into a Python-based backend (FastAPI + LangGraph) and a Next.js frontend.
+
+```text
+/
+├── backend/                  # Core Logic
+│   ├── app/
+│   │   ├── agents/           # AI Agents (Orchestrator, Narrative, Rules, World)
+│   │   ├── api/              # FastAPI Routes (Play, Debug)
+│   │   ├── memory/           # Hybrid Memory (Neo4j + Vector Store)
+│   │   ├── models/           # Pydantic Schemas
+│   │   └── rules/            # Rules Adjudication Engine
+│   └── scripts/              # Utility scripts (Seeding, Testing)
+├── frontend/                 # UI
+│   ├── app/                  # Next.js App Router Pages
+│   └── components/           # React Components (CombatLog, InventoryPanel)
+├── data/                     # Data Storage
+│   ├── rules/                # D&D 5e Rules Data (JSON)
+│   └── story/                # Story Modules
+├── scripts/                  # Root-level experiment scripts
+└── docker-compose.yml        # Infrastructure Definition
+```
+
+---
+
+## 🚀 Installation
 
 ### 1. Prerequisites
-*   **Docker Desktop** (running)
-*   **Google Gemini API Key** (from [Google AI Studio](https://aistudio.google.com/))
+*   **Docker Desktop**: Must be installed and running.
+*   **Google Gemini API Key**: Obtain one from [Google AI Studio](https://aistudio.google.com/).
 
-### 2. Setup Environment
-The first time you run the start script, it will generate a `.env` file for you.
+### 2. Setup
+Run the startup script to initialize your environment file.
 
 ```bash
 chmod +x start.sh
 ./start.sh
 ```
 
-**STOP!** The script will pause or fail if the API key is missing.
-Open the newly created `.env` file in the root directory and paste your key:
+**Note**: The script will likely pause or fail the first time because your API key is missing.
 
-```bash
-# .env
-GOOGLE_API_KEY=your_actual_api_key_here
-```
-
-### 3. Run the Project
+### 3. Run the Application
 Start the entire stack (Backend + Frontend + Neo4j):
 
 ```bash
@@ -33,44 +67,147 @@ Start the entire stack (Backend + Frontend + Neo4j):
 ```
 
 *   **Frontend**: [http://localhost:3000](http://localhost:3000)
-*   **Backend API**: [http://localhost:8000/docs](http://localhost:8000/docs)
+*   **Backend API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
 *   **Neo4j Browser**: [http://localhost:7474](http://localhost:7474)
 
-### 4. Seed the World (Important!)
-The database starts empty. To populate it with the initial world (Locations, NPCs, Factions), run:
+### 4. Seed the World (Required)
+The database starts empty. Populate it with initial locations, NPCs, and relationships:
 
 ```bash
 docker-compose exec backend python -m app.scripts.seed
 ```
 
-You should see output indicating that Locations, NPCs, and Relationships have been added.
+---
 
-## 🛠️ Data Monitoring (Neo4j)
+## ⚙️ Environment Setup
 
-You can visualize the game world and memory in the Neo4j Browser.
+The project uses a `.env` file in the root directory.
+
+| Variable | Description | Default |
+| :--- | :--- | :--- |
+| `GOOGLE_API_KEY` | **Required.** Your Gemini API Key. | None |
+| `NEO4J_URI` | Address of the Neo4j database. | `bolt://neo4j:7687` |
+| `NEO4J_USER` | Database username. | `neo4j` |
+| `NEO4J_PASSWORD` | Database password. | `password` |
+| `LLM_MODEL_NAME` | Model to use for generation. | `gemini-1.5-pro` |
+
+---
+
+## 🎮 Usage & Demonstrations
+
+### Web Interface
+Navigate to [http://localhost:3000](http://localhost:3000).
+1.  Click **"Start Adventure"**.
+2.  Type actions like *"I look around"* or *"I attack the goblin"*.
+3.  View your **Inventory** and **Stats** updating in real-time.
+
+### API Usage
+You can interact directly with the backend via HTTP.
+
+**Start a Session:**
+```bash
+curl -X POST "http://localhost:8000/api/play/start_session" \
+     -H "Content-Type: application/json" \
+     -d '{}'
+```
+
+**Take an Action:**
+```bash
+curl -X POST "http://localhost:8000/api/play/step" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "session_id": "YOUR_SESSION_ID",
+           "text": "I attack the goblin with my sword!"
+         }'
+```
+
+---
+
+## 🧪 Reproducible Experiments
+
+We provide scripts to verify the core mechanics of the system, specifically the Combat Flow.
+
+### Experiment: Combat Flow Verification
+This experiment tests the end-to-end flow of:
+1.  Initializing a session.
+2.  Retrieving the current state.
+3.  Processing a combat action ("I attack...").
+4.  Verifying that the `action_log` (combat resolution) is generated.
+
+**Run the Experiment:**
+Ensure the stack is running (`./start.sh`), then run:
+
+```bash
+python scripts/test_combat_flow.py
+```
+
+### Automated Unit Tests
+To run the backend unit tests (ensuring API health and basic game flow):
+
+```bash
+python -m pytest tests/
+```
+
+---
+
+## 📊 Evaluation Results
+
+We have conducted a comparative analysis between **A.R.C.A.N.A.** and a baseline LLM (Gemini 1.5 Pro).
+The results, including score distributions and qualitative analysis, can be found in:
+*   [DndAgent/evaluation.ipynb](DndAgent/evaluation.ipynb)
+
+**Key Findings:**
+*   **Performance:** A.R.C.A.N.A. achieved a mean score of **4.62/5.0**, significantly outperforming the baseline (3.90/5.0).
+*   **Consistency:** The agentic architecture demonstrated much lower variance in output quality.
+
+**Expected Output:**
+```text
+1. Starting Session...
+Session ID: ...
+2. Sending Attack Command...
+Response received.
+[SUCCESS] Action Log Found:
+[
+  {
+    "type": "attack",
+    "description": "...",
+    "damage": ...
+  }
+]
+```
+
+---
+
+## 🏗️ Architecture
+
+*   **OrchestratorAgent**: Manages the game loop, detects user intent, and delegates tasks.
+*   **NarrativeAgent**: Generates immersive story text using Google Gemini.
+*   **RulesLawyerAgent**: Adjudicates actions based on D&D 5e rules.
+*   **Memory System**:
+    *   **Episodic**: Vector Store (Chroma) for narrative history.
+    *   **Semantic**: Temporal Knowledge Graph (Neo4j) for game state (HP, Inventory, Locations).
+
+---
+
+## 🛠️ Data Monitoring
+
+Visualize the game world and memory in the Neo4j Browser.
 
 1.  Go to [http://localhost:7474](http://localhost:7474)
-2.  **Login**:
-    *   Username: `neo4j`
-    *   Password: `password` (default)
-3.  **Run Query**:
-    To see the entire graph:
+2.  Login with `neo4j` / `password`.
+3.  Run this query to see the entire graph:
     ```cypher
     MATCH (n) RETURN n
     ```
 
-## 🏗️ Architecture
+---
 
-*   **Backend**: Python (FastAPI, LangGraph)
-    *   `OrchestratorAgent`: Manages game loop.
-    *   `NarrativeAgent`: Generates story text using Google Gemini.
-    *   `RulesLawyerAgent`: Handles game mechanics.
-    *   `Memory`: Hybrid system with Vector Store (Chroma) and Knowledge Graph (Neo4j).
-*   **Frontend**: Next.js (TypeScript, Tailwind)
-*   **Infrastructure**: Docker Compose
+## 🐛 Troubleshooting
 
-## 🐛 Debugging
-
-*   **Frontend Logs**: `docker-compose logs -f frontend`
-*   **Backend Logs**: `docker-compose logs -f backend`
-*   **Rebuild**: If you change dependencies (requirements.txt or package.json), run `./start.sh` again to rebuild.
+| Issue | Solution |
+| :--- | :--- |
+| **API Key Error** | Check `.env` file and ensure `GOOGLE_API_KEY` is set. Restart containers. |
+| **Database Empty** | Run the seed command: `docker-compose exec backend python -m app.scripts.seed` |
+| **Connection Refused** | Ensure Docker containers are running: `docker-compose ps` |
+| **Frontend/Backend Logs** | View logs: `docker-compose logs -f backend` or `frontend` |
+| **Rebuild Required** | If you changed `requirements.txt`: `docker-compose up --build` |

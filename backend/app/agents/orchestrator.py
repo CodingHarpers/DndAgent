@@ -1,7 +1,8 @@
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import uuid
 import os
-from datetime import datetime
+import json
+
 # LangGraph & LangChain imports
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
@@ -13,21 +14,14 @@ from langchain_core.messages import (
     ToolMessage,
 )
 # App imports
-from app.models.schemas import Scene, TurnResponse, PlayerStats
+from app.models.schemas import Scene, TurnResponse, PlayerStats, RuleAdjudicationResult
 from app.agents.narrative_agent import NarrativeAgent
 from app.agents.rules_lawyer_agent import RulesLawyerAgent
 from app.agents.world_builder_agent import WorldBuilderAgent
 from app.memory.router import MemoryRouter
 from app.agents.tools import DndTools
 from app.agents.state import AgentState
-from app.services.generation import generation_client
-import uuid
-from pydantic import BaseModel
 
-class RuleCheckDecision(BaseModel):
-    should_check: bool
-    query: str
-    reason: str
 
 class DungeonMasterOrchestrator:
     """
@@ -59,7 +53,8 @@ class DungeonMasterOrchestrator:
             self.tool_factory.get_buy_tool(),
             self.tool_factory.get_sell_tool(),
             self.tool_factory.get_attack_tool(),
-            self.tool_factory.get_create_character_tool()
+            self.tool_factory.get_create_character_tool(),
+            self.tool_factory.get_check_rules_tool(),
         ]
         
         # 3. Bind tools to the Narrative Agent's LLM
@@ -68,17 +63,61 @@ class DungeonMasterOrchestrator:
 
         # 4. Load Module
         try:
-             with open("data/story/hallows_end.txt", "r") as f:
+            with open("data/story/hallows_end.txt", "r") as f:
                 self.module_content = f.read()
         except FileNotFoundError:
-             try:
-                 with open("../data/story/hallows_end.txt", "r") as f:
+            try:
+                with open("../data/story/hallows_end.txt", "r") as f:
                     self.module_content = f.read()
-             except:
+            except:
                 self.module_content = "Welcome to the adventure."
 
         # 5. Build the LangGraph
         self.app = self._build_graph()
+
+        # 6. In-memory session history storage
+        self.session_histories: Dict[str, List[BaseMessage]] = {}
+        # 7. Per-session round counter (1, 2, 3...) for structured logging / analytics
+        self.session_round_numbers: Dict[str, int] = {}
+
+    def _get_previous_narrative_text(self, history: List[BaseMessage]) -> str:
+        """
+        Returns the most recent DM narrative text (last AIMessage content) from the stored history.
+        """
+        for m in reversed(history):
+            if isinstance(m, AIMessage) and m.content:
+                # Gemini/LangChain can represent message content as str or a richer structure.
+                # We only want the textual narrative here.
+                if isinstance(m.content, str):
+                    return m.content
+                return str(m.content)
+        return ""
+
+    def _extract_check_rules_result(self, messages: List[BaseMessage]) -> Optional[str]:
+        """
+        Extract the latest check_rules tool result (rule_result string) from the message list.
+        """
+        last_payload: Any = None
+        for m in messages:
+            if isinstance(m, ToolMessage) and getattr(m, "name", None) == "check_rules":
+                last_payload = m.content
+
+        if last_payload is None:
+            return None
+
+        # ToolMessage.content can be a dict or a JSON-ish string depending on runtime serialization.
+        if isinstance(last_payload, dict):
+            return last_payload.get("rule_result")
+
+        if isinstance(last_payload, str):
+            try:
+                parsed = json.loads(last_payload)
+                if isinstance(parsed, dict):
+                    return parsed.get("rule_result")
+            except Exception:
+                return None
+
+        return None
 
     def _build_graph(self):
         """
@@ -138,8 +177,9 @@ class DungeonMasterOrchestrator:
         messages = state["messages"]
         last_message = messages[-1]
         
-        if hasattr(last_message, "tool_calls") and last_message.tool_calls:
-            print(f"[Orchestrator] Tool Call Detected: {last_message.tool_calls}")
+        tool_calls = getattr(last_message, "tool_calls", None)
+        if tool_calls:
+            print(f"[Orchestrator] Tool Call Detected: {tool_calls}")
             return "continue"
         print("[Orchestrator] No tool call. Ending turn.")
         return "end"
@@ -151,6 +191,8 @@ class DungeonMasterOrchestrator:
         Initializes a new game session.
         """
         session_id = str(uuid.uuid4())
+        # Initialize round counter for this session
+        self.session_round_numbers[session_id] = 0
         
         # Initialize Player in TKG
         initial_stats = {
@@ -169,6 +211,8 @@ class DungeonMasterOrchestrator:
             available_actions=["Create Character"],
             metadata={"session_id": session_id}
         )
+        # Seed history with the initial DM output so "previous_narrative_text" is available on turn 1.
+        self.session_histories[session_id] = [AIMessage(content=initial_scene.narrative_text)]
         return initial_scene
 
     def process_turn(self, player_input: str, session_id: str) -> TurnResponse:
@@ -180,6 +224,10 @@ class DungeonMasterOrchestrator:
         3. Runs the Graph.
         4. Returns the final narrative and updated state.
         """
+        # Round counter (monotonic per session)
+        round_number = self.session_round_numbers.get(session_id, 0) + 1
+        self.session_round_numbers[session_id] = round_number
+
         # 1. Fetch RPG State
         tkg = self.world_agent.tkg
         stats = tkg.get_player_stats(session_id)
@@ -190,120 +238,108 @@ class DungeonMasterOrchestrator:
             f"Health: {stats.get('hp_current')}/{stats.get('hp_max')}\n"
             f"Gold: {stats.get('gold')}\n"
             f"Inventory: {[i['name'] for i in inventory]}\n"
-            f"Session ID: {session_id}" # Important for tools to know the session!
+            f"Session ID: {session_id}"  # Important for tools to know the session!
         )
         
         # 2. Retrieve Memory Context
         memory_context = self.memory_router.retrieve_context(player_input, session_id)
         
         # 3. Construct Input Messages
-        # We can treat this as a fresh tailored prompt or append to a history if we were tracking it statefully.
-        # Since this API is stateless per request (restoring session), we construct a robust system prompt.
-        
+        # Retrieve session history
+        history = self.session_histories.get(session_id, [])
+        previous_narrative_text = self._get_previous_narrative_text(history)
+
         # Check Character Creation Status
         player_race = stats.get('race')
         player_class = stats.get('class')
         
         if not player_race or not player_class or player_race == "Unknown" or player_class == "Unknown":
-             system_instruction = (
+            system_instruction = (
                 "GAME PHASE: CHARACTER CREATION\n"
                 "You are the Dungeon Master. The player needs to create their character.\n"
                 "The player should provide Name, Race, and Class.\n"
                 "Extract these details and use the `create_character` tool to save them.\n"
                 "If information is missing, ask for it.\n"
                 "Once the tool is successfully called, transition to the game intro.\n"
+                "\n"
+                "IMPORTANT (Rules): Before responding with any narrative, you MUST call `check_rules` exactly once "
+                "to proactively identify any D&D 5e mechanics that should apply.\n"
                 f"Module Content: {self.module_content}\n"
-             )
+            )
         else:
-             system_instruction = (
-                "You are the Dungeon Master. Guide the player through the adventure.\n"
-                f"Module Content: {self.module_content}\n"
-                "Use the provided tools to manage game state (Buying, Selling, Attacking).\n"
-             )
+            system_instruction = (
+    "You are the **Dungeon Master (DM)**. Your primary role is to guide the player through an immersive D&D 5e adventure.\n"
+    f"Module Content: {self.module_content}\n"
+    "\n"
+    "### THE GOLDEN RULE: \"ADJUDICATE FIRST, NARRATE SECOND\"\n"
+    "You possess a `check_rules` tool, which is your link to the **Rules Lawyer Engine**.\n"
+    "Before you generate ANY narrative response, you must act as a **Silent Referee** and evaluate the current state.\n"
+    "DO NOT rely on your own training data for mechanics. If there is even a 1% chance a mechanic applies, CONSULT THE LAWYER.\n"
+    "\n"
+    "### WHEN TO CALL `check_rules` (Triggers)\n"
+    "Be AGGRESSIVE. If the player breathes wrong, check if there's a rule for it. Look for these specific disputes:\n"
+    "1. **Validation Disputes**: Player says \"I attack/cast/jump\". -> *Lawyer:* \"Is the target in range? Do they have line of sight? Is the spell slot available?\"\n"
+    "2. **State Conflicts**: Player is Prone/Grappled/Blinded. -> *Lawyer:* \"How does being Prone affect this attack roll?\"\n"
+    "3. **Passive Awareness**: Player enters a room. -> *Lawyer:* \"What is the Passive Perception threshold for the trap here?\"\n"
+    "4. **Build & Progression**: Player levels up or uses a racial trait. -> *Lawyer:* \"What exact features does a Level 3 Fighter gain?\"\n"
+    "5. **Lore & DC**: Player inspects a rune. -> *Lawyer:* \"What is the History DC to recognize this symbol?\"\n"
+    "\n"
+    "### PROTOCOL FOR CALLING THE TOOL\n"
+    "When calling `check_rules`, construct your `query` as a **specific adjudication request**:\n"
+    "  - BAD: \"Check stealth rules.\"\n"
+    "  - GOOD: \"Player (Rogue) wants to Hide behind a barrel while observed by a Guard. Is this allowed, and what is the Stealth check DC vs Passive Perception?\"\n"
+    "\n"
+    "### NARRATION INSTRUCTIONS\n"
+    "Once you receive the tool output (RuleAdjudication):\n"
+    "1. **Enforce the Verdict**: If Action Failed, you narrate the failure. Do not fudge the dice unless necessary for plot.\n"
+    "2. **Weave the Mechanics**: Don't just say \"You take 5 damage.\" Say \"The goblin's scimitar finds a gap in your armor (AC 15), slashing for 5 slashing damage.\"\n"
+)
 
         system_prompt = (
             f"{system_instruction}\n"
             "When calling a tool, ALWAYS pass the 'session_id' provided in the context.\n"
+            "When calling `check_rules`, ALWAYS pass:\n"
+            "- session_id\n"
+            "- query (your concrete rules question)\n"
+            "- reason (why you need this rule check)\n"
+            "- player_input (the user's latest message)\n"
+            "- previous_narrative_text (the LAST DM output shown below)\n"
+            "- memory_context (the memory context shown below)\n"
             f"{rpg_context}\n"
             f"Memory Context: {memory_context}\n"
+            f"Previous Narrative Text (last DM output): {previous_narrative_text}\n"
         )
         
-        messages = [
-            SystemMessage(content=system_prompt),
-            HumanMessage(content=player_input)
-        ]
+        # We assume the SystemMessage is always fresh context and shouldn't be accumulated in history
+        # History contains [Human, AI, Human, AI...]
+        messages = [SystemMessage(content=system_prompt)] + history + [HumanMessage(content=player_input)]
         
         # 4. Run Graph
         final_state = self.app.invoke({"messages": messages})
         
-        # 5. Extract Result
+        # 5. Extract Result & Update History
         final_messages = final_state["messages"]
+        
+        # Update history: Filter out the initial SystemMessage and store the rest
+        # This preserves the full conversation flow including tool calls
+        new_history = [m for m in final_messages if not isinstance(m, SystemMessage)]
+        self.session_histories[session_id] = new_history
+
         last_message = final_messages[-1]
         narrative_text = last_message.content
 
-        # Persist basic conversation log for this turn
+        # 6. Rule adjudication now runs via the `check_rules` tool (invoked by the LLM before narrating).
+        rule_explanation = self._extract_check_rules_result(final_messages)
+        rule_result = RuleAdjudicationResult(explanation=rule_explanation) if rule_explanation else None
+
+        # Persist structured JSON log for this turn (after we know rule_result)
         self._log_conversation(
             session_id=session_id,
+            round_number=round_number,
             player_input=player_input,
+            rule_result=(rule_result.explanation if rule_result else None),
             narrative_text=narrative_text,
         )
-
-        # 6. Proactive rules adjudication when no explicit tool was executed
-        # Detect whether any tool message was used during this graph run.
-        tools_executed = any(isinstance(m, ToolMessage) for m in final_messages)
-
-        rule_result = None
-        if not tools_executed:
-            # Rules Adjudication Decision (ported from legacy orchestrator flow)
-            rule_check_system = (
-                "You are the Game Master's PROACTIVE Rules Assistant.\n"
-                "Your goal is to identify ANY opportunity where D&D 5e mechanics should influence the outcome. Don't just validate actions; look for bonuses, checks, and lore.\n\n"
-                "### CHECK AGGRESSIVELY FOR THESE TRIGGERS:\n"
-                "1. **Situational Awareness (Perception/Insight)**:\n"
-                "   - Entering a new area? -> Check for Passive Perception (traps, hidden doors).\n"
-                "   - Meeting an NPC? -> Check for Insight (detect lies).\n"
-                "2. **Tactical Modifiers (Advantage/Disadvantage)**:\n"
-                "   - Is the player Hiding? Flanking? In dim light? Prone?\n"
-                "   - Ask Lawyer: 'Does attacking a Prone target give Advantage?'\n"
-                "3. **Character Progression & Builds**:\n"
-                "   - Did they ask about leveling up? -> Ask Lawyer: 'What features does a Fighter get at Level 3?'\n"
-                "   - Did they ask about their Race? -> Ask Lawyer: 'What are the traits of a Tiefling?'\n"
-                "4. **Action Validity & Mechanics**:\n"
-                "   - Casting spells? -> Check Range, Components (V/S/M), Slots.\n"
-                "   - Grappling/Shoving? -> Check Athletics vs Acrobatics rules.\n"
-                "5. **Lore & Knowledge**:\n"
-                "   - Inspecting a rune/monster? -> Check Arcana/Nature/History DC.\n\n"
-                "Output JSON with:\n"
-                "- should_check: bool\n"
-                "- query: str (Formulate a specific question for the Rules Lawyer describing the exact state)\n"
-                "- reason: str (Why is this check needed?)"
-            )
-
-            rule_check_user = (
-                f"Current State: {rpg_context}\n"
-                f"Player Input: \"{player_input}\"\n"
-                f"Final Narrative: \"{narrative_text}\"\n"
-                "Identify any necessary rule checks, passive scores, or tactical advantages."
-            )
-
-            decision = generation_client.generate_structured(
-                rule_check_system, rule_check_user, RuleCheckDecision
-            )
-            print(f"Rule Check Decision: {decision}")
-
-            if decision and decision.should_check:
-                print(
-                    f"[Orchestrator] Rule Check Triggered: {decision.query} "
-                    f"(Reason: {decision.reason})"
-                )
-                context: Dict[str, Any] = {
-                    "rpg_state": rpg_context,
-                    "memory_context": memory_context,
-                    "player_input": player_input,
-                    "narrative_text": narrative_text,
-                    "session_id": session_id,
-                }
-                rule_result = self.rules_agent.adjudicate(decision.query, context)
 
         try:
             current_stats = PlayerStats(**tkg.get_player_stats(session_id))
@@ -316,13 +352,13 @@ class DungeonMasterOrchestrator:
             scene_id=session_id,
             title="Adventure Continues",
             narrative_text=narrative_text,
-            location="Unknown", # Ideally extracted from state
+            location="Unknown",  # Ideally extracted from state
             characters_present=[],
             available_actions=[],
             metadata={"session_id": session_id}
         )
 
-        # 6. Update World State (Async in production, sync here for MVP)
+        # 7. Update World State (Async in production, sync here for MVP)
         # Verify that we actually want to update the world with this narrative
         self.world_agent.update_world(new_scene)
 
@@ -333,27 +369,36 @@ class DungeonMasterOrchestrator:
             action_log=None
         )
 
-    def _log_conversation(self, session_id: str, player_input: str, narrative_text: str) -> None:
+    def _log_conversation(
+        self,
+        session_id: str,
+        round_number: int,
+        player_input: str,
+        rule_result: str | None,
+        narrative_text: str,
+    ) -> None:
         """
-        Append the current turn's conversation (player input + DM response) to a log file.
+        Append the current turn's data to a JSONL log file (one JSON object per line).
 
         Logs are stored under a local 'logs' directory, one file per session.
+        Intentionally excludes timestamps to make downstream processing stable/reproducible.
         """
         try:
             # Ensure logs directory exists (relative to backend working dir)
-            logs_dir = "logs"
+            logs_dir = "data/logs"
             os.makedirs(logs_dir, exist_ok=True)
 
-            log_path = os.path.join(logs_dir, f"{session_id}.log")
-            timestamp = datetime.utcnow().isoformat()
-
+            log_path = os.path.join(logs_dir, f"{session_id}.jsonl")
+            record = {
+                "round_number": round_number,
+                "session_id": session_id,
+                "player_input": player_input,
+                # "rule_result": rule_result,
+                "narrative_text": narrative_text,
+            }
             with open(log_path, "a", encoding="utf-8") as f:
-                f.write(f"[{timestamp}] session_id={session_id}\n")
-                f.write("Player:\n")
-                f.write(f"{player_input}\n\n")
-                f.write("DungeonMaster:\n")
-                f.write(f"{narrative_text}\n")
-                f.write("-" * 40 + "\n\n")
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            print(f"[Orchestrator] Logged turn {round_number} to: {log_path}")
         except Exception as e:
             # Logging should never break gameplay; fail silently except for debug print.
             print(f"[Orchestrator] Failed to write conversation log: {e}")
