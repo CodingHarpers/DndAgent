@@ -6,20 +6,22 @@
 ---
 
 ## 📚 Table of Contents
-- [Code Structure](#-code-structure)
-- [Installation Instructions](#-installation-instructions)
-- [Environment Setup Guide](#-environment-setup-guide)
-- [Usage Examples & Demonstrations](#-usage-examples--demonstrations)
-- [Reproducible Experiments & Analysis](#-reproducible-experiments--analysis)
-  - [Experimental Setup](#-experimental-setup)
-  - [Results](#-results)
-- [Architecture & Implementation](#-architecture--implementation)
-  - [Code & Performance Optimization](#-code--performance-optimization)
-- [Quality Assurance & Testing](#-quality-assurance--testing)
-  - [Unit Tests & Error Handling](#-unit-tests--error-handling)
-  - [Integration Testing](#-integration-testing)
-  - [Robust Error Handling](#-robust-error-handling)
-- [Troubleshooting Guide](#-troubleshooting-guide)
+- [Code Structure](#code-structure)
+- [Installation](#installation)
+- [Environment Setup Guide](#environment-setup-guide)
+- [Usage Examples & Demonstrations](#usage-examples--demonstrations)
+- [Reproducible Experiments & Analysis](#reproducible-experiments--analysis)
+  - [Experimental Setup](#experiment-combat-flow-verification)
+  - [Evaluation Results](#evaluation-results)
+- [Architecture & Implementation](#architecture--implementation)
+  - [Successful Implementation of Proposed Features](#successful-implementation-of-proposed-features)
+  - [Code & Performance Optimization](#code--performance-optimization)
+- [Quality Assurance & Testing](#quality-assurance--testing)
+  - [Unit Tests & Error Handling](#unit-tests--error-handling)
+  - [Integration Testing](#integration-testing)
+  - [Robust Error Handling](#robust-error-handling)
+- [Comprehensive Documentation](#comprehensive-documentation)
+- [Troubleshooting Guide](#troubleshooting-guide)
 
 ---
 
