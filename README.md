@@ -61,7 +61,7 @@ The project is divided into a Python-based backend (FastAPI + LangGraph) and a N
 > For a detailed, step-by-step setup guide for new teammates, please refer to [INSTRUCTION.md](INSTRUCTION.md).
 
 ### 1. Prerequisites
-*   **Docker Desktop**: Must be installed and running.
+*   **Docker Desktop**: Must be installed and running. Download from [docker](https://www.docker.com/products/docker-desktop/).
 *   **Google Gemini API Key**: Obtain one from [Google AI Studio](https://aistudio.google.com/).
 
 ### 2. Setup
@@ -111,10 +111,12 @@ The project uses a `.env` file in the root directory.
 ## 🎮 Usage Examples & Demonstrations
 
 ### Web Interface
-Navigate to [http://localhost:3000](http://localhost:3000).
+Navigate to [http://localhost:3000](http://localhost:3000), and you would see the start screen.
+<img src="assets/startpage.png" alt="start page" width="600"/>
 1.  Click **"Start Adventure"**.
 2.  Type actions like *"I look around"* or *"I attack the goblin"*.
 3.  View your **Inventory** and **Stats** updating in real-time.
+<img src="assets/playscreen.png" alt="play screen" width="600"/>
 
 ### API Usage
 You can interact directly with the backend via HTTP.
