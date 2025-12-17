@@ -91,26 +91,16 @@ class DungeonMasterOrchestrator:
                 "2. Do NOT ask for Race or Background at this time. Assume default Human if needed for narrative.\n"
                 "3. Once the player has chosen a Class (Fighter/Wizard), you MUST include the tag [CHARACTER_COMPLETE] in your response.\n"
                 "4. After [CHARACTER_COMPLETE], immediately transition to describing the setting (from the Module Context) and asking what they want to do.\n"
-                "\n"
-                "CHOICE PRESENTATION RULES (CRITICAL):\n"
-                "5. Whenever you ask the player to choose from a set of options (skills, spells, items, etc.), "
-                "you MUST provide the options explicitly in the same message (no placeholders like 'choose 3').\n"
-                "6. Use a numbered list. Provide at least 8 options per category unless the category has fewer.\n"
-                "7. For each spell option, include a one-line description and its school/type in parentheses.\n"
-                "8. If the player provides partial selections (e.g., only 2 cantrips), acknowledge and ask for the remaining picks.\n"
-                "9. Interpret numeric replies like '1,3,7' as choosing those numbered options.\n"
             )
         else:
             system_instruction = (
                 "GAME PHASE: IN_GAME ADVENTURE\n"
                 "You are the Dungeon Master. Narrate the story based on the Module Context and player actions.\n"
                 "RULES:\n"
-                "1. Whenever you adjudicate any action or event with uncertainty (attacks, checks, saves, environmental risks, persuasion, stealth, puzzles, traps), you MUST call the `roll_die` tool BEFORE stating the outcome. Default to a d15 unless another die is clearly specified. Include the rolled result in your narration.\n"
-                "2. If you proposed that the player make a check, you still roll for them via `roll_die` rather than asking them to roll.\n"
-                "3. After getting the die result, if you need strict rule validation, call `check_rule` with the action description and the rolled value.\n"
-                "4. Do not describe success or failure until after the roll (and rule check, if used). You may set up the stakes before rolling.\n"
-                "5. If you provided numbered options (1., 2..), interpret simple number inputs as selecting those options.\n"
-                "6. Be robust to typos (e.g. 'file' -> 'fire').\n"
+                "1. If the player attempts an action with a chance of failure (attacking, climbing, persuading), you MUST use the `roll_die` tool.\n"
+                "2. After getting the die result, if you need to know if it succeeds according to strict rules, use `check_rule`.\n"
+                "3. If you provided numbered options (1., 2..), interpret simple number inputs as selecting those options.\n"
+                "4. Be robust to typos (e.g. 'file' -> 'fire').\n"
             )
 
         system_context = (
