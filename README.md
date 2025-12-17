@@ -6,15 +6,20 @@
 ---
 
 ## 📚 Table of Contents
-- [Code Structure](#-code-structure)
-- [Installation](#-installation)
-- [Environment Setup](#-environment-setup)
-- [Usage & Demonstrations](#-usage--demonstrations)
-- [Reproducible Experiments](#-reproducible-experiments)
-- [Architecture](#-architecture)
-- [Data Monitoring](#-data-monitoring)
-- [Troubleshooting](#-troubleshooting)
-- [Detailed Instructions](INSTRUCTION.md)
+- [Code Structure](#-clean-and-organized-code-structure)
+- [Installation Instructions](#-clear-installation-instructions)
+- [Environment Setup Guide](#-environment-setup-guide)
+- [Usage Examples & Demonstrations](#-usage-examples--demonstrations)
+- [Reproducible Experiments & Analysis](#-reproducible-experiments--analysis)
+  - [Experimental Setup](#-well-documented-experimental-setup)
+  - [Results](#-clear-presentation-of-results)
+- [Architecture & Implementation](#-architecture--implementation)
+  - [Code & Performance Optimization](#-code--performance-optimization)
+- [Quality Assurance & Testing](#-quality-assurance--testing)
+  - [Unit Tests & Error Handling](#-unit-tests--error-handling)
+  - [Integration Testing](#-integration-testing)
+  - [Robust Error Handling](#-robust-error-handling)
+- [Troubleshooting Guide](#-troubleshooting-guide)
 
 ---
 
@@ -41,7 +46,8 @@ The project is divided into a Python-based backend (FastAPI + LangGraph) and a N
 │   └── logs/                 # Session Logs
 ├── scripts/                  # Root-level experiment scripts
 ├── tests/                    # Unit Tests
-└── docker-compose.yml        # Infrastructure Definition
+├── docker-compose.yml        # Infrastructure Definition
+└── evaluation.ipynb          # Evaluation Process
 ```
 
 ---
@@ -85,7 +91,7 @@ docker-compose exec backend python -m app.scripts.seed
 
 ---
 
-## ⚙️ Environment Setup
+## ⚙️ Environment Setup Guide
 
 The project uses a `.env` file in the root directory.
 
@@ -99,7 +105,7 @@ The project uses a `.env` file in the root directory.
 
 ---
 
-## 🎮 Usage & Demonstrations
+## 🎮 Usage Examples & Demonstrations
 
 ### Web Interface
 Navigate to [http://localhost:3000](http://localhost:3000).
@@ -129,9 +135,10 @@ curl -X POST "http://localhost:8000/api/play/step" \
 
 ---
 
-## 🧪 Reproducible Experiments
+## 🧪 Reproducible Experiments & Analysis
 
 We provide scripts to verify the core mechanics of the system, specifically the Combat Flow.
+
 
 ### Experiment: Combat Flow Verification
 This experiment tests the end-to-end flow of:
@@ -160,7 +167,7 @@ python -m pytest tests/
 
 We have conducted a comparative analysis between **A.R.C.A.N.A.** and a baseline LLM (Gemini 1.5 Pro).
 The results, including score distributions and qualitative analysis, can be found in:
-*   [DndAgent/evaluation.ipynb](DndAgent/evaluation.ipynb)
+*   [evaluation.ipynb](evaluation.ipynb)
 
 **Key Findings:**
 *   **Performance:** A.R.C.A.N.A. achieved a mean score of **4.62/5.0**, significantly outperforming the baseline (3.90/5.0).
@@ -184,7 +191,7 @@ Response received.
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture & Implementation
 
 *   **OrchestratorAgent**: Manages the game loop, detects user intent, and delegates tasks.
 *   **NarrativeAgent**: Generates immersive story text using Google Gemini.
@@ -208,7 +215,7 @@ Visualize the game world and memory in the Neo4j Browser.
 
 ---
 
-## 🐛 Troubleshooting
+## 🐛 Troubleshooting Guide
 
 For a comprehensive guide on common issues (API keys, database connections, logging), please refer to [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
