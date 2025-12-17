@@ -6,13 +6,13 @@
 ---
 
 ## 📚 Table of Contents
-- [Code Structure](#-clean-and-organized-code-structure)
-- [Installation Instructions](#-clear-installation-instructions)
+- [Code Structure](#-code-structure)
+- [Installation Instructions](#-installation-instructions)
 - [Environment Setup Guide](#-environment-setup-guide)
 - [Usage Examples & Demonstrations](#-usage-examples--demonstrations)
 - [Reproducible Experiments & Analysis](#-reproducible-experiments--analysis)
-  - [Experimental Setup](#-well-documented-experimental-setup)
-  - [Results](#-clear-presentation-of-results)
+  - [Experimental Setup](#-experimental-setup)
+  - [Results](#-results)
 - [Architecture & Implementation](#-architecture--implementation)
   - [Code & Performance Optimization](#-code--performance-optimization)
 - [Quality Assurance & Testing](#-quality-assurance--testing)
