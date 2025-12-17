@@ -50,6 +50,7 @@ The project is divided into a Python-based backend (FastAPI + LangGraph) and a N
 ├── scripts/                  # Root-level experiment scripts
 ├── tests/                    # Unit Tests
 ├── docker-compose.yml        # Infrastructure Definition
+├── INSTRUCTION.md            # Detailed Instruction
 └── evaluation.ipynb          # Evaluation Process
 ```
 
